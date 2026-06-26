@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firmware Audit Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Netgear Firmware Audit</p>
+        <h1>Firmware Risk Dashboard</h1>
+      </div>
+      <div class="topbar-actions">
+        <button id="refreshButton" class="icon-button" title="Reload dashboard data" aria-label="Reload dashboard data">↻</button>
+        <a class="button" href="../known_firmware/manifest.json" target="_blank" rel="noreferrer">Manifest</a>
+      </div>
+    </header>
+
+    <main class="dashboard-shell">
+      <section class="summary-grid" aria-label="Audit summary">
+        <div class="metric">
+          <span class="metric-label">Firmware</span>
+          <strong id="firmwareCount">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Static Findings</span>
+          <strong id="findingCount">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">High Priority</span>
+          <strong id="highPriorityCount">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Archive Size</span>
+          <strong id="archiveSize">0 MB</strong>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <aside class="panel filters" aria-label="Filters">
+          <div class="panel-header">
+            <h2>Filters</h2>
+          </div>
+          <label class="field">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Product, file, finding">
+          </label>
+          <label class="field">
+            <span>Finding Type</span>
+            <select id="findingFilter">
+              <option value="">All findings</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Order By</span>
+            <select id="sortOrder">
+              <option value="uploaded_asc">First uploaded</option>
+              <option value="alpha_asc">Alphabetical</option>
+              <option value="priority_desc">Priority high to low</option>
+            </select>
+          </label>
+          <label class="toggle">
+            <input id="hasFindingsOnly" type="checkbox">
+            <span>With findings only</span>
+          </label>
+          <div class="panel-divider"></div>
+          <h3>Finding Mix</h3>
+          <div id="findingChart" class="bar-chart"></div>
+        </aside>
+
+        <section class="panel table-panel" aria-label="Firmware records">
+          <div class="panel-header">
+            <h2>Firmware</h2>
+            <span id="visibleCount" class="count-pill">0 shown</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Router</th>
+                  <th>Firmware File</th>
+                  <th>Version</th>
+                  <th>Uploaded</th>
+                  <th>Priority</th>
+                  <th>Findings</th>
+                </tr>
+              </thead>
+              <tbody id="firmwareRows"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel detail-panel" aria-label="Selected firmware report">
+          <div class="panel-header">
+            <div>
+              <h2 id="detailTitle">Select Firmware</h2>
+              <p id="detailMeta" class="muted">No record selected</p>
+            </div>
+            <a id="downloadLink" class="icon-button" title="Open source URL" aria-label="Open source URL" href="#" target="_blank" rel="noreferrer">↗</a>
+          </div>
+          <div id="priorityBanner" class="priority-banner"></div>
+          <div id="detailFindings" class="finding-list"></div>
+          <div class="detail-section">
+            <h3>Evidence Paths</h3>
+            <dl id="evidencePaths"></dl>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="data/firmware-dashboard.js?v=20260625-sort"></script>
+    <script src="app.js?v=20260626-actions"></script>
+  </body>
+</html>

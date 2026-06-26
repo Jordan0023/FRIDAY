@@ -1,0 +1,341 @@
+{
+  "generated_at": "2026-06-26T15:01:27+00:00",
+  "manifest_updated": "2026-06-26T11:44:45+00:00",
+  "summary": {
+    "products": 10,
+    "firmware": 10,
+    "findings": 10,
+    "extracted": 10,
+    "total_size_mb": 388.2
+  },
+  "finding_counts": {
+    "Command execution helpers": 1,
+    "HTTP CGI/admin attack surface": 8,
+    "Remote shell services present": 1
+  },
+  "severity_counts": {
+    "High": 1,
+    "Medium": 7,
+    "No findings": 2
+  },
+  "firmware": [
+    {
+      "product": "AC1450",
+      "title": "Netgear AC1450 firmware 1.0.0.36_10.0.17",
+      "filename": "AC1450-V1.0.0.36_10.0.17.zip",
+      "version": "1.0.0.36_10.0.17",
+      "release_date": "Not listed",
+      "uploaded_at": "2024-12-27T18:48:39+00:00",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-06-22T11:43:32+00:00",
+      "last_seen": "2026-06-22T11:50:27+00:00",
+      "size": 12165105,
+      "size_mb": 11.6,
+      "sha256": "81a99ea20515e1cd30f879a775440771910860a14305555f68a7d7700d5316a3",
+      "url": "https://www.downloads.netgear.com/files/GDC/AC1450/AC1450-V1.0.0.36_10.0.17.zip",
+      "path": "firmware/AC1450/AC1450-V1.0.0.36_10.0.17.zip",
+      "report_path": "reports/AC1450/AC1450-V1.0.0.36_10.0.17.zip.md",
+      "severity": {
+        "label": "High",
+        "rank": 3,
+        "reason": "Command execution helpers"
+      },
+      "findings": [
+        {
+          "title": "Remote shell services present",
+          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
+          "evidence": "SSHd"
+        },
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BoA, boa"
+        },
+        {
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "system"
+        }
+      ],
+      "extraction_notes": [
+        "Using existing extraction directory: known_firmware/extracted/81a99ea20515e1cd"
+      ]
+    },
+    {
+      "product": "AC2100",
+      "title": "Netgear AC2100 firmware 1.2.0.92",
+      "filename": "AC2100_V1.2.0.92.zip",
+      "version": "1.2.0.92",
+      "release_date": "Not listed",
+      "uploaded_at": "2024-12-27T18:48:45+00:00",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-06-22T11:43:32+00:00",
+      "last_seen": "2026-06-22T11:50:44+00:00",
+      "size": 28962836,
+      "size_mb": 27.6,
+      "sha256": "820c9078b0dc862343b836126b8ba2bc68fd49099d3d2ea7b15499db53c18b4f",
+      "url": "https://www.downloads.netgear.com/files/GDC/AC2100/AC2100_V1.2.0.92.zip",
+      "path": "firmware/AC2100/AC2100_V1.2.0.92.zip",
+      "report_path": "reports/AC2100/AC2100_V1.2.0.92.zip.md",
+      "severity": {
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BOA, bOA, bOa, boa"
+        }
+      ],
+      "extraction_notes": [
+        "Using existing extraction directory: known_firmware/extracted/820c9078b0dc8623"
+      ]
+    },
+    {
+      "product": "AC2400",
+      "title": "Netgear AC2400 firmware 1.2.0.92",
+      "filename": "AC2400_V1.2.0.92.zip",
+      "version": "1.2.0.92",
+      "release_date": "Not listed",
+      "uploaded_at": "2024-12-27T18:48:51+00:00",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-06-22T11:43:32+00:00",
+      "last_seen": "2026-06-22T11:52:54+00:00",
+      "size": 28962837,
+      "size_mb": 27.6,
+      "sha256": "4e38837d4b00da4d5a4b10a4c5cb870ec264844c250ed2e7548636305c84cebe",
+      "url": "https://www.downloads.netgear.com/files/GDC/AC2400/AC2400_V1.2.0.92.zip",
+      "path": "firmware/AC2400/AC2400_V1.2.0.92.zip",
+      "report_path": "reports/AC2400/AC2400_V1.2.0.92.zip.md",
+      "severity": {
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BOA, bOA, bOa, boa"
+        }
+      ],
+      "extraction_notes": [
+        "Using existing extraction directory: known_firmware/extracted/4e38837d4b00da4d"
+      ]
+    },
+    {
+      "product": "AC2600",
+      "title": "Netgear AC2600 firmware 1.2.0.92",
+      "filename": "AC2600_V1.2.0.92.zip",
+      "version": "1.2.0.92",
+      "release_date": "Not listed",
+      "uploaded_at": "2024-12-27T18:48:56+00:00",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-06-22T11:43:32+00:00",
+      "last_seen": "2026-06-22T11:55:03+00:00",
+      "size": 28962837,
+      "size_mb": 27.6,
+      "sha256": "c4b9c696f8dd073448ecf862c3ad1438bab2208190589fe88cf6eaf6985ba11e",
+      "url": "https://www.downloads.netgear.com/files/GDC/AC2600/AC2600_V1.2.0.92.zip",
+      "path": "firmware/AC2600/AC2600_V1.2.0.92.zip",
+      "report_path": "reports/AC2600/AC2600_V1.2.0.92.zip.md",
+      "severity": {
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BOA, bOA, bOa, boa"
+        }
+      ],
+      "extraction_notes": [
+        "Using existing extraction directory: known_firmware/extracted/c4b9c696f8dd0734"
+      ]
+    },
+    {
+      "product": "BE17000",
+      "title": "Netgear BE17000 firmware 1.0.6.22",
+      "filename": "BE17000-V1.0.6.22.zip",
+      "version": "1.0.6.22",
+      "release_date": "Not listed",
+      "uploaded_at": "2026-05-07T18:54:58+00:00",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-06-22T11:43:32+00:00",
+      "last_seen": "2026-06-22T11:55:40+00:00",
+      "size": 95754012,
+      "size_mb": 91.3,
+      "sha256": "2a9b10038ea6b9b47f5571d67933104cdd9b57918850c09331bfc7f5e3a1c701",
+      "url": "https://www.downloads.netgear.com/files/GDC/BE17000/BE17000-V1.0.6.22.zip",
+      "path": "firmware/BE17000/BE17000-V1.0.6.22.zip",
+      "report_path": "reports/BE17000/BE17000-V1.0.6.22.zip.md",
+      "severity": {
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BOA, BoA, bOa"
+        }
+      ],
+      "extraction_notes": [
+        "Using existing extraction directory: known_firmware/extracted/2a9b10038ea6b9b4"
+      ]
+    },
+    {
+      "product": "BE9300",
+      "title": "Netgear BE9300 firmware 1.2.7.2",
+      "filename": "BE9300-V1.2.7.2.zip",
+      "version": "1.2.7.2",
+      "release_date": "Not listed",
+      "uploaded_at": "2026-06-01T17:55:10+00:00",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-06-22T11:43:32+00:00",
+      "last_seen": "2026-06-22T11:56:30+00:00",
+      "size": 97139126,
+      "size_mb": 92.6,
+      "sha256": "ae050e634d6edcc6f4b9467c9943195639c5ca755f4b8c9afc24753ade138ee6",
+      "url": "https://www.downloads.netgear.com/files/GDC/BE9300/BE9300-V1.2.7.2.zip",
+      "path": "firmware/BE9300/BE9300-V1.2.7.2.zip",
+      "report_path": "reports/BE9300/BE9300-V1.2.7.2.zip.md",
+      "severity": {
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BoA, bOa, boa"
+        }
+      ],
+      "extraction_notes": [
+        "Using existing extraction directory: known_firmware/extracted/ae050e634d6edcc6"
+      ]
+    },
+    {
+      "product": "EAX10",
+      "title": "Netgear EAX10 firmware 1.0.4.40",
+      "filename": "EAX10_V1.0.4.40.zip",
+      "version": "1.0.4.40",
+      "release_date": "Not listed",
+      "uploaded_at": "2026-06-04T16:26:07+00:00",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-06-22T11:43:32+00:00",
+      "last_seen": "2026-06-22T11:56:35+00:00",
+      "size": 29347907,
+      "size_mb": 28.0,
+      "sha256": "0a92dcd4da9cfe3b4fe19d5ac659507b7cafabe78b7b91b9d03ddef400fb93e7",
+      "url": "https://www.downloads.netgear.com/files/GDC/EAX10/EAX10_V1.0.4.40.zip",
+      "path": "firmware/EAX10/EAX10_V1.0.4.40.zip",
+      "report_path": "reports/EAX10/EAX10_V1.0.4.40.zip.md",
+      "severity": {
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "bOa, boa"
+        }
+      ],
+      "extraction_notes": [
+        "Using existing extraction directory: known_firmware/extracted/0a92dcd4da9cfe3b"
+      ]
+    },
+    {
+      "product": "EAX12",
+      "title": "Netgear EAX12 firmware 1.0.3.38",
+      "filename": "EAX12_EAX11v2_EAX15v2-V1.0.3.38.zip",
+      "version": "1.0.3.38",
+      "release_date": "Not listed",
+      "uploaded_at": "2025-03-06T13:07:36+00:00",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-06-22T11:43:32+00:00",
+      "last_seen": "2026-06-22T11:56:40+00:00",
+      "size": 14554526,
+      "size_mb": 13.9,
+      "sha256": "8d86b25026d873b9ebdd3ba6b3ec07b37ecd3ae04ea4a6b265a96c5ed15a3229",
+      "url": "https://www.downloads.netgear.com/files/GDC/EAX12/EAX12_EAX11v2_EAX15v2-V1.0.3.38.zip",
+      "path": "firmware/EAX12/EAX12_EAX11v2_EAX15v2-V1.0.3.38.zip",
+      "report_path": "reports/EAX12/EAX12_EAX11v2_EAX15v2-V1.0.3.38.zip.md",
+      "severity": {
+        "label": "No findings",
+        "rank": 0,
+        "reason": "No heuristic findings were identified."
+      },
+      "findings": [],
+      "extraction_notes": [
+        "Using existing extraction directory: known_firmware/extracted/8d86b25026d873b9"
+      ]
+    },
+    {
+      "product": "EAX15",
+      "title": "Netgear EAX15 firmware 1.0.3.36",
+      "filename": "EAX15_EAX11_EAX14-V1.0.3.36.zip",
+      "version": "1.0.3.36",
+      "release_date": "Not listed",
+      "uploaded_at": "2024-12-27T18:53:59+00:00",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-06-22T11:43:32+00:00",
+      "last_seen": "2026-06-22T11:56:46+00:00",
+      "size": 41813285,
+      "size_mb": 39.9,
+      "sha256": "f3619c6e455151d876eaa70cfc12b61f3448918d669dddb1c7e19f5b717ae0eb",
+      "url": "https://www.downloads.netgear.com/files/GDC/EAX15/EAX15_EAX11_EAX14-V1.0.3.36.zip",
+      "path": "firmware/EAX15/EAX15_EAX11_EAX14-V1.0.3.36.zip",
+      "report_path": "reports/EAX15/EAX15_EAX11_EAX14-V1.0.3.36.zip.md",
+      "severity": {
+        "label": "No findings",
+        "rank": 0,
+        "reason": "No heuristic findings were identified."
+      },
+      "findings": [],
+      "extraction_notes": [
+        "Using existing extraction directory: known_firmware/extracted/f3619c6e455151d8"
+      ]
+    },
+    {
+      "product": "EAX15V3",
+      "title": "Netgear EAX15V3 firmware 1.0.4.40",
+      "filename": "EAX15v3_firmware_V1.0.4.40.zip",
+      "version": "1.0.4.40",
+      "release_date": "Not listed",
+      "uploaded_at": "2026-01-19T09:47:05+00:00",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-06-22T11:43:32+00:00",
+      "last_seen": "2026-06-22T11:56:52+00:00",
+      "size": 29347883,
+      "size_mb": 28.0,
+      "sha256": "ba883003ed327b2dca348ea1b9f9284bfc509a4aed4d53029c7fa3994f3e65d7",
+      "url": "https://www.downloads.netgear.com/files/GDC/EAX15v3/EAX15v3_firmware_V1.0.4.40.zip",
+      "path": "firmware/EAX15V3/EAX15v3_firmware_V1.0.4.40.zip",
+      "report_path": "reports/EAX15V3/EAX15v3_firmware_V1.0.4.40.zip.md",
+      "severity": {
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "bOa, boa"
+        }
+      ],
+      "extraction_notes": [
+        "Using existing extraction directory: known_firmware/extracted/ba883003ed327b2d"
+      ]
+    }
+  ]
+}
