@@ -164,8 +164,20 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
-/site
+# FRIDAY generated firmware artifacts
+known_firmware/firmware/
+known_firmware/extracted/
+known_firmware/logs/
+known_firmware/ghidra_projects/
+known_firmware/*.truncated-*
+
+# Keep the lightweight dashboard and report metadata tracked.
+!site/
+!site/**
+!known_firmware/
+!known_firmware/manifest.json
+!known_firmware/reports/
+!known_firmware/reports/**
 
 # mypy
 .mypy_cache/
