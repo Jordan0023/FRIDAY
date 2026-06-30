@@ -9,7 +9,7 @@
   <body>
     <header class="topbar">
       <div>
-        <p class="eyebrow">Netgear Firmware Audit</p>
+        <p class="eyebrow">Router Firmware Audit</p>
         <h1>Firmware Risk Dashboard</h1>
       </div>
       <div class="topbar-actions">
@@ -48,6 +48,12 @@
             <input id="searchInput" type="search" placeholder="Product, file, finding">
           </label>
           <label class="field">
+            <span>Brand</span>
+            <select id="brandFilter">
+              <option value="">All brands</option>
+            </select>
+          </label>
+          <label class="field">
             <span>Finding Type</span>
             <select id="findingFilter">
               <option value="">All findings</option>
@@ -59,6 +65,7 @@
               <option value="uploaded_asc">First uploaded</option>
               <option value="alpha_asc">Alphabetical</option>
               <option value="priority_desc">Priority high to low</option>
+              <option value="priority_asc">Priority low to high</option>
             </select>
           </label>
           <label class="toggle">

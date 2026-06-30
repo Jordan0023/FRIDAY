@@ -19,6 +19,8 @@ def main() -> int:
     parser.add_argument("--limit-firmware", type=int, default=None)
     parser.add_argument("--product", action="append", default=[], help="Seed a product model, e.g. R7000. Repeatable.")
     parser.add_argument("--products-file", type=Path, help="Text file of product models, one per line.")
+    parser.add_argument("--resume", action="store_true", help="Skip products already recorded in the manifest.")
+    parser.add_argument("--product-timeout", type=int, default=None, help="Maximum seconds to spend discovering one product before skipping it.")
     args = parser.parse_args()
 
     models = list(args.product)
@@ -39,6 +41,8 @@ def main() -> int:
         limit_products=args.limit_products,
         limit_firmware=args.limit_firmware,
         seed_products=seed_products,
+        skip_known_products=args.resume,
+        product_timeout=args.product_timeout,
     )
     print(f"Products checked: {products}")
     print(f"Firmware links found: {firmware}")

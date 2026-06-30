@@ -1,0 +1,142 @@
+{
+  "downloads": {
+    "ASUS RT-AC2200|https://dlcdnta.asus.com/pub/ASUS/wireless/RT-AC2200/FW_RT_AC2200_300438252516.zip": {
+      "category": "",
+      "checked_at": "2026-06-28T15:02:06+00:00",
+      "pdid": "",
+      "product": "ASUS RT-AC2200",
+      "reason": "HTTP 404: 404 Client Error: Not Found for url: https://dlcdnta.asus.com/pub/ASUS/wireless/RT-AC2200/FW_RT_AC2200_300438252516.zip?model=RT-AC2200&Signature=hvINTZHBQbnTHZ7TOIrKjC6ynBB4ZeRXNOv8wjqq1FmcDNaJgF2fxoWddD0uWbm7qmPqb6bp4Hm8vlIB-Mp8DYSHcPkclG2~gxLXWwrElbQs6crBPeSI0-SzMOI-WqGeXpFnhMGc2Nb5FAkUHFUDSyWIJn8GkKX0J50I6VSae~gm5LwtvNHG5fDytCG30zpiyB6WU0EfvE4PbVX1rldq~9xowNdeJSABu7r5JITb7V2g0ZuxZ0wY7fkItT8tQ25rtnbuXYmsye0CWzvbyVG9zn~kHJ3PAou6llNxJdcTHRogY02TBhuUsTDJ191h~k2AdSmoHEDHP6IQwhLWHxsVFA__&Expires=1782659525&Key-Pair-Id=K2ITB7O97XKKCX",
+      "url": "https://dlcdnta.asus.com/pub/ASUS/wireless/RT-AC2200/FW_RT_AC2200_300438252516.zip"
+    }
+  },
+  "products": {
+    "ASUS CM-16|https://www.asus.com/supportonly/CM-16/HelpDesk_BIOS/": {
+      "category": "Cable Modems & Routers",
+      "checked_at": "2026-06-28T14:59:03+00:00",
+      "pdid": "8866",
+      "product": "ASUS CM-16",
+      "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
+      "url": "https://www.asus.com/supportonly/CM-16/HelpDesk_BIOS/"
+    },
+    "ASUS CM-32 AC2600|https://www.asus.com/supportonly/CM-32%20AC2600/HelpDesk_BIOS/": {
+      "category": "Cable Modems & Routers",
+      "checked_at": "2026-06-28T14:59:06+00:00",
+      "pdid": "8857",
+      "product": "ASUS CM-32 AC2600",
+      "reason": "ASUS API returned FAIL: Input string was not in a correct format.",
+      "url": "https://www.asus.com/supportonly/CM-32%20AC2600/HelpDesk_BIOS/"
+    },
+    "ASUS CMAX6000|https://www.asus.com/supportonly/CMAX6000/HelpDesk_BIOS/": {
+      "category": "Cable Modems & Routers",
+      "checked_at": "2026-06-28T14:59:09+00:00",
+      "pdid": "14673",
+      "product": "ASUS CMAX6000",
+      "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
+      "url": "https://www.asus.com/supportonly/CMAX6000/HelpDesk_BIOS/"
+    },
+    "ASUS DSL-N16U|https://www.asus.com/supportonly/DSL-N16U/HelpDesk_BIOS/": {
+      "category": "xDSL Modem Routers",
+      "checked_at": "2026-06-28T14:59:47+00:00",
+      "pdid": "6524",
+      "product": "ASUS DSL-N16U",
+      "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
+      "url": "https://www.asus.com/supportonly/DSL-N16U/HelpDesk_BIOS/"
+    },
+    "ASUS ROG Rapture GT-BE98 Pro Edition 20|https://www.asus.com/supportonly/ROG%20Rapture%20GT-BE98%20Pro%20Edition%2020/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:01:16+00:00",
+      "pdid": "37741",
+      "product": "ASUS ROG Rapture GT-BE98 Pro Edition 20",
+      "reason": "ASUS API returned FAIL: Input string was not in a correct format.",
+      "url": "https://www.asus.com/supportonly/ROG%20Rapture%20GT-BE98%20Pro%20Edition%2020/HelpDesk_BIOS/"
+    },
+    "ASUS RT-AC1200 White Housing|https://www.asus.com/supportonly/RT-AC1200%20White%20Housing/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:01:34+00:00",
+      "pdid": "9756",
+      "product": "ASUS RT-AC1200 White Housing",
+      "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
+      "url": "https://www.asus.com/supportonly/RT-AC1200%20White%20Housing/HelpDesk_BIOS/"
+    },
+    "ASUS RT-AC52U Combo Pack|https://www.asus.com/supportonly/RT-AC52U%20Combo%20Pack/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:02:34+00:00",
+      "pdid": "6582",
+      "product": "ASUS RT-AC52U Combo Pack",
+      "reason": "ASUS API returned FAIL: Input string was not in a correct format.",
+      "url": "https://www.asus.com/supportonly/RT-AC52U%20Combo%20Pack/HelpDesk_BIOS/"
+    },
+    "ASUS RT-AC68A|https://www.asus.com/supportonly/RT-AC68A/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:03:26+00:00",
+      "pdid": "8500",
+      "product": "ASUS RT-AC68A",
+      "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
+      "url": "https://www.asus.com/supportonly/RT-AC68A/HelpDesk_BIOS/"
+    },
+    "ASUS RT-AX1800|https://www.asus.com/supportonly/RT-AX1800/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:04:31+00:00",
+      "pdid": "14688",
+      "product": "ASUS RT-AX1800",
+      "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
+      "url": "https://www.asus.com/supportonly/RT-AX1800/HelpDesk_BIOS/"
+    },
+    "ASUS RT-N11+|https://www.asus.com/supportonly/RT-N11%2B/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:05:46+00:00",
+      "pdid": "3131",
+      "product": "ASUS RT-N11+",
+      "reason": "ASUS API returned FAIL: Input string was not in a correct format.",
+      "url": "https://www.asus.com/supportonly/RT-N11%2B/HelpDesk_BIOS/"
+    },
+    "ASUS RT-N11|https://www.asus.com/supportonly/RT-N11/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:05:44+00:00",
+      "pdid": "1821",
+      "product": "ASUS RT-N11",
+      "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
+      "url": "https://www.asus.com/supportonly/RT-N11/HelpDesk_BIOS/"
+    },
+    "ASUS RT-N56U B1|https://www.asus.com/supportonly/RT-N56U%20B1/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:06:15+00:00",
+      "pdid": "7657",
+      "product": "ASUS RT-N56U B1",
+      "reason": "ASUS API returned FAIL: Input string was not in a correct format.",
+      "url": "https://www.asus.com/supportonly/RT-N56U%20B1/HelpDesk_BIOS/"
+    },
+    "ASUS RT-N65U|https://www.asus.com/supportonly/RT-N65U/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:06:19+00:00",
+      "pdid": "4983",
+      "product": "ASUS RT-N65U",
+      "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
+      "url": "https://www.asus.com/supportonly/RT-N65U/HelpDesk_BIOS/"
+    },
+    "ASUS TUF GAMING \u5c0f\u65cb\u98ce|https://www.asus.com/supportonly/TUF%20GAMING%20%E5%B0%8F%E6%97%8B%E9%A3%8E/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:06:28+00:00",
+      "pdid": "25928",
+      "product": "ASUS TUF GAMING \u5c0f\u65cb\u98ce",
+      "reason": "ASUS API returned FAIL: Input string was not in a correct format.",
+      "url": "https://www.asus.com/supportonly/TUF%20GAMING%20%E5%B0%8F%E6%97%8B%E9%A3%8E/HelpDesk_BIOS/"
+    },
+    "ASUS USB-AC56|https://www.asus.com/supportonly/USB-AC56/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:06:43+00:00",
+      "pdid": "5298",
+      "product": "ASUS USB-AC56",
+      "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
+      "url": "https://www.asus.com/supportonly/USB-AC56/HelpDesk_BIOS/"
+    },
+    "ASUS WL-106gM|https://www.asus.com/supportonly/WL-106gM/HelpDesk_BIOS/": {
+      "category": "Wireless Routers",
+      "checked_at": "2026-06-28T15:06:45+00:00",
+      "pdid": "638",
+      "product": "ASUS WL-106gM",
+      "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
+      "url": "https://www.asus.com/supportonly/WL-106gM/HelpDesk_BIOS/"
+    }
+  }
+}

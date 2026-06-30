@@ -9,10 +9,17 @@ from .models import FirmwareRecord, safe_name
 
 
 class FirmwareAuditor:
-    def __init__(self, root: Path, ghidra_headless: str | None = None, max_ghidra_files: int = 5) -> None:
+    def __init__(
+        self,
+        root: Path,
+        ghidra_headless: str | None = None,
+        max_ghidra_files: int = 5,
+        max_extract_bytes: int | None = None,
+    ) -> None:
         self.root = root
         self.ghidra_headless = ghidra_headless or _find_ghidra_headless()
         self.max_ghidra_files = max_ghidra_files
+        self.max_extract_bytes = max_extract_bytes
 
     def audit(self, record: FirmwareRecord) -> Path:
         firmware_path = self.root / record.path
@@ -41,11 +48,41 @@ class FirmwareAuditor:
             return notes
         if shutil.which("binwalk"):
             cmd = ["binwalk", "-eM", "--directory", str(extract_dir), str(firmware_path)]
-            result = subprocess.run(cmd, text=True, capture_output=True, timeout=1800)
-            notes.append(_command_note(cmd, result))
+            notes.append(self._run_extract_command(cmd, extract_dir))
         else:
             notes.append("binwalk not found; extraction skipped.")
         return notes
+
+    def _run_extract_command(self, cmd: list[str], extract_dir: Path) -> str:
+        if not self.max_extract_bytes:
+            result = subprocess.run(cmd, text=True, capture_output=True, timeout=1800)
+            return _command_note(cmd, result)
+
+        process = subprocess.Popen(cmd, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        try:
+            stdout, stderr = process.communicate(timeout=5)
+        except subprocess.TimeoutExpired:
+            stdout = ""
+            stderr = ""
+
+        while process.poll() is None:
+            if _directory_size(extract_dir) > self.max_extract_bytes:
+                process.kill()
+                tail = ""
+                try:
+                    _stdout, stderr = process.communicate(timeout=10)
+                    tail = (stderr or "").strip().splitlines()[-1] if stderr else ""
+                except subprocess.TimeoutExpired:
+                    pass
+                limit_mb = round(self.max_extract_bytes / (1024 * 1024))
+                return f"{' '.join(cmd[:4])} stopped: extraction exceeded {limit_mb} MB" + (f": {tail}" if tail else "")
+            try:
+                stdout, stderr = process.communicate(timeout=5)
+            except subprocess.TimeoutExpired:
+                continue
+
+        result = subprocess.CompletedProcess(cmd, process.returncode or 0, stdout, stderr)
+        return _command_note(cmd, result)
 
     def _collect_strings(self, files: list[Path]) -> list[str]:
         strings_bin = shutil.which("strings")
@@ -234,3 +271,16 @@ def _find_ghidra_headless() -> str | None:
         if candidate.is_file():
             return str(candidate)
     return None
+
+
+def _directory_size(path: Path) -> int:
+    total = 0
+    if not path.exists():
+        return total
+    for child in path.rglob("*"):
+        try:
+            if child.is_file():
+                total += child.stat().st_size
+        except OSError:
+            continue
+    return total

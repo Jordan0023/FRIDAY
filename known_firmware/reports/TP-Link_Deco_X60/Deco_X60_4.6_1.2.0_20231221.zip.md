@@ -1,0 +1,34 @@
+# Firmware Audit: TP-Link Deco X60 / Deco_X60_4.6_1.2.0_20231221.zip
+
+- Source URL: https://static.tp-link.com/upload/firmware/2024/202402/20240205/Deco_X60_4.6_1.2.0_20231221.zip
+- Local path: known_firmware/firmware/TP-Link_Deco_X60/Deco_X60_4.6_1.2.0_20231221.zip
+- SHA-256: `77861e1e9b6290eb5284cf4196e0b53ff437fa835b4f93e2e05694b7626147d8`
+- Size: 36281640 bytes
+- Version: V4.6_1.2.0 Build 20231221
+- Release date: 2024-02-05
+
+## Static Findings
+
+### HTTP CGI/admin attack surface
+
+Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.
+
+Evidence: `BOa, bOA, bOa, boA, boa`
+
+### Command execution helpers
+
+Command execution paths are common command-injection sinks when reachable from web or network inputs.
+
+Evidence: `EvAl, System`
+
+## Extraction Notes
+
+- binwalk -eM --directory known_firmware/extracted/77861e1e9b6290eb exited 0: WARNING: Extractor.execute failed to run external extractor 'ubireader_extract_files -o 'ubifs-root' '%e'': [Errno 2] No such file or directory: 'ubireader_extract_files', 'ubireader_extract_files -o 'ubifs-root' '%e'' might not be installed correctly
+
+## Decompiler Notes
+
+- Ghidra analyzeHeadless not found; decompiler import skipped.
+
+## Validation Needed
+
+These are static-analysis leads. Confirm reachability, affected versions, exploit preconditions, and vendor-fixed versions before treating any item as a vulnerability.

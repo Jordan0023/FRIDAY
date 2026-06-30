@@ -19,6 +19,7 @@ def main() -> int:
     parser.add_argument("--timeout", type=int, default=45, help="Network/browser timeout in seconds.")
     parser.add_argument("--limit-products", type=int, default=None)
     parser.add_argument("--limit-firmware", type=int, default=None)
+    parser.add_argument("--product-timeout", type=int, default=None, help="Maximum seconds to spend discovering one product before skipping it.")
     parser.add_argument("--product", action="append", default=[], help="Seed a product model, e.g. R7000. Repeatable.")
     parser.add_argument("--products-file", type=Path, help="Text file of product models, one per line.")
     parser.add_argument(
@@ -46,6 +47,7 @@ def main() -> int:
         limit_products=args.limit_products,
         limit_firmware=args.limit_firmware,
         seed_products=seed_products,
+        product_timeout=args.product_timeout,
     )
     print(f"Firmware links checked: {checked}")
     print(f"New downloads: {downloaded}")

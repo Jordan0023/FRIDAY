@@ -1,0 +1,23 @@
+# Firmware Audit: ASUS RT-AC2900 / FW_RT_AC2900_3.0.0.4_384_45149.zip
+
+- Source URL: https://dlcdnta.asus.com/pub/ASUS/wireless/RT-AC2900/FW_RT_AC2900_3.0.0.4_384_45149.zip
+- Local path: known_firmware/firmware/ASUS_RT-AC2900/FW_RT_AC2900_3.0.0.4_384_45149.zip
+- SHA-256: `c2deee875b00fc5e2e92f604907f3f37480342dc4ff7904caa81e71b58d6262a`
+- Size: 63546338 bytes
+- Version: 3.0.0.4.384.45149
+- Release date: 2018/12/05
+
+## Static Findings
+
+No heuristic findings were identified. This does not prove the firmware is vulnerability-free.
+## Extraction Notes
+
+- binwalk -eM --directory known_firmware/extracted/c2deee875b00fc5e exited 0: WARNING: Extractor.execute failed to run external extractor 'ubireader_extract_files -o 'ubifs-root' '%e'': [Errno 2] No such file or directory: 'ubireader_extract_files', 'ubireader_extract_files -o 'ubifs-root' '%e'' might not be installed correctly
+
+## Decompiler Notes
+
+- Ghidra analyzeHeadless not found; decompiler import skipped.
+
+## Validation Needed
+
+These are static-analysis leads. Confirm reachability, affected versions, exploit preconditions, and vendor-fixed versions before treating any item as a vulnerability.

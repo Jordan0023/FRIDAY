@@ -1,0 +1,532 @@
+{
+  "products": {
+    "TP-Link Archer A10|https://www.tp-link.com/us/support/download/archer-a10/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer A10",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-a10/"
+    },
+    "TP-Link Archer A5|https://www.tp-link.com/us/support/download/archer-a5/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer A5",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-a5/"
+    },
+    "TP-Link Archer A6|https://www.tp-link.com/us/support/download/archer-a6/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer A6",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-a6/"
+    },
+    "TP-Link Archer C2600|https://www.tp-link.com/us/support/download/archer-c2600/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer C2600",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-c2600/"
+    },
+    "TP-Link Archer C2|https://www.tp-link.com/us/support/download/archer-c2/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer C2",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-c2/"
+    },
+    "TP-Link Archer C3000|https://www.tp-link.com/us/support/download/archer-c3000/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer C3000",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-c3000/"
+    },
+    "TP-Link Archer C3200|https://www.tp-link.com/us/support/download/archer-c3200/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer C3200",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-c3200/"
+    },
+    "TP-Link Archer C50|https://www.tp-link.com/us/support/download/archer-c50/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer C50",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-c50/"
+    },
+    "TP-Link Archer C5200|https://www.tp-link.com/us/support/download/archer-c5200/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer C5200",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-c5200/"
+    },
+    "TP-Link Archer C900|https://www.tp-link.com/us/support/download/archer-c900/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer C900",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-c900/"
+    },
+    "TP-Link Archer C9|https://www.tp-link.com/us/support/download/archer-c9/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Archer C9",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-c9/"
+    },
+    "TP-Link Archer CR500|https://www.tp-link.com/us/support/download/archer-cr500/": {
+      "category": "Cable Gateways",
+      "product": "TP-Link Archer CR500",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-cr500/"
+    },
+    "TP-Link Archer CR700|https://www.tp-link.com/us/support/download/archer-cr700/": {
+      "category": "Cable Gateways",
+      "product": "TP-Link Archer CR700",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-cr700/"
+    },
+    "TP-Link Archer D2|https://www.tp-link.com/us/support/download/archer-d2/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link Archer D2",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-d2/"
+    },
+    "TP-Link Archer D5|https://www.tp-link.com/us/support/download/archer-d5/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link Archer D5",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-d5/"
+    },
+    "TP-Link Archer D7|https://www.tp-link.com/us/support/download/archer-d7/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link Archer D7",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-d7/"
+    },
+    "TP-Link Archer D9|https://www.tp-link.com/us/support/download/archer-d9/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link Archer D9",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/archer-d9/"
+    },
+    "TP-Link CR1900|https://www.tp-link.com/us/support/download/cr1900/": {
+      "category": "Cable Gateways",
+      "product": "TP-Link CR1900",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/cr1900/"
+    },
+    "TP-Link Deco BE3600|https://www.tp-link.com/us/support/download/deco-be3600/": {
+      "category": "All Products",
+      "product": "TP-Link Deco BE3600",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/deco-be3600/"
+    },
+    "TP-Link Deco E3|https://www.tp-link.com/us/support/download/deco-e3/": {
+      "category": "All Products",
+      "product": "TP-Link Deco E3",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/deco-e3/"
+    },
+    "TP-Link Deco M3W|https://www.tp-link.com/us/support/download/deco-m3w/": {
+      "category": "All Products",
+      "product": "TP-Link Deco M3W",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/deco-m3w/"
+    },
+    "TP-Link Deco X1500|https://www.tp-link.com/us/support/download/deco-x1500/": {
+      "category": "All Products",
+      "product": "TP-Link Deco X1500",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/deco-x1500/"
+    },
+    "TP-Link ER603WP-4G-Outdoor|https://www.tp-link.com/us/support/download/er603wp-4g-outdoor/": {
+      "category": "4G Wi-Fi Gateways",
+      "product": "TP-Link ER603WP-4G-Outdoor",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er603wp-4g-outdoor/"
+    },
+    "TP-Link ER605|https://www.tp-link.com/us/support/download/er605/": {
+      "category": "Wired Gateways",
+      "product": "TP-Link ER605",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er605/"
+    },
+    "TP-Link ER703WP-4G-Outdoor|https://www.tp-link.com/us/support/download/er703wp-4g-outdoor/": {
+      "category": "4G Wi-Fi Gateways",
+      "product": "TP-Link ER703WP-4G-Outdoor",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er703wp-4g-outdoor/"
+    },
+    "TP-Link ER706W-4G|https://www.tp-link.com/us/support/download/er706w-4g/": {
+      "category": "4G Wi-Fi Gateways",
+      "product": "TP-Link ER706W-4G",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er706w-4g/"
+    },
+    "TP-Link ER706WP-4G|https://www.tp-link.com/us/support/download/er706wp-4g/": {
+      "category": "4G Wi-Fi Gateways",
+      "product": "TP-Link ER706WP-4G",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er706wp-4g/"
+    },
+    "TP-Link ER706W|https://www.tp-link.com/us/support/download/er706w/": {
+      "category": "Wi-Fi Gateways",
+      "product": "TP-Link ER706W",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er706w/"
+    },
+    "TP-Link ER707-M2|https://www.tp-link.com/us/support/download/er707-m2/": {
+      "category": "Wired Gateways",
+      "product": "TP-Link ER707-M2",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er707-m2/"
+    },
+    "TP-Link ER7206|https://www.tp-link.com/us/support/download/er7206/": {
+      "category": "Wired Gateways",
+      "product": "TP-Link ER7206",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er7206/"
+    },
+    "TP-Link ER7212PC|https://www.tp-link.com/us/support/download/er7212pc/": {
+      "category": "Integrated Gateways",
+      "product": "TP-Link ER7212PC",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er7212pc/"
+    },
+    "TP-Link ER7406|https://www.tp-link.com/us/support/download/er7406/": {
+      "category": "Wired Gateways",
+      "product": "TP-Link ER7406",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er7406/"
+    },
+    "TP-Link ER7412-M2|https://www.tp-link.com/us/support/download/er7412-m2/": {
+      "category": "Wired Gateways",
+      "product": "TP-Link ER7412-M2",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er7412-m2/"
+    },
+    "TP-Link ER8411|https://www.tp-link.com/us/support/download/er8411/": {
+      "category": "Wired Gateways",
+      "product": "TP-Link ER8411",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/er8411/"
+    },
+    "TP-Link Fusion 2.5G PoE|https://www.tp-link.com/us/support/download/fusion-2.5g-poe/": {
+      "category": "Fusion Series",
+      "product": "TP-Link Fusion 2.5G PoE",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/fusion-2.5g-poe/"
+    },
+    "TP-Link Fusion 2.5G|https://www.tp-link.com/us/support/download/fusion-2.5g/": {
+      "category": "Fusion Series",
+      "product": "TP-Link Fusion 2.5G",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/fusion-2.5g/"
+    },
+    "TP-Link Fusion G+|https://www.tp-link.com/us/support/download/fusion-g+/": {
+      "category": "Fusion Series",
+      "product": "TP-Link Fusion G+",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/fusion-g+/"
+    },
+    "TP-Link Fusion Pro 2.5G PoE|https://www.tp-link.com/us/support/download/fusion-pro-2.5g-poe/": {
+      "category": "Fusion Pro Series",
+      "product": "TP-Link Fusion Pro 2.5G PoE",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/fusion-pro-2.5g-poe/"
+    },
+    "TP-Link Fusion Pro 2.5G|https://www.tp-link.com/us/support/download/fusion-pro-2.5g/": {
+      "category": "Fusion Pro Series",
+      "product": "TP-Link Fusion Pro 2.5G",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/fusion-pro-2.5g/"
+    },
+    "TP-Link G36W-4G|https://www.tp-link.com/us/support/download/g36w-4g/": {
+      "category": "4G Wi-Fi Gateways",
+      "product": "TP-Link G36W-4G",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/g36w-4g/"
+    },
+    "TP-Link G36|https://www.tp-link.com/us/support/download/g36/": {
+      "category": "Wired Gateways",
+      "product": "TP-Link G36",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/g36/"
+    },
+    "TP-Link G611|https://www.tp-link.com/us/support/download/g611/": {
+      "category": "Wired Gateways",
+      "product": "TP-Link G611",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/g611/"
+    },
+    "TP-Link SR20|https://www.tp-link.com/us/support/download/sr20/": {
+      "category": "Smart Home Router",
+      "product": "TP-Link SR20",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/sr20/"
+    },
+    "TP-Link TC-7610|https://www.tp-link.com/us/support/download/tc-7610/": {
+      "category": "Cable Modems",
+      "product": "TP-Link TC-7610",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tc-7610/"
+    },
+    "TP-Link TC-7620|https://www.tp-link.com/us/support/download/tc-7620/": {
+      "category": "Cable Modems & Routers",
+      "product": "TP-Link TC-7620",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tc-7620/"
+    },
+    "TP-Link TC-W7960|https://www.tp-link.com/us/support/download/tc-w7960/": {
+      "category": "Cable Gateways",
+      "product": "TP-Link TC-W7960",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tc-w7960/"
+    },
+    "TP-Link TC7650|https://www.tp-link.com/us/support/download/tc7650/": {
+      "category": "Cable Modems & Routers",
+      "product": "TP-Link TC7650",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tc7650/"
+    },
+    "TP-Link TD-8616|https://www.tp-link.com/us/support/download/td-8616/": {
+      "category": "DSL Modems",
+      "product": "TP-Link TD-8616",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-8616/"
+    },
+    "TP-Link TD-8816|https://www.tp-link.com/us/support/download/td-8816/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link TD-8816",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-8816/"
+    },
+    "TP-Link TD-8817|https://www.tp-link.com/us/support/download/td-8817/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link TD-8817",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-8817/"
+    },
+    "TP-Link TD-8840T|https://www.tp-link.com/us/support/download/td-8840t/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link TD-8840T",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-8840t/"
+    },
+    "TP-Link TD-W8951ND|https://www.tp-link.com/us/support/download/td-w8951nd/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link TD-W8951ND",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-w8951nd/"
+    },
+    "TP-Link TD-W8960N|https://www.tp-link.com/us/support/download/td-w8960n/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link TD-W8960N",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-w8960n/"
+    },
+    "TP-Link TD-W8961ND|https://www.tp-link.com/us/support/download/td-w8961nd/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link TD-W8961ND",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-w8961nd/"
+    },
+    "TP-Link TD-W8961N|https://www.tp-link.com/us/support/download/td-w8961n/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link TD-W8961N",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-w8961n/"
+    },
+    "TP-Link TD-W8968|https://www.tp-link.com/us/support/download/td-w8968/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link TD-W8968",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-w8968/"
+    },
+    "TP-Link TD-W8970|https://www.tp-link.com/us/support/download/td-w8970/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link TD-W8970",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-w8970/"
+    },
+    "TP-Link TD-W8980|https://www.tp-link.com/us/support/download/td-w8980/": {
+      "category": "DSL Gateway",
+      "product": "TP-Link TD-W8980",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/td-w8980/"
+    },
+    "TP-Link TL-ER5120|https://www.tp-link.com/us/support/download/tl-er5120/": {
+      "category": "Load Balance Routers",
+      "product": "TP-Link TL-ER5120",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-er5120/"
+    },
+    "TP-Link TL-ER6020|https://www.tp-link.com/us/support/download/tl-er6020/": {
+      "category": "VPN Router",
+      "product": "TP-Link TL-ER6020",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-er6020/"
+    },
+    "TP-Link TL-ER604W|https://www.tp-link.com/us/support/download/tl-er604w/": {
+      "category": "VPN Router",
+      "product": "TP-Link TL-ER604W",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-er604w/"
+    },
+    "TP-Link TL-ER6120|https://www.tp-link.com/us/support/download/tl-er6120/": {
+      "category": "VPN Router",
+      "product": "TP-Link TL-ER6120",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-er6120/"
+    },
+    "TP-Link TL-MR3020|https://www.tp-link.com/us/support/download/tl-mr3020/": {
+      "category": "5G/4G Routers",
+      "product": "TP-Link TL-MR3020",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-mr3020/"
+    },
+    "TP-Link TL-MR3220|https://www.tp-link.com/us/support/download/tl-mr3220/": {
+      "category": "5G/4G Routers",
+      "product": "TP-Link TL-MR3220",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-mr3220/"
+    },
+    "TP-Link TL-R402M|https://www.tp-link.com/us/support/download/tl-r402m/": {
+      "category": "Wired Routers",
+      "product": "TP-Link TL-R402M",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-r402m/"
+    },
+    "TP-Link TL-R460|https://www.tp-link.com/us/support/download/tl-r460/": {
+      "category": "Wired Routers",
+      "product": "TP-Link TL-R460",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-r460/"
+    },
+    "TP-Link TL-R470T+|https://www.tp-link.com/us/support/download/tl-r470t+/": {
+      "category": "Load Balance Routers",
+      "product": "TP-Link TL-R470T+",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-r470t+/"
+    },
+    "TP-Link TL-R480T+|https://www.tp-link.com/us/support/download/tl-r480t+/": {
+      "category": "Load Balance Routers",
+      "product": "TP-Link TL-R480T+",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-r480t+/"
+    },
+    "TP-Link TL-R600VPN|https://www.tp-link.com/us/support/download/tl-r600vpn/": {
+      "category": "VPN Router",
+      "product": "TP-Link TL-R600VPN",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-r600vpn/"
+    },
+    "TP-Link TL-R860|https://www.tp-link.com/us/support/download/tl-r860/": {
+      "category": "Wired Routers",
+      "product": "TP-Link TL-R860",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-r860/"
+    },
+    "TP-Link TL-WDR3500|https://www.tp-link.com/us/support/download/tl-wdr3500/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WDR3500",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wdr3500/"
+    },
+    "TP-Link TL-WDR3600|https://www.tp-link.com/us/support/download/tl-wdr3600/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WDR3600",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wdr3600/"
+    },
+    "TP-Link TL-WDR4300|https://www.tp-link.com/us/support/download/tl-wdr4300/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WDR4300",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wdr4300/"
+    },
+    "TP-Link TL-WR1042ND|https://www.tp-link.com/us/support/download/tl-wr1042nd/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR1042ND",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr1042nd/"
+    },
+    "TP-Link TL-WR1043ND|https://www.tp-link.com/us/support/download/tl-wr1043nd/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR1043ND",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr1043nd/"
+    },
+    "TP-Link TL-WR1043N|https://www.tp-link.com/us/support/download/tl-wr1043n/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR1043N",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr1043n/"
+    },
+    "TP-Link TL-WR700N|https://www.tp-link.com/us/support/download/tl-wr700n/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR700N",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr700n/"
+    },
+    "TP-Link TL-WR702N|https://www.tp-link.com/us/support/download/tl-wr702n/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR702N",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr702n/"
+    },
+    "TP-Link TL-WR710N|https://www.tp-link.com/us/support/download/tl-wr710n/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR710N",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr710n/"
+    },
+    "TP-Link TL-WR720N|https://www.tp-link.com/us/support/download/tl-wr720n/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR720N",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr720n/"
+    },
+    "TP-Link TL-WR740N|https://www.tp-link.com/us/support/download/tl-wr740n/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR740N",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr740n/"
+    },
+    "TP-Link TL-WR741ND|https://www.tp-link.com/us/support/download/tl-wr741nd/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR741ND",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr741nd/"
+    },
+    "TP-Link TL-WR743ND|https://www.tp-link.com/us/support/download/tl-wr743nd/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR743ND",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr743nd/"
+    },
+    "TP-Link TL-WR810N|https://www.tp-link.com/us/support/download/tl-wr810n/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR810N",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr810n/"
+    },
+    "TP-Link TL-WR841ND|https://www.tp-link.com/us/support/download/tl-wr841nd/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR841ND",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr841nd/"
+    },
+    "TP-Link TL-WR842ND|https://www.tp-link.com/us/support/download/tl-wr842nd/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR842ND",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr842nd/"
+    },
+    "TP-Link TL-WR842N|https://www.tp-link.com/us/support/download/tl-wr842n/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link TL-WR842N",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/tl-wr842n/"
+    },
+    "TP-Link Touch P5|https://www.tp-link.com/us/support/download/touch-p5/": {
+      "category": "WiFi Routers",
+      "product": "TP-Link Touch P5",
+      "reason": "No firmware links listed",
+      "url": "https://www.tp-link.com/us/support/download/touch-p5/"
+    }
+  }
+}

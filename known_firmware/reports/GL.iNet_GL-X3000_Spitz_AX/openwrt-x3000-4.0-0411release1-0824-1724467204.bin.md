@@ -1,0 +1,40 @@
+# Firmware Audit: GL.iNet GL-X3000 Spitz AX / openwrt-x3000-4.0-0411release1-0824-1724467204.bin
+
+- Source URL: https://fw.gl-inet.com/firmware/x3000/release/openwrt-x3000-4.0-0411release1-0824-1724467204.bin
+- Local path: known_firmware/firmware/GL.iNet_GL-X3000_Spitz_AX/openwrt-x3000-4.0-0411release1-0824-1724467204.bin
+- SHA-256: `00b1ee7136ba06546ce2176fe87aba686797de6653223e0c0be1ced2c6a8d33d`
+- Size: 60631749 bytes
+- Version: 4.4.11
+- Release date: 2024-08-24 10:37:08
+
+## Static Findings
+
+### Hard-coded credentials or secrets
+
+Hard-coded secrets should be reviewed for default credentials, service tokens, or recoverable admin passwords.
+
+Evidence: `password`
+
+### Command execution helpers
+
+Command execution paths are common command-injection sinks when reachable from web or network inputs.
+
+Evidence: `System, eval, popen, system`
+
+### Potential memory-unsafe C functions
+
+Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.
+
+Evidence: `sprintf, strcat, strcpy`
+
+## Extraction Notes
+
+- binwalk -eM --directory known_firmware/extracted/00b1ee7136ba0654 stopped: extraction exceeded 768 MB
+
+## Decompiler Notes
+
+- Ghidra analyzeHeadless not found; decompiler import skipped.
+
+## Validation Needed
+
+These are static-analysis leads. Confirm reachability, affected versions, exploit preconditions, and vendor-fixed versions before treating any item as a vulnerability.

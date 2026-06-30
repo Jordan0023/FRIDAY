@@ -116,7 +116,8 @@ class NetgearDiscovery:
             browser = p.chromium.launch(headless=True)
             try:
                 page = browser.new_page()
-                page.goto(category_url, wait_until="networkidle", timeout=self.timeout * 1000)
+                page.goto(category_url, wait_until="domcontentloaded", timeout=self.timeout * 1000)
+                page.wait_for_selector("body", timeout=self.timeout * 1000)
                 _scroll_page(page)
                 hrefs = page.eval_on_selector_all("a[href]", "els => els.map(a => a.href)")
             finally:
@@ -156,16 +157,22 @@ class NetgearDiscovery:
                         seen_urls.add(url)
 
                 page.on("response", collect_response)
-                page.goto(product.url, wait_until="networkidle", timeout=self.timeout * 1000)
+                page.goto(product.url, wait_until="domcontentloaded", timeout=self.timeout * 1000)
+                page.wait_for_selector("body", timeout=self.timeout * 1000)
                 for label in ("Downloads", "Firmware", "Software"):
                     try:
                         page.get_by_text(label, exact=False).first.click(timeout=2000)
-                        page.wait_for_load_state("networkidle", timeout=10000)
+                        page.wait_for_timeout(1500)
                     except Exception as exc:
                         self._remember_error(f"Could not click {label!r} for {product.name}", exc)
+                expanded_links = _expand_previous_firmware_versions(page, product.name, self._remember_error)
                 _scroll_page(page)
-                hrefs = page.eval_on_selector_all("a[href]", "els => els.map(a => a.href)")
-                texts = page.eval_on_selector_all("a[href]", "els => els.map(a => a.innerText || a.textContent || '')")
+                current_links = page.eval_on_selector_all(
+                    "a[href]", "els => els.map(a => [a.href, a.innerText || a.textContent || ''])"
+                )
+                all_links = expanded_links + current_links
+                hrefs = [href for href, _ in all_links]
+                texts = [text for _, text in all_links]
             finally:
                 browser.close()
         for href, text in zip(hrefs, texts):
@@ -280,11 +287,58 @@ def _unique_firmware(links: list[FirmwareLink]) -> list[FirmwareLink]:
 
 
 def _scroll_page(page: object) -> None:
-    last_height = 0
-    for _ in range(12):
+    last_state = (0, 0)
+    stable_rounds = 0
+    for _ in range(30):
         height = page.evaluate("document.body.scrollHeight")
-        if height == last_height:
+        href_count = page.eval_on_selector_all("a[href]", "els => els.length")
+        state = (height, href_count)
+        if state == last_state:
+            stable_rounds += 1
+        else:
+            stable_rounds = 0
+        if stable_rounds >= 3:
             break
-        last_height = height
+        last_state = state
         page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
         page.wait_for_timeout(1000)
+
+
+def _expand_previous_firmware_versions(page: object, product_name: str, remember_error: object) -> list[tuple[str, str]]:
+    links: list[tuple[str, str]] = []
+
+    def collect_links() -> None:
+        for href, text in page.eval_on_selector_all(
+            "a[href]", "els => els.map(a => [a.href, a.innerText || a.textContent || ''])"
+        ):
+            if _looks_like_firmware_url(href, product_name):
+                links.append((href, text))
+
+    collect_links()
+    for label in ("View Previous Versions", "Previous Versions"):
+        try:
+            previous = page.get_by_text(label, exact=False)
+            if previous.count() == 0:
+                continue
+            previous.first.click(timeout=3000)
+            page.wait_for_timeout(2000)
+            collect_links()
+            break
+        except Exception as exc:
+            remember_error(f"Could not expand previous versions for {product_name}", exc)
+
+    try:
+        versions = page.get_by_text(re.compile(r"^Firmware Version\b", re.I), exact=False)
+        count = versions.count()
+    except Exception as exc:
+        remember_error(f"Could not enumerate firmware versions for {product_name}", exc)
+        return links
+
+    for index in range(count):
+        try:
+            versions.nth(index).click(timeout=3000)
+            page.wait_for_timeout(750)
+            collect_links()
+        except Exception as exc:
+            remember_error(f"Could not expand firmware version {index + 1} for {product_name}", exc)
+    return links

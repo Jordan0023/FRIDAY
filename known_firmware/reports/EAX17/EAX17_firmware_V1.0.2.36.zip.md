@@ -1,0 +1,28 @@
+# Firmware Audit: EAX17 / EAX17_firmware_V1.0.2.36.zip
+
+- Source URL: https://www.downloads.netgear.com/files/GDC/EAX17/EAX17_firmware_V1.0.2.36.zip
+- Local path: known_firmware/firmware/EAX17/EAX17_firmware_V1.0.2.36.zip
+- SHA-256: `db6751f294bd2e547d9b020b3b208e750b0be836795ce093fd0aa209fb6305df`
+- Size: 29450306 bytes
+- Version: 0.2.36
+- Release date: unknown
+
+## Static Findings
+
+### HTTP CGI/admin attack surface
+
+Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.
+
+Evidence: `Boa`
+
+## Extraction Notes
+
+- binwalk -eM --directory known_firmware/extracted/db6751f294bd2e54 exited 0
+
+## Decompiler Notes
+
+- Ghidra analyzeHeadless not found; decompiler import skipped.
+
+## Validation Needed
+
+These are static-analysis leads. Confirm reachability, affected versions, exploit preconditions, and vendor-fixed versions before treating any item as a vulnerability.

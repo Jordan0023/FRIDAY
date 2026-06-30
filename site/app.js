@@ -12,6 +12,7 @@ const elements = {
   visibleCount: document.querySelector("#visibleCount"),
   firmwareRows: document.querySelector("#firmwareRows"),
   findingChart: document.querySelector("#findingChart"),
+  brandFilter: document.querySelector("#brandFilter"),
   findingFilter: document.querySelector("#findingFilter"),
   sortOrder: document.querySelector("#sortOrder"),
   searchInput: document.querySelector("#searchInput"),
@@ -52,6 +53,7 @@ function hydrate() {
   state.data.firmware = state.data.firmware.map(normalizeRecord);
   state.selectedSha = state.data.firmware[0]?.sha256 || null;
   populateSummary();
+  populateBrandFilter();
   populateFindingFilter();
   renderChart();
   applyFilters();
@@ -67,9 +69,11 @@ function populateSummary() {
 
 function normalizeRecord(record) {
   const version = record.version || versionFromFilename(record.filename) || "Not listed";
-  const title = record.title || routerTitle(record.product, version);
+  const vendor = vendorName(record);
+  const title = displayTitle(record, vendor, version);
   return {
     ...record,
+    vendor,
     title,
     version,
     uploaded_at: record.uploaded_at || record.release_date || "",
@@ -83,6 +87,21 @@ function normalizeRecord(record) {
       reason: record.findings?.[0]?.title || "No heuristic findings were identified.",
     },
   };
+}
+
+function populateBrandFilter() {
+  const current = elements.brandFilter.value;
+  const brands = Array.from(new Set(state.data.firmware.map((record) => record.vendor))).sort((a, b) =>
+    a.localeCompare(b, undefined, { sensitivity: "base" })
+  );
+  elements.brandFilter.innerHTML = '<option value="">All brands</option>';
+  brands.forEach((brand) => {
+    const option = document.createElement("option");
+    option.value = brand;
+    option.textContent = brand;
+    elements.brandFilter.append(option);
+  });
+  elements.brandFilter.value = brands.includes(current) ? current : "";
 }
 
 function populateFindingFilter() {
@@ -124,6 +143,7 @@ function renderChart() {
 
 function applyFilters() {
   const query = elements.searchInput.value.trim().toLowerCase();
+  const brand = elements.brandFilter.value;
   const finding = elements.findingFilter.value;
   const findingsOnly = elements.hasFindingsOnly.checked;
   const sortOrder = elements.sortOrder.value;
@@ -131,6 +151,7 @@ function applyFilters() {
   state.filtered = state.data.firmware.filter((record) => {
     const haystack = [
       record.title,
+      record.vendor,
       record.product,
       record.filename,
       record.version,
@@ -142,9 +163,10 @@ function applyFilters() {
       .join(" ")
       .toLowerCase();
     const matchesQuery = !query || haystack.includes(query);
+    const matchesBrand = !brand || record.vendor === brand;
     const matchesFinding = !finding || record.findings.some((item) => item.title === finding);
     const matchesFindingsOnly = !findingsOnly || record.findings.length > 0;
-    return matchesQuery && matchesFinding && matchesFindingsOnly;
+    return matchesQuery && matchesBrand && matchesFinding && matchesFindingsOnly;
   });
   sortRecords(state.filtered, sortOrder);
 
@@ -202,6 +224,9 @@ function sortRecords(records, sortOrder) {
     }
     if (sortOrder === "priority_desc") {
       return (b.severity?.rank || 0) - (a.severity?.rank || 0) || byName(a, b);
+    }
+    if (sortOrder === "priority_asc") {
+      return (a.severity?.rank || 0) - (b.severity?.rank || 0) || byName(a, b);
     }
     return dateValue(a.uploaded_at) - dateValue(b.uploaded_at) || byName(a, b);
   });
@@ -282,11 +307,51 @@ function priorityClass(label) {
   return String(label).toLowerCase().replaceAll(" ", "-");
 }
 
-function routerTitle(product, version) {
+function routerTitle(record, version) {
+  const product = record.product || "Unknown model";
+  const vendor = vendorName(record);
+  const displayProduct = productWithoutVendor(product, vendor);
   if (version && version !== "Not listed") {
-    return `Netgear ${product || "Unknown model"} firmware ${version}`;
+    return `${vendor} ${displayProduct || "Unknown model"} firmware ${version}`;
   }
-  return `Netgear ${product || "Unknown model"} firmware`;
+  return `${vendor} ${displayProduct || "Unknown model"} firmware`;
+}
+
+function displayTitle(record, vendor, version) {
+  const title = record.title || routerTitle(record, version);
+  const product = record.product || "";
+  const displayProduct = productWithoutVendor(product, vendor);
+  const duplicate = `${vendor} ${product}`;
+  if (product && title.toLowerCase().startsWith(duplicate.toLowerCase())) {
+    return `${vendor} ${displayProduct}${title.slice(duplicate.length)}`;
+  }
+  return title;
+}
+
+function vendorName(record) {
+  const product = record.product || "";
+  const url = String(record.url || "").toLowerCase();
+  const path = String(record.path || "").toLowerCase();
+  if (product.startsWith("ASUS ") || url.includes("asus.com") || path.includes("/asus_")) return "ASUS";
+  if (product.startsWith("TP-Link ") || url.includes("tp-link.com") || path.includes("/tp-link_")) return "TP-Link";
+  if (product.startsWith("GL.iNet ") || url.includes("gl-inet.com") || path.includes("/gl.inet_")) return "GL.iNet";
+  if (product.startsWith("OpenWrt ") || url.includes("downloads.openwrt.org") || path.includes("/openwrt_")) return "OpenWrt";
+  return "Netgear";
+}
+
+function productWithoutVendor(product, vendor) {
+  const prefixes = {
+    ASUS: "ASUS ",
+    "TP-Link": "TP-Link ",
+    "GL.iNet": "GL.iNet ",
+    OpenWrt: "OpenWrt ",
+    Netgear: "Netgear ",
+  };
+  const prefix = prefixes[vendor] || "";
+  if (prefix && String(product).toLowerCase().startsWith(prefix.toLowerCase())) {
+    return String(product).slice(prefix.length).trim() || product;
+  }
+  return product;
 }
 
 function versionFromFilename(filename) {
@@ -350,6 +415,7 @@ function escapeAttr(value) {
 }
 
 elements.searchInput.addEventListener("input", applyFilters);
+elements.brandFilter.addEventListener("change", applyFilters);
 elements.findingFilter.addEventListener("change", applyFilters);
 elements.sortOrder.addEventListener("change", applyFilters);
 elements.hasFindingsOnly.addEventListener("change", applyFilters);

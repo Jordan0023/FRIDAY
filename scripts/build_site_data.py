@@ -41,10 +41,12 @@ def main() -> int:
         total_findings += len(findings)
         extracted_count += any("existing extraction directory" in note.lower() for note in extraction_notes)
 
+        vendor = vendor_name(record)
         firmware.append(
             {
+                "vendor": vendor,
                 "product": record.get("product", ""),
-                "title": clean_value(record.get("title")) or router_title(record),
+                "title": display_title(record),
                 "filename": record.get("filename", ""),
                 "version": clean_value(record.get("version")) or version_from_filename(record.get("filename", "")),
                 "release_date": clean_value(record.get("release_date")) or "Not listed",
@@ -161,17 +163,64 @@ def version_from_filename(filename: str) -> str:
 def router_title(record: dict[str, object]) -> str:
     product = clean_value(record.get("product")) or "Unknown model"
     version = clean_value(record.get("version")) or version_from_filename(str(record.get("filename", "")))
+    vendor = vendor_name(record)
+    display_product = product_without_vendor(product, vendor)
     if version and version != "Not listed":
-        return f"Netgear {product} firmware {version}"
-    return f"Netgear {product} firmware"
+        return f"{vendor} {display_product} firmware {version}"
+    return f"{vendor} {display_product} firmware"
+
+
+def display_title(record: dict[str, object]) -> str:
+    title = clean_value(record.get("title")) or router_title(record)
+    vendor = vendor_name(record)
+    product = clean_value(record.get("product"))
+    display_product = product_without_vendor(product, vendor)
+    duplicate = f"{vendor} {product}"
+    if product and title.upper().startswith(duplicate.upper()):
+        return f"{vendor} {display_product}{title[len(duplicate):]}"
+    return title
 
 
 def upload_date_source(record: dict[str, object]) -> str:
+    vendor = vendor_name(record)
+    if vendor == "ASUS":
+        return "ASUS release date" if clean_value(record.get("uploaded_at")) or clean_value(record.get("release_date")) else "Not listed"
+    if vendor == "TP-Link":
+        return "TP-Link published date" if clean_value(record.get("uploaded_at")) or clean_value(record.get("release_date")) else "Not listed"
     if clean_value(record.get("uploaded_at")):
         return "Netgear upload"
     if clean_value(record.get("release_date")):
         return "Release date"
     return "Not listed"
+
+
+def vendor_name(record: dict[str, object]) -> str:
+    product = clean_value(record.get("product"))
+    url = clean_value(record.get("url")).lower()
+    path = clean_value(record.get("path")).lower()
+    if product.upper().startswith("ASUS ") or "asus.com" in url or "/asus_" in path:
+        return "ASUS"
+    if product.upper().startswith("TP-LINK ") or "tp-link.com" in url or "/tp-link_" in path:
+        return "TP-Link"
+    if product.upper().startswith("GL.INET ") or "gl-inet.com" in url or "/gl.inet_" in path:
+        return "GL.iNet"
+    if product.upper().startswith("OPENWRT ") or "downloads.openwrt.org" in url or "/openwrt_" in path:
+        return "OpenWrt"
+    return "Netgear"
+
+
+def product_without_vendor(product: str, vendor: str) -> str:
+    prefixes = {
+        "ASUS": "ASUS ",
+        "TP-Link": "TP-Link ",
+        "GL.iNet": "GL.iNet ",
+        "OpenWrt": "OpenWrt ",
+        "Netgear": "Netgear ",
+    }
+    prefix = prefixes.get(vendor, "")
+    if prefix and product.upper().startswith(prefix.upper()):
+        return product[len(prefix) :].strip() or product
+    return product
 
 
 def assess_severity(categories: list[str]) -> dict[str, str | int]:
