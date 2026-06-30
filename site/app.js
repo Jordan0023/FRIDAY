@@ -173,6 +173,7 @@ function applyFilters() {
   const finding = elements.findingFilter.value;
   const findingsOnly = elements.hasFindingsOnly.checked;
   const sortOrder = elements.sortOrder.value;
+  const productCounts = productFrequency(state.data.firmware);
 
   state.filtered = state.data.firmware.filter((record) => {
     const haystack = [
@@ -196,7 +197,7 @@ function applyFilters() {
     const matchesFindingsOnly = !findingsOnly || record.findings.length > 0;
     return matchesQuery && matchesBrand && matchesRouterType && matchesFinding && matchesFindingsOnly;
   });
-  sortRecords(state.filtered, sortOrder);
+  sortRecords(state.filtered, sortOrder, productCounts);
 
   if (!state.filtered.some((record) => record.sha256 === state.selectedSha)) {
     state.selectedSha = state.filtered[0]?.sha256 || null;
@@ -240,7 +241,7 @@ function selectRecord(sha256) {
   renderDetail();
 }
 
-function sortRecords(records, sortOrder) {
+function sortRecords(records, sortOrder, productCounts = new Map()) {
   const byName = (a, b) =>
     String(a.product || "").localeCompare(String(b.product || ""), undefined, {
       numeric: true,
@@ -260,8 +261,24 @@ function sortRecords(records, sortOrder) {
     if (sortOrder === "uploaded_desc") {
       return dateValue(b.uploaded_at) - dateValue(a.uploaded_at) || byName(a, b);
     }
+    if (sortOrder === "popular_desc") {
+      return popularityValue(b, productCounts) - popularityValue(a, productCounts) || byName(a, b);
+    }
     return dateValue(a.uploaded_at) - dateValue(b.uploaded_at) || byName(a, b);
   });
+}
+
+function productFrequency(records) {
+  const counts = new Map();
+  records.forEach((record) => {
+    const key = String(record.product || "");
+    counts.set(key, (counts.get(key) || 0) + 1);
+  });
+  return counts;
+}
+
+function popularityValue(record, productCounts) {
+  return productCounts.get(String(record.product || "")) || 0;
 }
 
 function dateValue(value) {
