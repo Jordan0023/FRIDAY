@@ -257,6 +257,9 @@ function sortRecords(records, sortOrder) {
     if (sortOrder === "priority_asc") {
       return (a.severity?.rank || 0) - (b.severity?.rank || 0) || byName(a, b);
     }
+    if (sortOrder === "uploaded_desc") {
+      return dateValue(b.uploaded_at) - dateValue(a.uploaded_at) || byName(a, b);
+    }
     return dateValue(a.uploaded_at) - dateValue(b.uploaded_at) || byName(a, b);
   });
 }
