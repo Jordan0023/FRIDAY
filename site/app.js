@@ -13,6 +13,7 @@ const elements = {
   firmwareRows: document.querySelector("#firmwareRows"),
   findingChart: document.querySelector("#findingChart"),
   brandFilter: document.querySelector("#brandFilter"),
+  routerTypeFilter: document.querySelector("#routerTypeFilter"),
   findingFilter: document.querySelector("#findingFilter"),
   sortOrder: document.querySelector("#sortOrder"),
   searchInput: document.querySelector("#searchInput"),
@@ -35,6 +36,8 @@ const recommendedActions = {
     "Trace every caller into this helper, verify user-controlled input cannot reach shell execution, and replace shell calls with argument-safe APIs where possible.",
 };
 
+const routerTypeOrder = ["Gaming", "Commercial", "SOHO", "Personal", "Mesh", "Repeater", "Open source"];
+
 async function loadData() {
   if (window.FIRMWARE_DASHBOARD_DATA) {
     state.data = window.FIRMWARE_DASHBOARD_DATA;
@@ -54,6 +57,7 @@ function hydrate() {
   state.selectedSha = state.data.firmware[0]?.sha256 || null;
   populateSummary();
   populateBrandFilter();
+  populateRouterTypeFilter();
   populateFindingFilter();
   renderChart();
   applyFilters();
@@ -76,6 +80,7 @@ function normalizeRecord(record) {
     vendor,
     title,
     version,
+    router_type: routerType(record, vendor),
     uploaded_at: record.uploaded_at || record.release_date || "",
     first_seen: record.first_seen || record.created_at || "",
     last_seen: record.last_seen || "",
@@ -87,6 +92,26 @@ function normalizeRecord(record) {
       reason: record.findings?.[0]?.title || "No heuristic findings were identified.",
     },
   };
+}
+
+function populateRouterTypeFilter() {
+  const current = elements.routerTypeFilter.value;
+  const types = Array.from(new Set(state.data.firmware.map((record) => record.router_type))).sort((a, b) => {
+    const aIndex = routerTypeOrder.indexOf(a);
+    const bIndex = routerTypeOrder.indexOf(b);
+    if (aIndex !== -1 || bIndex !== -1) {
+      return (aIndex === -1 ? 999 : aIndex) - (bIndex === -1 ? 999 : bIndex);
+    }
+    return a.localeCompare(b, undefined, { sensitivity: "base" });
+  });
+  elements.routerTypeFilter.innerHTML = '<option value="">All types</option>';
+  types.forEach((type) => {
+    const option = document.createElement("option");
+    option.value = type;
+    option.textContent = type;
+    elements.routerTypeFilter.append(option);
+  });
+  elements.routerTypeFilter.value = types.includes(current) ? current : "";
 }
 
 function populateBrandFilter() {
@@ -144,6 +169,7 @@ function renderChart() {
 function applyFilters() {
   const query = elements.searchInput.value.trim().toLowerCase();
   const brand = elements.brandFilter.value;
+  const routerType = elements.routerTypeFilter.value;
   const finding = elements.findingFilter.value;
   const findingsOnly = elements.hasFindingsOnly.checked;
   const sortOrder = elements.sortOrder.value;
@@ -152,6 +178,7 @@ function applyFilters() {
     const haystack = [
       record.title,
       record.vendor,
+      record.router_type,
       record.product,
       record.filename,
       record.version,
@@ -164,9 +191,10 @@ function applyFilters() {
       .toLowerCase();
     const matchesQuery = !query || haystack.includes(query);
     const matchesBrand = !brand || record.vendor === brand;
+    const matchesRouterType = !routerType || record.router_type === routerType;
     const matchesFinding = !finding || record.findings.some((item) => item.title === finding);
     const matchesFindingsOnly = !findingsOnly || record.findings.length > 0;
-    return matchesQuery && matchesBrand && matchesFinding && matchesFindingsOnly;
+    return matchesQuery && matchesBrand && matchesRouterType && matchesFinding && matchesFindingsOnly;
   });
   sortRecords(state.filtered, sortOrder);
 
@@ -188,6 +216,7 @@ function renderRows() {
     tr.tabIndex = 0;
     tr.innerHTML = `
       <td><strong>${escapeHtml(record.product)}</strong><span class="subtext">${escapeHtml(record.title)}</span></td>
+      <td><span class="type-pill">${escapeHtml(record.router_type)}</span></td>
       <td><div class="filename">${escapeHtml(record.filename)}</div><span class="subtext">SHA ${escapeHtml(record.sha256.slice(0, 12))}</span></td>
       <td><strong>${escapeHtml(record.version)}</strong></td>
       <td><strong>${escapeHtml(formatDate(record.uploaded_at))}</strong></td>
@@ -282,6 +311,7 @@ function renderDetail() {
 
   elements.evidencePaths.innerHTML = `
     <dt>Router</dt><dd>${escapeHtml(record.product)}</dd>
+    <dt>Type</dt><dd>${escapeHtml(record.router_type)}</dd>
     <dt>Version</dt><dd>${escapeHtml(record.version)}</dd>
     <dt>Uploaded</dt><dd>${escapeHtml(formatDateTime(record.uploaded_at))}</dd>
     <dt>First Seen</dt><dd>${escapeHtml(formatDateTime(record.first_seen))}</dd>
@@ -337,6 +367,57 @@ function vendorName(record) {
   if (product.startsWith("GL.iNet ") || url.includes("gl-inet.com") || path.includes("/gl.inet_")) return "GL.iNet";
   if (product.startsWith("OpenWrt ") || url.includes("downloads.openwrt.org") || path.includes("/openwrt_")) return "OpenWrt";
   return "Netgear";
+}
+
+function routerType(record, vendor) {
+  const product = String(record.product || "");
+  const filename = String(record.filename || "");
+  const text = `${product} ${filename}`.toLowerCase();
+
+  if (vendor === "OpenWrt") return "Open source";
+
+  if (
+    /\b(rog|tuf|gaming|nighthawk pro gaming|xr\d{3,4}|gt-|gs-|axe11000|ax11000|be19000|be24000)\b/i.test(product)
+  ) {
+    return "Gaming";
+  }
+
+  if (
+    /\b(vpn|business|omada|jetstream|safe ?stream|insight|brume|m2m|gateway|firewall|rackmount|poe|access point|wap|ap\d|bsap|commercial)\b/i.test(
+      product
+    ) ||
+    /\b(brt-|ebg|ebm|ebr|srx|wac|wax|wc|wms|wbe|fvs|srx|utm|ap|eap|er\d|oc\d|tl-r|archer vr|dsl-)\b/i.test(product)
+  ) {
+    return "Commercial";
+  }
+
+  if (
+    /\b(mesh|aimesh|zenwifi|orbi|deco|velop|velica|mlo|satellite|extender system)\b/i.test(product) ||
+    /\b(rb[sk]|cbr|cbk|mk|ms|mr)\d/i.test(product)
+  ) {
+    return "Mesh";
+  }
+
+  if (/\b(repeater|range extender|extender|microuter|rp-|ex\d|wn\d|pl-|powerline)\b/i.test(product)) {
+    return "Repeater";
+  }
+
+  if (
+    /\b(travel|mobile|portable|mifi|mudi|mango|beryl|slate|opal|shadow|creta|spitz|puli|collie|amarok|usb|4g|5g|lte|cellular|hotspot)\b/i.test(
+      product
+    ) ||
+    /\b(gl-ar|gl-mt|gl-a|gl-e|gl-x|gl-usb)\b/i.test(product)
+  ) {
+    return "Personal";
+  }
+
+  if (
+    /\b(soho|home|rt-|rax|rbr|rbs|r\d{4}|wnr|wndr|wgr|wgt|archer|tl-wr|tl-wa|router|wifi)\b/i.test(text)
+  ) {
+    return "SOHO";
+  }
+
+  return "SOHO";
 }
 
 function productWithoutVendor(product, vendor) {
@@ -416,13 +497,14 @@ function escapeAttr(value) {
 
 elements.searchInput.addEventListener("input", applyFilters);
 elements.brandFilter.addEventListener("change", applyFilters);
+elements.routerTypeFilter.addEventListener("change", applyFilters);
 elements.findingFilter.addEventListener("change", applyFilters);
 elements.sortOrder.addEventListener("change", applyFilters);
 elements.hasFindingsOnly.addEventListener("change", applyFilters);
 elements.refreshButton.addEventListener("click", () => loadData().catch(showError));
 
 function showError(error) {
-  elements.firmwareRows.innerHTML = `<tr><td colspan="6">${escapeHtml(error.message)}</td></tr>`;
+  elements.firmwareRows.innerHTML = `<tr><td colspan="7">${escapeHtml(error.message)}</td></tr>`;
 }
 
 loadData().catch(showError);
