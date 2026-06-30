@@ -221,7 +221,7 @@ function renderRows() {
       <td><strong>${escapeHtml(record.version)}</strong></td>
       <td><strong>${escapeHtml(formatDate(record.uploaded_at))}</strong></td>
       <td>${priorityPill(record.severity)}</td>
-      <td>${record.findings.length}</td>
+      <td>${vulnerabilitySummary(record)}</td>
     `;
     tr.addEventListener("click", () => selectRecord(record.sha256));
     tr.addEventListener("keydown", (event) => {
@@ -327,6 +327,19 @@ function renderDetail() {
 
 function priorityPill(severity) {
   return `<span class="priority-pill ${priorityClass(severity.label)}">${escapeHtml(severity.label)}</span>`;
+}
+
+function vulnerabilitySummary(record) {
+  if (!record.findings.length) {
+    return '<span class="subtext">No heuristic findings</span>';
+  }
+  const first = record.findings[0];
+  const remaining = record.findings.length - 1;
+  const suffix = remaining > 0 ? ` +${remaining} more` : "";
+  return `
+    <strong>${escapeHtml(first.title)}</strong>
+    <span class="subtext">${escapeHtml(first.evidence || "Evidence captured")}${escapeHtml(suffix)}</span>
+  `;
 }
 
 function recommendedActionFor(finding) {
