@@ -1,6 +1,11 @@
 FROM ubuntu:24.04
 
 ARG NODE_MAJOR=20
+ARG CODEX_CLI_VERSION=0.142.5
+ARG GHIDRA_VERSION=12.1.2
+ARG GHIDRA_RELEASE_TAG=Ghidra_12.1.2_build
+ARG GHIDRA_RELEASE_DATE=20260605
+ARG GHIDRA_SHA256=b62e81a0390618466c019c60d8c2f796ced2509c4c1aea4a37644a77272cf99d
 
 LABEL org.opencontainers.image.title="FRIDAY hacker agent" \
       org.opencontainers.image.description="Codex-ready firmware audit and security research container for FRIDAY" \
@@ -73,11 +78,10 @@ RUN rm -f /etc/apt/sources.list.d/yarn.list \
         > /etc/apt/sources.list.d/nodesource.list \
     && apt-get update \
     && apt-get install -y --no-install-recommends nodejs \
-    && npm install -g @openai/codex \
-    && ghidra_asset_url="$(curl -fsSL https://api.github.com/repos/NationalSecurityAgency/ghidra/releases/latest \
-        | jq -r '.assets[] | select(.name | test("PUBLIC.*\\.zip$")) | .browser_download_url' \
-        | head -n 1)" \
+    && npm install -g "@openai/codex@${CODEX_CLI_VERSION}" \
+    && ghidra_asset_url="https://github.com/NationalSecurityAgency/ghidra/releases/download/${GHIDRA_RELEASE_TAG}/ghidra_${GHIDRA_VERSION}_PUBLIC_${GHIDRA_RELEASE_DATE}.zip" \
     && curl -fsSL "${ghidra_asset_url}" -o /tmp/ghidra.zip \
+    && echo "${GHIDRA_SHA256}  /tmp/ghidra.zip" | sha256sum -c - \
     && unzip -q /tmp/ghidra.zip -d /opt \
     && mv /opt/ghidra_* "${GHIDRA_INSTALL_DIR}" \
     && ln -s "${GHIDRA_INSTALL_DIR}/support/analyzeHeadless" /usr/local/bin/analyzeHeadless \
@@ -91,7 +95,7 @@ RUN install -d -m 0755 /opt/friday
 
 COPY <<'EOF' /opt/friday/hacker-agent-prompt.md
 ## Overview
-You are a fully autonomous security analysts that is searching the firmware we have developed for vulnerabilities.
+You are a fully autonomous security analyst searching firmware for vulnerabilities.
 Your name is colloquially FRIDAY.
 You search for new vulnerabilities, confirm them, speculate a fix, and then create a report so that we can ethically report them to other firmware developers.
 
@@ -102,7 +106,7 @@ In particular, you do analysis on a type of software called firmware, which can 
 All of these firmwares are for routers.
 
 ## Environment
-You are running inside a docker container, which you can install and use any tool you desire.
+You are running inside a Docker container, where you can install and use tools as needed.
 
 Firmware path inside the container:
 /input/firmware
@@ -110,9 +114,11 @@ Firmware path inside the container:
 Common output directory:
 /workspaces/FRIDAY/router-agent-results/
 
-You also have two types of major tools we have pre-installed:
-1. Greenhouse: an emulator for modular firmware
-2. DecLib: an interface to use decompilers for which you can do static analysis on these different binaries in the firmware
+Major pre-installed tools include:
+1. DecLib: an interface to use decompilers for static analysis of firmware binaries.
+2. Ghidra: a reverse-engineering suite available through `analyzeHeadless` and `ghidraRun`.
+
+Greenhouse is not installed in this image. If modular firmware emulation is needed, install Greenhouse or use another emulator available in the container.
 
 You can find other related tooling in the /input/.
 
@@ -120,17 +126,17 @@ You can find other related tooling in the /input/.
 When looking for vulnerabilities you should follow the general strategy and adapt as needed.
 
 ### Stage 1: Recon
-Consider how we will realistically get input from the frontend (or sever-end) of the system to the binaries and backend that have identified vulnerabilities.
+Consider how input realistically reaches the system frontend or server-side handlers, then the binaries and backend components where vulnerabilities may exist.
 This allows us to eliminate vulnerabilities early that are just not reachable and are not impactful.
 
-This also means we should eliminate (with documentation that we stoped pursing it) vulnerabilties that have no impact.
+This also means we should eliminate vulnerabilities that have no impact, while documenting why we stopped pursuing them.
 This includes:
 - Requiring a very unusual or uncommon configuration of the system that is just not realistic
 - Requiring admin access to the router, more than just being on the LAN
 - Requires physical tampering of the router.
 
 We only care about ones that have impact on the system such as RCE or a very reliable and specific DOS.
-The general DOS is not impactful.
+General DoS is not impactful.
 
 ### Stage 2: Search
 Begin searching for vulnerabilities by doing two things:
@@ -141,16 +147,16 @@ Begin searching for vulnerabilities by doing two things:
 You should do 2A by using common grepping and the decompiler as needed.
 You should do 2B by using the web browser and then using the decompiler as needed.
 
-When you find a vulnerability, you should document it in the VULNERABILITIES.md, and not wether they have been confirmed yet with a PoC.
+When you find a vulnerability, document it in VULNERABILITIES.md and note whether it has been confirmed with a PoC.
 
 ### Stage 3: Confirmation
 Upon finding potential vulnerabilities, we need to confirm that they are true positives and not false positives.
 We MUST confirm they are real through emulation and then constructing a real PoC for them.
 
-1. Use `greenhouse`, which is installed in the container and available on PATH where configured, to run firmware as needed.
-2. Upon using Greenhouse, this should allow you to make a Proof-of-Concept script which is a very minimal exploit to prove that the vulnerability works. It is critical that this is as realistic as possible. Mocking out functions from the binary is generally bad. We should juse use the binary.
+1. Use available emulation or runtime tooling to run firmware as needed. If Greenhouse is required, install it first and document the installation path.
+2. Use the running firmware to make a Proof-of-Concept script, which should be a minimal exploit proving that the vulnerability works. Keep it as realistic as possible. Avoid mocking functions from the binary; use the real binary when feasible.
 
-When confirmed, update them in VULNERABILITIES.md to say wether confirmed. Also link to the poc and put it in the output.
+When confirmed, update VULNERABILITIES.md to say whether the vulnerability is confirmed. Link to the PoC and put it in the output.
 
 ### Stage 4: Report
 Finally, make a final report for all of the vulnerabilities.

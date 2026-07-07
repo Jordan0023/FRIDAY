@@ -5,7 +5,7 @@
 - Do project work from the devcontainer defined in `.devcontainer/devcontainer.json`.
 - Put new system packages, CLIs, browsers, language runtimes, and Python dependencies into `Dockerfile` instead of installing them ad hoc on the host or interactively inside a running container.
 - After changing dependencies, rebuild the devcontainer so future sessions inherit the same environment.
-- Codex CLI is installed in the image with `npm install -g @openai/codex`.
+- Codex CLI is installed in the image with the pinned `CODEX_CLI_VERSION` build arg in `Dockerfile`.
 - Codex authentication is inherited by bind-mounting the host `${HOME}/.codex` directory to `/home/vscode/.codex` in the devcontainer. If auth fails, run `codex login` on the host or inside the devcontainer to refresh the mounted credentials.
 
 ## Common Commands
