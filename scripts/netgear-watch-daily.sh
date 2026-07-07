@@ -12,4 +12,27 @@ else
 fi
 
 cd "$PROJECT_DIR"
-exec "$PYTHON" netgear_watch_new.py --use-browser --analyze --limit-products 10 --limit-firmware 1 >> "$LOG_DIR/daily-watch.log" 2>&1
+STATUS=0
+
+run_step() {
+  local name="$1"
+  local code=0
+  shift
+  echo "=== $(date -Is) $name ==="
+  "$@" || code=$?
+  if [[ "$code" -ne 0 ]]; then
+    echo "$name failed with exit $code"
+    STATUS=1
+  fi
+}
+
+{
+  run_step "Netgear" "$PYTHON" netgear_watch_new.py --use-browser --analyze --limit-firmware 1 --skip-site-data
+  run_step "ASUS" "$PYTHON" asus_full_download.py --analyze --limit-firmware 1
+  run_step "TP-Link" "$PYTHON" tplink_full_download.py --analyze --limit-firmware 1
+  run_step "GL.iNet" "$PYTHON" glinet_full_download.py --analyze --limit-firmware 1
+  run_step "OpenWrt" "$PYTHON" openwrt_full_download.py --analyze --limit-firmware 1
+  run_step "Dashboard" "$PYTHON" scripts/build_site_data.py
+} >> "$LOG_DIR/daily-watch.log" 2>&1
+
+exit "$STATUS"

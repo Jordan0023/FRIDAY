@@ -12,7 +12,7 @@ chmod +x "$RUNNER"
 
 cat > "$SERVICE" <<UNIT
 [Unit]
-Description=Check for new Netgear firmware
+Description=Check for new router firmware across vendors
 
 [Service]
 Type=oneshot
@@ -22,7 +22,7 @@ UNIT
 
 cat > "$TIMER" <<UNIT
 [Unit]
-Description=Run Netgear firmware watcher daily
+Description=Run router firmware watchers daily
 
 [Timer]
 OnCalendar=daily

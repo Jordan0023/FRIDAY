@@ -4,12 +4,14 @@ import hashlib
 import html
 import json
 import re
+import shutil
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import quote, urljoin, urlparse
 
 import requests
 
+from .audit import FirmwareAuditor
 from .manifest import Manifest
 from .models import FirmwareLink, FirmwareRecord, Product, safe_name
 
@@ -191,12 +193,20 @@ def download_tplink_router_firmware(
     limit_products: int | None = None,
     limit_firmware: int | None = None,
     resume: bool = False,
+    analyze: bool = False,
+    max_extract_mb: int | None = None,
+    cleanup_extracted: bool = False,
     build_site: bool = False,
 ) -> tuple[int, int, int]:
     root.mkdir(parents=True, exist_ok=True)
     manifest = Manifest(root).load()
     discovery = TpLinkDiscovery(timeout=timeout)
     downloader = TpLinkFirmwareDownloader(root, timeout=timeout)
+    auditor = FirmwareAuditor(
+        root,
+        max_ghidra_files=0,
+        max_extract_bytes=max_extract_mb * 1024 * 1024 if max_extract_mb else None,
+    )
     models = discovery.discover_models()
     if limit_products is not None:
         models = models[:limit_products]
@@ -232,6 +242,11 @@ def download_tplink_router_firmware(
                 _record_tplink_unavailable(root, "downloads", link.product, link.url, str(exc), model.menu_name)
                 print(f"Could not download {link.product} {link.url}: {exc}")
                 continue
+            if analyze:
+                report = auditor.audit(record)
+                record.report_path = str(report.relative_to(root))
+                if cleanup_extracted:
+                    shutil.rmtree(root / "extracted" / record.sha256[:16], ignore_errors=True)
             if manifest.upsert(record):
                 downloaded += 1
                 manifest.save()
