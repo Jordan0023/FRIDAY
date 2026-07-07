@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="620" viewBox="0 0 1040 620" role="img" aria-labelledby="title desc">
+  <title id="title">Router Firmware Uploads by Year and Brand</title>
+  <desc id="desc">Stacked bar chart showing firmware upload counts by year, split by ASUS, GL.iNet, Netgear, OpenWrt, and TP-Link.</desc>
+  <rect width="1040" height="620" fill="#f7f8f4"/>
+
+  <text x="64" y="58" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#1f2933">Router Firmware Uploads by Year and Brand</text>
+  <text x="64" y="88" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#52606d">Grouped by uploaded_at year from site/data/firmware-dashboard.json</text>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#1f2933">
+    <rect x="650" y="43" width="14" height="14" fill="#2563eb"/>
+    <text x="672" y="55">ASUS</text>
+    <rect x="725" y="43" width="14" height="14" fill="#0f766e"/>
+    <text x="747" y="55">GL.iNet</text>
+    <rect x="815" y="43" width="14" height="14" fill="#c2410c"/>
+    <text x="837" y="55">Netgear</text>
+    <rect x="910" y="43" width="14" height="14" fill="#7c3aed"/>
+    <text x="932" y="55">OpenWrt</text>
+    <rect x="650" y="69" width="14" height="14" fill="#ca8a04"/>
+    <text x="672" y="81">TP-Link</text>
+  </g>
+
+  <line x1="104" y1="508" x2="960" y2="508" stroke="#9aa5b1" stroke-width="1"/>
+  <line x1="104" y1="120" x2="104" y2="508" stroke="#9aa5b1" stroke-width="1"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#52606d">
+    <line x1="98" y1="508" x2="960" y2="508" stroke="#d9e2ec" stroke-width="1"/>
+    <text x="66" y="512">0</text>
+    <line x1="98" y1="425.7" x2="960" y2="425.7" stroke="#d9e2ec" stroke-width="1"/>
+    <text x="50" y="429.7">500</text>
+    <line x1="98" y1="343.4" x2="960" y2="343.4" stroke="#d9e2ec" stroke-width="1"/>
+    <text x="42" y="347.4">1,000</text>
+    <line x1="98" y1="261.1" x2="960" y2="261.1" stroke="#d9e2ec" stroke-width="1"/>
+    <text x="42" y="265.1">1,500</text>
+    <line x1="98" y1="178.8" x2="960" y2="178.8" stroke="#d9e2ec" stroke-width="1"/>
+    <text x="42" y="182.8">2,000</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g>
+      <rect x="134" y="493.4" width="84" height="14.6" fill="#2563eb"/>
+      <rect x="134" y="493.1" width="84" height="0.3" fill="#0f766e"/>
+      <rect x="134" y="492.6" width="84" height="0.5" fill="#ca8a04"/>
+      <text x="176" y="482.6" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">94</text>
+      <text x="176" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2021</text>
+      <text x="176" y="559" text-anchor="middle" font-size="12" fill="#52606d">ASUS 89</text>
+    </g>
+
+    <g>
+      <rect x="272" y="493.2" width="84" height="14.8" fill="#2563eb"/>
+      <rect x="272" y="487.6" width="84" height="5.6" fill="#0f766e"/>
+      <rect x="272" y="483.7" width="84" height="3.9" fill="#ca8a04"/>
+      <text x="314" y="473.7" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">148</text>
+      <text x="314" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2022</text>
+      <text x="314" y="559" text-anchor="middle" font-size="12" fill="#52606d">ASUS 90</text>
+    </g>
+
+    <g>
+      <rect x="410" y="495.7" width="84" height="12.3" fill="#2563eb"/>
+      <rect x="410" y="479.4" width="84" height="16.3" fill="#0f766e"/>
+      <rect x="410" y="472.5" width="84" height="6.9" fill="#ca8a04"/>
+      <text x="452" y="462.5" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">216</text>
+      <text x="452" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2023</text>
+      <text x="452" y="559" text-anchor="middle" font-size="12" fill="#52606d">GL.iNet 99</text>
+    </g>
+
+    <g>
+      <rect x="548" y="482.5" width="84" height="25.5" fill="#2563eb"/>
+      <rect x="548" y="456.3" width="84" height="26.2" fill="#0f766e"/>
+      <rect x="548" y="134.9" width="84" height="321.4" fill="#c2410c"/>
+      <rect x="548" y="120.4" width="84" height="14.5" fill="#ca8a04"/>
+      <text x="590" y="110.4" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">2,356</text>
+      <text x="590" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2024</text>
+      <text x="590" y="559" text-anchor="middle" font-size="12" fill="#52606d">Netgear 1,954</text>
+    </g>
+
+    <g>
+      <rect x="686" y="445.1" width="84" height="62.9" fill="#2563eb"/>
+      <rect x="686" y="435.2" width="84" height="9.9" fill="#0f766e"/>
+      <rect x="686" y="407.6" width="84" height="27.6" fill="#c2410c"/>
+      <rect x="686" y="386.0" width="84" height="21.6" fill="#ca8a04"/>
+      <text x="728" y="376" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">741</text>
+      <text x="728" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2025</text>
+      <text x="728" y="559" text-anchor="middle" font-size="12" fill="#52606d">ASUS 382</text>
+    </g>
+
+    <g>
+      <rect x="824" y="470.3" width="84" height="37.7" fill="#2563eb"/>
+      <rect x="824" y="466.5" width="84" height="3.8" fill="#0f766e"/>
+      <rect x="824" y="458.1" width="84" height="8.4" fill="#c2410c"/>
+      <rect x="824" y="454.0" width="84" height="4.1" fill="#7c3aed"/>
+      <rect x="824" y="439.8" width="84" height="14.2" fill="#ca8a04"/>
+      <text x="866" y="429.8" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">414</text>
+      <text x="866" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2026</text>
+      <text x="866" y="559" text-anchor="middle" font-size="12" fill="#52606d">ASUS 229</text>
+    </g>
+  </g>
+
+  <text x="64" y="594" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#52606d">Labels show total uploads. Small notes under each year show the largest brand for that year.</text>
+</svg>

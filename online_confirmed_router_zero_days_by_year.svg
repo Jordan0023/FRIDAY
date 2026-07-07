@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="620" viewBox="0 0 1040 620" role="img" aria-labelledby="title desc">
+  <title id="title">Online-Confirmed Router/Network Edge 0-Days by Year</title>
+  <desc id="desc">Bar chart of confirmed router and network edge firmware zero-days found from online sources, grouped by disclosure year.</desc>
+  <rect width="1040" height="620" fill="#f7f8f4"/>
+
+  <text x="64" y="58" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#1f2933">Online-Confirmed Router/Network Edge 0-Days by Year</text>
+  <text x="64" y="88" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#52606d">Conservative count from public reports/advisories, grouped by disclosure year. Last checked 2026-07-01.</text>
+
+  <line x1="104" y1="508" x2="960" y2="508" stroke="#9aa5b1" stroke-width="1"/>
+  <line x1="104" y1="120" x2="104" y2="508" stroke="#9aa5b1" stroke-width="1"/>
+
+  <g font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#52606d">
+    <line x1="98" y1="508" x2="960" y2="508" stroke="#d9e2ec" stroke-width="1"/>
+    <text x="66" y="512">0</text>
+    <line x1="98" y1="378.7" x2="960" y2="378.7" stroke="#d9e2ec" stroke-width="1"/>
+    <text x="66" y="382.7">1</text>
+    <line x1="98" y1="249.3" x2="960" y2="249.3" stroke="#d9e2ec" stroke-width="1"/>
+    <text x="66" y="253.3">2</text>
+    <line x1="98" y1="120" x2="960" y2="120" stroke="#d9e2ec" stroke-width="1"/>
+    <text x="66" y="124">3</text>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="120" y="506" width="70" height="2" fill="#334e68"/>
+    <text x="155" y="492" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">0</text>
+    <text x="155" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2021</text>
+
+    <rect x="236" y="506" width="70" height="2" fill="#334e68"/>
+    <text x="271" y="492" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">0</text>
+    <text x="271" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2022</text>
+
+    <rect x="352" y="378.7" width="70" height="129.3" fill="#b91c1c"/>
+    <text x="387" y="368.7" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">1</text>
+    <text x="387" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2023</text>
+    <text x="387" y="559" text-anchor="middle" font-size="12" fill="#52606d">Cisco IOS XE</text>
+
+    <rect x="468" y="249.3" width="70" height="258.7" fill="#b91c1c"/>
+    <text x="503" y="239.3" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">2</text>
+    <text x="503" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2024</text>
+    <text x="503" y="559" text-anchor="middle" font-size="12" fill="#52606d">Cisco ASA/FTD</text>
+
+    <rect x="584" y="120" width="70" height="388" fill="#b91c1c"/>
+    <text x="619" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">3</text>
+    <text x="619" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2025</text>
+    <text x="619" y="559" text-anchor="middle" font-size="12" fill="#52606d">Cisco ASA + IOS</text>
+
+    <rect x="700" y="378.7" width="70" height="129.3" fill="#b91c1c"/>
+    <text x="735" y="368.7" text-anchor="middle" font-size="13" font-weight="700" fill="#1f2933">1</text>
+    <text x="735" y="540" text-anchor="middle" font-size="14" fill="#1f2933">2026</text>
+    <text x="735" y="559" text-anchor="middle" font-size="12" fill="#52606d">Catalyst SD-WAN</text>
+  </g>
+
+  <rect x="94" y="585" width="12" height="12" fill="#b91c1c"/>
+  <text x="116" y="596" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#52606d">Counted CVEs only when public reporting/advisory language supports zero-day or pre-patch in-the-wild exploitation.</text>
+</svg>
