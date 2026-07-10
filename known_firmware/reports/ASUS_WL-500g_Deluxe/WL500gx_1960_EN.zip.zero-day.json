@@ -1,0 +1,125 @@
+{
+  "candidates": [
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upgrade"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "upgrade.cgi",
+      "score": 12,
+      "source": "string:_WL500gx_1960_EN.zip.extracted/_WL500gx_1.9.6.0_EN.trx.extracted/1E9798"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "remote"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "webcamremote.cgi",
+      "score": 10,
+      "source": "string:_WL500gx_1960_EN.zip.extracted/_WL500gx_1.9.6.0_EN.trx.extracted/1F4162"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "apply.cgi",
+      "score": 8,
+      "source": "string:_WL500gx_1960_EN.zip.extracted/_WL500gx_1.9.6.0_EN.trx.extracted/1ED01C"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "webcam.cgi",
+      "score": 8,
+      "source": "string:_WL500gx_1960_EN.zip.extracted/_WL500gx_1.9.6.0_EN.trx.extracted/1F66B4"
+    }
+  ],
+  "config_writers": [
+    "1009D3: Perhaps iptables or your kernel needs to be upgraded.",
+    "1009D3: iptables-restore",
+    "10114B: /usr/lib/iptables/libipt_%s.so",
+    "10114B: iptables: calloc failed",
+    "10114B: iptables: malloc failed",
+    "101807: can't initialize iptables table `%s': %s",
+    "101807: iptables who? (do you need to insmod?)",
+    "102650: iptables_matches",
+    "102650: iptables_targets",
+    "102CDB: iptables_insmod",
+    "10809F: Perhaps iptables or your kernel needs to be upgraded.",
+    "10809F: iptables",
+    "10809F: iptables: %s",
+    "1087B2: /usr/lib/iptables/libipt_%s.so",
+    "1087B2: can't initialize iptables table `%s': %s",
+    "1087B2: iptables: calloc failed",
+    "1087B2: iptables: malloc failed",
+    "108EA1: iptables who? (do you need to insmod?)",
+    "10DC1A: iptables-standalone.c",
+    "10DC1A: iptables.c",
+    "10DC1A: iptables_insmod",
+    "10DC1A: iptables_matches",
+    "10DC1A: iptables_targets",
+    "10DC1A: print_firewall",
+    "10DC1A: print_firewall_line",
+    "151711: /etc/udhcpd.conf",
+    "1847BA: /tmp/udhcpd.conf",
+    "1DB79E: iptables -I INPUT -d %s -i %s -p udp --dport %d -j %s",
+    "1DB79E: iptables-restore",
+    "1E02F2: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"misc_lpr_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallCo",
+    "1E02F2: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"misc_ping_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallC",
+    "1E02F2: </td><td class=\"content_input_td\"><input type=\"text\" maxlength=\"5\" size=\"5\" name=\"misc_httpport_x\" class=\"content_input_fd\" value=\"<% nvram_get_x(\"FirewallConfi",
+    "1E02F2: rewallConfig', 'misc_http_x', '0')\" <% nvram_match_x(\"FirewallConfig\",\"misc_http_x\", \"0\", \"checked\"); %>>No</input></td>",
+    "1E29EC: <td class=\"content_desc_td\" colspan=\"2\">WL500g.Deluxe supports up to 253 IP addresses for your wireless network, if Wireless Firewall feature is enabled. The IP",
+    "1E29EC: <td class=\"content_header_td_title\" colspan=\"2\">Wireless Firewall - DHCP Server</td>",
+    "1E2EC3: </td><td class=\"content_input_td\"><input type=\"text\" maxlength=\"15\" class=\"content_input_fd_ro\" size=\"15\" name=\"\" value=\"<% nvram_get_f(\"FirewallConfig\",\"DmzIP\"",
+    "1E35DC: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallConfig', '',",
+    "1E35DC: </td><td class=\"content_input_td\"><input type=\"text\" maxlength=\"32\" class=\"content_input_fd\" size=\"32\" name=\"\" value=\"<% nvram_get_x(\"FirewallConfig\",\"\"); %>\" o",
+    "1E35DC: </td><td class=\"content_input_td\"><select name=\"\" class=\"content_input_fd\" onChange=\"return change_common(this, 'FirewallConfig', '')\"><option class=\"content_in",
+    "1E35DC: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_DMZDLFilter_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"SaveRestart.asp\"><input type=\"hid",
+    "1E35DC: <td class=\"content_desc_td\" colspan=\"2\">WLAN vs. LAN filter allows you to block specified packets between WLAN and LAN, if Wireless Firewall is enabled. At firs",
+    "1E35DC: <td class=\"content_header_td_title\" colspan=\"2\">Wireless Firewall - WLAN & LAN Filter</td>",
+    "1E3AEA: </td><td class=\"content_input_td\"><input type=\"text\" maxlength=\"32\" class=\"content_input_fd\" size=\"32\" name=\"\" value=\"<% nvram_get_x(\"FirewallConfig\",\"\"); %>\" o",
+    "1E3AEA: </td><td class=\"content_input_td\"><select name=\"\" class=\"content_input_fd\" onChange=\"return change_common(this, 'FirewallConfig', '')\"><option class=\"content_in",
+    "1E3AEA: <input type=\"hidden\" name=\"DmzLanRuleCount_0\" value=\"<% nvram_get_x(\"FirewallConfig\", \"DmzLanRuleCount\"); %>\" readonly=\"1\"></td><td width=\"10%\">",
+    "1E3AEA: CEPT\" <% nvram_match_x(\"FirewallConfig\",\"\", \"ACCEPT\",\"selected\"); %>>ACCEPT</option></select></td>",
+    "1E4242: <% nvram_get_table_x(\"FirewallConfig\",\"LDFilterList\"); %>",
+    "1E4242: d class=\"content_list_input_td\" colspan=\"\"><input type=\"text\" maxlength=\"15\" class=\"content_input_list_fd\" size=\"14\" name=\"_0\" onKeyPress=\"return is_iprange(thi",
+    "1E4634: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallConfig', '',",
+    "1E4634: </td><td class=\"content_input_td\"><input type=\"text\" maxlength=\"32\" class=\"content_input_fd\" size=\"32\" name=\"\" value=\"<% nvram_get_x(\"FirewallConfig\",\"\"); %>\" o"
+  ],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/be2ec1cb8ddd0035",
+  "sink_summary": {
+    "exec": 10,
+    "file_write": 125,
+    "popen": 0,
+    "system": 71,
+    "unsafe_copy": 56
+  }
+}

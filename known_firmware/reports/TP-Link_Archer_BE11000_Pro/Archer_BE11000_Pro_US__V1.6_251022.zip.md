@@ -1,6 +1,6 @@
 # Firmware Audit: TP-Link Archer BE11000 Pro / Archer_BE11000_Pro_US__V1.6_251022.zip
 
-- Source URL: https://static.tp-link.com/upload/firmware/2025/202511/20251110/Archer BE700 Pro(US)_V1.6_251022.zip
+- Source URL: https://static.tp-link.com/upload/firmware/2025/202511/20251113/Archer BE11000 Pro(US)_V1.6_251022.zip
 - Local path: known_firmware/firmware/TP-Link_Archer_BE11000_Pro/Archer_BE11000_Pro_US__V1.6_251022.zip
 - SHA-256: `0795cae638225029f1525f2d969a84c0ed6fc1591d594e2cac9aa26680f0c271`
 - Size: 50602579 bytes
@@ -15,9 +15,38 @@ Web admin components should be reviewed for authentication bypass, command injec
 
 Evidence: `BOa, BoA, boA, boa`
 
+## Zero-day Triage
+
+This section separates known-vulnerability coverage from new candidate hunting. Statuses here are leads until a route-specific data flow or live PoC confirms exploitability.
+
+### Known Vulnerability Coverage
+
+No known-vulnerability catalog entries matched this product name.
+### High-priority New Candidates
+
+No route candidates were identified.
+### Sink Summary
+
+- exec: 0
+- file_write: 0
+- popen: 0
+- system: 0
+- unsafe_copy: 0
+
+### Config Writer Leads
+
+No config-writer markers found in sampled strings.
+
+### Triage Notes
+
+- Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.
+- This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation.
+
+Structured zero-day triage JSON: `known_firmware/reports/TP-Link_Archer_BE11000_Pro/Archer_BE11000_Pro_US__V1.6_251022.zip.zero-day.json`
+
 ## Extraction Notes
 
-- binwalk -eM --directory known_firmware/extracted/0795cae638225029 exited 0
+- Using existing extraction directory: known_firmware/extracted/0795cae638225029
 
 ## Decompiler Notes
 

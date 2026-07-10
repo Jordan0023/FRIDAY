@@ -1,0 +1,63 @@
+# Firmware Audit: TP-Link Deco BE75 / Deco_BE75_V1_1.1.1_260108.zip
+
+- Source URL: https://static.tp-link.com/upload/firmware/2026/202601/20260113/Deco BE75_V1_1.1.1_260108.zip
+- Local path: known_firmware/firmware/TP-Link_Deco_BE75/Deco_BE75_V1_1.1.1_260108.zip
+- SHA-256: `b276cb6767b4ebd384b3ed32ddca1dcb110f1da667e53fc6de68318ec6e1b716`
+- Size: 40781964 bytes
+- Version: V1.6_1.1.1 Build 20260108
+- Release date: 2026-01-13
+
+## Static Findings
+
+### HTTP CGI/admin attack surface
+
+Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.
+
+Evidence: `BOA, BOa, Boa, boa`
+
+### Command execution helpers
+
+Command execution paths are common command-injection sinks when reachable from web or network inputs.
+
+Evidence: `System`
+
+## Zero-day Triage
+
+This section separates known-vulnerability coverage from new candidate hunting. Statuses here are leads until a route-specific data flow or live PoC confirms exploitability.
+
+### Known Vulnerability Coverage
+
+No known-vulnerability catalog entries matched this product name.
+### High-priority New Candidates
+
+No route candidates were identified.
+### Sink Summary
+
+- exec: 0
+- file_write: 0
+- popen: 0
+- system: 0
+- unsafe_copy: 0
+
+### Config Writer Leads
+
+No config-writer markers found in sampled strings.
+
+### Triage Notes
+
+- Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.
+- This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation.
+
+Structured zero-day triage JSON: `known_firmware/reports/TP-Link_Deco_BE75/Deco_BE75_V1_1.1.1_260108.zip.zero-day.json`
+
+## Extraction Notes
+
+- Using existing extraction directory: known_firmware/extracted/b276cb6767b4ebd3
+
+## Decompiler Notes
+
+- Ghidra analyzeHeadless not found; decompiler import skipped.
+
+## Validation Needed
+
+These are static-analysis leads. Confirm reachability, affected versions, exploit preconditions, and vendor-fixed versions before treating any item as a vulnerability.

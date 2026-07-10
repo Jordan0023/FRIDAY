@@ -1,0 +1,92 @@
+diff --git a/FirmAEreplacements/firmae.config b/FirmAEreplacements/firmae.config
+index 9c72cf4..6f12a25 100644
+--- a/FirmAEreplacements/firmae.config
++++ b/FirmAEreplacements/firmae.config
+@@ -344,15 +344,29 @@ add_partition () {
+     while (! ${FOUND})
+     do
+         sleep 1
+-        for LINE in `losetup`
+-        do
+-            IMAGE_PATH=`echo ${LINE} | awk '{print $6}'`
+-            if [ "${IMAGE_PATH}" = "${1}" ]; then
+-                DEV_PATH=/host/`echo ${LINE} | awk '{print $1}'`p1
+-                if [ -e ${DEV_PATH} ]; then
+-                    FOUND=true
+-                fi
++        LOOP_DEV="${TARGETLOOPDEV}"
++        LOOPBASE=`basename "${LOOP_DEV}"`
++        DEV_PATH="/host/dev/${LOOPBASE}p1"
++        MAPPER_DEV="/dev/mapper/${LOOPBASE}p1"
++        if losetup "${LOOP_DEV}" 2>/dev/null | grep -q "${1}"; then
++            rm -f "${DEV_PATH}" 2>/dev/null || true
++            kpartx -av "${LOOP_DEV}" 1>&2 || true
++            sleep 1
++            if [ -e "${MAPPER_DEV}" ]; then
++                MAJOR_HEX=`stat -c %t "${MAPPER_DEV}"`
++                MINOR_HEX=`stat -c %T "${MAPPER_DEV}"`
++                mknod "${DEV_PATH}" b "$((16#${MAJOR_HEX}))" "$((16#${MINOR_HEX}))" 2>/dev/null || ln -sf "${MAPPER_DEV}" "${DEV_PATH}" 2>/dev/null || true
++                chown root:disk "${DEV_PATH}" 2>/dev/null || true
++                chmod 660 "${DEV_PATH}" 2>/dev/null || true
++            elif [ -e "/host/dev/${LOOPBASE}p1" ]; then
++                DEV_PATH="/host/dev/${LOOPBASE}p1"
++            fi
++            if [ -e "${DEV_PATH}" ]; then
++                FOUND=true
++            fi
+-            fi
+-        done
++        else
++            losetup -d "${LOOP_DEV}" &>/dev/null || true
++            FOUND=false
++        fi
+     done
+     echo "FOUND " $DEV_PATH 1>&2
+@@ -366,7 +380,12 @@ add_partition () {
+ }
+ 
+ del_partition () {
+-    losetup -d ${1} &> /dev/null || true
+-    dmsetup remove $(basename ${1}) &>/dev/null || true
++    LOOPBASE=`basename ${1}`
++    LOOPBASE=${LOOPBASE%p[0-9]*}
++    rm -f "/host/dev/${LOOPBASE}"p* &>/dev/null || true
++    kpartx -d "/dev/${LOOPBASE}" &>/dev/null || true
++    losetup -d ${1} &>/dev/null || true
++    losetup -d "/dev/${LOOPBASE}" &>/dev/null || true
++    dmsetup remove "${LOOPBASE}p1" &>/dev/null || true
+     sleep 1
+ }
+ 
+diff --git a/test.sh b/test.sh
+index a50b2e1..6b211dc 100755
+--- a/test.sh
++++ b/test.sh
+@@ -29,10 +29,23 @@ fi
+ echo "Testing losetup"
+ losetup -Pf /testimage.raw
+ TESTLOOP=`losetup | grep testimage.raw | awk '{print $1}'`
+-LOSETUP_STATUS=`ls /host${TESTLOOP}p1`
+-losetup -d $TESTLOOP
+-if [[ $LOSETUP_STATUS != *"/host/dev"* ]]; then
+-	echo "losetup is unable to setup loop devices properly"
++LOSETUP_STATUS=`ls /host${TESTLOOP}p1 2>/dev/null || true`
++if [[ -z "${LOSETUP_STATUS}" ]]; then
++	MAPPER_DEV="/dev/mapper/$(basename ${TESTLOOP})p1"
++	kpartx -av "${TESTLOOP}" >/dev/null 2>&1 || true
++	sleep 1
++	if [ -e "${MAPPER_DEV}" ]; then
++		ln -sf "${MAPPER_DEV}" "/host${TESTLOOP}p1" 2>/dev/null || true
++		LOSETUP_STATUS=`ls /host${TESTLOOP}p1 2>/dev/null || ls "${MAPPER_DEV}" 2>/dev/null || true`
++	fi
++fi
++if [[ "${LOSETUP_STATUS}" == *"/host/dev"* ]]; then
++	rm -f "/host${TESTLOOP}p1" 2>/dev/null || true
++fi
++kpartx -d "${TESTLOOP}" >/dev/null 2>&1 || true
++losetup -d $TESTLOOP
++if [[ $LOSETUP_STATUS != *"/host/dev"* && $LOSETUP_STATUS != *"/dev/mapper"* ]]; then
++	echo "losetup is unable to setup loop partitions properly"
+ 	echo $TESTLOOP
+ 	echo $LOSETUP_STATUS
+ 	exit 1

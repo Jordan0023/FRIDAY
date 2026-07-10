@@ -1,0 +1,82 @@
+{
+  "candidates": [
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "apply.cgi",
+      "score": 8,
+      "source": "string:_WL550gE_1963.zip.extracted/_WL550gE_1.9.6.3_EN.trx.extracted/1B00A8"
+    }
+  ],
+  "config_writers": [
+    "16C787: /tmp/udhcpd.conf",
+    "188E85: start_firewall",
+    "188E85: start_firewall_ex",
+    "19ADF6: /tmp/udhcpd.conf",
+    "19C292: iptables-restore",
+    "19C6EC: /tmp/udhcpd.conf",
+    "19EEDB: am_get_x(\"FirewallConfig\", \"misc_httpport_x\"); %>\" onBlur=\"validate_range(this, 1024, 65535)\" onKeyPress=\"return is_number(this)\"></td>",
+    "1A1830: <b><#FirewallConfig_WanLanSrcIP_helpitem#></b> : <#FHELP_desc4#>",
+    "1A1830: <b><#FirewallConfig_WanLanSrcPort_itemname#></b> : <#FHELP_desc5#>",
+    "1A1AFC: </td><td class=\"content_input_td\"><input type=\"hidden\" maxlength=\"11\" class=\"content_input_fd\" size=\"11\" name=\"filter_lw_time_x\" value=\"<% nvram_get_x(\"Firewall",
+    "1A1AFC: </td><td class=\"content_input_td\"><input type=\"hidden\" maxlength=\"7\" class=\"content_input_fd\" size=\"7\" name=\"filter_lw_date_x\" value=\"<% nvram_get_x(\"FirewallCo",
+    "1A1AFC: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"fw_lw_enable_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'Firewa",
+    "1A1AFC: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_Firewall_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"Advanced_URLFilter_Content.asp\"><inp",
+    "1A1AFC: <td class=\"content_desc_td\" colspan=\"2\"><#FirewallConfig_display4_sectiondesc#>",
+    "1A1AFC: <td class=\"content_header_td\" onMouseOver=\"return overlib('<#FirewallConfig_LanWanActiveDate_itemdesc#>', LEFT);\" onMouseOut=\"return nd();\"><#FirewallConfig_Lan",
+    "1A1AFC: <td class=\"content_header_td\" onMouseOver=\"return overlib('<#FirewallConfig_LanWanActiveTime_itemdesc#>', LEFT);\" onMouseOut=\"return nd();\"><#FirewallConfig_Lan",
+    "1A1AFC: <td class=\"content_header_td\"><#FirewallConfig_LanWanFirewallEnable_itemname#>",
+    "1A1AFC: <td class=\"content_section_header_td\" colspan=\"2\"><#FirewallConfig_LanWanFirewallEnable_sectionname#>",
+    "1A1F38: </td><td class=\"content_list_field_header_td\" colspan=\"\"><#FirewallConfig_LanWanDescript_itemname#>",
+    "1A1F38: </td><td class=\"content_list_field_header_td\" colspan=\"\"><#FirewallConfig_LanWanDstPort_itemname#>",
+    "1A1F38: </td><td class=\"content_list_field_header_td\" colspan=\"\"><#FirewallConfig_LanWanProFlag_itemname#>",
+    "1A1F38: <input type=\"hidden\" name=\"filter_lw_num_x_0\" value=\"<% nvram_get_x(\"FirewallConfig\", \"filter_lw_num_x\"); %>\" readonly=\"1\"></td><td width=\"10%\">",
+    "1A1F38: <td class=\"content_list_header_td\" width=\"60%\" id=\"LWFilterList\"><#FirewallConfig_LWFilterList_groupitemdesc#>",
+    "1A1F38: <td></td><td class=\"content_list_field_header_td\" colspan=\"\"><#FirewallConfig_LanWanSrcIP_itemname#>",
+    "1A1F38: <td></td><td class=\"content_list_field_header_td\" colspan=\"2\"><#FirewallConfig_LWFilterList_widzarddesc#>",
+    "1A1F38: <td></td><td class=\"content_list_input_td\" colspan=\"\"><input type=\"text\" maxlength=\"15\" class=\"content_input_list_fd\" size=\"14\" name=\"filter_lw_srcip_x_0\" onKey",
+    "1A5EBC: </td><td class=\"content_input_td\"><input type=\"hidden\" maxlength=\"11\" class=\"content_input_fd\" size=\"11\" name=\"url_time_x\" value=\"<% nvram_get_x(\"FirewallConfig",
+    "1A5EBC: </td><td class=\"content_input_td\"><input type=\"hidden\" maxlength=\"7\" class=\"content_input_fd\" size=\"7\" name=\"url_date_x\" value=\"<% nvram_get_x(\"FirewallConfig\",",
+    "1A5EBC: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"url_enable_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'Firewall",
+    "1A5EBC: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_URLFilter_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"SaveRestart.asp\"><input type=\"hidde",
+    "1A5EBC: <td class=\"content_desc_td\" colspan=\"2\"><#FirewallConfig_UrlFilterEnable_sectiondesc#>",
+    "1A5EBC: <td class=\"content_header_td\" onMouseOver=\"return overlib('<#FirewallConfig_URLActiveDate_itemdesc#>', LEFT);\" onMouseOut=\"return nd();\"><#FirewallConfig_URLAct",
+    "1A5EBC: <td class=\"content_header_td\" onMouseOver=\"return overlib('<#FirewallConfig_URLActiveTime_itemdesc#>', LEFT);\" onMouseOut=\"return nd();\"><#FirewallConfig_URLAct",
+    "1A5EBC: <td class=\"content_header_td\"><#FirewallConfig_UrlFilterEnable_itemname#>",
+    "1AB55C: <input type=\"hidden\" name=\"sid_list\" value=\"Layer3Forwarding;IPConnection;PPPConnection;WLANConfig11a;WLANConfig11b;LANHostConfig;FirewallConfig;\">",
+    "1B73F8: else if (document.form.current_page.value == \"Advanced_BasicFirewall_Content.asp\")",
+    "1B73F8: else if (document.form.current_page.value == \"Advanced_Firewall_Content.asp\")",
+    "1B73F8: else if (document.form.current_page.value == \"Advanced_LFirewall_Content.asp\")",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveDate_Fri,",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveDate_Mon,",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveDate_Sat);",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveDate_Sun,",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveDate_Thu,",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveDate_Tue,",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveDate_Wed,",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveTime.value = setTimeRange(",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveTime_endhour,",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveTime_endmin);",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveTime_starthour,",
+    "1B8B4C: document.form.FirewallConfig_WanLocalActiveTime_startmin,"
+  ],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/667b125a994b78ec",
+  "sink_summary": {
+    "exec": 11,
+    "file_write": 50,
+    "popen": 0,
+    "system": 55,
+    "unsafe_copy": 41
+  }
+}

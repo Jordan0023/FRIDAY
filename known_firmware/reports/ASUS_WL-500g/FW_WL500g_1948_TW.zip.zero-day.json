@@ -1,0 +1,153 @@
+{
+  "candidates": [
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upgrade"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "upgrade.cgi",
+      "score": 12,
+      "source": "string:_FW_WL500g_1948_TW.zip.extracted/FW_WL500g_1948_TW/_WL500g_1.9.4.8_TW.trx.extracted/1FAD68"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upload"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "upload.cgi",
+      "score": 12,
+      "source": "string:_FW_WL500g_1948_TW.zip.extracted/FW_WL500g_1948_TW/_WL500g_1.9.4.8_TW.trx.extracted/1FF2F8"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "remote"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "webcamremote.cgi",
+      "score": 10,
+      "source": "string:_FW_WL500g_1948_TW.zip.extracted/FW_WL500g_1948_TW/_WL500g_1.9.4.8_TW.trx.extracted/1FD065"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "apply.cgi",
+      "score": 8,
+      "source": "string:_FW_WL500g_1948_TW.zip.extracted/FW_WL500g_1948_TW/_WL500g_1.9.4.8_TW.trx.extracted/1EB634"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "syslog.cgi",
+      "score": 8,
+      "source": "string:_FW_WL500g_1948_TW.zip.extracted/FW_WL500g_1948_TW/_WL500g_1.9.4.8_TW.trx.extracted/ED782"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "webcam.cgi",
+      "score": 8,
+      "source": "string:_FW_WL500g_1948_TW.zip.extracted/FW_WL500g_1948_TW/_WL500g_1.9.4.8_TW.trx.extracted/1FF774"
+    }
+  ],
+  "config_writers": [
+    "100BDB: Perhaps iptables or your kernel needs to be upgraded.",
+    "100BDB: iptables-restore",
+    "101353: /usr/lib/iptables/libipt_%s.so",
+    "101353: iptables: calloc failed",
+    "101353: iptables: malloc failed",
+    "101A0F: can't initialize iptables table `%s': %s",
+    "101A0F: iptables who? (do you need to insmod?)",
+    "1082A7: Perhaps iptables or your kernel needs to be upgraded.",
+    "1082A7: iptables",
+    "1082A7: iptables: %s",
+    "1089BA: /usr/lib/iptables/libipt_%s.so",
+    "1089BA: can't initialize iptables table `%s': %s",
+    "1089BA: iptables: calloc failed",
+    "1089BA: iptables: malloc failed",
+    "10DE22: iptables-standalone.c",
+    "10DE22: iptables.c",
+    "10DE22: iptables_insmod",
+    "10DE22: iptables_matches",
+    "10DE22: iptables_targets",
+    "10DE22: print_firewall",
+    "10DE22: print_firewall_line",
+    "151941: /etc/udhcpd.conf",
+    "1849C3: /tmp/udhcpd.conf",
+    "1D2081: start_firewall",
+    "1D2081: start_firewall_ex",
+    "1E27D3: /tmp/udhcpd.conf",
+    "1E7C9C: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"fw_enable_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallC",
+    "1E7C9C: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"misc_http_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallC",
+    "1E7C9C: </td><td class=\"content_input_td\"><select name=\"fw_log_x\" class=\"content_input_fd\" onChange=\"return change_common(this, 'FirewallConfig', 'fw_log_x')\"><option c",
+    "1E7C9C: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_BasicFirewall_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"Advanced_Firewall_Content.asp\">",
+    "1E81F8: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"misc_lpr_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallCo",
+    "1E81F8: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"misc_ping_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallC",
+    "1E81F8: </td><td class=\"content_input_td\"><input type=\"text\" maxlength=\"5\" size=\"5\" name=\"misc_httpport_x\" class=\"content_input_fd\" value=\"<% nvram_get_x(\"FirewallConfi",
+    "1EB634: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallConfig', '',",
+    "1EB634: </td><td class=\"content_input_td\"><input type=\"text\" maxlength=\"32\" class=\"content_input_fd\" size=\"32\" name=\"\" value=\"<% nvram_get_x(\"FirewallConfig\",\"\"); %>\" o",
+    "1EB634: </td><td class=\"content_input_td\"><select name=\"\" class=\"content_input_fd\" onChange=\"return change_common(this, 'FirewallConfig', '')\"><option class=\"content_in",
+    "1EB634: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_DMZDLFilter_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"SaveRestart.asp\"><input type=\"hid",
+    "1EBBA5: </td><td class=\"content_input_td\"><input type=\"text\" maxlength=\"32\" class=\"content_input_fd\" size=\"32\" name=\"\" value=\"<% nvram_get_x(\"FirewallConfig\",\"\"); %>\" o",
+    "1EBBA5: </td><td class=\"content_input_td\"><select name=\"\" class=\"content_input_fd\" onChange=\"return change_common(this, 'FirewallConfig', '')\"><option class=\"content_in",
+    "1EBBA5: <input type=\"hidden\" name=\"DmzLanRuleCount_0\" value=\"<% nvram_get_x(\"FirewallConfig\", \"DmzLanRuleCount\"); %>\" readonly=\"1\"></td><td width=\"10%\">",
+    "1EC36E: <% nvram_get_table_x(\"FirewallConfig\",\"LDFilterList\"); %>",
+    "1EC36E: length=\"11\" class=\"content_input_list_fd\" size=\"10\" name=\"_0\" value=\"\" onKeyPress=\"return is_portrange(this)\"></td><td class=\"content_list_input_td\" colspan=\"\">",
+    "1EC744: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallConfig', '',",
+    "1EC744: </td><td class=\"content_input_td\"><input type=\"text\" maxlength=\"32\" class=\"content_input_fd\" size=\"32\" name=\"\" value=\"<% nvram_get_x(\"FirewallConfig\",\"\"); %>\" o",
+    "1EC744: </td><td class=\"content_input_td\"><select name=\"\" class=\"content_input_fd\" onChange=\"return change_common(this, 'FirewallConfig', '')\"><option class=\"content_in",
+    "1EC744: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_DMZDWFilter_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"Advanced_DMZDLFilter_Content.asp\"",
+    "1ECCB2: </td><td class=\"content_input_td\"><input type=\"text\" maxlength=\"32\" class=\"content_input_fd\" size=\"32\" name=\"\" value=\"<% nvram_get_x(\"FirewallConfig\",\"\"); %>\" o",
+    "1ECCB2: </td><td class=\"content_input_td\"><select name=\"\" class=\"content_input_fd\" onChange=\"return change_common(this, 'FirewallConfig', '')\"><option class=\"content_in",
+    "1ECCB2: <input type=\"hidden\" name=\"DmzWanRuleCount_0\" value=\"<% nvram_get_x(\"FirewallConfig\", \"DmzWanRuleCount\"); %>\" readonly=\"1\"></td><td width=\"10%\">",
+    "1ED0FD: <% nvram_get_table_x(\"FirewallConfig\",\"DWFilterList\"); %>"
+  ],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/92c1537f0b93e07a",
+  "sink_summary": {
+    "exec": 12,
+    "file_write": 95,
+    "popen": 0,
+    "system": 56,
+    "unsafe_copy": 52
+  }
+}

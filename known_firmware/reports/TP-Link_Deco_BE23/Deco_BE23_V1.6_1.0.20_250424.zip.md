@@ -1,6 +1,6 @@
 # Firmware Audit: TP-Link Deco BE23 / Deco_BE23_V1.6_1.0.20_250424.zip
 
-- Source URL: https://static.tp-link.com/upload/firmware/2025/202505/20250527/Deco BE23_V1.6_1.0.20_250424.zip
+- Source URL: https://static.tp-link.com/upload/firmware/2025/202505/20250528/Deco BE23_V1.6_1.0.20_250424.zip
 - Local path: known_firmware/firmware/TP-Link_Deco_BE23/Deco_BE23_V1.6_1.0.20_250424.zip
 - SHA-256: `5786b58581112a7fca59b91e54a4f44ca0a3c074b0ad0ceae4f3fa41c6d2ab3e`
 - Size: 38214558 bytes

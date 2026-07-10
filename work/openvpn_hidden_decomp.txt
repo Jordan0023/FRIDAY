@@ -1,0 +1,261 @@
+===== FUNC_AT 00045268 FUN_00045268@00045268 ===== (GhidraScript)  
+
+undefined4 FUN_00045268(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  FILE *pFVar3;
+  size_t sVar4;
+  char *pcVar5;
+  char acStack_1c81 [4097];
+  char acStack_c80 [2048];
+  char acStack_480 [512];
+  char local_280 [512];
+  undefined1 auStack_80 [16];
+  undefined1 auStack_70 [16];
+  undefined1 auStack_60 [16];
+  char acStack_50 [16];
+  undefined4 local_40;
+  char *local_3c;
+  size_t local_38;
+  undefined1 auStack_34 [8];
+  char acStack_2c [8];
+  char acStack_24 [8];
+  undefined4 local_1c;
+  
+  FUN_0001ae88(param_1,DAT_00045d30,acStack_c80,0x800);
+  FUN_0001ae88(param_1,DAT_00045d34,acStack_50,0x10);
+  FUN_0001ae88(param_1,DAT_00045d38,acStack_24,8);
+  local_40 = 3;
+  local_3c = acStack_24;
+  local_38 = strlen(acStack_24);
+  local_1c = 3;
+  iVar1 = FUN_000cb628(local_40,local_3c,local_38);
+  if (iVar1 != 0) {
+    printf(DAT_00045d40,DAT_00045d3c,0x180);
+    uVar2 = FUN_000cb5dc(param_2);
+    return uVar2;
+  }
+  FUN_0001ae88(param_1,DAT_00045d44,acStack_2c,8);
+  FUN_0001ae88(param_1,DAT_00045d48,auStack_34,8);
+  FUN_0001ae88(param_1,DAT_00045d4c,auStack_60,0x10);
+  FUN_0001ae88(param_1,DAT_00045d50,auStack_70,0x10);
+  FUN_0001ae88(param_1,DAT_00045d54,auStack_80,0x10);
+  FUN_0001ae88(param_1,DAT_00045d58,local_280,0x200);
+  system(DAT_00045d5c);
+  system(DAT_00045d60);
+  pFVar3 = fopen(DAT_00045d64,DAT_00045d68);
+  if (pFVar3 != (FILE *)0x0) {
+    fclose(pFVar3);
+    system(DAT_00045d6c);
+  }
+  iVar1 = strcmp(acStack_c80,DAT_00045d70);
+  if (iVar1 == 0) {
+    acosNvramConfig_set(DAT_00045d30,DAT_00045d74);
+    FUN_0001ae88(param_1,DAT_00045d78,acStack_1c81 + 1,0x1000);
+    if (acStack_1c81[1] != '\0') {
+      pFVar3 = fopen(DAT_00045d7c,DAT_00045d68);
+      if (pFVar3 != (FILE *)0x0) {
+        fclose(pFVar3);
+        system(DAT_00045d80);
+        system(DAT_00045d84);
+      }
+      pFVar3 = fopen(DAT_00045d7c,DAT_00045d88);
+      if (pFVar3 != (FILE *)0x0) {
+        snprintf(acStack_480,0x200,DAT_00045d8c);
+        pcVar5 = acStack_1c81 + 1;
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        sVar4 = strlen(pcVar5);
+        if ((0 < (int)sVar4) && (pcVar5[sVar4 - 1] == '\n')) {
+          pcVar5[sVar4 - 1] = '\0';
+        }
+        fprintf(pFVar3,DAT_00045d90,acStack_1c81 + 1);
+        snprintf(acStack_480,0x200,DAT_00045d94);
+        fputs(acStack_480,pFVar3);
+        fclose(pFVar3);
+      }
+      system(DAT_00045d98);
+    }
+    FUN_0001ae88(param_1,DAT_00045d9c,acStack_1c81 + 1,0x1000);
+    if (acStack_1c81[1] != '\0') {
+      pFVar3 = fopen(DAT_00045da0,DAT_00045d68);
+      if (pFVar3 != (FILE *)0x0) {
+        fclose(pFVar3);
+        system(DAT_00045da4);
+        system(DAT_00045da8);
+      }
+      pFVar3 = fopen(DAT_00045da0,DAT_00045d88);
+      if (pFVar3 != (FILE *)0x0) {
+        snprintf(acStack_480,0x200,DAT_00045d8c);
+        pcVar5 = acStack_1c81 + 1;
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        sVar4 = strlen(pcVar5);
+        if ((0 < (int)sVar4) && (pcVar5[sVar4 - 1] == '\n')) {
+          pcVar5[sVar4 - 1] = '\0';
+        }
+        fprintf(pFVar3,DAT_00045d90,acStack_1c81 + 1);
+        snprintf(acStack_480,0x200,DAT_00045d94);
+        fputs(acStack_480,pFVar3);
+        fclose(pFVar3);
+      }
+      system(DAT_00045dac);
+    }
+    FUN_0001ae88(param_1,DAT_00045db0,acStack_1c81 + 1,0x1000);
+    if (acStack_1c81[1] != '\0') {
+      pFVar3 = fopen(DAT_00045db4,DAT_00045d68);
+      if (pFVar3 != (FILE *)0x0) {
+        fclose(pFVar3);
+        system(DAT_00045db8);
+        system(DAT_00045dbc);
+      }
+      pFVar3 = fopen(DAT_00045db4,DAT_00045d88);
+      if (pFVar3 != (FILE *)0x0) {
+        snprintf(acStack_480,0x200,DAT_00045dc0);
+        pcVar5 = acStack_1c81 + 1;
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        sVar4 = strlen(pcVar5);
+        if ((0 < (int)sVar4) && (pcVar5[sVar4 - 1] == '\n')) {
+          pcVar5[sVar4 - 1] = '\0';
+        }
+        fprintf(pFVar3,DAT_00045d90,acStack_1c81 + 1);
+        snprintf(acStack_480,0x200,DAT_00045dc4);
+        fputs(acStack_480,pFVar3);
+        fclose(pFVar3);
+      }
+      system(DAT_00045dc8);
+    }
+    FUN_0001ae88(param_1,DAT_00045dcc,acStack_1c81 + 1,0x1000);
+    if (acStack_1c81[1] != '\0') {
+      pFVar3 = fopen(DAT_00045dd0,DAT_00045d68);
+      if (pFVar3 != (FILE *)0x0) {
+        fclose(pFVar3);
+        system(DAT_00045dd4);
+        system(DAT_00045dd8);
+      }
+      pFVar3 = fopen(DAT_00045dd0,DAT_00045d88);
+      if (pFVar3 != (FILE *)0x0) {
+        snprintf(acStack_480,0x200,DAT_00045ddc);
+        pcVar5 = acStack_1c81 + 1;
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        sVar4 = strlen(pcVar5);
+        if ((0 < (int)sVar4) && (pcVar5[sVar4 - 1] == '\n')) {
+          pcVar5[sVar4 - 1] = '\0';
+        }
+        fprintf(pFVar3,DAT_00045d90,acStack_1c81 + 1);
+        snprintf(acStack_480,0x200,DAT_00045de0);
+        fputs(acStack_480,pFVar3);
+        fclose(pFVar3);
+      }
+      system(DAT_00045de4);
+    }
+    pFVar3 = fopen(DAT_00045de8,DAT_00045d88);
+    if (pFVar3 != (FILE *)0x0) {
+      snprintf(acStack_480,0x200,DAT_00045dec);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045df0);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045df4);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045df8);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      iVar1 = strcmp(acStack_24,DAT_00045dfc);
+      if (iVar1 == 0) {
+        snprintf(acStack_480,0x200,DAT_00045e00);
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        snprintf(acStack_480,0x200,DAT_00045e04,auStack_80);
+      }
+      else {
+        snprintf(acStack_480,0x200,DAT_00045e08);
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        snprintf(acStack_480,0x200,DAT_00045e0c,auStack_60,auStack_70);
+      }
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      iVar1 = strcmp(acStack_2c,DAT_00045e10);
+      pcVar5 = DAT_00045e14;
+      if (iVar1 != 0) {
+        pcVar5 = DAT_00045e18;
+      }
+      snprintf(acStack_480,0x200,pcVar5);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e1c,auStack_34);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e20);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e24);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e28);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e2c);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e30);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e34);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e38);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e3c);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e40);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e44);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e48);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e4c);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e50);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e54);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      if (local_280[0] != '\0') {
+        snprintf(acStack_480,0x200,DAT_00045e58,local_280);
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+      }
+      iVar1 = strcmp(acStack_50,DAT_00045e5c);
+      if (iVar1 == 0) {
+        acosNvramConfig_set(DAT_00045d34,DAT_00045d74);
+        snprintf(acStack_480,0x200,DAT_00045e60);
+      }
+      else {
+        acosNvramConfig_set(DAT_00045d34,DAT_00045e64);
+        snprintf(acStack_480,0x200,DAT_00045e68,auStack_80);
+      }
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      fclose(pFVar3);
+    }
+    snprintf(acStack_480,0x200,DAT_00045e6c,DAT_00045e70);
+    system(acStack_480);
+    system(DAT_00045e74);
+    system(DAT_00045e78);
+    system(DAT_00045e7c);
+    sleep(4);
+    system(DAT_00045e80);
+    iVar1 = strcmp(acStack_24,DAT_00045e84);
+    if (iVar1 != 0) goto LAB_00045ca0;
+    system(DAT_00045e88);
+    pcVar5 = DAT_00045e8c;
+  }
+  else {
+    acosNvramConfig_set(DAT_00045d30,DAT_00045e64);
+    system(DAT_00045e90);
+    system(DAT_00045e94);
+    system(DAT_00045d5c);
+    pcVar5 = DAT_00045d60;
+  }
+  system(pcVar5);
+LAB_00045ca0:
+  acosNvramConfig_set(DAT_00045d38,acStack_24);
+  acosNvramConfig_set(DAT_00045d44,acStack_2c);
+  acosNvramConfig_set(DAT_00045d48,auStack_34);
+  acosNvramConfig_set(DAT_00045d4c,auStack_60);
+  acosNvramConfig_set(DAT_00045d50,auStack_70);
+  acosNvramConfig_set(DAT_00045d54,auStack_80);
+  acosNvramConfig_set(DAT_00045d58,local_280);
+  acosNvramConfig_save();
+  FUN_0001c424(DAT_00045e98,param_2);
+  return 0;
+}
+
+ (GhidraScript)  
+

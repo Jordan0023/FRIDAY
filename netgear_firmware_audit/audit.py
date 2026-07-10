@@ -6,6 +6,7 @@ import subprocess
 from pathlib import Path
 
 from .models import FirmwareRecord, safe_name
+from .zero_day import analyze_zero_day_surface, render_zero_day_markdown
 
 
 class FirmwareAuditor:
@@ -32,10 +33,22 @@ class FirmwareAuditor:
         files = [p for p in extract_dir.rglob("*") if p.is_file()] if extract_dir.exists() else []
         strings = self._collect_strings(files[:200])
         findings = self._findings(strings, files)
+        rootfs = _find_rootfs(extract_dir)
+        zero_day = analyze_zero_day_surface(rootfs or extract_dir, record.product, record.version)
+        zero_day_path = report_dir / f"{safe_name(record.filename)}.zero-day.json"
+        zero_day_path.write_text(zero_day.to_json() + "\n", encoding="utf-8")
         ghidra_notes = self._run_ghidra(files, record)
 
         report_path.write_text(
-            self._render_report(record, firmware_path, extraction_notes, ghidra_notes, findings),
+            self._render_report(
+                record,
+                firmware_path,
+                extraction_notes,
+                ghidra_notes,
+                findings,
+                render_zero_day_markdown(zero_day),
+                zero_day_path,
+            ),
             encoding="utf-8",
         )
         return report_path
@@ -198,6 +211,8 @@ class FirmwareAuditor:
         extraction_notes: list[str],
         ghidra_notes: list[str],
         findings: list[dict[str, str]],
+        zero_day_markdown: str,
+        zero_day_path: Path,
     ) -> str:
         lines = [
             f"# Firmware Audit: {record.product} / {record.filename}",
@@ -225,6 +240,13 @@ class FirmwareAuditor:
                     "",
                 ]
             )
+        lines.extend(
+            [
+                zero_day_markdown,
+                f"Structured zero-day triage JSON: `{zero_day_path}`",
+                "",
+            ]
+        )
         lines.extend(["## Extraction Notes", ""])
         lines.extend(f"- {note}" for note in extraction_notes)
         lines.extend(["", "## Decompiler Notes", ""])
@@ -270,6 +292,20 @@ def _find_ghidra_headless() -> str | None:
     for candidate in sorted(tools_dir.glob("ghidra_*_PUBLIC/support/analyzeHeadless"), reverse=True):
         if candidate.is_file():
             return str(candidate)
+    return None
+
+
+def _find_rootfs(extract_dir: Path) -> Path | None:
+    if not extract_dir.exists():
+        return None
+    candidates: list[Path] = []
+    for path in extract_dir.rglob("*"):
+        if path.is_dir() and (path / "bin").is_dir() and ((path / "www").is_dir() or (path / "usr").is_dir()):
+            candidates.append(path)
+    if candidates:
+        return sorted(candidates, key=lambda item: (len(item.parts), str(item)))[0]
+    if (extract_dir / "bin").is_dir():
+        return extract_dir
     return None
 
 

@@ -170,6 +170,9 @@ known_firmware/extracted/
 known_firmware/logs/
 known_firmware/ghidra_projects/
 known_firmware/*.truncated-*
+router-agent-results/
+ghidra_proj_friday/
+ghidra_scripts_friday/
 
 # Keep the lightweight dashboard and report metadata tracked.
 !site/

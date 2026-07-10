@@ -1,0 +1,1358 @@
+openjdk version "21.0.11" 2026-04-21
+OpenJDK Runtime Environment (build 21.0.11+10-1-24.04.2-Ubuntu)
+OpenJDK 64-Bit Server VM (build 21.0.11+10-1-24.04.2-Ubuntu, mixed mode)
+INFO  Using log config file: jar:file:/opt/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /root/.config/ghidra/ghidra_12.1.2_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /root/.config/ghidra/ghidra_12.1.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1147 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (2465 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    /opt/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /workspaces/FRIDAY/work
+    /opt/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /opt/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /opt/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/BSim/ghidra_scripts
+    /opt/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /workspaces/FRIDAY/work/ghidra_proj/r7000_httpd (HeadlessAnalyzer)  
+INFO  Opening project: /workspaces/FRIDAY/work/ghidra_proj/r7000_httpd (HeadlessProject)  
+INFO  REPORT: Processing project file: /httpd (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: /httpd (HeadlessAnalyzer)  
+INFO  Packed database cache: /var/tmp/root-ghidra/packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+INFO  Resolving External Symbols of [/httpd] - 487 unresolved symbols, no external libraries configured - skipping (ExternalSymbolResolverAnalyzer)  
+INFO  -----------------------------------------------------
+    ARM Constant Reference Analyzer            7.949 secs
+    ARM Symbol                                 0.026 secs
+    ASCII Strings                              1.748 secs
+    Apply Data Archives                        0.499 secs
+    Call Convention ID                         0.017 secs
+    Call-Fixup Installer                       0.010 secs
+    Create Address Tables                      1.465 secs
+    Create Function                            0.000 secs
+    Data Reference                             0.509 secs
+    Decompiler Switch Analysis                 0.715 secs
+    Demangler GNU                              0.051 secs
+    Disassemble Entry Points                   0.205 secs
+    Embedded Media                             0.390 secs
+    External Entry References                  0.007 secs
+    External Symbol Resolver                   0.005 secs
+    Function ID                                0.032 secs
+    Function Start Pre Search                  0.043 secs
+    Function Start Search                      1.078 secs
+    Function Start Search After Code           0.541 secs
+    Function Start Search After Data           0.437 secs
+    GCC Exception Handlers                     0.019 secs
+    Non-Returning Functions - Discovered       0.479 secs
+    Non-Returning Functions - Known            0.026 secs
+    Reference                                  0.887 secs
+    Shared Return Calls                        0.201 secs
+    Stack                                      1.199 secs
+    Subroutine References                      0.529 secs
+-----------------------------------------------------
+     Total Time   19 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: /httpd (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: GhidraFuncs.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: /workspaces/FRIDAY/work/GhidraFuncs.java (HeadlessAnalyzer)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 00087454 FUN_00087454@00087454 ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+int FUN_00087454(undefined4 param_1,undefined4 param_2)
+
+{
+  undefined *puVar1;
+  int iVar2;
+  int iVar3;
+  uint uVar4;
+  undefined4 uVar5;
+  FILE *pFVar6;
+  FILE *__stream;
+  undefined1 auStack_a8 [152];
+  
+  get_eth_link_status(1,auStack_a8);
+  iVar2 = stristr(auStack_a8,PTR_s_Down_0010309d_5_000875d8);
+  if (iVar2 == 0) {
+    iVar2 = 10;
+    system(PTR_s_ping__c_1__g_0_255_255_255_255_000875e0);
+    do {
+      iVar3 = acosNvramConfig_match
+                        (PTR_s_wan_status_00102cf0_7_000875e4,PTR_s_up_00104790_0x1e_000875e8);
+      if (iVar3 != 0) break;
+      sleep(1);
+      iVar2 = iVar2 + -1;
+    } while (iVar2 != 0);
+    uVar4 = system(PTR_s_ping__4__c_4__f_www_netgear_com_000875ec);
+    if ((uVar4 & 0xffff) >> 8 != 0 || uVar4 == 0xffffffff) {
+      sleep(3);
+      uVar4 = system(PTR_s_ping__4__c_4__f_54_69_94_139_000875f0);
+      if (uVar4 == 0xffffffff) {
+        return -1;
+      }
+    }
+    puVar1 = PTR_DAT_000875f4;
+    if ((uVar4 & 0xffff) >> 8 == 0) {
+      *(undefined4 *)(PTR_DAT_000875f4 + 0xc) = 1;
+      uVar5 = sys_uptime();
+      *(undefined4 *)(puVar1 + 0x10) = uVar5;
+      FUN_0001c424(PTR_s_genie_admin_account_htm_000875f8,param_2);
+      acosNvramConfig_set(PTR_s_success_page_hijack_00087600,PTR_s_1_0010cb71_0x15_000875fc);
+      iVar2 = acosNvramConfig_save();
+      *(undefined4 *)(puVar1 + 0x14) = 1;
+    }
+    else {
+      pFVar6 = fopen(PTR_s__tmp_pppoe_result_00087604,PTR_DAT_00087608);
+      if (pFVar6 == (FILE *)0x0) {
+        pFVar6 = fopen(PTR_s__tmp_pptp_result_0008760c,PTR_DAT_00087608);
+        if (pFVar6 == (FILE *)0x0) {
+          iVar2 = FUN_0001c424(PTR_s_genie_otherissue_htm_000875dc,param_2);
+          return iVar2;
+        }
+      }
+      else {
+        pFVar6 = (FILE *)0x0;
+      }
+      __stream = fopen(PTR_s__tmp_pptp_result_0008760c,PTR_DAT_00087608);
+      if (__stream == (FILE *)0x0) {
+        iVar2 = FUN_0001c424(PTR_s_genie_pppoe_htm_00087614,param_2);
+      }
+      else {
+        FUN_0001c424(PTR_s_genie_pptp_htm_00087610,param_2);
+        iVar2 = fclose(__stream);
+      }
+      if (pFVar6 != (FILE *)0x0) {
+        iVar2 = fclose(pFVar6);
+      }
+    }
+  }
+  else {
+    FUN_0001c424(PTR_s_genie_otherissue_htm_000875dc,param_2);
+    iVar2 = 0;
+  }
+  return iVar2;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 00087618 FUN_00087618@00087618 ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+undefined4 FUN_00087618(undefined4 param_1,undefined4 param_2)
+
+{
+  undefined4 uVar1;
+  int iVar2;
+  int iVar3;
+  uint uVar4;
+  undefined4 uVar5;
+  undefined1 auStack_a8 [152];
+  
+  acosNvramConfig_set(DAT_00087754,DAT_00087750);
+  get_eth_link_status(1,auStack_a8);
+  iVar2 = stristr(auStack_a8,DAT_00087758);
+  if (iVar2 == 0) {
+    iVar2 = 10;
+    system(DAT_0008775c);
+    do {
+      iVar3 = acosNvramConfig_match(DAT_00087760,DAT_00087764);
+      if (iVar3 != 0) break;
+      sleep(1);
+      iVar2 = iVar2 + -1;
+    } while (iVar2 != 0);
+    iVar2 = acosNvramConfig_match(DAT_00087768,DAT_00087750);
+    if ((iVar2 != 0) || (iVar2 = acosNvramConfig_match(DAT_0008776c,DAT_00087770), iVar2 == 0)) {
+      uVar4 = system(DAT_00087774);
+      if ((uVar4 & 0xffff) >> 8 != 0 || uVar4 == 0xffffffff) {
+        sleep(3);
+        uVar4 = system(DAT_00087774);
+        if (uVar4 == 0xffffffff) {
+          system(DAT_00087784);
+          goto LAB_00087738;
+        }
+      }
+      iVar2 = DAT_00087778;
+      if ((uVar4 & 0xffff) >> 8 == 0) {
+        *(undefined4 *)(DAT_00087778 + 0xc) = 1;
+        uVar5 = sys_uptime();
+        uVar1 = DAT_00087750;
+        *(undefined4 *)(iVar2 + 0x10) = uVar5;
+        acosNvramConfig_set(DAT_0008777c,uVar1);
+        acosNvramConfig_save();
+        FUN_0001c424(DAT_00087780,param_2);
+        *(undefined4 *)(iVar2 + 0x14) = 1;
+        return 0;
+      }
+    }
+  }
+LAB_00087738:
+  FUN_0001c424(DAT_00087788,param_2);
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 0008778c FUN_0008778c@0008778c ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+undefined4 FUN_0008778c(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined4 uVar3;
+  undefined4 uVar4;
+  undefined1 auStack_a8 [156];
+  
+  get_eth_link_status(1,auStack_a8);
+  iVar1 = stristr(auStack_a8,DAT_000878ac);
+  uVar3 = DAT_000878b0;
+  if (iVar1 == 0) {
+    iVar1 = 10;
+    system(DAT_000878b4);
+    do {
+      iVar2 = acosNvramConfig_match(DAT_000878b8,DAT_000878bc);
+      if (iVar2 != 0) break;
+      sleep(1);
+      iVar1 = iVar1 + -1;
+    } while (iVar1 != 0);
+    sleep(1);
+    sleep(1);
+    sleep(1);
+    iVar2 = check_internet_status();
+    iVar1 = DAT_000878e0;
+    if (iVar2 != -1) {
+      FUN_0001c424(DAT_000878e4,param_2);
+      *(undefined4 *)(iVar1 + 0xc) = 1;
+      uVar4 = sys_uptime();
+      uVar3 = DAT_000878e8;
+      *(undefined4 *)(iVar1 + 0x10) = uVar4;
+      acosNvramConfig_set(DAT_000878ec,uVar3);
+      acosNvramConfig_save();
+      *(undefined4 *)(iVar1 + 0x14) = 1;
+      return 0;
+    }
+    iVar1 = acosNvramConfig_match(DAT_000878c0,DAT_000878c4);
+    uVar3 = DAT_000878c8;
+    if (((iVar1 == 0) &&
+        (iVar1 = acosNvramConfig_match(DAT_000878c0,DAT_000878cc), uVar3 = DAT_000878d0, iVar1 == 0)
+        ) && (iVar1 = acosNvramConfig_match(DAT_000878c0,DAT_000878d4), uVar3 = DAT_000878d8,
+             iVar1 == 0)) {
+      uVar3 = DAT_000878dc;
+    }
+  }
+  FUN_0001c424(uVar3,param_2);
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 000878f0 FUN_000878f0@000878f0 ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+undefined4 FUN_000878f0(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  int iVar2;
+  uint uVar3;
+  FILE *__stream;
+  char acStack_118 [128];
+  char acStack_98 [64];
+  int local_58;
+  undefined1 auStack_54 [64];
+  
+  iVar1 = acosNvramConfig_match(DAT_00087a80,DAT_00087a84);
+  if (iVar1 != 0) {
+    iVar1 = 0x3c;
+    system(DAT_00087a88);
+    do {
+      iVar2 = acosNvramConfig_match(DAT_00087a8c,DAT_00087a90);
+      if (iVar2 != 0) break;
+      sleep(1);
+      iVar1 = iVar1 + -1;
+    } while (iVar1 != 0);
+    iVar1 = acosNvramConfig_match(DAT_00087a94,DAT_00087a98);
+    if (iVar1 != 0) {
+      FUN_0001c424(DAT_00087a9c,param_2);
+LAB_00087998:
+      acosNvramConfig_set(DAT_00087ab0,DAT_00087aac);
+      acosNvramConfig_save();
+      return 0;
+    }
+    uVar3 = system(DAT_00087aa0);
+    if (uVar3 == 0xffffffff) {
+      acosNvramConfig_set(DAT_00087ab0,DAT_00087aac);
+      acosNvramConfig_save();
+      local_58 = iVar1;
+      memset(auStack_54,0,0x3c);
+      strcpy(acStack_98,DAT_00087ab4);
+      __stream = fopen(acStack_98,DAT_00087ab8);
+      if (__stream == (FILE *)0x0) {
+        return 0;
+      }
+      fgets(acStack_118,0x80,__stream);
+      iVar1 = atoi(acStack_118);
+      fclose(__stream);
+      sprintf((char *)&local_58,DAT_00087abc,iVar1);
+      system((char *)&local_58);
+      sprintf((char *)&local_58,DAT_00087ac0,acStack_98);
+      system((char *)&local_58);
+    }
+    else {
+      if ((uVar3 & 0xffff) >> 8 == 0) {
+        FUN_0001c424(DAT_00087aa4,param_2);
+        *(undefined4 *)(DAT_00087aa8 + 0x14) = 1;
+        goto LAB_00087998;
+      }
+      acosNvramConfig_set(DAT_00087ab0,DAT_00087aac);
+      acosNvramConfig_save();
+    }
+  }
+  FUN_0001c424(DAT_00087a9c,param_2);
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 000b4cf8 FUN_000b4cf8@000b4cf8 ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+/* WARNING: Type propagation algorithm not settling */
+
+void FUN_000b4cf8(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  char *pcVar2;
+  undefined4 uVar3;
+  undefined1 *puVar4;
+  undefined1 auStack_c0a8 [2048];
+  undefined1 auStack_b8a8 [2048];
+  undefined1 auStack_b0a8 [2048];
+  undefined1 auStack_a8a8 [2048];
+  undefined1 auStack_a0a8 [2048];
+  undefined1 auStack_98a8 [2048];
+  undefined1 auStack_90a8 [2048];
+  undefined1 auStack_88a8 [2048];
+  undefined1 auStack_80a8 [2048];
+  undefined1 auStack_78a8 [2048];
+  undefined1 auStack_70a8 [2048];
+  undefined1 auStack_68a8 [2048];
+  undefined1 auStack_60a8 [2048];
+  undefined1 auStack_58a8 [2048];
+  undefined1 auStack_50a8 [2048];
+  undefined1 auStack_48a8 [2048];
+  undefined1 auStack_40a8 [2048];
+  undefined1 auStack_38a8 [2048];
+  undefined1 auStack_30a8 [2048];
+  undefined1 auStack_28a8 [2048];
+  undefined1 auStack_20a8 [2048];
+  undefined1 auStack_18a8 [2048];
+  undefined1 auStack_10a8 [2048];
+  char local_8a8 [2048];
+  char local_a8 [128];
+  char acStack_28 [4];
+  
+  memset(local_8a8,0,0x800);
+  memset(auStack_10a8,0,0x800);
+  memset(auStack_18a8,0,0x800);
+  memset(auStack_20a8,0,0x800);
+  puVar4 = auStack_58a8;
+  memset(auStack_28a8,0,0x800);
+  memset(auStack_30a8,0,0x800);
+  memset(auStack_38a8,0,0x800);
+  memset(auStack_40a8,0,0x800);
+  memset(auStack_48a8,0,0x800);
+  memset(auStack_50a8,0,0x800);
+  memset(puVar4,0,0x800);
+  memset(auStack_60a8,0,0x800);
+  memset(auStack_68a8,0,0x800);
+  memset(auStack_70a8,0,0x800);
+  memset(auStack_78a8,0,0x800);
+  memset(auStack_80a8,0,0x800);
+  memset(auStack_88a8,0,0x800);
+  memset(local_a8,0,0x80);
+  memset(auStack_90a8,0,0x800);
+  memset(auStack_98a8,0,0x800);
+  memset(auStack_a0a8,0,0x800);
+  memset(auStack_a8a8,0,0x800);
+  memset(auStack_b0a8,0,0x800);
+  memset(auStack_b8a8,0,0x800);
+  memset(auStack_c0a8,0,0x800);
+  FUN_0001ae88(param_1,DAT_000b57d8,local_8a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b57dc,auStack_10a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b57e0,auStack_18a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b57e4,auStack_20a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b57e8,auStack_28a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b57ec,auStack_30a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b57f0,auStack_38a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b57f4,auStack_40a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b57f8,auStack_48a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b57fc,auStack_50a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b5800,puVar4,0x800);
+  FUN_0001ae88(param_1,DAT_000b5804,auStack_60a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b5808,auStack_68a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b580c,auStack_70a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b5810,auStack_78a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b5814,auStack_88a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b5818,auStack_80a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b581c,local_a8,0x80);
+  FUN_0001ae88(param_1,DAT_000b5820,auStack_90a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b5824,auStack_98a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b5828,auStack_a0a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b582c,auStack_a8a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b5830,auStack_b0a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b5834,auStack_b8a8,0x800);
+  FUN_0001ae88(param_1,DAT_000b5838,auStack_c0a8,0x800);
+  if (acStack_28[DAT_000b583c] == '\0') {
+    puVar4 = DAT_000b5840;
+  }
+  acosNvramConfig_set(DAT_000b5844,puVar4);
+  puVar4 = DAT_000b5840;
+  if (acStack_28[DAT_000b5848] != '\0') {
+    puVar4 = auStack_60a8;
+  }
+  acosNvramConfig_set(DAT_000b584c,puVar4);
+  puVar4 = DAT_000b5858;
+  if (acStack_28[DAT_000b5850] != '\0') {
+    puVar4 = auStack_68a8;
+  }
+  acosNvramConfig_set(DAT_000b5854,puVar4);
+  if (local_8a8[0] == '\0') {
+    if (acStack_28[DAT_000b5864] != '\0') {
+      iVar1 = acosNvramConfig_match(DAT_000b5868,DAT_000b5860);
+      puVar4 = DAT_000b586c;
+      uVar3 = DAT_000b5868;
+      goto joined_r0x000b5390;
+    }
+    if (acStack_28[DAT_000b5870] != '\0') {
+      iVar1 = acosNvramConfig_match(DAT_000b5874,DAT_000b5860);
+      puVar4 = DAT_000b586c;
+      uVar3 = DAT_000b5874;
+      goto joined_r0x000b5390;
+    }
+    if (acStack_28[DAT_000b5878] != '\0') {
+      iVar1 = acosNvramConfig_match(DAT_000b587c,DAT_000b5860);
+      puVar4 = DAT_000b586c;
+      uVar3 = DAT_000b587c;
+      goto joined_r0x000b5390;
+    }
+    if (acStack_28[DAT_000b5880] != '\0') {
+      iVar1 = acosNvramConfig_match(DAT_000b5884,DAT_000b5860);
+      puVar4 = DAT_000b586c;
+      uVar3 = DAT_000b5884;
+      goto joined_r0x000b5390;
+    }
+    if (acStack_28[DAT_000b5888] != '\0') {
+      iVar1 = acosNvramConfig_match(DAT_000b588c,DAT_000b5860);
+      if (iVar1 == 0) {
+        acosNvramConfig_set(DAT_000b588c,DAT_000b5860);
+        pcVar2 = DAT_000b5894;
+      }
+      else {
+        acosNvramConfig_set(DAT_000b588c,DAT_000b586c);
+        pcVar2 = DAT_000b5890;
+      }
+LAB_000b53c0:
+      system(pcVar2);
+      goto LAB_000b57bc;
+    }
+    if (acStack_28[DAT_000b5898] != '\0') {
+      iVar1 = acosNvramConfig_match(DAT_000b589c,DAT_000b5860);
+      puVar4 = DAT_000b586c;
+      uVar3 = DAT_000b589c;
+      goto joined_r0x000b5390;
+    }
+    pcVar2 = DAT_000b58a4;
+    if (acStack_28[DAT_000b58a0] != '\0') goto LAB_000b53c0;
+    if (acStack_28[DAT_000b58a8] != '\0') {
+      iVar1 = acosNvramConfig_match(DAT_000b58ac,DAT_000b5860);
+      puVar4 = DAT_000b586c;
+      uVar3 = DAT_000b58ac;
+      goto joined_r0x000b5390;
+    }
+    if (acStack_28[DAT_000b58b0] == '\0') {
+      if (acStack_28[DAT_000b58c0] != '\0') {
+        iVar1 = acosNvramConfig_match(DAT_000b58c4,DAT_000b5860);
+        puVar4 = DAT_000b586c;
+        uVar3 = DAT_000b58c4;
+        goto joined_r0x000b5390;
+      }
+      if (acStack_28[DAT_000b58c8] != '\0') {
+        iVar1 = acosNvramConfig_match(DAT_000b58cc,DAT_000b5860);
+        if (iVar1 == 0) {
+          acosNvramConfig_set(DAT_000b58cc,DAT_000b5860);
+          pcVar2 = (char *)acosNvramConfig_get(DAT_000b58d4);
+          uVar3 = DAT_000b58d8;
+          puVar4 = DAT_000b58e0;
+          if (*pcVar2 == '\0') {
+            acosNvramConfig_set(DAT_000b58d4,DAT_000b58dc);
+            uVar3 = DAT_000b58d8;
+            puVar4 = DAT_000b58e0;
+          }
+        }
+        else {
+          acosNvramConfig_set(DAT_000b58d4,DAT_000b58d0);
+          acosNvramConfig_set(DAT_000b58d8,DAT_000b58d0);
+          uVar3 = DAT_000b58cc;
+          puVar4 = DAT_000b586c;
+        }
+        goto LAB_000b57b8;
+      }
+      if (local_a8[0] != '\0') {
+        iVar1 = acosNvramConfig_match(DAT_000b58e4,DAT_000b5860);
+        puVar4 = DAT_000b586c;
+        uVar3 = DAT_000b58e4;
+        goto joined_r0x000b5390;
+      }
+      if (acStack_28[DAT_000b58e8] != '\0') {
+        iVar1 = acosNvramConfig_match(DAT_000b58ec,DAT_000b5860);
+        puVar4 = DAT_000b586c;
+        uVar3 = DAT_000b58ec;
+        goto joined_r0x000b5390;
+      }
+      if (acStack_28[DAT_000b58f0] == '\0') {
+        if (acStack_28[DAT_000b5910] == '\0') {
+          if (acStack_28[DAT_000b594c] == '\0') {
+            if (acStack_28[DAT_000b595c] == '\0') {
+              if (acStack_28[DAT_000b5960] == '\0') {
+                if (acStack_28[DAT_000b5970] == '\0') goto LAB_000b57bc;
+                puVar4 = auStack_c0a8;
+                uVar3 = DAT_000b5974;
+              }
+              else {
+                iVar1 = acosNvramConfig_match(DAT_000b5964,DAT_000b5860);
+                if (iVar1 == 0) {
+                  system(DAT_000b596c);
+                  uVar3 = DAT_000b5964;
+                  goto LAB_000b578c;
+                }
+                system(DAT_000b5968);
+                uVar3 = DAT_000b5964;
+                puVar4 = DAT_000b586c;
+              }
+            }
+            else {
+              puVar4 = auStack_a0a8;
+              uVar3 = DAT_000b58d4;
+            }
+            goto LAB_000b57b8;
+          }
+          system(DAT_000b5950);
+          system(DAT_000b5894);
+          system(DAT_000b5954);
+          uVar3 = DAT_000b5958;
+        }
+        else {
+          system(DAT_000b5914);
+          system(DAT_000b5918);
+          system(DAT_000b591c);
+          system(DAT_000b5920);
+          system(DAT_000b5924);
+          iVar1 = acosNvramConfig_match(DAT_000b5874,DAT_000b5860);
+          if (iVar1 != 0) {
+            system(DAT_000b5928);
+            system(DAT_000b592c);
+            system(DAT_000b5930);
+          }
+          iVar1 = acosNvramConfig_match(DAT_000b589c,DAT_000b5860);
+          if (iVar1 == 0) {
+            system(DAT_000b5934);
+          }
+          iVar1 = acosNvramConfig_match(DAT_000b58ac,DAT_000b5860);
+          if ((iVar1 != 0) ||
+             (iVar1 = acosNvramConfig_match(DAT_000b5938,DAT_000b5860), uVar3 = DAT_000b5948,
+             iVar1 != 0)) {
+            system(DAT_000b593c);
+            sleep(2);
+            system(DAT_000b5940);
+            system(DAT_000b58bc);
+            system(DAT_000b5944);
+            uVar3 = DAT_000b5948;
+          }
+        }
+      }
+      else {
+        iVar1 = acosNvramConfig_match(DAT_000b58f4,DAT_000b5860);
+        if (iVar1 != 0) {
+          system(DAT_000b58f8);
+          system(DAT_000b58fc);
+          system(DAT_000b5900);
+          uVar3 = DAT_000b58f4;
+          puVar4 = DAT_000b586c;
+          goto LAB_000b57b8;
+        }
+        system(DAT_000b5904);
+        system(DAT_000b5908);
+        system(DAT_000b590c);
+        uVar3 = DAT_000b58f4;
+      }
+      goto LAB_000b578c;
+    }
+    iVar1 = acosNvramConfig_match(DAT_000b58b4,DAT_000b5860);
+    if (iVar1 == 0) {
+      system(DAT_000b58bc);
+      uVar3 = DAT_000b58b4;
+      goto LAB_000b578c;
+    }
+    system(DAT_000b58b8);
+    uVar3 = DAT_000b58b4;
+    puVar4 = DAT_000b586c;
+  }
+  else {
+    iVar1 = acosNvramConfig_match(DAT_000b585c,DAT_000b5860);
+    puVar4 = DAT_000b586c;
+    uVar3 = DAT_000b585c;
+joined_r0x000b5390:
+    DAT_000b586c = puVar4;
+    if (iVar1 == 0) {
+LAB_000b578c:
+      puVar4 = DAT_000b5860;
+    }
+  }
+LAB_000b57b8:
+  acosNvramConfig_set(uVar3,puVar4);
+LAB_000b57bc:
+  acosNvramConfig_save();
+  FUN_0001c424(DAT_000b5978,param_2);
+  return;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 000b5e7c FUN_000b5e7c@000b5e7c ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+void FUN_000b5e7c(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  char *pcVar2;
+  undefined1 auStack_3028 [2048];
+  undefined1 auStack_2828 [2048];
+  char acStack_2028 [2048];
+  undefined1 auStack_1828 [2048];
+  undefined1 auStack_1028 [2048];
+  char acStack_828 [2048];
+  char acStack_28 [4];
+  
+  memset(acStack_828,0,0x800);
+  memset(auStack_1028,0,0x800);
+  memset(auStack_1828,0,0x800);
+  memset(acStack_2028,0,0x800);
+  memset(auStack_2828,0,0x800);
+  memset(auStack_3028,0,0x800);
+  FUN_0001ae88(param_1,DAT_000b61f0,acStack_828,0x800);
+  FUN_0001ae88(param_1,DAT_000b61f4,auStack_1028,0x800);
+  FUN_0001ae88(param_1,DAT_000b61f8,auStack_1828,0x800);
+  FUN_0001ae88(param_1,DAT_000b61fc,acStack_2028,0x800);
+  FUN_0001ae88(param_1,DAT_000b6200,auStack_2828,0x800);
+  FUN_0001ae88(param_1,DAT_000b6204,auStack_3028,0x800);
+  iVar1 = strcmp(acStack_828,DAT_000b6208);
+  if ((iVar1 == 0) &&
+     (acosNvramConfig_set(DAT_000b620c,DAT_000b6210), acStack_28[DAT_000b6214] != '\0')) {
+    acosNvramConfig_set(DAT_000b620c,DAT_000b6208);
+  }
+  iVar1 = strcmp(acStack_828,DAT_000b6218);
+  if (iVar1 == 0) {
+    acosNvramConfig_set(DAT_000b621c,DAT_000b6210);
+    if (acStack_28[DAT_000b6220] != '\0') {
+      acosNvramConfig_set(DAT_000b621c,DAT_000b6208);
+    }
+    iVar1 = acosNvramConfig_match(DAT_000b621c,DAT_000b6208);
+    pcVar2 = DAT_000b622c;
+    if ((iVar1 != 0) &&
+       (iVar1 = strcmp(acStack_2028,DAT_000b6224), pcVar2 = DAT_000b6224, iVar1 != 0)) {
+      pcVar2 = DAT_000b6228;
+    }
+    acosNvramConfig_set(DAT_000b61fc,pcVar2);
+    if (acStack_28[DAT_000b6230] != '\0') {
+      acosNvramConfig_set(DAT_000b6234,DAT_000b6208);
+      acosNvramConfig_set(DAT_000b6238,DAT_000b6208);
+      system(DAT_000b623c);
+      acosNvramConfig_set(DAT_000b6240,DAT_000b6208);
+      system(DAT_000b6244);
+      system(DAT_000b6248);
+      system(DAT_000b624c);
+      system(DAT_000b6250);
+      system(DAT_000b6254);
+      system(DAT_000b6258);
+      system(DAT_000b625c);
+      system(DAT_000b6260);
+      iVar1 = acosNvramConfig_match(DAT_000b621c,DAT_000b6208);
+      if (iVar1 != 0) {
+        iVar1 = acosNvramConfig_match(DAT_000b61fc,DAT_000b6224);
+        if (iVar1 != 0) {
+          system(DAT_000b6264);
+          system(DAT_000b6268);
+          system(DAT_000b626c);
+        }
+        iVar1 = acosNvramConfig_match(DAT_000b61fc,DAT_000b6228);
+        if (iVar1 != 0) {
+          system(DAT_000b6270);
+          system(DAT_000b6274);
+          system(DAT_000b6278);
+        }
+      }
+      system(DAT_000b627c);
+      system(DAT_000b6280);
+      acosNvramConfig_set(DAT_000b6284,DAT_000b6208);
+    }
+  }
+  iVar1 = strcmp(acStack_828,DAT_000b6288);
+  if (iVar1 == 0) {
+    system(DAT_000b628c);
+    system(DAT_000b6290);
+    system(DAT_000b6294);
+    acosNvramConfig_set(DAT_000b6298,DAT_000b6210);
+    if (acStack_28[DAT_000b629c] != '\0') {
+      system(DAT_000b62a0);
+      system(DAT_000b62a4);
+      system(DAT_000b62a8);
+      acosNvramConfig_set(DAT_000b6298,DAT_000b6208);
+    }
+  }
+  system(DAT_000b62ac);
+  acosNvramConfig_save();
+  FUN_0001c424(DAT_000b62b0,param_2);
+  return;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 000b62b4 FUN_000b62b4@000b62b4 ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+void FUN_000b62b4(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  char local_220 [128];
+  char local_1a0 [128];
+  char local_120 [128];
+  char acStack_a0 [128];
+  
+  memset(acStack_a0,0,0x80);
+  memset(local_120,0,0x80);
+  memset(local_1a0,0,0x80);
+  memset(local_220,0,0x80);
+  iVar1 = is_china_specific_support();
+  if (iVar1 == 0) {
+    FUN_0001ae88(param_1,DAT_000b6438,acStack_a0,0x80);
+    FUN_000cc274(param_1,DAT_000b643c,local_120,0x80,3);
+    FUN_000cc274(param_1,DAT_000b6440,local_1a0,0x80,3);
+    FUN_0001ae88(param_1,DAT_000b6444,local_220,0x80);
+    iVar1 = strcmp(acStack_a0,DAT_000b6448);
+    if (iVar1 == 0) {
+      if (local_120[0] != '\0') {
+        acosNvramConfig_set(DAT_000b644c,local_120);
+      }
+      if (local_1a0[0] != '\0') {
+        acosNvramConfig_set(DAT_000b6450,local_1a0);
+        acosNvramConfig_set(DAT_000b6454,local_1a0);
+      }
+      if (local_220[0] != '\0') {
+        acosNvramConfig_set(DAT_000b6458,local_220);
+      }
+    }
+    acosNvramConfig_save();
+    system(DAT_000b645c);
+    system(DAT_000b6460);
+    system(DAT_000b6464);
+    system(DAT_000b6468);
+    system(DAT_000b646c);
+    system(DAT_000b6470);
+    system(DAT_000b6474);
+  }
+  FUN_0001c424(DAT_000b6478,param_2);
+  return;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 00045268 FUN_00045268@00045268 ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+undefined4 FUN_00045268(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  FILE *pFVar3;
+  size_t sVar4;
+  char *pcVar5;
+  char acStack_1c81 [4097];
+  char acStack_c80 [2048];
+  char acStack_480 [512];
+  char local_280 [512];
+  undefined1 auStack_80 [16];
+  undefined1 auStack_70 [16];
+  undefined1 auStack_60 [16];
+  char acStack_50 [16];
+  undefined4 local_40;
+  char *local_3c;
+  size_t local_38;
+  undefined1 auStack_34 [8];
+  char acStack_2c [8];
+  char acStack_24 [8];
+  undefined4 local_1c;
+  
+  FUN_0001ae88(param_1,DAT_00045d30,acStack_c80,0x800);
+  FUN_0001ae88(param_1,DAT_00045d34,acStack_50,0x10);
+  FUN_0001ae88(param_1,DAT_00045d38,acStack_24,8);
+  local_40 = 3;
+  local_3c = acStack_24;
+  local_38 = strlen(acStack_24);
+  local_1c = 3;
+  iVar1 = FUN_000cb628(local_40,local_3c,local_38);
+  if (iVar1 != 0) {
+    printf(DAT_00045d40,DAT_00045d3c,0x180);
+    uVar2 = FUN_000cb5dc(param_2);
+    return uVar2;
+  }
+  FUN_0001ae88(param_1,DAT_00045d44,acStack_2c,8);
+  FUN_0001ae88(param_1,DAT_00045d48,auStack_34,8);
+  FUN_0001ae88(param_1,DAT_00045d4c,auStack_60,0x10);
+  FUN_0001ae88(param_1,DAT_00045d50,auStack_70,0x10);
+  FUN_0001ae88(param_1,DAT_00045d54,auStack_80,0x10);
+  FUN_0001ae88(param_1,DAT_00045d58,local_280,0x200);
+  system(DAT_00045d5c);
+  system(DAT_00045d60);
+  pFVar3 = fopen(DAT_00045d64,DAT_00045d68);
+  if (pFVar3 != (FILE *)0x0) {
+    fclose(pFVar3);
+    system(DAT_00045d6c);
+  }
+  iVar1 = strcmp(acStack_c80,DAT_00045d70);
+  if (iVar1 == 0) {
+    acosNvramConfig_set(DAT_00045d30,DAT_00045d74);
+    FUN_0001ae88(param_1,DAT_00045d78,acStack_1c81 + 1,0x1000);
+    if (acStack_1c81[1] != '\0') {
+      pFVar3 = fopen(DAT_00045d7c,DAT_00045d68);
+      if (pFVar3 != (FILE *)0x0) {
+        fclose(pFVar3);
+        system(DAT_00045d80);
+        system(DAT_00045d84);
+      }
+      pFVar3 = fopen(DAT_00045d7c,DAT_00045d88);
+      if (pFVar3 != (FILE *)0x0) {
+        snprintf(acStack_480,0x200,DAT_00045d8c);
+        pcVar5 = acStack_1c81 + 1;
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        sVar4 = strlen(pcVar5);
+        if ((0 < (int)sVar4) && (pcVar5[sVar4 - 1] == '\n')) {
+          pcVar5[sVar4 - 1] = '\0';
+        }
+        fprintf(pFVar3,DAT_00045d90,acStack_1c81 + 1);
+        snprintf(acStack_480,0x200,DAT_00045d94);
+        fputs(acStack_480,pFVar3);
+        fclose(pFVar3);
+      }
+      system(DAT_00045d98);
+    }
+    FUN_0001ae88(param_1,DAT_00045d9c,acStack_1c81 + 1,0x1000);
+    if (acStack_1c81[1] != '\0') {
+      pFVar3 = fopen(DAT_00045da0,DAT_00045d68);
+      if (pFVar3 != (FILE *)0x0) {
+        fclose(pFVar3);
+        system(DAT_00045da4);
+        system(DAT_00045da8);
+      }
+      pFVar3 = fopen(DAT_00045da0,DAT_00045d88);
+      if (pFVar3 != (FILE *)0x0) {
+        snprintf(acStack_480,0x200,DAT_00045d8c);
+        pcVar5 = acStack_1c81 + 1;
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        sVar4 = strlen(pcVar5);
+        if ((0 < (int)sVar4) && (pcVar5[sVar4 - 1] == '\n')) {
+          pcVar5[sVar4 - 1] = '\0';
+        }
+        fprintf(pFVar3,DAT_00045d90,acStack_1c81 + 1);
+        snprintf(acStack_480,0x200,DAT_00045d94);
+        fputs(acStack_480,pFVar3);
+        fclose(pFVar3);
+      }
+      system(DAT_00045dac);
+    }
+    FUN_0001ae88(param_1,DAT_00045db0,acStack_1c81 + 1,0x1000);
+    if (acStack_1c81[1] != '\0') {
+      pFVar3 = fopen(DAT_00045db4,DAT_00045d68);
+      if (pFVar3 != (FILE *)0x0) {
+        fclose(pFVar3);
+        system(DAT_00045db8);
+        system(DAT_00045dbc);
+      }
+      pFVar3 = fopen(DAT_00045db4,DAT_00045d88);
+      if (pFVar3 != (FILE *)0x0) {
+        snprintf(acStack_480,0x200,DAT_00045dc0);
+        pcVar5 = acStack_1c81 + 1;
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        sVar4 = strlen(pcVar5);
+        if ((0 < (int)sVar4) && (pcVar5[sVar4 - 1] == '\n')) {
+          pcVar5[sVar4 - 1] = '\0';
+        }
+        fprintf(pFVar3,DAT_00045d90,acStack_1c81 + 1);
+        snprintf(acStack_480,0x200,DAT_00045dc4);
+        fputs(acStack_480,pFVar3);
+        fclose(pFVar3);
+      }
+      system(DAT_00045dc8);
+    }
+    FUN_0001ae88(param_1,DAT_00045dcc,acStack_1c81 + 1,0x1000);
+    if (acStack_1c81[1] != '\0') {
+      pFVar3 = fopen(DAT_00045dd0,DAT_00045d68);
+      if (pFVar3 != (FILE *)0x0) {
+        fclose(pFVar3);
+        system(DAT_00045dd4);
+        system(DAT_00045dd8);
+      }
+      pFVar3 = fopen(DAT_00045dd0,DAT_00045d88);
+      if (pFVar3 != (FILE *)0x0) {
+        snprintf(acStack_480,0x200,DAT_00045ddc);
+        pcVar5 = acStack_1c81 + 1;
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        sVar4 = strlen(pcVar5);
+        if ((0 < (int)sVar4) && (pcVar5[sVar4 - 1] == '\n')) {
+          pcVar5[sVar4 - 1] = '\0';
+        }
+        fprintf(pFVar3,DAT_00045d90,acStack_1c81 + 1);
+        snprintf(acStack_480,0x200,DAT_00045de0);
+        fputs(acStack_480,pFVar3);
+        fclose(pFVar3);
+      }
+      system(DAT_00045de4);
+    }
+    pFVar3 = fopen(DAT_00045de8,DAT_00045d88);
+    if (pFVar3 != (FILE *)0x0) {
+      snprintf(acStack_480,0x200,DAT_00045dec);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045df0);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045df4);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045df8);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      iVar1 = strcmp(acStack_24,DAT_00045dfc);
+      if (iVar1 == 0) {
+        snprintf(acStack_480,0x200,DAT_00045e00);
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        snprintf(acStack_480,0x200,DAT_00045e04,auStack_80);
+      }
+      else {
+        snprintf(acStack_480,0x200,DAT_00045e08);
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+        snprintf(acStack_480,0x200,DAT_00045e0c,auStack_60,auStack_70);
+      }
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      iVar1 = strcmp(acStack_2c,DAT_00045e10);
+      pcVar5 = DAT_00045e14;
+      if (iVar1 != 0) {
+        pcVar5 = DAT_00045e18;
+      }
+      snprintf(acStack_480,0x200,pcVar5);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e1c,auStack_34);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e20);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e24);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e28);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e2c);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e30);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e34);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e38);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e3c);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e40);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e44);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e48);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e4c);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e50);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      snprintf(acStack_480,0x200,DAT_00045e54);
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      if (local_280[0] != '\0') {
+        snprintf(acStack_480,0x200,DAT_00045e58,local_280);
+        fprintf(pFVar3,DAT_00045d90,acStack_480);
+      }
+      iVar1 = strcmp(acStack_50,DAT_00045e5c);
+      if (iVar1 == 0) {
+        acosNvramConfig_set(DAT_00045d34,DAT_00045d74);
+        snprintf(acStack_480,0x200,DAT_00045e60);
+      }
+      else {
+        acosNvramConfig_set(DAT_00045d34,DAT_00045e64);
+        snprintf(acStack_480,0x200,DAT_00045e68,auStack_80);
+      }
+      fprintf(pFVar3,DAT_00045d90,acStack_480);
+      fclose(pFVar3);
+    }
+    snprintf(acStack_480,0x200,DAT_00045e6c,DAT_00045e70);
+    system(acStack_480);
+    system(DAT_00045e74);
+    system(DAT_00045e78);
+    system(DAT_00045e7c);
+    sleep(4);
+    system(DAT_00045e80);
+    iVar1 = strcmp(acStack_24,DAT_00045e84);
+    if (iVar1 != 0) goto LAB_00045ca0;
+    system(DAT_00045e88);
+    pcVar5 = DAT_00045e8c;
+  }
+  else {
+    acosNvramConfig_set(DAT_00045d30,DAT_00045e64);
+    system(DAT_00045e90);
+    system(DAT_00045e94);
+    system(DAT_00045d5c);
+    pcVar5 = DAT_00045d60;
+  }
+  system(pcVar5);
+LAB_00045ca0:
+  acosNvramConfig_set(DAT_00045d38,acStack_24);
+  acosNvramConfig_set(DAT_00045d44,acStack_2c);
+  acosNvramConfig_set(DAT_00045d48,auStack_34);
+  acosNvramConfig_set(DAT_00045d4c,auStack_60);
+  acosNvramConfig_set(DAT_00045d50,auStack_70);
+  acosNvramConfig_set(DAT_00045d54,auStack_80);
+  acosNvramConfig_set(DAT_00045d58,local_280);
+  acosNvramConfig_save();
+  FUN_0001c424(DAT_00045e98,param_2);
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 00046740 FUN_00046740@00046740 ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+undefined4 FUN_00046740(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+
+{
+  undefined4 uVar1;
+  
+  uVar1 = DAT_00046818;
+  acosNvramConfig_set(DAT_00046818,DAT_0004681c,param_3,param_4,param_4);
+  system(DAT_00046820);
+  system(DAT_00046824);
+  system(DAT_00046828);
+  system(DAT_0004682c);
+  system(DAT_00046830);
+  system(DAT_00046834);
+  system(DAT_00046838);
+  system(DAT_0004683c);
+  system(DAT_00046840);
+  system(DAT_00046844);
+  system(DAT_00046848);
+  acosNvramConfig_set(DAT_00046850,DAT_0004684c);
+  acosNvramConfig_set(uVar1,DAT_00046854);
+  openvpn_make_config_file();
+  system(DAT_00046858);
+  system(DAT_0004685c);
+  sleep(4);
+  system(DAT_00046860);
+  system(DAT_00046864);
+  system(DAT_00046868);
+  system(DAT_0004686c);
+  FUN_0001c424(DAT_00046870,param_2);
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 00053ca4 FUN_00053ca4@00053ca4 ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+undefined4 FUN_00053ca4(undefined4 param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  uint uVar2;
+  int iVar3;
+  undefined4 uVar4;
+  in_addr_t iVar5;
+  in_addr_t iVar6;
+  char *pcVar7;
+  undefined4 uVar8;
+  int iVar9;
+  uint uVar10;
+  uint uVar11;
+  uint uVar12;
+  undefined4 local_281c;
+  char *local_2818;
+  size_t local_2814;
+  char acStack_201c [2048];
+  char acStack_181c [2048];
+  char acStack_101c [2048];
+  char acStack_81c [2048];
+  undefined4 local_1c;
+  
+  FUN_0001ae88(param_1,DAT_00054190,&local_281c,0x800);
+  iVar1 = strcmp((char *)&local_281c,DAT_00054194);
+  if ((iVar1 == 0) || (iVar1 = strcmp((char *)&local_281c,DAT_00054198), iVar1 == 0)) {
+    iVar1 = acosNvramConfig_match(DAT_0005419c,&local_281c);
+    if (iVar1 != 0) goto LAB_00053d30;
+    acosNvramConfig_set(DAT_0005419c,&local_281c);
+    uVar2 = strcmp((char *)&local_281c,DAT_00054194);
+    iVar1 = 1 - uVar2;
+    if (1 < uVar2) {
+      iVar1 = 0;
+    }
+  }
+  else {
+LAB_00053d30:
+    iVar1 = 0;
+  }
+  FUN_0001ae88(param_1,DAT_000541a0,acStack_81c,0x800);
+  iVar3 = acosNvramConfig_match(DAT_000541a4,DAT_00054194);
+  if (iVar3 == 0) {
+    FUN_0001ae88(param_1,DAT_000541a8,acStack_101c,0x800);
+    *(undefined4 *)(&stack0xffffffe8 + DAT_000541ac) = 2;
+    local_2818 = acStack_101c;
+    local_2814 = strlen(acStack_101c);
+    local_1c = 5;
+    iVar3 = FUN_000cb628(local_281c,local_2818,local_2814);
+    if (iVar3 != 0) {
+      printf(DAT_000541b4,DAT_000541b0,0x5e);
+      uVar4 = FUN_000cb5dc(param_2);
+      return uVar4;
+    }
+    FUN_0001ae88(param_1,DAT_000541b8,acStack_181c,0x800);
+    FUN_0001ae88(param_1,DAT_000541bc,acStack_201c,0x800);
+    iVar5 = inet_addr(acStack_181c);
+    iVar6 = inet_addr(acStack_201c);
+    if (iVar5 == 0 && iVar6 == 0xffffffff) {
+LAB_00053ee0:
+      iVar3 = atoi(acStack_101c);
+      if ((0x3ff < iVar3) && (iVar3 < 0xffff)) {
+        iVar9 = atoi(acStack_81c);
+        if (iVar9 == 1) {
+          iVar3 = acosNvramConfig_match(DAT_000541d8,DAT_00054194);
+          if (((iVar3 != 0) &&
+              (iVar3 = acosNvramConfig_match(DAT_000541dc,acStack_101c), iVar3 != 0)) ||
+             ((iVar3 = acosNvramConfig_match(DAT_000541e0,DAT_00054194), iVar3 != 0 &&
+              (iVar3 = acosNvramConfig_match(DAT_000541e4,acStack_101c), iVar3 != 0)))) {
+            iVar3 = -2;
+LAB_0005406c:
+            uVar4 = FUN_000481b8(iVar3,DAT_000541d4,param_2);
+            return uVar4;
+          }
+          iVar3 = acosNvramConfig_match(DAT_000541a8,acStack_101c);
+          if ((iVar3 == 0) || (iVar3 = acosNvramConfig_match(DAT_000541a0,DAT_00054198), iVar3 != 0)
+             ) {
+            iVar3 = atoi(acStack_101c);
+            iVar3 = agApi_setDeviceListenPort(2,iVar3,1);
+            iVar9 = atoi(acStack_101c);
+            agApi_ipv6_set_listen_port(1,0,6,iVar9,iVar9);
+            if (iVar3 < 0) {
+              if (iVar3 == -3) {
+                acosNvramConfig_set(DAT_000541a0,acStack_81c);
+                acosNvramConfig_set(DAT_000541a8,acStack_101c);
+                acosNvramConfig_set(DAT_000541b8,acStack_181c);
+                acosNvramConfig_set(DAT_000541bc,acStack_201c);
+                acosNvramConfig_save();
+              }
+              goto LAB_0005406c;
+            }
+          }
+        }
+        else {
+          agApi_setDeviceListenPort(2,iVar3,0);
+          iVar3 = atoi(acStack_101c);
+          agApi_ipv6_set_listen_port(0,0,6,iVar3,iVar3);
+        }
+        iVar3 = acosNvramConfig_match(DAT_000541a0,acStack_81c);
+        if (iVar3 == 0) {
+          iVar3 = 1;
+        }
+        else {
+          iVar3 = strcmp(acStack_81c,DAT_00054194);
+          if (iVar3 == 0) {
+            uVar2 = acosNvramConfig_match(DAT_000541a8,acStack_101c);
+            iVar3 = 1 - uVar2;
+            if (1 < uVar2) {
+              iVar3 = 0;
+            }
+          }
+          else {
+            iVar3 = 0;
+          }
+        }
+        acosNvramConfig_set(DAT_000541a0,acStack_81c);
+        acosNvramConfig_set(DAT_000541a8,acStack_101c);
+        acosNvramConfig_set(DAT_000541b8,acStack_181c);
+        acosNvramConfig_set(DAT_000541bc,acStack_201c);
+        goto LAB_0005413c;
+      }
+      uVar8 = thunk_FUN_000ad8bc(DAT_000541c8);
+      uVar4 = DAT_000541d0;
+    }
+    else {
+      iVar5 = inet_addr(acStack_181c);
+      uVar10 = iVar5 << 0x18 | (iVar5 >> 8 & 0xff) << 0x10 | (iVar5 >> 0x10 & 0xff) << 8 |
+               iVar5 >> 0x18;
+      iVar5 = inet_addr(acStack_201c);
+      uVar11 = iVar5 << 0x18 | (iVar5 >> 8 & 0xff) << 0x10 | (iVar5 >> 0x10 & 0xff) << 8 |
+               iVar5 >> 0x18;
+      pcVar7 = (char *)acosNvramConfig_get(DAT_000541c0);
+      iVar5 = inet_addr(pcVar7);
+      uVar12 = iVar5 << 0x18 | (iVar5 >> 8 & 0xff) << 0x10 | (iVar5 >> 0x10 & 0xff) << 8 |
+               iVar5 >> 0x18;
+      pcVar7 = (char *)acosNvramConfig_get(DAT_000541c4);
+      iVar5 = inet_addr(pcVar7);
+      uVar2 = iVar5 << 0x18 | (iVar5 >> 8 & 0xff) << 0x10 | (iVar5 >> 0x10 & 0xff) << 8 |
+              iVar5 >> 0x18;
+      if (((((uVar12 ^ uVar10) & uVar2) != 0) &&
+          ((int)uVar10 <= (int)uVar11 && ((uVar12 ^ uVar11) & uVar2) != 0)) &&
+         ((int)(uVar2 & uVar12) < (int)uVar10 || (int)uVar11 < (int)(~uVar2 | uVar2 & uVar12)))
+      goto LAB_00053ee0;
+      uVar8 = thunk_FUN_000ad8bc(DAT_000541c8);
+      uVar4 = DAT_000541cc;
+    }
+    uVar4 = thunk_FUN_000ad8bc(uVar4);
+    FUN_0003b9e4(uVar8,uVar4,DAT_000541d4,param_2);
+  }
+  else {
+    iVar3 = 0;
+LAB_0005413c:
+    printf(DAT_000541e8,DAT_000541b0,0xda);
+    if (iVar3 == 1) {
+      *DAT_000541ec = 1;
+    }
+    acosNvramConfig_save();
+    if (iVar1 == 0) {
+      FUN_0001c424(DAT_000541d4,param_2);
+      return 0;
+    }
+    FUN_0001c424(DAT_000541f0,param_2);
+  }
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 00053b38 FUN_00053b38@00053b38 ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+undefined4 FUN_00053b38(undefined4 param_1,undefined4 param_2)
+
+{
+  uint *puVar1;
+  size_t sVar2;
+  undefined4 uVar3;
+  int iVar4;
+  char acStack_860 [2048];
+  char acStack_60 [32];
+  char acStack_40 [36];
+  
+  memset(acStack_40,0,0x20);
+  iVar4 = DAT_00053c80;
+  memset(acStack_860,0,0x800);
+  memset(acStack_60,0,0x20);
+  while (*(int *)(iVar4 + -8) != 0) {
+    FUN_0001ae88(param_1,*(int *)(iVar4 + -8),acStack_860,0x800);
+    sVar2 = strlen(acStack_860);
+    puVar1 = (uint *)(iVar4 + -4);
+    iVar4 = iVar4 + 8;
+    if (*puVar1 < sVar2) {
+      printf(DAT_00053c88,DAT_00053c84,0x2f4);
+      uVar3 = FUN_000cb5dc(param_2);
+      return uVar3;
+    }
+  }
+  iVar4 = acosNvramConfig_match(DAT_00053c8c,DAT_00053c90);
+  if (iVar4 != 0) {
+    return 0;
+  }
+  FUN_0001ae88(param_1,DAT_00053c94,acStack_40,0x20);
+  printf(DAT_00053c98,acStack_40);
+  iVar4 = atoi(acStack_40);
+  if (iVar4 < 1) {
+    strlcpy(acStack_60,acStack_40,0x20);
+  }
+  else {
+    snprintf(acStack_60,0x20,DAT_00053c9c,acStack_40);
+  }
+  iVar4 = set_timezone_to_nvram(acStack_60);
+  if (iVar4 == 0) {
+    return 0;
+  }
+  system_update_timezone();
+  FUN_0003bc78(DAT_00053ca0,param_2);
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  GhidraFuncs.java> 
+===== FUNC_AT 00074e1c FUN_00074e1c@00074e1c ===== (GhidraScript)  
+INFO  GhidraFuncs.java> 
+undefined4 FUN_00074e1c(undefined4 param_1,undefined4 param_2)
+
+{
+  uint *puVar1;
+  size_t sVar2;
+  int iVar3;
+  undefined4 uVar4;
+  char acStack_940 [2048];
+  char acStack_140 [256];
+  char acStack_40 [36];
+  
+  memset(acStack_140,0,0x100);
+  iVar3 = DAT_00074f40;
+  memset(acStack_940,0,0x800);
+  memset(acStack_40,0,0x20);
+  do {
+    if (*(int *)(iVar3 + -8) == 0) {
+      iVar3 = acosNvramConfig_match(DAT_00074f4c,DAT_00074f50);
+      if (iVar3 == 0) {
+        FUN_0001ae88(param_1,DAT_00074f54,acStack_140,0x100);
+        printf(DAT_00074f58,acStack_140);
+        iVar3 = atoi(acStack_140);
+        if (iVar3 < 1) {
+          strcpy(acStack_40,acStack_140);
+        }
+        else {
+          sprintf(acStack_40,DAT_00074f5c,acStack_140);
+        }
+        uVar4 = set_timezone_to_nvram(acStack_40);
+        return uVar4;
+      }
+      return 0;
+    }
+    FUN_0001ae88(param_1,*(int *)(iVar3 + -8),acStack_940,0x800);
+    sVar2 = strlen(acStack_940);
+    puVar1 = (uint *)(iVar3 + -4);
+    iVar3 = iVar3 + 8;
+  } while (sVar2 <= *puVar1);
+  printf(DAT_00074f48,DAT_00074f44,0x1937);
+  uVar4 = FUN_000cb5dc(param_2);
+  return uVar4;
+}
+
+ (GhidraScript)  
+INFO  ANALYZING changes made by post scripts: /httpd (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: /httpd (HeadlessAnalyzer)  
+INFO  REPORT: Save succeeded for processed file: /httpd (HeadlessAnalyzer)  

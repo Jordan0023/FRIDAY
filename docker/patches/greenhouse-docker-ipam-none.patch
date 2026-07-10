@@ -1,0 +1,13 @@
+diff --git a/Greenhouse/backend/QemuRunner.py b/Greenhouse/backend/QemuRunner.py
+index 42b2a5d..7c91b09 100644
+--- a/Greenhouse/backend/QemuRunner.py
++++ b/Greenhouse/backend/QemuRunner.py
+@@ -297,7 +297,7 @@ class QemuRunner:
+         docker_networks = self.client.networks.list()
+ 
+         for dnet in docker_networks:
+-            configs = dnet.attrs['IPAM']['Config']
++            configs = dnet.attrs.get('IPAM', {}).get('Config') or []
+             for conf in configs:
+                 subnet = conf['Subnet']
+                 subnet_addr = subnet.split("/")[0]

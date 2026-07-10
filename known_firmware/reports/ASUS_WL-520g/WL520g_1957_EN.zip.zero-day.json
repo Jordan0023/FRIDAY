@@ -1,0 +1,138 @@
+{
+  "candidates": [
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upgrade"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "upgrade.cgi",
+      "score": 12,
+      "source": "string:_WL520g_1957_EN.zip.extracted/_WL520g_1.9.5.7_EN.trx.extracted/141638"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upload"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "upload.cgi",
+      "score": 12,
+      "source": "string:_WL520g_1957_EN.zip.extracted/_WL520g_1.9.5.7_EN.trx.extracted/C1883"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "apply.cgi",
+      "score": 8,
+      "source": "string:_WL520g_1957_EN.zip.extracted/_WL520g_1.9.5.7_EN.trx.extracted/14F66C"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "syslog.cgi",
+      "score": 8,
+      "source": "string:_WL520g_1957_EN.zip.extracted/_WL520g_1.9.5.7_EN.trx.extracted/C1883"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "webcam.cgi",
+      "score": 8,
+      "source": "string:_WL520g_1957_EN.zip.extracted/_WL520g_1.9.5.7_EN.trx.extracted/C1883"
+    }
+  ],
+  "config_writers": [
+    "1217F7: /tmp/udhcpd.conf",
+    "12D0A6: start_firewall",
+    "12D0A6: start_firewall2",
+    "13A37C: /tmp/udhcpd.conf",
+    "13B114: /tmp/udhcpd.conf",
+    "13D44C: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"fw_enable_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallC",
+    "13D44C: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"misc_http_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallC",
+    "13D44C: </td><td class=\"content_input_td\"><select name=\"fw_log_x\" class=\"content_input_fd\" onChange=\"return change_common(this, 'FirewallConfig', 'fw_log_x')\"><option c",
+    "13D44C: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_BasicFirewall_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"Advanced_Firewall_Content.asp\">",
+    "13D44C: <td class=\"content_desc_td\" colspan=\"2\">Enabling Firewall(SPI Firewall) will provide basic protection for WL520g and devices behind it. If you want to filter ou",
+    "13D44C: <td class=\"content_header_td\" onMouseOver=\"return overlib('This feature allows you to manage WL520g from Internet. If you are in Home Gateway mode, please acces",
+    "13D44C: <td class=\"content_header_td\">Enable Firewall?",
+    "13D44C: <td class=\"content_header_td_title\" colspan=\"2\">Internet Firewall - Basic Config</td>",
+    "14104B: <% nvram_get_table_x(\"FirewallConfig\",\"LWFilterList\"); %>",
+    "14104B: <input type=\"hidden\" name=\"filter_lw_num_x_0\" value=\"<% nvram_get_x(\"FirewallConfig\", \"filter_lw_num_x\"); %>\" readonly=\"1\"></td><td width=\"10%\">",
+    "14104B: <td></td><td class=\"content_list_input_td\" colspan=\"\"><input type=\"text\" maxlength=\"15\" class=\"content_input_list_fd\" size=\"14\" name=\"filter_lw_srcip_x_0\" onKey",
+    "144AC0: </td><td class=\"content_input_td\"><input type=\"hidden\" maxlength=\"11\" class=\"content_input_fd\" size=\"11\" name=\"url_time_x\" value=\"<% nvram_get_x(\"FirewallConfig",
+    "144AC0: </td><td class=\"content_input_td\"><input type=\"hidden\" maxlength=\"7\" class=\"content_input_fd\" size=\"7\" name=\"url_date_x\" value=\"<% nvram_get_x(\"FirewallConfig\",",
+    "144AC0: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"url_enable_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'Firewall",
+    "144AC0: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_URLFilter_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"SaveRestart.asp\"><input type=\"hidde",
+    "144AC0: <td class=\"content_header_td_title\" colspan=\"2\">Internet Firewall -  URL Filter</td>",
+    "144F44: <% nvram_get_table_x(\"FirewallConfig\",\"UrlList\"); %>",
+    "144F44: <input type=\"hidden\" name=\"url_num_x_0\" value=\"<% nvram_get_x(\"FirewallConfig\", \"url_num_x\"); %>\" readonly=\"1\"></td><td width=\"10%\">",
+    "1486A0: <input type=\"hidden\" name=\"sid_list\" value=\"Layer3Forwarding;IPConnection;PPPConnection;WLANConfig11a;WLANConfig11b;LANHostConfig;FirewallConfig;\">",
+    "14BCAD: appendChild(aux1, generateDocEntry(0, \"Basic Config\",  \"Advanced_BasicFirewall_Content.asp\", \"\"))",
+    "14BCAD: appendChild(aux1, generateDocEntry(0, \"WAN & LAN Filter\",  \"Advanced_Firewall_Content.asp\", \"\"))",
+    "14BCAD: {aux1 = appendChild(foldersTree, leafNode(\"Internet Firewall\"))",
+    "14BFA6: else if (folderName == \"Internet Firewall\")",
+    "14BFA6: else if (folderName == \"Wireless Firewall\")",
+    "14BFA6: {top.folderFrame.location=\"Advanced_BasicFirewall_Content.asp\"",
+    "14DF44: <li> <b><a href=\"javascript:top.openBranch('Internet Firewall')\">Internet Firewall</a> </b> protect LAN or Wireless environment through flexible filter rule set",
+    "14E9F8: <input type=\"hidden\" name=\"current_page\" value=\"Main_LogStatus_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"Main_LogStatus_Content.asp\"><input type",
+    "1527B8: else if (document.form.current_page.value == \"Advanced_BasicFirewall_Content.asp\")",
+    "1527B8: else if (document.form.current_page.value == \"Advanced_Firewall_Content.asp\")",
+    "1527B8: {change_firewall(rcheck(document.form.fw_enable_x));",
+    "152AF7: function change_firewall(r)",
+    "152EC3: else if (document.form.current_page.value == \"Advanced_BasicFirewall_Content.asp\")",
+    "152EC3: else if (document.form.current_page.value == \"Advanced_Firewall_Content.asp\")",
+    "152EC3: else if (s == \"FirewallConfig\" && v==\"LanWanDefaultAct\")",
+    "152EC3: else if (s == \"FirewallConfig\" && v==\"WanLanDefaultAct\")",
+    "153319: {change_firewall(r);",
+    "15370E: else if (document.form.current_page.value == \"Advanced_Firewall_Content.asp\")",
+    "153C2A: {if (s == \"Advanced_Firewall_Content.asp\")",
+    "1574C0: Array(\"Firewall\",\"\"),",
+    "157DDB: function changeFirewall(o, s)",
+    "1AB7DC: description=iptables 1:1 NAT mapping of IP networks target",
+    "B66FA: iptables who? (do you need to insmod?)",
+    "BAAD7: actions_FirewallConfig",
+    "BAAD7: variables_FirewallConfig",
+    "BB1D8: es_FirewallConfig_WLFilterList"
+  ],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/71d9cf89b24bb85d",
+  "sink_summary": {
+    "exec": 20,
+    "file_write": 59,
+    "popen": 0,
+    "system": 63,
+    "unsafe_copy": 43
+  }
+}

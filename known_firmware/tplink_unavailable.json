@@ -265,7 +265,7 @@
       "url": "https://www.tp-link.com/us/support/download/tc-7610/"
     },
     "TP-Link TC-7620|https://www.tp-link.com/us/support/download/tc-7620/": {
-      "category": "Cable Modems & Routers",
+      "category": "Cable Modems",
       "product": "TP-Link TC-7620",
       "reason": "No firmware links listed",
       "url": "https://www.tp-link.com/us/support/download/tc-7620/"
@@ -403,7 +403,7 @@
       "url": "https://www.tp-link.com/us/support/download/tl-r470t+/"
     },
     "TP-Link TL-R480T+|https://www.tp-link.com/us/support/download/tl-r480t+/": {
-      "category": "Load Balance Routers",
+      "category": "Load Balance Gateways",
       "product": "TP-Link TL-R480T+",
       "reason": "No firmware links listed",
       "url": "https://www.tp-link.com/us/support/download/tl-r480t+/"

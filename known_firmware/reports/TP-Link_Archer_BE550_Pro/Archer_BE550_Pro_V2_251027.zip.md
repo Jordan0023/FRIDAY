@@ -1,6 +1,6 @@
 # Firmware Audit: TP-Link Archer BE550 Pro / Archer_BE550_Pro_V2_251027.zip
 
-- Source URL: https://static.tp-link.com/upload/firmware/2025/202512/20251226/Archer BE9700_V1_251027.zip
+- Source URL: https://static.tp-link.com/upload/firmware/2025/202512/20251226/Archer BE550 Pro_V2_251027.zip
 - Local path: known_firmware/firmware/TP-Link_Archer_BE550_Pro/Archer_BE550_Pro_V2_251027.zip
 - SHA-256: `517ef10f38544c3e666b15ffc509410fb52aead02a8b937c8e22d810c9f32c49`
 - Size: 46962620 bytes

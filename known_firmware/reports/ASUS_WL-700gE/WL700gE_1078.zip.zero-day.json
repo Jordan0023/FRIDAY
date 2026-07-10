@@ -1,0 +1,541 @@
+{
+  "candidates": [
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upload"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "do_upload.cgi",
+      "score": 12,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upload"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "upload.cgi",
+      "score": 12,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "AboutMe_edit.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "AboutMe_index.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "AboutMe_modify.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Album.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Link_add.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Link_add_page.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Link_delete.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Link_edit.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Link_edit_page.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Link_index.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Login_page.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Logout_page.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Message_index.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "Photo.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "delOneMessage.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "delTopic.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "delete.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "do_newAlbum.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "do_newMessage.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "do_newTopic.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "do_photoMsg.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "editAlbum.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "editPhoto.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "index.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "listAlbum.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "login.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "modify.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "newAlbum.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "newMessage.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "newTopic.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "showAlbum.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "showMessage.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "showPhoto.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "showSlides.cgi",
+      "score": 8,
+      "source": "string:_WL700gE_1078.zip.extracted/WL700gE_1078/_WL700gE_1.0.7.8.nas.extracted/159733.zlib"
+    }
+  ],
+  "config_writers": [
+    "12A004.zlib: iptables",
+    "12A580.zlib: iptables",
+    "12ABF0.zlib: iptables",
+    "12B3F4.zlib: iptables",
+    "12B3F4.zlib: iptables-restore",
+    "12BAB1.zlib: iptables",
+    "12BAB1.zlib: iptables-restore",
+    "12C233.zlib: iptables",
+    "12C233.zlib: iptables-restore",
+    "12C8CC.zlib: iptables",
+    "12C8CC.zlib: iptables-restore",
+    "12C8CC.zlib: smb.conf",
+    "12CE64.zlib: iptables",
+    "12CE64.zlib: iptables-restore",
+    "12CE64.zlib: smb.conf",
+    "12D580.zlib: firewall",
+    "12D580.zlib: iptables",
+    "12D580.zlib: iptables-restore",
+    "12D580.zlib: smb.conf",
+    "12DD50.zlib: firewall",
+    "12DD50.zlib: iptables",
+    "12DD50.zlib: iptables-restore",
+    "12DD50.zlib: smb.conf",
+    "12E326.zlib: firewall",
+    "12E326.zlib: iptables",
+    "12E326.zlib: iptables-restore",
+    "12E326.zlib: smb.conf",
+    "12E8C5.zlib: firewall",
+    "12E8C5.zlib: iptables",
+    "12E8C5.zlib: iptables-restore",
+    "12E8C5.zlib: smb.conf",
+    "12EE7D.zlib: firewall",
+    "12EE7D.zlib: iptables",
+    "12EE7D.zlib: iptables-restore",
+    "12EE7D.zlib: smb.conf",
+    "12F517.zlib: Advanced_BasicFirewall_Content.asp",
+    "12F517.zlib: Advanced_Firewall_Content.asp",
+    "12F517.zlib: firewall",
+    "12F517.zlib: iptables",
+    "12F517.zlib: iptables-restore",
+    "12F517.zlib: smb.conf",
+    "12FB8C.zlib: Advanced_BasicFirewall_Content.asp",
+    "12FB8C.zlib: Advanced_Firewall_Content.asp",
+    "12FB8C.zlib: Advanced_LFirewall_Content.asp",
+    "12FB8C.zlib: firewall",
+    "12FB8C.zlib: iptables",
+    "12FB8C.zlib: iptables-restore",
+    "12FB8C.zlib: smb.conf",
+    "130207.zlib: Advanced_BasicFirewall_Content.asp",
+    "130207.zlib: Advanced_Firewall_Content.asp"
+  ],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/cf6b93bd9910be23",
+  "sink_summary": {
+    "exec": 7,
+    "file_write": 160,
+    "popen": 2,
+    "system": 8,
+    "unsafe_copy": 11
+  }
+}

@@ -14,8 +14,12 @@ import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from netgear_firmware_audit.zero_day import analyze_zero_day_surface, render_zero_day_markdown
+
 KNOWN = ROOT / "known_firmware"
 LOCAL_HOSTS = {"127.0.0.1", "localhost", "::1"}
 
@@ -52,13 +56,19 @@ def main() -> int:
     probe.add_argument("--base-url", required=True, help="Local URL, e.g. http://127.0.0.1:8080")
     probe.add_argument("--product", help="Use paths discovered for a specific product.")
 
+    zmap = sub.add_parser("zero-day-map", help="Build route, sink, known-CVE, and candidate maps for extracted firmware.")
+    zmap.add_argument("--product", required=True, help="Product to map, e.g. R7000.")
+    zmap.add_argument("--rootfs", type=Path, help="Analyze this extracted rootfs directly instead of using the manifest.")
+    zmap.add_argument("--json", action="store_true", help="Emit structured JSON instead of markdown.")
+    zmap.add_argument("--version", help="Firmware version override for known-vulnerability applicability checks.")
+
     launch = sub.add_parser("launch-web", help="Launch a localhost-only lighttpd instance for one firmware.")
     launch.add_argument("--product", required=True, help="Product to launch, e.g. BE9300.")
     launch.add_argument("--port", type=int, default=8080, help="Localhost port to bind.")
     launch.add_argument("--static-only", action="store_true", help="Serve static web files without CGI backend.")
 
     args = parser.parse_args()
-    targets = discover_targets()
+    targets = discover_targets(getattr(args, "product", None))
 
     if args.command == "inventory":
         print_inventory(targets)
@@ -70,15 +80,19 @@ def main() -> int:
         return cgi_smoke(filter_targets(targets, args.product), args.limit)
     if args.command == "probe-http":
         return probe_http(args.base_url, filter_targets(targets, args.product))
+    if args.command == "zero-day-map":
+        return zero_day_map(filter_targets(targets, args.product), args.version, args.json, args.product, args.rootfs)
     if args.command == "launch-web":
         return launch_web(filter_targets(targets, args.product), args.port, args.static_only)
     return 2
 
 
-def discover_targets() -> list[FirmwareTarget]:
+def discover_targets(product_filter: str | None = None) -> list[FirmwareTarget]:
     manifest = json.loads((KNOWN / "manifest.json").read_text(encoding="utf-8"))
     targets: list[FirmwareTarget] = []
     for record in sorted(manifest.get("firmware", {}).values(), key=lambda r: (r["product"], r["filename"])):
+        if product_filter and product_filter.lower() not in record["product"].lower():
+            continue
         sha = record["sha256"]
         extracted = KNOWN / "extracted" / sha[:16]
         rootfs_candidates = sorted(extracted.rglob("squashfs-root*")) if extracted.exists() else []
@@ -303,6 +317,47 @@ def probe_http(base_url: str, targets: list[FirmwareTarget]) -> int:
             print(f"{exc.code} {path}")
         except OSError as exc:
             print(f"ERR {path}: {exc}")
+    return 0
+
+
+def zero_day_map(
+    targets: list[FirmwareTarget],
+    version: str | None,
+    emit_json: bool,
+    product: str,
+    rootfs_override: Path | None,
+) -> int:
+    if rootfs_override:
+        rootfs = rootfs_override.expanduser().resolve()
+        if not rootfs.is_dir():
+            print(f"Rootfs does not exist or is not a directory: {rootfs}")
+            return 1
+        triage = analyze_zero_day_surface(rootfs, product, version)
+        if emit_json:
+            print(triage.to_json())
+        else:
+            print(f"# Zero-day Map: {product}")
+            print()
+            print(f"Rootfs: `{rootfs}`")
+            print()
+            print(render_zero_day_markdown(triage))
+        return 0
+    if not targets:
+        print("No matching firmware target.")
+        return 1
+    target = next((item for item in targets if item.rootfs.exists()), None)
+    if not target:
+        print("No extracted rootfs found for matching target.")
+        return 1
+    triage = analyze_zero_day_surface(target.rootfs, target.product, version)
+    if emit_json:
+        print(triage.to_json())
+    else:
+        print(f"# Zero-day Map: {target.product} / {target.filename}")
+        print()
+        print(f"Rootfs: `{target.rootfs}`")
+        print()
+        print(render_zero_day_markdown(triage))
     return 0
 
 

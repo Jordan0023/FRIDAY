@@ -1,0 +1,138 @@
+{
+  "candidates": [
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upgrade"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "upgrade.cgi",
+      "score": 12,
+      "source": "string:_WL500g-X_1959_CN.zip.extracted/_WL500g-X_1.9.5.9_CN.trx.extracted/C1883"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upload"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "upload.cgi",
+      "score": 12,
+      "source": "string:_WL500g-X_1959_CN.zip.extracted/_WL500g-X_1.9.5.9_CN.trx.extracted/144DE0"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "apply.cgi",
+      "score": 8,
+      "source": "string:_WL500g-X_1959_CN.zip.extracted/_WL500g-X_1.9.5.9_CN.trx.extracted/14B458"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "syslog.cgi",
+      "score": 8,
+      "source": "string:_WL500g-X_1959_CN.zip.extracted/_WL500g-X_1.9.5.9_CN.trx.extracted/14F8C0"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "webcam.cgi",
+      "score": 8,
+      "source": "string:_WL500g-X_1959_CN.zip.extracted/_WL500g-X_1.9.5.9_CN.trx.extracted/C1883"
+    }
+  ],
+  "config_writers": [
+    "1217F7: /tmp/udhcpd.conf",
+    "12D0A6: start_firewall",
+    "12D0A6: start_firewall2",
+    "13A37B: /tmp/udhcpd.conf",
+    "13B113: /tmp/udhcpd.conf",
+    "13D4E0: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"fw_enable_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallC",
+    "13D4E0: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"misc_http_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'FirewallC",
+    "13D4E0: </td><td class=\"content_input_td\"><select name=\"fw_log_x\" class=\"content_input_fd\" onChange=\"return change_common(this, 'FirewallConfig', 'fw_log_x')\"><option c",
+    "13D4E0: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_BasicFirewall_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"Advanced_Firewall_Content.asp\">",
+    "13DA70: td class=\"content_input_td\"><input type=\"text\" maxlength=\"5\" size=\"5\" name=\"misc_httpport_x\" class=\"content_input_fd\" value=\"<% nvram_get_x(\"FirewallConfig\", \"m",
+    "140E98: </td><td class=\"content_input_td\"><input type=\"hidden\" maxlength=\"11\" class=\"content_input_fd\" size=\"11\" name=\"filter_lw_time_x\" value=\"<% nvram_get_x(\"Firewall",
+    "140E98: </td><td class=\"content_input_td\"><input type=\"hidden\" maxlength=\"7\" class=\"content_input_fd\" size=\"7\" name=\"filter_lw_date_x\" value=\"<% nvram_get_x(\"FirewallCo",
+    "140E98: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"fw_lw_enable_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'Firewa",
+    "140E98: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_Firewall_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"Advanced_URLFilter_Content.asp\"><inp",
+    "1413D1: <% nvram_get_table_x(\"FirewallConfig\",\"LWFilterList\"); %>",
+    "1413D1: <input type=\"hidden\" name=\"filter_lw_num_x_0\" value=\"<% nvram_get_x(\"FirewallConfig\", \"filter_lw_num_x\"); %>\" readonly=\"1\"></td><td width=\"10%\">",
+    "1413D1: <td></td><td class=\"content_list_input_td\" colspan=\"\"><input type=\"text\" maxlength=\"15\" class=\"content_input_list_fd\" size=\"14\" name=\"filter_lw_srcip_x_0\" onKey",
+    "145260: </td><td class=\"content_input_td\"><input type=\"hidden\" maxlength=\"11\" class=\"content_input_fd\" size=\"11\" name=\"url_time_x\" value=\"<% nvram_get_x(\"FirewallConfig",
+    "145260: </td><td class=\"content_input_td\"><input type=\"hidden\" maxlength=\"7\" class=\"content_input_fd\" size=\"7\" name=\"url_date_x\" value=\"<% nvram_get_x(\"FirewallConfig\",",
+    "145260: </td><td class=\"content_input_td\"><input type=\"radio\" value=\"1\" name=\"url_enable_x\" class=\"content_input_fd\" onClick=\"return change_common_radio(this, 'Firewall",
+    "145260: <input type=\"hidden\" name=\"current_page\" value=\"Advanced_URLFilter_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"SaveRestart.asp\"><input type=\"hidde",
+    "14571C: <% nvram_get_table_x(\"FirewallConfig\",\"UrlList\"); %>",
+    "14571C: <input type=\"hidden\" name=\"url_num_x_0\" value=\"<% nvram_get_x(\"FirewallConfig\", \"url_num_x\"); %>\" readonly=\"1\"></td><td width=\"10%\">",
+    "1491DC: <input type=\"hidden\" name=\"sid_list\" value=\"Layer3Forwarding;IPConnection;PPPConnection;WLANConfig11a;WLANConfig11b;LANHostConfig;FirewallConfig;\">",
+    "14C98E: \",  \"Advanced_BasicFirewall_Content.asp\", \"\"))",
+    "14C98E: \",  \"Advanced_Firewall_Content.asp\", \"\"))",
+    "14CCFA: {top.folderFrame.location=\"Advanced_BasicFirewall_Content.asp\"",
+    "14DC30: <input type=\"hidden\" name=\"current_page\" value=\"Main_AdmStatus_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"Main_AdmStatus_Content.asp\"><input type",
+    "14F8C0: <input type=\"hidden\" name=\"current_page\" value=\"Main_LogStatus_Content.asp\"><input type=\"hidden\" name=\"next_page\" value=\"Main_LogStatus_Content.asp\"><input type",
+    "152264: {updateDateTime(\"Advanced_Firewall_Content.asp\");",
+    "1538CD: else if (document.form.current_page.value == \"Advanced_BasicFirewall_Content.asp\")",
+    "1538CD: else if (document.form.current_page.value == \"Advanced_Firewall_Content.asp\")",
+    "1538CD: {change_firewall(rcheck(document.form.fw_enable_x));",
+    "153C07: else if (document.form.current_page.value == \"Advanced_BasicFirewall_Content.asp\")",
+    "153C07: else if (document.form.current_page.value == \"Advanced_Firewall_Content.asp\")",
+    "153C07: function change_firewall(r)",
+    "1544CB: else if (document.form.current_page.value == \"Advanced_Firewall_Content.asp\")",
+    "1544CB: {change_firewall(r);",
+    "154E11: {if (s == \"Advanced_Firewall_Content.asp\")",
+    "158F20: function changeFirewall(o, s)",
+    "1AC51C: description=iptables 1:1 NAT mapping of IP networks target",
+    "B66FA: iptables who? (do you need to insmod?)",
+    "BAAD7: actions_FirewallConfig",
+    "BAAD7: variables_FirewallConfig",
+    "BB1D8: es_FirewallConfig_WLFilterList",
+    "BB1D8: variables_FirewallConfig_LWFilterList",
+    "BB1D8: variables_FirewallConfig_MFList",
+    "BB1D8: variables_FirewallConfig_UrlList",
+    "C1096: /etc/linuxigd/firewall.log",
+    "C1096: /etc/linuxigd/firewallOrig.log"
+  ],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/dc80f07189c8a4ee",
+  "sink_summary": {
+    "exec": 18,
+    "file_write": 90,
+    "popen": 0,
+    "system": 46,
+    "unsafe_copy": 38
+  }
+}

@@ -1,0 +1,46 @@
+# Firmware Audit: OpenWrt Tenbay T-MB5EU-V01 / openwrt-25.12.5-ramips-mt7621-tenbay_t-mb5eu-v01-squashfs-sysupgrade.bin
+
+- Source URL: https://downloads.openwrt.org/releases/25.12.5/targets/ramips/mt7621/openwrt-25.12.5-ramips-mt7621-tenbay_t-mb5eu-v01-squashfs-sysupgrade.bin
+- Local path: known_firmware/firmware/OpenWrt_Tenbay_T-MB5EU-V01/openwrt-25.12.5-ramips-mt7621-tenbay_t-mb5eu-v01-squashfs-sysupgrade.bin
+- SHA-256: `7926bfd686e7367d4004312f8ff0bde3cc84cd7b27378d8bc041e7314c4b2501`
+- Size: 8192619 bytes
+- Version: 25.12.5
+- Release date: 2026-06-29
+
+## Static Findings
+
+### Remote shell services present
+
+Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.
+
+Evidence: `dropbear`
+
+### HTTP CGI/admin attack surface
+
+Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.
+
+Evidence: `cgi-bin, uHTTPd, uhttpd`
+
+### Command execution helpers
+
+Command execution paths are common command-injection sinks when reachable from web or network inputs.
+
+Evidence: `System, eval, popen, system`
+
+### Potential memory-unsafe C functions
+
+Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.
+
+Evidence: `gets, sprintf, strcat, strcpy`
+
+## Extraction Notes
+
+- binwalk -eM --directory known_firmware/extracted/7926bfd686e7367d exited 0: WARNING: Symlink points outside of the extraction directory: /home/jordan/FRIDAY/known_firmware/extracted/7926bfd686e7367d/_openwrt-25.12.5-ramips-mt7621-tenbay_t-mb5eu-v01-squashfs-sysupgrade.bin.extracted/squashfs-root/usr/bin/ssh -> /usr/sbin/dropbear; changing link target to /dev/null for security purposes.
+
+## Decompiler Notes
+
+- Ghidra analyzeHeadless not found; decompiler import skipped.
+
+## Validation Needed
+
+These are static-analysis leads. Confirm reachability, affected versions, exploit preconditions, and vendor-fixed versions before treating any item as a vulnerability.

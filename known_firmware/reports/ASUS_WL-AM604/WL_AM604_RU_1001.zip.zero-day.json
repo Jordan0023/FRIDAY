@@ -1,0 +1,832 @@
+{
+  "candidates": [
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "dns"
+      ],
+      "parameters": [
+        "dnsInfo",
+        "dnsPrimary",
+        "dnsSecondary",
+        "enableAuto"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow",
+        "check daemon config injection and service restart behavior"
+      ],
+      "route": "dnscfg.cgi",
+      "score": 20,
+      "source": "string:webs/dnscfg.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "defaultGateway",
+        "enblOnDemand",
+        "enblPppIpAddress",
+        "enblsendlcp",
+        "gw",
+        "gwAddr",
+        "gwIfc",
+        "idacname",
+        "idservicename",
+        "pppACName",
+        "pppAuthMethod",
+        "pppInfo",
+        "pppIpAddressInfo",
+        "pppIpExtension",
+        "pppLocalIpAddress",
+        "pppPassword",
+        "pppServiceName",
+        "pppTimeOut",
+        "pppUserName",
+        "pppoeSN",
+        "wanId",
+        "wanIf"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "enblservice.cgi",
+      "score": 20,
+      "source": "string:webs/pppoe.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "defaultGateway",
+        "dns",
+        "dnsPrimary",
+        "dnsSecondary",
+        "enblOnDemand",
+        "enblPppIpAddress",
+        "enblsendlcp",
+        "gw",
+        "gwAddr",
+        "gwIfc",
+        "idacname",
+        "idservicename",
+        "pppACName",
+        "pppAuthMethod",
+        "pppInfo",
+        "pppIpAddressInfo",
+        "pppIpExtension",
+        "pppLocalIpAddress",
+        "pppPassword",
+        "pppServiceName",
+        "pppTimeOut",
+        "pppUserName",
+        "pppoeSN",
+        "wan",
+        "wanId",
+        "wanIf",
+        "wanIpAddress",
+        "wanSubnetMask"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "natcfg2.cgi",
+      "score": 20,
+      "source": "string:webs/wancfg.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "defaultGateway",
+        "enblOnDemand",
+        "enblPppIpAddress",
+        "enblsendlcp",
+        "gw",
+        "gwAddr",
+        "gwIfc",
+        "idacname",
+        "idservicename",
+        "pppACName",
+        "pppAuthMethod",
+        "pppInfo",
+        "pppIpAddressInfo",
+        "pppIpExtension",
+        "pppLocalIpAddress",
+        "pppPassword",
+        "pppServiceName",
+        "pppTimeOut",
+        "pppUserName",
+        "pppoeSN",
+        "wanId",
+        "wanIf"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "pppauthinfo.cgi",
+      "score": 20,
+      "source": "string:webs/pppoe.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "chkUpnp",
+        "dhcpEthEnd",
+        "dhcpEthStart",
+        "dhcpInfo",
+        "dhcpLeasedTime",
+        "dhcpSrvAddr",
+        "dhcpSrvType",
+        "enblLan2",
+        "ethIpAddress",
+        "ethSubnetMask",
+        "lan2Info",
+        "lan2IpAddress",
+        "lan2SubnetMask",
+        "relayInfo",
+        "upnpInfo"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "lancfg2.cgi",
+      "score": 17,
+      "source": "string:webs/lancfg2.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "chkUpnp",
+        "dhcpEthEnd",
+        "dhcpEthStart",
+        "dhcpInfo",
+        "dhcpLeasedTime",
+        "dhcpSrvAddr",
+        "dhcpSrvType",
+        "enblLan2",
+        "ethIpAddress",
+        "ethSubnetMask",
+        "lan2Info",
+        "lan2IpAddress",
+        "lan2SubnetMask",
+        "relayInfo",
+        "upnpInfo"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "lancfg2Reset.cgi",
+      "score": 17,
+      "source": "string:webs/lancfg2.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upload"
+      ],
+      "parameters": [
+        "back",
+        "filename"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "upload.cgi",
+      "score": 15,
+      "source": "string:webs/uploadinfo.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "upload"
+      ],
+      "parameters": [
+        "filename"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "uploadsettings.cgi",
+      "score": 15,
+      "source": "string:webs/updatesettings.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "Siproxd",
+        "sipproxdInfo"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "algcfg.cgi",
+      "score": 14,
+      "source": "string:webs/algcfg.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "pppoe"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "diagpppoe.cgi",
+      "score": 11,
+      "source": "string:webs/diag.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "levelDisplay",
+        "levelLog",
+        "logAddr",
+        "logMode",
+        "logPort",
+        "srvInfo",
+        "status"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "logintro.cgi",
+      "score": 11,
+      "source": "string:webs/logconfig.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "enblFirewall",
+        "enblIgmp",
+        "enblNat",
+        "enblService",
+        "ethIpAddress",
+        "ethSubnetMask",
+        "serviceName"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "ntwksum2.cgi",
+      "score": 11,
+      "source": "string:webs/enblservice.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "pppoe"
+      ],
+      "parameters": [
+        "cbVlan",
+        "encInfo",
+        "encSel",
+        "enetWan",
+        "ntwkPrtcl",
+        "vlanEnblInfo",
+        "vlanIdInfo",
+        "vlanIdText"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "pppoe.cgi",
+      "score": 11,
+      "source": "string:webs/ntwkprtcl.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "rocommunity",
+        "rwcommunity",
+        "status",
+        "sysContact",
+        "sysLocation",
+        "sysName",
+        "trapIp"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "snmpconfig.cgi",
+      "score": 11,
+      "source": "string:webs/snmpconfig.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [
+        "wan"
+      ],
+      "parameters": [
+        "cbVlan",
+        "encInfo",
+        "encSel",
+        "enetWan",
+        "ntwkPrtcl",
+        "vlanEnblInfo",
+        "vlanIdInfo",
+        "vlanIdText"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "wancfg.cgi",
+      "score": 11,
+      "source": "string:webs/ntwkprtcl.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "ethIpAddress",
+        "ethSubnetMask"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "wlsetup.cgi",
+      "score": 11,
+      "source": "string:webs/lancfgbr.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "adslBitswap",
+        "adslMod",
+        "adslPair",
+        "adslSra"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "adslcfg.cgi",
+      "score": 8,
+      "source": "string:webs/adslcfg.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "atmVci",
+        "atmVpi",
+        "enblAutoScan",
+        "enblQos",
+        "qosInfo",
+        "vccInfo"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "autoscan.cgi",
+      "score": 8,
+      "source": "string:webs/vpivci.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "autoscancancel.cgi",
+      "score": 8,
+      "source": "string:webs/autoscan.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "atmVci",
+        "atmVpi",
+        "enblAutoScan",
+        "enblQos",
+        "qosInfo",
+        "vccInfo"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "autoscanerr.cgi",
+      "score": 8,
+      "source": "string:webs/vpivci.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "diag.cgi",
+      "score": 8,
+      "source": "string:webs/diagipow.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "diagbr.cgi",
+      "score": 8,
+      "source": "string:webs/diag.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "diagipow.cgi",
+      "score": 8,
+      "source": "string:webs/diag.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "diagmer.cgi",
+      "score": 8,
+      "source": "string:webs/diag.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "diagpppoa.cgi",
+      "score": 8,
+      "source": "string:webs/diag.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "cbVlan",
+        "encInfo",
+        "encSel",
+        "enetWan",
+        "ntwkPrtcl",
+        "vlanEnblInfo",
+        "vlanIdInfo",
+        "vlanIdText"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "enblbridge.cgi",
+      "score": 8,
+      "source": "string:webs/ntwkprtcl.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "cbVlan",
+        "encInfo",
+        "encSel",
+        "enetWan",
+        "ntwkPrtcl",
+        "vlanEnblInfo",
+        "vlanIdInfo",
+        "vlanIdText"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "ipoacfg.cgi",
+      "score": 8,
+      "source": "string:webs/ntwkprtcl.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "enblFirewall",
+        "enblIgmp",
+        "enblNat",
+        "enblService",
+        "serviceName"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "lancfg.cgi",
+      "score": 8,
+      "source": "string:webs/enblservice.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "enblIgmp",
+        "enblService",
+        "serviceName"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "lancfgbr.cgi",
+      "score": 8,
+      "source": "string:webs/enblservice.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "2and3",
+        "Form1",
+        "Text5",
+        "atmVci",
+        "atmVpi",
+        "enblAutoScan",
+        "enblEnetWanCb",
+        "enblQos",
+        "enblService",
+        "enetwan",
+        "first1",
+        "maximumBurst",
+        "peakCell",
+        "qosInfo",
+        "serviceCategory",
+        "serviceName",
+        "sustainableCell",
+        "vccInfo"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "ntwkprtcl.cgi",
+      "score": 8,
+      "source": "string:webs/enblbridge.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "pwdCfm",
+        "pwdNew",
+        "pwdOld",
+        "userName"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "password.cgi",
+      "score": 8,
+      "source": "string:webs/password.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "atmVci",
+        "atmVpi",
+        "enblAutoScan",
+        "enblQos",
+        "qosInfo",
+        "vccInfo"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "quicksetuperr.cgi",
+      "score": 8,
+      "source": "string:webs/vpivci.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "btnSave"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "rebootinfo.cgi",
+      "score": 8,
+      "source": "string:webs/resetrouter.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "resetrouter.cgi",
+      "score": 8,
+      "source": "string:webs/resetrouter.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "restoreinfo.cgi",
+      "score": 8,
+      "source": "string:webs/defaultsettings.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "dstGtwy",
+        "enableAuto",
+        "gwInfo",
+        "gwStr",
+        "ifStr",
+        "wanIf"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "rtdefaultcfg.cgi",
+      "score": 8,
+      "source": "string:webs/rtdefaultcfg.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "back"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "updatesettings.cgi",
+      "score": 8,
+      "source": "string:webs/uploadinfo.html"
+    },
+    {
+      "evidence_level": "L2",
+      "matched_keywords": [],
+      "parameters": [
+        "pvc"
+      ],
+      "recommended_checks": [
+        "map route to handler and auth gate",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "vpivci.cgi",
+      "score": 8,
+      "source": "string:webs/menu.html"
+    }
+  ],
+  "config_writers": [
+    "[: iptables -t filter -F",
+    "[: iptables -t mangle -F",
+    "[: iptables -t nat -F",
+    "[: iptables -t nat -L > /var/nat_redirect",
+    "bftpd: iptables -t filter -F",
+    "bftpd: iptables -t mangle -F",
+    "bftpd: iptables -t nat -F",
+    "bftpd: iptables -t nat -L > /var/nat_redirect",
+    "busybox: iptables -t filter -F",
+    "busybox: iptables -t mangle -F",
+    "busybox: iptables -t nat -F",
+    "busybox: iptables -t nat -L > /var/nat_redirect",
+    "cat: iptables -t filter -F",
+    "cat: iptables -t mangle -F",
+    "cat: iptables -t nat -F",
+    "cat: iptables -t nat -L > /var/nat_redirect",
+    "cfm: /bin/iptables",
+    "cfm: /etc/udhcpd.conf",
+    "cfm: <entry%d vccId=\"%d\" conId=\"%d\" name=\"%s\" protocol=\"%s\" encap=\"%s\" firewall=\"%s\" nat=\"%s\" igmp=\"%s\" vlanId=\"%d\" service=\"%s\"/>",
+    "cfm: BcmDb_isFirewallEnabled",
+    "cfm: BcmDb_isInterfaceFirewallEnabled",
+    "cfm: Firewall",
+    "cfm: Firewall Menu",
+    "cfm: Firewall [1-enable,2-disable]",
+    "cfm: _ZN10SecCfgMngr12loadIpTablesEv",
+    "cfm: _ZN10SecCfgMngr16doFirewallPolicyEPc",
+    "cfm: _ZN10SecCfgMngr19glbIpTablesIsLoadedE",
+    "cfm: _ZN11SecFltInTbl11runiptablesEPcS0_cS0_S0_S0_S0_S0_",
+    "cfm: _ZN12SecVrtSrvTbl11runiptablesEcPcS0_S0_S0_S0_",
+    "cfm: cgiGetEnblFirewallForWeb",
+    "cfm: enblFirewall",
+    "cfm: firewall",
+    "cfm: iptables",
+    "cfm: iptables -A FORWARD -i %s -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu",
+    "cfm: iptables -A FORWARD -o %s -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu",
+    "cfm: iptables -A FORWARD -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu",
+    "cfm: iptables -D INPUT %s 2>/dev/null",
+    "cfm: iptables -D OUTPUT %s 2>/dev/null",
+    "cfm: iptables -F",
+    "cfm: iptables -L INPUT -v --line-numbers > /var/iptable",
+    "cfm: iptables -L OUTPUT -v --line-numbers > /var/iptable",
+    "cfm: iptables -t %s -D %s %s 2>/dev/null",
+    "cfm: iptables -t %s -L %s -v --line-numbers > /var/iptable",
+    "cfm: iptables -t filter -F",
+    "cfm: iptables -t filter -I OUTPUT -o %s -d %s -j DROP 2>/dev/null",
+    "cfm: iptables -t mangle -F",
+    "cfm: iptables -t nat -A POSTROUTING -o %s -s %s/%s -j MASQUERADE",
+    "cfm: iptables -t nat -A PREROUTING -i %s -p tcp --dport 1863 -j REDIRECT --to-ports 1863",
+    "cfm: iptables -t nat -A PREROUTING -i %s -p tcp --dport 2323 -j DNAT --to-destination %s:23",
+    "cfm: iptables -t nat -A PREROUTING -i %s -p tcp --dport 5190 -j REDIRECT --to-ports 5190"
+  ],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/f6adce0793ca7833/_WL_AM604_RU_1001.zip.extracted/_WL-AM604_RU_1.0.0.1.trx.extracted/squashfs-root-0",
+  "sink_summary": {
+    "exec": 279,
+    "file_write": 359,
+    "popen": 2,
+    "system": 685,
+    "unsafe_copy": 162
+  }
+}

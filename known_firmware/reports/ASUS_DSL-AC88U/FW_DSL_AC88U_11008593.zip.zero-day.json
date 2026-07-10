@@ -1,0 +1,17 @@
+{
+  "candidates": [],
+  "config_writers": [],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/5b6cc9aaf38ef159",
+  "sink_summary": {
+    "exec": 0,
+    "file_write": 0,
+    "popen": 0,
+    "system": 0,
+    "unsafe_copy": 0
+  }
+}
