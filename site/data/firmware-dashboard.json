@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-07-10T01:55:24+00:00",
-  "manifest_updated": "2026-07-10T01:55:23+00:00",
+  "generated_at": "2026-07-14T01:00:06+00:00",
+  "manifest_updated": "2026-07-14T01:00:05+00:00",
   "summary": {
     "products": 1563,
-    "firmware": 2849,
-    "findings": 6449,
+    "firmware": 2852,
+    "findings": 6450,
     "extracted": 214,
-    "total_size_mb": 98648.9
+    "total_size_mb": 98776.5
   },
   "finding_counts": {
-    "Command execution helpers": 1598,
-    "HTTP CGI/admin attack surface": 2183,
-    "Hard-coded credentials or secrets": 479,
+    "Command execution helpers": 1597,
+    "HTTP CGI/admin attack surface": 2186,
+    "Hard-coded credentials or secrets": 478,
     "Outdated crypto/library markers": 62,
     "Potential memory-unsafe C functions": 1200,
     "Private keys or certificates bundled in firmware": 73,
     "Remote shell services present": 854
   },
   "severity_counts": {
-    "High": 1638,
-    "Medium": 800,
+    "High": 1637,
+    "Medium": 804,
     "No findings": 411
   },
   "firmware": [
@@ -25785,6 +25785,39 @@
     },
     {
       "vendor": "ASUS",
+      "product": "ASUS ZenWiFi BD4",
+      "title": "ASUS ZenWiFi BD4 Firmware version 3.0.0.6.102_58362",
+      "filename": "FW_ZenWiFi_BD4_300610258362.zip",
+      "version": "3.0.0.6.102_58362",
+      "release_date": "2026/07/13",
+      "uploaded_at": "2026/07/13",
+      "uploaded_at_source": "ASUS release date",
+      "first_seen": "2026-07-14T00:37:28+00:00",
+      "last_seen": "2026-07-14T00:37:28+00:00",
+      "size": 44609379,
+      "size_mb": 42.5,
+      "sha256": "ecb07c94a5e8d3751ac5966573d13483b96a42a17168517684270b96429f4f7c",
+      "url": "https://dlcdnta.asus.com/pub/ASUS/wireless/ZenWiFi BD4/FW_ZenWiFi_BD4_300610258362.zip",
+      "path": "firmware/ASUS_ZenWiFi_BD4/FW_ZenWiFi_BD4_300610258362.zip",
+      "report_path": "reports/ASUS_ZenWiFi_BD4/FW_ZenWiFi_BD4_300610258362.zip.md",
+      "severity": {
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BOa, boa"
+        }
+      ],
+      "extraction_notes": [
+        "binwalk -eM --directory known_firmware/extracted/ecb07c94a5e8d375 exited 0: WARNING: Symlink points outside of the extraction directory: /home/jordan/FRIDAY/known_firmware/extracted/ecb07c94a5e8d375/_FW_ZenWiFi_BD4_300610258362.zip.extracted/_ZenWiFi_BD4_3.0.0.6_102_58362-g76373bf_546-g646ab_Q7PA.trx.extracted/squashfs-root/data/vendor/wifi -> /tmp/wifi; changing link target to /dev/null for security purposes."
+      ]
+    },
+    {
+      "vendor": "ASUS",
       "product": "ASUS ZenWiFi BD5",
       "title": "ASUS ZenWiFi BD5 Firmware version 3.0.0.6.102_58245",
       "filename": "FW_ZenWiFi_BD5_300610258245.zip",
@@ -25884,6 +25917,39 @@
     },
     {
       "vendor": "ASUS",
+      "product": "ASUS ZenWiFi BD5",
+      "title": "ASUS ZenWiFi BD5 Firmware version 3.0.0.6.102_58362",
+      "filename": "FW_ZenWiFi_BD5_300610258362.zip",
+      "version": "3.0.0.6.102_58362",
+      "release_date": "2026/07/13",
+      "uploaded_at": "2026/07/13",
+      "uploaded_at_source": "ASUS release date",
+      "first_seen": "2026-07-14T00:43:05+00:00",
+      "last_seen": "2026-07-14T00:43:05+00:00",
+      "size": 44609379,
+      "size_mb": 42.5,
+      "sha256": "2017328dfc5bccce0422f9e22176490a101dd6d18625368215a8a50771edb2d3",
+      "url": "https://dlcdnta.asus.com/pub/ASUS/wireless/ZenWiFi BD5/FW_ZenWiFi_BD5_300610258362.zip",
+      "path": "firmware/ASUS_ZenWiFi_BD5/FW_ZenWiFi_BD5_300610258362.zip",
+      "report_path": "reports/ASUS_ZenWiFi_BD5/FW_ZenWiFi_BD5_300610258362.zip.md",
+      "severity": {
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BOa, boa"
+        }
+      ],
+      "extraction_notes": [
+        "binwalk -eM --directory known_firmware/extracted/2017328dfc5bccce exited 0: WARNING: Symlink points outside of the extraction directory: /home/jordan/FRIDAY/known_firmware/extracted/2017328dfc5bccce/_FW_ZenWiFi_BD5_300610258362.zip.extracted/_ZenWiFi_BD5_3.0.0.6_102_58362-g76373bf_546-g646ab_Q7PA.trx.extracted/squashfs-root/data/vendor/wifi -> /tmp/wifi; changing link target to /dev/null for security purposes."
+      ]
+    },
+    {
+      "vendor": "ASUS",
       "product": "ASUS ZenWiFi BE5000",
       "title": "ASUS ZenWiFi BE5000 Firmware version 3.0.0.6.102_58245",
       "filename": "FW_ZenWiFi_BE5000_300610258245.zip",
@@ -25979,6 +26045,39 @@
       ],
       "extraction_notes": [
         "binwalk -eM --directory known_firmware/extracted/439c21b90b1a9e7d exited 0: WARNING: Symlink points outside of the extraction directory: /workspaces/FRIDAY/known_firmware/extracted/439c21b90b1a9e7d/_FW_ZenWiFi_BE5000_300610258311.zip.extracted/_ZenWiFi_BE5000_3.0.0.6_102_58311-g5973087_544-gf4d21_Q7PA.trx.extracted/squashfs-root/data/vendor/wifi -> /tmp/wifi; changing link target to /dev/null for security purposes."
+      ]
+    },
+    {
+      "vendor": "ASUS",
+      "product": "ASUS ZenWiFi BE5000",
+      "title": "ASUS ZenWiFi BE5000 Firmware version 3.0.0.6.102_58362",
+      "filename": "FW_ZenWiFi_BE5000_300610258362.zip",
+      "version": "3.0.0.6.102_58362",
+      "release_date": "2026/07/13",
+      "uploaded_at": "2026/07/13",
+      "uploaded_at_source": "ASUS release date",
+      "first_seen": "2026-07-14T00:48:18+00:00",
+      "last_seen": "2026-07-14T00:48:18+00:00",
+      "size": 44609385,
+      "size_mb": 42.5,
+      "sha256": "1f49ec85a429d63622e6a21bebd2149e946310da5cef2e15a2be2181c4061292",
+      "url": "https://dlcdnta.asus.com/pub/ASUS/wireless/ZenWiFi BE5000/FW_ZenWiFi_BE5000_300610258362.zip",
+      "path": "firmware/ASUS_ZenWiFi_BE5000/FW_ZenWiFi_BE5000_300610258362.zip",
+      "report_path": "reports/ASUS_ZenWiFi_BE5000/FW_ZenWiFi_BE5000_300610258362.zip.md",
+      "severity": {
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BOa, BoA, boa"
+        }
+      ],
+      "extraction_notes": [
+        "binwalk -eM --directory known_firmware/extracted/1f49ec85a429d636 exited 0: WARNING: Symlink points outside of the extraction directory: /home/jordan/FRIDAY/known_firmware/extracted/1f49ec85a429d636/_FW_ZenWiFi_BE5000_300610258362.zip.extracted/_ZenWiFi_BE5000_3.0.0.6_102_58362-g76373bf_546-g646ab_Q7PA.trx.extracted/squashfs-root/data/vendor/wifi -> /tmp/wifi; changing link target to /dev/null for security purposes."
       ]
     },
     {
@@ -93241,29 +93340,19 @@
       "path": "firmware/RAXE500/RAXE500-V1.2.13.100_2.0.54.zip",
       "report_path": "reports/RAXE500/RAXE500-V1.2.13.100_2.0.54.zip.md",
       "severity": {
-        "label": "High",
-        "rank": 3,
-        "reason": "Hard-coded credentials or secrets"
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
       },
       "findings": [
         {
-          "title": "Hard-coded credentials or secrets",
-          "description": "Hard-coded secrets should be reviewed for default credentials, service tokens, or recoverable admin passwords.",
-          "evidence": "Password"
-        },
-        {
           "title": "HTTP CGI/admin attack surface",
           "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "Boa, boa"
-        },
-        {
-          "title": "Command execution helpers",
-          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
-          "evidence": "System, eVaL, eval"
+          "evidence": "BOa, BoA, boa"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/00ac97d4fdf68dee stopped: extraction exceeded 60000 MB"
+        "binwalk -eM --directory known_firmware/extracted/00ac97d4fdf68dee stopped: extraction exceeded 768 MB"
       ]
     },
     {
@@ -98192,7 +98281,7 @@
       "uploaded_at": "2025-11-12",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:30:48+00:00",
-      "last_seen": "2026-07-10T01:48:09+00:00",
+      "last_seen": "2026-07-14T00:53:48+00:00",
       "size": 24945714,
       "size_mb": 23.8,
       "sha256": "7307b7236c9037afa37f14187eb91b826b25f9d46f3bec846b667d7b18c0ce80",
@@ -98744,7 +98833,7 @@
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/021103002dbf716c exited 0: WARNING: Extractor.execute failed to run external extractor 'ubireader_extract_files -o 'ubifs-root' '%e'': [Errno 2] No such file or directory: 'ubireader_extract_files', 'ubireader_extract_files -o 'ubifs-root' '%e'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/021103002dbf716c exited 0"
       ]
     },
     {
@@ -100801,7 +100890,7 @@
       "uploaded_at": "2025-11-13",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:33:32+00:00",
-      "last_seen": "2026-07-10T01:49:06+00:00",
+      "last_seen": "2026-07-14T00:54:50+00:00",
       "size": 50602579,
       "size_mb": 48.3,
       "sha256": "0795cae638225029f1525f2d969a84c0ed6fc1591d594e2cac9aa26680f0c271",
@@ -100999,7 +101088,7 @@
       "uploaded_at": "2026-05-26",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:33:47+00:00",
-      "last_seen": "2026-07-10T01:48:51+00:00",
+      "last_seen": "2026-07-14T00:54:39+00:00",
       "size": 49980302,
       "size_mb": 47.7,
       "sha256": "667ddb11a57bed203dc2950d48831af8362dc706d36a4976c35e3c851a568196",
@@ -103523,7 +103612,7 @@
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/0057e77eacbfac69 exited 0: WARNING: Extractor.execute failed to run external extractor 'ubireader_extract_files -o 'ubifs-root' '%e'': [Errno 2] No such file or directory: 'ubireader_extract_files', 'ubireader_extract_files -o 'ubifs-root' '%e'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/0057e77eacbfac69 exited 0: WARNING: Symlink points outside of the extraction directory: /home/jordan/FRIDAY/known_firmware/extracted/0057e77eacbfac69/_Archer_C5400X_V1_240510.zip.extracted/_c5400xv1-up-ver1-1-7-P1[20240510-rel17306]_nosign_2024-05-10_17.53.26.bin.extracted/ubifs-root/625544602/rootfs_ubifs/bin/bpm -> /usr/bin/bpmctl; changing link target to /dev/null for security purposes."
       ]
     },
     {
@@ -104645,7 +104734,7 @@
       "uploaded_at": "2026-01-15",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:37:52+00:00",
-      "last_seen": "2026-07-10T01:50:00+00:00",
+      "last_seen": "2026-07-14T00:55:46+00:00",
       "size": 40781964,
       "size_mb": 38.9,
       "sha256": "b276cb6767b4ebd384b3ed32ddca1dcb110f1da667e53fc6de68318ec6e1b716",
@@ -104987,7 +105076,7 @@
       "uploaded_at": "2025-12-22",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:38:13+00:00",
-      "last_seen": "2026-07-10T01:50:21+00:00",
+      "last_seen": "2026-07-14T00:56:08+00:00",
       "size": 44650022,
       "size_mb": 42.6,
       "sha256": "c549d359613b0f4a072c4c9df23753505761da6cd07e5e935ca66fc4b626ce49",
@@ -107063,7 +107152,7 @@
       "uploaded_at": "2026-04-29",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:39:51+00:00",
-      "last_seen": "2026-07-10T01:50:31+00:00",
+      "last_seen": "2026-07-14T00:56:30+00:00",
       "size": 27214481,
       "size_mb": 26.0,
       "sha256": "f6fc359df51a963d25ead981f0d658285a9ec7e96cc5e195876ee2e5d93b3be1",
@@ -108023,7 +108112,7 @@
       "uploaded_at": "2026-01-26",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:40:41+00:00",
-      "last_seen": "2026-07-10T01:51:01+00:00",
+      "last_seen": "2026-07-14T00:57:01+00:00",
       "size": 30463723,
       "size_mb": 29.1,
       "sha256": "02bdc17e5b0a7f9cd320d690a1faf87a894ebb61b5f372d1ab47f5a1090b7988",
@@ -108925,7 +109014,7 @@
       "uploaded_at": "2026-06-12",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:41:30+00:00",
-      "last_seen": "2026-07-10T01:50:46+00:00",
+      "last_seen": "2026-07-14T00:56:44+00:00",
       "size": 29197770,
       "size_mb": 27.8,
       "sha256": "8abd9965b54c260535e7cd5a32541b2bc957710a650eafd79f9c3ee032840eac",
@@ -109419,7 +109508,7 @@
       "uploaded_at": "2025-04-03",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:41:48+00:00",
-      "last_seen": "2026-07-10T01:50:56+00:00",
+      "last_seen": "2026-07-14T00:56:55+00:00",
       "size": 32272567,
       "size_mb": 30.8,
       "sha256": "7bc17302bb8976878dc44a3489182ce6285da18e96d0df409c7295dd2f57947d",

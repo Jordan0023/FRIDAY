@@ -1,17 +1,311 @@
 {
+  "archive_test_cases": [
+    {
+      "expected": "extractor rejects or confines member",
+      "members": [
+        {
+          "name": "../../tmp/friday-proof/dotdot",
+          "type": "file"
+        }
+      ],
+      "name": "dotdot"
+    },
+    {
+      "expected": "extractor rejects or strips absolute path",
+      "members": [
+        {
+          "name": "/tmp/friday-proof/absolute",
+          "type": "file"
+        }
+      ],
+      "name": "absolute"
+    },
+    {
+      "expected": "no write through symlink outside extraction root",
+      "members": [
+        {
+          "name": "pivot",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        },
+        {
+          "name": "pivot/marker",
+          "type": "file"
+        }
+      ],
+      "name": "symlink_pivot"
+    },
+    {
+      "expected": "hardlink target remains confined",
+      "members": [
+        {
+          "name": "marker",
+          "target": "../../tmp/friday-proof/hardlink",
+          "type": "hardlink"
+        }
+      ],
+      "name": "hardlink"
+    },
+    {
+      "expected": "duplicate type replacement is rejected",
+      "members": [
+        {
+          "name": "same",
+          "type": "file"
+        },
+        {
+          "name": "same",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        }
+      ],
+      "name": "duplicate"
+    },
+    {
+      "expected": "bounded rejection or confined extraction",
+      "members": [
+        {
+          "name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "type": "file"
+        }
+      ],
+      "name": "long_name"
+    },
+    {
+      "expected": "no implicit recursive extraction",
+      "members": [
+        {
+          "name": "nested.tar",
+          "type": "archive"
+        }
+      ],
+      "name": "nested_archive"
+    }
+  ],
+  "auth_test_matrix": [
+    {
+      "expected_boundary": "must not enter protected handler",
+      "headers": {},
+      "name": "no_credentials"
+    },
+    {
+      "expected_boundary": "must match unauthenticated behavior",
+      "headers": {
+        "Authorization": "Bearer FRIDAY_INVALID",
+        "Cookie": "session=FRIDAY_INVALID"
+      },
+      "name": "invalid_session"
+    },
+    {
+      "expected_boundary": "must not cross administrator boundary",
+      "headers": {
+        "Cookie": "session=FRIDAY_LOW_PRIV"
+      },
+      "name": "low_privilege"
+    }
+  ],
   "candidates": [],
   "config_writers": [],
+  "confirmation_policy": {
+    "L3": "route-specific attacker parameter reaches the sink",
+    "L4": "authentication/validation boundary and trigger are proven",
+    "L5": "reproducible security effect with fault/sink attribution",
+    "confirmed_label_requires": "L5",
+    "forbidden_shortcut": "route string and dangerous symbol merely co-located in a binary"
+  },
+  "correlated_flows": [],
+  "dynamic_sink_spec": [
+    {
+      "capture": [
+        "pc",
+        "argv",
+        "route",
+        "auth_state"
+      ],
+      "symbols": [
+        "system",
+        "popen",
+        "execve"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "destination",
+        "source",
+        "length",
+        "before",
+        "after"
+      ],
+      "symbols": [
+        "memcpy",
+        "strcpy",
+        "sprintf"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "path",
+        "flags",
+        "sandbox_escape"
+      ],
+      "symbols": [
+        "open",
+        "fopen",
+        "rename",
+        "symlink"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "key",
+        "size",
+        "return_value"
+      ],
+      "symbols": [
+        "shmget",
+        "shmat",
+        "nvram_set",
+        "uci_set"
+      ]
+    }
+  ],
+  "fuzz_seeds": [],
+  "ghidra_evidence": [],
   "known_coverage": [],
   "notes": [
     "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "Only routes with a plausible low-privilege boundary and route-local sink evidence are promoted. Global firmware sink counts never raise route evidence.",
+    "Authentication labels inferred from strings are hypotheses until dispatcher control flow or a live request confirms them.",
     "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
   ],
+  "rejected_candidates": [],
   "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/02bdc17e5b0a7f9c",
+  "runtime_launch_plan": {
+    "interfaces": [
+      {
+        "address": "192.168.250.1/24",
+        "name": "br0"
+      },
+      {
+        "address": "192.168.250.2/32",
+        "name": "probe"
+      }
+    ],
+    "isolation": [
+      "no external network",
+      "no host ports by default",
+      "disposable writable rootfs",
+      "synthetic LAN client"
+    ],
+    "listener_candidates": [],
+    "requirements": [],
+    "startup_candidates": [],
+    "vendor": "tp-link"
+  },
+  "runtime_profile": {
+    "architectures": [],
+    "executable_count": 0,
+    "rootfs_candidates": [
+      "/home/jordan/FRIDAY/known_firmware/extracted/00ac97d4fdf68dee/manual-rootfs",
+      "/home/jordan/FRIDAY/known_firmware/extracted/021103002dbf716c/manual-rootfs",
+      "/home/jordan/FRIDAY/known_firmware/extracted/00e344c92be2eceb/_FW_RT-AX82U_300438825101.zip.extracted/_RT-AX82U_combo_3.0.0.4_388_25101-g22d20d5_puresqubi.w.extracted/squashfs-root",
+      "/home/jordan/FRIDAY/known_firmware/extracted/001503668d83a939/_mt5000-4.8.6_release2-883-0422-1776826783.bin.extracted/sysupgrade-glinet_gl-mt5000/_root.extracted/squashfs-root",
+      "/home/jordan/FRIDAY/known_firmware/extracted/001503668d83a939/_mt5000-4.8.6_release2-883-0422-1776826783.bin.extracted/sysupgrade-glinet_gl-mt5000/_root.extracted/squashfs-root-0",
+      "/home/jordan/FRIDAY/known_firmware/extracted/0057e77eacbfac69/_Archer_C5400X_V1_240510.zip.extracted/_c5400xv1-up-ver1-1-7-P1[20240510-rel17306]_nosign_2024-05-10_17.53.26.bin.extracted/ubifs-root/625544602/rootfs_ubifs",
+      "/home/jordan/FRIDAY/known_firmware/extracted/1f49ec85a429d636/_FW_ZenWiFi_BE5000_300610258362.zip.extracted/_ZenWiFi_BE5000_3.0.0.6_102_58362-g76373bf_546-g646ab_Q7PA.trx.extracted/squashfs-root",
+      "/home/jordan/FRIDAY/known_firmware/extracted/2017328dfc5bccce/_FW_ZenWiFi_BD5_300610258362.zip.extracted/_ZenWiFi_BD5_3.0.0.6_102_58362-g76373bf_546-g646ab_Q7PA.trx.extracted/squashfs-root",
+      "/home/jordan/FRIDAY/known_firmware/extracted/ecb07c94a5e8d375/_FW_ZenWiFi_BD4_300610258362.zip.extracted/_ZenWiFi_BD4_3.0.0.6_102_58362-g76373bf_546-g646ab_Q7PA.trx.extracted/squashfs-root"
+    ],
+    "state_backends": [],
+    "vendor": "tp-link",
+    "web_stack": []
+  },
+  "service_surface": [],
   "sink_summary": {
     "exec": 0,
     "file_write": 0,
     "popen": 0,
     "system": 0,
     "unsafe_copy": 0
-  }
+  },
+  "validation_recipes": [
+    {
+      "marker": "FRIDAY_CMD_MARKER",
+      "payloads": [
+        ";printf FRIDAY_CMD_MARKER",
+        "$(printf FRIDAY_CMD_MARKER)"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker appears in captured argv/stdout",
+      "vulnerability_class": "command_injection"
+    },
+    {
+      "marker": "FRIDAY_PATH_MARKER",
+      "payloads": [
+        "../../tmp/friday-proof/marker",
+        "..%2f..%2ftmp%2ffriday-proof%2fmarker"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker created inside modeled /tmp only",
+      "vulnerability_class": "path_traversal"
+    },
+    {
+      "marker": "FRIDAY_ARCHIVE_MARKER",
+      "payloads": [
+        "ordered symlink then child file",
+        "hardlink to modeled target"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "write escapes extraction root but remains inside sandbox",
+      "vulnerability_class": "archive_escape"
+    },
+    {
+      "marker": "FRIDAY_CRASH_MARKER",
+      "payloads": [
+        "cyclic bounded input lengths 64..4096"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "reproducible crash with instruction/register capture",
+      "vulnerability_class": "memory_corruption"
+    },
+    {
+      "marker": "FRIDAY_AUTH_MARKER",
+      "payloads": [
+        "missing cookie",
+        "duplicate cookie",
+        "method override"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "protected handler returns distinct success state",
+      "vulnerability_class": "auth_bypass"
+    }
+  ]
 }

@@ -528,7 +528,7 @@
     "02bdc17e5b0a7f9cd320d690a1faf87a894ebb61b5f372d1ab47f5a1090b7988": {
       "filename": "WE10800_SP1-up-ver1-3-1-P1_20251023-rel43624__2025-10-24_15.45.04.zip",
       "first_seen": "2026-06-29T02:40:41+00:00",
-      "last_seen": "2026-07-10T01:51:01+00:00",
+      "last_seen": "2026-07-14T00:57:01+00:00",
       "path": "firmware/TP-Link_Deco_WE10800/WE10800_SP1-up-ver1-3-1-P1_20251023-rel43624__2025-10-24_15.45.04.zip",
       "product": "TP-Link Deco WE10800",
       "release_date": "2026-01-26",
@@ -1368,7 +1368,7 @@
     "0795cae638225029f1525f2d969a84c0ed6fc1591d594e2cac9aa26680f0c271": {
       "filename": "Archer_BE11000_Pro_US__V1.6_251022.zip",
       "first_seen": "2026-06-29T02:33:32+00:00",
-      "last_seen": "2026-07-10T01:49:06+00:00",
+      "last_seen": "2026-07-14T00:54:50+00:00",
       "path": "firmware/TP-Link_Archer_BE11000_Pro/Archer_BE11000_Pro_US__V1.6_251022.zip",
       "product": "TP-Link Archer BE11000 Pro",
       "release_date": "2025-11-13",
@@ -5160,6 +5160,21 @@
       "url": "https://downloads.openwrt.org/releases/25.12.5/targets/ath79/generic/openwrt-25.12.5-ath79-generic-tplink_eap225-v4-squashfs-sysupgrade.bin",
       "version": "25.12.5"
     },
+    "1f49ec85a429d63622e6a21bebd2149e946310da5cef2e15a2be2181c4061292": {
+      "filename": "FW_ZenWiFi_BE5000_300610258362.zip",
+      "first_seen": "2026-07-14T00:48:18+00:00",
+      "last_seen": "2026-07-14T00:48:18+00:00",
+      "path": "firmware/ASUS_ZenWiFi_BE5000/FW_ZenWiFi_BE5000_300610258362.zip",
+      "product": "ASUS ZenWiFi BE5000",
+      "release_date": "2026/07/13",
+      "report_path": "reports/ASUS_ZenWiFi_BE5000/FW_ZenWiFi_BE5000_300610258362.zip.md",
+      "sha256": "1f49ec85a429d63622e6a21bebd2149e946310da5cef2e15a2be2181c4061292",
+      "size": 44609385,
+      "title": "ASUS ZenWiFi BE5000 Firmware version 3.0.0.6.102_58362",
+      "uploaded_at": "2026/07/13",
+      "url": "https://dlcdnta.asus.com/pub/ASUS/wireless/ZenWiFi BE5000/FW_ZenWiFi_BE5000_300610258362.zip",
+      "version": "3.0.0.6.102_58362"
+    },
     "1f4c112334b04ebb0115ef946723e0f96e486da6427ae0a8bec2b64a1f92b4f1": {
       "filename": "openwrt-25.12.5-ramips-mt7621-dlink_dir-878-r1-squashfs-sysupgrade.bin",
       "first_seen": "2026-07-08T01:39:32+00:00",
@@ -5279,6 +5294,21 @@
       "uploaded_at": "2026-06-29",
       "url": "https://downloads.openwrt.org/releases/25.12.5/targets/mediatek/filogic/openwrt-25.12.5-mediatek-filogic-glinet_gl-mt3000-squashfs-sysupgrade.bin",
       "version": "25.12.5"
+    },
+    "2017328dfc5bccce0422f9e22176490a101dd6d18625368215a8a50771edb2d3": {
+      "filename": "FW_ZenWiFi_BD5_300610258362.zip",
+      "first_seen": "2026-07-14T00:43:05+00:00",
+      "last_seen": "2026-07-14T00:43:05+00:00",
+      "path": "firmware/ASUS_ZenWiFi_BD5/FW_ZenWiFi_BD5_300610258362.zip",
+      "product": "ASUS ZenWiFi BD5",
+      "release_date": "2026/07/13",
+      "report_path": "reports/ASUS_ZenWiFi_BD5/FW_ZenWiFi_BD5_300610258362.zip.md",
+      "sha256": "2017328dfc5bccce0422f9e22176490a101dd6d18625368215a8a50771edb2d3",
+      "size": 44609379,
+      "title": "ASUS ZenWiFi BD5 Firmware version 3.0.0.6.102_58362",
+      "uploaded_at": "2026/07/13",
+      "url": "https://dlcdnta.asus.com/pub/ASUS/wireless/ZenWiFi BD5/FW_ZenWiFi_BD5_300610258362.zip",
+      "version": "3.0.0.6.102_58362"
     },
     "201b0851daa71d48ea8f537a721486546c9994bedfa16cc41cb11dca3f89c95c": {
       "filename": "Archer_GX90_US__V1_240428.zip",
@@ -17433,7 +17463,7 @@
     "667ddb11a57bed203dc2950d48831af8362dc706d36a4976c35e3c851a568196": {
       "filename": "Archer_BE260_V1_260420.zip",
       "first_seen": "2026-06-29T02:33:47+00:00",
-      "last_seen": "2026-07-10T01:48:51+00:00",
+      "last_seen": "2026-07-14T00:54:39+00:00",
       "path": "firmware/TP-Link_Archer_BE260/Archer_BE260_V1_260420.zip",
       "product": "TP-Link Archer BE260",
       "release_date": "2026-05-26",
@@ -19623,7 +19653,7 @@
     "7307b7236c9037afa37f14187eb91b826b25f9d46f3bec846b667d7b18c0ce80": {
       "filename": "Archer_AX10_v3_250812.zip",
       "first_seen": "2026-06-29T02:30:48+00:00",
-      "last_seen": "2026-07-10T01:48:09+00:00",
+      "last_seen": "2026-07-14T00:53:48+00:00",
       "path": "firmware/TP-Link_Archer_AX10/Archer_AX10_v3_250812.zip",
       "product": "TP-Link Archer AX10",
       "release_date": "2025-11-12",
@@ -21033,7 +21063,7 @@
     "7bc17302bb8976878dc44a3489182ce6285da18e96d0df409c7295dd2f57947d": {
       "filename": "X90_X5700v1--up-ver1-4-0-P1_20250102-rel65004_.zip",
       "first_seen": "2026-06-29T02:41:48+00:00",
-      "last_seen": "2026-07-10T01:50:56+00:00",
+      "last_seen": "2026-07-14T00:56:55+00:00",
       "path": "firmware/TP-Link_Deco_X5700/X90_X5700v1--up-ver1-4-0-P1_20250102-rel65004_.zip",
       "product": "TP-Link Deco X5700",
       "release_date": "2025-04-03",
@@ -23328,7 +23358,7 @@
     "8abd9965b54c260535e7cd5a32541b2bc957710a650eafd79f9c3ee032840eac": {
       "filename": "AX_MULTI_X60_X4300Pro-SP1-up-ver1-6-12-P1_20260513-rel20500_.zip",
       "first_seen": "2026-06-29T02:41:30+00:00",
-      "last_seen": "2026-07-10T01:50:46+00:00",
+      "last_seen": "2026-07-14T00:56:44+00:00",
       "path": "firmware/TP-Link_Deco_X5000/AX_MULTI_X60_X4300Pro-SP1-up-ver1-6-12-P1_20260513-rel20500_.zip",
       "product": "TP-Link Deco X5000",
       "release_date": "2026-06-12",
@@ -30138,7 +30168,7 @@
     "b276cb6767b4ebd384b3ed32ddca1dcb110f1da667e53fc6de68318ec6e1b716": {
       "filename": "Deco_BE16000_V1_1.1.1_260108.zip",
       "first_seen": "2026-06-29T02:37:52+00:00",
-      "last_seen": "2026-07-10T01:50:00+00:00",
+      "last_seen": "2026-07-14T00:55:46+00:00",
       "path": "firmware/TP-Link_Deco_BE16000/Deco_BE16000_V1_1.1.1_260108.zip",
       "product": "TP-Link Deco BE16000",
       "release_date": "2026-01-15",
@@ -33093,7 +33123,7 @@
     "c549d359613b0f4a072c4c9df23753505761da6cd07e5e935ca66fc4b626ce49": {
       "filename": "BE4600_V1.6-up-ver1-1-3.zip",
       "first_seen": "2026-06-29T02:38:13+00:00",
-      "last_seen": "2026-07-10T01:50:21+00:00",
+      "last_seen": "2026-07-14T00:56:08+00:00",
       "path": "firmware/TP-Link_Deco_BE4600/BE4600_V1.6-up-ver1-1-3.zip",
       "product": "TP-Link Deco BE4600",
       "release_date": "2025-12-22",
@@ -39690,6 +39720,21 @@
       "url": "https://dlcdnta.asus.com/pub/ASUS/wireless/TUF Gaming 3600 V2/FW_TUF_3600_V2_300610239099.zip",
       "version": "3.0.0.6.102_39099"
     },
+    "ecb07c94a5e8d3751ac5966573d13483b96a42a17168517684270b96429f4f7c": {
+      "filename": "FW_ZenWiFi_BD4_300610258362.zip",
+      "first_seen": "2026-07-14T00:37:28+00:00",
+      "last_seen": "2026-07-14T00:37:28+00:00",
+      "path": "firmware/ASUS_ZenWiFi_BD4/FW_ZenWiFi_BD4_300610258362.zip",
+      "product": "ASUS ZenWiFi BD4",
+      "release_date": "2026/07/13",
+      "report_path": "reports/ASUS_ZenWiFi_BD4/FW_ZenWiFi_BD4_300610258362.zip.md",
+      "sha256": "ecb07c94a5e8d3751ac5966573d13483b96a42a17168517684270b96429f4f7c",
+      "size": 44609379,
+      "title": "ASUS ZenWiFi BD4 Firmware version 3.0.0.6.102_58362",
+      "uploaded_at": "2026/07/13",
+      "url": "https://dlcdnta.asus.com/pub/ASUS/wireless/ZenWiFi BD4/FW_ZenWiFi_BD4_300610258362.zip",
+      "version": "3.0.0.6.102_58362"
+    },
     "ecb830e1b112b8910fca1aac17d9060d625b5d057d4037586f349abd5a33afd6": {
       "filename": "openwrt-mt3000-4.6.8-1014-1728909330.tar",
       "first_seen": "2026-06-30T12:50:43+00:00",
@@ -41313,7 +41358,7 @@
     "f6fc359df51a963d25ead981f0d658285a9ec7e96cc5e195876ee2e5d93b3be1": {
       "filename": "X10_X1500_W4500_X15_W3000_1.0_en_1.4.0_Build_20251222_Rel.45343_up.zip",
       "first_seen": "2026-06-29T02:39:51+00:00",
-      "last_seen": "2026-07-10T01:50:31+00:00",
+      "last_seen": "2026-07-14T00:56:30+00:00",
       "path": "firmware/TP-Link_Deco_W3000/X10_X1500_W4500_X15_W3000_1.0_en_1.4.0_Build_20251222_Rel.45343_up.zip",
       "product": "TP-Link Deco W3000",
       "release_date": "2026-04-29",
@@ -44301,5 +44346,5 @@
     "XR1000": "https://www.netgear.com/support/product/xr1000",
     "XR1000V2": "https://www.netgear.com/support/product/xr1000v2"
   },
-  "updated": "2026-07-10T01:55:23+00:00"
+  "updated": "2026-07-14T01:00:05+00:00"
 }

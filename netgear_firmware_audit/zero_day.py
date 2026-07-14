@@ -6,6 +6,18 @@ import subprocess
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+from .advanced_analysis import (
+    archive_test_cases,
+    auth_test_matrix,
+    build_fuzz_seeds,
+    build_runtime_launch_plan,
+    confirmation_policy,
+    correlate_flows,
+    dynamic_sink_spec,
+    profile_runtime,
+    safe_validation_recipes,
+)
+
 
 @dataclass(frozen=True)
 class KnownVulnerability:
@@ -37,7 +49,23 @@ class RouteCandidate:
     matched_keywords: list[str]
     score: int
     evidence_level: str
+    auth_class: str
+    exposure: str
+    impact_class: str
+    disposition: str
+    evidence: list[str]
     recommended_checks: list[str]
+
+
+@dataclass
+class ServiceSurface:
+    service: str
+    source: str
+    protocol: str
+    exposure: str
+    auth_class: str
+    risk: str
+    evidence: list[str]
 
 
 @dataclass
@@ -45,8 +73,20 @@ class ZeroDayTriage:
     rootfs: str
     known_coverage: list[KnownCoverage]
     candidates: list[RouteCandidate]
+    rejected_candidates: list[RouteCandidate]
+    service_surface: list[ServiceSurface]
     sink_summary: dict[str, int]
     config_writers: list[str]
+    runtime_profile: dict
+    correlated_flows: list[dict]
+    ghidra_evidence: list[dict[str, str]]
+    validation_recipes: list[dict]
+    runtime_launch_plan: dict
+    auth_test_matrix: list[dict]
+    fuzz_seeds: list[dict]
+    archive_test_cases: list[dict]
+    dynamic_sink_spec: list[dict]
+    confirmation_policy: dict
     notes: list[str]
 
     def to_json(self) -> str:
@@ -113,9 +153,9 @@ ROUTE_RE = re.compile(
 )
 PARAM_RE = re.compile(r"""(?ix)\b(?:name|id)\s*=\s*["']?([A-Za-z0-9_.:-]{2,80})""")
 SINK_PATTERNS = {
-    "system": re.compile(r"\bsystem\b|/bin/sh|/bin/ash|\bsh -c\b", re.I),
-    "popen": re.compile(r"\bpopen\b", re.I),
-    "exec": re.compile(r"\bexec(?:l|le|lp|v|ve|vp)?\b", re.I),
+    "system": re.compile(r"\b(?:system|doSystem)\s*\(|/bin/sh|/bin/ash|\bsh -c\b", re.I),
+    "popen": re.compile(r"\bpopen\s*\(", re.I),
+    "exec": re.compile(r"\bexec(?:l|le|lp|v|ve|vp)?\s*\(", re.I),
     "unsafe_copy": re.compile(r"\b(?:strcpy|strcat|sprintf|gets|scanf)\b"),
     "file_write": re.compile(r"\b(?:fopen|fprintf|fputs|write)\b"),
 }
@@ -165,6 +205,25 @@ RISK_PARAMS = {
     "filename",
     "share_name",
 }
+AUTH_MARKERS = re.compile(r"\b(?:auth|authorize|login|logout|password|passwd|session|token|csrf|cookie)\b", re.I)
+PUBLIC_MARKERS = re.compile(r"\b(?:no[_ -]?auth|unauth|public|pre[_ -]?auth|auth[_ -]?skip|whitelist|setup|wizard|onboard)\b", re.I)
+ADMIN_MARKERS = re.compile(r"\b(?:admin|administrator|management|apply|upgrade|upload|backup|restore)\b", re.I)
+MUTATING_MARKERS = re.compile(r"\b(?:apply|set|add|delete|remove|upload|upgrade|restore|reboot|restart|enable|disable)\b", re.I)
+SERVICE_NAMES = {
+    "upnp": ("udp", "lan", "none", "high"),
+    "miniupnpd": ("udp", "lan", "none", "high"),
+    "ssdp": ("udp", "lan", "none", "high"),
+    "dnsmasq": ("udp/tcp", "lan", "none", "high"),
+    "udhcpd": ("udp", "lan", "none", "high"),
+    "dhcpd": ("udp", "lan", "none", "high"),
+    "smbd": ("tcp", "lan", "unknown", "medium"),
+    "samba": ("tcp", "lan", "unknown", "medium"),
+    "dropbear": ("tcp", "lan", "required", "low"),
+    "telnetd": ("tcp", "lan", "unknown", "high"),
+    "ftpd": ("tcp", "lan", "unknown", "medium"),
+    "cloud": ("tcp", "outbound", "device", "high"),
+    "mesh": ("unknown", "lan/wireless", "device", "high"),
+}
 CONFIG_MARKERS = (
     "openvpn",
     "server.conf",
@@ -179,9 +238,14 @@ CONFIG_MARKERS = (
 )
 
 
-def analyze_zero_day_surface(rootfs: Path, product: str = "", version: str | None = None) -> ZeroDayTriage:
+def analyze_zero_day_surface(
+    rootfs: Path,
+    product: str = "",
+    version: str | None = None,
+    ghidra_evidence: list[dict[str, str]] | None = None,
+) -> ZeroDayTriage:
     rootfs = rootfs.resolve()
-    files = [path for path in rootfs.rglob("*") if path.is_file()] if rootfs.exists() else []
+    files = [path for path in rootfs.rglob("*") if path.is_file() and not path.is_symlink()] if rootfs.exists() else []
     sample_files = _sample_files(files)
     strings_by_file = _collect_strings(sample_files)
     routes = _discover_routes(rootfs, sample_files, strings_by_file)
@@ -189,17 +253,36 @@ def analyze_zero_day_surface(rootfs: Path, product: str = "", version: str | Non
     sink_summary = _summarize_sinks(strings_by_file)
     config_writers = _find_config_writers(strings_by_file)
     known = _known_coverage(product, version, routes, all_params)
-    candidates = _score_routes(routes, all_params, sink_summary)
+    candidates, rejected = _score_routes(rootfs, routes, all_params, strings_by_file, ghidra_evidence or [])
+    services = _discover_services(rootfs, strings_by_file)
+    routes_by_source = _routes_by_source(strings_by_file)
+    flows = correlate_flows(rootfs, strings_by_file, routes_by_source)
+    profile = profile_runtime(rootfs, product)
+    runtime_plan = build_runtime_launch_plan(rootfs, product)
     notes = [
         "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+        "Only routes with a plausible low-privilege boundary and route-local sink evidence are promoted. Global firmware sink counts never raise route evidence.",
+        "Authentication labels inferred from strings are hypotheses until dispatcher control flow or a live request confirms them.",
         "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation.",
     ]
     return ZeroDayTriage(
         rootfs=str(rootfs),
         known_coverage=known,
         candidates=candidates,
+        rejected_candidates=rejected,
+        service_surface=services,
         sink_summary=sink_summary,
         config_writers=config_writers[:50],
+        runtime_profile=asdict(profile),
+        correlated_flows=[asdict(flow) for flow in flows[:100]],
+        ghidra_evidence=(ghidra_evidence or [])[:500],
+        validation_recipes=[asdict(recipe) for recipe in safe_validation_recipes()],
+        runtime_launch_plan=asdict(runtime_plan),
+        auth_test_matrix=[asdict(item) for item in auth_test_matrix()],
+        fuzz_seeds=[asdict(item) for item in build_fuzz_seeds(list(routes), all_params)],
+        archive_test_cases=[asdict(item) for item in archive_test_cases()],
+        dynamic_sink_spec=dynamic_sink_spec(),
+        confirmation_policy=confirmation_policy(),
         notes=notes,
     )
 
@@ -244,14 +327,37 @@ def render_zero_day_markdown(triage: ZeroDayTriage) -> str:
                 "",
                 f"- Score: {candidate.score}",
                 f"- Evidence level: {candidate.evidence_level}",
+                f"- Authentication: {candidate.auth_class}",
+                f"- Exposure: {candidate.exposure}",
+                f"- Potential impact: {candidate.impact_class}",
+                f"- Disposition: {candidate.disposition}",
                 f"- Source: {candidate.source}",
                 f"- Parameters: {params}",
                 f"- Matched risk keywords: {keywords}",
+                f"- Evidence: {'; '.join(candidate.evidence)}",
                 f"- Next checks: {checks}",
                 "",
             ]
         )
-    lines.extend(["### Sink Summary", ""])
+    lines.extend(["### Rejected or Deprioritized Routes", ""])
+    if triage.rejected_candidates:
+        for candidate in triage.rejected_candidates[:30]:
+            lines.append(
+                f"- `{candidate.route}`: {candidate.disposition}; auth={candidate.auth_class}; "
+                f"evidence={candidate.evidence_level}; score={candidate.score}"
+            )
+    else:
+        lines.append("No routes were explicitly rejected by the impact gate.")
+    lines.extend(["", "### Non-HTTP Service Surface", ""])
+    if triage.service_surface:
+        for service in triage.service_surface[:40]:
+            lines.append(
+                f"- `{service.service}` ({service.protocol}, {service.exposure}): auth={service.auth_class}, "
+                f"risk={service.risk}; source=`{service.source}`; evidence={'; '.join(service.evidence)}"
+            )
+    else:
+        lines.append("No prioritized non-HTTP services were identified.")
+    lines.extend(["", "### Sink Summary", ""])
     for name, count in sorted(triage.sink_summary.items()):
         lines.append(f"- {name}: {count}")
     lines.extend(["", "### Config Writer Leads", ""])
@@ -259,6 +365,43 @@ def render_zero_day_markdown(triage: ZeroDayTriage) -> str:
         lines.extend(f"- `{item}`" for item in triage.config_writers[:30])
     else:
         lines.append("No config-writer markers found in sampled strings.")
+    lines.extend(["", "### Handler-level Correlated Flows", ""])
+    if triage.correlated_flows:
+        for flow in triage.correlated_flows[:20]:
+            lines.append(f"- `{flow['source_file']}`: {flow['confidence']}, score {flow['score']}; sources={', '.join(flow['sources'])}; sinks={', '.join(flow['sinks'])}")
+    else:
+        lines.append("No source and dangerous sink were co-located in the same sampled handler or binary.")
+    lines.extend(["", "### Ghidra Function-local Evidence", ""])
+    if triage.ghidra_evidence:
+        for item in triage.ghidra_evidence[:30]:
+            lines.append(
+                f"- `{item.get('binary', 'unknown')}:{item.get('function', 'unknown')}` "
+                f"at `{item.get('address', 'unknown')}`: route `{item.get('route', 'unknown')}`, "
+                f"sink `{item.get('sink', 'unknown')}`"
+            )
+    else:
+        lines.append("No function-local route/sink pairs were emitted by Ghidra.")
+    lines.extend(["", "### Runtime Profile", ""])
+    profile = triage.runtime_profile
+    lines.extend([
+        f"- Vendor profile: {profile['vendor']}",
+        f"- Web stack: {', '.join(profile['web_stack']) or 'not identified'}",
+        f"- State backends: {', '.join(profile['state_backends']) or 'not identified'}",
+        f"- Architectures: {', '.join(profile['architectures']) or 'not identified'}",
+        f"- Executables/scripts discovered: {profile['executable_count']}",
+    ])
+    lines.extend(["", "### Dynamic Validation Plan", ""])
+    plan = triage.runtime_launch_plan
+    lines.append(f"- Isolation: {', '.join(plan['isolation'])}")
+    lines.append(f"- Startup candidates: {', '.join(plan['startup_candidates'][:8]) or 'none identified'}")
+    lines.append(f"- Listener candidates: {', '.join(plan['listener_candidates'][:8]) or 'none identified'}")
+    lines.append(f"- Runtime requirements discovered: {len(plan['requirements'])}")
+    lines.append(f"- Authentication cases: {', '.join(item['name'] for item in triage.auth_test_matrix)}")
+    lines.append(f"- Structured fuzz seeds: {len(triage.fuzz_seeds)}")
+    lines.append(f"- Archive validation cases: {len(triage.archive_test_cases)}")
+    lines.extend(["", "### Confirmation Policy", ""])
+    for key, value in triage.confirmation_policy.items():
+        lines.append(f"- {key}: {value}")
     lines.extend(["", "### Triage Notes", ""])
     lines.extend(f"- {note}" for note in triage.notes)
     lines.append("")
@@ -323,6 +466,20 @@ def _discover_routes(rootfs: Path, files: list[Path], strings_by_file: dict[str,
     return dict(sorted(routes.items()))
 
 
+def _routes_by_source(strings_by_file: dict[str, list[str]]) -> dict[str, list[str]]:
+    result: dict[str, list[str]] = {}
+    for source, lines in strings_by_file.items():
+        routes = {
+            _normalize_route(match.group(1) or match.group(2))
+            for line in lines
+            for match in ROUTE_RE.finditer(line)
+            if match.group(1) or match.group(2)
+        }
+        if routes:
+            result[source] = sorted(routes)
+    return result
+
+
 def _discover_parameters(rootfs: Path, files: list[Path]) -> dict[str, list[str]]:
     params_by_route: dict[str, set[str]] = {}
     for path in files:
@@ -384,48 +541,191 @@ def _known_coverage(
 
 
 def _score_routes(
+    rootfs: Path,
     routes: dict[str, str],
     params_by_route: dict[str, list[str]],
-    sink_summary: dict[str, int],
-) -> list[RouteCandidate]:
+    strings_by_file: dict[str, list[str]],
+    ghidra_evidence: list[dict[str, str]],
+) -> tuple[list[RouteCandidate], list[RouteCandidate]]:
+    """Rank routes using only evidence from their owning file or binary.
+
+    A firmware-wide sink count is deliberately not accepted as route evidence.
+    This prevents an unrelated utility containing ``system`` from promoting every
+    CGI route in the image.
+    """
     candidates: list[RouteCandidate] = []
-    dangerous_sinks_present = sum(sink_summary.get(name, 0) for name in ("system", "popen", "exec")) > 0
+    rejected: list[RouteCandidate] = []
     for route, source in routes.items():
         route_lower = route.lower()
         params = params_by_route.get(route, [])
         matched = [key for key in RISK_KEYWORDS if key in route_lower]
-        score = 0
-        score += 5 if route_lower.endswith(".cgi") or "cgi-bin" in route_lower else 0
+        source_lines = _source_lines(rootfs, source, strings_by_file)
+        source_text = "\n".join(_route_context(route, source, source_lines))
+        local_sinks = sorted(name for name, pattern in SINK_PATTERNS.items() if pattern.search(source_text))
+        decompiled = [
+            item for item in ghidra_evidence
+            if _normalize_route(item.get("route", "")).lower() == route_lower
+        ]
+        decompiled_sinks = sorted({item.get("sink", "") for item in decompiled if item.get("sink")})
+        local_sinks = sorted(set(local_sinks) | set(decompiled_sinks))
+        auth_class, auth_evidence = _classify_auth(route, source_text)
+        exposure = _classify_route_exposure(route, source_text)
+        score = 5 if route_lower.endswith(".cgi") or "cgi-bin" in route_lower else 0
         score += sum(RISK_KEYWORDS[key] for key in matched)
         risky_params = [param for param in params if param.lower() in RISK_PARAMS or any(key in param.lower() for key in RISK_PARAMS)]
         score += min(len(risky_params) * 3, 12)
-        if dangerous_sinks_present:
-            score += 3
-        if "debug" in route_lower or "hidden" in route_lower:
-            score += 2
-        if score < 8:
-            continue
-        level = "L2" if dangerous_sinks_present else ("L1" if params else "L0")
+        score += min(len(local_sinks) * 5, 20)
+        score += {"none": 20, "setup-only": 10, "unknown": 2, "required": -15, "admin": -30}[auth_class]
+        score += {"wan/lan": 8, "lan": 5, "unknown": 0}[exposure]
+        evidence = [*auth_evidence]
+        if risky_params:
+            evidence.append(f"risky parameters: {', '.join(risky_params[:8])}")
+        if local_sinks:
+            evidence.append(f"route-local sinks: {', '.join(local_sinks)}")
+        else:
+            evidence.append("no route-local dangerous sink found")
+        for item in decompiled[:5]:
+            evidence.append(
+                f"Ghidra function {item.get('function', 'unknown')} at {item.get('address', 'unknown')} "
+                f"contains route and {item.get('sink', 'sink')}"
+            )
+        level = "L3" if local_sinks and risky_params else ("L2" if local_sinks else ("L1" if params else "L0"))
+        mutating = bool(MUTATING_MARKERS.search(route_lower))
+        impact_class = _potential_impact(local_sinks, risky_params, mutating)
+        if auth_class in {"admin", "required"}:
+            disposition = "deprioritized: authenticated administrator or privileged session required"
+        elif not local_sinks:
+            disposition = "rejected: route is not correlated with a dangerous sink"
+        elif not risky_params and not mutating:
+            disposition = "deprioritized: sink exists but no attacker-controlled parameter is identified"
+        elif auth_class == "unknown":
+            disposition = "candidate: prove authentication boundary before deeper exploitation work"
+        else:
+            disposition = "candidate: plausible low-privilege path with route-local sink evidence"
         checks = [
-            "map route to handler and auth gate",
+            "confirm dispatcher authentication control flow",
             "trace each risky parameter into command/file/memory sinks",
         ]
-        if dangerous_sinks_present:
+        if local_sinks:
             checks.append("prove or reject parameter-to-system/popen/exec flow")
         if any(key in route_lower for key in ("vpn", "dns", "ddns", "ntp", "share", "usb")):
             checks.append("check daemon config injection and service restart behavior")
-        candidates.append(
-            RouteCandidate(
-                route=route,
-                source=source,
-                parameters=params,
-                matched_keywords=matched,
-                score=score,
-                evidence_level=level,
-                recommended_checks=checks,
-            )
+        item = RouteCandidate(
+            route=route,
+            source=source,
+            parameters=params,
+            matched_keywords=matched,
+            score=score,
+            evidence_level=level,
+            auth_class=auth_class,
+            exposure=exposure,
+            impact_class=impact_class,
+            disposition=disposition,
+            evidence=evidence,
+            recommended_checks=checks,
         )
-    return sorted(candidates, key=lambda item: (-item.score, item.route))
+        if disposition.startswith("candidate:") and score >= 20:
+            candidates.append(item)
+        else:
+            rejected.append(item)
+    return (
+        sorted(candidates, key=lambda item: (-item.score, item.route)),
+        sorted(rejected, key=lambda item: (-item.score, item.route)),
+    )
+
+
+def _source_lines(rootfs: Path, source: str, strings_by_file: dict[str, list[str]]) -> list[str]:
+    prefix, _, relative = source.partition(":")
+    if prefix in {"string", "file"} and relative:
+        candidate = str(rootfs / relative)
+        if candidate in strings_by_file:
+            return strings_by_file[candidate]
+    return strings_by_file.get(source, [])
+
+
+def _route_context(route: str, source: str, lines: list[str], radius: int = 12) -> list[str]:
+    """Return route-adjacent strings for monolithic dispatchers.
+
+    Standalone CGI/script files are already a useful handler boundary. For a
+    route recovered from a large binary, use bounded neighborhoods around the
+    route string so a sink elsewhere in ``httpd`` cannot promote it.
+    """
+    if source.startswith("file:"):
+        return lines
+    needles = {route.lower(), Path(route).name.lower()}
+    indexes = [
+        index
+        for index, line in enumerate(lines)
+        if any(needle and needle in line.lower() for needle in needles)
+    ]
+    if not indexes:
+        return []
+    selected: set[int] = set()
+    for index in indexes:
+        selected.update(range(max(0, index - radius), min(len(lines), index + radius + 1)))
+    return [lines[index] for index in sorted(selected)]
+
+
+def _classify_auth(route: str, source_text: str) -> tuple[str, list[str]]:
+    text = f"{route}\n{source_text}"
+    route_lower = route.lower()
+    evidence: list[str] = []
+    if PUBLIC_MARKERS.search(text):
+        evidence.append("public/pre-authentication marker co-located with route")
+        if any(token in route_lower for token in ("setup", "wizard", "onboard")):
+            return "setup-only", evidence
+        return "none", evidence
+    if ADMIN_MARKERS.search(route_lower) and AUTH_MARKERS.search(source_text):
+        evidence.append("administrative route and authentication markers are co-located")
+        return "admin", evidence
+    if AUTH_MARKERS.search(source_text):
+        evidence.append("authentication/session marker is co-located; enforcement is unproven")
+        return "required", evidence
+    evidence.append("no authentication decision recovered")
+    return "unknown", evidence
+
+
+def _classify_route_exposure(route: str, source_text: str) -> str:
+    text = f"{route}\n{source_text}".lower()
+    if any(marker in text for marker in ("wan_access", "remote_management", "0.0.0.0")):
+        return "wan/lan"
+    if any(marker in text for marker in ("lan", "localhost", "127.0.0.1")):
+        return "lan"
+    return "unknown"
+
+
+def _potential_impact(local_sinks: list[str], risky_params: list[str], mutating: bool) -> str:
+    if any(name in local_sinks for name in ("system", "popen", "exec")) and risky_params:
+        return "possible command execution"
+    if "unsafe_copy" in local_sinks and risky_params:
+        return "possible memory corruption"
+    if "file_write" in local_sinks and risky_params:
+        return "possible arbitrary/configuration write"
+    if mutating:
+        return "security-sensitive state change"
+    return "unproven"
+
+
+def _discover_services(rootfs: Path, strings_by_file: dict[str, list[str]]) -> list[ServiceSurface]:
+    """Inventory high-value non-HTTP parsers from binaries and startup/config files."""
+    found: dict[tuple[str, str], ServiceSurface] = {}
+    for source, lines in strings_by_file.items():
+        relative = _short_source(rootfs, Path(source)).removeprefix("string:")
+        basename = Path(source).name.lower()
+        text = "\n".join(lines).lower()
+        for service, (protocol, exposure, auth, risk) in SERVICE_NAMES.items():
+            if service not in basename and service not in text:
+                continue
+            evidence = ["service marker present"]
+            local_sinks = sorted(name for name, pattern in SINK_PATTERNS.items() if pattern.search(text))
+            if local_sinks:
+                evidence.append(f"local sinks: {', '.join(local_sinks)}")
+            key = (service, relative)
+            found[key] = ServiceSurface(service, relative, protocol, exposure, auth, risk, evidence)
+    return sorted(
+        found.values(),
+        key=lambda item: ({"high": 0, "medium": 1, "low": 2}[item.risk], item.service, item.source),
+    )[:200]
 
 
 def _version_applicability(version: str | None, vuln: KnownVulnerability) -> str:

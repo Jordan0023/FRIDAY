@@ -17,7 +17,12 @@ def main() -> int:
     parser.add_argument("--include-beta", action="store_true", help="Include testing/RC firmware in addition to stable releases.")
     parser.add_argument("--include-snapshot", action="store_true", help="Include daily snapshot firmware.")
     parser.add_argument("--analyze", action="store_true", help="Run static analysis after each new download.")
-    parser.add_argument("--max-extract-mb", type=int, default=768, help="Stop extracting one firmware after this many MB during analysis.")
+    parser.add_argument(
+        "--max-extract-mb",
+        type=int,
+        default=None,
+        help="Optional extraction cap in MB. The default is unlimited so nested GL.iNet root filesystems are not truncated.",
+    )
     parser.add_argument("--cleanup-extracted", action="store_true", help="Delete extracted filesystems after each report is written.")
     parser.add_argument("--build-site", action="store_true", help="Rebuild site/data/firmware-dashboard.* after download.")
     args = parser.parse_args()

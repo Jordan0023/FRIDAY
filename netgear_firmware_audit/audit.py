@@ -1,11 +1,14 @@
 from __future__ import annotations
 
+import os
 import re
 import shutil
 import subprocess
+import json
 from pathlib import Path
 
 from .models import FirmwareRecord, safe_name
+from .advanced_analysis import discover_rootfs_candidates, write_fingerprint
 from .zero_day import analyze_zero_day_surface, render_zero_day_markdown
 
 
@@ -34,10 +37,17 @@ class FirmwareAuditor:
         strings = self._collect_strings(files[:200])
         findings = self._findings(strings, files)
         rootfs = _find_rootfs(extract_dir)
-        zero_day = analyze_zero_day_surface(rootfs or extract_dir, record.product, record.version)
+        ghidra_notes, ghidra_evidence = self._run_ghidra(files, record)
+        zero_day = analyze_zero_day_surface(
+            rootfs or extract_dir,
+            record.product,
+            record.version,
+            ghidra_evidence=ghidra_evidence,
+        )
         zero_day_path = report_dir / f"{safe_name(record.filename)}.zero-day.json"
         zero_day_path.write_text(zero_day.to_json() + "\n", encoding="utf-8")
-        ghidra_notes = self._run_ghidra(files, record)
+        if rootfs:
+            write_fingerprint(report_dir / f"{safe_name(record.filename)}.fingerprints.json", rootfs)
 
         report_path.write_text(
             self._render_report(
@@ -114,15 +124,28 @@ class FirmwareAuditor:
                 break
         return out
 
-    def _run_ghidra(self, files: list[Path], record: FirmwareRecord) -> list[str]:
+    def _run_ghidra(self, files: list[Path], record: FirmwareRecord) -> tuple[list[str], list[dict[str, str]]]:
         if not self.ghidra_headless:
-            return ["Ghidra analyzeHeadless not found; decompiler import skipped."]
-        elf_files = [p for p in files if _is_elf(p)][: self.max_ghidra_files]
+            return ["Ghidra analyzeHeadless not found; decompiler analysis skipped."], []
+        # Rank network-facing binaries first; do not depend on archive traversal order.
+        elf_files = sorted(
+            (p for p in files if _is_elf(p)),
+            key=lambda p: (0 if any(x in p.name.lower() for x in ("http", "cgi", "web", "rpc", "ubus", "upnp")) else 1, str(p)),
+        )[: self.max_ghidra_files]
         if not elf_files:
-            return ["No ELF binaries found for Ghidra import."]
+            return ["No ELF binaries found for Ghidra import."], []
         project_dir = self.root / "ghidra_projects"
         project_dir.mkdir(parents=True, exist_ok=True)
+        ghidra_runtime_dir = (self.root / "ghidra_runtime").resolve()
+        ghidra_env = os.environ.copy()
+        ghidra_env.setdefault("XDG_CONFIG_HOME", str(ghidra_runtime_dir / "config"))
+        ghidra_env.setdefault("XDG_CACHE_HOME", str(ghidra_runtime_dir / "cache"))
+        ghidra_env.setdefault("XDG_STATE_HOME", str(ghidra_runtime_dir / "state"))
         notes: list[str] = []
+        evidence: list[dict[str, str]] = []
+        script_dir = Path(__file__).resolve().parents[1] / "ghidra_scripts"
+        evidence_dir = self.root / "ghidra_evidence" / record.sha256[:16]
+        evidence_dir.mkdir(parents=True, exist_ok=True)
         for path in elf_files:
             project_name = f"{safe_name(record.product)}_{record.sha256[:8]}"
             cmd = [
@@ -133,14 +156,22 @@ class FirmwareAuditor:
                 str(path),
                 "-analysisTimeoutPerFile",
                 "120",
+                "-scriptPath",
+                str(script_dir),
+                "-postScript",
+                "FridayRouteEvidence.java",
+                str(evidence_dir / f"{safe_name(path.name)}.jsonl"),
                 "-deleteProject",
             ]
             try:
-                result = subprocess.run(cmd, text=True, capture_output=True, timeout=240)
+                result = subprocess.run(cmd, text=True, capture_output=True, timeout=240, env=ghidra_env)
                 notes.append(_command_note(cmd, result))
+                evidence.extend(_read_jsonl(evidence_dir / f"{safe_name(path.name)}.jsonl"))
             except subprocess.TimeoutExpired:
                 notes.append(f"Ghidra timed out on {path}.")
-        return notes
+        if evidence:
+            notes.append(f"Ghidra emitted {len(evidence)} function-local route/sink evidence records.")
+        return notes, evidence
 
     def _findings(self, strings: list[str], files: list[Path]) -> list[dict[str, str]]:
         joined = "\n".join(strings)
@@ -296,17 +327,8 @@ def _find_ghidra_headless() -> str | None:
 
 
 def _find_rootfs(extract_dir: Path) -> Path | None:
-    if not extract_dir.exists():
-        return None
-    candidates: list[Path] = []
-    for path in extract_dir.rglob("*"):
-        if path.is_dir() and (path / "bin").is_dir() and ((path / "www").is_dir() or (path / "usr").is_dir()):
-            candidates.append(path)
-    if candidates:
-        return sorted(candidates, key=lambda item: (len(item.parts), str(item)))[0]
-    if (extract_dir / "bin").is_dir():
-        return extract_dir
-    return None
+    candidates = discover_rootfs_candidates(extract_dir)
+    return candidates[0] if candidates else None
 
 
 def _directory_size(path: Path) -> int:
@@ -320,3 +342,17 @@ def _directory_size(path: Path) -> int:
         except OSError:
             continue
     return total
+
+
+def _read_jsonl(path: Path) -> list[dict[str, str]]:
+    if not path.is_file():
+        return []
+    records: list[dict[str, str]] = []
+    for line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+        try:
+            item = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if isinstance(item, dict) and all(isinstance(key, str) and isinstance(value, str) for key, value in item.items()):
+            records.append(item)
+    return records

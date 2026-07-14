@@ -1,0 +1,24 @@
+[qemu] doing qemu_execven on filename /usr/sbin/httpd
+[GreenHouseQEMU] IP: 0.0.0.0
+[GreenHouseQEMU] PORT: 80
+[qemu] Successful Bind 0
+[22;31mlan_netmask=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/rm
+[22;31mlan_netmask=Unknown
+[22;00m[22;31mifttt_token=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/rm
+[22;31mlan_netmask=Unknown
+[22;00m[22;31mifttt_timestamp=Unknown
+[22;00m[22;31mifttt_stoken=Unknown
+[22;00m[22;31mlan_netmask=Unknown
+[22;00m[22;31mskill_act_code_t=Unknown
+[22;00m[22;31mntp_ready=Unknown
+[22;00m[22;31mntp_ready=Unknown
+[22;00m[22;31mlan_netmask=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/tar
+[22;31mntp_ready=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/rm

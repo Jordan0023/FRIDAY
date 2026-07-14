@@ -204,7 +204,7 @@ def download_tplink_router_firmware(
     downloader = TpLinkFirmwareDownloader(root, timeout=timeout)
     auditor = FirmwareAuditor(
         root,
-        max_ghidra_files=0,
+        max_ghidra_files=5,
         max_extract_bytes=max_extract_mb * 1024 * 1024 if max_extract_mb else None,
     )
     models = discovery.discover_models()

@@ -1,0 +1,37 @@
+[qemu] doing qemu_execven on filename /usr/sbin/httpd
+[GreenHouseQEMU] IP: 0.0.0.0
+[GreenHouseQEMU] PORT: 80
+[qemu] Successful Bind 0
+[22;31mlan_netmask=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/rm
+[22;31mlan_netmask=Unknown
+[22;00m[22;31mntp_ready=Unknown
+[22;00m[22;31msetting_update_time=Unknown
+[22;00m[22;31mlan_netmask=Unknown
+[22;00m[22;31mlan_netmask=Unknown
+[22;00m[22;31mhttp_autologout=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/tar
+tar: can't create directory 'pivot': No such file or directory
+tar: can't open 'pivot/root': No such file or directory
+[22;31mrc_service_pid=Unknown
+[22;00m[22;31mrc_service=Unknown
+[22;00m[22;31mntp_ready=Unknown
+[22;00m[22;31mopenvpn_update_time=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/rm
+[22;31mlan_netmask=Unknown
+[22;00m[22;31mhttp_autologout=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/tar
+[22;31mntp_ready=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/rm
+[22;31mlan_netmask=Unknown
+[22;00m[22;31mhttp_autologout=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/tar
+[22;31mntp_ready=Unknown
+[22;00m[qemu] doing qemu_execven on filename /bin/sh
+[qemu] doing qemu_execven on filename /bin/rm

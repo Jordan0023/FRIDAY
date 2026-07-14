@@ -122,3 +122,69 @@ known_firmware/reports/     Lightweight markdown reports
 ```
 
 Static findings are triage leads. Confirm reachability, affected versions, exploit preconditions, and vendor-fixed versions before treating any item as a vulnerability.
+
+## Advanced zero-day analysis
+
+The advanced scanner correlates input sources and dangerous sinks within the
+same handler or binary, profiles vendor runtime dependencies, discovers
+rootfs trees independent of extractor naming, fingerprints executables for
+patch-diffing, and emits bounded validation recipes:
+
+```bash
+python3 scripts/advanced_firmware_analysis.py scan /path/to/rootfs --product "TP-Link Archer C5400X"
+python3 scripts/advanced_firmware_analysis.py diff /path/to/older/rootfs /path/to/newer/rootfs
+python3 scripts/advanced_firmware_analysis.py recipes
+```
+
+The zero-day map is authentication-first. It inventories web routes and
+high-value non-HTTP services, correlates dangerous sinks only within a
+standalone handler or a bounded route-local binary context, labels likely
+exposure and authentication, and separates promoted candidates from rejected
+or administrator-only routes.
+Firmware-wide sink counts remain inventory data but no longer increase an
+unrelated route's evidence level or impact score.
+
+Candidate JSON includes `auth_class`, `exposure`, `impact_class`,
+`disposition`, and concrete `evidence`. The `rejected_candidates` collection
+records why routes were filtered, while `service_surface` highlights LAN/WAN
+parsers such as UPnP, DNS, DHCP, file sharing, cloud, and mesh services.
+
+Validation recipes are intentionally limited to localhost/isolated namespaces,
+disable external networking, avoid persistence, and write markers only beneath
+`/tmp/friday-proof`. The Docker image includes AFL++, QEMU user emulation,
+Ghidra, tracing tools, ELF parsing, and CPU emulation support. Rebuild the image
+to install the added packages.
+
+A **confirmed zero-day** requires L5 technical confirmation (a reproducible
+security effect with source/sink attribution), a novel reproducible
+pre-authentication path that does not require a remote administrator session,
+a documented and dated search of public prior art, and no matching public
+disclosure or publicly available fix at the recorded discovery time. A flaw
+that directly requires an authenticated administrator remains a confirmed
+vulnerability but is not labeled a confirmed zero-day. A chain through a
+publicly known authentication bypass does not satisfy the novel pre-authentication
+requirement. Vendor or CNA contact is not required. This is a public-novelty
+determination and cannot exclude an unknown private or embargoed duplicate;
+reports must retain that caveat.
+
+Ghidra audits run `ghidra_scripts/FridayRouteEvidence.java` after import. It
+emits machine-readable, function-local route/sink pairs which are consumed by
+the route scorer. These pairs are correlation evidence, not a claim that an
+attacker parameter reaches the sink.
+
+GL.iNet extraction is unlimited by default because nested sysupgrade images
+can expand beyond 768 MB. Set `--max-extract-mb` only when a disk budget is
+required.
+
+The RT-AX82U validation helper builds the bundled Greenhouse artifact, rehosts
+the firmware without external networking, and can replay a bounded proof to a
+loopback-published emulator:
+
+```bash
+python3 scripts/emulate_asus_rt_ax82u.py build-greenhouse
+python3 scripts/emulate_asus_rt_ax82u.py rehost --mode single --timeout-minutes 45
+python3 scripts/emulate_asus_rt_ax82u.py replay --base-url http://127.0.0.1:8080 --cookie 'asus_token=...'
+```
+
+The replay command refuses non-loopback targets. Its archive is constrained to
+the modeled `/tmp/friday-proof` directory.

@@ -37,6 +37,7 @@ RUN rm -f /etc/apt/sources.list.d/yarn.list \
     && apt-get install -y --no-install-recommends \
         binutils \
         binwalk \
+        afl++ \
         bubblewrap \
         build-essential \
         ca-certificates \
@@ -68,6 +69,7 @@ RUN rm -f /etc/apt/sources.list.d/yarn.list \
         python3-capstone \
         python3-pip \
         python3-pyelftools \
+        python3-unicorn \
         python3-venv \
         proot \
         qemu-system-arm \

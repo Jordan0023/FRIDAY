@@ -169,9 +169,11 @@ known_firmware/firmware/
 known_firmware/extracted/
 known_firmware/logs/
 known_firmware/ghidra_projects/
+known_firmware/ghidra_runtime/
 known_firmware/*.truncated-*
 router-agent-results/
 ghidra_proj_friday/
+work/ghidra_proj/
 ghidra_scripts_friday/
 
 # Keep the lightweight dashboard and report metadata tracked.
@@ -220,6 +222,10 @@ tempCodeRunnerFile.py
 
 # Ruff stuff:
 .ruff_cache/
+.ghidra-home/
+.xdg-cache/
+.xdg-config/
+.xdg-state/
 
 # PyPI configuration file
 .pypirc
@@ -231,3 +237,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local Greenhouse extraction root (contains device nodes and large scratch data)
+known_firmware/emulation/*/greenhouse-scratch/

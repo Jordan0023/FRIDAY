@@ -349,7 +349,7 @@
       "url": "https://www.tp-link.com/us/support/download/td-w8980/"
     },
     "TP-Link TL-ER5120|https://www.tp-link.com/us/support/download/tl-er5120/": {
-      "category": "Load Balance Routers",
+      "category": "Load Balance Gateways",
       "product": "TP-Link TL-ER5120",
       "reason": "No firmware links listed",
       "url": "https://www.tp-link.com/us/support/download/tl-er5120/"
@@ -397,13 +397,13 @@
       "url": "https://www.tp-link.com/us/support/download/tl-r460/"
     },
     "TP-Link TL-R470T+|https://www.tp-link.com/us/support/download/tl-r470t+/": {
-      "category": "Load Balance Routers",
+      "category": "Load Balance Gateways",
       "product": "TP-Link TL-R470T+",
       "reason": "No firmware links listed",
       "url": "https://www.tp-link.com/us/support/download/tl-r470t+/"
     },
     "TP-Link TL-R480T+|https://www.tp-link.com/us/support/download/tl-r480t+/": {
-      "category": "Load Balance Gateways",
+      "category": "Load Balance Routers",
       "product": "TP-Link TL-R480T+",
       "reason": "No firmware links listed",
       "url": "https://www.tp-link.com/us/support/download/tl-r480t+/"
