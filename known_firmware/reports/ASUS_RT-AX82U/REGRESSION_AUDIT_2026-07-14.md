@@ -170,6 +170,32 @@ Disposition: **published cross-model SQL-injection lead blocked by current
 pre-database authentication/input validation; not reproduced and not a novel
 candidate**.
 
+#### Follow-up control-flow and normalization pass
+
+Radare2 cross-references place the old RT-AX92U `384_6063` raw-path template in
+the function at `0x34c0`. In current RT-AX82U `25101`, both raw templates are
+still referenced by the substantially changed metadata function at `0x4880`:
+the normal-path template is loaded at `0x50a0`, and the `/tmp` form is loaded at
+`0x5268`. This establishes retained post-authentication attack surface, but it
+does not override the runtime authentication ordering or prove that an unsafe
+attacker value reaches those formatting sites.
+
+A bounded unauthenticated normalization corpus exercised the model route with
+duplicate separators, dot segments, encoded and double-encoded dot segments,
+encoded and double-encoded separators, a semicolon, and a decoded quote. The
+first seven variants all returned `401 Unauthorized`. The semicolon and quote
+variants returned `451` before WebDAV database handling. The database SHA-256
+was identical before and after the corpus:
+
+`ccfcd9f05e68e0e1e3b5783893dd74fdb06b59622a1da05a147d3f663f908295`.
+
+The synthetic firmware state contains no configured WebDAV administrator
+credential, so a genuine authenticated replay could not be completed without
+altering the security boundary. Supplying a Basic header for the NVRAM-faker's
+`Unknown` username was rejected with `401`. Consequently an authenticated SQL
+injection is also **not confirmed**; it remains suitable for a harmless marker
+test on an owned router with a real lab administrator account.
+
 ### Current token and management endpoints
 
 Unauthenticated requests were made to:
