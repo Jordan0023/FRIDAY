@@ -11,15 +11,29 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 KNOWN = ROOT / "known_firmware"
 SITE_DATA = ROOT / "site" / "data"
+EOL_PRODUCTS_PATH = SITE_DATA / "eol-products.json"
+MIN_DASHBOARD_FIRMWARE_YEAR = 2021
+MAX_DASHBOARD_FIRMWARE_YEAR = 2026
 
 
 def main() -> int:
     manifest_path = KNOWN / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    eol_products = load_eol_products()
     records = sorted(
         manifest.get("firmware", {}).values(),
         key=lambda record: (record.get("product", ""), record.get("filename", "")),
     )
+    records = [
+        record for record in records
+        if is_in_dashboard_year_range(record)
+        and clean_value(record.get("product")) not in eol_products
+    ]
+    filtered_products = {
+        clean_value(record.get("product"))
+        for record in records
+        if clean_value(record.get("product"))
+    }
 
     firmware = []
     finding_counts: Counter[str] = Counter()
@@ -70,7 +84,7 @@ def main() -> int:
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "manifest_updated": manifest.get("updated", ""),
         "summary": {
-            "products": len(manifest.get("products", {})),
+            "products": len(filtered_products),
             "firmware": len(firmware),
             "findings": total_findings,
             "extracted": extracted_count,
@@ -145,6 +159,23 @@ def section_text(report: str, heading: str) -> str:
 def clean_value(value: object) -> str:
     text = str(value or "").strip()
     return "" if text.lower() in {"", "unknown", "n/a", "none"} else text
+
+
+def load_eol_products() -> set[str]:
+    if not EOL_PRODUCTS_PATH.is_file():
+        return set()
+    payload = json.loads(EOL_PRODUCTS_PATH.read_text(encoding="utf-8"))
+    return {str(product).strip() for product in payload.get("products", []) if str(product).strip()}
+
+
+def is_in_dashboard_year_range(record: dict[str, object]) -> bool:
+    """Include firmware with a known release/upload year from 2021 through 2026."""
+    for field in ("uploaded_at", "release_date"):
+        value = clean_value(record.get(field))
+        match = re.match(r"(\d{4})[-/]", value)
+        if match:
+            return MIN_DASHBOARD_FIRMWARE_YEAR <= int(match.group(1)) <= MAX_DASHBOARD_FIRMWARE_YEAR
+    return False
 
 
 def version_from_filename(filename: str) -> str:
