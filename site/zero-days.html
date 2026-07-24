@@ -33,13 +33,13 @@
         <div class="hero-stats" aria-label="Finding summary">
           <div class="hero-stat">
             <span>Apparent zero-day RCE</span>
-            <strong>1 chain</strong>
-            <small>2 firmware products confirmed</small>
+            <strong>2 chains</strong>
+            <small>4 firmware products confirmed</small>
           </div>
           <div class="hero-stat">
             <span>Unauthenticated DoS</span>
-            <strong>4 candidates</strong>
-            <small>5 current-firmware products</small>
+            <strong>7 candidates</strong>
+            <small>8 current-firmware products</small>
           </div>
           <div class="hero-stat">
             <span>Highest evidence</span>
@@ -71,9 +71,9 @@
         <div class="section-heading">
           <div>
             <p class="section-kicker">Unauthenticated RCE</p>
-            <h2>Root command execution through the setup state</h2>
+            <h2>Pre-authentication paths to root command execution</h2>
           </div>
-          <span class="finding-count">1 chain · 2 products</span>
+          <span class="finding-count">2 chains · 4 products</span>
         </div>
 
         <article class="research-card rce-card">
@@ -85,7 +85,7 @@
           <div class="card-grid">
             <div class="card-main">
               <p class="vendor-label">NETGEAR</p>
-              <h3>EX2800 and EX6110 · Firmware V1.0.1.84</h3>
+              <h3>EX2800, EX6110, and EX5000 · Firmware V1.0.1.84</h3>
               <p class="finding-summary">
                 An unauthenticated client that can reach the local management service while
                 the extender is factory-unconfigured can cross a one-shot authentication
@@ -108,8 +108,46 @@
             <div>
               <span>Research record</span>
               <code>private_disclosures/EX2800/EX2800_UNAUTH_RCE_DOS_RESEARCH_2026-07-23.md</code>
+              <code>private_disclosures/EX2800/EX5000_V1.0.1.84_EMULATION_CONFIRMATION_2026-07-24.md</code>
             </div>
             <p>Trigger details are withheld from this public summary pending coordinated disclosure.</p>
+          </footer>
+        </article>
+
+        <article class="research-card rce-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-rce">Critical · Root RCE</span>
+            <span class="confidence-badge">Full-system emulation confirmed</span>
+            <span class="candidate-badge">Zero-day candidate</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">NETGEAR</p>
+              <h3>RAX9 · Firmware V1.0.3.32</h3>
+              <p class="finding-summary">
+                A pre-authentication password-reset dispatcher accepts attacker-controlled
+                data that reaches an operating-system command sink. The genuine firmware
+                path executed a harmless root marker in full-system emulation.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> confirmed through the LAN-side management
+                service. Default Internet/WAN reachability has not been established.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>No valid administrator session</dd></div>
+              <div><dt>Privilege</dt><dd>Root</dd></div>
+              <div><dt>Validation</dt><dd>Full-system MIPS emulation</dd></div>
+              <div><dt>Execution proof</dt><dd>Harmless root marker created</dd></div>
+              <div><dt>Novelty review</dt><dd>2026-07-24</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/RAX9/RAX9_V1.0.3.32_PREAUTH_RCE_DOS_TRIAGE_2026-07-24.md</code>
+            </div>
+            <p>Operational request details are withheld pending coordinated disclosure and duplicate review.</p>
           </footer>
         </article>
       </section>
@@ -120,7 +158,7 @@
             <p class="section-kicker">Unauthenticated DoS</p>
             <h2>Confirmed impact, zero-day disposition still open</h2>
           </div>
-          <span class="finding-count finding-count-amber">4 candidates · 5 products</span>
+          <span class="finding-count finding-count-amber">7 candidates · 8 products</span>
         </div>
 
         <article class="research-card dos-card">
@@ -275,6 +313,119 @@
               <code>private_disclosures/RAX9/RAX9_V1.0.9.44_WPS_EMPTY_BODY_DOS_CANDIDATE_2026-07-24.md</code>
             </div>
             <p>Distinct-root unauthenticated LAN DoS; listed as a zero-day candidate pending hardware and vendor duplicate checks.</p>
+          </footer>
+        </article>
+
+        <article class="research-card dos-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-dos">High · Reboot / Service DoS</span>
+            <span class="confidence-badge">Genuine HTTPD emulation</span>
+            <span class="candidate-badge">Zero-day candidate</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">NETGEAR</p>
+              <h3>MS90 · Firmware V1.0.2.46</h3>
+              <p class="finding-summary">
+                A fixed authorization value accepted by the pre-authentication SOAP
+                dispatcher reaches privileged reboot handling without a valid administrator
+                session. Bounded emulation confirmed service disruption and reboot-path
+                invocation.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> confirmed on the local/network-adjacent
+                management service. A stock Internet/WAN path was not found.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>No valid administrator session</dd></div>
+              <div><dt>Effect</dt><dd>Privileged reboot and service DoS</dd></div>
+              <div><dt>Validation</dt><dd>Genuine server full-system emulation</dd></div>
+              <div><dt>WAN status</dt><dd>Not established</dd></div>
+              <div><dt>Novelty review</dt><dd>2026-07-24</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/MK93S/NETGEAR_MS90_V1.0.2.46_UNAUTHENTICATED_DOS_FULL_REPORT_2026-07-24.md</code>
+            </div>
+            <p>Listed as a candidate pending vendor/CNA duplicate assessment; trigger material is omitted.</p>
+          </footer>
+        </article>
+
+        <article class="research-card dos-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-dos">High · Service Starvation</span>
+            <span class="confidence-badge">Genuine daemon emulation</span>
+            <span class="candidate-badge">Zero-day candidate</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">NETGEAR</p>
+              <h3>RS700S · Firmware V1.0.11.8</h3>
+              <p class="finding-summary">
+                Unauthenticated slow or incomplete connections exhaust the bounded request
+                capacity of the genuine LAN UPnP service, preventing independent clients
+                from receiving service while the queue is occupied.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> LAN UPnP only. Dual-interface testing found the
+                affected TCP listener LAN-bound, with stock external-interface drops.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>None</dd></div>
+              <div><dt>Effect</dt><dd>UPnP service starvation</dd></div>
+              <div><dt>Validation</dt><dd>Genuine daemon, independent control client</dd></div>
+              <div><dt>Default WAN</dt><dd>Blocked</dd></div>
+              <div><dt>Novelty review</dt><dd>2026-07-24</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/RS700/RS700S_V1.0.11.8_STATIC_PREAUTH_RCE_DOS_TRIAGE_2026-07-24.md</code>
+            </div>
+            <p>Impact is emulation-confirmed; physical-device validation and duplicate review remain pending.</p>
+          </footer>
+        </article>
+
+        <article class="research-card dos-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-dos">High · Management DoS</span>
+            <span class="confidence-badge">Full-system emulation</span>
+            <span class="candidate-badge">Hardware pending</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">ASUS</p>
+              <h3>ROG Strix GS-BE7200 · Firmware 3.0.0.6.102_58892</h3>
+              <p class="finding-summary">
+                A pre-authentication management route continues into network-tool work and
+                permits a bounded request burst to exhaust HTTP worker availability. Both
+                independent LAN and WAN-interface controls timed out in full-system emulation.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> unauthenticated management HTTP. WAN-triggering
+                is possible when that service is reachable, but factory-default Internet
+                exposure and physical-device impact are not confirmed.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>None</dd></div>
+              <div><dt>Effect</dt><dd>Transient global management-plane DoS</dd></div>
+              <div><dt>Validation</dt><dd>Genuine HTTPD full-system emulation</dd></div>
+              <div><dt>Physical hardware</dt><dd>Pending</dd></div>
+              <div><dt>Novelty status</dt><dd>Candidate, not final</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/ASUS_GS-BE7200/GS-BE7200_3.0.0.6.102_58892_PREAUTH_RCE_DOS_TRIAGE_2026-07-24.md</code>
+            </div>
+            <p>Published with an explicit hardware-pending boundary; no operational request sequence is included.</p>
           </footer>
         </article>
       </section>
