@@ -181,6 +181,16 @@ h3 {
   background: rgba(255, 255, 255, 0.055);
 }
 
+.hero-stat-highlight {
+  border-color: rgba(140, 229, 218, 0.55);
+  background: rgba(15, 118, 110, 0.28);
+}
+
+.hero-stat-highlight strong {
+  color: #a7f3e8;
+  font-size: 27px;
+}
+
 .hero-stat span,
 .hero-stat small {
   color: #bfd0d8;
@@ -231,6 +241,13 @@ h3 {
 .status-confirmed { background: #16875b; }
 .status-apparent { background: #0f766e; box-shadow: 0 0 0 4px #d6f5ef; }
 .status-candidate { background: #d28b22; }
+
+.count-disclaimer {
+  margin: 10px 2px 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
 
 .finding-section {
   margin-top: 38px;
