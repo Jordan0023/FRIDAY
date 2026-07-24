@@ -162,6 +162,36 @@ This should not be called a RAX54Sv2 zero-day unless physical testing or vendor
 confirmation establishes a stock runtime condition that activates and exposes
 TCP/631.
 
+## WAN-native DHCPv6 follow-up
+
+The 74-router ranking also identified the exact RAX54Sv2 `/sbin/wdhcp6c`
+(`c67238f132cb6d52cc320685494eed1fce839fdefa22edb0787242e912ed0c45`)
+because its unauthenticated DHCPv6 reply path eventually executes shell
+commands.
+
+Manual control-flow review found a superficially strong command-injection
+shape: the decoded DS-Lite AFTR domain is formatted into
+`nvram set ipv6_dslite_aftr="%s"` and passed to `system()` at
+`0x209dc`-`0x209e0`.
+
+The exact decoder at `0x174a0` rejects the proposed breakout characters before
+copying a label. It calls `__ctype_b_loc` for every label byte and branches to
+the malformed-option error path when the required character-class flag is
+absent (`0x17564`-`0x1757c`). Consequently quotes, dollar signs, backticks,
+shell separators, spaces, and newlines cannot reach this command through a
+valid decoded AFTR domain.
+
+The nearby `wandetect` correlation was also rejected as an RCE path. Its
+1,024-byte `recv` buffer is used only to classify a response; the subsequent
+`system()` calls receive commands assembled from fixed strings and local
+interface/configuration values, not the received bytes.
+
+Classification:
+
+- DHCPv6 AFTR unauthenticated command injection: rejected by byte whitelist.
+- `wandetect` packet-to-command injection: no dataflow found.
+- New stock-WAN RCE/DoS from this follow-up: not confirmed.
+
 ## Public-prior-art check
 
 Searches performed on 2026-07-24 for RAX54Sv2 together with `ippd`, IPP,
@@ -195,4 +225,3 @@ non-descriptive NETGEAR PSV duplicate.
    parser issue duplicates an existing PSV.
 5. Continue hunting the default-on `upnpd`, `httpd`, and other exposed daemons;
    those are stronger product-level targets than the disabled IPP component.
-
