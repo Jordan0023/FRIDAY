@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Verified unauthenticated router RCE and denial-of-service research with explicit confirmation and novelty status.">
-    <title>Confirmed Zero-Day Research · Firmware Audit</title>
+    <title>Zero-Day Vulnerability Research · Firmware Audit</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="topbar">
       <div>
         <p class="eyebrow">Router Firmware Audit</p>
-        <h1>Confirmed Zero-Day Research</h1>
+        <h1>Zero-Day Vulnerability Research</h1>
       </div>
       <nav class="topbar-actions" aria-label="Primary navigation">
         <a class="button" href="index.html">Firmware Dashboard</a>
@@ -37,9 +37,9 @@
             <small>2 firmware products confirmed</small>
           </div>
           <div class="hero-stat">
-            <span>Confirmed zero-day DoS</span>
-            <strong>0 final</strong>
-            <small>1 distinct candidate, 2 products</small>
+            <span>Unauthenticated DoS</span>
+            <strong>4 candidates</strong>
+            <small>5 current-firmware products</small>
           </div>
           <div class="hero-stat">
             <span>Highest evidence</span>
@@ -120,7 +120,7 @@
             <p class="section-kicker">Unauthenticated DoS</p>
             <h2>Confirmed impact, zero-day disposition still open</h2>
           </div>
-          <span class="finding-count finding-count-amber">1 candidate · 2 products</span>
+          <span class="finding-count finding-count-amber">4 candidates · 5 products</span>
         </div>
 
         <article class="research-card dos-card">
@@ -159,6 +159,122 @@
               <code>private_disclosures/RAX30/RAX30_V1.0.14.108_UPNP_UNAUTH_DOS_2026-07-23.md</code>
             </div>
             <p>Listed as a candidate—not a final confirmed zero-day—until duplicate assessment is complete.</p>
+          </footer>
+        </article>
+
+        <article class="research-card dos-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-dos">High · Administrative DoS</span>
+            <span class="confidence-badge">Native HTTP confirmed</span>
+            <span class="candidate-badge">Zero-day candidate</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">GL.iNet</p>
+              <h3>GL-MT5000 Brume 3 · Firmware 4.8.6 and 4.9.0</h3>
+              <p class="finding-summary">
+                An unauthenticated client can repeatedly submit invalid WebUI login attempts
+                and activate process-global authentication throttling. A separate client with
+                the correct administrator password is then denied until the shared lockout
+                interval expires.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> confirmed against the LAN-side administrative
+                WebUI after initial setup. Internet/WAN exposure is configuration-dependent
+                and was not established.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>None for lockout trigger</dd></div>
+              <div><dt>Effect</dt><dd>Process-global administrator login denial</dd></div>
+              <div><dt>Validation</dt><dd>Native end-to-end HTTP, two clients</dd></div>
+              <div><dt>Current firmware</dt><dd>4.9.0 reproduced</dd></div>
+              <div><dt>Novelty review</dt><dd>2026-07-24</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/GL-MT5000/GL-MT5000_UNAUTHENTICATED_GLOBAL_LOGIN_DOS_FULL_REPORT_2026-07-24.md</code>
+            </div>
+            <p>Confirmed unauthenticated DoS; listed as a zero-day candidate pending coordinated duplicate review.</p>
+          </footer>
+        </article>
+
+        <article class="research-card dos-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-dos">High · Administrative DoS</span>
+            <span class="confidence-badge">Native HTTP confirmed</span>
+            <span class="candidate-badge">Zero-day candidate</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">GL.iNet</p>
+              <h3>GL-MT2500 / GL-MT2500A Brume 2 · Firmware 4.7.4</h3>
+              <p class="finding-summary">
+                The Brume 2 authentication service applies failed-login throttling globally
+                rather than per client. An unauthenticated attacker can therefore prevent an
+                independent client with valid credentials from accessing the administrative
+                WebUI during the lockout window.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> confirmed on the LAN-side administrative WebUI
+                using two independent clients. Default WAN reachability was not established.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>None for lockout trigger</dd></div>
+              <div><dt>Effect</dt><dd>Process-global administrator login denial</dd></div>
+              <div><dt>Validation</dt><dd>Native end-to-end HTTP, two clients</dd></div>
+              <div><dt>Firmware</dt><dd>4.7.4</dd></div>
+              <div><dt>Novelty review</dt><dd>2026-07-24</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/GL-MT2500/GL-MT2500_4.7.4_UNAUTHENTICATED_GLOBAL_LOGIN_DOS_FULL_REPORT_2026-07-24.md</code>
+            </div>
+            <p>Confirmed unauthenticated DoS; listed as a zero-day candidate pending coordinated duplicate review.</p>
+          </footer>
+        </article>
+
+        <article class="research-card dos-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-dos">High · Service DoS</span>
+            <span class="confidence-badge">L5 emulation-confirmed</span>
+            <span class="candidate-badge">Zero-day candidate</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">NETGEAR</p>
+              <h3>RAX9 · Current Firmware V1.0.9.44</h3>
+              <p class="finding-summary">
+                A short unauthenticated WFA <code>SetSelectedRegistrar</code> request with an
+                empty SOAP body reliably terminates the genuine MiniUPnPd daemon. Debugger
+                attribution identifies a null pointer passed to the vendor WPS XML helper's
+                <code>strchr(..., '&gt;')</code> call.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> confirmed on the unauthenticated LAN-side
+                UPnP/WPS control service. WAN exposure and whole-router denial of service
+                were not established.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>None</dd></div>
+              <div><dt>Effect</dt><dd>MiniUPnPd exits with SIGSEGV</dd></div>
+              <div><dt>Validation</dt><dd>Two clean genuine-binary reproductions</dd></div>
+              <div><dt>Physical hardware</dt><dd>Pending</dd></div>
+              <div><dt>Novelty review</dt><dd>2026-07-24</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/RAX9/RAX9_V1.0.9.44_WPS_EMPTY_BODY_DOS_CANDIDATE_2026-07-24.md</code>
+            </div>
+            <p>Distinct-root unauthenticated LAN DoS; listed as a zero-day candidate pending hardware and vendor duplicate checks.</p>
           </footer>
         </article>
       </section>
