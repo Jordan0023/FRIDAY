@@ -123,18 +123,32 @@ def main() -> int:
     parser.add_argument("--workers", type=int, default=3)
     parser.add_argument("--timeout", type=int, default=1800)
     parser.add_argument("--inventory-only", action="store_true")
+    parser.add_argument("--rootfs", type=Path,
+                        help="Analyze one already-extracted root filesystem instead of a campaign.")
+    parser.add_argument("--product", help="Product name used with --rootfs.")
+    parser.add_argument("--router-sha", help="Firmware SHA-256 used with --rootfs.")
     args = parser.parse_args()
-    selected = json.loads((args.campaign / "selection.json").read_text())
-    eol_products = set(json.loads(EOL_PRODUCTS_PATH.read_text()).get("products", []))
-    blocked = sorted({record.get("product", "") for record in selected} & eol_products)
-    if blocked:
-        raise SystemExit("Campaign contains EOL routers: " + ", ".join(blocked))
+    if args.rootfs:
+        if not args.product or not args.router_sha:
+            parser.error("--rootfs requires --product and --router-sha")
+        rootfs = args.rootfs.resolve()
+        if not rootfs.is_dir():
+            parser.error(f"--rootfs is not a directory: {rootfs}")
+        selected = [{"product": args.product, "sha256": args.router_sha,
+                     "_extracted_root": str(rootfs)}]
+    else:
+        selected = json.loads((args.campaign / "selection.json").read_text())
+        eol_products = set(json.loads(EOL_PRODUCTS_PATH.read_text()).get("products", []))
+        blocked = sorted({record.get("product", "") for record in selected} & eol_products)
+        if blocked:
+            raise SystemExit("Campaign contains EOL routers: " + ", ".join(blocked))
     args.output.mkdir(parents=True, exist_ok=True)
     (args.output / "projects").mkdir(parents=True, exist_ok=True)
     routers, jobs_by_id = [], {}
     for record in selected:
         sha = record["sha256"]
-        extracted = ROOT / "known_firmware/extracted" / sha[:16]
+        extracted = Path(record["_extracted_root"]) if record.get("_extracted_root") else (
+            ROOT / "known_firmware/extracted" / sha[:16])
         candidates = sorted(p for p in extracted.rglob("*") if p.is_file() and elf_machine(p) is not None) if extracted.is_dir() else []
         files = [str(p) for p in candidates if is_elf(p)]
         unsupported = [str(p) for p in candidates if elf_machine(p) == 0]
