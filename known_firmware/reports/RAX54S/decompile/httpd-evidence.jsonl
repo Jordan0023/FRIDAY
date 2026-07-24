@@ -14,4 +14,6 @@
 {"schema":4,"binary":"httpd","function":"FUN_000c7fc4","address":"000c7fc4","sinks":["system"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
 {"schema":4,"binary":"httpd","function":"FUN_0010f80c","address":"0010f80c","sinks":["system"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
 {"schema":4,"binary":"httpd","function":"FUN_00119e20","address":"00119e20","sinks":["system"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
-{"schema":4,"binary":"httpd","function":"FUN_0011c6fc","address":"0011c6fc","sinks":["memcpy","syst
+{"schema":4,"binary":"httpd","function":"FUN_0011c6fc","address":"0011c6fc","sinks":["memcpy","system"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"httpd","function":"FUN_001322e4","address":"001322e4","sinks":["strcpy"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"httpd","function":"getStatsFromFile","address":"00140408","sinks":["memcpy"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}

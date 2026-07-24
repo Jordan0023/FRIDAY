@@ -1,0 +1,14 @@
+{
+  "program": "httpd",
+  "security_schema": 4,
+  "functions_discovered": 566,
+  "functions_attempted": 566,
+  "functions_succeeded": 565,
+  "functions_failed": 1,
+  "functions_timed_out": 0,
+  "retry_attempts": 2,
+  "coverage_status": "partial",
+  "candidate_functions": 19,
+  "evidence_records": 19,
+  "evidence_path": "/home/jordan/FRIDAY/known_firmware/reports/RAX54S/decompile/httpd-evidence.jsonl"
+}
