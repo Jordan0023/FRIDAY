@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-23T19:02:26+00:00",
-  "manifest_updated": "2026-07-23T19:02:07+00:00",
+  "generated_at": "2026-07-24T00:48:14+00:00",
+  "manifest_updated": "2026-07-24T00:48:13+00:00",
   "summary": {
     "products": 825,
     "firmware": 1939,
     "findings": 4397,
-    "extracted": 78,
+    "extracted": 83,
     "total_size_mb": 78425.2
   },
   "finding_counts": {
@@ -13,9 +13,9 @@
     "HTTP CGI/admin attack surface": 1442,
     "Hard-coded credentials or secrets": 376,
     "Outdated crypto/library markers": 28,
-    "Potential memory-unsafe C functions": 846,
+    "Potential memory-unsafe C functions": 847,
     "Private keys or certificates bundled in firmware": 51,
-    "Remote shell services present": 557
+    "Remote shell services present": 556
   },
   "severity_counts": {
     "High": 1125,
@@ -35014,7 +35014,7 @@
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/a942a857b57c0186 exited 0: WARNING: Symlink points outside of the extraction directory: /home/jordan/FRIDAY/known_firmware/extracted/a942a857b57c0186/_openwrt-25.12.5-ramips-mt7621-alfa-network_quad-e4g-squashfs-sysupgrade.bin.extracted/squashfs-root/usr/bin/ssh -> /usr/sbin/dropbear; changing link target to /dev/null for security purposes."
+        "Using existing extraction directory: known_firmware/extracted/a942a857b57c0186"
       ]
     },
     {
@@ -35062,7 +35062,7 @@
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/9e2d90748bf30928 exited 0: WARNING: Symlink points outside of the extraction directory: /home/jordan/FRIDAY/known_firmware/extracted/9e2d90748bf30928/_openwrt-25.12.5-ath79-generic-alfa-network_r36a-squashfs-sysupgrade.bin.extracted/squashfs-root-0/usr/bin/ssh -> /usr/sbin/dropbear; changing link target to /dev/null for security purposes."
+        "Using existing extraction directory: known_firmware/extracted/9e2d90748bf30928"
       ]
     },
     {
@@ -35110,7 +35110,7 @@
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/b8aedb788e3dee6c exited 0: WARNING: Symlink points outside of the extraction directory: /home/jordan/FRIDAY/known_firmware/extracted/b8aedb788e3dee6c/_openwrt-25.12.5-ath79-generic-alfa-network_tube-2hq-squashfs-sysupgrade.bin.extracted/squashfs-root/usr/bin/ssh -> /usr/sbin/dropbear; changing link target to /dev/null for security purposes."
+        "Using existing extraction directory: known_firmware/extracted/b8aedb788e3dee6c"
       ]
     },
     {
@@ -62738,24 +62738,24 @@
       "path": "firmware/RAX78/RAX78-V1.0.20.174.zip",
       "report_path": "reports/RAX78/RAX78-V1.0.20.174.zip.md",
       "severity": {
-        "label": "Medium",
-        "rank": 2,
-        "reason": "HTTP CGI/admin attack surface"
+        "label": "High",
+        "rank": 3,
+        "reason": "Command execution helpers"
       },
       "findings": [
         {
-          "title": "HTTP CGI/admin attack surface",
-          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "BOA, bOa, boa"
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "popen, system"
         },
         {
           "title": "Potential memory-unsafe C functions",
           "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
-          "evidence": "sprintf, strcpy"
+          "evidence": "gets, sprintf, strcat, strcpy"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/09cd2acd7b5de824 exited 0: WARNING: Extractor.execute failed to run external extractor 'ubireader_extract_files -o 'ubifs-root' '%e'': [Errno 2] No such file or directory: 'ubireader_extract_files', 'ubireader_extract_files -o 'ubifs-root' '%e'' might not be installed correctly"
+        "Using existing extraction directory: known_firmware/extracted/09cd2acd7b5de824"
       ]
     },
     {
@@ -62842,7 +62842,7 @@
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/0d20c9b101b197d3 exited 0: WARNING: Symlink points outside of the extraction directory: /workspaces/FRIDAY/known_firmware/extracted/0d20c9b101b197d3/_RAX9-V1.0.3.32.zip.extracted/_RAX9-V1.0.3.32.img.extracted/squashfs-root/usr/bin/nvram_set -> /usr/bin/nvram_get; changing link target to /dev/null for security purposes."
+        "binwalk -eM --directory known_firmware/extracted/0d20c9b101b197d3 stopped: extraction exceeded 768 MB: WARNING: Extractor.execute failed to run external extractor 'unstuff '%e'': [Errno 2] No such file or directory: 'unstuff', 'unstuff '%e'' might not be installed correctly"
       ]
     },
     {
@@ -62959,24 +62959,24 @@
       "path": "firmware/RAXE290/RAXE290-V1.0.9.82.zip",
       "report_path": "reports/RAXE290/RAXE290-V1.0.9.82.zip.md",
       "severity": {
-        "label": "High",
-        "rank": 3,
-        "reason": "Command execution helpers"
+        "label": "Medium",
+        "rank": 2,
+        "reason": "HTTP CGI/admin attack surface"
       },
       "findings": [
         {
-          "title": "Remote shell services present",
-          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
-          "evidence": "SShD"
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "bOa, boA"
         },
         {
-          "title": "Command execution helpers",
-          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
-          "evidence": "System"
+          "title": "Potential memory-unsafe C functions",
+          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
+          "evidence": "sprintf, strcpy"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/3de38411e3c0353b exited 0: WARNING: Extractor.execute failed to run external extractor 'lzop -f -d '%e'': [Errno 2] No such file or directory: 'lzop', 'lzop -f -d '%e'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/3de38411e3c0353b stopped: extraction exceeded 768 MB"
       ]
     },
     {
@@ -69041,7 +69041,7 @@
       "uploaded_at": "2025-11-13",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:33:32+00:00",
-      "last_seen": "2026-07-23T18:18:11+00:00",
+      "last_seen": "2026-07-24T00:44:35+00:00",
       "size": 50602579,
       "size_mb": 48.3,
       "sha256": "0795cae638225029f1525f2d969a84c0ed6fc1591d594e2cac9aa26680f0c271",
@@ -69239,7 +69239,7 @@
       "uploaded_at": "2026-05-26",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:33:47+00:00",
-      "last_seen": "2026-07-23T18:18:00+00:00",
+      "last_seen": "2026-07-24T00:44:24+00:00",
       "size": 49980302,
       "size_mb": 47.7,
       "sha256": "667ddb11a57bed203dc2950d48831af8362dc706d36a4976c35e3c851a568196",
@@ -71419,7 +71419,7 @@
       },
       "findings": [],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/02ee5b5e1304e159 exited 0"
+        "Using existing extraction directory: known_firmware/extracted/02ee5b5e1304e159"
       ]
     },
     {
@@ -72998,7 +72998,7 @@
       "uploaded_at": "2026-04-29",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:39:51+00:00",
-      "last_seen": "2026-07-23T18:19:30+00:00",
+      "last_seen": "2026-07-24T00:45:27+00:00",
       "size": 27214481,
       "size_mb": 26.0,
       "sha256": "f6fc359df51a963d25ead981f0d658285a9ec7e96cc5e195876ee2e5d93b3be1",
@@ -73720,7 +73720,7 @@
       "uploaded_at": "2026-01-26",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:40:41+00:00",
-      "last_seen": "2026-07-23T18:19:43+00:00",
+      "last_seen": "2026-07-24T00:45:50+00:00",
       "size": 30463723,
       "size_mb": 29.1,
       "sha256": "02bdc17e5b0a7f9cd320d690a1faf87a894ebb61b5f372d1ab47f5a1090b7988",
@@ -73986,7 +73986,7 @@
       "uploaded_at": "2026-06-26",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-07-22T00:32:23+00:00",
-      "last_seen": "2026-07-23T18:19:47+00:00",
+      "last_seen": "2026-07-24T00:45:55+00:00",
       "size": 29197770,
       "size_mb": 27.8,
       "sha256": "8abd9965b54c260535e7cd5a32541b2bc957710a650eafd79f9c3ee032840eac",
@@ -75295,7 +75295,7 @@
       "uploaded_at": "2026-07-03",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-07-08T01:00:09+00:00",
-      "last_seen": "2026-07-23T18:20:27+00:00",
+      "last_seen": "2026-07-24T00:46:38+00:00",
       "size": 31761378,
       "size_mb": 30.3,
       "sha256": "3d2117ced12c1dcce73ded237f7f8f5556f29cf3968faba7f520a888a55f5e08",

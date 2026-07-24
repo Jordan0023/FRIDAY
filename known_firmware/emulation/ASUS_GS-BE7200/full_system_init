@@ -1,0 +1,183 @@
+#!/bin/sh
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export LD_LIBRARY_PATH=/lib:/usr/lib
+BB=/greenhouse/busybox
+
+echo "FRIDAY_GSBE7200_BOOT=1"
+
+$BB mount -t proc proc /proc 2>/dev/null
+$BB mount -t sysfs sysfs /sys 2>/dev/null
+$BB mount -t devtmpfs devtmpfs /dev 2>/dev/null
+mkdir -p /dev/pts /run /tmp/etc /tmp/var/run /tmp/var/log /tmp/home/root /jffs
+$BB mount -t devpts devpts /dev/pts 2>/dev/null
+
+cp -a /etc_ro/. /tmp/etc/ 2>/dev/null
+cp /gh_nvram.ini /tmp/etc/nvram.ini
+touch /tmp/etc/passwd /tmp/etc/group
+if ! $BB grep -q '^root:' /tmp/etc/group; then
+    echo 'root:x:0:' >> /tmp/etc/group
+fi
+if ! $BB grep -q '^nobody:' /tmp/etc/passwd; then
+    echo 'nobody:x:65534:65534:nobody:/nonexistent:/bin/false' >> /tmp/etc/passwd
+fi
+if ! $BB grep -q '^nogroup:' /tmp/etc/group; then
+    echo 'nogroup:x:65534:' >> /tmp/etc/group
+fi
+rm -f /var/run/miniupnpd.pid /var/run/infosvr.pid /var/run/lldpd.pid /var/run/lldpd.socket
+
+for MODULE in virtio_net bridge x_tables nf_conntrack nf_nat ip_tables iptable_filter iptable_nat; do
+    if modprobe "$MODULE"; then
+        echo "FRIDAY_GSBE7200_MODULE name=$MODULE status=loaded"
+    else
+        echo "FRIDAY_GSBE7200_MODULE name=$MODULE status=failed"
+    fi
+done
+
+ip link set lo up
+ip link set eth0 up
+ip link set eth1 up
+ip link set eth2 up
+ip link add br0 type bridge
+ip link set eth1 master br0
+ip addr add 10.0.2.15/24 dev br0
+ip link set br0 up
+ip addr add 192.0.2.15/24 dev eth0
+ip -6 addr add fd00:2::15/64 dev eth0
+
+echo "FRIDAY_GSBE7200_INTERFACES_BEGIN"
+ip addr show
+echo "FRIDAY_GSBE7200_INTERFACES_END"
+
+iptables -t filter -N MINIUPNPD 2>/dev/null
+iptables -t nat -N MINIUPNPD 2>/dev/null
+iptables -t nat -A PREROUTING -j MINIUPNPD 2>/dev/null
+
+if [ -e /enable-real-netool ]; then
+    ln -sf /sbin/rc /greenhouse/netool
+    /glibc/ld-linux-aarch64.so.1 --library-path /glibc \
+        /glibc/strace -f -s 256 -o /tmp/netool.strace \
+        -E LD_PRELOAD=/lib/libnvram-faker.so \
+        /greenhouse/netool > /tmp/netool.log 2>&1 &
+    NETOOL_PID=$!
+    ln -sf /tmp/netool.log /www/images/netool_log.png
+    ln -sf /tmp/netool.strace /www/images/netool_strace.png
+    sleep 2
+    if kill -0 "$NETOOL_PID" 2>/dev/null; then
+        echo "FRIDAY_GSBE7200_NETOOL_READY=1 pid=$NETOOL_PID"
+    else
+        echo "FRIDAY_GSBE7200_NETOOL_READY=0"
+        tail -n 80 /tmp/netool.log
+    fi
+else
+    touch /www/images/netool_capture.png
+    chmod 0666 /www/images/netool_capture.png
+    /glibc/ld-linux-aarch64.so.1 --library-path /glibc \
+        /netool_capture > /tmp/netool-capture.log 2>&1 &
+    NETOOL_CAPTURE_PID=$!
+    sleep 1
+    if kill -0 "$NETOOL_CAPTURE_PID" 2>/dev/null; then
+        echo "FRIDAY_GSBE7200_NETOOL_CAPTURE_READY=1 pid=$NETOOL_CAPTURE_PID"
+    else
+        echo "FRIDAY_GSBE7200_NETOOL_CAPTURE_READY=0"
+    fi
+fi
+
+cd /www
+echo "FRIDAY_GSBE7200_HTTP_START=1"
+/glibc/ld-linux-aarch64.so.1 --library-path /glibc \
+    /glibc/strace -f -s 256 -o /tmp/httpd.strace \
+    -E LD_PRELOAD=/lib/libnvram-faker.so \
+    /usr/sbin/httpd > /dev/console 2>&1 &
+HTTPD_PID=$!
+ln -sf /tmp/httpd.strace /www/images/httpd_strace.png
+sleep 3
+if kill -0 "$HTTPD_PID" 2>/dev/null; then
+    echo "FRIDAY_GSBE7200_HTTP_READY=1 pid=$HTTPD_PID"
+else
+    echo "FRIDAY_GSBE7200_HTTP_READY=0"
+    echo "FRIDAY_GSBE7200_HTTP_STRACE_BEGIN"
+    tail -n 120 /tmp/httpd.strace
+    echo "FRIDAY_GSBE7200_HTTP_STRACE_END"
+fi
+
+echo "FRIDAY_GSBE7200_UPNP_START=1"
+/usr/sbin/miniupnpd -f /miniupnpd-lab.conf -d -v > /dev/console 2>&1 &
+UPNP_PID=$!
+sleep 3
+if kill -0 "$UPNP_PID" 2>/dev/null; then
+    echo "FRIDAY_GSBE7200_UPNP_READY=1 pid=$UPNP_PID"
+else
+    echo "FRIDAY_GSBE7200_UPNP_READY=0"
+fi
+
+echo "FRIDAY_GSBE7200_INFOSVR_START=1"
+/glibc/ld-linux-aarch64.so.1 --library-path /glibc \
+    /glibc/strace -f -s 160 -o /tmp/infosvr.strace \
+    -E LD_PRELOAD=/lib/libnvram-faker.so \
+    /usr/sbin/infosvr br0 > /tmp/infosvr.log 2>&1 &
+INFOSVR_PID=$!
+sleep 2
+if kill -0 "$INFOSVR_PID" 2>/dev/null; then
+    echo "FRIDAY_GSBE7200_INFOSVR_READY=1 pid=$INFOSVR_PID"
+else
+    echo "FRIDAY_GSBE7200_INFOSVR_READY=0"
+    tail -n 80 /tmp/infosvr.log
+fi
+
+if [ -e /enable-lldpd ]; then
+    echo "FRIDAY_GSBE7200_LLDPD_START=1"
+    /glibc/ld-linux-aarch64.so.1 --library-path /glibc \
+        /glibc/strace -f -s 192 -o /tmp/lldpd.strace \
+        /usr/sbin/lldpd -dddd -r -c -e -f -s -I eth2 > /tmp/lldpd.log 2>&1 &
+    LLDPD_PID=$!
+    sleep 2
+    if kill -0 "$LLDPD_PID" 2>/dev/null; then
+        echo "FRIDAY_GSBE7200_LLDPD_READY=1 pid=$LLDPD_PID"
+    else
+        echo "FRIDAY_GSBE7200_LLDPD_READY=0"
+        tail -n 100 /tmp/lldpd.log
+    fi
+else
+    LLDPD_PID=
+    echo "FRIDAY_GSBE7200_LLDPD_DISABLED=1"
+fi
+
+echo "FRIDAY_GSBE7200_PROCESS_SNAPSHOT_BEGIN"
+$BB ps w
+$BB netstat -lnptu 2>&1
+echo "FRIDAY_GSBE7200_PROCESS_SNAPSHOT_END"
+
+echo "FRIDAY_GSBE7200_READY=1"
+/gena_guest_probe > /dev/console 2>&1 &
+
+while :; do
+    if kill -0 "$HTTPD_PID" 2>/dev/null; then
+        HTTP_STATE=alive
+    else
+        HTTP_STATE=dead
+    fi
+    if kill -0 "$UPNP_PID" 2>/dev/null; then
+        UPNP_STATE=alive
+    else
+        UPNP_STATE=dead
+    fi
+    if kill -0 "$INFOSVR_PID" 2>/dev/null; then
+        INFOSVR_STATE=alive
+    else
+        INFOSVR_STATE=dead
+    fi
+    if [ -z "$LLDPD_PID" ]; then
+        LLDPD_STATE=disabled
+    elif kill -0 "$LLDPD_PID" 2>/dev/null; then
+        LLDPD_STATE=alive
+    else
+        LLDPD_STATE=dead
+    fi
+    echo "FRIDAY_GSBE7200_HEALTH httpd=$HTTP_STATE miniupnpd=$UPNP_STATE infosvr=$INFOSVR_STATE lldpd=$LLDPD_STATE"
+    if [ -e /tmp/FRIDAY_GSBE7200_RCE_MARKER ]; then
+        echo "FRIDAY_GSBE7200_RCE_MARKER=present"
+    fi
+    $BB sync
+    sleep 10
+done

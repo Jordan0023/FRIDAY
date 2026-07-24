@@ -1,0 +1,11 @@
+{"binary":"pptp.so","function":"FUN_00012b64","address":"00012b64","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so","function":"FUN_00012b64","address":"00012b64","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so","function":"callmgr_main","address":"00013e94","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so","function":"pptp_write_some","address":"00015148","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so","function":"pptp_make_packet","address":"00015454","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so","function":"pptp_make_packet","address":"00015454","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so","function":"pptp_send_ctrl_packet","address":"000157d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so","function":"vector_remove","address":"00017fdc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so","function":"vector_insert","address":"000181f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so","function":"orckit_atur3_build_hook","address":"000187b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so","function":"orckit_atur3_start_ctrl_conn_hook","address":"00018948","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

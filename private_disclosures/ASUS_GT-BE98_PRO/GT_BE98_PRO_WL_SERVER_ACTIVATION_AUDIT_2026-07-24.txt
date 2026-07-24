@@ -1,0 +1,35 @@
+ASUS/Broadcom wl_server_socket activation audit
+Date: 2026-07-24
+
+Target:
+ASUS GT-BE98 Pro firmware 3.0.0.6.102_39262
+wl_server_socket SHA-256:
+cb3ee4e407d1868d4f33f7cf9d7cabcc6410fb6ede781410685976246a55cd25
+
+GT-BE98 Pro root-filesystem result:
+- regular files or symlinks aliasing wl_server_socket: only the executable
+- external files containing literal "wl_server_socket": zero
+- external files containing literal "/tmp/RWL": zero
+- init/service/configuration references: zero
+- stock-emulation process observation: not launched
+- stock-emulation TCP/8000 observation: no listener
+
+Cross-firmware result:
+- inspected extracted roots containing the component: 20
+- distinct component hashes: 2
+- roots with an external literal wl_server_socket launcher reference: 0
+- roots with an external /tmp/RWL reference: 0
+
+The component appears across ASUS and NETGEAR Broadcom firmware families as
+an unreferenced Broadcom Remote WL diagnostic utility. It executes commands
+when a researcher manually starts it, but binary presence is not evidence of
+stock service activation.
+
+Limitation:
+Generic QEMU could not load the proprietary Broadcom kernel modules. The
+runtime negative therefore supplements, but does not replace, the stronger
+root-filesystem activation audit.
+
+Resolved disposition:
+component command execution confirmed; product-level unauthenticated RCE not
+confirmed because the shipping firmware contains no activation path.

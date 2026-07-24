@@ -1,0 +1,3 @@
+{"binary":"libusb-1.0.so.0","function":"FUN_00013690","address":"00013690","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0","function":"libusb_get_bos_descriptor","address":"00016948","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0","function":"FUN_0001aa2c","address":"0001aa2c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

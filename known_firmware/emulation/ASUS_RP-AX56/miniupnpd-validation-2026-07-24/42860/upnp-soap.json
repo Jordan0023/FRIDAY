@@ -1,0 +1,60 @@
+{
+  "target": "192.168.50.1:5000",
+  "case": "soap",
+  "results": [
+    {
+      "name": "soapaction-0",
+      "request_bytes": 143,
+      "fragmented": false,
+      "response_bytes": 569,
+      "status_line": "HTTP/1.1 500 Internal Server Error",
+      "error": null,
+      "elapsed_ms": 12.71
+    },
+    {
+      "name": "soapaction-1",
+      "request_bytes": 145,
+      "fragmented": true,
+      "response_bytes": 569,
+      "status_line": "HTTP/1.1 500 Internal Server Error",
+      "error": null,
+      "elapsed_ms": 45.4
+    },
+    {
+      "name": "soapaction-2",
+      "request_bytes": 144,
+      "fragmented": false,
+      "response_bytes": 569,
+      "status_line": "HTTP/1.1 500 Internal Server Error",
+      "error": null,
+      "elapsed_ms": 20.57
+    },
+    {
+      "name": "soapaction-3",
+      "request_bytes": 212,
+      "fragmented": true,
+      "response_bytes": 510,
+      "status_line": "HTTP/1.1 200 OK",
+      "error": null,
+      "elapsed_ms": 38.24
+    },
+    {
+      "name": "soapaction-4",
+      "request_bytes": 2193,
+      "fragmented": false,
+      "response_bytes": 569,
+      "status_line": "HTTP/1.1 500 Internal Server Error",
+      "error": null,
+      "elapsed_ms": 10.64
+    },
+    {
+      "name": "soapaction-5",
+      "request_bytes": 174,
+      "fragmented": true,
+      "response_bytes": 569,
+      "status_line": "HTTP/1.1 500 Internal Server Error",
+      "error": null,
+      "elapsed_ms": 39.81
+    }
+  ]
+}

@@ -240,3 +240,6 @@ __marimo__/
 
 # Local Greenhouse extraction root (contains device nodes and large scratch data)
 known_firmware/emulation/*/greenhouse-scratch/
+known_firmware/emulation/**/greenhouse-scratch/
+known_firmware/emulation/**/working-rootfs/
+known_firmware/emulation/**/*-component-rootfs/

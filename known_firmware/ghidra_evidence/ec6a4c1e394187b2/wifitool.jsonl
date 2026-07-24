@@ -1,0 +1,7 @@
+{"binary":"wifitool","function":"FUN_0040ca50","address":"0040ca50","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifitool","function":"FUN_0040ca50","address":"0040ca50","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifitool","function":"FUN_0040ca50","address":"0040ca50","route":"/tmp/sec","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifitool","function":"FUN_0040ca50","address":"0040ca50","route":"/tmp/sec","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifitool","function":"FUN_0040ca50","address":"0040ca50","route":"/proc/*/cmdline","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifitool","function":"FUN_0040ca50","address":"0040ca50","route":"/proc/*/cmdline","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifitool","function":"FUN_0040d09c","address":"0040d09c","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}

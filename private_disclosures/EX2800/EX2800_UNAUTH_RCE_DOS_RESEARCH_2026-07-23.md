@@ -74,6 +74,9 @@ matching disclosure and supports classification as an apparent zero-day.
 - NETGEAR EX6110 V1.0.1.84: end-to-end RCE confirmed using its distinct
   official firmware in network-isolated emulation; physical-product validation
   not performed.
+- NETGEAR EX5000 V1.0.1.84: end-to-end RCE confirmed using its distinct
+  official firmware in network-isolated emulation on 2026-07-24;
+  physical-product validation not performed.
 
 NETGEAR distributes a distinct EX6110 package and identifies EX2800, EX3110,
 EX5000, and EX6110 as sharing firmware version V1.0.1.84. Comparison of the
@@ -102,10 +105,10 @@ physical-device reproduction. The appropriate concise classification is:
 **EX6110 V1.0.1.84 is emulation-confirmed affected; physical-product
 validation remains pending.**
 
-EX3110 and EX5000 are not added to the confirmed affected-product list solely
-because NETGEAR's release groups them under the same version. Each requires
-the same component-level comparison or device validation before its scope is
-stated equivalently.
+EX5000 was subsequently added to the confirmed affected-product list after
+component-level comparison and end-to-end emulation using its official image.
+EX3110 is not added solely because NETGEAR's release groups it under the same
+version; it still requires equivalent component comparison or validation.
 
 ## Network exposure: primarily LAN/local management
 

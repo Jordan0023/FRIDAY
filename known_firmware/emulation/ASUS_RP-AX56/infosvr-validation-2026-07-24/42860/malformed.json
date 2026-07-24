@@ -1,0 +1,134 @@
+{
+  "target": "127.0.0.1:9999/udp",
+  "case": "malformed-matrix",
+  "results": [
+    {
+      "name": "size-0",
+      "request_bytes": 0,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.71
+    },
+    {
+      "name": "size-1",
+      "request_bytes": 1,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.81
+    },
+    {
+      "name": "size-2",
+      "request_bytes": 2,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.75
+    },
+    {
+      "name": "size-3",
+      "request_bytes": 3,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.76
+    },
+    {
+      "name": "size-4",
+      "request_bytes": 4,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.76
+    },
+    {
+      "name": "size-7",
+      "request_bytes": 7,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.79
+    },
+    {
+      "name": "size-8",
+      "request_bytes": 8,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.76
+    },
+    {
+      "name": "size-9",
+      "request_bytes": 9,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.75
+    },
+    {
+      "name": "size-45",
+      "request_bytes": 45,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.76
+    },
+    {
+      "name": "size-46",
+      "request_bytes": 46,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.75
+    },
+    {
+      "name": "size-47",
+      "request_bytes": 47,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.76
+    },
+    {
+      "name": "size-48",
+      "request_bytes": 48,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.74
+    },
+    {
+      "name": "size-63",
+      "request_bytes": 63,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.76
+    },
+    {
+      "name": "size-127",
+      "request_bytes": 127,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.78
+    },
+    {
+      "name": "size-255",
+      "request_bytes": 255,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "size-511",
+      "request_bytes": 511,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.75
+    }
+  ]
+}

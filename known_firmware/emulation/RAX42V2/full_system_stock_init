@@ -1,0 +1,108 @@
+#!/bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export PATH
+LD_PRELOAD="/lib/rax54s_device_shim.so /lib/rax54s_emulation_shim.so"
+export LD_PRELOAD
+OPENSSL_CONF=/etc/ssl/openssl.cnf
+export OPENSSL_CONF
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+mkdir -p /dev/pts /run /var/run /var/log /var/tmp /data /mnt/nvram
+mount -t devpts devpts /dev/pts
+mount -t tmpfs -o size=768m tmpfs /var/tmp
+
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/virtio/virtio_mmio.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/net/core/failover.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/net/net_failover.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/net/virtio_net.ko
+
+ip link set eth0 down
+ip link set eth0 name br0
+ifconfig br0 10.0.2.15 netmask 255.255.255.0 up
+ifconfig lo 127.0.0.1 up
+route add default gw 10.0.2.2
+
+touch /dev/acos_nat_cli /dev/spiv6
+for number in 1 3 4 14 15; do
+    touch "/dev/mtd$number"
+done
+
+echo "FRIDAY_RAX42V2_STOCK_BOOT=1"
+echo "KERNEL=$(uname -a)"
+echo "RC3_BEGIN=1"
+
+/bin/bcm_boot_launcher start >/dev/console 2>&1 &
+BOOT_PID=$!
+echo "BOOT_LAUNCHER_PID=$BOOT_PID"
+
+elapsed=0
+HTTP_PROBED=0
+HTTPS_PROBED=0
+while test "$elapsed" -lt 240; do
+    HTTPD_PID="$(pidof httpd | awk '{print $1}')"
+    SMD_PID="$(pidof smd | awk '{print $1}')"
+    ACOS_PID="$(pidof acos_service | awk '{print $1}')"
+    LISTENERS="$(awk 'NR > 1 && $4 == "0A" {print $2}' /proc/net/tcp /proc/net/tcp6 2>/dev/null | tr '\n' ',')"
+    echo "STOCK_HEALTH elapsed=$elapsed boot=$BOOT_PID smd=$SMD_PID acos=$ACOS_PID httpd=$HTTPD_PID listeners=$LISTENERS"
+    if test -n "$HTTPD_PID" && test -n "$LISTENERS"; then
+        echo "FRIDAY_RAX42V2_STOCK_HTTP_READY=1"
+    fi
+    if test "$HTTP_PROBED" -eq 0 && grep -q ':0050 ' /proc/net/tcp6 2>/dev/null; then
+        HTTP_PROBED=1
+        HTTP_INODE="$(awk '$2 ~ /:0050$/ && $4 == "0A" { print $10; exit }' /proc/net/tcp6)"
+        HTTP_OWNER=
+        for descriptor in /proc/[0-9]*/fd/*; do
+            if test "$(/bin/busybox readlink "$descriptor" 2>/dev/null)" = "socket:[$HTTP_INODE]"; then
+                HTTP_OWNER="$(echo "$descriptor" | cut -d/ -f3)"
+                break
+            fi
+        done
+        echo "STOCK_HTTP_LISTENER inode=$HTTP_INODE pid=$HTTP_OWNER"
+        if test -n "$HTTP_OWNER"; then
+            /bin/strace -f -tt -s 192 \
+                -e trace=accept,accept4,close,connect,fcntl,poll,ppoll,read,recv,recvfrom,recvmsg,select,send,sendmsg,sendto,shutdown,write \
+                -o /tmp/stock-http-request.strace \
+                -p "$HTTP_OWNER" >/dev/console 2>&1 &
+            HTTP_TRACE_PID=$!
+            sleep 1
+        fi
+        echo "STOCK_LOOPBACK_HTTP_PROBE_BEGIN=1"
+        printf 'GET / HTTP/1.0\r\nHost: routerlogin.net\r\n\r\n' |
+            /bin/busybox timeout 5 nc 127.0.0.1 80 2>&1 |
+            sed -n '1,12p'
+        echo "STOCK_LOOPBACK_HTTP_PROBE_DONE=1"
+        if test -n "$HTTP_TRACE_PID"; then
+            kill "$HTTP_TRACE_PID" 2>/dev/null
+            sleep 1
+            echo "STOCK_HTTP_REQUEST_STRACE_BEGIN"
+            tail -n 240 /tmp/stock-http-request.strace 2>/dev/null
+            echo "STOCK_HTTP_REQUEST_STRACE_END"
+        fi
+    fi
+    if test "$HTTPS_PROBED" -eq 0 &&
+        grep -q ':01BB ' /proc/net/tcp /proc/net/tcp6 2>/dev/null; then
+        HTTPS_PROBED=1
+        echo "STOCK_LOOPBACK_HTTPS_PROBE_BEGIN=1"
+        printf 'GET / HTTP/1.0\r\nHost: routerlogin.net\r\n\r\n' |
+            /bin/busybox timeout 8 /bin/openssl s_client \
+                -quiet -connect 127.0.0.1:443 2>/dev/null |
+            sed -n '1,12p'
+        echo "STOCK_LOOPBACK_HTTPS_PROBE_DONE=1"
+    fi
+    if test "$elapsed" -eq 60 && test -n "$SMD_PID" && test -z "$HTTPD_PID"; then
+        echo "STOCK_BOOT_SMD_FOREGROUND_WORKAROUND=1"
+        /etc/rc3.d/S67acos_init_once.sh start >/dev/console 2>&1
+        /etc/rc3.d/S95acos_init.sh start >/dev/console 2>&1 &
+        echo "STOCK_BOOT_ACOS_START_PID=$!"
+    fi
+    sleep 2
+    elapsed=$((elapsed + 2))
+done
+
+echo "RC3_MONITOR_COMPLETE=1"
+while true; do
+    sleep 30
+done

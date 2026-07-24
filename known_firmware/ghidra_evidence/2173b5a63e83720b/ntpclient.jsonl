@@ -1,0 +1,5 @@
+{"binary":"ntpclient","function":"FUN_0040219c","address":"0040219c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntpclient","function":"FUN_004024ac","address":"004024ac","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntpclient","function":"FUN_004024ac","address":"004024ac","route":"/*","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntpclient","function":"FUN_004024ac","address":"004024ac","route":"/var/run/ntp.pid","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntpclient","function":"FUN_004024ac","address":"004024ac","route":"/var/run/ntp.pid","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

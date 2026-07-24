@@ -1,0 +1,108 @@
+{
+  "cases": 17,
+  "all_health_checks_passed": true,
+  "results": [
+    {
+      "surface": "dns_udp",
+      "case": "empty",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dns_udp",
+      "case": "short_header",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dns_udp",
+      "case": "truncated_label",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dns_udp",
+      "case": "compression_self_loop",
+      "response_bytes": 18,
+      "alive": true
+    },
+    {
+      "surface": "dns_udp",
+      "case": "label_64",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dns_udp",
+      "case": "max_qdcount",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dns_udp",
+      "case": "truncated_edns",
+      "response_bytes": 49,
+      "alive": true
+    },
+    {
+      "surface": "dns_udp",
+      "case": "edns_bad_length",
+      "response_bytes": 60,
+      "alive": true
+    },
+    {
+      "surface": "dns_tcp",
+      "case": "zero_length",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dns_tcp",
+      "case": "declared_long_truncated",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dns_tcp",
+      "case": "declared_short",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dns_tcp",
+      "case": "valid",
+      "response_bytes": 51,
+      "alive": true
+    },
+    {
+      "surface": "dhcpv4",
+      "case": "empty",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dhcpv4",
+      "case": "short_fixed",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dhcpv4",
+      "case": "truncated_cookie",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dhcpv4",
+      "case": "option_length_overrun",
+      "response_bytes": 0,
+      "alive": true
+    },
+    {
+      "surface": "dhcpv4",
+      "case": "valid_discover",
+      "response_bytes": 300,
+      "alive": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"binary":"libpasswd.so","function":"compare_passwd_in_shadow","address":"00010810","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"libasusnatnl.so","function":"open","address":"00190df4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libasusnatnl.so","function":"open","address":"001b3bec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libasusnatnl.so","function":"open","address":"001b3da4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libasusnatnl.so","function":"open","address":"001b3dc0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

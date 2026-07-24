@@ -1,0 +1,9 @@
+{"binary":"libxtables.so","function":"xtables_insmod","address":"00012a18","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"FUN_00012ccc","address":"00012ccc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_parse_interface","address":"00013270","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_find_match","address":"000138ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_ipparse_multiple","address":"00014504","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_ipparse_any","address":"000147ec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_ip6parse_multiple","address":"00014e3c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_ip6parse_any","address":"00015184","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"FUN_00016128","address":"00016128","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

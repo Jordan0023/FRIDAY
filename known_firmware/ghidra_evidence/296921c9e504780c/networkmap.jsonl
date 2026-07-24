@@ -1,0 +1,2 @@
+{"binary":"networkmap","function":"FUN_0001d770","address":"0001d770","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"networkmap","function":"FUN_0001d770","address":"0001d770","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

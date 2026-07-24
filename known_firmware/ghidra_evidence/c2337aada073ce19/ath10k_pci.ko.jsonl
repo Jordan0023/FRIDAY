@@ -1,0 +1,3 @@
+{"binary":"ath10k_pci.ko","function":"_12","address":"000131dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath10k_pci.ko","function":"_12","address":"000131dc","route":"/linux-ath79_generic/ath10k-ct-regular/ath10k-ct-2025.12.01~bb84e159/ath10k-6.18/pci.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath10k_pci.ko","function":"_12","address":"000131dc","route":"/linux/dma-mapping.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

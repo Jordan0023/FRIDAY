@@ -1,0 +1,218 @@
+=== SOAPLogin strings=[001811b3, 001815c8] ===
+pointer=001d7808 candidate=001d7808 first=001815c8 SOAPLogin second=0009b81c null handler=0000007e flags=0017c367
+pointer=001d7808 candidate=001d7804 first=0017c367 DeviceConfig second=001815c8 SOAPLogin handler=0009b81c flags=0000007e
+FUNCTION FUN_0009b81c @ 0009b81c
+
+/* WARNING: Type propagation algorithm not settling */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0009b81c(int param_1)
+
+{
+  uint *puVar1;
+  int iVar2;
+  int iVar3;
+  EVP_MD *type;
+  EVP_MD_CTX *ctx;
+  size_t cnt;
+  int iVar4;
+  char *__format;
+  int *piVar5;
+  uint auStack_40288 [2];
+  undefined1 auStack_40280 [28];
+  byte abStack_40264 [64];
+  undefined4 uStack_40224;
+  undefined1 auStack_40220 [124];
+  int iStack_401a4;
+  undefined1 auStack_401a0 [124];
+  char acStack_40124 [256];
+  undefined4 uStack_40024;
+  undefined1 auStack_40020 [262144];
+  
+  piVar5 = *(int **)(_UNK_0009bb68 + 0x9b82c + _UNK_0009bb6c);
+  iVar4 = *piVar5;
+  uStack_40224 = 0;
+  memset(auStack_40220,0,0x7c);
+  acStack_40124[0] = '\0';
+  acStack_40124[1] = '\0';
+  acStack_40124[2] = '\0';
+  acStack_40124[3] = '\0';
+  memset(acStack_40124 + 4,0,0xfc);
+  auStack_40288[1] = 0;
+  memset(auStack_40280,0,0x1c);
+  uStack_40024 = 0;
+  memset(auStack_40020,0,_UNK_0009bb70);
+  get_sat_count();
+  puVar1 = auStack_40288 + 1;
+  if (*(int *)(param_1 + 0x28) == 0) {
+    func_0x0009b6ec(*(undefined4 *)(param_1 + 8),puVar1,0x20);
+  }
+  else {
+    iStack_401a4 = 0;
+    memset(auStack_401a0,0,0x2b);
+    inet_ntop(10,(void *)(*(int *)(param_1 + 0x2c) + 0x14),(char *)&iStack_401a4,0x2f);
+    printf((char *)(_UNK_0009bb78 + 0x9b920),_UNK_0009bb74 + 0x9ba5b,0x2cd,&iStack_401a4);
+    func_0x0009a2a8(&iStack_401a4,puVar1);
+  }
+  iVar2 = FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_0009bb7c + 0x9b94c,&uStack_40224,0x80);
+  if (iVar2 == 0) {
+    iVar2 = acosNvramConfig_match(_UNK_0009bb80 + 0x9b968,&uStack_40224);
+  }
+  else {
+    iVar2 = 0;
+  }
+  iVar3 = FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_0009bb84 + 0x9b988,acStack_40124,0x100);
+  if (iVar3 == 0) {
+    iStack_401a4 = iVar3;
+    memset(auStack_401a0,0,0x7c);
+    OPENSSL_init_crypto(8,0,0);
+    type = EVP_get_digestbyname((char *)(_UNK_0009bb88 + 0x9b9c4));
+    ctx = (EVP_MD_CTX *)EVP_MD_CTX_new();
+    EVP_DigestInit_ex(ctx,type,(ENGINE *)0x0);
+    cnt = strlen(acStack_40124);
+    EVP_DigestUpdate(ctx,acStack_40124,cnt);
+    EVP_DigestFinal_ex(ctx,abStack_40264,auStack_40288);
+    EVP_MD_CTX_free(ctx);
+    __format = (char *)(_UNK_0009bb8c + 0x9ba20);
+    for (iVar3 = 0; iVar3 < (int)auStack_40288[0]; iVar3 = iVar3 + 1) {
+      sprintf((char *)((int)&iStack_401a4 + iVar3 * 2),__format,(uint)abStack_40264[iVar3]);
+    }
+    iVar3 = acosNvramConfig_match(_UNK_0009bb90 + 0x9ba58,&iStack_401a4);
+  }
+  else {
+    iVar3 = 0;
+  }
+  if (iVar2 == 0 || iVar3 == 0) {
+    iVar2 = FUN_0009a700(puVar1,*(undefined4 *)(param_1 + 8),*(undefined4 *)(param_1 + 0x2c));
+    if (iVar2 == 0) {
+      func_0x0009a500(puVar1,*(undefined4 *)(param_1 + 8),1,*(undefined4 *)(param_1 + 0x2c));
+      iVar2 = 0x191;
+      goto LAB_0009bafc;
+    }
+  }
+  else {
+    iVar2 = FUN_0009a700(puVar1,*(undefined4 *)(param_1 + 8),*(undefined4 *)(param_1 + 0x2c));
+    if (iVar2 == 0) {
+      system((char *)(_UNK_0009bb94 + 0x9ba90));
+      func_0x0009a500(puVar1,*(undefined4 *)(param_1 + 8),0,*(undefined4 *)(param_1 + 0x2c));
+      acosNvramConfig_set(_UNK_0009bb9c + 0x9bab8,_UNK_0009bb98 + 0x9bab4);
+      iVar2 = func_0x0009aa70(puVar1,*(undefined4 *)(param_1 + 8),*(undefined4 *)(param_1 + 0x2c));
+      if (iVar2 < 1) {
+        iVar2 = 0x1f7;
+      }
+      else {
+        *(int *)(param_1 + 0x14) = iVar2;
+        iVar2 = 0;
+      }
+      goto LAB_0009bafc;
+    }
+  }
+  iVar2 = 0x1a7;
+LAB_0009bafc:
+  FUN_0006c448(param_1,&uStack_40024,iVar2,0x40000);
+  if ((iVar2 == 0) &&
+     (iVar3 = acosNvramConfig_match(_UNK_0009bba4 + 0x9bb2c,_UNK_0009bba0 + 0x9bb28), iVar3 != 0)) {
+    shared_br_device_detect_do_lan_scan();
+  }
+  if (iVar4 == *piVar5) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(iVar2);
+}
+
+
+=== SOAPLogout strings=[00181677] ===
+pointer=001d7818 candidate=001d7818 first=00181677 SOAPLogout second=0009bba8 null handler=0000007e flags=0017c367
+pointer=001d7818 candidate=001d7814 first=0017c367 DeviceConfig second=00181677 SOAPLogout handler=0009bba8 flags=0000007e
+FUNCTION FUN_0009bba8 @ 0009bba8
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0009bba8(int param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  int *piVar3;
+  undefined4 uStack_4013c;
+  undefined1 auStack_40138 [28];
+  undefined4 uStack_4011c;
+  undefined1 auStack_40118 [252];
+  undefined4 uStack_4001c;
+  undefined1 auStack_40018 [262144];
+  
+  piVar3 = *(int **)(_UNK_0009bca8 + 0x9bbb8 + _UNK_0009bcac);
+  iVar2 = *piVar3;
+  uStack_4011c = 0;
+  memset(auStack_40118,0,0xfc);
+  uStack_4013c = 0;
+  memset(auStack_40138,0,0x1c);
+  uStack_4001c = 0;
+  memset(auStack_40018,0,_UNK_0009bcb0);
+  iVar1 = FUN_0006bcd8(*(undefined4 *)(param_1 + 0xc),_UNK_0009bcb4 + 0x9bc34,&uStack_4011c,0x100);
+  if (iVar1 == 0) {
+    func_0x0009b6ec(*(undefined4 *)(param_1 + 8),&uStack_4013c,0x20);
+    FUN_0009a88c(&uStack_4011c,&uStack_4013c,*(undefined4 *)(param_1 + 8),
+                 *(undefined4 *)(param_1 + 0x2c));
+  }
+  FUN_0006c448(param_1,&uStack_4001c,0,0x40000);
+  if (iVar2 != *piVar3) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(0);
+  }
+  return;
+}
+
+
+=== Authenticate strings=[0016f79b, 0016f9cf, 0016fb08, 0017b17f, 00182362, 001cfa4c, 001cfb50] ===
+pointer=001d8308 candidate=001d8308 first=00182362 Authenticate second=00098f4c null handler=0000007e flags=00182388
+pointer=001d8308 candidate=001d8304 first=00182388 ParentalControl second=00182362 Authenticate handler=00098f4c flags=0000007e
+FUNCTION FUN_00098f4c @ 00098f4c
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_00098f4c(int param_1)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  int iVar3;
+  int *piVar4;
+  char acStack_400b0 [4];
+  undefined4 uStack_400ac;
+  undefined1 auStack_400a8 [64];
+  undefined4 uStack_40068;
+  undefined1 auStack_40064 [64];
+  undefined4 uStack_40024;
+  undefined1 auStack_40020 [262144];
+  
+  piVar4 = *(int **)(_UNK_000990a0 + 0x98f5c + _UNK_000990a4);
+  iVar3 = *piVar4;
+  uStack_40024 = 0;
+  memset(auStack_40020,0,_UNK_000990a8);
+  acStack_400b0[0] = '\0';
+  acStack_400b0[1] = '\0';
+  acStack_400b0[2] = '\0';
+  acStack_400b0[3] = '\0';
+  uStack_400ac = 0;
+  memset(auStack_400a8,0,0x3d);
+  uStack_40068 = 0;
+  memset(auStack_40064,0,0x3d);
+  FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_000990ac + 0x98fe4,&uStack_400ac,0x40);
+  FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_000990b0 + 0x98ffc,&uStack_40068,0x40);
+  iVar1 = FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_000990b4 + 0x99014,acStack_400b0,3);
+  if (iVar1 != 0) {
+    strcpy(acStack_400b0,(char *)(_UNK_000990b8 + 0x99034));
+  }
+  uVar2 = func_0x0007b88c(&uStack_400ac,&uStack_40068);
+  FUN_000685f4(&uStack_40024,0x40000,_UNK_000990bc + 0x99058,acStack_400b0);
+  FUN_0006c448(param_1,&uStack_40024,uVar2,0x40000);
+  if (iVar3 != *piVar4) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(uVar2);
+  }
+  return;
+}
+
+

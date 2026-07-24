@@ -1,0 +1,17 @@
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/etc/pptpd.conf","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/etc/pptpd.conf","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/var/run/pptpd.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/var/run/pptpd.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/usr/sbin/pppd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/usr/sbin/pppd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/usr/sbin/bcrelay","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/usr/sbin/bcrelay","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"_ftext","address":"004011c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"FUN_00402080","address":"00402080","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"FUN_00402080","address":"00402080","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"FUN_00402c30","address":"00402c30","route":"/usr/sbin/pptpctrl","sink":"exec","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"FUN_00402c30","address":"00402c30","route":"/usr/sbin/pptpctrl!","sink":"exec","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptpd","function":"FUN_00402c30","address":"00402c30","route":"/*","sink":"exec","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}

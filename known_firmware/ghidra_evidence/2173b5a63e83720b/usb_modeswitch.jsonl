@@ -1,0 +1,13 @@
+{"binary":"usb_modeswitch","function":"_ftext","address":"00401340","route":"/product","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"_ftext","address":"00401340","route":"/device","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"_ftext","address":"00401340","route":"/%03d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"_ftext","address":"00401340","route":"/InterfaceClass:","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"_ftext","address":"00401340","route":"/0x08","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"_ftext","address":"00401340","route":"/dev","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"_ftext","address":"00401340","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"FUN_004031d8","address":"004031d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"FUN_00403e48","address":"00403e48","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"FUN_00403e48","address":"00403e48","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"FUN_00404c38","address":"00404c38","route":"/device","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"FUN_00406190","address":"00406190","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_modeswitch","function":"FUN_00406190","address":"00406190","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

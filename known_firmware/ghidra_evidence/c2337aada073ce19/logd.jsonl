@@ -1,0 +1,2 @@
+{"binary":"logd","function":"FUN_00401810","address":"00401810","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"logd","function":"FUN_00401ca0","address":"00401ca0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

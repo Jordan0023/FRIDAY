@@ -130,7 +130,7 @@ Structured zero-day triage JSON: `known_firmware/reports/TP-Link_Deco_BE13000/De
 
 ## Extraction Notes
 
-- binwalk -eM --directory known_firmware/extracted/9541720cf3b7a7cd exited 0: WARNING: Extractor.execute failed to run external extractor 'unstuff '%e'': [Errno 2] No such file or directory: 'unstuff', 'unstuff '%e'' might not be installed correctly
+- Using existing extraction directory: known_firmware/extracted/9541720cf3b7a7cd
 
 ## Decompiler Notes
 

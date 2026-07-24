@@ -1,0 +1,8 @@
+{"binary":"libvorbis.so.0","function":"vorbis_lpc_predict","address":"000195b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvorbis.so.0","function":"FUN_0001a1f0","address":"0001a1f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvorbis.so.0","function":"vorbis_comment_add_tag","address":"0001c9cc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvorbis.so.0","function":"vorbis_comment_add_tag","address":"0001c9cc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvorbis.so.0","function":"vorbis_comment_query","address":"0001ca94","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvorbis.so.0","function":"vorbis_comment_query","address":"0001ca94","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvorbis.so.0","function":"vorbis_comment_query_count","address":"0001cb98","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvorbis.so.0","function":"vorbis_comment_query_count","address":"0001cb98","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

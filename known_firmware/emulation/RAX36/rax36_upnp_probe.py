@@ -46,40 +46,98 @@ def healthy() -> bool:
         return False
 
 
-def subscribe(callback: bytes) -> bytes:
+def event_request(
+    method: bytes,
+    headers: list[tuple[bytes, bytes]],
+) -> bytes:
     return (
-        b"SUBSCRIBE /evt/L3F HTTP/1.1\r\n"
-        b"Host: 192.168.1.1:56688\r\n"
-        b"CALLBACK: <" + callback + b">\r\n"
-        b"NT: upnp:event\r\n"
-        b"TIMEOUT: Second-1800\r\n"
-        b"Content-Length: 0\r\n"
-        b"Connection: close\r\n\r\n"
+        method
+        + b" /evt/L3F HTTP/1.1\r\n"
+        + b"Host: 192.168.1.1:56688\r\n"
+        + b"".join(name + b": " + value + b"\r\n" for name, value in headers)
+        + b"Content-Length: 0\r\n"
+        + b"Connection: close\r\n\r\n"
+    )
+
+
+def subscribe(callback: bytes) -> bytes:
+    return event_request(
+        b"SUBSCRIBE",
+        [
+            (b"CALLBACK", b"<" + callback + b">"),
+            (b"NT", b"upnp:event"),
+            (b"TIMEOUT", b"Second-1800"),
+        ],
     )
 
 
 def main() -> int:
     cases = [
-        ("control", b"http://192.168.1.2:9/event"),
+        ("control", subscribe(b"http://192.168.1.2:9/event")),
         (
             "rax30-73-byte-callback",
-            b"http://192.168.1.2/FRIDAY_RAX36_PROBE_7b6f2a" + b"A" * 32,
+            subscribe(b"http://192.168.1.2/FRIDAY_RAX36_PROBE_7b6f2a" + b"A" * 32),
         ),
-        ("missing-scheme", b"A" * 73),
-        ("long-callback", b"http://192.168.1.2/" + b"A" * 8192),
+        ("missing-scheme", subscribe(b"A" * 73)),
+        ("callback-8192", subscribe(b"http://192.168.1.2/" + b"A" * 8192)),
+        ("callback-65536", subscribe(b"http://192.168.1.2/" + b"A" * 65536)),
+        (
+            "timeout-65536",
+            event_request(
+                b"SUBSCRIBE",
+                [
+                    (b"CALLBACK", b"<http://192.168.1.2:9/event>"),
+                    (b"NT", b"upnp:event"),
+                    (b"TIMEOUT", b"A" * 65536),
+                ],
+            ),
+        ),
+        (
+            "nt-65536",
+            event_request(
+                b"SUBSCRIBE",
+                [
+                    (b"CALLBACK", b"<http://192.168.1.2:9/event>"),
+                    (b"NT", b"A" * 65536),
+                    (b"TIMEOUT", b"Second-1800"),
+                ],
+            ),
+        ),
+        (
+            "duplicate-callback",
+            event_request(
+                b"SUBSCRIBE",
+                [
+                    (b"CALLBACK", b"<http://192.168.1.2:9/one>"),
+                    (b"CALLBACK", b"<http://192.168.1.2:9/two>"),
+                    (b"NT", b"upnp:event"),
+                ],
+            ),
+        ),
+        (
+            "renewal-sid-8192",
+            event_request(
+                b"SUBSCRIBE",
+                [(b"SID", b"uuid:" + b"A" * 8192), (b"TIMEOUT", b"Second-1800")],
+            ),
+        ),
+        (
+            "unsubscribe-sid-8192",
+            event_request(b"UNSUBSCRIBE", [(b"SID", b"uuid:" + b"A" * 8192)]),
+        ),
     ]
     if not healthy():
         print("baseline_failed")
         return 2
-    for name, callback in cases:
+    for name, payload in cases:
         try:
-            response = exchange(subscribe(callback))
+            response = exchange(payload)
             result = status(response)
         except OSError as error:
             result = f"socket-error:{error}"
         time.sleep(0.25)
         alive = healthy()
-        print(f"{name} callback_bytes={len(callback)} status={result} alive={alive}")
+        print(f"{name} request_bytes={len(payload)} status={result} alive={alive}")
         if not alive:
             print(f"crash_candidate={name}")
             return 1

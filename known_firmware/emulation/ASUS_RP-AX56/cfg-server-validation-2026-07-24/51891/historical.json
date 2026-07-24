@@ -1,0 +1,12 @@
+{
+  "target": "127.0.0.1:7788",
+  "case": "historical-conndiag",
+  "results": [
+    {
+      "name": "published-eight-byte-trigger",
+      "request_bytes": 8,
+      "error": null,
+      "elapsed_ms": 0.09
+    }
+  ]
+}

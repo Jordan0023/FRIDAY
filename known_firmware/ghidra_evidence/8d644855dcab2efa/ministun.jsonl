@@ -1,0 +1,1 @@
+{"binary":"ministun","function":"FUN_00401038","address":"00401038","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}

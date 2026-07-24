@@ -1,0 +1,4 @@
+{"binary":"libcodb.so","function":"FUN_00012954","address":"00012954","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcodb.so","function":"FUN_00017a3c","address":"00017a3c","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcodb.so","function":"alloc_codb_time_string","address":"0001a730","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcodb.so","function":"alloc_codb_time_string","address":"0001a730","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

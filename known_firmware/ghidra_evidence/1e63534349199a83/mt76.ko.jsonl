@@ -1,0 +1,2 @@
+{"binary":"mt76.ko","function":"FUN_0001208c","address":"0001208c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt76.ko","function":"FUN_0001208c","address":"0001208c","route":"/linux/dma-mapping.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,36 @@
+#!/bin/sh
+
+BB=/greenhouse/busybox
+
+(
+    while :; do
+        {
+            printf 'HTTP/1.1 200 OK\r\nContent-Length: 0\r\nConnection: close\r\n\r\n'
+        } | $BB nc -l -p 49152
+    done
+) >/tmp/gena-callback.log 2>&1 &
+
+sleep 1
+RESPONSE=$(
+    printf 'SUBSCRIBE /evt/IPConn HTTP/1.1\r\nHost: 10.0.2.15:5000\r\nCALLBACK: <http://10.0.2.15:49152/friday-event>\r\nNT: upnp:event\r\nTIMEOUT: Second-60\r\nConnection: close\r\n\r\n' |
+        $BB nc -w 3 10.0.2.15 5000
+)
+STATUS=$(printf '%s\n' "$RESPONSE" | $BB head -n 1 | $BB tr -d '\r')
+SID=$(printf '%s\n' "$RESPONSE" | $BB tr -d '\r' | $BB sed -n 's/^[Ss][Ii][Dd]:[[:space:]]*//p' | $BB head -n 1)
+echo "FRIDAY_GSBE7200_GENA_NEW status=$STATUS sid_present=$([ -n "$SID" ] && echo yes || echo no)"
+
+if [ -n "$SID" ]; then
+    RESPONSE=$(
+        printf 'SUBSCRIBE /evt/IPConn HTTP/1.1\r\nHost: 10.0.2.15:5000\r\nSID: %s\r\nTIMEOUT: Second-120\r\nConnection: close\r\n\r\n' "$SID" |
+            $BB nc -w 3 10.0.2.15 5000
+    )
+    STATUS=$(printf '%s\n' "$RESPONSE" | $BB head -n 1 | $BB tr -d '\r')
+    echo "FRIDAY_GSBE7200_GENA_RENEW status=$STATUS"
+
+    RESPONSE=$(
+        printf 'UNSUBSCRIBE /evt/IPConn HTTP/1.1\r\nHost: 10.0.2.15:5000\r\nSID: %s\r\nConnection: close\r\n\r\n' "$SID" |
+            $BB nc -w 3 10.0.2.15 5000
+    )
+    STATUS=$(printf '%s\n' "$RESPONSE" | $BB head -n 1 | $BB tr -d '\r')
+    echo "FRIDAY_GSBE7200_GENA_UNSUBSCRIBE status=$STATUS"
+fi

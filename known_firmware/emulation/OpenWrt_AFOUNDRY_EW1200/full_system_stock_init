@@ -1,0 +1,36 @@
+#!/bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export PATH
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+mkdir -p /dev/pts /run /tmp /var/run /var/log /var/tmp /var/state
+mount -t devpts devpts /dev/pts
+
+insmod /lib/modules/6.1.0-50-4kc-malta/mii.ko
+insmod /lib/modules/6.1.0-50-4kc-malta/pcnet32.ko
+
+ifconfig lo 127.0.0.1 up
+ifconfig eth0 10.0.2.15 netmask 255.255.255.0 up
+route add default gw 10.0.2.2
+
+echo "FRIDAY_EW1200_FULL_SYSTEM_KERNEL_BOOT=1"
+echo "KERNEL=$(uname -a)"
+cat /proc/net/dev
+echo "FRIDAY_EW1200_HANDOFF_TO_STOCK_INIT=1"
+
+(
+	sleep 35
+	echo "FRIDAY_EW1200_STOCK_INIT_DIAGNOSTICS=1"
+	echo "UPTIME=$(cut -d. -f1 /proc/uptime)"
+	ifconfig -a
+	cat /proc/net/tcp
+	cat /proc/net/udp
+	ps w
+	ubus list
+	echo "FRIDAY_EW1200_STOCK_INIT_DIAGNOSTICS_DONE=1"
+) >/dev/console 2>&1 &
+
+exec /sbin/init

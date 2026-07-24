@@ -1,0 +1,485 @@
+{
+  "scope": "Extracted GL.iNet firmware containing usr/sbin/gl-ngx-session",
+  "firmware_images": 18,
+  "current_images": 18,
+  "eol_images": 0,
+  "current_images_with_vulnerable_logic": 14,
+  "distinct_vulnerable_session_implementations": 5,
+  "results": [
+    {
+      "product": "GL.iNet GL-MT5000 Brume 3",
+      "version": "4.8.6",
+      "filename": "mt5000-4.8.6_release2-883-0422-1776826783.bin",
+      "sha256": "001503668d83a939627f6bd92614fff417251f9f517e011d14abe2fb0a307417",
+      "session_sha256": "4eb9bdd8b00521de306f5247bc35b03b99557712db290bd0d192da91a04fad08",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/001503668d83a939/_mt5000-4.8.6_release2-883-0422-1776826783.bin.extracted/sysupgrade-glinet_gl-mt5000/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-MT300N-V2 Mango",
+      "version": "4.3.25",
+      "filename": "openwrt-mt300n-v2-4.3.25-0318-1742298825.bin",
+      "sha256": "05a823f7714848bf039a27afa9f2eca28089ab978aac9dcb9c3f3613f78a9023",
+      "session_sha256": "5579c23b7ea42025fa6c6aacfc914ed8342febad181e878e9a8c86af51ab888b",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": false,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": false,
+        "enforces_global_timer": false
+      },
+      "session_path": "known_firmware/extracted/05a823f7714848bf/_openwrt-mt300n-v2-4.3.25-0318-1742298825.bin.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-X300B Collie",
+      "version": "4.5.22",
+      "filename": "openwrt-x300b-4.5.22-0410-1744267427.bin",
+      "sha256": "33b6579552a0ebfcaf343c16977d4b97f864c9120ed5655aef7fbc2c7eb6fe9b",
+      "session_sha256": "995a08499137b5f7db15bd9207d9dc44a52912142a412240efab3d59339b0a74",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/33b6579552a0ebfc/_openwrt-x300b-4.5.22-0410-1744267427.bin.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-MT2500/GL-MT2500A Brume 2",
+      "version": "4.7.4",
+      "filename": "openwrt-mt2500-4.7.4-0328-1743128340.bin",
+      "sha256": "3de78f88a2cc204c089cd1c262346786796d43a223564b1f792f3e8515cc8904",
+      "session_sha256": "4df035e835092fcbb652fa68c6e835f7cb9e6a1373b8d29585f738b5d3f643e4",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/3de78f88a2cc204c/_openwrt-mt2500-4.7.4-0328-1743128340.bin.extracted/sysupgrade-glinet_gl-mt2500/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-AR300M16 Shadow",
+      "version": "4.3.27",
+      "filename": "openwrt-ar300m16-4.3.27-0514-1747192506.bin",
+      "sha256": "4ab5fc68dbafde7fc8450baa664102b3603983264bed13576d7ade1edb2ca864",
+      "session_sha256": "5579c23b7ea42025fa6c6aacfc914ed8342febad181e878e9a8c86af51ab888b",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": false,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": false,
+        "enforces_global_timer": false
+      },
+      "session_path": "known_firmware/extracted/4ab5fc68dbafde7f/_openwrt-ar300m16-4.3.27-0514-1747192506.bin.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-MT3600BE Beryl 7",
+      "version": "4.9.0",
+      "filename": "mt3600be-4.9.0_release1-1046-0702-1783003143.bin",
+      "sha256": "4c32509876176a04ca32ed7288567be1d31603a7473f592552380c586b66df65",
+      "session_sha256": "2457cfae05615780cb46fd457e65a43dabbe6fdb750a816336c2d98a685ce85d",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/4c32509876176a04/_mt3600be-4.9.0_release1-1046-0702-1783003143.bin.extracted/sysupgrade-glinet_gl-mt3600be/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-MT6000 Flint 2",
+      "version": "4.9.0",
+      "filename": "mt6000-4.9.0_release1-1015-0605-1780626850.bin",
+      "sha256": "6e8e6610f944996bb0c119fe95b5610c7091f14c3234739f68d3a5e73c0c60ce",
+      "session_sha256": "2457cfae05615780cb46fd457e65a43dabbe6fdb750a816336c2d98a685ce85d",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/6e8e6610f944996b/_mt6000-4.9.0_release1-1015-0605-1780626850.bin.extracted/sysupgrade-glinet_gl-mt6000/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 3
+    },
+    {
+      "product": "GL.iNet GL-BE10000 Slate 7 Pro",
+      "version": "4.8.4",
+      "filename": "be10000-4.8.4_release1-999-0414-1776157157.bin",
+      "sha256": "7d54205721c43f57ccd22c03cf831886bca8ea5ebcb46675631bb48160f29020",
+      "session_sha256": "6b5aeb3cd9c4644ca7546848fc5e836fccc2d5749ba3cd6177db0ab0710b0efb",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/7d54205721c43f57/_be10000-4.8.4_release1-999-0414-1776157157.bin.extracted/sysupgrade-glinet_gl-be10000/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-X3000 Spitz AX",
+      "version": "4.8.3",
+      "filename": "x3000-4.8.3_release3-902-1106-1762433696.bin",
+      "sha256": "877500360e81c65c8cb422ab7bcd9f3af14087f454da60434e93568c2e6f0e89",
+      "session_sha256": "4eb9bdd8b00521de306f5247bc35b03b99557712db290bd0d192da91a04fad08",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/877500360e81c65c/_x3000-4.8.3_release3-902-1106-1762433696.bin.extracted/sysupgrade-glinet_gl-x3000/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-AX1800 Flint",
+      "version": "4.8.3",
+      "filename": "ax1800-4.8.3_release2-930-1226-1766712814.tar",
+      "sha256": "a1aae18b9a7da1fcf926500047cdab36021efb618bedf07b33a84adb1f75e01a",
+      "session_sha256": "4eb9bdd8b00521de306f5247bc35b03b99557712db290bd0d192da91a04fad08",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/a1aae18b9a7da1fc/_ax1800-4.8.3_release2-930-1226-1766712814.tar.extracted/sysupgrade-glinet_ax1800/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-XE3000 Puli AX",
+      "version": "4.8.3",
+      "filename": "xe3000-4.8.3_release3-902-1106-1762433511.bin",
+      "sha256": "ba6f76f32686e86c30eed4dd7458ed92f7545a2079c1ae7365447cc1ff56f876",
+      "session_sha256": "4eb9bdd8b00521de306f5247bc35b03b99557712db290bd0d192da91a04fad08",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/ba6f76f32686e86c/_xe3000-4.8.3_release3-902-1106-1762433511.bin.extracted/sysupgrade-glinet_gl-xe3000/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-X750 Spitz",
+      "version": "4.3.25",
+      "filename": "openwrt-x750-4.0-release10325-0331-1743426151.bin",
+      "sha256": "c6f0d845474d3d2f06928f94c9dce5f42f16e002901ce296aba79f9d4564ac97",
+      "session_sha256": "5579c23b7ea42025fa6c6aacfc914ed8342febad181e878e9a8c86af51ab888b",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": false,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": false,
+        "enforces_global_timer": false
+      },
+      "session_path": "known_firmware/extracted/c6f0d845474d3d2f/_openwrt-x750-4.0-release10325-0331-1743426151.bin.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-MT5000 Brume 3",
+      "version": "4.9.0",
+      "filename": "mt5000-4.9.0_release1-1053-0708-1783477013.bin",
+      "sha256": "e69e440c2715122793e2a4229d1acab3fbcfd193532e9167cd2f4d57bfbfe2d9",
+      "session_sha256": "2457cfae05615780cb46fd457e65a43dabbe6fdb750a816336c2d98a685ce85d",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/e69e440c27151227/_mt5000-4.9.0_release1-1053-0708-1783477013.bin.extracted/sysupgrade-glinet_gl-mt5000/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-E750/GL-E750V2 Mudi",
+      "version": "4.3.26",
+      "filename": "openwrt-e750-4.0-release10326-0408-1744078505.tar",
+      "sha256": "edf1ba09412592e0a76ba46e04f8787947bf84ea313c9a93c6bc828105b022b7",
+      "session_sha256": "5579c23b7ea42025fa6c6aacfc914ed8342febad181e878e9a8c86af51ab888b",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": false,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": false,
+        "enforces_global_timer": false
+      },
+      "session_path": "known_firmware/extracted/edf1ba09412592e0/_openwrt-e750-4.0-release10326-0408-1744078505.tar.extracted/sysupgrade-glinet_gl-e750/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-BE9300 Flint 3",
+      "version": "4.9.0",
+      "filename": "be9300-4.9.0_release5-1022-0515-1778843436.bin",
+      "sha256": "edf306a312c85c449a22d5badd791cc2bb5e530b2ad47ce2b710562554b9dfb8",
+      "session_sha256": "2457cfae05615780cb46fd457e65a43dabbe6fdb750a816336c2d98a685ce85d",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/edf306a312c85c44/manual-rootfs/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 3
+    },
+    {
+      "product": "GL.iNet GL-A1300 Slate Plus",
+      "version": "4.5.22",
+      "filename": "openwrt-a1300-4.5.22-0408-1744104085.tar",
+      "sha256": "ef25c2803d1b0e727748c3aeeb5c4aa950066fedfa18cb171ca3f4f0180cf5bd",
+      "session_sha256": "995a08499137b5f7db15bd9207d9dc44a52912142a412240efab3d59339b0a74",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/ef25c2803d1b0e72/_openwrt-a1300-4.5.22-0408-1744104085.tar.extracted/sysupgrade-glinet_gl-a1300/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-SFT1200 Opal",
+      "version": "4.8.3",
+      "filename": "sft1200-4.8.3_release4-1006-0609-1780999327.tar",
+      "sha256": "f84630b6b95f7558c0708672f739892b54acc3d78a4c92dae866faada9ff5e1f",
+      "session_sha256": "6b5aeb3cd9c4644ca7546848fc5e836fccc2d5749ba3cd6177db0ab0710b0efb",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/f84630b6b95f7558/_sft1200-4.8.3_release4-1006-0609-1780999327.tar.extracted/sysupgrade-glinet_gl-sft1200/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    },
+    {
+      "product": "GL.iNet GL-AXT1800 Slate AX",
+      "version": "4.8.3",
+      "filename": "axt1800-4.8.3_release1-815-0413-1776065915.tar",
+      "sha256": "fdb284e1ac9886b7183b7a3bf1b2604603f757f41709d21949c0c4983e16ec5a",
+      "session_sha256": "4eb9bdd8b00521de306f5247bc35b03b99557712db290bd0d192da91a04fad08",
+      "architecture": "script",
+      "eol": false,
+      "vulnerable_global_lockout_logic": true,
+      "markers": {
+        "global_login_wait": true,
+        "global_login_fail": true,
+        "configured_max_failures": true,
+        "configured_wait": true,
+        "increments_unknown_user": true,
+        "sets_global_timer": true,
+        "enforces_global_timer": true
+      },
+      "session_path": "known_firmware/extracted/fdb284e1ac9886b7/_axt1800-4.8.3_release1-815-0413-1776065915.tar.extracted/sysupgrade-glinet_axt1800/_root.extracted/squashfs-root/usr/sbin/gl-ngx-session",
+      "duplicate_extraction_instances": 2
+    }
+  ],
+  "families": [
+    {
+      "session_sha256": "2457cfae05615780cb46fd457e65a43dabbe6fdb750a816336c2d98a685ce85d",
+      "members": [
+        {
+          "product": "GL.iNet GL-MT3600BE Beryl 7",
+          "version": "4.9.0",
+          "firmware_sha256": "4c32509876176a04ca32ed7288567be1d31603a7473f592552380c586b66df65"
+        },
+        {
+          "product": "GL.iNet GL-MT6000 Flint 2",
+          "version": "4.9.0",
+          "firmware_sha256": "6e8e6610f944996bb0c119fe95b5610c7091f14c3234739f68d3a5e73c0c60ce"
+        },
+        {
+          "product": "GL.iNet GL-MT5000 Brume 3",
+          "version": "4.9.0",
+          "firmware_sha256": "e69e440c2715122793e2a4229d1acab3fbcfd193532e9167cd2f4d57bfbfe2d9"
+        },
+        {
+          "product": "GL.iNet GL-BE9300 Flint 3",
+          "version": "4.9.0",
+          "firmware_sha256": "edf306a312c85c449a22d5badd791cc2bb5e530b2ad47ce2b710562554b9dfb8"
+        }
+      ]
+    },
+    {
+      "session_sha256": "4df035e835092fcbb652fa68c6e835f7cb9e6a1373b8d29585f738b5d3f643e4",
+      "members": [
+        {
+          "product": "GL.iNet GL-MT2500/GL-MT2500A Brume 2",
+          "version": "4.7.4",
+          "firmware_sha256": "3de78f88a2cc204c089cd1c262346786796d43a223564b1f792f3e8515cc8904"
+        }
+      ]
+    },
+    {
+      "session_sha256": "4eb9bdd8b00521de306f5247bc35b03b99557712db290bd0d192da91a04fad08",
+      "members": [
+        {
+          "product": "GL.iNet GL-MT5000 Brume 3",
+          "version": "4.8.6",
+          "firmware_sha256": "001503668d83a939627f6bd92614fff417251f9f517e011d14abe2fb0a307417"
+        },
+        {
+          "product": "GL.iNet GL-X3000 Spitz AX",
+          "version": "4.8.3",
+          "firmware_sha256": "877500360e81c65c8cb422ab7bcd9f3af14087f454da60434e93568c2e6f0e89"
+        },
+        {
+          "product": "GL.iNet GL-AX1800 Flint",
+          "version": "4.8.3",
+          "firmware_sha256": "a1aae18b9a7da1fcf926500047cdab36021efb618bedf07b33a84adb1f75e01a"
+        },
+        {
+          "product": "GL.iNet GL-XE3000 Puli AX",
+          "version": "4.8.3",
+          "firmware_sha256": "ba6f76f32686e86c30eed4dd7458ed92f7545a2079c1ae7365447cc1ff56f876"
+        },
+        {
+          "product": "GL.iNet GL-AXT1800 Slate AX",
+          "version": "4.8.3",
+          "firmware_sha256": "fdb284e1ac9886b7183b7a3bf1b2604603f757f41709d21949c0c4983e16ec5a"
+        }
+      ]
+    },
+    {
+      "session_sha256": "6b5aeb3cd9c4644ca7546848fc5e836fccc2d5749ba3cd6177db0ab0710b0efb",
+      "members": [
+        {
+          "product": "GL.iNet GL-BE10000 Slate 7 Pro",
+          "version": "4.8.4",
+          "firmware_sha256": "7d54205721c43f57ccd22c03cf831886bca8ea5ebcb46675631bb48160f29020"
+        },
+        {
+          "product": "GL.iNet GL-SFT1200 Opal",
+          "version": "4.8.3",
+          "firmware_sha256": "f84630b6b95f7558c0708672f739892b54acc3d78a4c92dae866faada9ff5e1f"
+        }
+      ]
+    },
+    {
+      "session_sha256": "995a08499137b5f7db15bd9207d9dc44a52912142a412240efab3d59339b0a74",
+      "members": [
+        {
+          "product": "GL.iNet GL-X300B Collie",
+          "version": "4.5.22",
+          "firmware_sha256": "33b6579552a0ebfcaf343c16977d4b97f864c9120ed5655aef7fbc2c7eb6fe9b"
+        },
+        {
+          "product": "GL.iNet GL-A1300 Slate Plus",
+          "version": "4.5.22",
+          "firmware_sha256": "ef25c2803d1b0e727748c3aeeb5c4aa950066fedfa18cb171ca3f4f0180cf5bd"
+        }
+      ]
+    }
+  ]
+}

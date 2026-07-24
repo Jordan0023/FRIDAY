@@ -1,0 +1,14 @@
+{"binary":"protect_srv","function":"_ftext","address":"00400e90","route":"/tmp/PTCSRV_DEBUG","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"_ftext","address":"00400e90","route":"/var/run/protect_srv.pid","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"_ftext","address":"00400e90","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"_ftext","address":"00400e90","route":"/tmp/protect_srv_wan_ssh.log","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"_ftext","address":"00400e90","route":"/tmp/protect_srv_lan_telnet.log","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"_ftext","address":"00400e90","route":"/tmp/protect_srv_lan_ssh.log","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"FUN_00401344","address":"00401344","route":"/tmp/PTCSRV_DEBUG","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"FUN_004016ec","address":"004016ec","route":"/tmp/PTCSRV_DEBUG","sink":"system","sources":"","auth_markers":"login","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"FUN_00402290","address":"00402290","route":"/tmp/PTCSRV_DEBUG","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"FUN_00402370","address":"00402370","route":"/tmp/PTCSRV_DEBUG","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"FUN_004025dc","address":"004025dc","route":"/tmp/PTCSRV_DEBUG","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"FUN_004026bc","address":"004026bc","route":"/tmp/PTCSRV_DEBUG","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"FUN_00402a98","address":"00402a98","route":"/tmp/PTCSRV_DEBUG","sink":"system","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"protect_srv","function":"FUN_00402a98","address":"00402a98","route":"/tmp/protect_srv.log","sink":"system","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

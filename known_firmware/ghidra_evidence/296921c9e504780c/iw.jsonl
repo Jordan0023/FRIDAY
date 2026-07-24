@@ -1,0 +1,10 @@
+{"binary":"iw","function":"phy_lookup","address":"00011da8","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"netns_get_fd","address":"00016e2c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"mac_addr_n2a","address":"00019af4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"iftype_name","address":"00019df8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"command_name","address":"00019e48","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"handle_scan","address":"0001f370","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"wowlan_parse_tcp_file","address":"00022e74","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"wowlan_parse_tcp_file","address":"00022e74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"handle_coalesce_enable","address":"00023eec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"handle_vendor","address":"00024758","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

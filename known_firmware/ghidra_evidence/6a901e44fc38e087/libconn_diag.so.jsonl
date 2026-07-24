@@ -1,0 +1,12 @@
+{"binary":"libconn_diag.so","function":"get_mem_info","address":"000153e0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"get_txrxbyte_avg","address":"000166c0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"remove_oldest_db","address":"000181e0","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"db_size_check","address":"00018634","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"db_size_check","address":"00018634","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"update_port_status_table","address":"0001ad0c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"debug_log_downsizing","address":"0001e720","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"debug_log_downsizing","address":"0001e720","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"alloc_time_string","address":"0001e88c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"alloc_time_string","address":"0001e88c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"alloc_utctime_string","address":"0001e99c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libconn_diag.so","function":"alloc_utctime_string","address":"0001e99c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

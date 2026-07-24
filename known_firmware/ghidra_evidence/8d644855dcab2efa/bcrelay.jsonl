@@ -1,0 +1,5 @@
+{"binary":"bcrelay","function":"_ftext","address":"00400c30","route":"/dev/null","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcrelay","function":"_ftext","address":"00400c30","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcrelay","function":"FUN_004012cc","address":"004012cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcrelay","function":"FUN_004018ac","address":"004018ac","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcrelay","function":"FUN_004018ac","address":"004018ac","route":"/%d/%d)","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

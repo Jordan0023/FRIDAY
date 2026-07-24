@@ -1,0 +1,102 @@
+{
+  "target": "127.0.0.1:9999/udp",
+  "case": "command-length-matrix",
+  "results": [
+    {
+      "name": "declared-command-length-0",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.72
+    },
+    {
+      "name": "declared-command-length-1",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "declared-command-length-255",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "declared-command-length-256",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.78
+    },
+    {
+      "name": "declared-command-length-257",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.78
+    },
+    {
+      "name": "declared-command-length-419",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.81
+    },
+    {
+      "name": "declared-command-length-420",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.81
+    },
+    {
+      "name": "declared-command-length-421",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.81
+    },
+    {
+      "name": "declared-command-length-463",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "declared-command-length-464",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "declared-command-length-465",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.79
+    },
+    {
+      "name": "declared-command-length-65535",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.8
+    }
+  ]
+}

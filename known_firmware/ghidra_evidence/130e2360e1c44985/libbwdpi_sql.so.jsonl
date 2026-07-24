@@ -1,0 +1,11 @@
+{"binary":"libbwdpi_sql.so","function":"FUN_000115d0","address":"000115d0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_maclist_db","address":"00011acc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_appStat","address":"00011fa0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_appStat","address":"00011fa0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"sqlite_Stat_hook","address":"000129a0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_HistoryStat","address":"00013418","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_HistoryStat","address":"00013418","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_info","address":"0001405c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_ips","address":"000148a8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_nonips","address":"00014f90","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_cgi_mon_del_db","address":"00015aac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

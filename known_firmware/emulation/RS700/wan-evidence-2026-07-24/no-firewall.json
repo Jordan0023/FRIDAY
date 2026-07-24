@@ -1,0 +1,35 @@
+{
+  "ssdp_wan_multicast": {
+    "elapsed_ms": 2002,
+    "error": "TimeoutError: timed out",
+    "port": 1900,
+    "response": false,
+    "source": "198.51.100.2",
+    "target": "239.255.255.250"
+  },
+  "ssdp_wan_unicast": {
+    "elapsed_ms": 4,
+    "peer": "198.51.100.1:1900",
+    "port": 1900,
+    "response": true,
+    "source": "198.51.100.2",
+    "status_line": "HTTP/1.1 200 OK",
+    "target": "198.51.100.1"
+  },
+  "tcp_lan_address_via_wan": {
+    "connected": true,
+    "elapsed_ms": 1007,
+    "port": 56688,
+    "source": "198.51.100.2",
+    "status_line": "HTTP/1.1 200 OK",
+    "target": "192.168.1.1"
+  },
+  "tcp_wan_address": {
+    "connected": false,
+    "elapsed_ms": 0,
+    "error": "ConnectionRefusedError: [Errno 111] Connection refused",
+    "port": 56688,
+    "source": "198.51.100.2",
+    "target": "198.51.100.1"
+  }
+}

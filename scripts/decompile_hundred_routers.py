@@ -107,7 +107,10 @@ def write_summary(output: Path, routers: list[dict], results: list[dict]) -> Non
                "binary_instances_discovered": sum(len(x["elf_files"]) for x in routers),
                "unique_binaries_discovered": unique,
                "unsupported_elf_like_instances": sum(len(x.get("unsupported_elf_like_files", [])) for x in routers),
-               "counts": {**counts, "security_analyzed": sum(x.get("status") in {"complete", "partial"} and x.get("evidence") for x in results),
+               "counts": {**counts, "security_analyzed": sum(
+                   x.get("status") in {"complete", "partial"} and bool(x.get("evidence"))
+                   for x in results
+               ),
                           "unresolved_functions": sum(int(x.get("functions_failed", 0) or 0) for x in results),
                           "candidate_functions": sum(x.get("candidate_functions", 0) for x in results)},
                "processed": len(results) == unique and not counts["failed"] and not counts["timeout"],

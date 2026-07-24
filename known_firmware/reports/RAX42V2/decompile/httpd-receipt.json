@@ -1,0 +1,14 @@
+{
+  "program": "httpd",
+  "security_schema": 4,
+  "functions_discovered": 574,
+  "functions_attempted": 574,
+  "functions_succeeded": 573,
+  "functions_failed": 1,
+  "functions_timed_out": 0,
+  "retry_attempts": 2,
+  "coverage_status": "partial",
+  "candidate_functions": 16,
+  "evidence_records": 16,
+  "evidence_path": "/home/jordan/FRIDAY/known_firmware/reports/RAX42V2/decompile/httpd-evidence.jsonl"
+}

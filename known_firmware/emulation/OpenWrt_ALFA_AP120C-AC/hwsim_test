@@ -1,0 +1,84 @@
+#!/bin/sh
+
+echo "FRIDAY_AP120C_HWSIM_TEST_BEGIN=1"
+iw phy phy1 interface add mon0 type monitor || exit 1
+ifconfig mon0 up
+cat >/tmp/friday-hostapd.conf <<'EOF'
+interface=wlan0
+driver=nl80211
+ssid=FRIDAY-AP120C-TEST
+hw_mode=g
+channel=1
+auth_algs=1
+wpa=0
+logger_stdout=-1
+logger_stdout_level=0
+EOF
+cat >/tmp/friday-station.conf <<'EOF'
+ctrl_interface=/var/run/wpa_supplicant-friday
+network={
+	ssid="FRIDAY-AP120C-TEST"
+	key_mgmt=NONE
+	scan_ssid=1
+}
+EOF
+/usr/sbin/hostapd -dd -P /tmp/friday-hostapd.pid \
+	/tmp/friday-hostapd.conf >/tmp/friday-hostapd.log 2>&1 &
+HOSTAPD_PID=$!
+sleep 3
+/usr/sbin/wpa_supplicant -B -Dnl80211 -iwlan1 \
+	-c/tmp/friday-station.conf >/tmp/friday-station.log 2>&1
+sleep 5
+if iw dev wlan1 link | grep -q '^Connected to '; then
+	echo "PASS hwsim-valid-association-baseline"
+else
+	echo "FAIL hwsim-valid-association-baseline"
+	cat /tmp/friday-hostapd.log
+	cat /tmp/friday-station.log
+	exit 1
+fi
+
+FAILURE=0
+for CASE in 0 1 2 3 4 5 6 7 8 9; do
+	if ! /usr/bin/ap120c-hwsim-injector "$CASE"; then
+		echo "FAIL hwsim-case-$CASE-delivery"
+		FAILURE=1
+		continue
+	fi
+	sleep 1
+	if ! kill -0 "$HOSTAPD_PID" 2>/dev/null; then
+		echo "FAIL hwsim-case-$CASE-hostapd-exited"
+		FAILURE=1
+		break
+	fi
+	killall wpa_supplicant 2>/dev/null
+	sleep 1
+	ifconfig wlan1 up
+	/usr/sbin/wpa_supplicant -B -Dnl80211 -iwlan1 \
+		-c/tmp/friday-station.conf >/tmp/friday-control.log 2>&1
+	WAIT=0
+	while test "$WAIT" -lt 15; do
+		iw dev wlan1 link | grep -q '^Connected to ' && break
+		sleep 1
+		WAIT=$((WAIT + 1))
+	done
+	if iw dev wlan1 link | grep -q '^Connected to '; then
+		echo "PASS hwsim-case-$CASE-alive-and-associated"
+	else
+		echo "FAIL hwsim-case-$CASE-association-control"
+		FAILURE=1
+	fi
+done
+for BURST in $(seq 1 128); do
+	/usr/bin/ap120c-hwsim-injector "$((BURST % 10))" || FAILURE=1
+done
+sleep 2
+if kill -0 "$HOSTAPD_PID" 2>/dev/null; then
+	echo "PASS hwsim-bounded-burst-hostapd-alive"
+else
+	echo "FAIL hwsim-bounded-burst-hostapd-exited"
+	FAILURE=1
+fi
+echo "FRIDAY_AP120C_HWSIM_TEST_PASS=$((1 - FAILURE))"
+echo "FRIDAY_AP120C_HWSIM_TEST_DONE=1"
+exit "$FAILURE"

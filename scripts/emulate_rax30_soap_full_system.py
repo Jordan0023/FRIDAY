@@ -35,6 +35,9 @@ SERIAL = LAB / "serial.log"
 QEMU_LOG = LAB / "qemu.log"
 PIDFILE = LAB / "qemu.pid"
 HOST_PORT = 25_130
+HTTP_HOST_PORT: int | None = None
+IPP_HOST_PORT: int | None = None
+DNS_HOST_PORT: int | None = None
 SECURITY_PROBE = ROOT / "scripts/probe_rax30_soap_security.py"
 MATRIX_PROBE = ROOT / "scripts/audit_rax30_soap_matrix.py"
 DOS_STRESS = ROOT / "scripts/stress_rax30_soap_dos.py"
@@ -140,12 +143,22 @@ def start() -> None:
     stop()
     SERIAL.unlink(missing_ok=True)
     QEMU_LOG.unlink(missing_ok=True)
+    netdev = f"user,id=lan,restrict=on,hostfwd=tcp:127.0.0.1:{HOST_PORT}-:5000"
+    if HTTP_HOST_PORT is not None:
+        netdev += f",hostfwd=tcp:127.0.0.1:{HTTP_HOST_PORT}-:80"
+    if IPP_HOST_PORT is not None:
+        netdev += f",hostfwd=tcp:127.0.0.1:{IPP_HOST_PORT}-:631"
+    if DNS_HOST_PORT is not None:
+        netdev += (
+            f",hostfwd=udp:127.0.0.1:{DNS_HOST_PORT}-:53"
+            f",hostfwd=tcp:127.0.0.1:{DNS_HOST_PORT}-:53"
+        )
     command = [
         str(QEMU), "-M", "virt", "-cpu", "cortex-a15", "-m", "1024M",
         "-kernel", str(KERNEL), "-initrd", str(INITRAMFS),
         "-append", "console=ttyAMA0 rdinit=/init panic=-1",
         "-nographic", "-monitor", "none", "-serial", f"file:{SERIAL}",
-        "-netdev", f"user,id=lan,restrict=on,hostfwd=tcp:127.0.0.1:{HOST_PORT}-:5000",
+        "-netdev", netdev,
         "-device", "virtio-net-device,netdev=lan", "-no-reboot",
     ]
     with QEMU_LOG.open("wb") as qemu_log:

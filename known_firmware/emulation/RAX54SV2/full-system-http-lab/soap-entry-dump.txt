@@ -1,0 +1,537 @@
+=== ResetAdminPassword strings=[00181a6f] ===
+pointer=001d7b68 candidate=001d7b68 first=00181a6f ResetAdminPassword second=000a2770 null handler=0000007e flags=0017c367
+pointer=001d7b68 candidate=001d7b64 first=0017c367 DeviceConfig second=00181a6f ResetAdminPassword handler=000a2770 flags=0000007e
+FUNCTION FUN_000a2770 @ 000a2770
+
+undefined4 FUN_000a2770(undefined4 param_1)
+
+{
+  int iVar1;
+  int *piVar2;
+  undefined4 uStack_4001c;
+  undefined1 auStack_40018 [262148];
+  
+  piVar2 = *(int **)(DAT_000a27ac + 0xa2780 + DAT_000a27b0);
+  if (*piVar2 != *piVar2) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  piVar2 = *(int **)(DAT_000a2764 + 0xa26e8 + DAT_000a2768);
+  iVar1 = *piVar2;
+  uStack_4001c = 0;
+  memset(auStack_40018,0,DAT_000a276c);
+  FUN_0006c448(param_1,&uStack_4001c,0,0x40000);
+  if (iVar1 != *piVar2) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return 0;
+}
+
+
+=== GetSecurityQuestions strings=[00181a5a] ===
+pointer=001d7b58 candidate=001d7b58 first=00181a5a GetSecurityQuestions second=000a04dc null handler=0000007e flags=0017c367
+pointer=001d7b58 candidate=001d7b54 first=0017c367 DeviceConfig second=00181a5a GetSecurityQuestions handler=000a04dc flags=0000007e
+FUNCTION FUN_000a04dc @ 000a04dc
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_000a04dc(undefined4 param_1)
+
+{
+  undefined4 uVar1;
+  int iVar2;
+  int *piVar3;
+  int iVar4;
+  int iVar5;
+  undefined2 auStack_4002c [2];
+  undefined2 auStack_40028 [2];
+  undefined4 uStack_40024;
+  undefined1 auStack_40020 [262144];
+  
+  piVar3 = *(int **)(_UNK_000a064c + 0xa04ec + _UNK_000a0650);
+  iVar2 = *piVar3;
+  iVar5 = _UNK_000a0654 + 0xa0518;
+  uStack_40024 = 0;
+  memset(auStack_40020,0,_UNK_000a0658);
+  auStack_4002c[0] = 0;
+  auStack_40028[0] = 0;
+  uVar1 = acosNvramConfig_get(iVar5);
+  strlcpy(auStack_4002c,uVar1,2);
+  uVar1 = acosNvramConfig_get(_UNK_000a065c + 0xa0564);
+  strlcpy(auStack_40028,uVar1,2);
+  if ((char)auStack_4002c[0] == '\0') {
+    iVar4 = _UNK_000a0660 + 0xa0594;
+    strlcpy(auStack_4002c,iVar4,2);
+    acosNvramConfig_set(iVar5,iVar4);
+  }
+  if ((char)auStack_40028[0] == '\0') {
+    iVar5 = _UNK_000a0664 + 0xa05c4;
+    strlcpy(auStack_40028,iVar5,2);
+    acosNvramConfig_set(_UNK_000a0668 + 0xa05d8,iVar5);
+  }
+  FUN_000685f4(&uStack_40024,0x40000,_UNK_000a066c + 0xa05f0,auStack_4002c);
+  FUN_000685f4(&uStack_40024,0x40000,_UNK_000a0670 + 0xa0608,auStack_40028);
+  FUN_0006c448(param_1,&uStack_40024,0,0x40000);
+  if (iVar2 != *piVar3) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(0);
+  }
+  return;
+}
+
+
+=== SetConfiguration strings=[0018174a, 00181aec, 001b9ae4, 001c0380] ===
+pointer=001d7908 candidate=001d7908 first=0018174a SetConfigurationTimestamp second=0009c37c null handler=0000007c flags=0018169f
+pointer=001d7908 candidate=001d7904 first=0018169f DeviceInfo second=0018174a SetConfigurationTimestamp handler=0009c37c flags=0000007c
+FUNCTION FUN_0009c37c @ 0009c37c
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0009c37c(int param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined4 uVar3;
+  int *piVar4;
+  undefined4 uStack_4003c;
+  undefined1 auStack_40038 [28];
+  undefined4 uStack_4001c;
+  undefined1 auStack_40018 [262144];
+  
+  piVar4 = *(int **)(_UNK_0009c454 + 0x9c38c + _UNK_0009c458);
+  iVar2 = *piVar4;
+  uStack_4001c = 0;
+  memset(auStack_40018,0,_UNK_0009c45c);
+  uStack_4003c = 0;
+  memset(auStack_40038,0,0x1c);
+  iVar1 = FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_0009c460 + 0x9c3f8,&uStack_4003c,0x1f);
+  if (iVar1 == 0) {
+    acosNvramConfig_set(_UNK_0009c464 + 0x9c414,&uStack_4003c);
+    uVar3 = 0;
+  }
+  else {
+    uVar3 = 0x192;
+  }
+  FUN_0006c448(param_1,&uStack_4001c,uVar3,0x40000);
+  if (iVar2 == *piVar4) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(uVar3);
+}
+
+
+pointer=001d7bf8 candidate=001d7bf8 first=00181aec SetConfiguration second=000a0e54 null handler=0000007c flags=0017c367
+pointer=001d7bf8 candidate=001d7bf4 first=0017c367 DeviceConfig second=00181aec SetConfiguration handler=000a0e54 flags=0000007c
+FUNCTION FUN_000a0e54 @ 000a0e54
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_000a0e54(int param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined4 uVar3;
+  int *piVar4;
+  int iVar5;
+  
+  iVar5 = _UNK_000a0f30 + 0xa0e74;
+  piVar4 = *(int **)(iVar5 + _UNK_000a0f34);
+  iVar2 = *piVar4;
+  memset(&stack0xffbbffdc,0,_UNK_000a0f38);
+  memset(&stack0xffbfffdc,0,_UNK_000a0f3c);
+  iVar1 = FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_000a0f40 + 0xa0ed4,&stack0xffbfffd8,
+                       0x400000);
+  if (iVar1 == 0) {
+    **(undefined4 **)(iVar5 + _UNK_000a0f44) = 1;
+    uVar3 = 0;
+  }
+  else {
+    uVar3 = 0x192;
+  }
+  FUN_0006c448(param_1,&stack0xffbbffd8,uVar3,0x40000);
+  if (iVar2 == *piVar4) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(uVar3);
+}
+
+
+=== SetNTP strings=[00181a99] ===
+pointer=001d7b88 candidate=001d7b88 first=00181a99 SetNTP second=000a0750 null handler=00000018 flags=0017c367
+pointer=001d7b88 candidate=001d7b84 first=0017c367 DeviceConfig second=00181a99 SetNTP handler=000a0750 flags=00000018
+FUNCTION FUN_000a0750 @ 000a0750
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_000a0750(int param_1)
+
+{
+  int iVar1;
+  int iVar2;
+  undefined4 uVar3;
+  int *piVar4;
+  char acStack_4005c [32];
+  undefined4 uStack_4003c;
+  undefined1 auStack_40038 [28];
+  undefined4 uStack_4001c;
+  undefined1 auStack_40018 [262148];
+  
+  piVar4 = *(int **)(_UNK_000a08d8 + 0xa0760 + _UNK_000a08dc);
+  iVar2 = *piVar4;
+  uStack_4001c = 0;
+  memset(auStack_40018,0,_UNK_000a08e0);
+  acStack_4005c[0] = '\0';
+  acStack_4005c[1] = '\0';
+  acStack_4005c[2] = '\0';
+  acStack_4005c[3] = '\0';
+  memset(acStack_4005c + 4,0,0x1c);
+  uStack_4003c = 0;
+  memset(auStack_40038,0,0x1c);
+  iVar1 = FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_000a08e4 + 0xa07e0,acStack_4005c,0x1f);
+  if ((iVar1 == 0) &&
+     ((iVar1 = strcmp(acStack_4005c,(char *)(_UNK_000a08e8 + 0xa0800)), iVar1 == 0 ||
+      (iVar1 = FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_000a0900 + 0xa0868,&uStack_4003c,
+                            0x1f), iVar1 == 0)))) {
+    iVar1 = strcmp(acStack_4005c,(char *)(_UNK_000a08ec + 0xa0818));
+    if (iVar1 == 0) {
+      acosNvramConfig_set(_UNK_000a0908 + 0xa0888,_UNK_000a0904 + 0xa0884);
+      acosNvramConfig_set(_UNK_000a090c + 0xa0898,&uStack_4003c);
+      uVar3 = 0;
+    }
+    else {
+      uVar3 = 0;
+      acosNvramConfig_set(_UNK_000a08f4 + 0xa0838,_UNK_000a08f0 + 0xa0834);
+      acosNvramConfig_set(_UNK_000a08fc + 0xa084c,_UNK_000a08f8 + 0xa0848);
+    }
+  }
+  else {
+    uVar3 = 0x1f5;
+  }
+  FUN_0006c448(param_1,&uStack_4001c,uVar3,0x40000);
+  if (iVar2 == *piVar4) {
+    return;
+  }
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail(uVar3);
+}
+
+
+=== CheckAndDownloadNewFirmware strings=[00181930, 0018194c, 00182646, 00182bc3, 00182ce7] ===
+pointer=001d7a68 candidate=001d7a68 first=00181930 CheckAndDownloadNewFirmware second=0009e9ac null handler=0000007c flags=0017c367
+pointer=001d7a68 candidate=001d7a64 first=0017c367 DeviceConfig second=00181930 CheckAndDownloadNewFirmware handler=0009e9ac flags=0000007c
+FUNCTION FUN_0009e9ac @ 0009e9ac
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+undefined4 FUN_0009e9ac(undefined4 param_1)
+
+{
+  int iVar1;
+  char *pcVar2;
+  char *__src;
+  int *piVar3;
+  int iStack_40480;
+  char acStack_4047c [28];
+  char acStack_40460 [28];
+  char acStack_40444 [28];
+  char acStack_40428 [1028];
+  undefined4 uStack_40024;
+  undefined1 auStack_40020 [262148];
+  
+  piVar3 = *(int **)(_UNK_0009eb4c + 0x9e9bc + _UNK_0009eb50);
+  uStack_40024 = 0;
+  *(int *)((int)&iStack_40480 + _UNK_0009eb54) = *piVar3;
+  memset(auStack_40020,0,_UNK_0009eb58);
+  acStack_4047c[0] = '\0';
+  acStack_4047c[1] = '\0';
+  acStack_4047c[2] = '\0';
+  acStack_4047c[3] = '\0';
+  memset(acStack_4047c + 4,0,0x15);
+  acStack_40460[0] = '\0';
+  acStack_40460[1] = '\0';
+  acStack_40460[2] = '\0';
+  acStack_40460[3] = '\0';
+  memset(acStack_40460 + 4,0,0x15);
+  iVar1 = _UNK_0009eb5c;
+  acStack_40428[0] = '\0';
+  acStack_40428[1] = '\0';
+  acStack_40428[2] = '\0';
+  acStack_40428[3] = '\0';
+  memset(acStack_40428 + 4,0,0x3fd);
+  __src = (char *)(iVar1 + 0x9ea60);
+  acStack_40444[0] = '\0';
+  acStack_40444[1] = '\0';
+  acStack_40444[2] = '\0';
+  acStack_40444[3] = '\0';
+  memset(acStack_40444 + 4,0,0x15);
+  pcVar2 = strcpy(acStack_4047c,__src);
+  FUN_000685f4(&uStack_40024,0x40000,_UNK_0009eb60 + 0x9ea84,pcVar2);
+  pcVar2 = strcpy(acStack_40460,__src);
+  FUN_000685f4(&uStack_40024,0x40000,_UNK_0009eb64 + 0x9eaac,pcVar2);
+  pcVar2 = strcpy(acStack_40428,__src);
+  FUN_000685f4(&uStack_40024,0x40000,_UNK_0009eb68 + 0x9ead4,pcVar2);
+  pcVar2 = strcpy(acStack_40444,(char *)(_UNK_0009eb6c + 0x9eaf0));
+  FUN_000685f4(&uStack_40024,0x40000,_UNK_0009eb70 + 0x9eb00,pcVar2);
+  FUN_0006c448(param_1,&uStack_40024,0,0x40000);
+  if (*(int *)((int)&iStack_40480 + _UNK_0009eb54) != *piVar3) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return 0;
+}
+
+
+pointer=001d7a88 candidate=001d7a88 first=0018194c CheckAndDownloadNewFirmwareAll second=0009eef8 null handler=0000007c flags=0017c367
+pointer=001d7a88 candidate=001d7a84 first=0017c367 DeviceConfig second=0018194c CheckAndDownloadNewFirmwareAll handler=0009eef8 flags=0000007c
+FUNCTION FUN_0009eef8 @ 0009eef8
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0009eef8(undefined4 param_1)
+
+{
+  bool bVar1;
+  undefined4 uVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  int iVar6;
+  undefined4 *puVar7;
+  int *piVar8;
+  int iVar9;
+  char *__s1;
+  int *piVar10;
+  int iVar11;
+  int aiStack_40a40 [3];
+  int *piStack_40a34;
+  undefined4 uStack_40a30;
+  int *piStack_40a2c;
+  undefined4 uStack_40a24;
+  undefined1 auStack_40a20 [508];
+  undefined4 uStack_40824;
+  undefined1 auStack_40820 [2044];
+  char acStack_40024 [4];
+  char acStack_40020 [262144];
+  
+  iVar9 = _UNK_0009f244 + 0x9ef18;
+  piVar10 = *(int **)(iVar9 + _UNK_0009f248);
+  uStack_40a30 = param_1;
+  *(int *)((int)aiStack_40a40 + _UNK_0009f24c) = *piVar10;
+  memset(acStack_40024 + 4,0,_UNK_0009f250);
+  uStack_40a24 = 0;
+  memset(auStack_40a20,0,0x1fc);
+  uVar2 = get_sat_count();
+  piVar8 = *(int **)(iVar9 + _UNK_0009f254);
+  piStack_40a2c = piVar10;
+  if (*piVar8 == 0) {
+    iVar3 = sys_uptime();
+    *piVar8 = iVar3;
+  }
+  iVar4 = sys_uptime();
+  iVar11 = *piVar8;
+  piStack_40a34 = *(int **)(iVar9 + _UNK_0009f258);
+  iVar3 = _UNK_0009f25c + 0x9ef9c;
+  *piStack_40a34 = iVar4;
+  iVar5 = acosNvramConfig_match(_UNK_0009f260 + 0x9efb4,iVar3);
+  iVar6 = acosNvramConfig_match(_UNK_0009f264 + 0x9efc8,iVar3);
+  iVar3 = _UNK_0009f26c;
+  if (iVar6 == 0) {
+    system((char *)(_UNK_0009f268 + 0x9efe0));
+    iVar6 = acosNvramConfig_match(iVar3 + 0x9efe8,_UNK_0009f270 + 0x9eff4);
+    if ((iVar6 != 0) ||
+       (iVar3 = acosNvramConfig_match(iVar3 + 0x9efe8,_UNK_0009f278 + 0x9f01c), iVar3 != 0)) {
+      puts((char *)(_UNK_0009f274 + 0x9f008));
+    }
+  }
+  iVar3 = _UNK_0009f280;
+  aiStack_40a40[0] = acosNvramConfig_get(_UNK_0009f27c + 0x9f034);
+  iVar3 = iVar3 + 0x9f0e9;
+  printf((char *)(_UNK_0009f284 + 0x9f060),iVar3,0xcb4,uVar2);
+  if (iVar5 == 0) {
+    if (0xf0 < (uint)(iVar4 - iVar11)) {
+      puVar7 = *(undefined4 **)(iVar9 + _UNK_0009f2c8);
+      *piVar8 = 0;
+      *puVar7 = 0;
+      *piStack_40a34 = 0;
+    }
+  }
+  else {
+    bVar1 = false;
+    uStack_40824 = 0;
+    memset(auStack_40820,0,0x7fc);
+    if ((uint)(iVar4 - iVar11) < 0xf1) {
+      iVar4 = func_0x00087468(&uStack_40a24);
+      if (iVar4 == 0) {
+        printf((char *)(_UNK_0009f28c + 0x9f0d0),iVar3,0xce9,&uStack_40a24);
+        bVar1 = false;
+      }
+      else {
+        printf((char *)(_UNK_0009f290 + 0x9f0ec),iVar3,0xcf0);
+      }
+    }
+    else {
+      bVar1 = true;
+      printf((char *)(_UNK_0009f288 + 0x9f0a0),iVar3,0xccc);
+    }
+    __s1 = *(char **)(iVar9 + _UNK_0009f294);
+    iVar9 = strcmp(__s1,(char *)(_UNK_0009f298 + 0x9f100));
+    if (bVar1 || iVar9 != 0) {
+      strlcpy(&uStack_40824,_UNK_0009f2a4 + 0x9f144,0x800);
+      iVar3 = _UNK_0009f2ac + 0x9f168;
+      snprintf(acStack_40024,0x40000,(char *)(_UNK_0009f2a8 + 0x9f15c),&uStack_40824);
+      iVar9 = acosNvramConfig_match(_UNK_0009f2b0 + 0x9f178,iVar3);
+      if (iVar9 != 0) {
+        iVar4 = _UNK_0009f2b4 + 0x9f190;
+        iVar9 = acosNvramConfig_match(iVar4,iVar3);
+        if (iVar9 != 0) {
+          acosNvramConfig_set(_UNK_0009f2b8 + 0x9f1ac,iVar3);
+          acosNvramConfig_set(_UNK_0009f2c0 + 0x9f1c0,_UNK_0009f2bc + 0x9f1bc);
+          acosNvramConfig_set(iVar4,_UNK_0009f2c4 + 0x9f1d0);
+          acosNvramConfig_save();
+        }
+      }
+      uVar2 = 0;
+      goto LAB_0009f200;
+    }
+    printf((char *)(_UNK_0009f2a0 + 0x9f128),_UNK_0009f29c + 0x9f1cd,0xcf7);
+    __s1[0] = '\0';
+    __s1[1] = '\0';
+    __s1[2] = '\0';
+    __s1[3] = '\0';
+  }
+  uVar2 = 2;
+LAB_0009f200:
+  FUN_0006c448(uStack_40a30,acStack_40024,uVar2,0x40000);
+  if (*(int *)((int)aiStack_40a40 + _UNK_0009f24c) != *piStack_40a2c) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(uVar2);
+  }
+  return;
+}
+
+
+=== SetWLANWPAPSKByPassphrase strings=[001804f5, 00181dcd, 001c6b18, 001c6c1c, 001c6d20, 001c6e24, 001c6f28, 001c702c] ===
+pointer=001d7eb8 candidate=001d7eb8 first=00181dcd SetWLANWPAPSKByPassphrase second=0008e408 null handler=0000007c flags=00181d32
+pointer=001d7eb8 candidate=001d7eb4 first=00181d32 WLANConfiguration second=00181dcd SetWLANWPAPSKByPassphrase handler=0008e408 flags=0000007c
+FUNCTION FUN_0008e408 @ 0008e408
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0008e408(int param_1)
+
+{
+  int iVar1;
+  size_t sVar2;
+  uint uVar3;
+  int iVar4;
+  char *pcVar5;
+  int *piVar6;
+  int iStack_40628;
+  undefined4 *puStack_40624;
+  undefined4 *puStack_40620;
+  int *piStack_4061c;
+  undefined4 uStack_40614;
+  undefined1 auStack_40610 [32];
+  undefined4 uStack_405f0;
+  undefined1 auStack_405ec [32];
+  char acStack_405cc [36];
+  char acStack_405a8 [128];
+  char acStack_40528 [260];
+  undefined4 uStack_40424;
+  undefined1 auStack_40420 [1020];
+  undefined4 uStack_40024;
+  undefined1 auStack_40020 [262144];
+  
+  piVar6 = *(int **)(_UNK_0008e794 + 0x8e418 + _UNK_0008e798);
+  *(int *)((int)&iStack_40628 + _UNK_0008e79c) = *piVar6;
+  uStack_40024 = 0;
+  memset(auStack_40020,0,_UNK_0008e7a0);
+  acStack_40528[0] = '\0';
+  acStack_40528[1] = '\0';
+  acStack_40528[2] = '\0';
+  acStack_40528[3] = '\0';
+  memset(acStack_40528 + 4,0,0xfd);
+  acStack_405a8[0] = '\0';
+  acStack_405a8[1] = '\0';
+  acStack_405a8[2] = '\0';
+  acStack_405a8[3] = '\0';
+  memset(acStack_405a8 + 4,0,0x7c);
+  uStack_40614 = 0;
+  memset(auStack_40610,0,0x1d);
+  iVar4 = _UNK_0008e7a4;
+  uStack_405f0 = 0;
+  memset(auStack_405ec,0,0x1d);
+  acStack_405cc[0] = '\0';
+  acStack_405cc[1] = '\0';
+  acStack_405cc[2] = '\0';
+  acStack_405cc[3] = '\0';
+  memset(acStack_405cc + 4,0,0x1d);
+  uStack_40424 = 0;
+  iVar4 = iVar4 + 0x8e51b;
+  memset(auStack_40420,0,0x3fc);
+  FUN_00069de8(3,_UNK_0008e7a8 + 0x8e504,iVar4,0x16c);
+  iVar1 = FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_0008e7ac + 0x8e524,acStack_40528,0x100);
+  piStack_4061c = piVar6;
+  if (((iVar1 == 0) && (acStack_40528[0] != '\0')) && (sVar2 = strlen(acStack_40528), sVar2 < 0x21))
+  {
+    iVar1 = FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_0008e7b0 + 0x8e570,acStack_405a8,0x7f);
+    if (((iVar1 == 0) && (acStack_405a8[0] != '\0')) &&
+       (sVar2 = strlen(acStack_405a8), sVar2 < 0x41)) {
+      puStack_40620 = &uStack_40614;
+      FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_0008e7b4 + 0x8e5ac,&uStack_40614,0x20);
+      puStack_40624 = &uStack_405f0;
+      FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_0008e7b8 + 0x8e5d4,puStack_40624,0x20);
+      FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_0008e7bc + 0x8e5ec,acStack_405cc,0x20);
+      iVar1 = _UNK_0008e7c4;
+      FUN_000681e0(*(undefined4 *)(param_1 + 0xc),_UNK_0008e7c0 + 0x8e60c,&uStack_40424,0x3ff);
+      uVar3 = func_0x00081e34(acStack_40528);
+      pcVar5 = (char *)(iVar1 + 0x8e620);
+      printf(pcVar5,iVar4,0x1be,uVar3);
+      if (uVar3 < 2) {
+        uVar3 = func_0x00075ac4(acStack_405a8);
+        printf(pcVar5,iVar4,0x1c3,uVar3);
+        if (uVar3 < 2) {
+          uVar3 = func_0x00081a98(puStack_40620);
+          printf(pcVar5,iVar4,0x1c8,uVar3);
+          if (1 < uVar3) {
+            func_0x00081a98(_UNK_0008e7c8 + 0x8e698);
+          }
+          uVar3 = func_0x00082290(puStack_40624);
+          iVar4 = _UNK_0008e7cc + 0x8e6f7;
+          pcVar5 = (char *)(_UNK_0008e7d0 + 0x8e6bc);
+          printf(pcVar5,iVar4,0x1cd,uVar3);
+          if (uVar3 < 2) {
+            uVar3 = func_0x00082adc(acStack_405cc);
+            printf(pcVar5,iVar4,0x1d2,uVar3);
+            if (uVar3 < 2) {
+              iVar4 = strcmp(acStack_405cc,(char *)(_UNK_0008e7d4 + 0x8e70c));
+              if (iVar4 == 0) {
+                uVar3 = func_0x00083108();
+              }
+              else {
+                uVar3 = func_0x00082f9c(&uStack_40424);
+              }
+              printf((char *)(_UNK_0008e7dc + 0x8e748),_UNK_0008e7d8 + 0x8e77f,0x1db,uVar3);
+            }
+          }
+        }
+      }
+      goto LAB_0008e748;
+    }
+  }
+  uVar3 = 0x192;
+LAB_0008e748:
+  FUN_0006c448(param_1,&uStack_40024,uVar3,0x40000);
+  if (*(int *)((int)&iStack_40628 + _UNK_0008e79c) != *piStack_4061c) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail(uVar3);
+  }
+  return;
+}
+
+

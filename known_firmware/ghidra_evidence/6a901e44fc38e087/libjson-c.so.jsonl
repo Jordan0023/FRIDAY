@@ -1,0 +1,3 @@
+{"binary":"libjson-c.so.2.0.2","function":"json_tokener_parse_ex","address":"000139e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.2.0.2","function":"json_object_from_file","address":"000155a0","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.2.0.2","function":"json_c_get_random_seed","address":"000167d4","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

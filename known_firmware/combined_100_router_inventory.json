@@ -1,0 +1,1089 @@
+{
+  "active_count_after_eol": 100,
+  "combined_unique_count_before_eol": 100,
+  "eol_policy": "Exact normalized product matches only; no hardware-revision inference.",
+  "eol_removed": [],
+  "eol_removed_count": 0,
+  "eol_review_required": [
+    {
+      "disposition": "retained; exact hardware-revision match required",
+      "product": "ASUS RT-AC1300G PLUS V3",
+      "sha256": "2173b5a63e83720b556e6fe1956446e8559b16efd9ea927cb3ff98894461f6c1",
+      "similar_eol_catalog_entries": [
+        "ASUS RT-AC1300G PLUS"
+      ]
+    },
+    {
+      "disposition": "retained; exact hardware-revision match required",
+      "product": "ASUS RT-AC57U V3",
+      "sha256": "8d644855dcab2efaf8f9832550dfdedac35fb7ab05f6b1afb4d62921b587a20b",
+      "similar_eol_catalog_entries": [
+        "ASUS RT-AC57U",
+        "OpenWrt ASUS RT-AC57U"
+      ]
+    },
+    {
+      "disposition": "retained; exact hardware-revision match required",
+      "product": "ASUS RT-AC58U V3",
+      "sha256": "ec6a4c1e394187b206e81ba4c62e14b7b3492a5eb719177e1b42007af648dbfe",
+      "similar_eol_catalog_entries": [
+        "ASUS RT-AC58U",
+        "OpenWrt ASUS RT-AC58U"
+      ]
+    },
+    {
+      "disposition": "retained; exact hardware-revision match required",
+      "product": "ASUS RT-AC59U V2",
+      "sha256": "26552f4caeabdc8b945f8d6fdb0e9295cec898c74028316a8e7d541a1794e65e",
+      "similar_eol_catalog_entries": [
+        "ASUS RT-AC59U",
+        "OpenWrt ASUS RT-AC59U"
+      ]
+    },
+    {
+      "disposition": "retained; exact hardware-revision match required",
+      "product": "GL.iNet GL-MT300N-V2 Mango",
+      "sha256": "05a823f7714848bf039a27afa9f2eca28089ab978aac9dcb9c3f3613f78a9023",
+      "similar_eol_catalog_entries": [
+        "GL.iNet GL-MT300N"
+      ]
+    },
+    {
+      "disposition": "retained; exact hardware-revision match required",
+      "product": "R6700AXV3",
+      "sha256": "3b605d7fb70e594eaee8b49865782a91a0d85376e9984b3827fcdaa58573d30e",
+      "similar_eol_catalog_entries": [
+        "R6700AX"
+      ]
+    },
+    {
+      "disposition": "retained; exact hardware-revision match required",
+      "product": "RAX41V2",
+      "sha256": "c52efe4a322909d7806b29863b601ad4aa4b6b608d033572b1f0c23b7e63eae6",
+      "similar_eol_catalog_entries": [
+        "RAX41"
+      ]
+    },
+    {
+      "disposition": "retained; exact hardware-revision match required",
+      "product": "RAX42V2",
+      "sha256": "e6f2fe38e6ad0fa00eb6602f5b1925a7b0710c2f160ef2ab2c9f311ae6875bf8",
+      "similar_eol_catalog_entries": [
+        "RAX42"
+      ]
+    }
+  ],
+  "generated_at": "2026-07-24T14:13:39+00:00",
+  "orphan_predecessor_hashes_excluded": [
+    "0c5f2b0b319c28cd70792ace5103065a22c68a5cafb220faec2cd3e7cebcf657"
+  ],
+  "partial_predecessor_hashes_excluded": [
+    "8d253ef36151c2a912c6c43e1a6f55b69133c2db5ac5051952a6f22ff6e567b3"
+  ],
+  "routers": [
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "OpenWrt Acer Predator Connect W6x (OpenWrt U-Boot Layout)",
+      "sha256": "047ce08b9e0c04783e459f181af4e6225830ca72de86fa013c7c0358c13bea07",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "OpenWrt ADSLR G7",
+      "sha256": "c6f56135b63aeb028dc06313a9b8275b6b5cecbbefe2d6d047c20bdcb47e2f68",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "OpenWrt Adtran SDG-8612",
+      "sha256": "052523c2153f8efa64027fdb978012ea3ae8134ff23fa4384ccb173a07e7139d",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "OpenWrt Adtran SDG-8733",
+      "sha256": "b19ee93cfd3a4cd82614d95d25d166c75bb2e4d98df49c13b1539401be71c1dd",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "OpenWrt Adtran SDG-8734",
+      "sha256": "c707d897036dd757c96bdccb5b9e4ddba2da9150df09f567764a777b4b0df22e",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt AFOUNDRY EW1200",
+      "sha256": "e63cc34d3646eb4246170e41aa45b01f8d1fb2ed4d2ce3b28853f37d12659798",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt Airpi AP3000M",
+      "sha256": "ce9d1bf545b36686e00f8897fe1dd1a113b5b9c713784e6b8f88296f1911e453",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt Alcatel HH40V",
+      "sha256": "3bf20b12e81d8db35cb7072514eed5f564de1d4d8609b3725209c7bcf4e45d27",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network AP120C-AC",
+      "sha256": "3a6dc689a2247c94aaade08ceb23f8668b38d55cc08b21518db22ea8acc7c02a",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network AP121F",
+      "sha256": "a03ef82e6b571fcd6c660d76d0dda3c64f9b5d56d42585b7658e6ceedf184db3",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network AP121FE",
+      "sha256": "ff93703ec8a0a120b3427401045981bd9c7f9f7aaf80feec7b0cad7133f07d9c",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network AX1800RM",
+      "sha256": "dce8cf4143a7fd0060bb4458b58a320d871e9b70270e1675e9331587c07325bc",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network N2Q",
+      "sha256": "709515d00e4f46ba10ebdbf58b6aeff2e3df4a5482c03e4cdb22071b1a985799",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network N5Q",
+      "sha256": "496ab22216220760567d74d3af76c2a4319c4d5c55bcb5caf66ee14c0d99e599",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network Pi-WiFi4",
+      "sha256": "e2288d2bb81464bdb4c5545f23b5b0ad4c2436d5ffe67fa77f035661dd2b9814",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network Quad-E4G",
+      "sha256": "a942a857b57c0186a5e4e648c203431ef7795ed6ee1cb1bd47cfec32ee733ccd",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network R36A",
+      "sha256": "9e2d90748bf30928581f8fe6bd3a28e09f8a1d3ab49fe5d400c11079394e617a",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network Tube-2HQ",
+      "sha256": "b8aedb788e3dee6c0608b4eaf094533d41f2a1bfff1ede13dc25e7f31edc5335",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALFA Network WiFi CampPro Nano Duo",
+      "sha256": "625f236cf7dce1e1a5adfbf1194713e720c71b1708f0353982afa937d1c1c784",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt ALLNET ALL-WAP02860AC",
+      "sha256": "c2337aada073ce19bd403f9e321f62590a09ec4b7a80bd10ecba333ba7f57a5e",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt Amped Wireless ALLY-00X19K",
+      "sha256": "d80bef01b229d29ead530b49ecbad7b8655d00d0dcbbcf8c031badd8d05296db",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "OpenWrt Amped Wireless ALLY-R1900K",
+      "sha256": "1e63534349199a8341ab925bc51df7c126b7a6883bc510a6d44d5596bd66ca0a",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "25.12.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "ASUS ROG Rapture GT-AX11000",
+      "sha256": "ae7ae574cb46d41bf08006b7afb1f3256ca3554c5051de014ecfd932bf317c44",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "3.0.0.4.388_24515"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "ASUS ROG Rapture GT-AX11000 Pro",
+      "sha256": "96e124a5d8e3021ab3c116983bd093de28cbc7388f3dd5bdac0a1b5c9b32526a",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "3.0.0.6.102_37436"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "ASUS ROG Rapture GT-AX6000",
+      "sha256": "04470f3e9ff8b0c68c911c351f726b21dd3a6c58f91ebc301b0eb44284051afb",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "3.0.0.6.102_37436"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "ASUS ROG Rapture GT-AXE11000",
+      "sha256": "bad9bdf89f2bd88002d5ca880429081cad5bb65716c2e052ccdd51c2ebaf1c1b",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "3.0.0.4.388_23969"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "ASUS ROG Rapture GT-AXE16000",
+      "sha256": "eb463233a33c26b7a93533cd90ccb60dfafc5ba0f8783654e4b2650789e0bc73",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "3.0.0.6.102_36489"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "ASUS ROG Rapture GT-BE25000",
+      "sha256": "227f125294ffe86d3ad482cf83989762822b8c0a456962273dfb8b3cef33f1c3",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "3.0.0.6.102_39274"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "ASUS ROG Rapture GT-BE96",
+      "sha256": "56cda4f36c379c49d86d00d2c0cbd7e67b8841b37af086b361cd2172e7801b67",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "3.0.0.6.102_39260"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "ASUS ROG Rapture GT-BE96 AI",
+      "sha256": "8199765f98c829f22d06cd0594c85ae58187eee2d8cdf9142a481da101a22c94",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "3.0.0.6.102_40536"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG Rapture GT-BE98 Pro",
+      "sha256": "e9c3bdc196cdc00528be40fd92de066793dfada1b181ba01b142a5319a011eaf",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.6.102_39262"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG Rapture GT-BE98 Pro Edition 20",
+      "sha256": "87681575e1f4a3621e8bec774290ffa84a9f8095855452482f3177bdc2d3a341",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.6.102_39271"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG Rapture GT6",
+      "sha256": "d2bf52945d130cf5559d528960ef5aa285114085bf82d279f4ac329a34d086b2",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.4.388_24734"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG STRIX GS-AX3000",
+      "sha256": "e00687bef11f4a674f90f7d8d9114abc1a273e31c138127072be25c62fee8585",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.4.388_23169"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG STRIX GS-AX5400",
+      "sha256": "a6a411159b23bb30ac77c5f8eb8a745651eda48875cda468a3080bb7d46af04b",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.4.388_23169"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG Strix GS-BE12000",
+      "sha256": "3f7840ecfcaf9c67ad5a31bbf5ae39fee1491673f7f631aebeac3d5b54e66012",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.6.102_39260"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG Strix GS-BE18000",
+      "sha256": "b826c64e865e7ee7fafc02e2017895696afa5cf2b250fd4c6bcbe9a325f30036",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.6.102_39260"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG Strix GS-BE7200",
+      "sha256": "1e0cff6743b3556f35922e16cf7725fae8178beac9af37f99cbd3f43029a147e",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.6.102_58892"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG Strix GS-BE7200X",
+      "sha256": "9061dec728b5a83a85a58e40da7935b2f8ec8dce17bd35831766665b4b3d28bd",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.6.102_58466"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG Strix GS7 Air",
+      "sha256": "a0ea5c3a242b006a91ff8d2d0a3e766798c249a0832ad5abe61461dae472af49",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.6.102_58833"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG Strix GS7 Bear Brick",
+      "sha256": "0b1fa6cc3bed9fc19f3134ce676e913bcc16a9eebecbb9a9acf648c38c71bb6c",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.6.102_58406"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG STRIX GS7 Pro",
+      "sha256": "130e2360e1c44985376792053bc9c7faea75f66e5f634e22a41d105868270d05",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.6.102_39256"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS ROG STRIX GS7 Pro Max",
+      "sha256": "6a901e44fc38e08737133f498058e174ca121ab0a43348c2715972f6700f19fb",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.6.102_39893"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS RP-AX56",
+      "sha256": "296921c9e504780c75cdc8d6957661dd1ab52cb27709eee129e32ce5255fc905",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.4.386_51891"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS RT-AC1300G PLUS V3",
+      "sha256": "2173b5a63e83720b556e6fe1956446e8559b16efd9ea927cb3ff98894461f6c1",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.4.386.51312"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS RT-AC57U V3",
+      "sha256": "8d644855dcab2efaf8f9832550dfdedac35fb7ab05f6b1afb4d62921b587a20b",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.4.386.51312"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS RT-AC58U V3",
+      "sha256": "ec6a4c1e394187b206e81ba4c62e14b7b3492a5eb719177e1b42007af648dbfe",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.4.386.51312"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "ASUS RT-AC59U V2",
+      "sha256": "26552f4caeabdc8b945f8d6fdb0e9295cec898c74028316a8e7d541a1794e65e",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "3.0.0.4.386.51312"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "EX6170",
+      "sha256": "6eac3c6cdf2e92da63ac94bc20e165014dcf888fe8165891079aeb549e01f56e",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "1.0.0.70_1.0.44"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "GL.iNet GL-BE9300 Flint 3",
+      "sha256": "edf306a312c85c449a22d5badd791cc2bb5e530b2ad47ce2b710562554b9dfb8",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "4.9.0"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "GL.iNet GL-E5800 Mudi 7",
+      "sha256": "39f34023fa02c0deff50665f27f5c5e6f931cce339fab24c12844946ca064404",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "4.8.5"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "GL.iNet GL-E750/GL-E750V2 Mudi",
+      "sha256": "edf1ba09412592e0a76ba46e04f8787947bf84ea313c9a93c6bc828105b022b7",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "4.3.26"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "GL.iNet GL-MT2500/GL-MT2500A Brume 2",
+      "sha256": "3de78f88a2cc204c089cd1c262346786796d43a223564b1f792f3e8515cc8904",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "4.7.4"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "GL.iNet GL-MT300N-V2 Mango",
+      "sha256": "05a823f7714848bf039a27afa9f2eca28089ab978aac9dcb9c3f3613f78a9023",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "4.3.25"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "GL.iNet GL-MT3600BE Beryl 7",
+      "sha256": "4c32509876176a04ca32ed7288567be1d31603a7473f592552380c586b66df65",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "4.9.0"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "GL.iNet GL-MT5000 Brume 3",
+      "sha256": "001503668d83a939627f6bd92614fff417251f9f517e011d14abe2fb0a307417",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "4.8.6"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "GL.iNet GL-MT6000 Flint 2",
+      "sha256": "6e8e6610f944996bb0c119fe95b5610c7091f14c3234739f68d3a5e73c0c60ce",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "4.9.0"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "GL.iNet GL-SFT1200 Opal",
+      "sha256": "f84630b6b95f7558c0708672f739892b54acc3d78a4c92dae866faada9ff5e1f",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "4.8.3"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "GL.iNet GL-X3000 Spitz AX",
+      "sha256": "877500360e81c65c8cb422ab7bcd9f3af14087f454da60434e93568c2e6f0e89",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "4.8.3"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "GL.iNet GL-X300B Collie",
+      "sha256": "33b6579552a0ebfcaf343c16977d4b97f864c9120ed5655aef7fbc2c7eb6fe9b",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "4.5.22"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "GL.iNet GL-X750 Spitz",
+      "sha256": "c6f0d845474d3d2f06928f94c9dce5f42f16e002901ce296aba79f9d4564ac97",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "4.3.25"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "GL.iNet GL-XE300 Puli",
+      "sha256": "9671b723708e5dc0331612082dc8d5471b863b9e3b7bb882f6c8206b5dc88b10",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "4.3.27"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "GL.iNet GL-XE3000 Puli AX",
+      "sha256": "ba6f76f32686e86c30eed4dd7458ed92f7545a2079c1ae7365447cc1ff56f876",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "4.8.3"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "MK6WV2",
+      "sha256": "f6c495f4142571611eb8e1acf70dcd83711a8c8eae5b12e61c210a289d6cf6c0",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "1.0.4.48"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "MK93S",
+      "sha256": "29a423e80f1e19f0de85b3ef0db9b81a9b73c3ec41a26aa7111bdf7af0f30d81",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "1.0.2.38"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": true,
+      "product": "R6230",
+      "sha256": "e90bdfd806c877ca642720fe6b29439267534b1f9e25f14f7e3ff097138b6ec8",
+      "sources": [
+        "fully_decompiled_predecessor_campaign"
+      ],
+      "version": "1.0.104_1.0.1"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "R6700AXV3",
+      "sha256": "3b605d7fb70e594eaee8b49865782a91a0d85376e9984b3827fcdaa58573d30e",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "0.9.44_1"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "R7350",
+      "sha256": "88cd8895b9ec363660d571e179664077e09f8233ed69af05e0bb0fa48727adf4",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "2.0.92"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX28",
+      "sha256": "1d36c29479307c3341b96bb759770d5787f6b0a4f3f496628a248679eb21af5d",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.0.14.108"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX29",
+      "sha256": "a5a6fe34b78d4f5274393e3bebd676eb2751d32b9dfa52fb38f4763bdd945970",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.0.14.108"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX30",
+      "sha256": "6e7f95ab08e7b70280c3c97944e18d0895903b3cf836b8397fe1a20cd395e658",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.0.14.108"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX36",
+      "sha256": "7dfad4f35401482f562210c3406de68b3cc3bf1b886819feeb965ba161dcd200",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.0.7.54"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX36S",
+      "sha256": "502a73b7a1f58628dece59c5b665a0b7e2b974a23f1e3d2c697a79ea1215dc73",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "0.7.54"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX41V2",
+      "sha256": "c52efe4a322909d7806b29863b601ad4aa4b6b608d033572b1f0c23b7e63eae6",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.1.6.38"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX42V2",
+      "sha256": "e6f2fe38e6ad0fa00eb6602f5b1925a7b0710c2f160ef2ab2c9f311ae6875bf8",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.1.6.38"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX49S",
+      "sha256": "fe7d6c417177572b7a1aad6bf3ebfb679e8cef9f50178d650927f7de06551b9e",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.1.6.38"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX54S",
+      "sha256": "12d0be80c7dfee7ffd6d6257f37afde4ddbef6951ee3e6b35674eca529f539a3",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.0.17.144"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX54SV2",
+      "sha256": "c9b1ed79f8f766b583969f1a2cd3f849a8d788f7053a0d845c39db425ef56110",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.1.6.38"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX78",
+      "sha256": "09cd2acd7b5de824406a63f91f1d0d3afcb0bdbe7a4e584ed66aee9b51a6350a",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.0.20.174"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAX9",
+      "sha256": "0d20c9b101b197d3bacc1d8d8749db1716208984cd21432c6d98dca50c5c051d",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.0.3.32"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAXE290",
+      "sha256": "3de38411e3c0353b373dffe4eb632d6c9f750e3b96c885410b0fb9fc67298f8c",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.0.9.82"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAXE300",
+      "sha256": "08e53e0924044be57ce57e75b8c6b74e40e0513bbb3215fc70a47b5b8c1dbea6",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.0.9.82"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "RAXE450",
+      "sha256": "6ff1a084616ba4bbd484c728a6c1ea3e4d05b7c5d6843c9206b4ad9cce7883d2",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "1.2.14.114_2.0.67"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer BE700",
+      "sha256": "f40d231c4bde8d9a3399f08916e5c7d811fcaf7dff85c0211e94aca2121a3ee7",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.2.2 Build 20251027"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer BE700 Pro",
+      "sha256": "8ca87e93b2d4d67fd3e1ab1e2ff9b6ef87e3cb10856aab4e903ef58cf9c841d2",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.1.1 Build 20241115"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer BE770",
+      "sha256": "ed2ea7cc2143228884da09bcfc9f7739471254a81537b3c709717de55e0b5d83",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.5.1 Build 20260523"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer BE800",
+      "sha256": "ef2885965a529ea719d44a55392ae8dd4811408e48165850343f74644824e7b5",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.4.1 Build 20260401"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer BE805",
+      "sha256": "30b6ee037ceb474c0e2f4967dc9aec98367935caa17c6017670513279702183d",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.5.1 Build 20260523"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer BE900",
+      "sha256": "c234be6697766bee3b13ff73b2b3f4bd54ba48574d988e904796e66059997053",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V2.6_1.3.1 Build 20260208"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer BE9300",
+      "sha256": "2b639354e5ba75f1fc1f620eee8533715a8a965df6c079bbf2288093387c523e",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V2.6_1.2.5 Build 20251028"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer BE9500",
+      "sha256": "96946f0d1992edc65f7fee2b4ef5437d439bdd02602977165bad01d16a3a692a",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.1.1 Build 20260113"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer BE9700",
+      "sha256": "a59e2cb5bf5cab56fd0780b3dbbd6ca853eaf4925ba54cb29a72dba510bf135e",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.2.5 Build 20260519"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer C54",
+      "sha256": "14424b87ee63f1df422fc94765d911f07468e531a6b267cf798dcb565c5a1844",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.12.20 Build 230608"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer GE400",
+      "sha256": "7b0b97769414f192f114f786e1206bf925491e61233293e6fd0f332f4134bb6b",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.2.0 Build 20260331"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer GE650",
+      "sha256": "316344f459db121469ca6b1a19c013935e92444d064739c6e0fda818a756b833",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V2.6_1.1.2 Build 20260104"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer GE800",
+      "sha256": "9a594a8b7fe9b4f0051555c08f35be0ba28ef63f06ca895e782cdc3fb0d1b850",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.3.3 Build 20260210"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Archer GXE75",
+      "sha256": "02ee5b5e1304e15969246c44c3e461fd88e6fe3c3ca60083b91b454a66072850",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.0.5 Build 20241217"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Deco BE13000",
+      "sha256": "9541720cf3b7a7cdeb9356eb88e232cf30f702ca86cebb725c4125e42bcbd6a1",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.3.0 Build 20260330"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Deco BE23",
+      "sha256": "cc8c2888cb61dce8762c70b493dab4c9f307da623baaab218c61d9e6e73dce78",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.1.8 Build 20260425"
+    },
+    {
+      "eol_match": null,
+      "fully_decompiled": false,
+      "product": "TP-Link Deco BE25",
+      "sha256": "39576923d1e60ab8862c18fac78eec6ec4114fe4b9f20b922c93d08470455273",
+      "sources": [
+        "seventy_four_router_campaign"
+      ],
+      "version": "V1.6_1.1.8 Build 20260425"
+    }
+  ],
+  "source_counts": {
+    "fully_decompiled_predecessor_campaign": 26,
+    "seventy_four_router_campaign": 74
+  }
+}

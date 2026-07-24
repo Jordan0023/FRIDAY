@@ -1,0 +1,15 @@
+{
+  "target": "192.168.50.1:5000",
+  "case": "baseline",
+  "results": [
+    {
+      "name": "root-description",
+      "request_bytes": 55,
+      "fragmented": false,
+      "response_bytes": 2737,
+      "status_line": "HTTP/1.1 200 OK",
+      "error": null,
+      "elapsed_ms": 36.16
+    }
+  ]
+}

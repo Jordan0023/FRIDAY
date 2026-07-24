@@ -1,0 +1,1 @@
+{"binary":"libz.so.1","function":"inflate","address":"00018554","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

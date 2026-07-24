@@ -1,0 +1,2 @@
+{"binary":"acs_cli2","function":"FUN_00012f78","address":"00012f78","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"acs_cli2","function":"FUN_00013d90","address":"00013d90","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

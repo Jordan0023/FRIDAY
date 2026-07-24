@@ -1,0 +1,223 @@
+
+known_firmware/emulation/ASUS_RP-AX56/51891-component-rootfs/usr/sbin/cfg_server:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+0001c400 <cm_udpPacketHandler@@Base+0x960>:
+   1c400:	e88d000c 	stm	sp, {r2, r3}
+   1c404:	e3a03001 	mov	r3, #1
+   1c408:	ea000138 	b	1c8f0 <cm_udpPacketHandler@@Base+0xe50>
+   1c40c:	e59b3018 	ldr	r3, [fp, #24]
+   1c410:	e59d2044 	ldr	r2, [sp, #68]	; 0x44
+   1c414:	e1520003 	cmp	r2, r3
+   1c418:	1a000021 	bne	1c4a4 <cm_udpPacketHandler@@Base+0xa04>
+   1c41c:	e59f064c 	ldr	r0, [pc, #1612]	; 1ca70 <cm_udpPacketHandler@@Base+0xfd0>
+   1c420:	e08f0000 	add	r0, pc, r0
+   1c424:	ebfffd95 	bl	1ba80 <list_movefront_node@@Base+0x90>
+   1c428:	e59f1644 	ldr	r1, [pc, #1604]	; 1ca74 <cm_udpPacketHandler@@Base+0xfd4>
+   1c42c:	e08f1001 	add	r1, pc, r1
+   1c430:	ebffe17c 	bl	14a28 <strcmp@plt>
+   1c434:	e3500000 	cmp	r0, #0
+   1c438:	1a000005 	bne	1c454 <cm_udpPacketHandler@@Base+0x9b4>
+   1c43c:	e59f1634 	ldr	r1, [pc, #1588]	; 1ca78 <cm_udpPacketHandler@@Base+0xfd8>
+   1c440:	e3a020cf 	mov	r2, #207	; 0xcf
+   1c444:	e59f0630 	ldr	r0, [pc, #1584]	; 1ca7c <cm_udpPacketHandler@@Base+0xfdc>
+   1c448:	e08f1001 	add	r1, pc, r1
+   1c44c:	e08f0000 	add	r0, pc, r0
+   1c450:	ebffe06f 	bl	14614 <cprintf@plt>
+   1c454:	e59f0624 	ldr	r0, [pc, #1572]	; 1ca80 <cm_udpPacketHandler@@Base+0xfe0>
+   1c458:	e08f0000 	add	r0, pc, r0
+   1c45c:	ebfffd87 	bl	1ba80 <list_movefront_node@@Base+0x90>
+   1c460:	e59f161c 	ldr	r1, [pc, #1564]	; 1ca84 <cm_udpPacketHandler@@Base+0xfe4>
+   1c464:	e08f1001 	add	r1, pc, r1
+   1c468:	ebffe16e 	bl	14a28 <strcmp@plt>
+   1c46c:	e2502000 	subs	r2, r0, #0
+   1c470:	1a000171 	bne	1ca3c <cm_udpPacketHandler@@Base+0xf9c>
+   1c474:	e3a030cf 	mov	r3, #207	; 0xcf
+   1c478:	e58d300c 	str	r3, [sp, #12]
+   1c47c:	e59f3604 	ldr	r3, [pc, #1540]	; 1ca88 <cm_udpPacketHandler@@Base+0xfe8>
+   1c480:	e59f1604 	ldr	r1, [pc, #1540]	; 1ca8c <cm_udpPacketHandler@@Base+0xfec>
+   1c484:	e08f3003 	add	r3, pc, r3
+   1c488:	e58d3008 	str	r3, [sp, #8]
+   1c48c:	e59f35fc 	ldr	r3, [pc, #1532]	; 1ca90 <cm_udpPacketHandler@@Base+0xff0>
+   1c490:	e08f1001 	add	r1, pc, r1
+   1c494:	e08f3003 	add	r3, pc, r3
+   1c498:	e88d000c 	stm	sp, {r2, r3}
+   1c49c:	e3a03001 	mov	r3, #1
+   1c4a0:	ea000112 	b	1c8f0 <cm_udpPacketHandler@@Base+0xe50>
+   1c4a4:	e1a04000 	mov	r4, r0
+   1c4a8:	e59f05e4 	ldr	r0, [pc, #1508]	; 1ca94 <cm_udpPacketHandler@@Base+0xff4>
+   1c4ac:	e1a0a00b 	mov	sl, fp
+   1c4b0:	e08f0000 	add	r0, pc, r0
+   1c4b4:	ebfffd71 	bl	1ba80 <list_movefront_node@@Base+0x90>
+   1c4b8:	e59f15d8 	ldr	r1, [pc, #1496]	; 1ca98 <cm_udpPacketHandler@@Base+0xff8>
+   1c4bc:	e08f1001 	add	r1, pc, r1
+   1c4c0:	ebffe158 	bl	14a28 <strcmp@plt>
+   1c4c4:	e3500000 	cmp	r0, #0
+   1c4c8:	1a00000e 	bne	1c508 <cm_udpPacketHandler@@Base+0xa68>
+   1c4cc:	e59b3018 	ldr	r3, [fp, #24]
+   1c4d0:	e59f15c4 	ldr	r1, [pc, #1476]	; 1ca9c <cm_udpPacketHandler@@Base+0xffc>
+   1c4d4:	e6bf3f33 	rev	r3, r3
+   1c4d8:	e59f05c0 	ldr	r0, [pc, #1472]	; 1caa0 <cm_udpPacketHandler@@Base+0x1000>
+   1c4dc:	e08f1001 	add	r1, pc, r1
+   1c4e0:	e6ef2073 	uxtb	r2, r3
+   1c4e4:	e08f0000 	add	r0, pc, r0
+   1c4e8:	e58d2008 	str	r2, [sp, #8]
+   1c4ec:	e7e72453 	ubfx	r2, r3, #8, #8
+   1c4f0:	e58d2004 	str	r2, [sp, #4]
+   1c4f4:	e7e72853 	ubfx	r2, r3, #16, #8
+   1c4f8:	e1a03c23 	lsr	r3, r3, #24
+   1c4fc:	e58d2000 	str	r2, [sp]
+   1c500:	e3a020d7 	mov	r2, #215	; 0xd7
+   1c504:	ebffe042 	bl	14614 <cprintf@plt>
+   1c508:	e59f0594 	ldr	r0, [pc, #1428]	; 1caa4 <cm_udpPacketHandler@@Base+0x1004>
+   1c50c:	e08f0000 	add	r0, pc, r0
+   1c510:	ebfffd5a 	bl	1ba80 <list_movefront_node@@Base+0x90>
+   1c514:	e59f158c 	ldr	r1, [pc, #1420]	; 1caa8 <cm_udpPacketHandler@@Base+0x1008>
+   1c518:	e08f1001 	add	r1, pc, r1
+   1c51c:	ebffe141 	bl	14a28 <strcmp@plt>
+   1c520:	e2502000 	subs	r2, r0, #0
+   1c524:	1a000016 	bne	1c584 <cm_udpPacketHandler@@Base+0xae4>
+   1c528:	e59a3018 	ldr	r3, [sl, #24]
+   1c52c:	e3a00006 	mov	r0, #6
+   1c530:	e6bf3f33 	rev	r3, r3
+   1c534:	e6ef1073 	uxtb	r1, r3
+   1c538:	e58d101c 	str	r1, [sp, #28]
+   1c53c:	e7e71453 	ubfx	r1, r3, #8, #8
+   1c540:	e58d1018 	str	r1, [sp, #24]
+   1c544:	e7e71853 	ubfx	r1, r3, #16, #8
+   1c548:	e1a03c23 	lsr	r3, r3, #24
+   1c54c:	e58d3010 	str	r3, [sp, #16]
+   1c550:	e3a030d7 	mov	r3, #215	; 0xd7
+   1c554:	e58d300c 	str	r3, [sp, #12]
+   1c558:	e59f354c 	ldr	r3, [pc, #1356]	; 1caac <cm_udpPacketHandler@@Base+0x100c>
+   1c55c:	e58d1014 	str	r1, [sp, #20]
+   1c560:	e08f3003 	add	r3, pc, r3
+   1c564:	e59f1544 	ldr	r1, [pc, #1348]	; 1cab0 <cm_udpPacketHandler@@Base+0x1010>
+   1c568:	e58d3008 	str	r3, [sp, #8]
+   1c56c:	e59f3540 	ldr	r3, [pc, #1344]	; 1cab4 <cm_udpPacketHandler@@Base+0x1014>
+   1c570:	e08f1001 	add	r1, pc, r1
+   1c574:	e08f3003 	add	r3, pc, r3
+   1c578:	e88d000c 	stm	sp, {r2, r3}
+   1c57c:	e3a03001 	mov	r3, #1
+   1c580:	ebffe14c 	bl	14ab8 <asusdebuglog@plt>
+   1c584:	e59f052c 	ldr	r0, [pc, #1324]	; 1cab8 <cm_udpPacketHandler@@Base+0x1018>
+   1c588:	e08f0000 	add	r0, pc, r0
+   1c58c:	ebfffd3b 	bl	1ba80 <list_movefront_node@@Base+0x90>
+   1c590:	e59f1524 	ldr	r1, [pc, #1316]	; 1cabc <cm_udpPacketHandler@@Base+0x101c>
+   1c594:	e08f1001 	add	r1, pc, r1
+   1c598:	ebffe122 	bl	14a28 <strcmp@plt>
+   1c59c:	e3500000 	cmp	r0, #0
+   1c5a0:	1a00000e 	bne	1c5e0 <cm_udpPacketHandler@@Base+0xb40>
+   1c5a4:	e59d3044 	ldr	r3, [sp, #68]	; 0x44
+   1c5a8:	e59f1510 	ldr	r1, [pc, #1296]	; 1cac0 <cm_udpPacketHandler@@Base+0x1020>
+   1c5ac:	e6bf3f33 	rev	r3, r3
+   1c5b0:	e59f050c 	ldr	r0, [pc, #1292]	; 1cac4 <cm_udpPacketHandler@@Base+0x1024>
+   1c5b4:	e08f1001 	add	r1, pc, r1
+   1c5b8:	e6ef2073 	uxtb	r2, r3
+   1c5bc:	e08f0000 	add	r0, pc, r0
+   1c5c0:	e58d2008 	str	r2, [sp, #8]
+   1c5c4:	e7e72453 	ubfx	r2, r3, #8, #8
+   1c5c8:	e58d2004 	str	r2, [sp, #4]
+   1c5cc:	e7e72853 	ubfx	r2, r3, #16, #8
+   1c5d0:	e1a03c23 	lsr	r3, r3, #24
+   1c5d4:	e58d2000 	str	r2, [sp]
+   1c5d8:	e3a020dd 	mov	r2, #221	; 0xdd
+   1c5dc:	ebffe00c 	bl	14614 <cprintf@plt>
+   1c5e0:	e59f04e0 	ldr	r0, [pc, #1248]	; 1cac8 <cm_udpPacketHandler@@Base+0x1028>
+   1c5e4:	e08f0000 	add	r0, pc, r0
+   1c5e8:	ebfffd24 	bl	1ba80 <list_movefront_node@@Base+0x90>
+   1c5ec:	e59f14d8 	ldr	r1, [pc, #1240]	; 1cacc <cm_udpPacketHandler@@Base+0x102c>
+   1c5f0:	e08f1001 	add	r1, pc, r1
+   1c5f4:	ebffe10b 	bl	14a28 <strcmp@plt>
+   1c5f8:	e2502000 	subs	r2, r0, #0
+   1c5fc:	1a000016 	bne	1c65c <cm_udpPacketHandler@@Base+0xbbc>
+   1c600:	e59d3044 	ldr	r3, [sp, #68]	; 0x44
+   1c604:	e3a00006 	mov	r0, #6
+   1c608:	e6bf3f33 	rev	r3, r3
+   1c60c:	e6ef1073 	uxtb	r1, r3
+   1c610:	e58d101c 	str	r1, [sp, #28]
+   1c614:	e7e71453 	ubfx	r1, r3, #8, #8
+   1c618:	e58d1018 	str	r1, [sp, #24]
+   1c61c:	e7e71853 	ubfx	r1, r3, #16, #8
+   1c620:	e1a03c23 	lsr	r3, r3, #24
+   1c624:	e58d3010 	str	r3, [sp, #16]
+   1c628:	e3a030dd 	mov	r3, #221	; 0xdd
+   1c62c:	e58d300c 	str	r3, [sp, #12]
+   1c630:	e59f3498 	ldr	r3, [pc, #1176]	; 1cad0 <cm_udpPacketHandler@@Base+0x1030>
+   1c634:	e58d1014 	str	r1, [sp, #20]
+   1c638:	e08f3003 	add	r3, pc, r3
+   1c63c:	e59f1490 	ldr	r1, [pc, #1168]	; 1cad4 <cm_udpPacketHandler@@Base+0x1034>
+   1c640:	e58d3008 	str	r3, [sp, #8]
+   1c644:	e59f348c 	ldr	r3, [pc, #1164]	; 1cad8 <cm_udpPacketHandler@@Base+0x1038>
+   1c648:	e08f1001 	add	r1, pc, r1
+   1c64c:	e08f3003 	add	r3, pc, r3
+   1c650:	e88d000c 	stm	sp, {r2, r3}
+   1c654:	e3a03001 	mov	r3, #1
+   1c658:	ebffe116 	bl	14ab8 <asusdebuglog@plt>
+   1c65c:	e8950007 	ldm	r5, {r0, r1, r2}
+   1c660:	e9060007 	stmdb	r6, {r0, r1, r2}
+   1c664:	e59f0470 	ldr	r0, [pc, #1136]	; 1cadc <cm_udpPacketHandler@@Base+0x103c>
+   1c668:	e08f0000 	add	r0, pc, r0
+   1c66c:	ebfffd03 	bl	1ba80 <list_movefront_node@@Base+0x90>
+   1c670:	e59f1468 	ldr	r1, [pc, #1128]	; 1cae0 <cm_udpPacketHandler@@Base+0x1040>
+   1c674:	e08f1001 	add	r1, pc, r1
+   1c678:	ebffe0ea 	bl	14a28 <strcmp@plt>
+   1c67c:	e3500000 	cmp	r0, #0
+   1c680:	1a00000a 	bne	1c6b0 <cm_udpPacketHandler@@Base+0xc10>
+   1c684:	e59d3038 	ldr	r3, [sp, #56]	; 0x38
+   1c688:	e244200c 	sub	r2, r4, #12
+   1c68c:	e59f1450 	ldr	r1, [pc, #1104]	; 1cae4 <cm_udpPacketHandler@@Base+0x1044>
+   1c690:	e59f0450 	ldr	r0, [pc, #1104]	; 1cae8 <cm_udpPacketHandler@@Base+0x1048>
+   1c694:	e6bf3f33 	rev	r3, r3
+   1c698:	e58d2008 	str	r2, [sp, #8]
+   1c69c:	e08f1001 	add	r1, pc, r1
+   1c6a0:	e88d0018 	stm	sp, {r3, r4}
+   1c6a4:	e3a020e2 	mov	r2, #226	; 0xe2
+   1c6a8:	e08f0000 	add	r0, pc, r0
+   1c6ac:	ebffdfd8 	bl	14614 <cprintf@plt>
+   1c6b0:	e59f0434 	ldr	r0, [pc, #1076]	; 1caec <cm_udpPacketHandler@@Base+0x104c>
+   1c6b4:	e08f0000 	add	r0, pc, r0
+   1c6b8:	ebfffcf0 	bl	1ba80 <list_movefront_node@@Base+0x90>
+   1c6bc:	e59f142c 	ldr	r1, [pc, #1068]	; 1caf0 <cm_udpPacketHandler@@Base+0x1050>
+   1c6c0:	e08f1001 	add	r1, pc, r1
+   1c6c4:	ebffe0d7 	bl	14a28 <strcmp@plt>
+   1c6c8:	e2502000 	subs	r2, r0, #0
+   1c6cc:	1a000013 	bne	1c720 <cm_udpPacketHandler@@Base+0xc80>
+   1c6d0:	e59d3038 	ldr	r3, [sp, #56]	; 0x38
+   1c6d4:	e244100c 	sub	r1, r4, #12
+   1c6d8:	e58d101c 	str	r1, [sp, #28]
+   1c6dc:	e3a00006 	mov	r0, #6
+   1c6e0:	e6bf3f33 	rev	r3, r3
+   1c6e4:	e58d3014 	str	r3, [sp, #20]
+   1c6e8:	e58d3010 	str	r3, [sp, #16]
+   1c6ec:	e3a030e2 	mov	r3, #226	; 0xe2
+   1c6f0:	e58d300c 	str	r3, [sp, #12]
+   1c6f4:	e59f33f8 	ldr	r3, [pc, #1016]	; 1caf4 <cm_udpPacketHandler@@Base+0x1054>
+   1c6f8:	e59f13f8 	ldr	r1, [pc, #1016]	; 1caf8 <cm_udpPacketHandler@@Base+0x1058>
+   1c6fc:	e08f3003 	add	r3, pc, r3
+   1c700:	e58d3008 	str	r3, [sp, #8]
+   1c704:	e59f33f0 	ldr	r3, [pc, #1008]	; 1cafc <cm_udpPacketHandler@@Base+0x105c>
+   1c708:	e08f1001 	add	r1, pc, r1
+   1c70c:	e58d4018 	str	r4, [sp, #24]
+   1c710:	e08f3003 	add	r3, pc, r3
+   1c714:	e88d000c 	stm	sp, {r2, r3}
+   1c718:	e3a03001 	mov	r3, #1
+   1c71c:	ebffe0e5 	bl	14ab8 <asusdebuglog@plt>
+   1c720:	e354000b 	cmp	r4, #11
+   1c724:	8a000025 	bhi	1c7c0 <cm_udpPacketHandler@@Base+0xd20>
+   1c728:	e59f03d0 	ldr	r0, [pc, #976]	; 1cb00 <cm_udpPacketHandler@@Base+0x1060>
+   1c72c:	e08f0000 	add	r0, pc, r0
+   1c730:	ebfffcd2 	bl	1ba80 <list_movefront_node@@Base+0x90>
+   1c734:	e59f13c8 	ldr	r1, [pc, #968]	; 1cb04 <cm_udpPacketHandler@@Base+0x1064>
+   1c738:	e08f1001 	add	r1, pc, r1
+   1c73c:	ebffe0b9 	bl	14a28 <strcmp@plt>
+   1c740:	e3500000 	cmp	r0, #0
+   1c744:	1a000006 	bne	1c764 <cm_udpPacketHandler@@Base+0xcc4>
+   1c748:	e59f13b8 	ldr	r1, [pc, #952]	; 1cb08 <cm_udpPacketHandler@@Base+0x1068>
+   1c74c:	e1a03004 	mov	r3, r4
+   1c750:	e59f03b4 	ldr	r0, [pc, #948]	; 1cb0c <cm_udpPacketHandler@@Base+0x106c>
+   1c754:	e3a020e5 	mov	r2, #229	; 0xe5
+   1c758:	e08f1001 	add	r1, pc, r1
+   1c75c:	e08f0000 	add	r0, pc, r0

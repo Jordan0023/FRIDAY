@@ -137,3 +137,15 @@ vendor/CNA duplicate assessment.**
 3. Confirm stock LAN/WAN binding and firewall behavior on hardware.
 4. Submit RAX29/RAX30 product scope privately to NETGEAR for duplicate
    assessment.
+
+### Static WAN-policy follow-up (2026-07-24)
+
+The extracted RAX29 production `AccessLocal_Deny.sh` explicitly drops
+restricted-interface IPv4 traffic to TCP/56688 and UDP/1900 at lines 68-69,
+and applies the equivalent IPv6 drops at lines 109-110. This matches the
+barrier already documented for RAX30 and rules out a simple shipped-policy
+IPv6 bypass.
+
+This strengthens the classification to **LAN-only under the shipped static
+policy**, but does not replace the model-specific two-interface physical
+runtime check requested above.

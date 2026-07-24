@@ -150,7 +150,7 @@ Structured zero-day triage JSON: `known_firmware/reports/RAXE290/RAXE290-V1.0.9.
 
 ## Extraction Notes
 
-- binwalk -eM --directory known_firmware/extracted/3de38411e3c0353b stopped: extraction exceeded 768 MB
+- Using existing extraction directory: known_firmware/extracted/3de38411e3c0353b
 
 ## Decompiler Notes
 

@@ -1,0 +1,3 @@
+{"binary":"dblog","function":"FUN_000111b4","address":"000111b4","route":"/*","sink":"system","sources":"read,nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dblog","function":"FUN_000111b4","address":"000111b4","route":"/*","sink":"file_write","sources":"read,nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dblog","function":"FUN_000111b4","address":"000111b4","route":"/*","sink":"configuration_write","sources":"read,nvram_get","auth_markers":"","correlation":"function-local-co-location"}

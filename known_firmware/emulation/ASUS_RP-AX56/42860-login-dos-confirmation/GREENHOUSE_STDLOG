@@ -1,0 +1,11 @@
+[qemu] doing qemu_execven on filename /usr/sbin/httpd
+[GreenHouseQEMU] IP: 0.0.0.0
+[GreenHouseQEMU] PORT: 80
+[qemu] Successful Bind 0
+[22;31mcaptcha_enable=Unknown
+[22;00m[22;31mhttp_username=Unknown
+[22;00m[22;31mp_Setting=Unknown
+[22;00m[GreenHouseQEMU] SIGSEGV CAUGHT!
+[GreenHouseQEMU] SIG 11
+Segmentation fault (core dumped)
+Greenhouse_EXIT_CODE::139

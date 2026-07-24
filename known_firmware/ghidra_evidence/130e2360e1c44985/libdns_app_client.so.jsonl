@@ -1,0 +1,10 @@
+{"binary":"libdns_app_client.so","function":"dns_app_stats_json","address":"00011d54","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdns_app_client.so","function":"dns_block_stats_json","address":"000120b8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdns_app_client.so","function":"dns_block_list_json","address":"00012390","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdns_app_client.so","function":"api_block_list_has_name","address":"000125e0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdns_app_client.so","function":"api_block_list_has_name","address":"000125e0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdns_app_client.so","function":"api_block_list_insert_or_update","address":"00012774","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdns_app_client.so","function":"dns_appStat","address":"00012b90","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdns_app_client.so","function":"dns_sqlite_Stat_hook","address":"00013148","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdns_app_client.so","function":"delete_dns_app_sum_records","address":"000138bc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdns_app_client.so","function":"notify_dnsqd_bw_active","address":"000141c8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"libexif.so.12","function":"exif_entry_get_value","address":"0001b890","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexif.so.12","function":"exif_entry_initialize","address":"0001d838","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexif.so.12","function":"exif_entry_initialize","address":"0001d838","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexif.so.12","function":"mnote_olympus_entry_get_value","address":"00022848","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexif.so.12","function":"mnote_olympus_entry_get_value","address":"00022848","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"libxt_conntrack.so","function":"FUN_00011628","address":"00011628","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxt_conntrack.so","function":"FUN_00011788","address":"00011788","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxt_conntrack.so","function":"FUN_00012008","address":"00012008","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxt_conntrack.so","function":"FUN_00012008","address":"00012008","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

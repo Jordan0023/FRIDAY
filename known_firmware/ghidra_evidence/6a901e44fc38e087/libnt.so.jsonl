@@ -1,0 +1,15 @@
+{"binary":"libnt.so","function":"GetDebugValue","address":"00011f90","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"get_pid_num_by_name","address":"00012580","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"xfile_lock","address":"00012784","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"FUN_000131d4","address":"000131d4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"FUN_00013370","address":"00013370","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"FUN_000136ac","address":"000136ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"NT_DBCommand","address":"00013750","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"NT_DBCommand","address":"00013750","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"NT_DBAction","address":"000140f4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"NT_DBAction","address":"000140f4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"NT_DBAction","address":"000140f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"NT_DBActionAPP","address":"000147f4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"NT_DBActionAPP","address":"000147f4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"NT_DBActionAPP","address":"000147f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnt.so","function":"NT_DBCount","address":"00015220","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

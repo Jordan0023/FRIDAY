@@ -222,7 +222,7 @@ Structured zero-day triage JSON: `known_firmware/reports/RAX9/RAX9-V1.0.3.32.zip
 
 ## Extraction Notes
 
-- binwalk -eM --directory known_firmware/extracted/0d20c9b101b197d3 stopped: extraction exceeded 768 MB: WARNING: Extractor.execute failed to run external extractor 'unstuff '%e'': [Errno 2] No such file or directory: 'unstuff', 'unstuff '%e'' might not be installed correctly
+- Using existing extraction directory: known_firmware/extracted/0d20c9b101b197d3
 
 ## Decompiler Notes
 

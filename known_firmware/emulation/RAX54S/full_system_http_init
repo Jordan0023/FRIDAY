@@ -4,6 +4,8 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin
 export PATH
 LD_PRELOAD="/lib/rax54s_device_shim.so /lib/rax54s_emulation_shim.so"
 export LD_PRELOAD
+OPENSSL_CONF=/etc/ssl/openssl.cnf
+export OPENSSL_CONF
 
 mount -t proc proc /proc
 mount -t sysfs sysfs /sys
@@ -35,6 +37,7 @@ echo "KERNEL=$(uname -a)"
 /bin/acos_nvram set lan_ifname=br0
 /bin/acos_nvram set lan_ipaddr=10.0.2.15
 /bin/acos_nvram set lan_netmask=255.255.255.0
+/bin/acos_nvram set httpsEnable=1
 
 /bin/smd -v 2 >/dev/console 2>&1 &
 SMD_PID=$!
@@ -47,10 +50,16 @@ done
 echo "SMD_PID=$SMD_PID"
 echo "SMD_SOCKET=$(test -S /var/smd_messaging_server_addr && echo ready || echo missing)"
 
-/bin/strace -f -tt -s 128 -o /tmp/httpd.strace \
-    /usr/sbin/httpd -E /etc/rax54s-lab.pem >/dev/console 2>&1 &
+if test -x /bin/strace; then
+    /bin/strace -f -tt -s 128 -o /tmp/httpd.strace \
+        /usr/sbin/httpd -S -E /usr/sbin/ca.pem /usr/sbin/httpsd.pem \
+        >/dev/console 2>&1 &
+else
+    /usr/sbin/httpd -S -E /usr/sbin/ca.pem /usr/sbin/httpsd.pem \
+        >/dev/console 2>&1 &
+fi
 attempt=0
-while test "$attempt" -lt 90; do
+while test "$attempt" -lt 20; do
     awk 'NR > 1 && $4 == "0A" { found=1 } END { exit !found }' \
         /proc/net/tcp /proc/net/tcp6 2>/dev/null && break
     sleep 1
@@ -60,16 +69,26 @@ HTTPD_PID="$(pidof httpd | awk '{print $1}')"
 echo "HTTPD_PID=$HTTPD_PID"
 echo "HTTPD_ALIVE=$(test -n "$HTTPD_PID" && kill -0 "$HTTPD_PID" 2>/dev/null && echo yes || echo no)"
 echo "HTTPD_LISTENING=$(awk 'NR > 1 && $4 == \"0A\" { found=1 } END { exit !found }' /proc/net/tcp /proc/net/tcp6 2>/dev/null && echo yes || echo no)"
+echo "HTTPD_MAPS_BEGIN"
+cat /proc/"$HTTPD_PID"/maps 2>/dev/null
+echo "HTTPD_MAPS_END"
 cat /proc/net/tcp
 echo "HTTPD_STRACE_TAIL_BEGIN"
-tail -n 120 /tmp/httpd.strace 2>/dev/null
+tail -n 700 /tmp/httpd.strace 2>/dev/null
 echo "HTTPD_STRACE_TAIL_END"
 echo "FRIDAY_RAX54S_HTTP_READY=1"
 
+EXIT_REPORTED=no
 while true; do
     CURRENT_HTTPD_PID="$(pidof httpd | awk '{print $1}')"
     if test -z "$CURRENT_HTTPD_PID"; then
-        echo "HTTPD_EXITED=1"
+        if test "$EXIT_REPORTED" = no; then
+            echo "HTTPD_EXITED=1"
+            echo "HTTPD_EXIT_STRACE_BEGIN"
+            tail -n 240 /tmp/httpd.strace 2>/dev/null
+            echo "HTTPD_EXIT_STRACE_END"
+            EXIT_REPORTED=yes
+        fi
     else
         echo "HTTPD_HEALTH_PID=$CURRENT_HTTPD_PID $(grep '^VmRSS:' /proc/"$CURRENT_HTTPD_PID"/status 2>/dev/null)"
     fi

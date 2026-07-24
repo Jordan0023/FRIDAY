@@ -1,0 +1,4 @@
+{"binary":"pppoe-relay","function":"_ftext","address":"00400f80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pppoe-relay","function":"FUN_00401eb4","address":"00401eb4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pppoe-relay","function":"FUN_0040385c","address":"0040385c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pppoe-relay","function":"FUN_0040385c","address":"0040385c","route":"/multicast","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

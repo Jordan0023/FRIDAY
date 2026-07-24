@@ -1,0 +1,2 @@
+{"binary":"6relayd","function":"FUN_00016a44","address":"00016a44","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"6relayd","function":"FUN_00016a44","address":"00016a44","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

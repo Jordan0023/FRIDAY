@@ -1,0 +1,2 @@
+{"binary":"libubox.so","function":"usock","address":"00015140","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so","function":"md5sum","address":"000173f0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

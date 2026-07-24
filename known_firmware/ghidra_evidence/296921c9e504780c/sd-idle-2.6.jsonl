@@ -1,0 +1,4 @@
+{"binary":"sd-idle-2.6","function":"FUN_00010e30","address":"00010e30","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sd-idle-2.6","function":"FUN_00010e30","address":"00010e30","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sd-idle-2.6","function":"FUN_00010e30","address":"00010e30","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sd-idle-2.6","function":"FUN_00010e30","address":"00010e30","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

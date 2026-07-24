@@ -1,0 +1,7 @@
+{"binary":"libletsencrypt.so","function":"FUN_000126e8","address":"000126e8","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libletsencrypt.so","function":"FUN_000126e8","address":"000126e8","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libletsencrypt.so","function":"FUN_000129b4","address":"000129b4","route":"/*","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libletsencrypt.so","function":"is_le_cert","address":"00013348","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libletsencrypt.so","function":"start_letsencrypt","address":"00013550","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libletsencrypt.so","function":"le_acme_main","address":"00013d00","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libletsencrypt.so","function":"le_acme_main","address":"00013d00","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,21 @@
+GL-X3000 defensive push-command regression
+Date: 2026-07-24
+Scope: local synthetic model only; no router or production service contacted
+
+Command:
+python3 scripts/x3000_push_security_regression.py --json
+
+Result:
+Ran 8 tests in 0.001s
+OK
+{"errors": 0, "failures": 0, "passed": true, "tests_run": 8}
+
+Covered controls:
+- valid device-bound signed operation accepted
+- unsigned command rejected
+- cross-device command rejected
+- wrong-device key rejected
+- replay rejected
+- expired command rejected
+- tampered command rejected
+- sh_exec rejected even when signed

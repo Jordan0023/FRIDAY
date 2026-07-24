@@ -1,0 +1,56 @@
+#!/bin/sh
+
+# Minimal QEMU-virt compatibility layer. The GL.iNet userspace remains intact;
+# this only supplies board identity, repaired extraction-time applet links, and
+# deterministic virtio LAN/WAN mappings before handing control to stock init.
+
+mount -t proc proc /proc 2>/dev/null
+mount -t sysfs sysfs /sys 2>/dev/null
+mount -t devtmpfs devtmpfs /dev 2>/dev/null
+
+ln -sf /bin/busybox /sbin/ip
+ln -sf /bin/busybox /bin/login
+ln -sf /proc/mounts /etc/mtab
+[ -e /dev/random ] || mknod -m 666 /dev/random c 1 8
+[ -e /dev/urandom ] || mknod -m 666 /dev/urandom c 1 9
+
+mkdir -p /tmp/sysinfo
+echo "linux,dummy-virt" > /tmp/sysinfo/board_name
+echo "GL.iNet MT5000 QEMU compatibility lab" > /tmp/sysinfo/model
+
+mkdir -p /etc/config
+cat > /etc/config/network <<'EOF'
+config interface 'loopback'
+	option device 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config interface 'lan'
+	option device 'eth0'
+	option proto 'static'
+	option ipaddr '192.168.8.1'
+	option netmask '255.255.255.0'
+
+config interface 'wan'
+	option device 'eth1'
+	option proto 'dhcp'
+
+config interface 'wan6'
+	option device 'eth1'
+	option proto 'dhcpv6'
+EOF
+
+/sbin/ip link set lo up
+/sbin/ip link set eth0 up
+/sbin/ip addr add 192.168.8.1/24 dev eth0
+/sbin/ip link set eth1 up
+echo 0 > /proc/sys/net/ipv6/conf/eth0/disable_ipv6
+echo 0 > /proc/sys/net/ipv6/conf/eth1/disable_ipv6
+
+echo
+echo "MT5000 4.9.0 hybrid full-system lab"
+echo "eth0=LAN 192.168.8.1/24; eth1=isolated WAN"
+echo
+
+exec /bin/ash

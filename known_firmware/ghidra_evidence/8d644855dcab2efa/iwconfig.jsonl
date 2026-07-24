@@ -1,0 +1,2 @@
+{"binary":"iwconfig","function":"FUN_00403434","address":"00403434","route":"/any","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iwconfig","function":"FUN_00403434","address":"00403434","route":"/%d","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

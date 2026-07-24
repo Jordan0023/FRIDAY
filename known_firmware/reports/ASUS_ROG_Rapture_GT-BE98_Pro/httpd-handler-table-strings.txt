@@ -1,0 +1,2945 @@
+000db700 -> 00135160 = FUNCTION get_usb_node_by_device
+000db704 -> 00135184 = FUNCTION search_mnt
+000db708 -> 001350b4 = FUNCTION strrchr
+000db70c -> 00135188 = FUNCTION codb_count_active_client
+000db710 -> 00135430 = FUNCTION dump_dpi_support
+000db714 -> 001357b4 = FUNCTION __isoc99_fscanf
+000db718 -> 00135254 = FUNCTION __ctype_tolower_loc
+000db71c -> 00135770 = FUNCTION NT_DBAction
+000db720 -> 001351e0 = FUNCTION alarm
+000db724 -> 00135694 = FUNCTION AES_set_encrypt_key
+000db728 -> 001356d4 = FUNCTION mktime
+000db72c -> 001353d4 = FUNCTION with_non_dfs_chspec
+000db730 -> 001353c4 = FUNCTION erase_cert
+000db734 -> 001357c4 = FUNCTION ERR_error_string
+000db738 -> 001357e8 = FUNCTION X509V3_EXT_print
+000db73c -> 00135754 = FUNCTION fputs
+000db740 -> 00135548 = FUNCTION __libc_start_main
+000db744 -> 001356c4 = FUNCTION dns_block_list_json
+000db748 -> 00135588 = FUNCTION NT_DBFree
+000db74c -> 001356d8 = FUNCTION EVP_EncryptUpdate
+000db750 -> 0013534c = FUNCTION netdev_calc
+000db754 -> 001355fc = FUNCTION get_lan_hwaddr
+000db758 -> 0013503c = FUNCTION __gmon_start__
+000db75c -> 001352c4 = FUNCTION wf_chspec_primary20_chan
+000db760 -> 00135438 = FUNCTION rename
+000db764 -> 00135414 = FUNCTION codb_content_query_json_field
+000db768 -> 00135418 = FUNCTION check_pkgtb_boardid
+000db76c -> 00135204 = FUNCTION srand
+000db770 -> 00135800 = FUNCTION dns_app_stats_json
+000db774 -> 00135538 = FUNCTION strchr
+000db778 -> 0013554c = FUNCTION adjust_62_nv_list
+000db77c -> 0013577c = FUNCTION do_firmware_upgrade
+000db780 -> 001357a0 = FUNCTION free_node_eth_port_status
+000db784 -> 00135118 = FUNCTION _eval
+000db788 -> 00135774 = FUNCTION get_index_page
+000db78c -> 0013576c = FUNCTION shmat
+000db790 -> 0013541c = FUNCTION f_write_string
+000db794 -> 0013535c = FUNCTION EVP_EncryptInit_ex
+000db798 -> 00135084 = FUNCTION json_object_new_int
+000db79c -> 001354ac = FUNCTION eInfo_get_ePri
+000db7a0 -> 00135634 = FUNCTION json_object_get
+000db7a4 -> 001351bc = FUNCTION json_object_get_int64
+000db7a8 -> 001357f8 = FUNCTION vsnprintf
+000db7ac -> 001353c8 = FUNCTION BIO_s_mem
+000db7b0 -> 00135354 = FUNCTION strdup
+000db7b4 -> 00135514 = FUNCTION set_enc_nvram
+000db7b8 -> 00135068 = FUNCTION db_input_free
+000db7bc -> 00135528 = FUNCTION json_object_object_add
+000db7c0 -> 0013571c = FUNCTION json_object_to_json_string
+000db7c4 -> 0013545c = FUNCTION WRS_WBL_DEL_LIST
+000db7c8 -> 00135328 = FUNCTION X509_get_ext_by_NID
+000db7cc -> 001353ec = FUNCTION json_object_get_type
+000db7d0 -> 00135804 = FUNCTION wl_ifname
+000db7d4 -> 00126f38
+000db7d8 -> 0012adb4
+000db7dc -> 000b6398
+000db7e0 -> 00128758
+000db7e4 -> 00126f2c
+000db7e8 -> 000db9f0
+000db7ec -> 000e5510
+000db7f0 -> 000e2078 = syscmd.sh
+000db7f4 -> 000e40d0
+000db7f8 -> 000e40f0
+000db7fc -> 000e417c
+000db800 -> 00135000
+000db804 -> 00127f38
+000db808 -> 00135004
+000db80c -> 000de508
+000db810 -> 00133954
+000db814 -> 0012adb5
+000db818 -> 000e206c = run_telnetd
+000db81c -> 00127f78
+000db820 -> 00128808
+000db824 -> 00127f99
+000db828 -> 000e54fc
+000db82c -> 000e3fd4
+000db830 -> 000e3f50
+000db834 -> 00135008 = FUNCTION chld_reap
+000db838 -> 000def68
+000db83c -> 000e5504
+000db840 -> 000e3fb4
+000db844 -> 000c6679 = ap%s%d_enable,ap%s%d_ssid,ap%s%d_hide_ssid,ap%s%d_security,ap%s%d_bw_limit,ap%s%d_timesched,ap%s%d_sched,ap%s%d_ap_isolate,ap%s%d_macmode,ap%s%d_maclist,ap%s%d_iot_max_cmpt,ap%s%d_dut_list,ap%s%d_mlo,ap%s%d_expiretime,ap%s%d_11be,ap%s%d_disabled
+000db848 -> 000e3dd0
+000db84c -> 0013500c = FUNCTION alphasort64
+000db850 -> 000e3fe0
+000db854 -> 00127fac
+000db858 -> 0001a21c = FUNCTION FUN_0001a21c
+000db85c -> 000e205c = ateUpgrade_flag
+000db860 -> 00127fb4
+000db864 -> 000db9f8
+000db868 -> 001283b4
+000db86c -> 000e4068
+000db870 -> 00135010
+000db874 -> 00128434
+000db878 -> 00135014
+000db87c -> 000e3f90
+000db880 -> 0012887c
+000db884 -> 000e3f6c
+000db888 -> 000e4064
+000db88c -> 001284b4
+000db890 -> 0011555c
+000db894 -> 000e3f68
+000db898 -> 000e3f4c
+000db89c -> 000def8c
+000db8a0 -> 00135018
+000db8a4 -> 00126f34
+000db8a8 -> 0012edb8
+000db8ac -> 00019fc8
+000db8b0 -> 00115560
+000db8b4 -> 000e3120
+000db8b8 -> 000e3fcc
+000db8bc -> 00126f04
+000db8c0 -> 0013501c
+000db8c4 -> 000defc4
+000db8c8 -> 00135020
+000db8cc -> 00135024
+000db8d0 -> 000dc0fc
+000db8d4 -> 000e5500
+000db8d8 -> 000e5514
+000db8dc -> 000e5508
+000db8e0 -> 000e550c
+000db8e4 -> 00135028
+000db8e8 -> 000deb8c
+000db8ec -> 000e20e0
+000db8f0 -> 000e4130
+000db8f4 -> 000e3fb0
+000db8f8 -> 000e4110
+000db8fc -> 0013502c
+000db900 -> 000e3f54
+000db904 -> 00115519
+000db908 -> 000b6390
+000db90c -> 000de440
+000db910 -> 000e4188
+000db914 -> 001284d4
+000db918 -> 00133958
+000db91c -> 0012a900
+000db920 -> 000dca30
+000db924 -> 00128554
+000db928 -> 000e3f70
+000db92c -> 000dec44
+000db930 -> 0012edbc
+000db934 -> 000defac
+000db938 -> 000deddc
+000db93c -> 0013395c
+000db940 -> 000e3fd0
+000db944 -> 000dbda8
+000db948 -> 00135034
+000db94c -> 000e4090
+000db950 -> 0012edc0
+000db954 -> 00128594
+000db958 -> 00128598
+000db95c -> 000e2130
+000db960 -> 000e3fc8
+000db964 -> 000e4170
+000db968 -> 000e5518
+000db96c -> 00126f30
+000db970 -> 001339dc
+000db974 -> 000e4180
+000db978 -> 000e3fa8
+000db97c -> 000dc100
+000db980 -> 000e3f64
+000db984 -> 0007c848 = FUNCTION FUN_0007c848
+000db988 -> 000dc03c = Cache-Control: max-age=3600
+000db98c -> 000db9ec
+000db990 -> 000db9f4
+000db994 -> 000e4174
+000db998 -> 000e3fdc
+000db99c -> 00126f0a
+000db9a0 -> 000e40b0
+000db9a4 -> 000dbaf0
+000db9a8 -> 000e4070
+000db9ac -> 000de360
+000db9b0 -> 0013503c = FUNCTION __gmon_start__
+000db9b4 -> 00135044
+000db9b8 -> 001285d8
+000db9bc -> 000e3fd8
+000db9c0 -> 000dc002 = Cache-Control: max-age=31536000
+000db9c4 -> 000e54f8
+000db9c8 -> 001337c4
+000db9cc -> 000e3fa4
+000db9d0 -> 000e3fac
+000db9d4 -> 00128658
+000db9d8 -> 00000000
+000db9dc -> 00000000
+000db9e0 -> 000b5264 = touch
+000db9e4 -> 000b526a = /tmp/HTTPD_DEBUG
+000db9e8 -> 00000000
+000db9ec -> 0000012c
+000db9f0 -> ffffffff
+000db9f4 -> 00000001
+000db9f8 -> 000b5bb1 = .cgi
+000db9fc -> 00000000
+000dba00 -> 000b60ba = client.ovpn
+000dba04 -> 00000000
+000dba08 -> 000b60c6 = chanspec.js
+000dba0c -> 00000000
+000dba10 -> 000b60d2 = client_function.js
+000dba14 -> 00000000
+000dba18 -> 000c4a1f = asus_policy.js
+000dba1c -> 00000002
+000dba20 -> 000b60e5 = disk.js
+000dba24 -> 00000000
+000dba28 -> 000b60ed = form.js
+000dba2c -> 00000000
+000dba30 -> 000b60f5 = general.js
+000dba34 -> 00000000
+000dba38 -> 000b6100 = handler.js
+000dba3c -> 00000000
+000dba40 -> 000b610b = help.js
+000dba44 -> 00000000
+000dba48 -> 000c44fb = https_redirect.js
+000dba4c -> 00000000
+000dba50 -> 000b6113 = notification.js
+000dba54 -> 00000000
+000dba58 -> 000b6123 = oauth.js
+000dba5c -> 00000000
+000dba60 -> 000b612c = plugins.js
+000dba64 -> 00000000
+000dba68 -> 000b6137 = remote.js
+000dba6c -> 00000000
+000dba70 -> 000b6141 = state.js
+000dba74 -> 00000000
+000dba78 -> 000b614a = subnet_rule.js
+000dba7c -> 00000000
+000dba80 -> 000b6159 = tableValidator.js
+000dba84 -> 00000000
+000dba88 -> 000b616b = validator.js
+000dba8c -> 00000000
+000dba90 -> 000b6178 = vpns_openvpn.js
+000dba94 -> 00000000
+000dba98 -> 000c2dc6 = .png
+000dba9c -> 00000002
+000dbaa0 -> 000c2ddb = .svg
+000dbaa4 -> 00000002
+000dbaa8 -> 000c2dd4 = .jpg
+000dbaac -> 00000002
+000dbab0 -> 000c2dcd = .gif
+000dbab4 -> 00000002
+000dbab8 -> 000c2dbf = .css
+000dbabc -> 00000002
+000dbac0 -> 000c4489 = jquery.js
+000dbac4 -> 00000002
+000dbac8 -> 000c44c1 = bootstrap.bundle.min.js
+000dbacc -> 00000002
+000dbad0 -> 000c4496 = jquery-ui.js
+000dbad4 -> 00000002
+000dbad8 -> 000c44dc = chart.min.js
+000dbadc -> 00000002
+000dbae0 -> 000c4515 = require.min.js
+000dbae4 -> 00000002
+000dbae8 -> 000c4a69 = FreeWiFi_template.json
+000dbaec -> 00000002
+000dbaf0 -> 000c9eeb = br
+000dbaf4 -> 000b618b = BR
+000dbaf8 -> 000b6188 = pt-BR
+000dbafc -> 000b618b = BR
+000dbb00 -> 000b618e = zh-cn
+000dbb04 -> 000b619c = CN
+000dbb08 -> 000b6194 = zh-Hans-CN
+000dbb0c -> 000b619c = CN
+000dbb10 -> 000c7f8f = cs
+000dbb14 -> 000b619f = CZ
+000dbb18 -> 000b61a2 = cs-cz
+000dbb1c -> 000b619f = CZ
+000dbb20 -> 000b61a8 = da
+000dbb24 -> 000b61ab = DA
+000dbb28 -> 000b61ae = da-DK
+000dbb2c -> 000b61ab = DA
+000dbb30 -> 000b61c6 = de
+000dbb34 -> 000b61b4 = DE
+000dbb38 -> 000b61b7 = de-at
+000dbb3c -> 000b61b4 = DE
+000dbb40 -> 000b61bd = de-ch
+000dbb44 -> 000b61b4 = DE
+000dbb48 -> 000b61c3 = de-de
+000dbb4c -> 000b61b4 = DE
+000dbb50 -> 000b61c9 = de-li
+000dbb54 -> 000b61b4 = DE
+000dbb58 -> 000b61cf = de-lu
+000dbb5c -> 000b61b4 = DE
+000dbb60 -> 000b5ce6 = en
+000dbb64 -> 000c2d9f = EN
+000dbb68 -> 000b61d5 = en-us
+000dbb6c -> 000c2d9f = EN
+000dbb70 -> 000b6202 = es
+000dbb74 -> 000c81ae = ES
+000dbb78 -> 000b61db = es-ec
+000dbb7c -> 000c81ae = ES
+000dbb80 -> 000b61e1 = es-py
+000dbb84 -> 000c81ae = ES
+000dbb88 -> 000b61e7 = es-pa
+000dbb8c -> 000c81ae = ES
+000dbb90 -> 000b61ed = es-ni
+000dbb94 -> 000c81ae = ES
+000dbb98 -> 000b61f3 = es-gt
+000dbb9c -> 000c81ae = ES
+000dbba0 -> 000b61f9 = es-do
+000dbba4 -> 000c81ae = ES
+000dbba8 -> 000b61ff = es-es
+000dbbac -> 000c81ae = ES
+000dbbb0 -> 000b6205 = es-hn
+000dbbb4 -> 000c81ae = ES
+000dbbb8 -> 000b620b = es-ve
+000dbbbc -> 000c81ae = ES
+000dbbc0 -> 000b6211 = es-pr
+000dbbc4 -> 000c81ae = ES
+000dbbc8 -> 000b6217 = es-ar
+000dbbcc -> 000c81ae = ES
+000dbbd0 -> 000b621d = es-bo
+000dbbd4 -> 000c81ae = ES
+000dbbd8 -> 000b6223 = es-us
+000dbbdc -> 000c81ae = ES
+000dbbe0 -> 000b6229 = es-co
+000dbbe4 -> 000c81ae = ES
+000dbbe8 -> 000b622f = es-cr
+000dbbec -> 000c81ae = ES
+000dbbf0 -> 000b6235 = es-uy
+000dbbf4 -> 000c81ae = ES
+000dbbf8 -> 000b623b = es-pe
+000dbbfc -> 000c81ae = ES
+000dbc00 -> 000b6241 = es-cl
+000dbc04 -> 000c81ae = ES
+000dbc08 -> 000b6247 = es-mx
+000dbc0c -> 000c81ae = ES
+000dbc10 -> 000b624d = es-sv
+000dbc14 -> 000c81ae = ES
+000dbc18 -> 000c9284 = fi
+000dbc1c -> 000b6256 = FI
+000dbc20 -> 000b6253 = fi-FI
+000dbc24 -> 000b6256 = FI
+000dbc28 -> 000b625f = fr
+000dbc2c -> 000b6259 = FR
+000dbc30 -> 000b625c = fr-fr
+000dbc34 -> 000b6259 = FR
+000dbc38 -> 000b6262 = fr-BE
+000dbc3c -> 000b6259 = FR
+000dbc40 -> 000b6268 = fr-CA
+000dbc44 -> 000b6259 = FR
+000dbc48 -> 000b626e = fr-CH
+000dbc4c -> 000b6259 = FR
+000dbc50 -> 000b6274 = fr-MC
+000dbc54 -> 000b6259 = FR
+000dbc58 -> 000b627a = fr-LU
+000dbc5c -> 000b6259 = FR
+000dbc60 -> 000b6280 = hu-hu
+000dbc64 -> 000b6286 = HU
+000dbc68 -> 000bb540 = hu
+000dbc6c -> 000b6286 = HU
+000dbc70 -> 000c886c = it
+000dbc74 -> 000c2d7e = IT
+000dbc78 -> 000b6289 = it-it
+000dbc7c -> 000c2d7e = IT
+000dbc80 -> 000b628f = it-ch
+000dbc84 -> 000c2d7e = IT
+000dbc88 -> 000b6295 = ja
+000dbc8c -> 000b629b = JP
+000dbc90 -> 000b6298 = ja-JP
+000dbc94 -> 000b629b = JP
+000dbc98 -> 000b629e = ko
+000dbc9c -> 000b62a1 = KR
+000dbca0 -> 000b62a4 = ko-kr
+000dbca4 -> 000b62a1 = KR
+000dbca8 -> 000c8fe7 = ms
+000dbcac -> 000b62aa = MS
+000dbcb0 -> 000b62ad = ms-MY
+000dbcb4 -> 000b62aa = MS
+000dbcb8 -> 000b62b3 = ms-BN
+000dbcbc -> 000b62aa = MS
+000dbcc0 -> 000ca136 = nl
+000dbcc4 -> 000b62bc = NL
+000dbcc8 -> 000b62b9 = nl-NL
+000dbccc -> 000b62bc = NL
+000dbcd0 -> 000b93ce = no
+000dbcd4 -> 000b62c2 = NO
+000dbcd8 -> 000ca233 = nb
+000dbcdc -> 000b62c2 = NO
+000dbce0 -> 000c3e7a = nn
+000dbce4 -> 000b62c2 = NO
+000dbce8 -> 000b62bf = nb-NO
+000dbcec -> 000b62c2 = NO
+000dbcf0 -> 000b62c5 = nn-NO
+000dbcf4 -> 000b62c2 = NO
+000dbcf8 -> 000b62cb = pl-pl
+000dbcfc -> 000b62d1 = PL
+000dbd00 -> 000b62ce = pl
+000dbd04 -> 000b62d1 = PL
+000dbd08 -> 000b62da = ru
+000dbd0c -> 000b62d4 = RU
+000dbd10 -> 000b62d7 = ru-ru
+000dbd14 -> 000b62d4 = RU
+000dbd18 -> 000b62e3 = ro
+000dbd1c -> 000b62dd = RO
+000dbd20 -> 000b62e0 = ro-ro
+000dbd24 -> 000b62dd = RO
+000dbd28 -> 000bbc7e = sl
+000dbd2c -> 000b62e6 = SL
+000dbd30 -> 000b62e9 = sl-SI
+000dbd34 -> 000b62e6 = SL
+000dbd38 -> 000b6250 = sv
+000dbd3c -> 000b5c5c = SV
+000dbd40 -> 000b62ef = sv-FI
+000dbd44 -> 000b5c5c = SV
+000dbd48 -> 000b62f5 = sv-SE
+000dbd4c -> 000b5c5c = SV
+000dbd50 -> 000b9b06 = th
+000dbd54 -> 000b6307 = TH
+000dbd58 -> 000b62fb = th-TH
+000dbd5c -> 000b6307 = TH
+000dbd60 -> 000b6301 = th-TH-TH
+000dbd64 -> 000b6307 = TH
+000dbd68 -> 000ba21a = tr
+000dbd6c -> 000b630d = TR
+000dbd70 -> 000b630a = tr-TR
+000dbd74 -> 000b630d = TR
+000dbd78 -> 000b6310 = zh
+000dbd7c -> 000b6321 = TW
+000dbd80 -> 000b6313 = zh-tw
+000dbd84 -> 000b6321 = TW
+000dbd88 -> 000b6319 = zh-Hant-TW
+000dbd8c -> 000b6321 = TW
+000dbd90 -> 000b6324 = zh-hk
+000dbd94 -> 000b6321 = TW
+000dbd98 -> 000c0118 = uk
+000dbd9c -> 000b632a = UK
+000dbda0 -> 00000000
+000dbda4 -> 00000000
+000dbda8 -> 000b63a2 = BASIC_MODEL_NAME
+000dbdac -> 000b5349
+000dbdb0 -> 000b63d6 = ZVDOMAIN_NAMEVZ
+000dbdb4 -> 000b573c = www.asusrouter.com
+000dbdb8 -> 00000000
+000dbdbc -> 00000000
+000dbdc0 -> 000b63e6 = echo
+000dbdc4 -> 000b5349
+000dbdc8 -> 00000000
+000dbdcc -> 000b5ca1 = /etc/cacert.pem
+000dbdd0 -> 000b5cb1 = /etc/cakey.pem
+000dbdd4 -> 000b63eb = /etc/cacert_gen.pem
+000dbdd8 -> 000b63ff = /etc/cakey_gen.pem
+000dbddc -> 00000000
+000dbde0 -> 000b5d25 = gencert.sh
+000dbde4 -> 000b5d30 = -L
+000dbde8 -> 000b5d33 = 192.168.50.1
+000dbdec -> 000bb2f1 = -b
+000dbdf0 -> 000b6412 = -l
+000dbdf4 -> 000ca26e
+000dbdf8 -> 00000000
+000dbdfc -> 000b5cc0 = /etc/cert.pem
+000dbe00 -> 000b5cce = /etc/key.pem
+000dbe04 -> 000b6415 = /etc/cert_gen.pem
+000dbe08 -> 000b6427 = /etc/key_gen.pem
+000dbe0c -> 00000000
+000dbe10 -> 000b5d25 = gencert.sh
+000dbe14 -> 000b5d30 = -L
+000dbe18 -> 000b5d33 = 192.168.50.1
+000dbe1c -> 000bb2f1 = -b
+000dbe20 -> 000b6412 = -l
+000dbe24 -> 00000000
+000dbe28 -> 000b65c9 = PPTP
+000dbe2c -> 000b65ce = L2TP
+000dbe30 -> 000b65d3 = OpenVPN
+000dbe34 -> 000b65db = IPSec
+000dbe38 -> 000b65e1 = WireGuard
+000dbe3c -> 000b65eb = HMA
+000dbe40 -> 000b65ef = NordVPN
+000dbe44 -> 000c4afd = tar
+000dbe48 -> 000b6438 = chf
+000dbe4c -> 000b643c = /tmp/cert.tar
+000dbe50 -> 000b644a = -C
+000dbe54 -> 000b644d = /etc
+000dbe58 -> 000b6457 = cert.crt
+000dbe5c -> 00000000
+000dbe60 -> 000c4afd = tar
+000dbe64 -> 000b64e5 = cf
+000dbe68 -> 000b64e8 = /tmp/networkmap.tar
+000dbe6c -> 000b64fc = /tmp/upnp.log
+000dbe70 -> 000b650a = /tmp/smb.log
+000dbe74 -> 000b6517 = /tmp/syslog.log
+000dbe78 -> 000b7dc4 = /tmp/nmp_client_list.log
+000dbe7c -> 000b7dfa = /tmp/asus_dev_list.log
+000dbe80 -> 000b6527 = /jffs/usericon
+000dbe84 -> 000b7e3a = /tmp/upnpicon
+000dbe88 -> 00000000
+000dbe8c -> 000b5cc0 = /etc/cert.pem
+000dbe90 -> 000b5cce = /etc/key.pem
+000dbe94 -> 00000000
+000dbe98 -> 000b6452 = /etc/cert.crt
+000dbe9c -> 000b5cb1 = /etc/cakey.pem
+000dbea0 -> 00000000
+000dbea4 -> 000b6460 = mv
+000dbea8 -> 000b6463 = -f
+000dbeac -> 000b6466 = /jffs/.cert/cert.pem
+000dbeb0 -> 000b647b = /jffs/.cert/cacert.pem
+000dbeb4 -> 00000000
+000dbeb8 -> 000b6460 = mv
+000dbebc -> 000b6463 = -f
+000dbec0 -> 000b6492 = /jffs/.cert/key.pem
+000dbec4 -> 000b64a6 = /jffs/.cert/cakey.pem
+000dbec8 -> 00000000
+000dbecc -> 000b64d9 = /sbin/ejusb
+000dbed0 -> 000bbca2 = -1
+000dbed4 -> 000c9b01
+000dbed8 -> 00000000
+000dbedc -> 000b65a7 = STAINFO
+000dbee0 -> 000b65af = WIFISYS2
+000dbee4 -> 000b65b8 = ETHINFO
+000dbee8 -> 000b65c0 = PORTINFO
+000dbeec -> 00000000
+000dbef0 -> 000c324b = nvram
+000dbef4 -> 000b6536 = fb_save
+000dbef8 -> 000b653e = /tmp/settings
+000dbefc -> 00000000
+000dbf00 -> 000c324b = nvram
+000dbf04 -> 000b6539 = save
+000dbf08 -> 000b653e = /tmp/settings
+000dbf0c -> 00000000
+000dbf10 -> 000c324b = nvram
+000dbf14 -> 000b654c = save_ap
+000dbf18 -> 000b653e = /tmp/settings
+000dbf1c -> 00000000
+000dbf20 -> 000c324b = nvram
+000dbf24 -> 000b6554 = save_rp_2g
+000dbf28 -> 000b653e = /tmp/settings
+000dbf2c -> 00000000
+000dbf30 -> 000c324b = nvram
+000dbf34 -> 000b655f = save_rp_5g
+000dbf38 -> 000b653e = /tmp/settings
+000dbf3c -> 00000000
+000dbf40 -> 000c93c8 = enable
+000dbf44 -> 000c874d = ssid
+000dbf48 -> 000b656a = hide_ssid
+000dbf4c -> 000bcc4b = security
+000dbf50 -> 000b6574 = bw_limit
+000dbf54 -> 000be2f5 = timesched
+000dbf58 -> 000c22e4 = sched
+000dbf5c -> 000c5b3b = expiretime
+000dbf60 -> 000b657d = ap_isolate
+000dbf64 -> 000c5b5e = macmode
+000dbf68 -> 000c1e79 = mlo
+000dbf6c -> 000c0c81 = maclist
+000dbf70 -> 000b6588 = iot_max_cmpt
+000dbf74 -> 000b6595 = dut_list
+000dbf78 -> 000b753e = 11be
+000dbf7c -> 000b659e = disabled
+000dbf80 -> 000b660e = iptables
+000dbf84 -> 000b6617 = -t
+000dbf88 -> 000b661a = nat
+000dbf8c -> 000b661e = -nxL
+000dbf90 -> 00000000
+000dbf94 -> 746e6f43
+000dbf98 -> 2d746e65
+000dbf9c -> 70736944
+000dbfa0 -> 7469736f
+000dbfa4 -> 3a6e6f69
+000dbfa8 -> 74746120
+000dbfac -> 6d686361
+000dbfb0 -> 3b746e65
+000dbfb4 -> 69660a0d
+000dbfb8 -> 616e656c
+000dbfbc -> 6d3d656d
+000dbfc0 -> 6d65646f
+000dbfc4 -> 2e676f6c
+000dbfc8 -> 00747874
+000dbfcc -> 746e6f43
+000dbfd0 -> 2d746e65
+000dbfd4 -> 70736944
+000dbfd8 -> 7469736f
+000dbfdc -> 3a6e6f69
+000dbfe0 -> 74746120
+000dbfe4 -> 6d686361
+000dbfe8 -> 3b746e65
+000dbfec -> 69660a0d
+000dbff0 -> 616e656c
+000dbff4 -> 733d656d
+000dbff8 -> 6f6c7379
+000dbffc -> 78742e67
+000dc000 -> 61430074
+000dc004 -> 2d656863
+000dc008 -> 746e6f43
+000dc00c -> 3a6c6f72
+000dc010 -> 78616d20
+000dc014 -> 6567612d
+000dc018 -> 3531333d
+000dc01c -> 30303633
+000dc020 -> 61430030
+000dc024 -> 2d656863
+000dc028 -> 746e6f43
+000dc02c -> 3a6c6f72
+000dc030 -> 78616d20
+000dc034 -> 6567612d
+000dc038 -> 0030363d
+000dc03c -> 68636143
+000dc040 -> 6f432d65
+000dc044 -> 6f72746e
+000dc048 -> 6d203a6c
+000dc04c -> 612d7861
+000dc050 -> 333d6567
+000dc054 -> 00303036
+000dc058 -> 68636143
+000dc05c -> 6f432d65
+000dc060 -> 6f72746e
+000dc064 -> 6e203a6c
+000dc068 -> 61632d6f
+000dc06c -> 2c656863
+000dc070 -> 2d6f6e20
+000dc074 -> 726f7473
+000dc078 -> 6d202c65
+000dc07c -> 2d747375
+000dc080 -> 61766572
+000dc084 -> 6164696c
+000dc088 -> 0a0d6574
+000dc08c -> 67617250
+000dc090 -> 203a616d
+000dc094 -> 632d6f6e
+000dc098 -> 65686361
+000dc09c -> 78450a0d
+000dc0a0 -> 65726970
+000dc0a4 -> 30203a73
+000dc0a8 -> 63614300
+000dc0ac -> 432d6568
+000dc0b0 -> 72746e6f
+000dc0b4 -> 203a6c6f
+000dc0b8 -> 632d6f6e
+000dc0bc -> 65686361
+000dc0c0 -> 6f6e202c
+000dc0c4 -> 6f74732d
+000dc0c8 -> 202c6572
+000dc0cc -> 7473756d
+000dc0d0 -> 7665722d
+000dc0d4 -> 64696c61
+000dc0d8 -> 0d657461
+000dc0dc -> 6172500a
+000dc0e0 -> 3a616d67
+000dc0e4 -> 2d6f6e20
+000dc0e8 -> 68636163
+000dc0ec -> 450a0d65
+000dc0f0 -> 72697078
+000dc0f4 -> 203a7365
+000dc0f8 -> 00000030
+000dc0fc -> ffffffff
+000dc100 -> 000becd5 = nvram_get
+000dc104 -> 000861fc = FUNCTION FUN_000861fc
+000dc108 -> 000becd2 = wl_nvram_get
+000dc10c -> 000528ec
+000dc110 -> 000becc0 = nvram_default_get
+000dc114 -> 0003a118 = FUNCTION FUN_0003a118
+000dc118 -> 000c311a = nvram_match
+000dc11c -> 00039f38
+000dc120 -> 000c3126 = nvram_double_match
+000dc124 -> 00039d2c
+000dc128 -> 000c3139 = nvram_show_chinese_char
+000dc12c -> 00052704
+000dc130 -> 000c3151 = nvram_get_x
+000dc134 -> 0005255c = FUNCTION FUN_0005255c
+000dc138 -> 000c315d = nvram_get_f
+000dc13c -> 000523a8
+000dc140 -> 000c3169 = nvram_get_list_x
+000dc144 -> 00052278 = FUNCTION FUN_00052278
+000dc148 -> 000c317a = nvram_get_buf_x
+000dc14c -> 00052190
+000dc150 -> 000c318a = nvram_match_x
+000dc154 -> 00039b38
+000dc158 -> 000c3198 = nvram_double_match_x
+000dc15c -> 000398fc = FUNCTION FUN_000398fc
+000dc160 -> 000c31ad = nvram_match_both_x
+000dc164 -> 000396e0
+000dc168 -> 000c31c0 = nvram_match_list_x
+000dc16c -> 00045680 = FUNCTION FUN_00045680
+000dc170 -> 000c31d3 = find_word
+000dc174 -> 00051f94 = FUNCTION FUN_00051f94
+000dc178 -> 000c31dd = select_channel
+000dc17c -> 00039314 = FUNCTION FUN_00039314
+000dc180 -> 000b9c74 = uptime
+000dc184 -> 00050ba4
+000dc188 -> 000c31ec = sysuptime
+000dc18c -> 00050a98
+000dc190 -> 000c31f6 = utctimestamp
+000dc194 -> 00025d8c = FUNCTION FUN_00025d8c
+000dc198 -> 000c3203 = nvram_dump
+000dc19c -> 0008c434
+000dc1a0 -> 000c3222 = dhcpLeaseInfo
+000dc1a4 -> 00026fc8
+000dc1a8 -> 000c320e = dhcpLeaseMacList
+000dc1ac -> 00028188
+000dc1b0 -> 000c321f = IP_dhcpLeaseInfo
+000dc1b4 -> 00027288
+000dc1b8 -> 000c3230 = qrate
+000dc1bc -> 00084ea8
+000dc1c0 -> 000c3236 = ctdump
+000dc1c4 -> 0004b3d0
+000dc1c8 -> 000c323d = netdev
+000dc1cc -> 00044c24
+000dc1d0 -> 000c3b99 = bandwidth
+000dc1d4 -> 0003ac8c = FUNCTION FUN_0003ac8c
+000dc1d8 -> 000c3244 = backup_nvram
+000dc1dc -> 00023d3c = FUNCTION FUN_00023d3c
+000dc1e0 -> 000c3251 = wl_get_parameter
+000dc1e4 -> 00054a8c
+000dc1e8 -> 000c3262 = wl_get_guestnetwork
+000dc1ec -> 000532ac
+000dc1f0 -> 000c3276 = wan_get_parameter
+000dc1f4 -> 00054978
+000dc1f8 -> 000c3288 = lan_get_parameter
+000dc1fc -> 00054864 = FUNCTION FUN_00054864
+000dc200 -> 000c329a = nvram_get_ddns
+000dc204 -> 000390b8 = FUNCTION FUN_000390b8
+000dc208 -> 000becf8 = nvram_char_to_ascii
+000dc20c -> 00052cb4 = FUNCTION FUN_00052cb4
+000dc210 -> 000c32a9 = get_clientlist_from_json_database
+000dc214 -> 0005e1fc = FUNCTION FUN_0005e1fc
+000dc218 -> 000c32cb = get_basic_clientlist
+000dc21c -> 00062220 = FUNCTION FUN_00062220
+000dc220 -> 000c32e0 = get_basic_clientlist_count
+000dc224 -> 0006228c = FUNCTION FUN_0006228c
+000dc228 -> 000c32fb = get_all_basic_clientlist
+000dc22c -> 00033ff0
+000dc230 -> 000c3314 = get_wol_clientlist
+000dc234 -> 000622f8 = FUNCTION FUN_000622f8
+000dc238 -> 000c3327 = get_clientlist_reportstate
+000dc23c -> 000613b0
+000dc240 -> 000c3342 = update_variables
+000dc244 -> 0005b148 = FUNCTION FUN_0005b148
+000dc248 -> 000c3353 = set_variables
+000dc24c -> 00058e88 = FUNCTION FUN_00058e88
+000dc250 -> 000c3361 = convert_asus_variables
+000dc254 -> 000464e0 = FUNCTION FUN_000464e0
+000dc258 -> 000c3378 = asus_nvram_commit
+000dc25c -> 0004f1cc = FUNCTION FUN_0004f1cc
+000dc260 -> 000c338a = notify_services
+000dc264 -> 0004f258 = FUNCTION FUN_0004f258
+000dc268 -> 000b7a35 = wanstate
+000dc26c -> 00022858
+000dc270 -> 000c339a = dual_wanstate
+000dc274 -> 0002adec
+000dc278 -> 000c33a8 = ajax_dualwanstate
+000dc27c -> 0002aa30
+000dc280 -> 000c33c4 = ajax_wanstate
+000dc284 -> 0002a7b4
+000dc288 -> 000c33ba = secondary_ajax_wanstate
+000dc28c -> 0002a56c
+000dc290 -> 000c33d8 = wanlink
+000dc294 -> 00043f38 = FUNCTION FUN_00043f38
+000dc298 -> 000c33d2 = first_wanlink
+000dc29c -> 000436e8
+000dc2a0 -> 000c33e0 = secondary_wanlink
+000dc2a4 -> 00042e98
+000dc2a8 -> 000c33f2 = wanlink_state
+000dc2ac -> 000420d8 = FUNCTION FUN_000420d8
+000dc2b0 -> 000c3400 = wan_action
+000dc2b4 -> 00025b40
+000dc2b8 -> 000c340b = get_wan_unit
+000dc2bc -> 00022784
+000dc2c0 -> 000c3254 = get_parameter
+000dc2c4 -> 00025948 = FUNCTION FUN_00025948
+000dc2c8 -> 000c3418 = get_ascii_parameter
+000dc2cc -> 000257c4
+000dc2d0 -> 000c342c = login_state_hook
+000dc2d4 -> 00041c50
+000dc2d8 -> 000c343d = is_logined_hook
+000dc2dc -> 00041b48
+000dc2e0 -> 000c344d = get_cpu_temperature
+000dc2e4 -> 00041684
+000dc2e8 -> 000c3461 = get_machine_name
+000dc2ec -> 00041a80
+000dc2f0 -> 000c3472 = get_uname_release
+000dc2f4 -> 000419e8
+000dc2f8 -> 000c3484 = dhcp_leases
+000dc2fc -> 00045f14 = FUNCTION FUN_00045f14
+000dc300 -> 000c3490 = get_arp_table
+000dc304 -> 00027f9c
+000dc308 -> 000c349e = get_static_client
+000dc30c -> 00027d20
+000dc310 -> 000c34b0 = yadns_servers
+000dc314 -> 0004634c
+000dc318 -> 000c34be = yadns_clients
+000dc31c -> 00046404 = FUNCTION FUN_00046404
+000dc320 -> 000c34cc = get_changed_status
+000dc324 -> 000417f8 = FUNCTION FUN_000417f8
+000dc328 -> 000c34df = shown_language_css
+000dc32c -> 0002b6e4
+000dc330 -> 000c34f2 = language_support_list
+000dc334 -> 0002b9bc
+000dc338 -> 000c3508 = memory_usage
+000dc33c -> 00085330 = FUNCTION FUN_00085330
+000dc340 -> 000c3515 = cpu_usage
+000dc344 -> 000413b8 = FUNCTION FUN_000413b8
+000dc348 -> 000c351f = cpu_core_num
+000dc34c -> 00027b10
+000dc350 -> 000c352c = wps_info_2g
+000dc354 -> 0009fdcc = FUNCTION FUN_0009fdcc
+000dc358 -> 000c3538 = wps_info_5g
+000dc35c -> 0009fec8 = FUNCTION FUN_0009fec8
+000dc360 -> 000c3544 = wps_info_5g_2
+000dc364 -> 000a0030
+000dc368 -> 000c3552 = wps_info_6g
+000dc36c -> 000a01c0 = FUNCTION FUN_000a01c0
+000dc370 -> 000c355e = wps_info_6g_2
+000dc374 -> 000a0328 = FUNCTION FUN_000a0328
+000dc378 -> 000c356c = get_ap_info
+000dc37c -> 00046d58 = FUNCTION FUN_00046d58
+000dc380 -> 000c3578 = ddns_info
+000dc384 -> 000226a0
+000dc388 -> 000c3582 = show_usb_path
+000dc38c -> 0003e0f8
+000dc390 -> 000c3590 = usb_is_exist
+000dc394 -> 00026904
+000dc398 -> 000c359d = apps_fsck_ret
+000dc39c -> 00037048
+000dc3a0 -> 000c35ab = get_all_accounts
+000dc3a4 -> 00036ed8
+000dc3a8 -> 000c35bc = disk_pool_mapping_info
+000dc3ac -> 00040758 = FUNCTION FUN_00040758
+000dc3b0 -> 000c35d3 = available_disk_names_and_sizes
+000dc3b4 -> 0003ff68
+000dc3b8 -> 000c35f2 = get_printer_info
+000dc3bc -> 0003f8a8
+000dc3c0 -> 000c3603 = get_modem_info
+000dc3c4 -> 00021f7c = FUNCTION FUN_00021f7c
+000dc3c8 -> 000c3612 = get_modem_fullsignal
+000dc3cc -> 00020f88 = FUNCTION FUN_00020f88
+000dc3d0 -> 000c3627 = get_isp_scan_results
+000dc3d4 -> 0004a04c = FUNCTION FUN_0004a04c
+000dc3d8 -> 000c363c = get_simact_result
+000dc3dc -> 000462ac = FUNCTION FUN_000462ac
+000dc3e0 -> 000c364e = get_modemuptime
+000dc3e4 -> 0003fe78
+000dc3e8 -> 000c365e = get_SambaInfo
+000dc3ec -> 00029250 = FUNCTION FUN_00029250
+000dc3f0 -> 000c366c = get_AiDisk_status
+000dc3f4 -> 0004f9b0
+000dc3f8 -> 000c367e = set_AiDisk_status
+000dc3fc -> 00037c6c
+000dc400 -> 000c3690 = safely_remove_disk
+000dc404 -> 00083894
+000dc408 -> 000c36a3 = get_permissions_of_account
+000dc40c -> 00084070
+000dc410 -> 000c36be = set_account_permission
+000dc414 -> 000375ac = FUNCTION FUN_000375ac
+000dc418 -> 000c36d5 = set_account_all_folder_permission
+000dc41c -> 000378fc
+000dc420 -> 000c36f7 = initial_account
+000dc424 -> 00037f5c
+000dc428 -> 000c3707 = create_account
+000dc42c -> 0008429c
+000dc430 -> 000c3716 = delete_account
+000dc434 -> 00084400 = FUNCTION FUN_00084400
+000dc438 -> 000c3725 = modify_account
+000dc43c -> 000381ec
+000dc440 -> 000c3734 = get_folder_tree
+000dc444 -> 0004ff48
+000dc448 -> 000c3744 = get_share_tree
+000dc44c -> 00050358
+000dc450 -> 000c3753 = create_sharedfolder
+000dc454 -> 0003873c = FUNCTION FUN_0003873c
+000dc458 -> 000c3767 = delete_sharedfolder
+000dc45c -> 00038578
+000dc460 -> 000c377b = modify_sharedfolder
+000dc464 -> 00038378
+000dc468 -> 000c378f = set_share_mode
+000dc46c -> 00084510
+000dc470 -> 000c379e = initial_folder_var_file
+000dc474 -> 000210a0 = FUNCTION FUN_000210a0
+000dc478 -> 000c37b6 = usb_port_stor_act
+000dc47c -> 00083768 = FUNCTION FUN_00083768
+000dc480 -> 000c37c8 = get_usb_info
+000dc484 -> 0003e484
+000dc488 -> 000c37d5 = get_usb_phy_port
+000dc48c -> 0003b1d0
+000dc490 -> 000c37e6 = apps_fsck_log
+000dc494 -> 00037278
+000dc498 -> 000c37f4 = get_disk_format_log
+000dc49c -> 00037420
+000dc4a0 -> 000c3808 = apps_info
+000dc4a4 -> 0003a284
+000dc4a8 -> 000c3812 = apps_state_info
+000dc4ac -> 00022b68 = FUNCTION FUN_00022b68
+000dc4b0 -> 000beaef = apps_action
+000dc4b4 -> 0006fdf8
+000dc4b8 -> 000c3822 = dms_info
+000dc4bc -> 00023bec = FUNCTION FUN_00023bec
+000dc4c0 -> 000c382e = cloud_status
+000dc4c4 -> 00045998 = FUNCTION FUN_00045998
+000dc4c8 -> 000c382b = UI_cloud_status
+000dc4cc -> 0007fa90
+000dc4d0 -> 000c383b = UI_cloud_dropbox_status
+000dc4d4 -> 000803fc
+000dc4d8 -> 000c3853 = UI_cloud_ftpclient_status
+000dc4dc -> 00080d68
+000dc4e0 -> 000c386d = UI_cloud_sambaclient_status
+000dc4e4 -> 000816d4
+000dc4e8 -> 000c3889 = UI_cloud_usbclient_status
+000dc4ec -> 00082044
+000dc4f0 -> 000c38a3 = UI_rs_status
+000dc4f4 -> 000829b0
+000dc4f8 -> 000c38b0 = getWebdavInfo
+000dc4fc -> 0003a734
+000dc500 -> 000c38be = start_autodet
+000dc504 -> 0004f0b4 = FUNCTION FUN_0004f0b4
+000dc508 -> 000c38cc = start_force_autodet
+000dc50c -> 0004f140 = FUNCTION FUN_0004f140
+000dc510 -> 000b6c1b = restart_auto46det
+000dc514 -> 0002314c = FUNCTION FUN_0002314c
+000dc518 -> 000b6c37 = start_wlcscan
+000dc51c -> 000231bc
+000dc520 -> 000c38e0 = wl_sta_list_2g
+000dc524 -> 000a06dc = FUNCTION FUN_000a06dc
+000dc528 -> 000c38ef = wl_sta_list_5g
+000dc52c -> 000a0744
+000dc530 -> 000c38fe = wl_sta_list_5g_2
+000dc534 -> 000a07ac = FUNCTION FUN_000a07ac
+000dc538 -> 000c390f = wl_stainfo_list_2g
+000dc53c -> 000a0814
+000dc540 -> 000c3922 = wl_stainfo_list_5g
+000dc544 -> 000a087c = FUNCTION FUN_000a087c
+000dc548 -> 000c3935 = wl_stainfo_list_5g_2
+000dc54c -> 000a08e4 = FUNCTION FUN_000a08e4
+000dc550 -> 000c394a = wl_auth_list
+000dc554 -> 000a1154
+000dc558 -> 000c3957 = wl_control_channel
+000dc55c -> 0009c620
+000dc560 -> 000c396a = get_wlstainfo_list
+000dc564 -> 000a094c
+000dc568 -> 000c397d = wl_scan_2g
+000dc56c -> 000a30f8
+000dc570 -> 000c3988 = wl_scan_5g
+000dc574 -> 000a3158 = FUNCTION FUN_000a3158
+000dc578 -> 000c3993 = wl_scan_5g_2
+000dc57c -> 000a31c0 = FUNCTION FUN_000a31c0
+000dc580 -> 000c3b22 = channel_list_2g
+000dc584 -> 0009d0bc
+000dc588 -> 000c3b39 = channel_list_5g
+000dc58c -> 0009d198
+000dc590 -> 000c3b50 = channel_list_5g_2
+000dc594 -> 0009d2dc
+000dc598 -> 000c3b69 = channel_list_6g
+000dc59c -> 0009d448
+000dc5a0 -> 000c3b80 = channel_list_6g_2
+000dc5a4 -> 0009d58c
+000dc5a8 -> 000c39a0 = channel_list_5g_20m
+000dc5ac -> 0009d198
+000dc5b0 -> 000c39b4 = channel_list_5g_40m
+000dc5b4 -> 0009d198
+000dc5b8 -> 000c39c8 = channel_list_5g_80m
+000dc5bc -> 0009d198
+000dc5c0 -> 000c39dc = chanspecs_2g
+000dc5c4 -> 0009d6ac = FUNCTION FUN_0009d6ac
+000dc5c8 -> 000c39e9 = chanspecs_5g
+000dc5cc -> 0009d7a8 = FUNCTION FUN_0009d7a8
+000dc5d0 -> 000c39f6 = chanspecs_5g_2
+000dc5d4 -> 0009d910 = FUNCTION FUN_0009d910
+000dc5d8 -> 000c3a05 = chanspecs_6g
+000dc5dc -> 0009daa0 = FUNCTION FUN_0009daa0
+000dc5e0 -> 000c3a12 = chanspecs_6g_2
+000dc5e4 -> 0009dc1c = FUNCTION FUN_0009dc1c
+000dc5e8 -> 000c3a21 = wl_rssi_2g
+000dc5ec -> 0009dd60
+000dc5f0 -> 000c3a2c = wl_rssi_5g
+000dc5f4 -> 0009ddc8
+000dc5f8 -> 000c3a37 = wl_rssi_5g_2
+000dc5fc -> 0009de30
+000dc600 -> 000c3a44 = wl_rssi_6g
+000dc604 -> 0009de98
+000dc608 -> 000c3a4f = wl_rate_2g
+000dc60c -> 0009df00 = FUNCTION FUN_0009df00
+000dc610 -> 000c3a5a = wl_rate_5g
+000dc614 -> 0009dfc8 = FUNCTION FUN_0009dfc8
+000dc618 -> 000c3a65 = wl_rate_5g_2
+000dc61c -> 0009e090 = FUNCTION FUN_0009e090
+000dc620 -> 000c3a72 = wl_rate_6g
+000dc624 -> 0009e188
+000dc628 -> 000c3a7d = wl_rate_6g_2
+000dc62c -> 0009e250 = FUNCTION FUN_0009e250
+000dc630 -> 000c3a8a = wl_cap_2g
+000dc634 -> 0009e318
+000dc638 -> 000c3a94 = wl_cap_5g
+000dc63c -> 0009e3f4
+000dc640 -> 000c3a9e = wl_cap_5g_2
+000dc644 -> 0009e538
+000dc648 -> 000c3aaa = wl_cap_6g
+000dc64c -> 0009e6a4
+000dc650 -> 000c3ab4 = wl_cap_6g_2
+000dc654 -> 0009e7e8
+000dc658 -> 000c3ac0 = wl_chipnum_2g
+000dc65c -> 0009e908
+000dc660 -> 000c3ace = wl_chipnum_5g
+000dc664 -> 0009e9e4
+000dc668 -> 000c3adc = wl_chipnum_5g_2
+000dc66c -> 0009eb28
+000dc670 -> 000c3aec = wl_chipnum_6g
+000dc674 -> 0009ec94
+000dc678 -> 000c3afa = wl_chipnum_6g_2
+000dc67c -> 0009edd8
+000dc680 -> 000c3b0a = nat_accel_status
+000dc684 -> 000a2ff8 = FUNCTION FUN_000a2ff8
+000dc688 -> 000c3b1b = get_wl_channel_list_2g
+000dc68c -> 0004d114
+000dc690 -> 000c3b32 = get_wl_channel_list_5g
+000dc694 -> 0004d208
+000dc698 -> 000c3b49 = get_wl_channel_list_5g_2
+000dc69c -> 0004d364
+000dc6a0 -> 000c3b62 = get_wl_channel_list_6g
+000dc6a4 -> 0004d4e8
+000dc6a8 -> 000c3b79 = get_wl_channel_list_6g_2
+000dc6ac -> 0004d644
+000dc6b0 -> 000c3b92 = get_wl_bandwidth
+000dc6b4 -> 000898f8
+000dc6b8 -> 000c3ba3 = wlc_psta_state
+000dc6bc -> 000a3228
+000dc6c0 -> 000c3bb2 = wl_pre_auth_psta
+000dc6c4 -> 000a3774
+000dc6c8 -> 000c3bc3 = get_default_reboot_time
+000dc6cc -> 00022ad0 = FUNCTION FUN_00022ad0
+000dc6d0 -> 000c3bdb = radio_status
+000dc6d4 -> 000477c8 = FUNCTION FUN_000477c8
+000dc6d8 -> 000c3be8 = sysinfo
+000dc6dc -> 00038efc
+000dc6e0 -> 000c3bf0 = vpn_server_get_parameter
+000dc6e4 -> 00054750
+000dc6e8 -> 000c3c09 = vpn_client_get_parameter
+000dc6ec -> 0005463c
+000dc6f0 -> 000c3c22 = vpn_crt_server
+000dc6f4 -> 0002483c
+000dc6f8 -> 000c3c31 = vpn_crt_client
+000dc6fc -> 00023f90
+000dc700 -> 000c3c40 = nvram_clean_get
+000dc704 -> 00038d60
+000dc708 -> 000c3c50 = check_pw
+000dc70c -> 000470a4 = FUNCTION FUN_000470a4
+000dc710 -> 000c3c59 = check_acpw
+000dc714 -> 0002dea0
+000dc718 -> 000c3c64 = check_acorpw
+000dc71c -> 0002ddcc
+000dc720 -> 000c3c71 = check_ftp_samba_anonymous
+000dc724 -> 00038b68 = FUNCTION FUN_00038b68
+000dc728 -> 000c3c8b = check_passwd_strength
+000dc72c -> 00075e00 = FUNCTION FUN_00075e00
+000dc730 -> 000c3ca1 = check_wireless_encryption
+000dc734 -> 00046784
+000dc738 -> 000bed0c = get_clientlist
+000dc73c -> 000611ec
+000dc740 -> 000c3cbb = bwdpi_history
+000dc744 -> 0003e018
+000dc748 -> 000c3cc9 = bwdpi_engine_status
+000dc74c -> 0003ded8
+000dc750 -> 000c3cdd = bwdpi_monitor_stat
+000dc754 -> 0003de68
+000dc758 -> 000c3cf0 = bwdpi_monitor_info
+000dc75c -> 0003ddac
+000dc760 -> 000c3d03 = bwdpi_monitor_ips
+000dc764 -> 0003dcf0 = FUNCTION FUN_0003dcf0
+000dc768 -> 000c3d15 = bwdpi_monitor_nonips
+000dc76c -> 0003dc34 = FUNCTION FUN_0003dc34
+000dc770 -> 000c3d2a = bwdpi_maclist_db
+000dc774 -> 0003db9c
+000dc778 -> 000c3d3b = bwdpi_status
+000dc77c -> 0003d914
+000dc780 -> 000c3d48 = bwdpi_appStat
+000dc784 -> 0003d804
+000dc788 -> 000c3d56 = bwdpi_wanStat
+000dc78c -> 0003d6f4
+000dc790 -> 000c3d64 = bwdpi_wanStat_detail
+000dc794 -> 0003d5e4
+000dc798 -> 000c3d79 = bwdpi_redirect_info
+000dc79c -> 0003d548
+000dc7a0 -> 000c3d8d = dns_appStat
+000dc7a4 -> 0003d804
+000dc7a8 -> 000c3d99 = dns_wanStat
+000dc7ac -> 0003d6f4
+000dc7b0 -> 000c3da5 = dns_status
+000dc7b4 -> 0003d914
+000dc7b8 -> 000c3db0 = dns_wanStat_detail
+000dc7bc -> 0003d5e4
+000dc7c0 -> 000c3dc3 = ookla_speedtest_get_result
+000dc7c4 -> 000279b4
+000dc7c8 -> 000c3dde = ookla_speedtest_get_servers
+000dc7cc -> 00027844
+000dc7d0 -> 000c3dfa = ookla_speedtest_get_history
+000dc7d4 -> 000276e8
+000dc7d8 -> 000c3e16 = wl_nband_info
+000dc7dc -> 00021c9c
+000dc7e0 -> 000c3e24 = wl_nband_list
+000dc7e4 -> 0008568c
+000dc7e8 -> 000c3e32 = get_upload_icon
+000dc7ec -> 000707a8 = FUNCTION FUN_000707a8
+000dc7f0 -> 000c3e42 = get_upload_icon_count_list
+000dc7f4 -> 0002667c
+000dc7f8 -> 000b5bb6 = findasus
+000dc7fc -> 00035aa8
+000dc800 -> 000c3e5d = check_asus_model
+000dc804 -> 00021c18 = FUNCTION FUN_00021c18
+000dc808 -> 000c3e6e = get_ipsec_conn
+000dc80c -> 0004eaf4
+000dc810 -> 000c3e7d = get_ipsec_conn_json
+000dc814 -> 0004ed64 = FUNCTION FUN_0004ed64
+000dc818 -> 000c3e91 = get_customized_attribute
+000dc81c -> 00038948 = FUNCTION FUN_00038948
+000dc820 -> 000c3eaa = get_CPInfo
+000dc824 -> 0003d408
+000dc828 -> 000c3eb5 = generate_region
+000dc82c -> 000a6178
+000dc830 -> 000c3ec5 = get_support_region_list
+000dc834 -> 000a6738 = FUNCTION FUN_000a6738
+000dc838 -> 000c3edd = get_next_lanip
+000dc83c -> 0003d174
+000dc840 -> 000c3eec = chdom
+000dc844 -> 0003d07c
+000dc848 -> 000c3ef2 = chcap
+000dc84c -> 0003cfa4
+000dc850 -> 000c3ef8 = act_chksta
+000dc854 -> 0004664c = FUNCTION FUN_0004664c
+000dc858 -> 000c3f03 = show_info_between_nodes
+000dc85c -> 00085da4
+000dc860 -> 000c3f1b = get_cfg_client_info
+000dc864 -> 0002b1d4
+000dc868 -> 000c3f2f = get_cfg_clientlist
+000dc86c -> 00086a38 = FUNCTION FUN_00086a38
+000dc870 -> 000c3f42 = get_wclientlist
+000dc874 -> 0002c18c
+000dc878 -> 000c3f52 = get_allclientlist
+000dc87c -> 0002beb8
+000dc880 -> 000c3f64 = get_wiredclientlist
+000dc884 -> 000324c0 = FUNCTION FUN_000324c0
+000dc888 -> 000c3f78 = get_onboardinglist
+000dc88c -> 0003c5a0
+000dc890 -> 000c3f8b = get_onboardingstatus
+000dc894 -> 0003c1c4
+000dc898 -> 000c3fa0 = get_nt_db
+000dc89c -> 0004da20 = FUNCTION FUN_0004da20
+000dc8a0 -> 000c3faa = get_nt_db_app
+000dc8a4 -> 0004da8c = FUNCTION FUN_0004da8c
+000dc8a8 -> 000c3fb8 = get_realip
+000dc8ac -> 0004656c = FUNCTION FUN_0004656c
+000dc8b0 -> 000c3fc3 = httpd_cert_info
+000dc8b4 -> 0004a694
+000dc8b8 -> 000c3fd3 = get_header_info
+000dc8bc -> 0002d3f8
+000dc8c0 -> 000c3fe3 = login_error_info
+000dc8c4 -> 0008d398 = FUNCTION FUN_0008d398
+000dc8c8 -> 000c3ff4 = get_new_vpnc_index
+000dc8cc -> 000476ec = FUNCTION FUN_000476ec
+000dc8d0 -> 000c4007 = get_vpnc_status
+000dc8d4 -> 0003bd94 = FUNCTION FUN_0003bd94
+000dc8d8 -> 000c4017 = get_vpnc_nondef_wan_prof_list
+000dc8dc -> 0003bb98 = FUNCTION FUN_0003bb98
+000dc8e0 -> 000c4035 = get_vpnc_count
+000dc8e4 -> 0002d0d4 = FUNCTION FUN_0002d0d4
+000dc8e8 -> 000c4044 = abs_index_page
+000dc8ec -> 000461ec = FUNCTION FUN_000461ec
+000dc8f0 -> 000c4053 = rel_index_page
+000dc8f4 -> 00046130 = FUNCTION FUN_00046130
+000dc8f8 -> 000c4066 = networkmap_page
+000dc8fc -> 0004606c = FUNCTION FUN_0004606c
+000dc900 -> 000c4062 = abs_networkmap_page
+000dc904 -> 00045fa0 = FUNCTION FUN_00045fa0
+000dc908 -> 000c4076 = get_fwdl_percent
+000dc90c -> 00027544
+000dc910 -> 000c4087 = get_wan_lan_status
+000dc914 -> 0002a1f8
+000dc918 -> 000c409a = get_wifi_probe_status
+000dc91c -> 0003bb10
+000dc920 -> 000c40b0 = get_encrypt_wifi_result
+000dc924 -> 0003ba68
+000dc928 -> 000c40c8 = get_lan_hwaddr
+000dc92c -> 000360e8
+000dc930 -> 000c40d7 = get_label_mac
+000dc934 -> 0003a6ac
+000dc938 -> 000c40e5 = get_ui_support
+000dc93c -> 000a9934 = FUNCTION FUN_000a9934
+000dc940 -> 000c40f4 = generate_trans_id
+000dc944 -> 0002c858
+000dc948 -> 000c4106 = get_sw_mode
+000dc94c -> 00026bc8
+000dc950 -> 000c4112 = get_diag_db
+000dc954 -> 00070128 = FUNCTION FUN_00070128
+000dc958 -> 000c411e = get_iptvSettings
+000dc95c -> 000aa9a4 = FUNCTION FUN_000aa9a4
+000dc960 -> 000c412f = get_stbPortMappings
+000dc964 -> 000ab218 = FUNCTION FUN_000ab218
+000dc968 -> 000c4143 = get_iperf3_state
+000dc96c -> 00028f20
+000dc970 -> 000c4154 = get_feat_def
+000dc974 -> 0002c9a8 = FUNCTION FUN_0002c9a8
+000dc978 -> 000c4161 = get_wgs_parameter
+000dc97c -> 00054528
+000dc980 -> 000c4173 = get_wgsc_parameter
+000dc984 -> 000543dc
+000dc988 -> 000c4186 = get_wgc_parameter
+000dc98c -> 000542c8 = FUNCTION FUN_000542c8
+000dc990 -> 000c4198 = get_wgsc_status
+000dc994 -> 0003b6bc = FUNCTION FUN_0003b6bc
+000dc998 -> 000c41a8 = chk_s46_port_range
+000dc99c -> 00048484
+000dc9a0 -> 000c41bb = dfs_remaining_time
+000dc9a4 -> 0003b330
+000dc9a8 -> 000c41ce = cable_diag
+000dc9ac -> 00093a58
+000dc9b0 -> 000c41d9 = get_ethernet_wan_list
+000dc9b4 -> 0003ae8c
+000dc9b8 -> 000c41ef = bcmbsd_def_policy
+000dc9bc -> 00093d84
+000dc9c0 -> 000c4201 = gen_oauth_salt
+000dc9c4 -> 0002df74
+000dc9c8 -> 000c4210 = get_vpnc_parameter
+000dc9cc -> 00021b70 = FUNCTION FUN_00021b70
+000dc9d0 -> 000c4223 = apg_wifi_sched_on
+000dc9d4 -> 0008a354 = FUNCTION FUN_0008a354
+000dc9d8 -> 000c4235 = apm_wifi_sched_on
+000dc9dc -> 0008a2b4 = FUNCTION FUN_0008a2b4
+000dc9e0 -> 000c4247 = get_sdn_all_list
+000dc9e4 -> 0008b560
+000dc9e8 -> 000c4258 = get_sdn_main_list
+000dc9ec -> 0008b660
+000dc9f0 -> 000c426a = get_node_wifi_band
+000dc9f4 -> 0008bd28 = FUNCTION FUN_0008bd28
+000dc9f8 -> 000c427d = get_apg_wifi7_onoff
+000dc9fc -> 00028470
+000dca00 -> 000c4291 = get_rwd_mapping_table
+000dca04 -> 0003adf4
+000dca08 -> 000c42a7 = dnsfilter_modes_list
+000dca0c -> 00026c50
+000dca10 -> 000c42bc = get_ddns_macaddr
+000dca14 -> 0003ad6c
+000dca18 -> 000c42cd = wan_ipv6_network
+000dca1c -> 00028668
+000dca20 -> 000c42de = get_operation_mode
+000dca24 -> 00021908
+000dca28 -> 00000000
+000dca2c -> 00000000
+000dca30 -> 000b57db = Main_Login.asp
+000dca34 -> 000b5558 = text/html
+000dca38 -> 000dc0a9
+000dca3c -> 00035e04 = FUNCTION FUN_00035e04
+000dca40 -> 000206f8 = FUNCTION FUN_000206f8
+000dca44 -> 00000000
+000dca48 -> 000c95ad = captcha.gif
+000dca4c -> 000c43d5 = image/gif
+000dca50 -> 000dc0a9
+000dca54 -> 00000000
+000dca58 -> 000ad104
+000dca5c -> 00000000
+000dca60 -> 000c43df = wgs_client.png
+000dca64 -> 000c43ee = image/png
+000dca68 -> 000dc0a9
+000dca6c -> 00000000
+000dca70 -> 0002dcfc
+000dca74 -> 00000000
+000dca78 -> 000c27e9 = wgs_client.conf
+000dca7c -> 000c43f8 = application/octet-stream
+000dca80 -> 00000000
+000dca84 -> 00000000
+000dca88 -> 0002dc2c
+000dca8c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dca90 -> 000c4411 = upload_wgc_config.cgi*
+000dca94 -> 000b5558 = text/html
+000dca98 -> 000dc0a9
+000dca9c -> 000316bc
+000dcaa0 -> 00036d8c = FUNCTION FUN_00036d8c
+000dcaa4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcaa8 -> 000c4428 = Nologin.asp
+000dcaac -> 000b5558 = text/html
+000dcab0 -> 000dc0a9
+000dcab4 -> 00035e04 = FUNCTION FUN_00035e04
+000dcab8 -> 000206f8 = FUNCTION FUN_000206f8
+000dcabc -> 00000000
+000dcac0 -> 000c4434 = error_page.htm*
+000dcac4 -> 000b5558 = text/html
+000dcac8 -> 000dc0a9
+000dcacc -> 00035e04 = FUNCTION FUN_00035e04
+000dcad0 -> 000206f8 = FUNCTION FUN_000206f8
+000dcad4 -> 00000000
+000dcad8 -> 000be9cd = blocking.asp
+000dcadc -> 000b5558 = text/html
+000dcae0 -> 000dc0a9
+000dcae4 -> 00035e04 = FUNCTION FUN_00035e04
+000dcae8 -> 000206f8 = FUNCTION FUN_000206f8
+000dcaec -> 00000000
+000dcaf0 -> 000c4444 = gotoHomePage.htm
+000dcaf4 -> 000b5558 = text/html
+000dcaf8 -> 000dc0a9
+000dcafc -> 00035e04 = FUNCTION FUN_00035e04
+000dcb00 -> 000206f8 = FUNCTION FUN_000206f8
+000dcb04 -> 00000000
+000dcb08 -> 000c4455 = ure_success.htm
+000dcb0c -> 000b5558 = text/html
+000dcb10 -> 000dc0a9
+000dcb14 -> 00035e04 = FUNCTION FUN_00035e04
+000dcb18 -> 000206f8 = FUNCTION FUN_000206f8
+000dcb1c -> 00000000
+000dcb20 -> 000c4465 = ureip.asp
+000dcb24 -> 000b5558 = text/html
+000dcb28 -> 000dc0a9
+000dcb2c -> 00035e04 = FUNCTION FUN_00035e04
+000dcb30 -> 000206f8 = FUNCTION FUN_000206f8
+000dcb34 -> 00000000
+000dcb38 -> 000c446f = md5.js
+000dcb3c -> 000c4476 = text/javascript
+000dcb40 -> 000dc03c = Cache-Control: max-age=3600
+000dcb44 -> 00000000
+000dcb48 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dcb4c -> 00000000
+000dcb50 -> 000c4486 = js/jquery.js
+000dcb54 -> 000c4476 = text/javascript
+000dcb58 -> 000dc03c = Cache-Control: max-age=3600
+000dcb5c -> 00000000
+000dcb60 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dcb64 -> 00000000
+000dcb68 -> 000c4493 = js/jquery-ui.js
+000dcb6c -> 000c4476 = text/javascript
+000dcb70 -> 000dc03c = Cache-Control: max-age=3600
+000dcb74 -> 00000000
+000dcb78 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dcb7c -> 00000000
+000dcb80 -> 000c44a3 = mobile/js/jquery.mobile.js
+000dcb84 -> 000c4476 = text/javascript
+000dcb88 -> 000dc03c = Cache-Control: max-age=3600
+000dcb8c -> 00000000
+000dcb90 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dcb94 -> 00000000
+000dcb98 -> 000c44be = js/bootstrap.bundle.min.js
+000dcb9c -> 000c4476 = text/javascript
+000dcba0 -> 000dc03c = Cache-Control: max-age=3600
+000dcba4 -> 00000000
+000dcba8 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dcbac -> 00000000
+000dcbb0 -> 000c44d9 = js/chart.min.js
+000dcbb4 -> 000c4476 = text/javascript
+000dcbb8 -> 000dc03c = Cache-Control: max-age=3600
+000dcbbc -> 00000000
+000dcbc0 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dcbc4 -> 00000000
+000dcbc8 -> 000c44e9 = js/https_redirect/https_redirect.js
+000dcbcc -> 000c4476 = text/javascript
+000dcbd0 -> 000dc0a9
+000dcbd4 -> 00000000
+000dcbd8 -> 000206f8 = FUNCTION FUN_000206f8
+000dcbdc -> 00000000
+000dcbe0 -> 000c450d = require/require.min.js
+000dcbe4 -> 000c4476 = text/javascript
+000dcbe8 -> 000dc03c = Cache-Control: max-age=3600
+000dcbec -> 00000000
+000dcbf0 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dcbf4 -> 00000000
+000dcbf8 -> 000c4524 = httpd_check.xml
+000dcbfc -> 000c4534 = text/xml
+000dcc00 -> 000dc0a9
+000dcc04 -> 00035e04 = FUNCTION FUN_00035e04
+000dcc08 -> 000206f8 = FUNCTION FUN_000206f8
+000dcc0c -> 00000000
+000dcc10 -> 000c453d = repage.json
+000dcc14 -> 000c4549 = application/json
+000dcc18 -> 000dc0a9
+000dcc1c -> 00035e04 = FUNCTION FUN_00035e04
+000dcc20 -> 000206f8 = FUNCTION FUN_000206f8
+000dcc24 -> 00000000
+000dcc28 -> 000c455a = chdom.json
+000dcc2c -> 000c4549 = application/json
+000dcc30 -> 000dc0a9
+000dcc34 -> 00035e04 = FUNCTION FUN_00035e04
+000dcc38 -> 000206f8 = FUNCTION FUN_000206f8
+000dcc3c -> 00000000
+000dcc40 -> 000c4565 = chcap.json
+000dcc44 -> 000c4549 = application/json
+000dcc48 -> 000dc0a9
+000dcc4c -> 00035e04 = FUNCTION FUN_00035e04
+000dcc50 -> 000206f8 = FUNCTION FUN_000206f8
+000dcc54 -> 00000000
+000dcc58 -> 000c4570 = cfg_onboarding.cgi
+000dcc5c -> 000b5558 = text/html
+000dcc60 -> 000dc0a9
+000dcc64 -> 00035e04 = FUNCTION FUN_00035e04
+000dcc68 -> 0006fb80
+000dcc6c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcc70 -> 000c4583 = backup_cfg_cntrl.cgi*
+000dcc74 -> 000c43f8 = application/octet-stream
+000dcc78 -> 000dc0a9
+000dcc7c -> 00035e04 = FUNCTION FUN_00035e04
+000dcc80 -> 000474a8 = FUNCTION FUN_000474a8
+000dcc84 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcc88 -> 000c4599 = upload_cfg_cntrl.cgi*
+000dcc8c -> 000c43f8 = application/octet-stream
+000dcc90 -> 000dc0a9
+000dcc94 -> 000492dc = FUNCTION FUN_000492dc
+000dcc98 -> 0006fa4c = FUNCTION FUN_0006fa4c
+000dcc9c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcca0 -> 000c45af = wlc_status.json
+000dcca4 -> 000c4549 = application/json
+000dcca8 -> 000dc0a9
+000dccac -> 00035e04 = FUNCTION FUN_00035e04
+000dccb0 -> 000206f8 = FUNCTION FUN_000206f8
+000dccb4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dccb8 -> 000c45bf = get_webdavInfo.asp
+000dccbc -> 000b5558 = text/html
+000dccc0 -> 000dc0a9
+000dccc4 -> 00035e04 = FUNCTION FUN_00035e04
+000dccc8 -> 000aff5c
+000dcccc -> 00000000
+000dccd0 -> 000c45d2 = appGet_image_path.cgi
+000dccd4 -> 000b5558 = text/html
+000dccd8 -> 000dc0a9
+000dccdc -> 00035e04 = FUNCTION FUN_00035e04
+000dcce0 -> 00021708
+000dcce4 -> 00000000
+000dcce8 -> 000b5b9f = login.cgi
+000dccec -> 000b5558 = text/html
+000dccf0 -> 000dc0a9
+000dccf4 -> 00035e04 = FUNCTION FUN_00035e04
+000dccf8 -> 0008eb84 = FUNCTION FUN_0008eb84
+000dccfc -> 00000000
+000dcd00 -> 000b5ba9 = login_v2.cgi
+000dcd04 -> 000b5558 = text/html
+000dcd08 -> 000dc0a9
+000dcd0c -> 00035e04 = FUNCTION FUN_00035e04
+000dcd10 -> 0008eb1c = FUNCTION FUN_0008eb1c
+000dcd14 -> 00000000
+000dcd18 -> 000c45e8 = get_Nonce.cgi
+000dcd1c -> 000b5558 = text/html
+000dcd20 -> 000dc0a9
+000dcd24 -> 00035e04 = FUNCTION FUN_00035e04
+000dcd28 -> 000b3cf4 = FUNCTION FUN_000b3cf4
+000dcd2c -> 00000000
+000dcd30 -> 000c45f6 = register_app_cnonce.cgi
+000dcd34 -> 000b5558 = text/html
+000dcd38 -> 000dc0a9
+000dcd3c -> 00035e04 = FUNCTION FUN_00035e04
+000dcd40 -> 000b3984 = FUNCTION FUN_000b3984
+000dcd44 -> 00000000
+000dcd48 -> 000b59c3 = update_clients.asp
+000dcd4c -> 000b5558 = text/html
+000dcd50 -> 000dc0a9
+000dcd54 -> 00035e04 = FUNCTION FUN_00035e04
+000dcd58 -> 000206f8 = FUNCTION FUN_000206f8
+000dcd5c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcd60 -> 000b59ac = update_networkmapd.asp
+000dcd64 -> 000b5558 = text/html
+000dcd68 -> 000dc0a9
+000dcd6c -> 00035e04 = FUNCTION FUN_00035e04
+000dcd70 -> 000206f8 = FUNCTION FUN_000206f8
+000dcd74 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcd78 -> 000b59d6 = update_customList.asp
+000dcd7c -> 000b5558 = text/html
+000dcd80 -> 000dc0a9
+000dcd84 -> 00035e04 = FUNCTION FUN_00035e04
+000dcd88 -> 000206f8 = FUNCTION FUN_000206f8
+000dcd8c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcd90 -> 000c460e = manifest.appcache
+000dcd94 -> 000b5558 = text/html
+000dcd98 -> 000dc0a9
+000dcd9c -> 00035e04 = FUNCTION FUN_00035e04
+000dcda0 -> 000206f8 = FUNCTION FUN_000206f8
+000dcda4 -> 00000000
+000dcda8 -> 000b5a19 = offline.htm
+000dcdac -> 000b5558 = text/html
+000dcdb0 -> 000dc0a9
+000dcdb4 -> 00035e04 = FUNCTION FUN_00035e04
+000dcdb8 -> 000206f8 = FUNCTION FUN_000206f8
+000dcdbc -> 00000000
+000dcdc0 -> 000c4620 = wcdma_list.js
+000dcdc4 -> 000b5558 = text/html
+000dcdc8 -> 000dc0a9
+000dcdcc -> 00035e04 = FUNCTION FUN_00035e04
+000dcdd0 -> 000206f8 = FUNCTION FUN_000206f8
+000dcdd4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcdd8 -> 000c462e = help_content.js
+000dcddc -> 000b5558 = text/html
+000dcde0 -> 000dc03c = Cache-Control: max-age=3600
+000dcde4 -> 00035e04 = FUNCTION FUN_00035e04
+000dcde8 -> 000206f8 = FUNCTION FUN_000206f8
+000dcdec -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcdf0 -> 000c463e = httpd_check.htm
+000dcdf4 -> 000b5558 = text/html
+000dcdf8 -> 000dc0a9
+000dcdfc -> 00035e04 = FUNCTION FUN_00035e04
+000dce00 -> 000206f8 = FUNCTION FUN_000206f8
+000dce04 -> 00000000
+000dce08 -> 000c464e = manifest.asp
+000dce0c -> 000b5558 = text/html
+000dce10 -> 000dc0a9
+000dce14 -> 00035e04 = FUNCTION FUN_00035e04
+000dce18 -> 000206f8 = FUNCTION FUN_000206f8
+000dce1c -> 00000000
+000dce20 -> 000c465b = update_cloudstatus.asp
+000dce24 -> 000b5558 = text/html
+000dce28 -> 000dc0a9
+000dce2c -> 00035e04 = FUNCTION FUN_00035e04
+000dce30 -> 000206f8 = FUNCTION FUN_000206f8
+000dce34 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dce38 -> 000c2ee8 = update_applist.asp
+000dce3c -> 000b5558 = text/html
+000dce40 -> 000dc0a9
+000dce44 -> 00035e04 = FUNCTION FUN_00035e04
+000dce48 -> 000206f8 = FUNCTION FUN_000206f8
+000dce4c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dce50 -> 000c2ed4 = update_appstate.asp
+000dce54 -> 000b5558 = text/html
+000dce58 -> 000dc0a9
+000dce5c -> 00035e04 = FUNCTION FUN_00035e04
+000dce60 -> 000206f8 = FUNCTION FUN_000206f8
+000dce64 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dce68 -> 000c4672 = WAN_info.asp
+000dce6c -> 000b5558 = text/html
+000dce70 -> 000dc0a9
+000dce74 -> 00035e04 = FUNCTION FUN_00035e04
+000dce78 -> 000206f8 = FUNCTION FUN_000206f8
+000dce7c -> 00000000
+000dce80 -> 000c467f = detwan.cgi*
+000dce84 -> 000b5558 = text/html
+000dce88 -> 000dc0a9
+000dce8c -> 00035e04 = FUNCTION FUN_00035e04
+000dce90 -> 0006f83c
+000dce94 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dce98 -> 000c2e4c = message.htm
+000dce9c -> 000b5558 = text/html
+000dcea0 -> 000dc0a9
+000dcea4 -> 00035e04 = FUNCTION FUN_00035e04
+000dcea8 -> 000206f8 = FUNCTION FUN_000206f8
+000dceac -> 00000000
+000dceb0 -> 000c2dee = fonts/*.ttf
+000dceb4 -> 000c468b = application/x-font-ttf
+000dceb8 -> 000dc03c = Cache-Control: max-age=3600
+000dcebc -> 00000000
+000dcec0 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dcec4 -> 00000000
+000dcec8 -> 000c2dfa = fonts/*.otf
+000dcecc -> 000c46a2 = application/x-font-otf
+000dced0 -> 000dc03c = Cache-Control: max-age=3600
+000dced4 -> 00000000
+000dced8 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dcedc -> 00000000
+000dcee0 -> 000c2e06 = fonts/*.woff
+000dcee4 -> 000c46b9 = application/font-woff
+000dcee8 -> 000dc03c = Cache-Control: max-age=3600
+000dceec -> 00000000
+000dcef0 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dcef4 -> 00000000
+000dcef8 -> 000c46cf = blocking_request.cgi
+000dcefc -> 000b5558 = text/html
+000dcf00 -> 000dc0a9
+000dcf04 -> 00035e04 = FUNCTION FUN_00035e04
+000dcf08 -> 0006f39c
+000dcf0c -> 00000000
+000dcf10 -> 000c46e4 = blocking.cgi
+000dcf14 -> 000b5558 = text/html
+000dcf18 -> 000dc0a9
+000dcf1c -> 00035e04 = FUNCTION FUN_00035e04
+000dcf20 -> 0006ee9c
+000dcf24 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcf28 -> 000c46f1 = get_timezone.cgi
+000dcf2c -> 000b5558 = text/html
+000dcf30 -> 000dc0a9
+000dcf34 -> 00035e04 = FUNCTION FUN_00035e04
+000dcf38 -> 000628f4
+000dcf3c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcf40 -> 000c4702 = getDpiInfo.cgi*
+000dcf44 -> 000b5558 = text/html
+000dcf48 -> 000dc0a9
+000dcf4c -> 00035e04 = FUNCTION FUN_00035e04
+000dcf50 -> 0006ed14
+000dcf54 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcf58 -> 000c4712 = delDpiInfo.cgi*
+000dcf5c -> 000b5558 = text/html
+000dcf60 -> 000dc0a9
+000dcf64 -> 00035e04 = FUNCTION FUN_00035e04
+000dcf68 -> 0006ebfc
+000dcf6c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcf70 -> 000c4722 = AiProtection_MaliciousSitesBlocking.asp
+000dcf74 -> 000b5558 = text/html
+000dcf78 -> 000dc0a9
+000dcf7c -> 00035e04 = FUNCTION FUN_00035e04
+000dcf80 -> 00036cdc
+000dcf84 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcf88 -> 000c474a = AiProtection_IntrusionPreventionSystem.asp
+000dcf8c -> 000b5558 = text/html
+000dcf90 -> 000dc0a9
+000dcf94 -> 00035e04 = FUNCTION FUN_00035e04
+000dcf98 -> 00036c2c
+000dcf9c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcfa0 -> 000c4775 = AiProtection_InfectedDevicePreventBlock.asp
+000dcfa4 -> 000b5558 = text/html
+000dcfa8 -> 000dc0a9
+000dcfac -> 00035e04 = FUNCTION FUN_00035e04
+000dcfb0 -> 00036b7c
+000dcfb4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcfb8 -> 000c47a1 = AiProtection_WebProtector.asp
+000dcfbc -> 000b5558 = text/html
+000dcfc0 -> 000dc0a9
+000dcfc4 -> 00035e04 = FUNCTION FUN_00035e04
+000dcfc8 -> 00036acc
+000dcfcc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcfd0 -> 000c47bf = AdaptiveQoS_WebHistory.asp
+000dcfd4 -> 000b5558 = text/html
+000dcfd8 -> 000dc0a9
+000dcfdc -> 00035e04 = FUNCTION FUN_00035e04
+000dcfe0 -> 00036a1c = FUNCTION FUN_00036a1c
+000dcfe4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dcfe8 -> 000c30d5 = TrafficAnalyzer_Statistic.asp
+000dcfec -> 000b5558 = text/html
+000dcff0 -> 000dc0a9
+000dcff4 -> 00035e04 = FUNCTION FUN_00035e04
+000dcff8 -> 0003696c = FUNCTION FUN_0003696c
+000dcffc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd000 -> 000c47da = AdaptiveQoS_Bandwidth_Monitor.asp
+000dd004 -> 000b5558 = text/html
+000dd008 -> 000dc0a9
+000dd00c -> 00035e04 = FUNCTION FUN_00035e04
+000dd010 -> 000368bc = FUNCTION FUN_000368bc
+000dd014 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd018 -> 000b86e3 = images/Model_product.png
+000dd01c -> 000c43ee = image/png
+000dd020 -> 000dc03c = Cache-Control: max-age=3600
+000dd024 -> 00035e04 = FUNCTION FUN_00035e04
+000dd028 -> 00032750
+000dd02c -> 00000000
+000dd030 -> 000c47fc = images/product_location.png
+000dd034 -> 000c43ee = image/png
+000dd038 -> 000dc03c = Cache-Control: max-age=3600
+000dd03c -> 00035e04 = FUNCTION FUN_00035e04
+000dd040 -> 000361d0
+000dd044 -> 00000000
+000dd048 -> 000c4818 = images/New_ui/GT-bg_header.png
+000dd04c -> 000c43ee = image/png
+000dd050 -> 000dc03c = Cache-Control: max-age=3600
+000dd054 -> 00035e04 = FUNCTION FUN_00035e04
+000dd058 -> 000361d0
+000dd05c -> 00000000
+000dd060 -> 000c4837 = images/modem_plug.png
+000dd064 -> 000c43ee = image/png
+000dd068 -> 000dc03c = Cache-Control: max-age=3600
+000dd06c -> 00000000
+000dd070 -> 000361d0
+000dd074 -> 00000000
+000dd078 -> 000c484d = images/modem_unplug.png
+000dd07c -> 000c43ee = image/png
+000dd080 -> 000dc03c = Cache-Control: max-age=3600
+000dd084 -> 00000000
+000dd088 -> 000361d0
+000dd08c -> 00000000
+000dd090 -> 000c4865 = images/WANunplug.png
+000dd094 -> 000c43ee = image/png
+000dd098 -> 000dc03c = Cache-Control: max-age=3600
+000dd09c -> 00000000
+000dd0a0 -> 000361d0
+000dd0a4 -> 00000000
+000dd0a8 -> 000c487a = images/WANunplug_eth.png
+000dd0ac -> 000c43ee = image/png
+000dd0b0 -> 000dc03c = Cache-Control: max-age=3600
+000dd0b4 -> 00000000
+000dd0b8 -> 000361d0
+000dd0bc -> 00000000
+000dd0c0 -> 000c4893 = images/New_ui/rt.jpg
+000dd0c4 -> 000c48a8 = image/jpeg
+000dd0c8 -> 000dc03c = Cache-Control: max-age=3600
+000dd0cc -> 00000000
+000dd0d0 -> 000361d0
+000dd0d4 -> 00000000
+000dd0d8 -> 000c48b3 = images/New_ui/ap.jpg
+000dd0dc -> 000c48a8 = image/jpeg
+000dd0e0 -> 000dc03c = Cache-Control: max-age=3600
+000dd0e4 -> 00000000
+000dd0e8 -> 000361d0
+000dd0ec -> 00000000
+000dd0f0 -> 000c48c8 = images/New_ui/re.jpg
+000dd0f4 -> 000c48a8 = image/jpeg
+000dd0f8 -> 000dc03c = Cache-Control: max-age=3600
+000dd0fc -> 00000000
+000dd100 -> 000361d0
+000dd104 -> 00000000
+000dd108 -> 000c48dd = images/New_ui/mb.jpg
+000dd10c -> 000c48a8 = image/jpeg
+000dd110 -> 000dc03c = Cache-Control: max-age=3600
+000dd114 -> 00000000
+000dd118 -> 000361d0
+000dd11c -> 00000000
+000dd120 -> 000c2e19 = **.xml
+000dd124 -> 000c4534 = text/xml
+000dd128 -> 000dc0a9
+000dd12c -> 00035e04 = FUNCTION FUN_00035e04
+000dd130 -> 000206f8 = FUNCTION FUN_000206f8
+000dd134 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd138 -> 000c48f2 = **.htm*
+000dd13c -> 000b5558 = text/html
+000dd140 -> 000dc0a9
+000dd144 -> 00035e04 = FUNCTION FUN_00035e04
+000dd148 -> 000206f8 = FUNCTION FUN_000206f8
+000dd14c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd150 -> 000c48fa = **.asp*
+000dd154 -> 000b5558 = text/html
+000dd158 -> 000dc0a9
+000dd15c -> 00035e04 = FUNCTION FUN_00035e04
+000dd160 -> 000206f8 = FUNCTION FUN_000206f8
+000dd164 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd168 -> 000c4902 = **.appcache
+000dd16c -> 000c490e = text/cache-manifest
+000dd170 -> 000dc0a9
+000dd174 -> 00035e04 = FUNCTION FUN_00035e04
+000dd178 -> 000206f8 = FUNCTION FUN_000206f8
+000dd17c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd180 -> 000c4922 = nt_content.json
+000dd184 -> 000c4549 = application/json
+000dd188 -> 000dc0a9
+000dd18c -> 00035e04 = FUNCTION FUN_00035e04
+000dd190 -> 000206f8 = FUNCTION FUN_000206f8
+000dd194 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd198 -> 000c4932 = **.part.*
+000dd19c -> 000c43f8 = application/octet-stream
+000dd1a0 -> 00000000
+000dd1a4 -> 00000000
+000dd1a8 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd1ac -> 00000000
+000dd1b0 -> 000c2da2 = **.gz
+000dd1b4 -> 000c43f8 = application/octet-stream
+000dd1b8 -> 00000000
+000dd1bc -> 00000000
+000dd1c0 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd1c4 -> 00000000
+000dd1c8 -> 000c2da8 = **.tgz
+000dd1cc -> 000c43f8 = application/octet-stream
+000dd1d0 -> 00000000
+000dd1d4 -> 00000000
+000dd1d8 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd1dc -> 00000000
+000dd1e0 -> 000c2daf = **.zip
+000dd1e4 -> 000c43f8 = application/octet-stream
+000dd1e8 -> 00000000
+000dd1ec -> 00000000
+000dd1f0 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd1f4 -> 00000000
+000dd1f8 -> 000c2db6 = **.ipk
+000dd1fc -> 000c43f8 = application/octet-stream
+000dd200 -> 00000000
+000dd204 -> 00000000
+000dd208 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd20c -> 00000000
+000dd210 -> 000c493c = RWD_UI/rwd_component.css
+000dd214 -> 000c4955 = text/css
+000dd218 -> 000dc03c = Cache-Control: max-age=3600
+000dd21c -> 00035e04 = FUNCTION FUN_00035e04
+000dd220 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd224 -> 00000000
+000dd228 -> 000c495e = SDN/sdn.css
+000dd22c -> 000c4955 = text/css
+000dd230 -> 000dc03c = Cache-Control: max-age=3600
+000dd234 -> 00035e04 = FUNCTION FUN_00035e04
+000dd238 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd23c -> 00000000
+000dd240 -> 000c496a = aimesh/aimesh_topology.css
+000dd244 -> 000c4955 = text/css
+000dd248 -> 000dc03c = Cache-Control: max-age=3600
+000dd24c -> 00035e04 = FUNCTION FUN_00035e04
+000dd250 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd254 -> 00000000
+000dd258 -> 000c2dbd = **.css
+000dd25c -> 000c4955 = text/css
+000dd260 -> 000dc03c = Cache-Control: max-age=3600
+000dd264 -> 00000000
+000dd268 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd26c -> 00000000
+000dd270 -> 000c4985 = images/New_ui/asustitle.png
+000dd274 -> 000c43ee = image/png
+000dd278 -> 000dc03c = Cache-Control: max-age=3600
+000dd27c -> 00035e04 = FUNCTION FUN_00035e04
+000dd280 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd284 -> 00000000
+000dd288 -> 000c49a1 = images/New_ui/smh_step_2_text.png
+000dd28c -> 000c43ee = image/png
+000dd290 -> 000dc03c = Cache-Control: max-age=3600
+000dd294 -> 00035e04 = FUNCTION FUN_00035e04
+000dd298 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd29c -> 00000000
+000dd2a0 -> 000c49c3 = images/New_ui/smh_ifttt.png
+000dd2a4 -> 000c43ee = image/png
+000dd2a8 -> 000dc03c = Cache-Control: max-age=3600
+000dd2ac -> 00035e04 = FUNCTION FUN_00035e04
+000dd2b0 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd2b4 -> 00000000
+000dd2b8 -> 000c2dc4 = **.png
+000dd2bc -> 000c43ee = image/png
+000dd2c0 -> 000dc03c = Cache-Control: max-age=3600
+000dd2c4 -> 00000000
+000dd2c8 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd2cc -> 00000000
+000dd2d0 -> 000c2dcb = **.gif
+000dd2d4 -> 000c43d5 = image/gif
+000dd2d8 -> 000dc03c = Cache-Control: max-age=3600
+000dd2dc -> 00000000
+000dd2e0 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd2e4 -> 00000000
+000dd2e8 -> 000c2dd2 = **.jpg
+000dd2ec -> 000c48a8 = image/jpeg
+000dd2f0 -> 000dc03c = Cache-Control: max-age=3600
+000dd2f4 -> 00000000
+000dd2f8 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd2fc -> 00000000
+000dd300 -> 000c2dd9 = **.svg
+000dd304 -> 000c49df = image/svg+xml
+000dd308 -> 000dc03c = Cache-Control: max-age=3600
+000dd30c -> 00000000
+000dd310 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd314 -> 00000000
+000dd318 -> 000c2de0 = **.swf
+000dd31c -> 000c49ed = application/x-shockwave-flash
+000dd320 -> 00000000
+000dd324 -> 00000000
+000dd328 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd32c -> 00000000
+000dd330 -> 000c2de7 = **.htc
+000dd334 -> 000c4a0b = text/x-component
+000dd338 -> 00000000
+000dd33c -> 00000000
+000dd340 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd344 -> 00000000
+000dd348 -> 000c4a1c = js/asus_policy.js
+000dd34c -> 000c4476 = text/javascript
+000dd350 -> 000dc058
+000dd354 -> 00035e04 = FUNCTION FUN_00035e04
+000dd358 -> 000206f8 = FUNCTION FUN_000206f8
+000dd35c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd360 -> 000b6141 = state.js
+000dd364 -> 000c4476 = text/javascript
+000dd368 -> 000dc0a9
+000dd36c -> 00035e04 = FUNCTION FUN_00035e04
+000dd370 -> 000206f8 = FUNCTION FUN_000206f8
+000dd374 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd378 -> 000c4a2e = require/modules/menuTree.js
+000dd37c -> 000c4476 = text/javascript
+000dd380 -> 000dc0a9
+000dd384 -> 00035e04 = FUNCTION FUN_00035e04
+000dd388 -> 000206f8 = FUNCTION FUN_000206f8
+000dd38c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd390 -> 000c4a4a = js/basic.js
+000dd394 -> 000c4476 = text/javascript
+000dd398 -> 000dc0a9
+000dd39c -> 00035e04 = FUNCTION FUN_00035e04
+000dd3a0 -> 000206f8 = FUNCTION FUN_000206f8
+000dd3a4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd3a8 -> 000b60c6 = chanspec.js
+000dd3ac -> 000c4476 = text/javascript
+000dd3b0 -> 000dc0a9
+000dd3b4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd3b8 -> 000206f8 = FUNCTION FUN_000206f8
+000dd3bc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd3c0 -> 000c2e13 = **.js
+000dd3c4 -> 000c4476 = text/javascript
+000dd3c8 -> 000dc022 = Cache-Control: max-age=60
+000dd3cc -> 00035e04 = FUNCTION FUN_00035e04
+000dd3d0 -> 000206f8 = FUNCTION FUN_000206f8
+000dd3d4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd3d8 -> 000c4a56 = SDN/Captive_Portal/FreeWiFi_template.json
+000dd3dc -> 000c4549 = application/json
+000dd3e0 -> 000dc002 = Cache-Control: max-age=31536000
+000dd3e4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd3e8 -> 000206f8 = FUNCTION FUN_000206f8
+000dd3ec -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd3f0 -> 000c4a80 = SDN/Captive_Portal/MessageBoard_template.json
+000dd3f4 -> 000c4549 = application/json
+000dd3f8 -> 000dc002 = Cache-Control: max-age=31536000
+000dd3fc -> 00035e04 = FUNCTION FUN_00035e04
+000dd400 -> 000206f8 = FUNCTION FUN_000206f8
+000dd404 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd408 -> 000c4aae = ajax/freewifi_tos.json
+000dd40c -> 000c4549 = application/json
+000dd410 -> 000dc002 = Cache-Control: max-age=31536000
+000dd414 -> 00035e04 = FUNCTION FUN_00035e04
+000dd418 -> 000206f8 = FUNCTION FUN_000206f8
+000dd41c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd420 -> 000c4ac5 = ajax/DNS_List.json
+000dd424 -> 000c4549 = application/json
+000dd428 -> 000dc002 = Cache-Control: max-age=31536000
+000dd42c -> 00035e04 = FUNCTION FUN_00035e04
+000dd430 -> 000206f8 = FUNCTION FUN_000206f8
+000dd434 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd438 -> 000c4ea4 = **.json
+000dd43c -> 000c4549 = application/json
+000dd440 -> 000dc0a9
+000dd444 -> 00035e04 = FUNCTION FUN_00035e04
+000dd448 -> 000206f8 = FUNCTION FUN_000206f8
+000dd44c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd450 -> 000c4ad8 = **.cab
+000dd454 -> 000c4adf = text/txt
+000dd458 -> 00000000
+000dd45c -> 00000000
+000dd460 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dd464 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd468 -> 000c4ae8 = **.CFG
+000dd46c -> 000c43f8 = application/octet-stream
+000dd470 -> 00000000
+000dd474 -> 00035e04 = FUNCTION FUN_00035e04
+000dd478 -> 00071e60
+000dd47c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd480 -> 000b5ae0 = uploadIconFile.tar
+000dd484 -> 000c4aef = application/x-tar
+000dd488 -> 00000000
+000dd48c -> 00000000
+000dd490 -> 0002db9c = FUNCTION FUN_0002db9c
+000dd494 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd498 -> 000b64ed = networkmap.tar
+000dd49c -> 000c4aef = application/x-tar
+000dd4a0 -> 00000000
+000dd4a4 -> 00000000
+000dd4a8 -> 0002dab8
+000dd4ac -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd4b0 -> 000b6501 = upnp.log
+000dd4b4 -> 000c43f8 = application/octet-stream
+000dd4b8 -> 00000000
+000dd4bc -> 00000000
+000dd4c0 -> 0002da4c
+000dd4c4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd4c8 -> 000c4b01 = upnpc_xml.log
+000dd4cc -> 000c43f8 = application/octet-stream
+000dd4d0 -> 00000000
+000dd4d4 -> 00000000
+000dd4d8 -> 0004f058 = FUNCTION FUN_0004f058
+000dd4dc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd4e0 -> 000c4b0f = mDNSNetMonitor.log
+000dd4e4 -> 000c43f8 = application/octet-stream
+000dd4e8 -> 00000000
+000dd4ec -> 00000000
+000dd4f0 -> 000493b4 = FUNCTION FUN_000493b4
+000dd4f4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd4f8 -> 000c4b22 = ftpServerTree.cgi*
+000dd4fc -> 000b5558 = text/html
+000dd500 -> 000dc0a9
+000dd504 -> 00035e04 = FUNCTION FUN_00035e04
+000dd508 -> 00062524 = FUNCTION FUN_00062524
+000dd50c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd510 -> 000c4b35 = **.ovpn
+000dd514 -> 000c4b3d = application/x-openvpn-profile
+000dd518 -> 00000000
+000dd51c -> 00000000
+000dd520 -> 0002d9d8
+000dd524 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd528 -> 000b5800 = QIS_default.cgi
+000dd52c -> 000b5558 = text/html
+000dd530 -> 000dc0a9
+000dd534 -> 00035e04 = FUNCTION FUN_00035e04
+000dd538 -> 0005108c
+000dd53c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd540 -> 000b5b8e = page_default.cgi
+000dd544 -> 000b5558 = text/html
+000dd548 -> 000dc0a9
+000dd54c -> 00035e04 = FUNCTION FUN_00035e04
+000dd550 -> 00051004
+000dd554 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd558 -> 000c4b6c = apply.cgi*
+000dd55c -> 000b5558 = text/html
+000dd560 -> 000dc0a9
+000dd564 -> 00035e04 = FUNCTION FUN_00035e04
+000dd568 -> 00079e4c = FUNCTION FUN_00079e4c
+000dd56c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd570 -> 000c4b5b = applyapp.cgi*
+000dd574 -> 000b5558 = text/html
+000dd578 -> 000dc0a9
+000dd57c -> 00035e04 = FUNCTION FUN_00035e04
+000dd580 -> 00079e4c = FUNCTION FUN_00079e4c
+000dd584 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd588 -> 000c4b69 = wl_apply.cgi*
+000dd58c -> 000b5558 = text/html
+000dd590 -> 000dc0a9
+000dd594 -> 00035e04 = FUNCTION FUN_00035e04
+000dd598 -> 0006e4f0
+000dd59c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd5a0 -> 000c4b77 = appGet.cgi*
+000dd5a4 -> 000b5558 = text/html
+000dd5a8 -> 000dc0a9
+000dd5ac -> 00035e04 = FUNCTION FUN_00035e04
+000dd5b0 -> 00072444
+000dd5b4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd5b8 -> 000c4b83 = upgrade.cgi*
+000dd5bc -> 000b5558 = text/html
+000dd5c0 -> 000dc0a9
+000dd5c4 -> 00073ff4 = FUNCTION FUN_00073ff4
+000dd5c8 -> 000518fc
+000dd5cc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd5d0 -> 000c4fe6 = upload.cgi*
+000dd5d4 -> 000b5558 = text/html
+000dd5d8 -> 000dc0a9
+000dd5dc -> 000356c0 = FUNCTION FUN_000356c0
+000dd5e0 -> 000517b4 = FUNCTION FUN_000517b4
+000dd5e4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd5e8 -> 000c4b90 = set_ASUS_EULA.cgi*
+000dd5ec -> 000b5558 = text/html
+000dd5f0 -> 000dc0a9
+000dd5f4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd5f8 -> 0006e430
+000dd5fc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd600 -> 000c4ba3 = set_ASUS_NEW_EULA.cgi*
+000dd604 -> 000b5558 = text/html
+000dd608 -> 000dc0a9
+000dd60c -> 00035e04 = FUNCTION FUN_00035e04
+000dd610 -> 0006e31c
+000dd614 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd618 -> 000c4bba = set_ASUS_privacy_policy.cgi*
+000dd61c -> 000b5558 = text/html
+000dd620 -> 000dc0a9
+000dd624 -> 00035e04 = FUNCTION FUN_00035e04
+000dd628 -> 000b3798
+000dd62c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd630 -> 000c4bd7 = get_ASUS_privacy_policy.cgi*
+000dd634 -> 000b5558 = text/html
+000dd638 -> 000dc0a9
+000dd63c -> 00035e04 = FUNCTION FUN_00035e04
+000dd640 -> 000b38c0 = FUNCTION FUN_000b38c0
+000dd644 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd648 -> 000c4bf4 = set_TM_EULA.cgi*
+000dd64c -> 000b5558 = text/html
+000dd650 -> 000dc0a9
+000dd654 -> 00035e04 = FUNCTION FUN_00035e04
+000dd658 -> 0006e0d8
+000dd65c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd660 -> 000c4c05 = set_app_mnt.cgi*
+000dd664 -> 000b5558 = text/html
+000dd668 -> 000dc0a9
+000dd66c -> 00035e04 = FUNCTION FUN_00035e04
+000dd670 -> 0006dff4 = FUNCTION FUN_0006dff4
+000dd674 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd678 -> 000c4c16 = get_app_mnt.cgi*
+000dd67c -> 000b5558 = text/html
+000dd680 -> 000dc0a9
+000dd684 -> 00035e04 = FUNCTION FUN_00035e04
+000dd688 -> 000355fc = FUNCTION FUN_000355fc
+000dd68c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd690 -> 000c4c27 = wrs_wbl.cgi*
+000dd694 -> 000b5558 = text/html
+000dd698 -> 000dc0a9
+000dd69c -> 00035e04 = FUNCTION FUN_00035e04
+000dd6a0 -> 0006dbac = FUNCTION FUN_0006dbac
+000dd6a4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd6a8 -> 000c4c34 = mobile_game_mode.cgi*
+000dd6ac -> 000b5558 = text/html
+000dd6b0 -> 000dc0a9
+000dd6b4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd6b8 -> 0006d220 = FUNCTION FUN_0006d220
+000dd6bc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd6c0 -> 000c4c4a = mobile_dev_mode.cgi*
+000dd6c4 -> 000b5558 = text/html
+000dd6c8 -> 000dc0a9
+000dd6cc -> 00035e04 = FUNCTION FUN_00035e04
+000dd6d0 -> 0006c628
+000dd6d4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd6d8 -> 000c4c5f = unreg_ASUSDDNS.cgi*
+000dd6dc -> 000b5558 = text/html
+000dd6e0 -> 000dc0a9
+000dd6e4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd6e8 -> 000239e8 = FUNCTION FUN_000239e8
+000dd6ec -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd6f0 -> 000c4c73 = clean_ddns.cgi*
+000dd6f4 -> 000b5558 = text/html
+000dd6f8 -> 000dc0a9
+000dd6fc -> 00035e04 = FUNCTION FUN_00035e04
+000dd700 -> 0002379c = FUNCTION FUN_0002379c
+000dd704 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd708 -> 000c4c83 = upload_cert_key.cgi*
+000dd70c -> 000b5558 = text/html
+000dd710 -> 000dc0a9
+000dd714 -> 00049410
+000dd718 -> 00021044 = FUNCTION FUN_00021044
+000dd71c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd720 -> 000b6457 = cert.crt
+000dd724 -> 000c4c98 = application/x-x509-ca-cert
+000dd728 -> 000dc0a9
+000dd72c -> 00000000
+000dd730 -> 0002d96c
+000dd734 -> 00000000
+000dd738 -> 000b8b1a = cacert_key.tar
+000dd73c -> 000c4aef = application/x-tar
+000dd740 -> 00000000
+000dd744 -> 00035e04 = FUNCTION FUN_00035e04
+000dd748 -> 00034e24
+000dd74c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd750 -> 000b8af3 = cert_key.tar
+000dd754 -> 000c4aef = application/x-tar
+000dd758 -> 00000000
+000dd75c -> 00035e04 = FUNCTION FUN_00035e04
+000dd760 -> 00034c80
+000dd764 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd768 -> 000b6441 = cert.tar
+000dd76c -> 000c4aef = application/x-tar
+000dd770 -> 00000000
+000dd774 -> 00035e04 = FUNCTION FUN_00035e04
+000dd778 -> 0002d8bc
+000dd77c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd780 -> 000c4cb3 = get_IFTTTPincode.cgi
+000dd784 -> 000b5558 = text/html
+000dd788 -> 000dc0a9
+000dd78c -> 00035e04 = FUNCTION FUN_00035e04
+000dd790 -> 00034b20 = FUNCTION FUN_00034b20
+000dd794 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd798 -> 000c3104 = send_IFTTTPincode.cgi
+000dd79c -> 000b5558 = text/html
+000dd7a0 -> 000dc0a9
+000dd7a4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd7a8 -> 000349d0
+000dd7ac -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd7b0 -> 000c432d = get_IFTTTtoken.cgi
+000dd7b4 -> 000b5558 = text/html
+000dd7b8 -> 000dc0a9
+000dd7bc -> 00035e04 = FUNCTION FUN_00035e04
+000dd7c0 -> 0003482c = FUNCTION FUN_0003482c
+000dd7c4 -> 00000000
+000dd7c8 -> 000c4cc8 = alexa_block_internet.cgi
+000dd7cc -> 000b5558 = text/html
+000dd7d0 -> 000dc0a9
+000dd7d4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd7d8 -> 0006c4cc
+000dd7dc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd7e0 -> 000c4340 = asus_ally_device.cgi
+000dd7e4 -> 000b5558 = text/html
+000dd7e8 -> 000dc0a9
+000dd7ec -> 00035e04 = FUNCTION FUN_00035e04
+000dd7f0 -> 0002bc94 = FUNCTION FUN_0002bc94
+000dd7f4 -> 00000000
+000dd7f8 -> 000c4ce1 = nc_new_wifi_notice.cgi
+000dd7fc -> 000b5558 = text/html
+000dd800 -> 000dc0a9
+000dd804 -> 00035e04 = FUNCTION FUN_00035e04
+000dd808 -> 000347bc
+000dd80c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd810 -> 000c4cf8 = nc_exist_wifi_notice.cgi
+000dd814 -> 000b5558 = text/html
+000dd818 -> 000dc0a9
+000dd81c -> 00035e04 = FUNCTION FUN_00035e04
+000dd820 -> 0003474c
+000dd824 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd828 -> 000c4d11 = nc_new_wifi_notice_app.cgi
+000dd82c -> 000b5558 = text/html
+000dd830 -> 000dc0a9
+000dd834 -> 00035e04 = FUNCTION FUN_00035e04
+000dd838 -> 0006c3ec
+000dd83c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd840 -> 000c4d2c = nc_exist_wifi_notice_app.cgi
+000dd844 -> 000b5558 = text/html
+000dd848 -> 000dc0a9
+000dd84c -> 00035e04 = FUNCTION FUN_00035e04
+000dd850 -> 0006c30c
+000dd854 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd858 -> 000c4d49 = nc_notice.cgi
+000dd85c -> 000b5558 = text/html
+000dd860 -> 000dc0a9
+000dd864 -> 00035e04 = FUNCTION FUN_00035e04
+000dd868 -> 0006c1b4
+000dd86c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd870 -> 000c4d57 = get_nt_db.cgi*
+000dd874 -> 000b5558 = text/html
+000dd878 -> 000dc0a9
+000dd87c -> 00035e04 = FUNCTION FUN_00035e04
+000dd880 -> 0006bc60
+000dd884 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd888 -> 000c4d66 = update_InfectedEventJson_security.cgi*
+000dd88c -> 000b5558 = text/html
+000dd890 -> 000dc0a9
+000dd894 -> 00035e04 = FUNCTION FUN_00035e04
+000dd898 -> 0006b94c = FUNCTION FUN_0006b94c
+000dd89c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd8a0 -> 000c4d8d = get_ccevent_data.cgi*
+000dd8a4 -> 000b5558 = text/html
+000dd8a8 -> 000dc0a9
+000dd8ac -> 00035e04 = FUNCTION FUN_00035e04
+000dd8b0 -> 00023af4 = FUNCTION FUN_00023af4
+000dd8b4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd8b8 -> 000c4da3 = get_nc_conf.cgi*
+000dd8bc -> 000b5558 = text/html
+000dd8c0 -> 000dc0a9
+000dd8c4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd8c8 -> 000341f0
+000dd8cc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd8d0 -> 000c4db4 = block_device_internet.cgi
+000dd8d4 -> 000b5558 = text/html
+000dd8d8 -> 000dc0a9
+000dd8dc -> 00035e04 = FUNCTION FUN_00035e04
+000dd8e0 -> 0006b134
+000dd8e4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd8e8 -> 000c4dce = enable_remote_control.cgi
+000dd8ec -> 000b5558 = text/html
+000dd8f0 -> 000dc0a9
+000dd8f4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd8f8 -> 00033ca4
+000dd8fc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd900 -> 000c4de8 = check_Auth.cgi
+000dd904 -> 000b5558 = text/html
+000dd908 -> 000dc0a9
+000dd90c -> 00035e04 = FUNCTION FUN_00035e04
+000dd910 -> 00021658
+000dd914 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd918 -> 000c4df7 = auto_guestnetwork.cgi
+000dd91c -> 000b5558 = text/html
+000dd920 -> 000dc0a9
+000dd924 -> 00035e04 = FUNCTION FUN_00035e04
+000dd928 -> 0007be84
+000dd92c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd930 -> 000c4e0d = syslog.txt*
+000dd934 -> 000c4e19 = text/plain
+000dd938 -> 000dbfcc
+000dd93c -> 00035e04 = FUNCTION FUN_00035e04
+000dd940 -> 00033bf8 = FUNCTION FUN_00033bf8
+000dd944 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd948 -> 000c4e24 = modemlog.txt*
+000dd94c -> 000c4e19 = text/plain
+000dd950 -> 000dbf94
+000dd954 -> 00035e04 = FUNCTION FUN_00035e04
+000dd958 -> 00033b1c
+000dd95c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd960 -> 000c5572 = update.cgi*
+000dd964 -> 000c4476 = text/javascript
+000dd968 -> 000dc0a9
+000dd96c -> 00035e04 = FUNCTION FUN_00035e04
+000dd970 -> 000256a4
+000dd974 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd978 -> 000c4e32 = bwm/*.gz
+000dd97c -> 00000000
+000dd980 -> 000dc058
+000dd984 -> 00035e04 = FUNCTION FUN_00035e04
+000dd988 -> 0002c760
+000dd98c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd990 -> 000c4e3b = change_lang.cgi*
+000dd994 -> 000b5558 = text/html
+000dd998 -> 000dc0a9
+000dd99c -> 000337b0
+000dd9a0 -> 00050ec0
+000dd9a4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd9a8 -> 000c4e4c = change_location.cgi*
+000dd9ac -> 000b5558 = text/html
+000dd9b0 -> 000dc0a9
+000dd9b4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd9b8 -> 0006b080 = FUNCTION FUN_0006b080
+000dd9bc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd9c0 -> 000c4e61 = vpnupload.cgi*
+000dd9c4 -> 000b5558 = text/html
+000dd9c8 -> 000dc0a9
+000dd9cc -> 000312c8
+000dd9d0 -> 000333a8
+000dd9d4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd9d8 -> 000bb3ee = server_ovpn.cert
+000dd9dc -> 000c4c98 = application/x-x509-ca-cert
+000dd9e0 -> 00000000
+000dd9e4 -> 00035e04 = FUNCTION FUN_00035e04
+000dd9e8 -> 00047630 = FUNCTION FUN_00047630
+000dd9ec -> 00020fe8 = FUNCTION FUN_00020fe8
+000dd9f0 -> 000c4e70 = upload_server_ovpn_cert.cgi*
+000dd9f4 -> 000b5558 = text/html
+000dd9f8 -> 000dc0a9
+000dd9fc -> 0002ed50 = FUNCTION FUN_0002ed50
+000dda00 -> 000332b8
+000dda04 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dda08 -> 000c4e8d = jffs/customized_splash/**.json
+000dda0c -> 000c4549 = application/json
+000dda10 -> 00000000
+000dda14 -> 00000000
+000dda18 -> 0001bdd0 = FUNCTION FUN_0001bdd0
+000dda1c -> 00000000
+000dda20 -> 000c4eac = splash_page.cgi*
+000dda24 -> 000b5558 = text/html
+000dda28 -> 000dc0a9
+000dda2c -> 00030994
+000dda30 -> 0002394c = FUNCTION FUN_0002394c
+000dda34 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dda38 -> 000c4ebd = splash_page_SDN.cgi*
+000dda3c -> 000b5558 = text/html
+000dda40 -> 000dc0a9
+000dda44 -> 00030464 = FUNCTION FUN_00030464
+000dda48 -> 0002394c = FUNCTION FUN_0002394c
+000dda4c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dda50 -> 000c4ed2 = splash_page_del.cgi*
+000dda54 -> 000b5558 = text/html
+000dda58 -> 000dc0a9
+000dda5c -> 0002e9f4 = FUNCTION FUN_0002e9f4
+000dda60 -> 0002394c = FUNCTION FUN_0002394c
+000dda64 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dda68 -> 000b5b48 = ipsec.log
+000dda6c -> 000c43f8 = application/octet-stream
+000dda70 -> 00000000
+000dda74 -> 00000000
+000dda78 -> 0002d850 = FUNCTION FUN_0002d850
+000dda7c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dda80 -> 000c4ee7 = clear_file.cgi*
+000dda84 -> 000c4476 = text/javascript
+000dda88 -> 000dc0a9
+000dda8c -> 00035e04 = FUNCTION FUN_00035e04
+000dda90 -> 000253b0
+000dda94 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dda98 -> 000c4ef7 = ipsecupload.cgi*
+000dda9c -> 000b5558 = text/html
+000ddaa0 -> 000dc0a9
+000ddaa4 -> 0002ffdc
+000ddaa8 -> 00033120
+000ddaac -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddab0 -> 000c4f08 = caupload.cgi*
+000ddab4 -> 000b5558 = text/html
+000ddab8 -> 000dc0a9
+000ddabc -> 0002e3b8 = FUNCTION FUN_0002e3b8
+000ddac0 -> 00000000
+000ddac4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddac8 -> 000c4f16 = renew_ikev2_cert_key.cgi*
+000ddacc -> 000b5558 = text/html
+000ddad0 -> 000dc0a9
+000ddad4 -> 00035e04 = FUNCTION FUN_00035e04
+000ddad8 -> 0007557c
+000ddadc -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddae0 -> 000b5b00 = renew_ikev2_cert_mobile.pem
+000ddae4 -> 000c4f30 = application/x-pem-file
+000ddae8 -> 00000000
+000ddaec -> 00000000
+000ddaf0 -> 000755f4
+000ddaf4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddaf8 -> 000b5b1c = renew_ikev2_cert_windows.der
+000ddafc -> 000c4c98 = application/x-x509-ca-cert
+000ddb00 -> 00000000
+000ddb04 -> 00000000
+000ddb08 -> 0007566c
+000ddb0c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddb10 -> 000b5b06 = ikev2_cert_mobile.pem
+000ddb14 -> 000c4f30 = application/x-pem-file
+000ddb18 -> 00000000
+000ddb1c -> 00000000
+000ddb20 -> 000756e4
+000ddb24 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddb28 -> 000b5b22 = ikev2_cert_windows.der
+000ddb2c -> 000c4c98 = application/x-x509-ca-cert
+000ddb30 -> 00000000
+000ddb34 -> 00000000
+000ddb38 -> 0007575c
+000ddb3c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddb40 -> 000c4f47 = get_ipsec_clientlist.cgi*
+000ddb44 -> 000b5558 = text/html
+000ddb48 -> 000dc0a9
+000ddb4c -> 00035e04 = FUNCTION FUN_00035e04
+000ddb50 -> 0006aa28
+000ddb54 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddb58 -> 000c4f61 = set_ipsec_clientlist.cgi*
+000ddb5c -> 000b5558 = text/html
+000ddb60 -> 000dc0a9
+000ddb64 -> 00035e04 = FUNCTION FUN_00035e04
+000ddb68 -> 0006a228
+000ddb6c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddb70 -> 000c4f7b = ipsec_cert_info.cgi*
+000ddb74 -> 000b5558 = text/html
+000ddb78 -> 000dc0a9
+000ddb7c -> 00035e04 = FUNCTION FUN_00035e04
+000ddb80 -> 00074e40
+000ddb84 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddb88 -> 000c4f90 = get_ipsec_profile.cgi*
+000ddb8c -> 000b5558 = text/html
+000ddb90 -> 000dc0a9
+000ddb94 -> 00035e04 = FUNCTION FUN_00035e04
+000ddb98 -> 0002326c
+000ddb9c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddba0 -> 000c4fa7 = set_ipsec_profile.cgi*
+000ddba4 -> 000b5558 = text/html
+000ddba8 -> 000dc0a9
+000ddbac -> 00035e04 = FUNCTION FUN_00035e04
+000ddbb0 -> 0007462c
+000ddbb4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddbb8 -> 000c4fbe = upload_server_ipsec_cert.cgi*
+000ddbbc -> 000b5558 = text/html
+000ddbc0 -> 000dc0a9
+000ddbc4 -> 0002e080 = FUNCTION FUN_0002e080
+000ddbc8 -> 00033030
+000ddbcc -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddbd0 -> 000b5b39 = ipsec_s2s.conf
+000ddbd4 -> 000c43f8 = application/octet-stream
+000ddbd8 -> 00000000
+000ddbdc -> 00000000
+000ddbe0 -> 0002d798
+000ddbe4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddbe8 -> 000c4fdc = ipsec_s2s_upload.cgi*
+000ddbec -> 000b5558 = text/html
+000ddbf0 -> 000dc0a9
+000ddbf4 -> 0002fbcc = FUNCTION FUN_0002fbcc
+000ddbf8 -> 00032e78
+000ddbfc -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddc00 -> 000bb3d7 = server_ipsec.cert
+000ddc04 -> 000c4c98 = application/x-x509-ca-cert
+000ddc08 -> 00000000
+000ddc0c -> 00035e04 = FUNCTION FUN_00035e04
+000ddc10 -> 00047574
+000ddc14 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddc18 -> 000c4ff2 = get_IG_pre_shared_key.cgi*
+000ddc1c -> 000b5558 = text/html
+000ddc20 -> 000dc0a9
+000ddc24 -> 00035e04 = FUNCTION FUN_00035e04
+000ddc28 -> 00075b4c
+000ddc2c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddc30 -> 000c500d = get_ig_config.cgi*
+000ddc34 -> 000b5558 = text/html
+000ddc38 -> 000dc0a9
+000ddc3c -> 00035e04 = FUNCTION FUN_00035e04
+000ddc40 -> 00071d90
+000ddc44 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddc48 -> 000c5020 = set_ig_config.cgi*
+000ddc4c -> 000b5558 = text/html
+000ddc50 -> 000dc0a9
+000ddc54 -> 00035e04 = FUNCTION FUN_00035e04
+000ddc58 -> 00071874 = FUNCTION FUN_00071874
+000ddc5c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddc60 -> 000c5033 = get_ig_guest_config.cgi*
+000ddc64 -> 000b5558 = text/html
+000ddc68 -> 000dc0a9
+000ddc6c -> 00035e04 = FUNCTION FUN_00035e04
+000ddc70 -> 00071df8
+000ddc74 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddc78 -> 000c504c = set_ig_guest_config.cgi*
+000ddc7c -> 000b5558 = text/html
+000ddc80 -> 000dc0a9
+000ddc84 -> 00035e04 = FUNCTION FUN_00035e04
+000ddc88 -> 000718dc = FUNCTION FUN_000718dc
+000ddc8c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddc90 -> 000c5065 = get_ig_sharelink.cgi*
+000ddc94 -> 000b5558 = text/html
+000ddc98 -> 000dc0a9
+000ddc9c -> 00035e04 = FUNCTION FUN_00035e04
+000ddca0 -> 000af038 = FUNCTION FUN_000af038
+000ddca4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddca8 -> 000c507b = enable_ig_guest.cgi*
+000ddcac -> 000b5558 = text/html
+000ddcb0 -> 000dc0a9
+000ddcb4 -> 00035e04 = FUNCTION FUN_00035e04
+000ddcb8 -> 000af700 = FUNCTION FUN_000af700
+000ddcbc -> 00000000
+000ddcc0 -> 000c5090 = deleteOfflineClient.cgi*
+000ddcc4 -> 000b5558 = text/html
+000ddcc8 -> 000dc0a9
+000ddccc -> 00035e04 = FUNCTION FUN_00035e04
+000ddcd0 -> 00070c48
+000ddcd4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddcd8 -> 000c50a9 = netool.cgi*
+000ddcdc -> 000b5558 = text/html
+000ddce0 -> 000dc0a9
+000ddce4 -> 00035e04 = FUNCTION FUN_00035e04
+000ddce8 -> 0005d734
+000ddcec -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddcf0 -> 000c50b5 = cleanlog.cgi*
+000ddcf4 -> 000b5558 = text/html
+000ddcf8 -> 000dc0a9
+000ddcfc -> 00035e04 = FUNCTION FUN_00035e04
+000ddd00 -> 00032578
+000ddd04 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddd08 -> 000c50c3 = update_wlanlog.cgi*
+000ddd0c -> 000b5558 = text/html
+000ddd10 -> 000dc0a9
+000ddd14 -> 00035e04 = FUNCTION FUN_00035e04
+000ddd18 -> 0007c7bc
+000ddd1c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddd20 -> 000c50d7 = rog_first_qos.cgi*
+000ddd24 -> 000b5558 = text/html
+000ddd28 -> 000dc0a9
+000ddd2c -> 00035e04 = FUNCTION FUN_00035e04
+000ddd30 -> 00069a48 = FUNCTION FUN_00069a48
+000ddd34 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddd38 -> 000c50ea = feedback_mail.cgi*
+000ddd3c -> 000b5558 = text/html
+000ddd40 -> 000dc0a9
+000ddd44 -> 00035e04 = FUNCTION FUN_00035e04
+000ddd48 -> 000b1818
+000ddd4c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddd50 -> 000c50fd = dfb_log.cgi
+000ddd54 -> 000c43f8 = application/octet-stream
+000ddd58 -> 00000000
+000ddd5c -> 00035e04 = FUNCTION FUN_00035e04
+000ddd60 -> 000ac000 = FUNCTION FUN_000ac000
+000ddd64 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddd68 -> 000c5109 = clean_offline_clientlist.cgi
+000ddd6c -> 000b5558 = text/html
+000ddd70 -> 000dc0a9
+000ddd74 -> 00035e04 = FUNCTION FUN_00035e04
+000ddd78 -> 00023a88 = FUNCTION FUN_00023a88
+000ddd7c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddd80 -> 000c5126 = set_fw_path.cgi
+000ddd84 -> 000b5558 = text/html
+000ddd88 -> 000dc0a9
+000ddd8c -> 00035e04 = FUNCTION FUN_00035e04
+000ddd90 -> 000ac0d8
+000ddd94 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddd98 -> 000c2f6b = set_iperf3_svr.cgi
+000ddd9c -> 000b5558 = text/html
+000ddda0 -> 000dc0a9
+000ddda4 -> 00035e04 = FUNCTION FUN_00035e04
+000ddda8 -> 00069928
+000dddac -> 00020fe8 = FUNCTION FUN_00020fe8
+000dddb0 -> 000c2f7e = set_iperf3_cli.cgi
+000dddb4 -> 000b5558 = text/html
+000dddb8 -> 000dc0a9
+000dddbc -> 00035e04 = FUNCTION FUN_00035e04
+000dddc0 -> 00069654
+000dddc4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dddc8 -> 000c2f91 = get_iperf3_state.cgi
+000dddcc -> 000b5558 = text/html
+000dddd0 -> 000dc0a9
+000dddd4 -> 00035e04 = FUNCTION FUN_00035e04
+000dddd8 -> 00028bf4
+000ddddc -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddde0 -> 000c5136 = internet_ctrl.cgi*
+000ddde4 -> 000b5558 = text/html
+000ddde8 -> 000dc0a9
+000dddec -> 00035e04 = FUNCTION FUN_00035e04
+000dddf0 -> 00068a74
+000dddf4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dddf8 -> 000c5149 = get_eptoken.cgi*
+000dddfc -> 000b5558 = text/html
+000dde00 -> 000dc0a9
+000dde04 -> 00035e04 = FUNCTION FUN_00035e04
+000dde08 -> 000ac4a8
+000dde0c -> 00000000
+000dde10 -> 000c515a = asusrouter_request_token.cgi*
+000dde14 -> 000b5558 = text/html
+000dde18 -> 000dc0a9
+000dde1c -> 00035e04 = FUNCTION FUN_00035e04
+000dde20 -> 000b190c
+000dde24 -> 00000000
+000dde28 -> 000c5178 = asusrouter_request_access_token.cgi*
+000dde2c -> 000b5558 = text/html
+000dde30 -> 000dc0a9
+000dde34 -> 00035e04 = FUNCTION FUN_00035e04
+000dde38 -> 000b1ae4 = FUNCTION FUN_000b1ae4
+000dde3c -> 00000000
+000dde40 -> 000c519d = endpoint_request_token.cgi*
+000dde44 -> 000b5558 = text/html
+000dde48 -> 000dc0a9
+000dde4c -> 00035e04 = FUNCTION FUN_00035e04
+000dde50 -> 000acf8c
+000dde54 -> 00000000
+000dde58 -> 000c51b9 = get_wl_sched.cgi*
+000dde5c -> 000b5558 = text/html
+000dde60 -> 000dc0a9
+000dde64 -> 00035e04 = FUNCTION FUN_00035e04
+000dde68 -> 000681b8
+000dde6c -> 00020fe8 = FUNCTION FUN_00020fe8
+000dde70 -> 000c51cb = set_wl_sched.cgi*
+000dde74 -> 000b5558 = text/html
+000dde78 -> 000dc0a9
+000dde7c -> 00035e04 = FUNCTION FUN_00035e04
+000dde80 -> 00067a48
+000dde84 -> 00020fe8 = FUNCTION FUN_00020fe8
+000dde88 -> 000c51dd = ookla_speedtest_exe.cgi
+000dde8c -> 000b5558 = text/html
+000dde90 -> 000dc0a9
+000dde94 -> 00035e04 = FUNCTION FUN_00035e04
+000dde98 -> 0006765c
+000dde9c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddea0 -> 000c51f5 = ookla_speedtest_write_history.cgi
+000ddea4 -> 000b5558 = text/html
+000ddea8 -> 000dc0a9
+000ddeac -> 00035e04 = FUNCTION FUN_00035e04
+000ddeb0 -> 000674ec
+000ddeb4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddeb8 -> 000c5217 = set_ookla_speedtest_state.cgi
+000ddebc -> 000b5558 = text/html
+000ddec0 -> 000dc0a9
+000ddec4 -> 00035e04 = FUNCTION FUN_00035e04
+000ddec8 -> 0006739c
+000ddecc -> 00020fe8 = FUNCTION FUN_00020fe8
+000dded0 -> 000c5235 = set_ookla_speedtest_start_time.cgi
+000dded4 -> 000b5558 = text/html
+000dded8 -> 000dc0a9
+000ddedc -> 00035e04 = FUNCTION FUN_00035e04
+000ddee0 -> 00067284
+000ddee4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddee8 -> 000c5258 = del_client_data.cgi*
+000ddeec -> 000b5558 = text/html
+000ddef0 -> 000dc0a9
+000ddef4 -> 00035e04 = FUNCTION FUN_00035e04
+000ddef8 -> 0007dc9c = FUNCTION FUN_0007dc9c
+000ddefc -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddf00 -> 000c526d = set_ledg.cgi*
+000ddf04 -> 000b5558 = text/html
+000ddf08 -> 000dc0a9
+000ddf0c -> 00035e04 = FUNCTION FUN_00035e04
+000ddf10 -> 00067008
+000ddf14 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddf18 -> 000c527b = set_pc_reward.cgi*
+000ddf1c -> 000b5558 = text/html
+000ddf20 -> 000dc0a9
+000ddf24 -> 00035e04 = FUNCTION FUN_00035e04
+000ddf28 -> 00066b9c
+000ddf2c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddf30 -> 000c528e = get_pc_reward.cgi*
+000ddf34 -> 000b5558 = text/html
+000ddf38 -> 000dc0a9
+000ddf3c -> 00035e04 = FUNCTION FUN_00035e04
+000ddf40 -> 0002629c
+000ddf44 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddf48 -> 000c52a1 = get_usericon_md5.cgi
+000ddf4c -> 000b5558 = text/html
+000ddf50 -> 000dc0a9
+000ddf54 -> 00035e04 = FUNCTION FUN_00035e04
+000ddf58 -> 000668f4 = FUNCTION FUN_000668f4
+000ddf5c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddf60 -> 000c52b6 = backup_all_usericon.cgi
+000ddf64 -> 000b5558 = text/html
+000ddf68 -> 000dc0a9
+000ddf6c -> 00035e04 = FUNCTION FUN_00035e04
+000ddf70 -> 000473dc = FUNCTION FUN_000473dc
+000ddf74 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddf78 -> 000c52ce = upload_all_usericon.cgi*
+000ddf7c -> 000c43f8 = application/octet-stream
+000ddf80 -> 000dc0a9
+000ddf84 -> 00049348 = FUNCTION FUN_00049348
+000ddf88 -> 000667c0 = FUNCTION FUN_000667c0
+000ddf8c -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddf90 -> 000c52e7 = get_app_client_stats.cgi
+000ddf94 -> 000b5558 = text/html
+000ddf98 -> 000dc0a9
+000ddf9c -> 00035e04 = FUNCTION FUN_00035e04
+000ddfa0 -> 0006630c
+000ddfa4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddfa8 -> 000c5300 = get_dns_block_stats.cgi
+000ddfac -> 000b5558 = text/html
+000ddfb0 -> 000dc0a9
+000ddfb4 -> 00035e04 = FUNCTION FUN_00035e04
+000ddfb8 -> 00065f60
+000ddfbc -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddfc0 -> 000c5318 = get_dns_block_list.cgi
+000ddfc4 -> 000b5558 = text/html
+000ddfc8 -> 000dc0a9
+000ddfcc -> 00035e04 = FUNCTION FUN_00035e04
+000ddfd0 -> 00065e7c
+000ddfd4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddfd8 -> 000c532f = get_dns_block_list_insert_or_update.cgi
+000ddfdc -> 000b5558 = text/html
+000ddfe0 -> 000dc0a9
+000ddfe4 -> 00035e04 = FUNCTION FUN_00035e04
+000ddfe8 -> 00065c50
+000ddfec -> 00020fe8 = FUNCTION FUN_00020fe8
+000ddff0 -> 000c5357 = get_dev_type_query.cgi
+000ddff4 -> 000b5558 = text/html
+000ddff8 -> 000dc0a9
+000ddffc -> 00035e04 = FUNCTION FUN_00035e04
+000de000 -> 00065b24
+000de004 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de008 -> 000c536e = get_port_status.cgi
+000de00c -> 000b5558 = text/html
+000de010 -> 000dc0a9
+000de014 -> 00035e04 = FUNCTION FUN_00035e04
+000de018 -> 00065948
+000de01c -> 00020fe8 = FUNCTION FUN_00020fe8
+000de020 -> 000c5382 = exec_force_cable_diag.cgi
+000de024 -> 000b5558 = text/html
+000de028 -> 000dc0a9
+000de02c -> 00035e04 = FUNCTION FUN_00035e04
+000de030 -> 000656a4
+000de034 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de038 -> 000c539c = get_diag_wifi_traffic.cgi
+000de03c -> 000b5558 = text/html
+000de040 -> 000dc0a9
+000de044 -> 00035e04 = FUNCTION FUN_00035e04
+000de048 -> 00065494
+000de04c -> 00020fe8 = FUNCTION FUN_00020fe8
+000de050 -> 000c53b6 = get_diag_eth_traffic.cgi
+000de054 -> 000b5558 = text/html
+000de058 -> 000dc0a9
+000de05c -> 00035e04 = FUNCTION FUN_00035e04
+000de060 -> 000650f8
+000de064 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de068 -> 000c53cf = get_diag_sta_traffic.cgi
+000de06c -> 000b5558 = text/html
+000de070 -> 000dc0a9
+000de074 -> 00035e04 = FUNCTION FUN_00035e04
+000de078 -> 00064e0c
+000de07c -> 00020fe8 = FUNCTION FUN_00020fe8
+000de080 -> 000c53e8 = get_diag_avg_data.cgi
+000de084 -> 000b5558 = text/html
+000de088 -> 000dc0a9
+000de08c -> 00035e04 = FUNCTION FUN_00035e04
+000de090 -> 00064b50
+000de094 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de098 -> 000c53fe = get_diag_active_client.cgi
+000de09c -> 000b5558 = text/html
+000de0a0 -> 000dc0a9
+000de0a4 -> 00035e04 = FUNCTION FUN_00035e04
+000de0a8 -> 000648fc
+000de0ac -> 00020fe8 = FUNCTION FUN_00020fe8
+000de0b0 -> 000c5419 = get_diag_content_data.cgi
+000de0b4 -> 000b5558 = text/html
+000de0b8 -> 000dc0a9
+000de0bc -> 00035e04 = FUNCTION FUN_00035e04
+000de0c0 -> 000644a4 = FUNCTION FUN_000644a4
+000de0c4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de0c8 -> 000c5433 = get_diag_eth_traffic_data.cgi
+000de0cc -> 000b5558 = text/html
+000de0d0 -> 000dc0a9
+000de0d4 -> 00035e04 = FUNCTION FUN_00035e04
+000de0d8 -> 00064224
+000de0dc -> 00020fe8 = FUNCTION FUN_00020fe8
+000de0e0 -> 000c5451 = get_diag_latest_content_data.cgi
+000de0e4 -> 000b5558 = text/html
+000de0e8 -> 000dc0a9
+000de0ec -> 00035e04 = FUNCTION FUN_00035e04
+000de0f0 -> 00063f78
+000de0f4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de0f8 -> 000c5472 = dns_ping.cgi
+000de0fc -> 000b5558 = text/html
+000de100 -> 000dc0a9
+000de104 -> 00035e04 = FUNCTION FUN_00035e04
+000de108 -> 0007f430 = FUNCTION FUN_0007f430
+000de10c -> 00020fe8 = FUNCTION FUN_00020fe8
+000de110 -> 000c547f = get_custom_clientlist.cgi
+000de114 -> 000b5558 = text/html
+000de118 -> 000dc0a9
+000de11c -> 00035e04 = FUNCTION FUN_00035e04
+000de120 -> 0002a134 = FUNCTION FUN_0002a134
+000de124 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de128 -> 000c5499 = set_family_group.cgi
+000de12c -> 000b5558 = text/html
+000de130 -> 000dc0a9
+000de134 -> 00035e04 = FUNCTION FUN_00035e04
+000de138 -> 0007cae4 = FUNCTION FUN_0007cae4
+000de13c -> 00020fe8 = FUNCTION FUN_00020fe8
+000de140 -> 000c54ae = chpass.cgi*
+000de144 -> 000b5558 = text/html
+000de148 -> 000dc0a9
+000de14c -> 00035e04 = FUNCTION FUN_00035e04
+000de150 -> 00063d78
+000de154 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de158 -> 000c54ba = get_cta_info.cgi*
+000de15c -> 000b5558 = text/html
+000de160 -> 000dc0a9
+000de164 -> 00035e04 = FUNCTION FUN_00035e04
+000de168 -> 000b0150
+000de16c -> 00000000
+000de170 -> 000c54cc = upload_config_sync.cgi*
+000de174 -> 000b5558 = text/html
+000de178 -> 000dc0a9
+000de17c -> 000b0228 = FUNCTION FUN_000b0228
+000de180 -> 000b0674 = FUNCTION FUN_000b0674
+000de184 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de188 -> 000c54e4 = upload_blacklist_config.cgi*
+000de18c -> 000b5558 = text/html
+000de190 -> 000dc0a9
+000de194 -> 00035e04 = FUNCTION FUN_00035e04
+000de198 -> 000b0758
+000de19c -> 00020fe8 = FUNCTION FUN_00020fe8
+000de1a0 -> 000c5501 = start_config_sync.cgi*
+000de1a4 -> 000b5558 = text/html
+000de1a8 -> 000dc0a9
+000de1ac -> 00035e04 = FUNCTION FUN_00035e04
+000de1b0 -> 000b0810
+000de1b4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de1b8 -> 000c5518 = save_all_profile.cgi*
+000de1bc -> 000c43f8 = application/octet-stream
+000de1c0 -> 000dc0a9
+000de1c4 -> 00035e04 = FUNCTION FUN_00035e04
+000de1c8 -> 000b0894
+000de1cc -> 00020fe8 = FUNCTION FUN_00020fe8
+000de1d0 -> 000c552e = set_usb_bk.cgi*
+000de1d4 -> 000b5558 = text/html
+000de1d8 -> 000dc0a9
+000de1dc -> 00035e04 = FUNCTION FUN_00035e04
+000de1e0 -> 00063b04
+000de1e4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de1e8 -> 000c553e = s46reset.cgi*
+000de1ec -> 000b5558 = text/html
+000de1f0 -> 000dc0a9
+000de1f4 -> 00035e04 = FUNCTION FUN_00035e04
+000de1f8 -> 00063a58
+000de1fc -> 00020fe8 = FUNCTION FUN_00020fe8
+000de200 -> 000c554c = set_security_update.cgi*
+000de204 -> 000b5558 = text/html
+000de208 -> 000dc0a9
+000de20c -> 00035e04 = FUNCTION FUN_00035e04
+000de210 -> 000b3630 = FUNCTION FUN_000b3630
+000de214 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de218 -> 000c5565 = get_security_update.cgi*
+000de21c -> 000b5558 = text/html
+000de220 -> 000dc0a9
+000de224 -> 00035e04 = FUNCTION FUN_00035e04
+000de228 -> 000b3714
+000de22c -> 00020fe8 = FUNCTION FUN_00020fe8
+000de230 -> 000c557e = create_sdn_profile.cgi*
+000de234 -> 000b5558 = text/html
+000de238 -> 000dc0a9
+000de23c -> 00035e04 = FUNCTION FUN_00035e04
+000de240 -> 0008f960
+000de244 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de248 -> 000c5596 = create_sdn_mwl.cgi*
+000de24c -> 000b5558 = text/html
+000de250 -> 000dc0a9
+000de254 -> 00035e04 = FUNCTION FUN_00035e04
+000de258 -> 00090a1c
+000de25c -> 00020fe8 = FUNCTION FUN_00020fe8
+000de260 -> 000c55aa = create_sdn_legacy.cgi*
+000de264 -> 000b5558 = text/html
+000de268 -> 000dc0a9
+000de26c -> 00035e04 = FUNCTION FUN_00035e04
+000de270 -> 00091db8
+000de274 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de278 -> 000c55c1 = mld_enable.cgi*
+000de27c -> 000b5558 = text/html
+000de280 -> 000dc0a9
+000de284 -> 00035e04 = FUNCTION FUN_00035e04
+000de288 -> 0006334c
+000de28c -> 00020fe8 = FUNCTION FUN_00020fe8
+000de290 -> 000c55d1 = reset_sdn_rule.cgi*
+000de294 -> 000b5558 = text/html
+000de298 -> 000dc0a9
+000de29c -> 00035e04 = FUNCTION FUN_00035e04
+000de2a0 -> 00062ff0 = FUNCTION FUN_00062ff0
+000de2a4 -> 00020fe8 = FUNCTION FUN_00020fe8
+000de2a8 -> 000c55e5 = set_wl_band.cgi*
+000de2ac -> 000b5558 = text/html
+000de2b0 -> 000dc0a9
+000de2b4 -> 00035e04 = FUNCTION FUN_00035e04
+000de2b8 -> 0007f730
+000de2bc -> 00020fe8 = FUNCTION FUN_00020fe8
+000de2c0 -> 00000000
+000de2c4 -> 00000000
+000de2c8 -> 00000000
+000de2cc -> 00000000
+000de2d0 -> 00000000
+000de2d4 -> 00000000
+000de2d8 -> 000c2da2 = **.gz
+000de2dc -> 00000000
+000de2e0 -> 000c2da8 = **.tgz
+000de2e4 -> 00000000
+000de2e8 -> 000c2daf = **.zip
+000de2ec -> 00000000
+000de2f0 -> 000c2db6 = **.ipk
+000de2f4 -> 00000000
+000de2f8 -> 000c2dbd = **.css
+000de2fc -> 00000000
+000de300 -> 000c2dc4 = **.png
+000de304 -> 00000000
+000de308 -> 000c2dcb = **.gif
+000de30c -> 00000000
+000de310 -> 000c2dd2 = **.jpg
+000de314 -> 00000000
+000de318 -> 000c2dd9 = **.svg
+000de31c -> 00000000
+000de320 -> 000c2de0 = **.swf
+000de324 -> 00000000
+000de328 -> 000c2de7 = **.htc
+000de32c -> 00000000
+000de330 -> 000c2dee = fonts/*.ttf
+000de334 -> 00000000
+000de338 -> 000c2dfa = fonts/*.otf
+000de33c -> 00000000
+000de340 -> 000c2e06 = fonts/*.woff
+000de344 -> 00000000
+000de348 -> 000c2e13 = **.js
+000de34c -> 00000000
+000de350 -> 000c2e19 = **.xml
+000de354 -> 00000000
+000de358 -> 00000000
+000de35c -> 00000000
+000de360 -> 000c2e20 = AiMesh_Node_FirmwareUpgrade.asp
+000de364 -> 00000000
+000de368 -> 000c2e40 = upgrade.cgi
+000de36c -> 00000000
+000de370 -> 000bc5d0 = Updating.asp
+000de374 -> 00000000
+000de378 -> 000bc610 = UpdateError_reboot.asp
+000de37c -> 00000000
+000de380 -> 000bc627 = UpdateError.asp
+000de384 -> 00000000
+000de388 -> 000c2e4c = message.htm
+000de38c -> 00000000
+000de390 -> 000c2e58 = error_page.htm
+000de394 -> 00000000
+000de398 -> 000b57db = Main_Login.asp
+000de39c -> 00000000
+000de3a0 -> 000c2e14 = *.js
+000de3a4 -> 00000000
+000de3a8 -> 000c2e67 = js/*
+000de3ac -> 00000000
+000de3b0 -> 000c2e6c = require/modules/*
+000de3b4 -> 00000000
+000de3b8 -> 000c2e7e = switcherplugin/*
+000de3bc -> 00000000
+000de3c0 -> 000b59ec = appGet.cgi
+000de3c4 -> 00000000
+000de3c8 -> 000c2e8f = start_apply.htm
+000de3cc -> 00000000
+000de3d0 -> 000c2e9f = APP_Installation.asp
+000de3d4 -> 00000000
+000de3d8 -> 000c2eb4 = Advanced_SwitchCtrl_Content.asp
+000de3dc -> 00000000
+000de3e0 -> 000c2ed4 = update_appstate.asp
+000de3e4 -> 00000000
+000de3e8 -> 000c2ee8 = update_applist.asp
+000de3ec -> 00000000
+000de3f0 -> 000c2efb = Advanced_TimeMachine.asp
+000de3f4 -> 00000000
+000de3f8 -> 000c2f14 = mediaserver.asp
+000de3fc -> 00000000
+000de400 -> 000c2f24 = gettree.asp
+000de404 -> 00000000
+000de408 -> 000c2f30 = Advanced_AiDisk_samba.asp
+000de40c -> 00000000
+000de410 -> 000c2f4a = Advanced_AiDisk_ftp.asp
+000de414 -> 00000000
+000de418 -> 000c2f62 = aidisk/*
+000de41c -> 00000000
+000de420 -> 000c2f6b = set_iperf3_svr.cgi
+000de424 -> 00000000
+000de428 -> 000c2f7e = set_iperf3_cli.cgi
+000de42c -> 00000000
+000de430 -> 000c2f91 = get_iperf3_state.cgi
+000de434 -> 00000000
+000de438 -> 00000000
+000de43c -> 00000000
+000de440 -> 000c2fa6 = Main_**.asp
+000de444 -> 00000000
+000de448 -> 000c2fb2 = AdaptiveQoS_**.asp
+000de44c -> 00000000
+000de450 -> 000c2fc5 = Advanced_**.asp
+000de454 -> 00000000
+000de458 -> 000c2fd5 = aicloud_qis.asp
+000de45c -> 00000000
+000de460 -> 000c2fe5 = aidisk.asp
+000de464 -> 00000000
+000de468 -> 000c2ff0 = AiProtection_**.asp
+000de46c -> 00000000
+000de470 -> 000c2e9f = APP_Installation.asp
+000de474 -> 00000000
+000de478 -> 000c3004 = cloud_main.asp
+000de47c -> 00000000
+000de480 -> 000c3013 = cloud_router_sync.asp
+000de484 -> 00000000
+000de488 -> 000c3029 = cloud_settings.asp
+000de48c -> 00000000
+000de490 -> 000c303c = cloud_syslog.asp
+000de494 -> 00000000
+000de498 -> 000c304d = cloud_sync.asp
+000de49c -> 00000000
+000de4a0 -> 000c305c = Feedback_Info.asp
+000de4a4 -> 00000000
+000de4a8 -> 000c306e = GameBoost.asp
+000de4ac -> 00000000
+000de4b0 -> 000c307c = Guest_network**.asp
+000de4b4 -> 00000000
+000de4b8 -> 000bb2a1 = index.asp
+000de4bc -> 00000000
+000de4c0 -> 000c3090 = ParentalControl.asp
+000de4c4 -> 00000000
+000de4c8 -> 000c30a4 = PrinterServer.asp
+000de4cc -> 00000000
+000de4d0 -> 000c30b6 = QIS_wizard**.htm
+000de4d4 -> 00000000
+000de4d8 -> 000c30c7 = QoS_EZQoS.asp
+000de4dc -> 00000000
+000de4e0 -> 000c30d5 = TrafficAnalyzer_Statistic.asp
+000de4e4 -> 00000000
+000de4e8 -> 000c30f3 = updateSubnet.htm
+000de4ec -> 00000000
+000de4f0 -> 000c3104 = send_IFTTTPincode.cgi
+000de4f4 -> 00000000
+000de4f8 -> 000c2e20 = AiMesh_Node_FirmwareUpgrade.asp
+000de4fc -> 00000000
+000de500 -> 00000000

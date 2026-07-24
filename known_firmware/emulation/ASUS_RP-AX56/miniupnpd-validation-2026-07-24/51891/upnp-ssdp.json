@@ -1,0 +1,69 @@
+{
+  "target": "192.168.50.1:5000",
+  "case": "ssdp",
+  "results": [
+    {
+      "name": "valid-search",
+      "request_bytes": 137,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 300.53
+    },
+    {
+      "name": "empty",
+      "request_bytes": 0,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 300.54
+    },
+    {
+      "name": "one-byte",
+      "request_bytes": 1,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 300.58
+    },
+    {
+      "name": "short-line",
+      "request_bytes": 14,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 300.51
+    },
+    {
+      "name": "long-header-2048",
+      "request_bytes": 2195,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 300.48
+    },
+    {
+      "name": "duplicate-mx",
+      "request_bytes": 157,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 300.48
+    },
+    {
+      "name": "embedded-nul",
+      "request_bytes": 150,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 300.55
+    }
+  ]
+}

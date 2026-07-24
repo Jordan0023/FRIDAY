@@ -1,0 +1,12 @@
+{"binary":"libshn_utils.so","function":"FUN_000126e4","address":"000126e4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"inet_ntop","address":"00012b80","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"inet_ntop","address":"00012b80","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"get_proc_maps_total","address":"00012e4c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"get_proc_maps_total","address":"00012e4c","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"get_proc_vm_stat","address":"00013054","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"get_proc_vm_stat","address":"00013054","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"daemonize","address":"000135c4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"FUN_000137ac","address":"000137ac","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"FUN_000137ac","address":"000137ac","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"FUN_000137ac","address":"000137ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"get_guid","address":"00013c3c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,60 @@
+{
+  "target": "192.168.50.1:5000",
+  "case": "gena",
+  "results": [
+    {
+      "name": "callback-0",
+      "request_bytes": 107,
+      "fragmented": false,
+      "response_bytes": 167,
+      "status_line": "HTTP/1.1 412 Precondition Failed",
+      "error": null,
+      "elapsed_ms": 18.11
+    },
+    {
+      "name": "callback-1",
+      "request_bytes": 109,
+      "fragmented": true,
+      "response_bytes": 167,
+      "status_line": "HTTP/1.1 412 Precondition Failed",
+      "error": null,
+      "elapsed_ms": 58.5
+    },
+    {
+      "name": "callback-2",
+      "request_bytes": 128,
+      "fragmented": false,
+      "response_bytes": 167,
+      "status_line": "HTTP/1.1 412 Precondition Failed",
+      "error": null,
+      "elapsed_ms": 30.58
+    },
+    {
+      "name": "callback-3",
+      "request_bytes": 124,
+      "fragmented": true,
+      "response_bytes": 167,
+      "status_line": "HTTP/1.1 412 Precondition Failed",
+      "error": null,
+      "elapsed_ms": 74.53
+    },
+    {
+      "name": "callback-4",
+      "request_bytes": 1141,
+      "fragmented": false,
+      "response_bytes": 167,
+      "status_line": "HTTP/1.1 412 Precondition Failed",
+      "error": null,
+      "elapsed_ms": 89.5
+    },
+    {
+      "name": "callback-5",
+      "request_bytes": 145,
+      "fragmented": true,
+      "response_bytes": 167,
+      "status_line": "HTTP/1.1 412 Precondition Failed",
+      "error": null,
+      "elapsed_ms": 45.79
+    }
+  ]
+}

@@ -1,5 +1,23 @@
 # RAX54S 1.0.17.144: pre-authentication UPnP SOAP body overflow candidate
 
+## Superseded by dynamic validation (2026-07-24)
+
+This candidate was not confirmed and must not be treated as an
+unauthenticated-UPnP finding. Testing the exact firmware daemon showed that
+`/Public_UPNP_C3` serves WANIPConnection, while the handler containing the
+unchecked copy belongs to the proprietary `httpd` path at `/soap/server_sa/`.
+`DeviceInfo:1#GetInfo` requests with 0 through 1,024 bytes of inert padding
+did not terminate either tested service. The public `upnpd` path returned SOAP
+faults and passed WANIPConnection liveness controls. After the proprietary
+`httpd` path was brought to a stable full-system state, `/soap/server_sa/`
+returned HTTP 200 for every tested size and passed a fresh HTTPS control after
+every case.
+
+The static unsafe copy remains relevant to future `httpd` analysis, but its
+unauthenticated reachability and impact are unproven. See
+`RAX54S-V1.0.17.144-unauth-rce-dos-investigation.md` for the corrected
+disposition and dynamic evidence.
+
 ## Disposition
 
 - Product: Netgear RAX54S
@@ -8,10 +26,10 @@
 - Component: `/usr/sbin/upnpd`
 - Binary MD5 (Ghidra import): `3c148cf0f4d2255b6171994fd91a9bc6`
 - Exposure: LAN UPnP HTTP/SOAP
-- Authentication: apparently not required for the `DeviceInfo:1#GetInfo` exception
+- Authentication: unauthenticated reachability not established
 - Candidate impact: daemon crash (DoS); adjacent-memory corruption and RCE require dynamic proof
 - Evidence level: L3 static source-to-sink trace
-- Status: potential, not a confirmed zero-day
+- Status: superseded/refuted as a public-UPnP candidate; not a confirmed zero-day
 
 ## Why this target was selected
 

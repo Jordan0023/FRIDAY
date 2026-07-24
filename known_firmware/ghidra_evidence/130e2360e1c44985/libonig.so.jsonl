@@ -1,0 +1,4 @@
+{"binary":"libonig.so.5.4.0","function":"FUN_0001a1d8","address":"0001a1d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libonig.so.5.4.0","function":"FUN_0002a074","address":"0002a074","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libonig.so.5.4.0","function":"onig_compile","address":"0002e4a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libonig.so.5.4.0","function":"onig_error_code_to_str","address":"0003920c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

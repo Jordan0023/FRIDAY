@@ -1,0 +1,7 @@
+{"binary":"vsftpd","function":"FUN_004066b4","address":"004066b4","route":"/1.1","sink":"unsafe_copy","sources":"","auth_markers":"Login,password,session,Session","correlation":"function-local-co-location"}
+{"binary":"vsftpd","function":"FUN_004066b4","address":"004066b4","route":"/html","sink":"unsafe_copy","sources":"","auth_markers":"Login,password,session,Session","correlation":"function-local-co-location"}
+{"binary":"vsftpd","function":"FUN_004066b4","address":"004066b4","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"Login,password,session,Session","correlation":"function-local-co-location"}
+{"binary":"vsftpd","function":"FUN_004066b4","address":"004066b4","route":"/tmp/mnt","sink":"unsafe_copy","sources":"","auth_markers":"Login,password,session,Session","correlation":"function-local-co-location"}
+{"binary":"vsftpd","function":"FUN_004066b4","address":"004066b4","route":"/s","sink":"unsafe_copy","sources":"","auth_markers":"Login,password,session,Session","correlation":"function-local-co-location"}
+{"binary":"vsftpd","function":"FUN_004066b4","address":"004066b4","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"Login,password,session,Session","correlation":"function-local-co-location"}
+{"binary":"vsftpd","function":"FUN_004156f0","address":"004156f0","route":"/%s","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

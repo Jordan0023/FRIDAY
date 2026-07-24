@@ -1,0 +1,5 @@
+{"binary":"mt7615-common.ko","function":"FUN_00014d80","address":"00014d80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7615-common.ko","function":"FUN_00014d80","address":"00014d80","route":"/linux-ramips_mt7621/mt76-2026.03.19~39c960c3/mt7615/mt7615.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7615-common.ko","function":"_8","address":"000181b0","route":"/linux-ramips_mt7621/mt76-2026.03.19~39c960c3/mt7615/eeprom.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7615-common.ko","function":"_0","address":"0001be9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7615-common.ko","function":"_4","address":"0001d224","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if test "$1" = "-r" && test "$2" = "sn"; then
+    echo "FRIDAYLAB0001"
+    exit 0
+fi
+
+exec /sbin/artmtd.real "$@"

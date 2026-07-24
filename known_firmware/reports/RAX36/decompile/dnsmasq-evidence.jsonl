@@ -1,0 +1,8 @@
+{"schema":4,"binary":"dnsmasq","function":"FUN_0002301c","address":"0002301c","sinks":["memmove","strcpy"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"dnsmasq","function":"FUN_00023c90","address":"00023c90","sinks":["strcpy","strcat"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"dnsmasq","function":"FUN_00024b10","address":"00024b10","sinks":["strcpy"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"dnsmasq","function":"FUN_00025c50","address":"00025c50","sinks":["memcpy"],"sources":["recvfrom"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"dnsmasq","function":"FUN_000283b0","address":"000283b0","sinks":["system"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"dnsmasq","function":"FUN_00036bb0","address":"00036bb0","sinks":["strcpy","execl"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"dnsmasq","function":"FUN_00047278","address":"00047278","sinks":["strcpy"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"dnsmasq","function":"FUN_00047904","address":"00047904","sinks":["system"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}

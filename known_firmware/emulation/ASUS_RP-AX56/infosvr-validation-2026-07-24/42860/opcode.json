@@ -1,0 +1,246 @@
+{
+  "target": "127.0.0.1:9999/udp",
+  "case": "opcode-matrix",
+  "results": [
+    {
+      "name": "opcode-0",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.75
+    },
+    {
+      "name": "opcode-1",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-29",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-30",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.71
+    },
+    {
+      "name": "opcode-31",
+      "request_bytes": 512,
+      "response_bytes": 512,
+      "response_prefix_hex": "0c161f0044495246000000000000000000000000000000000000000000000000",
+      "error": null,
+      "elapsed_ms": 20.73
+    },
+    {
+      "name": "opcode-32",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-33",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-34",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-35",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.74
+    },
+    {
+      "name": "opcode-36",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.8
+    },
+    {
+      "name": "opcode-37",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.78
+    },
+    {
+      "name": "opcode-38",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-39",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.79
+    },
+    {
+      "name": "opcode-40",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.8
+    },
+    {
+      "name": "opcode-41",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.81
+    },
+    {
+      "name": "opcode-42",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-43",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-44",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-45",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.76
+    },
+    {
+      "name": "opcode-46",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.8
+    },
+    {
+      "name": "opcode-47",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.72
+    },
+    {
+      "name": "opcode-48",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.75
+    },
+    {
+      "name": "opcode-49",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-50",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-51",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-52",
+      "request_bytes": 512,
+      "response_bytes": 512,
+      "response_prefix_hex": "0c16340044495246000000000000000000000000000000000000000000000000",
+      "error": null,
+      "elapsed_ms": 24.01
+    },
+    {
+      "name": "opcode-53",
+      "request_bytes": 512,
+      "response_bytes": 512,
+      "response_prefix_hex": "0c163500444952463a2d31212400000000000000000000000000000000000000",
+      "error": null,
+      "elapsed_ms": 5.28
+    },
+    {
+      "name": "opcode-54",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.77
+    },
+    {
+      "name": "opcode-55",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.75
+    },
+    {
+      "name": "opcode-65535",
+      "request_bytes": 512,
+      "response_bytes": 0,
+      "response_prefix_hex": "",
+      "error": null,
+      "elapsed_ms": 500.75
+    }
+  ]
+}

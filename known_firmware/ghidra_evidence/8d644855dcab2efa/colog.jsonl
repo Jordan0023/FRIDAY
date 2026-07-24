@@ -1,0 +1,2 @@
+{"binary":"colog","function":"FUN_00400f30","address":"00400f30","route":"/tmp/%s_log","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"colog","function":"FUN_00400f30","address":"00400f30","route":"/tmp/%s_log","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

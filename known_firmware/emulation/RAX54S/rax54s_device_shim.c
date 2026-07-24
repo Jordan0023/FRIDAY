@@ -1,5 +1,34 @@
 extern int __open(const char *path, int flags, ...);
 extern int __open64(const char *path, int flags, ...);
+extern int close(int fd);
+extern long write(int fd, const void *buffer, unsigned long count);
+
+static void write_hex32(int fd, unsigned long value)
+{
+    static const char digits[] = "0123456789abcdef";
+    unsigned int shift;
+    char digit;
+    for (shift = 28U; shift < 32U; shift -= 4U) {
+        digit = digits[(value >> shift) & 15U];
+        write(fd, &digit, 1U);
+        if (shift == 0U) {
+            break;
+        }
+    }
+}
+
+/*
+ * The real implementation walks the hardware NAT table through
+ * /dev/acos_nat_cli before httpd creates its listeners.  Returning successful
+ * empty ioctl results cannot terminate that walk because the driver also
+ * supplies its end-of-table state in the output structure.  The isolated lab
+ * starts with no NAT rules, so model the operation at its public API boundary
+ * as an already-empty table.
+ */
+int agApi_clear_nat_for_httpd(void)
+{
+    return 0;
+}
 
 static int emulated_fds[16];
 static unsigned int emulated_count;
@@ -56,6 +85,8 @@ int open64(const char *path, int flags, ...)
 
 static int emulate_ioctl(int fd, unsigned long request, void *argument)
 {
+    static unsigned long traced_requests[128];
+    static unsigned int traced_count;
     /*
      * ACOS NAT control requests use ioctl type 0x64.  Some firmware
      * libraries open the device through private libc entry points that do
@@ -64,7 +95,50 @@ static int emulate_ioctl(int fd, unsigned long request, void *argument)
      * distinct 0x89xx family and continue to reach the kernel.
      */
     if (is_emulated(fd) || (request & 0x0000ff00UL) == 0x00006400UL) {
-        return 0;
+        unsigned int trace_index;
+        int seen = 0;
+        for (trace_index = 0; trace_index < traced_count; ++trace_index) {
+            if (traced_requests[trace_index] == request) {
+                seen = 1;
+                break;
+            }
+        }
+        if (!seen && traced_count < 128U) {
+            unsigned long *words = (unsigned long *)argument;
+            int console = __open("/dev/console", 1);
+            traced_requests[traced_count++] = request;
+            if (console >= 0) {
+                write(console, "FRIDAY_RAX54S_IOCTL req=0x", 26U);
+                write_hex32(console, request);
+                write(console, " caller=0x", 10U);
+                write_hex32(console, (unsigned long)__builtin_return_address(1));
+                if ((unsigned long)argument >= 4096U &&
+                    (unsigned long)argument < 0xc0000000U) {
+                    write(console, " words=", 7U);
+                    write_hex32(console, words[0]);
+                    write(console, ",", 1U);
+                    write_hex32(console, words[1]);
+                    write(console, ",", 1U);
+                    write_hex32(console, words[2]);
+                    write(console, ",", 1U);
+                    write_hex32(console, words[3]);
+                }
+                write(console, "\n", 1U);
+                close(console);
+            }
+        }
+        /*
+         * /dev/spiv6 is a write-style notification device, so acknowledge it.
+         * The 0x64 vendor family includes NAT/firewall table queries and
+         * deletes.  This lab has an empty table: reporting success without
+         * mutating a kernel table makes httpd's cleanup loops run forever.
+         * Failure is the driver's end/not-found indication used to terminate
+         * those loops.
+         */
+        if (is_emulated(fd) || (request >> 24) == 0x5aUL) {
+            return 0;
+        }
+        return -1;
     }
     register int r0 __asm__("r0") = fd;
     register unsigned long r1 __asm__("r1") = request;

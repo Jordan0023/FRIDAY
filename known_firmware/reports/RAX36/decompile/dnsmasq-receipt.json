@@ -1,0 +1,14 @@
+{
+  "program": "dnsmasq",
+  "security_schema": 4,
+  "functions_discovered": 423,
+  "functions_attempted": 423,
+  "functions_succeeded": 423,
+  "functions_failed": 0,
+  "functions_timed_out": 0,
+  "retry_attempts": 0,
+  "coverage_status": "complete",
+  "candidate_functions": 8,
+  "evidence_records": 8,
+  "evidence_path": "/home/jordan/FRIDAY/known_firmware/reports/RAX36/decompile/dnsmasq-evidence.jsonl"
+}

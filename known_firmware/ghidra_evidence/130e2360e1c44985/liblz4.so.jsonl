@@ -1,0 +1,3 @@
+{"binary":"liblz4.so.1.8.3","function":"LZ4_compress_fast_extState_fastReset","address":"000124cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblz4.so.1.8.3","function":"LZ4_compress_fast_continue","address":"00017448","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblz4.so.1.8.3","function":"LZ4_decompress_safe_partial","address":"0001b0c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,143 @@
+
+===== TARGET DUTUtil =====
+STRING 000c98ad
+REF depth=0 from=000b09e8 to=000c98ad
+
+===== FUNCTION FUN_000b093c @ 000b093c =====
+
+undefined4 FUN_000b093c(char *param_1)
+
+{
+  char *__ptr;
+  int iVar1;
+  char *pcVar2;
+  undefined4 uVar3;
+  char *local_2c;
+  undefined4 local_28;
+  char *local_24;
+  char *local_20;
+  int local_1c;
+  
+  local_1c = **(int **)(DAT_000b0b10 + 0xb094c + DAT_000b0b14);
+  uVar3 = 0;
+  if (param_1 != (char *)0x0) {
+    local_2c = (char *)0x0;
+    local_28 = 0;
+    local_24 = (char *)0x0;
+    local_20 = (char *)0x0;
+    __ptr = strdup(param_1);
+    _vstrsep(__ptr,DAT_000b0b18 + 0xb099c,&local_2c,&local_28,&local_24,&local_20,0);
+    pcVar2 = local_24;
+    if (local_2c == (char *)0x0) {
+      uVar3 = 0;
+    }
+    else {
+      uVar3 = 0;
+      if (local_24 != (char *)0x0) {
+        iVar1 = strcmp(local_2c,(char *)(DAT_000b0b1c + 0xb09d4));
+        if (iVar1 == 0) {
+          iVar1 = strcmp(pcVar2,(char *)(DAT_000b0b20 + 0xb09f0));
+          if (iVar1 == 0) {
+            if (((local_20 == (char *)0x0) ||
+                (pcVar2 = strsep(&local_20,(char *)(DAT_000b0b28 + 0xb0a50)), pcVar2 == (char *)0x0)
+                ) || (iVar1 = strcmp(pcVar2,(char *)(DAT_000b0b2c + 0xb0a64)), iVar1 != 0)) {
+              uVar3 = 2;
+            }
+            else {
+              uVar3 = 8;
+            }
+          }
+          else {
+            iVar1 = strcmp(pcVar2,(char *)(DAT_000b0b30 + 0xb0a84));
+            if (iVar1 == 0) {
+              uVar3 = 3;
+            }
+            else {
+              iVar1 = strcmp(pcVar2,(char *)(DAT_000b0b34 + 0xb0aa0));
+              if (iVar1 == 0) {
+                uVar3 = 4;
+              }
+              else {
+                iVar1 = strcmp(pcVar2,(char *)(DAT_000b0b38 + 0xb0abc));
+                if (iVar1 == 0) {
+                  uVar3 = 5;
+                }
+                else {
+                  iVar1 = strcmp(pcVar2,(char *)(DAT_000b0b3c + 0xb0ad8));
+                  if (iVar1 == 0) {
+                    uVar3 = 6;
+                  }
+                  else {
+                    iVar1 = strcmp(pcVar2,(char *)(DAT_000b0b40 + 0xb0af4));
+                    if (iVar1 == 0) {
+                      uVar3 = 7;
+                    }
+                    else {
+                      uVar3 = 0xb;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        else {
+          uVar3 = 0;
+        }
+      }
+    }
+    if (__ptr != (char *)0x0) {
+      free(__ptr);
+    }
+  }
+  if (local_1c != **(int **)(DAT_000b0b24 + 0xb0a28 + DAT_000b0b14)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return uVar3;
+}
+
+
+===== TARGET netool.cgi =====
+STRING 000c50a9
+REF depth=0 from=000ddcd8 to=000c50a9
+
+===== TARGET run_telnetd =====
+STRING 000e206c
+REF depth=0 from=000db818 to=000e206c
+REF depth=0 from=000b1740 to=000e206c
+REF depth=0 from=000b1744 to=000e206c
+REF depth=1 from=000b173c to=000db818
+
+===== FUNCTION FUN_000b16dc @ 000b16dc =====
+
+void FUN_000b16dc(char *param_1,char *param_2,size_t param_3)
+
+{
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  
+  iVar3 = DAT_000b17f8 + 0xb1708;
+  iVar2 = **(int **)(DAT_000b17f0 + 0xb16f8 + DAT_000b17f4);
+  iVar1 = FUN_000b093c(*(undefined4 *)(iVar3 + DAT_000b17fc));
+  if (iVar1 == 7) {
+    iVar1 = strncasecmp(param_1,*(char **)(iVar3 + DAT_000b1800),0xb);
+    if (iVar1 == 0) {
+      nvram_set(*(undefined4 *)(iVar3 + DAT_000b1804),DAT_000b1808 + 0xb1764);
+      strncpy(param_2,param_1,param_3);
+      if (iVar2 == **(int **)(DAT_000b180c + 0xb1790 + DAT_000b17f4)) {
+        FUN_00051344(*(undefined4 *)(iVar3 + DAT_000b1810));
+        return;
+      }
+      goto LAB_000b17a4;
+    }
+  }
+  if (iVar2 == **(int **)(DAT_000b1814 + 0xb17d4 + DAT_000b17f4)) {
+    return;
+  }
+LAB_000b17a4:
+                    /* WARNING: Subroutine does not return */
+  __stack_chk_fail();
+}
+

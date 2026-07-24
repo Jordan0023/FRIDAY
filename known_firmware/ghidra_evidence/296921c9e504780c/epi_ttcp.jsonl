@@ -1,1 +1,3 @@
-{"binary":"epi_ttcp","function":"FUN_00013630","address":"00013630","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"epi_ttcp","function":"FUN_00013254","address":"00013254","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"epi_ttcp","function":"FUN_00013254","address":"00013254","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"epi_ttcp","function":"FUN_00013254","address":"00013254","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

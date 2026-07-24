@@ -1,0 +1,48 @@
+=================================================================
+==3==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x602000000020 at pc 0x586038394427 bp 0x7ffc14ec9270 sp 0x7ffc14ec9268
+READ of size 1 at 0x602000000020 thread T0
+    #0 0x586038394426 in parse_ia /home/jordan/FRIDAY/known_firmware/emulation/GL-MT5000/odhcp6c_advert_oob_harness.c:32:5
+    #1 0x586038393f80 in main /home/jordan/FRIDAY/known_firmware/emulation/GL-MT5000/odhcp6c_advert_oob_harness.c
+    #2 0x75f1c3629d8f in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+    #3 0x75f1c3629e3f in __libc_start_main csu/../csu/libc-start.c:392:3
+    #4 0x5860382d6304 in _start (/tmp/odhcp6c_advert_oob_harness+0x1e304) (BuildId: 2c23733940fbffcb35748be743107a318db8f262)
+
+0x602000000020 is located 0 bytes to the right of 16-byte region [0x602000000010,0x602000000020)
+allocated by thread T0 here:
+    #0 0x586038359338 in __interceptor_calloc (/tmp/odhcp6c_advert_oob_harness+0xa1338) (BuildId: 2c23733940fbffcb35748be743107a318db8f262)
+    #1 0x586038393ebe in main /home/jordan/FRIDAY/known_firmware/emulation/GL-MT5000/odhcp6c_advert_oob_harness.c:40:32
+    #2 0x75f1c3629d8f in __libc_start_call_main csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow /home/jordan/FRIDAY/known_firmware/emulation/GL-MT5000/odhcp6c_advert_oob_harness.c:32:5 in parse_ia
+Shadow bytes around the buggy address:
+  0x0c047fff7fb0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7fc0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7fd0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7fe0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x0c047fff7ff0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x0c047fff8000: fa fa 00 00[fa]fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8010: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8020: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8030: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8040: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x0c047fff8050: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==3==ABORTING

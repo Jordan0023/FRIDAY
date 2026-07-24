@@ -1,0 +1,64 @@
+#!/bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export PATH
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+mkdir -p /dev/pts /run /tmp /var/run /var/log /var/tmp /var/state
+mount -t devpts devpts /dev/pts
+mount -t tmpfs tmpfs /tmp
+mkdir -p /run /tmp /var/run /var/log /var/tmp /var/state
+
+insmod mii
+insmod pcnet32
+
+ifconfig lo 127.0.0.1 up
+attempt=0
+while test "$attempt" -lt 20; do
+    IFACE="$(awk -F: 'NR > 2 {gsub(/ /, "", $1); if ($1 != "lo") {print $1; exit}}' /proc/net/dev)"
+    test -n "$IFACE" && break
+    sleep 1
+    attempt=$((attempt + 1))
+done
+
+if test -n "$IFACE"; then
+    ifconfig "$IFACE" 10.0.2.15 netmask 255.255.255.0 up
+    route add default gw 10.0.2.2
+fi
+
+echo "FRIDAY_RAX9_FULL_SYSTEM_BOOT=1"
+echo "KERNEL=$(uname -a)"
+echo "NETWORK_IFACE=$IFACE"
+cat /proc/net/dev
+
+/usr/sbin/lighttpd -D -f /etc/rax9-full-system-lighttpd.conf \
+    >/dev/console 2>&1 &
+LIGHTTPD_PID=$!
+
+attempt=0
+while test "$attempt" -lt 60; do
+    grep -q ':0050 ' /proc/net/tcp 2>/dev/null && break
+    kill -0 "$LIGHTTPD_PID" 2>/dev/null || break
+    sleep 1
+    attempt=$((attempt + 1))
+done
+
+echo "LIGHTTPD_PID=$LIGHTTPD_PID"
+echo "LIGHTTPD_ALIVE=$(kill -0 "$LIGHTTPD_PID" 2>/dev/null && echo yes || echo no)"
+echo "LIGHTTPD_LISTENING=$(grep -q ':0050 ' /proc/net/tcp 2>/dev/null && echo yes || echo no)"
+echo "FRIDAY_RAX9_FULL_SYSTEM_READY=1"
+
+reported=no
+while true; do
+    if test -f /tmp/rax9-preauth-rce-marker && test "$reported" = no; then
+        echo "FRIDAY_RAX9_PREAUTH_RCE_MARKER=present"
+        ls -ln /tmp/rax9-preauth-rce-marker
+        reported=yes
+    fi
+    if ! kill -0 "$LIGHTTPD_PID" 2>/dev/null; then
+        echo "LIGHTTPD_EXITED=1"
+    fi
+    sleep 1
+done

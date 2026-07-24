@@ -1,0 +1,51 @@
+{
+  "baseline": true,
+  "results": [
+    {
+      "case": "http2_preface",
+      "status": "\u0000\u0000\f\u0004\u0000\u0000\u0000\u0000\u0000\u0000\u0003\u0000\u0000\u0000\b\u0000\u0006\u0000\u0000\ufffd\ufffd",
+      "service_alive": true
+    },
+    {
+      "case": "negative_content_length",
+      "status": "HTTP/1.1 400 Bad Request",
+      "service_alive": true
+    },
+    {
+      "case": "conflicting_content_length",
+      "status": "HTTP/1.1 400 Bad Request",
+      "service_alive": true
+    },
+    {
+      "case": "chunk_size_overflow",
+      "status": "HTTP/1.1 503 Service Unavailable",
+      "service_alive": true
+    },
+    {
+      "case": "chunk_extension_4k",
+      "status": "HTTP/1.1 503 Service Unavailable",
+      "service_alive": true
+    },
+    {
+      "case": "header_value_64k",
+      "status": "HTTP/1.0 431 Request Header Fields Too Large",
+      "service_alive": true
+    },
+    {
+      "case": "many_headers",
+      "status": "HTTP/1.1 503 Service Unavailable",
+      "service_alive": true
+    },
+    {
+      "case": "nul_in_target",
+      "status": "HTTP/1.1 403 Forbidden",
+      "service_alive": true
+    },
+    {
+      "case": "absolute_uri_8k",
+      "status": "HTTP/1.0 431 Request Header Fields Too Large",
+      "service_alive": true
+    }
+  ],
+  "final_alive": true
+}

@@ -1,0 +1,4 @@
+{"binary":"rdisc6","function":"_ftext","address":"00400c10","route":"/Router","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rdisc6","function":"_ftext","address":"00400c10","route":"/configure","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rdisc6","function":"FUN_00401468","address":"00401468","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rdisc6","function":"FUN_00401468","address":"00401468","route":"/%u","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

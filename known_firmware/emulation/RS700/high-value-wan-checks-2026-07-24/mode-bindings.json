@@ -1,0 +1,55 @@
+[
+  {
+    "listeners": [
+      "tcp LISTEN 0      10     192.168.1.1:56688 0.0.0.0:* users:((\"qemu-arm-static\",pid=136,fd=5))",
+      "udp UNCONN 0      0          0.0.0.0:1900  0.0.0.0:* users:((\"qemu-arm-static\",pid=136,fd=3))"
+    ],
+    "mode": "router_default",
+    "settings": {
+      "enable_ap_mode": "0",
+      "enable_extender_mode": "0",
+      "remote_mg_enable": "0",
+      "router_disable": "0"
+    }
+  },
+  {
+    "listeners": [
+      "tcp LISTEN 0      10     192.168.1.1:56688 0.0.0.0:* users:((\"qemu-arm-static\",pid=153,fd=5))",
+      "udp UNCONN 0      0          0.0.0.0:1900  0.0.0.0:* users:((\"qemu-arm-static\",pid=153,fd=3))"
+    ],
+    "mode": "remote_management_enabled",
+    "settings": {
+      "enable_ap_mode": "0",
+      "enable_extender_mode": "0",
+      "remote_mg_enable": "1",
+      "remote_port_num": "8443",
+      "router_disable": "0"
+    }
+  },
+  {
+    "listeners": [
+      "tcp LISTEN 0      10     192.168.1.1:56688 0.0.0.0:* users:((\"qemu-arm-static\",pid=168,fd=5))",
+      "udp UNCONN 0      0          0.0.0.0:1900  0.0.0.0:* users:((\"qemu-arm-static\",pid=168,fd=3))"
+    ],
+    "mode": "ap_mode_flags",
+    "settings": {
+      "enable_ap_mode": "1",
+      "enable_extender_mode": "0",
+      "remote_mg_enable": "0",
+      "router_disable": "1"
+    }
+  },
+  {
+    "listeners": [
+      "tcp LISTEN 0      10     192.168.1.1:56688 0.0.0.0:* users:((\"qemu-arm-static\",pid=183,fd=5))",
+      "udp UNCONN 0      0          0.0.0.0:1900  0.0.0.0:* users:((\"qemu-arm-static\",pid=183,fd=3))"
+    ],
+    "mode": "bridge_extender_flags",
+    "settings": {
+      "enable_ap_mode": "0",
+      "enable_extender_mode": "1",
+      "remote_mg_enable": "0",
+      "router_disable": "1"
+    }
+  }
+]

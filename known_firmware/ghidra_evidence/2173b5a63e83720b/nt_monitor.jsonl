@@ -1,0 +1,3 @@
+{"binary":"nt_monitor","function":"_ftext","address":"004009a0","route":"/var/run/nt_monitor.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nt_monitor","function":"_ftext","address":"004009a0","route":"/tmp/NTM_DEBUG","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nt_monitor","function":"FUN_00400ca0","address":"00400ca0","route":"/tmp/NTM_DEBUG","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

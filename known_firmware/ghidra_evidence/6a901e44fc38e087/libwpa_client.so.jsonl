@@ -1,0 +1,3 @@
+{"binary":"libwpa_client.so","function":"os_rel2abs_path","address":"0001353c","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"os_rel2abs_path","address":"0001353c","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"os_exec","address":"000138a0","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

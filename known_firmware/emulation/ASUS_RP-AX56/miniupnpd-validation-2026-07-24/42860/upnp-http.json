@@ -1,0 +1,96 @@
+{
+  "target": "192.168.50.1:5000",
+  "case": "http",
+  "results": [
+    {
+      "name": "empty",
+      "request_bytes": 0,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 500.83
+    },
+    {
+      "name": "one-byte",
+      "request_bytes": 1,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 500.97
+    },
+    {
+      "name": "short-request-line",
+      "request_bytes": 9,
+      "fragmented": false,
+      "response_bytes": 269,
+      "status_line": " 404 Not Found",
+      "error": null,
+      "elapsed_ms": 2.68
+    },
+    {
+      "name": "unknown-method",
+      "request_bytes": 46,
+      "fragmented": false,
+      "response_bytes": 298,
+      "status_line": "HTTP/1.1 501 Not Implemented",
+      "error": null,
+      "elapsed_ms": 3.17
+    },
+    {
+      "name": "long-path-2048",
+      "request_bytes": 2091,
+      "fragmented": false,
+      "response_bytes": 284,
+      "status_line": "AAAAAAAAAAAAAAA 404 Not Found",
+      "error": null,
+      "elapsed_ms": 6.81
+    },
+    {
+      "name": "long-header-4096",
+      "request_bytes": 4151,
+      "fragmented": true,
+      "response_bytes": 277,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "error": null,
+      "elapsed_ms": 69.65
+    },
+    {
+      "name": "negative-content-length",
+      "request_bytes": 74,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 500.97
+    },
+    {
+      "name": "huge-content-length",
+      "request_bytes": 82,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 501.05
+    },
+    {
+      "name": "duplicate-content-length",
+      "request_bytes": 92,
+      "fragmented": false,
+      "response_bytes": 0,
+      "status_line": "",
+      "error": null,
+      "elapsed_ms": 500.9
+    },
+    {
+      "name": "embedded-nul",
+      "request_bytes": 41,
+      "fragmented": false,
+      "response_bytes": 277,
+      "status_line": "HTTP/1.1 404 Not Found",
+      "error": null,
+      "elapsed_ms": 14.11
+    }
+  ]
+}

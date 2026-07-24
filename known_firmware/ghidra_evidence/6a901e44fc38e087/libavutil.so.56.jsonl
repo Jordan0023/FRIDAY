@@ -6,3 +6,6 @@
 {"binary":"libavutil.so.56","function":"av_hash_final_b64","address":"0002c5ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
 {"binary":"libavutil.so.56","function":"av_hmac_init","address":"0002c900","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
 {"binary":"libavutil.so.56","function":"FUN_0002d8c0","address":"0002d8c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"av_image_copy_to_buffer","address":"0002e650","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"av_log_default_callback","address":"0002fdec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"FUN_000303f4","address":"000303f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,11 @@
+{"binary":"apk","function":"FUN_004046d0","address":"004046d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apk","function":"FUN_0040cb48","address":"0040cb48","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apk","function":"FUN_0040d26c","address":"0040d26c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apk","function":"FUN_0040d83c","address":"0040d83c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apk","function":"FUN_0040e388","address":"0040e388","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apk","function":"FUN_0040eb10","address":"0040eb10","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apk","function":"FUN_00411c10","address":"00411c10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apk","function":"FUN_00418da4","address":"00418da4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apk","function":"FUN_0041a604","address":"0041a604","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apk","function":"FUN_0041b624","address":"0041b624","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apk","function":"FUN_0041c400","address":"0041c400","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

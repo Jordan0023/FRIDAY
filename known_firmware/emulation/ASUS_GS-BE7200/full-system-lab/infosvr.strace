@@ -1,0 +1,1874 @@
+214   execve("/usr/sbin/infosvr", ["/usr/sbin/infosvr", "br0"], 0xaaaab223b790 /* 8 vars */) = 0
+214   set_tid_address(0xffff9a4300cc)   = 214
+214   openat(AT_FDCWD, "/lib/libnvram-faker.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+214   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+214   fstat(3, {st_mode=S_IFREG|0777, st_size=47080, ...}) = 0
+214   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0(\261\0\0\0\0\0\0\0\0\0\0@\08\0\6\0@\0\33\0\32\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\220X\0\0\0\0\0\0\220X\0\0\0\0\0\0\0\20\0\0\0\0\0\0\1\0\0\0\6\0\0\0\230\\\0\0\0\0\0\0\230l\0\0\0\0\0\0\230l\0\0\0\0\0\0h\3\0\0\0\0\0\0"..., 960) = 960
+214   mmap(NULL, 32768, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff9a420000
+214   mmap(0xffff9a426000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x5000) = 0xffff9a426000
+214   mmap(0xffff9a427000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff9a427000
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/lib/libshared.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/usr/lib/libshared.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+214   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+214   fstat(3, {st_mode=S_IFREG|0555, st_size=710528, ...}) = 0
+214   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\240\v\3\0\0\0\0\0@\0\0\0\0\0\0\0\200\322\n\0\0\0\0\0\0\0\0\0@\08\0\5\0@\0\24\0\23\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\250\270\t\0\0\0\0\0\250\270\t\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0x\274\t\0\0\0\0\0x\274\n\0\0\0\0\0x\274\n\0\0\0\0\0p\25\1\0\0\0\0\0"..., 960) = 960
+214   mmap(NULL, 786432, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff9a2dc000
+214   mmap(0xffff9a387000, 86016, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x9b000) = 0xffff9a387000
+214   mmap(0xffff9a39a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff9a39a000
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/lib/libnvram.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/usr/lib/libnvram.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+214   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+214   fstat(3, {st_mode=S_IFREG|0555, st_size=14616, ...}) = 0
+214   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340\24\0\0\0\0\0\0@\0\0\0\0\0\0\0\0303\0\0\0\0\0\0\0\0\0\0@\08\0\6\0@\0\30\0\27\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\330+\0\0\0\0\0\0\330+\0\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0\320-\0\0\0\0\0\0\320-\1\0\0\0\0\0\320-\1\0\0\0\0\0\200\4\0\0\0\0\0\0"..., 960) = 960
+214   mmap(NULL, 81920, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff9a2c8000
+214   mmap(0xffff9a2da000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x2000) = 0xffff9a2da000
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/lib/libjson-c.so.2", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/usr/lib/libjson-c.so.2", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+214   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+214   fstat(3, {st_mode=S_IFREG|0555, st_size=38824, ...}) = 0
+214   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0@)\0\0\0\0\0\0@\0\0\0\0\0\0\0\350\221\0\0\0\0\0\0\0\0\0\0@\08\0\6\0@\0\27\0\26\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\360\200\0\0\0\0\0\0\360\200\0\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0\20\215\0\0\0\0\0\0\20\215\1\0\0\0\0\0\20\215\1\0\0\0\0\0 \4\0\0\0\0\0\0"..., 960) = 960
+214   mmap(NULL, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff9a2ae000
+214   mmap(0xffff9a2c6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x8000) = 0xffff9a2c6000
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/lib/libcrypto.so.1.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/usr/lib/libcrypto.so.1.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+214   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+214   fstat(3, {st_mode=S_IFREG|0555, st_size=2391248, ...}) = 0
+214   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0 \7\0\0\0\0\0@\0\0\0\0\0\0\0Pv$\0\0\0\0\0\0\0\0\0@\08\0\6\0@\0\32\0\31\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Hk\"\0\0\0\0\0Hk\"\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0\360v\"\0\0\0\0\0\360v#\0\0\0\0\0\360v#\0\0\0\0\0\200\376\1\0\0\0\0\0"..., 960) = 960
+214   mmap(NULL, 2465792, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff9a054000
+214   mmap(0xffff9a28b000, 143360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x227000) = 0xffff9a28b000
+214   mmap(0xffff9a2ac000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffff9a2ac000
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/lib/libssl.so.1.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/usr/lib/libssl.so.1.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+214   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+214   fstat(3, {st_mode=S_IFREG|0555, st_size=488784, ...}) = 0
+214   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\360\240\1\0\0\0\0\0@\0\0\0\0\0\0\0\320n\7\0\0\0\0\0\0\0\0\0@\08\0\6\0@\0\32\0\31\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230\342\6\0\0\0\0\0\230\342\6\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0\370\343\6\0\0\0\0\0\370\343\7\0\0\0\0\0\370\343\7\0\0\0\0\0\370\211\0\0\0\0\0\0"..., 960) = 960
+214   mmap(NULL, 552960, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff99fcd000
+214   mmap(0xffff9a04b000, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x6e000) = 0xffff9a04b000
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/lib/libamas-utils.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/usr/lib/libamas-utils.so", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+214   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+214   fstat(3, {st_mode=S_IFREG|0555, st_size=243864, ...}) = 0
+214   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0pZ\0\0\0\0\0\0@\0\0\0\0\0\0\0X\262\3\0\0\0\0\0\0\0\0\0@\08\0\6\0@\0\31\0\30\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\274\227\3\0\0\0\0\0\274\227\3\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0X\234\3\0\0\0\0\0X\234\4\0\0\0\0\0X\234\4\0\0\0\0\0000\25\0\0\0\0\0\0"..., 960) = 960
+214   mmap(NULL, 311296, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff99f81000
+214   mmap(0xffff99fca000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x39000) = 0xffff99fca000
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/lib/liblldpctl.so.4", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/usr/lib/liblldpctl.so.4", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+214   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+214   fstat(3, {st_mode=S_IFREG|0555, st_size=92432, ...}) = 0
+214   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\240H\0\0\0\0\0\0@\0\0\0\0\0\0\0\320b\1\0\0\0\0\0\0\0\0\0@\08\0\6\0@\0\31\0\30\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0d.\1\0\0\0\0\0d.\1\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0\0003\1\0\0\0\0\0\0003\2\0\0\0\0\0\0003\2\0\0\0\0\0\370.\0\0\0\0\0\0"..., 960) = 960
+214   mmap(NULL, 159744, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff99f5a000
+214   mmap(0xffff99f7d000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x13000) = 0xffff99f7d000
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/lib/libjansson.so.4", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/usr/lib/libjansson.so.4", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+214   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+214   fstat(3, {st_mode=S_IFREG|0555, st_size=67944, ...}) = 0
+214   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0@$\0\0\0\0\0\0@\0\0\0\0\0\0\0(\3\1\0\0\0\0\0\0\0\0\0@\08\0\6\0@\0\31\0\30\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\\\372\0\0\0\0\0\0\\\372\0\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0p\375\0\0\0\0\0\0p\375\1\0\0\0\0\0p\375\1\0\0\0\0\0\350\4\0\0\0\0\0\0"..., 960) = 960
+214   mmap(NULL, 135168, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff99f39000
+214   mmap(0xffff99f58000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0xf000) = 0xffff99f58000
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/lib/libgcc_s.so.1", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+214   fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+214   fstat(3, {st_mode=S_IFREG|0555, st_size=75400, ...}) = 0
+214   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0p-\0\0\0\0\0\0@\0\0\0\0\0\0\0\310 \1\0\0\0\0\0\0\0\0\0@\08\0\6\0@\0\27\0\26\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\230\21\1\0\0\0\0\0\230\21\1\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0@\34\1\0\0\0\0\0@\34\2\0\0\0\0\0@\34\2\0\0\0\0\0\320\3\0\0\0\0\0\0"..., 960) = 960
+214   mmap(NULL, 143360, PROT_READ|PROT_EXEC, MAP_PRIVATE, 3, 0) = 0xffff99f16000
+214   mmap(0xffff99f37000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x11000) = 0xffff99f37000
+214   close(3)                          = 0
+214   mprotect(0xffff9a426000, 4096, PROT_READ) = 0
+214   mprotect(0xffff9a387000, 8192, PROT_READ) = 0
+214   mprotect(0xffff9a2da000, 4096, PROT_READ) = 0
+214   mprotect(0xffff9a2c6000, 4096, PROT_READ) = 0
+214   mprotect(0xffff9a28b000, 126976, PROT_READ) = 0
+214   mprotect(0xffff9a04b000, 20480, PROT_READ) = 0
+214   mprotect(0xffff99fca000, 4096, PROT_READ) = 0
+214   mprotect(0xffff99f7d000, 4096, PROT_READ) = 0
+214   mprotect(0xffff99f58000, 4096, PROT_READ) = 0
+214   mprotect(0xffff99f37000, 4096, PROT_READ) = 0
+214   mprotect(0x417000, 4096, PROT_READ) = 0
+214   rt_sigprocmask(SIG_SETMASK, ~[ILL TRAP BUS FPE SEGV RTMIN RT_1 RT_2], [], 8) = 0
+214   rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
+214   rt_sigaction(SIGILL, {sa_handler=0xffff9a0c9268, sa_mask=~[ILL TRAP BUS FPE SEGV RTMIN RT_1 RT_2], sa_flags=SA_RESTORER, sa_restorer=0xffff9a3ed960}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+214   rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+214   rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+214   rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+214   rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+214   rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+214   --- SIGILL {si_signo=SIGILL, si_code=ILL_ILLOPC, si_addr=0xffff9a0c9190} ---
+214   rt_sigprocmask(SIG_SETMASK, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], NULL, 8) = 0
+214   rt_sigprocmask(SIG_SETMASK, NULL, ~[ILL TRAP BUS FPE KILL SEGV STOP RTMIN RT_1 RT_2], 8) = 0
+214   rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0xffff9a3ed960}, NULL, 8) = 0
+214   rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+214   getpid()                          = 214
+214   openat(AT_FDCWD, "/var/run/infosvr.pid", O_WRONLY|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 3
+214   ioctl(3, TIOCGWINSZ, 0xffffd5febc28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="214", iov_len=3}, {iov_base=NULL, iov_len=0}], 2) = 3
+214   close(3)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feae38) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feae08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl_ifnames", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl_ifnames=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feae38) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="wl_ifnames\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl_ifnames", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl_ifnames", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl_ifnames=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feae38) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="wl_ifnames\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl_ifnames", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl0_ssid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl0_ssid=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feae38) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="wl0_ssid\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl0_ssid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_netmask", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_netmask=Unknown\n\33[22;00m", iov_len=36}, {iov_base=NULL, iov_len=0}], 2) = 36
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feb028) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="lan_netmask\n", iov_len=12}, {iov_base=NULL, iov_len=0}], 2) = 12
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_netmask", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/odmpid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31modmpid=Unknown\n\33[22;00m", iov_len=31}, {iov_base=NULL, iov_len=0}], 2) = 31
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feb018) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="odmpid\n", iov_len=7}, {iov_base=NULL, iov_len=0}], 2) = 7
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/odmpid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/productid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mproductid=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feb018) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="productid\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/productid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/firmver", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mfirmver=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feb028) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="firmver\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/firmver", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/buildno", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mbuildno=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feb028) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="buildno\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/buildno", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_hwaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_hwaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feb028) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="lan_hwaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_hwaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/et0macaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31met0macaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5feb018) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="et0macaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/et0macaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/cfg_group", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mcfg_group=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 3
+214   fcntl(3, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(3, TIOCGWINSZ, 0xffffd5fe9f48) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(3, [{iov_base="cfg_group\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(3)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/cfg_group", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   rt_sigaction(SIGALRM, {sa_handler=0x403000, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0xffff9a3ed960}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+214   rt_sigaction(SIGUSR1, {sa_handler=0x403000, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0xffff9a3ed960}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+214   setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=2, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+214   rt_sigaction(SIGUSR2, {sa_handler=0x401f84, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0xffff9a3ed960}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+214   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 3
+214   setsockopt(3, SOL_SOCKET, SO_BROADCAST, [1], 4) = 0
+214   setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+214   bind(3, {sa_family=AF_INET, sin_port=htons(9999), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = ? ERESTARTNOHAND (To be restarted if no handler)
+214   --- SIGALRM {si_signo=SIGALRM, si_code=SI_KERNEL} ---
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram/printer_ifname", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 4
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea528) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="usb", iov_len=3}, {iov_base=NULL, iov_len=0}], 2) = 3
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram.ini", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram.ini", O_WRONLY|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20401 (flags O_WRONLY|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea528) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="/gh_nvram/printer_ifname\n", iov_len=25}, {iov_base=NULL, iov_len=0}], 2) = 25
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/dev/usb/lp0", O_RDWR|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/proc/usblp/usblpid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram/printer_model_t", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 4
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea528) = -1 ENOTTY (Inappropriate ioctl for device)
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram.ini", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram.ini", O_WRONLY|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20401 (flags O_WRONLY|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea528) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="/gh_nvram/printer_model_t\n", iov_len=26}, {iov_base=NULL, iov_len=0}], 2) = 26
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/printer_model_t", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram/printer_model_t", O_RDONLY|O_LARGEFILE) = 4
+214   readv(4, [{iov_base="", iov_len=2047}, {iov_base="", iov_len=1024}], 2) = 0
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram/printer_status_t", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 4
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea528) = -1 ENOTTY (Inappropriate ioctl for device)
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram.ini", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram.ini", O_WRONLY|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20401 (flags O_WRONLY|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea528) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="/gh_nvram/printer_status_t\n", iov_len=27}, {iov_base=NULL, iov_len=0}], 2) = 27
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram/printer_user_t", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 4
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea528) = -1 ENOTTY (Inappropriate ioctl for device)
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram.ini", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram.ini", O_WRONLY|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20401 (flags O_WRONLY|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea528) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="/gh_nvram/printer_user_t\n", iov_len=25}, {iov_base=NULL, iov_len=0}], 2) = 25
+214   close(4)                          = 0
+214   rt_sigreturn({mask=[]})           = -1 EINTR (Interrupted system call)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=225224928})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999811776})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999828720})
+214   recvfrom(3, "\f\25\37\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(58048), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=78, loads=[21152, 8224, 2880], totalram=2066694144, freeram=1998872576, sharedram=0, bufferram=1630208, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/u2ec_mfg", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mu2ec_mfg=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="u2ec_mfg\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/u2ec_mfg", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea858) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl_ifnames", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl_ifnames=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wl_ifnames\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl_ifnames", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl_ifnames", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl_ifnames=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wl_ifnames\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl_ifnames", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl0_ssid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl0_ssid=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wl0_ssid\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl0_ssid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 4
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ifname", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ifname=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 5
+214   fcntl(5, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(5, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(5, [{iov_base="lan_ifname\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(5)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ifname", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   ioctl(4, SIOCGIFNETMASK, {ifr_name="br0", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.255.255.0")}}) = 0
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wlc_psta", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwlc_psta=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wlc_psta\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wlc_psta", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wlc_express", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwlc_express=Unknown\n\33[22;00m", iov_len=36}, {iov_base=NULL, iov_len=0}], 2) = 36
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wlc_express\n", iov_len=12}, {iov_base=NULL, iov_len=0}], 2) = 12
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wlc_express", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa58) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/tmp/waveserver.info", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/dm_http_port", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mdm_http_port=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="dm_http_port\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/dm_http_port", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   newfstatat(AT_FDCWD, "/opt/etc/init.d/S50aicloud", 0xffffd5feb4b8, 0) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/odmpid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31modmpid=Unknown\n\33[22;00m", iov_len=31}, {iov_base=NULL, iov_len=0}], 2) = 31
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="odmpid\n", iov_len=7}, {iov_base=NULL, iov_len=0}], 2) = 7
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/odmpid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/productid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mproductid=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="productid\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/productid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   newfstatat(AT_FDCWD, "/tmp/HW_AUTH_DEBUG", 0xffffd5feb478, 0) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/amas_bdl", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mamas_bdl=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9d8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="amas_bdl\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/amas_bdl", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/cfg_master", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mcfg_master=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9d8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="cfg_master\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/cfg_master", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/enable_webdav", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31menable_webdav=Unknown\n\33[22;00m", iov_len=38}, {iov_base=NULL, iov_len=0}], 2) = 38
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="enable_webdav\n", iov_len=14}, {iov_base=NULL, iov_len=0}], 2) = 14
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/enable_webdav", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/st_webdav_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mst_webdav_mode=Unknown\n\33[22;00m", iov_len=39}, {iov_base=NULL, iov_len=0}], 2) = 39
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="st_webdav_mode\n", iov_len=15}, {iov_base=NULL, iov_len=0}], 2) = 15
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/st_webdav_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/webdav_http_port", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwebdav_http_port=Unknown\n\33[22;00m", iov_len=41}, {iov_base=NULL, iov_len=0}], 2) = 41
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="webdav_http_port\n", iov_len=17}, {iov_base=NULL, iov_len=0}], 2) = 17
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/webdav_http_port", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/webdav_https_port", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwebdav_https_port=Unknown\n\33[22;00m", iov_len=42}, {iov_base=NULL, iov_len=0}], 2) = 42
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="webdav_https_port\n", iov_len=18}, {iov_base=NULL, iov_len=0}], 2) = 18
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/webdav_https_port", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/ddns_enable_x", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mddns_enable_x=Unknown\n\33[22;00m", iov_len=38}, {iov_base=NULL, iov_len=0}], 2) = 38
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="ddns_enable_x\n", iov_len=14}, {iov_base=NULL, iov_len=0}], 2) = 14
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/ddns_enable_x", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wan0_primary", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwan0_primary=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wan0_primary\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wan0_primary", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wan1_primary", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwan1_primary=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wan1_primary\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wan1_primary", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wan0_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwan0_ipaddr=Unknown\n\33[22;00m", iov_len=36}, {iov_base=NULL, iov_len=0}], 2) = 36
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea998) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wan0_ipaddr\n", iov_len=12}, {iov_base=NULL, iov_len=0}], 2) = 12
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wan0_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/x_Setting", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mx_Setting=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="x_Setting\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/x_Setting", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/aae_enable", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31maae_enable=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="aae_enable\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/aae_enable", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   ioctl(1, TIOCGWINSZ, 0xffffd5feb218) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(1, [{iov_base="AAE EnableAAE =0", iov_len=16}, {iov_base=" <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n", iov_len=46}], 2) = 62
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/aae_deviceid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31maae_deviceid=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa38) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="aae_deviceid\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/aae_deviceid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   setsockopt(3, SOL_SOCKET, SO_BINDTODEVICE, "br0\0LD_LIBRARY_P", 16) = 0
+214   sendto(3, "\f\26\37\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(58048), sin_addr=inet_addr("255.255.255.255")}, 16) = 512
+214   setsockopt(3, SOL_SOCKET, SO_BINDTODEVICE, "\0\0\0\0\0\0\0\0firmver\0", 16) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=817725040})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999794608})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999827216})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0@\0echo FRIDAY_GSBE7200_RCE_MARKER >/tmp/FRIDAY_GSBE7200_RCE_MARKER\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(42321), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   writev(1, [{iov_base="AAE DeviceID = <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n", iov_len=60}, {iov_base=NULL, iov_len=0}], 2) = 60
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=79, loads=[21152, 8224, 2880], totalram=2066694144, freeram=1998872576, sharedram=0, bufferram=1630208, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=244581504})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999769440})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999917328})
+214   recvfrom(3, "", 512, 0, {sa_family=AF_INET, sin_port=htons(41896), sin_addr=inet_addr("10.0.2.2")}, [16]) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=215894592})
+214   recvfrom(3, "A", 1024, 0, NULL, NULL) = 1
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=210243568})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999789024})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999809520})
+214   recvfrom(3, "AA", 512, 0, {sa_family=AF_INET, sin_port=htons(49280), sin_addr=inet_addr("10.0.2.2")}, [16]) = 2
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=216402656})
+214   recvfrom(3, "AAA", 1024, 0, NULL, NULL) = 3
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=209595520})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999779648})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999796928})
+214   recvfrom(3, "AAAA", 512, 0, {sa_family=AF_INET, sin_port=htons(59694), sin_addr=inet_addr("10.0.2.2")}, [16]) = 4
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=217292560})
+214   recvfrom(3, "AAAAAAA", 1024, 0, NULL, NULL) = 7
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=209454528})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999785888})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999805696})
+214   recvfrom(3, "AAAAAAAA", 512, 0, {sa_family=AF_INET, sin_port=htons(41964), sin_addr=inet_addr("10.0.2.2")}, [16]) = 8
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=217689280})
+214   recvfrom(3, "AAAAAAAAA", 1024, 0, NULL, NULL) = 9
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=210731344})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999785760})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999796816})
+214   recvfrom(3, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 512, 0, {sa_family=AF_INET, sin_port=htons(49667), sin_addr=inet_addr("10.0.2.2")}, [16]) = 45
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=217060448})
+214   recvfrom(3, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 1024, 0, NULL, NULL) = 46
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=209923984})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999786256})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999809360})
+214   recvfrom(3, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 512, 0, {sa_family=AF_INET, sin_port=htons(47771), sin_addr=inet_addr("10.0.2.2")}, [16]) = 47
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=217808080})
+214   recvfrom(3, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 1024, 0, NULL, NULL) = 48
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=210848176})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999787920})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999807024})
+214   recvfrom(3, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 512, 0, {sa_family=AF_INET, sin_port=htons(46184), sin_addr=inet_addr("10.0.2.2")}, [16]) = 127
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=217265888})
+214   recvfrom(3, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"..., 1024, 0, NULL, NULL) = 255
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=210221392})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999882912})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999898832})
+214   recvfrom(3, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"..., 512, 0, {sa_family=AF_INET, sin_port=htons(33113), sin_addr=inet_addr("10.0.2.2")}, [16]) = 511
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=212917216})
+214   recvfrom(3, "\f\25\35\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1024, 0, NULL, NULL) = 512
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=209730272})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999870016})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999844096})
+214   recvfrom(3, "\f\25\36\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(49277), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=92, loads=[16448, 7744, 2784], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1662976, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=241022800})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999788128})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999809712})
+214   recvfrom(3, "\f\25\37\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(39809), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=93, loads=[16448, 7744, 2784], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1662976, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/u2ec_mfg", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mu2ec_mfg=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="u2ec_mfg\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/u2ec_mfg", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea858) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl_ifnames", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl_ifnames=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wl_ifnames\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl_ifnames", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl_ifnames", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl_ifnames=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wl_ifnames\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl_ifnames", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl0_ssid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl0_ssid=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wl0_ssid\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl0_ssid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 4
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ifname", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ifname=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 5
+214   fcntl(5, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(5, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(5, [{iov_base="lan_ifname\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(5)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ifname", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   ioctl(4, SIOCGIFNETMASK, {ifr_name="br0", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.255.255.0")}}) = 0
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wlc_psta", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwlc_psta=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wlc_psta\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wlc_psta", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wlc_express", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwlc_express=Unknown\n\33[22;00m", iov_len=36}, {iov_base=NULL, iov_len=0}], 2) = 36
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wlc_express\n", iov_len=12}, {iov_base=NULL, iov_len=0}], 2) = 12
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wlc_express", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa58) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   openat(AT_FDCWD, "/tmp/waveserver.info", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/dm_http_port", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mdm_http_port=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="dm_http_port\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/dm_http_port", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   newfstatat(AT_FDCWD, "/opt/etc/init.d/S50aicloud", 0xffffd5feb4b8, 0) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/odmpid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31modmpid=Unknown\n\33[22;00m", iov_len=31}, {iov_base=NULL, iov_len=0}], 2) = 31
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="odmpid\n", iov_len=7}, {iov_base=NULL, iov_len=0}], 2) = 7
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/odmpid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/productid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mproductid=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="productid\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/productid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   newfstatat(AT_FDCWD, "/tmp/HW_AUTH_DEBUG", 0xffffd5feb478, 0) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/amas_bdl", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mamas_bdl=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9d8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="amas_bdl\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/amas_bdl", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/cfg_master", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mcfg_master=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9d8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="cfg_master\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/cfg_master", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/enable_webdav", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31menable_webdav=Unknown\n\33[22;00m", iov_len=38}, {iov_base=NULL, iov_len=0}], 2) = 38
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="enable_webdav\n", iov_len=14}, {iov_base=NULL, iov_len=0}], 2) = 14
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/enable_webdav", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/st_webdav_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mst_webdav_mode=Unknown\n\33[22;00m", iov_len=39}, {iov_base=NULL, iov_len=0}], 2) = 39
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="st_webdav_mode\n", iov_len=15}, {iov_base=NULL, iov_len=0}], 2) = 15
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/st_webdav_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/webdav_http_port", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwebdav_http_port=Unknown\n\33[22;00m", iov_len=41}, {iov_base=NULL, iov_len=0}], 2) = 41
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="webdav_http_port\n", iov_len=17}, {iov_base=NULL, iov_len=0}], 2) = 17
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/webdav_http_port", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/webdav_https_port", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwebdav_https_port=Unknown\n\33[22;00m", iov_len=42}, {iov_base=NULL, iov_len=0}], 2) = 42
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="webdav_https_port\n", iov_len=18}, {iov_base=NULL, iov_len=0}], 2) = 18
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/webdav_https_port", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/ddns_enable_x", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mddns_enable_x=Unknown\n\33[22;00m", iov_len=38}, {iov_base=NULL, iov_len=0}], 2) = 38
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="ddns_enable_x\n", iov_len=14}, {iov_base=NULL, iov_len=0}], 2) = 14
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/ddns_enable_x", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wan0_primary", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwan0_primary=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wan0_primary\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wan0_primary", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wan1_primary", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwan1_primary=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wan1_primary\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wan1_primary", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wan0_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwan0_ipaddr=Unknown\n\33[22;00m", iov_len=36}, {iov_base=NULL, iov_len=0}], 2) = 36
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea998) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wan0_ipaddr\n", iov_len=12}, {iov_base=NULL, iov_len=0}], 2) = 12
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wan0_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/x_Setting", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mx_Setting=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="x_Setting\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/x_Setting", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/aae_enable", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31maae_enable=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="aae_enable\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/aae_enable", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   writev(1, [{iov_base="AAE EnableAAE =0 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n", iov_len=62}, {iov_base=NULL, iov_len=0}], 2) = 62
+214   faccessat(AT_FDCWD, "/gh_nvram/aae_deviceid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31maae_deviceid=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa38) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="aae_deviceid\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/aae_deviceid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   setsockopt(3, SOL_SOCKET, SO_BINDTODEVICE, "br0\0LD_LIBRARY_P", 16) = 0
+214   sendto(3, "\f\26\37\0DIRF\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(39809), sin_addr=inet_addr("255.255.255.255")}, 16) = 512
+214   setsockopt(3, SOL_SOCKET, SO_BINDTODEVICE, "\0\0\0\0\0\0\0\0firmver\0", 16) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=799909632})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999782688})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999792912})
+214   recvfrom(3, "\f\25 \0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(52084), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   writev(1, [{iov_base="AAE DeviceID = <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n", iov_len=60}, {iov_base=NULL, iov_len=0}], 2) = 60
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=94, loads=[16448, 7744, 2784], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1662976, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=242558928})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999804048})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999843472})
+214   recvfrom(3, "\f\25!\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(42514), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=95, loads=[16448, 7744, 2784], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1671168, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240725824})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999787696})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999812544})
+214   recvfrom(3, "\f\25\"\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(55921), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=96, loads=[15104, 7584, 2752], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1675264, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240623424})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999488896})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999806272})
+214   recvfrom(3, "\f\25#\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(49636), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=96, loads=[15104, 7584, 2752], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1675264, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=242420272})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999788352})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999807488})
+214   recvfrom(3, "\f\25$\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(56634), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=97, loads=[15104, 7584, 2752], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1675264, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=242512608})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999786496})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999807040})
+214   recvfrom(3, "\f\25%\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(38395), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=98, loads=[15104, 7584, 2752], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1675264, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=239926128})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999790688})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999810336})
+214   recvfrom(3, "\f\25&\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(33258), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=99, loads=[15104, 7584, 2752], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1675264, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=244405648})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999816288})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999830976})
+214   recvfrom(3, "\f\25'\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(35772), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=100, loads=[15104, 7584, 2752], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1675264, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=246220544})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999779984})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999800336})
+214   recvfrom(3, "\f\25(\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(56441), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=100, loads=[15104, 7584, 2752], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1691648, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=242466928})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999772016})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999802000})
+214   recvfrom(3, "\f\25)\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(40882), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=101, loads=[13888, 7456, 2720], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1691648, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240767968})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999770448})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999802128})
+214   recvfrom(3, "\f\25*\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(38970), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=102, loads=[13888, 7456, 2720], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1691648, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240561936})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999780944})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999799632})
+214   recvfrom(3, "\f\25+\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(39053), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=103, loads=[13888, 7456, 2720], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1691648, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=247040992})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999782752})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999801376})
+214   recvfrom(3, "\f\25,\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(36813), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=104, loads=[13888, 7456, 2720], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1691648, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=245266768})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999784064})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999810432})
+214   recvfrom(3, "\f\25-\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(48661), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=104, loads=[13888, 7456, 2720], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1691648, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240216272})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999781184})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999894352})
+214   recvfrom(3, "\f\25.\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(45232), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=105, loads=[13888, 7456, 2720], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1699840, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=241970208})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999782768})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999791776})
+214   recvfrom(3, "\f\25/\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(45758), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=106, loads=[12768, 7328, 2688], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1699840, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240970656})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999772704})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999801680})
+214   recvfrom(3, "\f\0250\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(49448), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=107, loads=[12768, 7328, 2688], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1699840, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240452000})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999782112})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999791760})
+214   recvfrom(3, "\f\0251\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(46098), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=108, loads=[12768, 7328, 2688], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1699840, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240961232})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999775744})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999791952})
+214   recvfrom(3, "\f\0252\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(36267), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=108, loads=[12768, 7328, 2688], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1699840, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240243984})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999775728})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999793328})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(44023), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=109, loads=[12768, 7328, 2688], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1699840, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=241579344})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999879696})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999875472})
+214   recvfrom(3, "\f\0254\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(49720), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=110, loads=[12768, 7328, 2688], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1699840, totalswap=0, freeswap=0, procs=67, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/u2ec_mfg", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mu2ec_mfg=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="u2ec_mfg\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/u2ec_mfg", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea858) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl_ifnames", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl_ifnames=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wl_ifnames\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl_ifnames", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl_ifnames", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl_ifnames=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wl_ifnames\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl_ifnames", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wl0_ssid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwl0_ssid=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea888) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wl0_ssid\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wl0_ssid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   socket(AF_INET, SOCK_DGRAM, IPPROTO_IP) = 4
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ifname", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ifname=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 5
+214   fcntl(5, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(5, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(5, [{iov_base="lan_ifname\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(5)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ifname", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   ioctl(4, SIOCGIFNETMASK, {ifr_name="br0", ifr_netmask={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("255.255.255.0")}}) = 0
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wlc_psta", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwlc_psta=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wlc_psta\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wlc_psta", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wlc_express", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwlc_express=Unknown\n\33[22;00m", iov_len=36}, {iov_base=NULL, iov_len=0}], 2) = 36
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wlc_express\n", iov_len=12}, {iov_base=NULL, iov_len=0}], 2) = 12
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wlc_express", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa58) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/sw_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31msw_mode=Unknown\n\33[22;00m", iov_len=32}, {iov_base=NULL, iov_len=0}], 2) = 32
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa28) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="sw_mode\n", iov_len=8}, {iov_base=NULL, iov_len=0}], 2) = 8
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/sw_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/dm_http_port", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mdm_http_port=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="dm_http_port\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/dm_http_port", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   newfstatat(AT_FDCWD, "/opt/etc/init.d/S50aicloud", 0xffffd5feb4b8, 0) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/odmpid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31modmpid=Unknown\n\33[22;00m", iov_len=31}, {iov_base=NULL, iov_len=0}], 2) = 31
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="odmpid\n", iov_len=7}, {iov_base=NULL, iov_len=0}], 2) = 7
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/odmpid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/productid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mproductid=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="productid\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/productid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   newfstatat(AT_FDCWD, "/tmp/HW_AUTH_DEBUG", 0xffffd5feb478, 0) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/amas_bdl", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mamas_bdl=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9d8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="amas_bdl\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/amas_bdl", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/cfg_master", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mcfg_master=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9d8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="cfg_master\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/cfg_master", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/enable_webdav", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31menable_webdav=Unknown\n\33[22;00m", iov_len=38}, {iov_base=NULL, iov_len=0}], 2) = 38
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="enable_webdav\n", iov_len=14}, {iov_base=NULL, iov_len=0}], 2) = 14
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/enable_webdav", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/st_webdav_mode", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mst_webdav_mode=Unknown\n\33[22;00m", iov_len=39}, {iov_base=NULL, iov_len=0}], 2) = 39
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="st_webdav_mode\n", iov_len=15}, {iov_base=NULL, iov_len=0}], 2) = 15
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/st_webdav_mode", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/webdav_http_port", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwebdav_http_port=Unknown\n\33[22;00m", iov_len=41}, {iov_base=NULL, iov_len=0}], 2) = 41
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="webdav_http_port\n", iov_len=17}, {iov_base=NULL, iov_len=0}], 2) = 17
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/webdav_http_port", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/webdav_https_port", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwebdav_https_port=Unknown\n\33[22;00m", iov_len=42}, {iov_base=NULL, iov_len=0}], 2) = 42
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="webdav_https_port\n", iov_len=18}, {iov_base=NULL, iov_len=0}], 2) = 18
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/webdav_https_port", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/ddns_enable_x", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mddns_enable_x=Unknown\n\33[22;00m", iov_len=38}, {iov_base=NULL, iov_len=0}], 2) = 38
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="ddns_enable_x\n", iov_len=14}, {iov_base=NULL, iov_len=0}], 2) = 14
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/ddns_enable_x", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wan0_primary", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwan0_primary=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wan0_primary\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wan0_primary", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wan1_primary", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwan1_primary=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wan1_primary\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wan1_primary", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/wan0_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mwan0_ipaddr=Unknown\n\33[22;00m", iov_len=36}, {iov_base=NULL, iov_len=0}], 2) = 36
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea998) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="wan0_ipaddr\n", iov_len=12}, {iov_base=NULL, iov_len=0}], 2) = 12
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/wan0_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/x_Setting", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mx_Setting=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="x_Setting\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/x_Setting", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/aae_enable", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31maae_enable=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa08) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="aae_enable\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/aae_enable", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   writev(1, [{iov_base="AAE EnableAAE =0 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n", iov_len=62}, {iov_base=NULL, iov_len=0}], 2) = 62
+214   faccessat(AT_FDCWD, "/gh_nvram/aae_deviceid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31maae_deviceid=Unknown\n\33[22;00m", iov_len=37}, {iov_base=NULL, iov_len=0}], 2) = 37
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa38) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="aae_deviceid\n", iov_len=13}, {iov_base=NULL, iov_len=0}], 2) = 13
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/aae_deviceid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram/asus_mfg", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0666) = 4
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feb2d8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="1", iov_len=1}, {iov_base=NULL, iov_len=0}], 2) = 1
+214   close(4)                          = 0
+214   faccessat(AT_FDCWD, "/gh_nvram.ini", F_OK) = 0
+214   openat(AT_FDCWD, "/gh_nvram.ini", O_WRONLY|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20401 (flags O_WRONLY|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feb2d8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="/gh_nvram/asus_mfg\n", iov_len=19}, {iov_base=NULL, iov_len=0}], 2) = 19
+214   close(4)                          = 0
+214   setsockopt(3, SOL_SOCKET, SO_BINDTODEVICE, "br0\0LD_LIBRARY_P", 16) = 0
+214   sendto(3, "\f\0264\0DIRF\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(49720), sin_addr=inet_addr("255.255.255.255")}, 16) = 512
+214   setsockopt(3, SOL_SOCKET, SO_BINDTODEVICE, "\0\0\0\0\0\0\0\0firmver\0", 16) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=811343920})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999788448})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999805984})
+214   recvfrom(3, "\f\0255\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(57409), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   writev(1, [{iov_base="AAE DeviceID = <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n", iov_len=60}, {iov_base=NULL, iov_len=0}], 2) = 60
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=111, loads=[17024, 8320, 3040], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1708032, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/usb_mnt_first_path", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31musb_mnt_first_path=Unknown\n\33[22;00m", iov_len=43}, {iov_base=NULL, iov_len=0}], 2) = 43
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea9c8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="usb_mnt_first_path\n", iov_len=19}, {iov_base=NULL, iov_len=0}], 2) = 19
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/usb_mnt_first_path", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   statfs("", 0xffffd5feb5d0)        = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="", iov_len=0}, {iov_base="infosvr: statfs fail", iov_len=20}], 2) = 20
+214   writev(2, [{iov_base="", iov_len=0}, {iov_base=":", iov_len=1}], 2) = 1
+214   writev(2, [{iov_base="", iov_len=0}, {iov_base=" ", iov_len=1}], 2) = 1
+214   writev(2, [{iov_base="", iov_len=0}, {iov_base="No such file or directory", iov_len=25}], 2) = 25
+214   writev(2, [{iov_base="", iov_len=0}, {iov_base="\n", iov_len=1}], 2) = 1
+214   setsockopt(3, SOL_SOCKET, SO_BINDTODEVICE, "br0\0LD_LIBRARY_P", 16) = 0
+214   sendto(3, "\f\0265\0DIRF:-1!$\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(57409), sin_addr=inet_addr("255.255.255.255")}, 16) = 512
+214   setsockopt(3, SOL_SOCKET, SO_BINDTODEVICE, "\0\0\0\0\0\0\0\0firmver\0", 16) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=286047680})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999787280})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999796576})
+214   recvfrom(3, "\f\0256\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(42733), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=112, loads=[17024, 8320, 3040], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1708032, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   newfstatat(AT_FDCWD, "/opt/etc/init.d/S50aicloud", 0xffffd5feb3b8, 0) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/odmpid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31modmpid=Unknown\n\33[22;00m", iov_len=31}, {iov_base=NULL, iov_len=0}], 2) = 31
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="odmpid\n", iov_len=7}, {iov_base=NULL, iov_len=0}], 2) = 7
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/odmpid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/productid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mproductid=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="productid\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/productid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   newfstatat(AT_FDCWD, "/tmp/HW_AUTH_DEBUG", 0xffffd5feb378, 0) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/amas_bdl", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mamas_bdl=Unknown\n\33[22;00m", iov_len=33}, {iov_base=NULL, iov_len=0}], 2) = 33
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8d8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="amas_bdl\n", iov_len=9}, {iov_base=NULL, iov_len=0}], 2) = 9
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/amas_bdl", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/cfg_master", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mcfg_master=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8d8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="cfg_master\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/cfg_master", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/cfg_group", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mcfg_group=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fe9828) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="cfg_group\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/cfg_group", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   writev(1, [{iov_base="CfgGroup IDstr : 0000000000000000000000000000000000000000\n", iov_len=58}, {iov_base=NULL, iov_len=0}], 2) = 58
+214   faccessat(AT_FDCWD, "/gh_nvram/odmpid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31modmpid=Unknown\n\33[22;00m", iov_len=31}, {iov_base=NULL, iov_len=0}], 2) = 31
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="odmpid\n", iov_len=7}, {iov_base=NULL, iov_len=0}], 2) = 7
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/odmpid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/productid", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mproductid=Unknown\n\33[22;00m", iov_len=34}, {iov_base=NULL, iov_len=0}], 2) = 34
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5fea8b8) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="productid\n", iov_len=10}, {iov_base=NULL, iov_len=0}], 2) = 10
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/productid", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   setsockopt(3, SOL_SOCKET, SO_BINDTODEVICE, "br0\0LD_LIBRARY_P", 16) = 0
+214   sendto(3, "\f\0266\0DIRF\202\200P\0\0\0\3\6\0\fn\275\363\305\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(42733), sin_addr=inet_addr("255.255.255.255")}, 16) = 512
+214   setsockopt(3, SOL_SOCKET, SO_BINDTODEVICE, "\0\0\0\0\0\0\0\0firmver\0", 16) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=392841696})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999787808})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999806480})
+214   recvfrom(3, "\f\0257\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(44271), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   writev(1, [{iov_base="[storage_setbuf 116] type=2\n[storage_setbuf 116] type=3\n", iov_len=56}, {iov_base=NULL, iov_len=0}], 2) = 56
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=112, loads=[17024, 8320, 3040], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1708032, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=242236128})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999786816})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999830192})
+214   recvfrom(3, "\f\25\377\377DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(43310), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=113, loads=[17024, 8320, 3040], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1708032, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240584960})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999771824})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999808688})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(56293), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=114, loads=[17024, 8320, 3040], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1708032, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240975808})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999789536})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999808048})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1\0::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(34746), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=115, loads=[17024, 8320, 3040], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1708032, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240544768})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999786336})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999806672})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\377\0::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(47303), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=116, loads=[15648, 8160, 3008], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1716224, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   sysinfo({uptime=116, loads=[15648, 8160, 3008], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1716224, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=242143392})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999773088})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999794592})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\1::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(59500), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=116, loads=[15648, 8160, 3008], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1716224, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=241291136})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999788464})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999809376})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\243\1::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(33263), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=117, loads=[15648, 8160, 3008], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1716224, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240010208})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999785488})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999808624})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\244\1::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(59159), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=118, loads=[15648, 8160, 3008], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1716224, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   sysinfo({uptime=118, loads=[15648, 8160, 3008], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1716224, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=243554272})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999769136})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999717584})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\245\1::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(37113), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=119, loads=[15648, 8160, 3008], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1716224, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240860032})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999787520})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999800688})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\317\1::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(46859), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=120, loads=[15648, 8160, 3008], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1716224, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   sysinfo({uptime=120, loads=[15648, 8160, 3008], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1716224, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=243137024})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999779408})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999795856})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\320\1::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(56842), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=121, loads=[15648, 8160, 3008], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1724416, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=241053776})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999786928})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999806336})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\321\1::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(43727), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=121, loads=[14368, 8000, 2976], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1724416, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240809920})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999788000})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999802320})
+214   recvfrom(3, "\f\0253\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\377\377::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::"..., 512, 0, {sa_family=AF_INET, sin_port=htons(60881), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=122, loads=[14368, 8000, 2976], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1724416, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   sysinfo({uptime=122, loads=[14368, 8000, 2976], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1724416, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=244853232})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999777232})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999807232})
+214   recvfrom(3, "\0\0\37\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(51490), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=123, loads=[14368, 8000, 2976], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1724416, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240356736})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999789024})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999794784})
+214   recvfrom(3, "\f\0\37\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(45708), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=124, loads=[14368, 8000, 2976], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1724416, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240917904})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999785040})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999807328})
+214   recvfrom(3, "\0\25\37\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(44031), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=125, loads=[14368, 8000, 2976], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1724416, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   sysinfo({uptime=125, loads=[14368, 8000, 2976], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1724416, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=245122384})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999791056})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999807552})
+214   recvfrom(3, "\f\25\37\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(45073), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=125, loads=[14368, 8000, 2976], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1724416, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=1, tv_nsec=240317840})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999826144})
+214   pselect6(4, [3], NULL, NULL, {tv_sec=1, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 1 (in [3], left {tv_sec=0, tv_nsec=999844400})
+214   recvfrom(3, "\377\377\37\0DIRFFRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 512, 0, {sa_family=AF_INET, sin_port=htons(35804), sin_addr=inet_addr("10.0.2.2")}, [16]) = 512
+214   faccessat(AT_FDCWD, "/gh_nvram", F_OK) = 0
+214   faccessat(AT_FDCWD, "/gh_nvram/lan_ipaddr", F_OK) = -1 ENOENT (No such file or directory)
+214   writev(2, [{iov_base="\33[22;31mlan_ipaddr=Unknown\n\33[22;00m", iov_len=35}, {iov_base=NULL, iov_len=0}], 2) = 35
+214   openat(AT_FDCWD, "/MISSING_NVRAMS", O_RDWR|O_CREAT|O_APPEND|O_LARGEFILE, 0666) = 4
+214   fcntl(4, F_GETFL)                 = 0x20402 (flags O_RDWR|O_APPEND|O_LARGEFILE)
+214   ioctl(4, TIOCGWINSZ, 0xffffd5feaa78) = -1 ENOTTY (Inappropriate ioctl for device)
+214   writev(4, [{iov_base="lan_ipaddr\n", iov_len=11}, {iov_base=NULL, iov_len=0}], 2) = 11
+214   close(4)                          = 0
+214   openat(AT_FDCWD, "/gh_nvram/lan_ipaddr", O_RDONLY|O_LARGEFILE) = -1 ENOENT (No such file or directory)
+214   sysinfo({uptime=126, loads=[13216, 7840, 2944], totalram=2066694144, freeram=1998643200, sharedram=0, bufferram=1732608, totalswap=0, freeswap=0, procs=68, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}) = 0 (Timeout)
+214   pselect6(4, [3], NULL, NULL, {tv_sec=2, tv_nsec=0}, {sigmask=NULL, sigsetsize=8}

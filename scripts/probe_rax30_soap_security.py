@@ -3,12 +3,13 @@
 
 from __future__ import annotations
 
+import os
 import socket
 import time
 
 
-HOST = "127.0.0.1"
-PORT = 25_130
+HOST = os.environ.get("FRIDAY_SOAP_HOST", "127.0.0.1")
+PORT = int(os.environ.get("FRIDAY_SOAP_PORT", "25130"))
 URN = "urn:NETGEAR-ROUTER:service"
 MARKER = "FRIDAY_RAX30_RCE_MARKER"
 

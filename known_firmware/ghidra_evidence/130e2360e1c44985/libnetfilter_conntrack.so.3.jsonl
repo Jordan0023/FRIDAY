@@ -1,0 +1,3 @@
+{"binary":"libnetfilter_conntrack.so.3","function":"__labelmap_new","address":"00016d30","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetfilter_conntrack.so.3","function":"nfct_payload_parse","address":"00019ecc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetfilter_conntrack.so.3","function":"nfexp_clone","address":"00021004","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

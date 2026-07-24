@@ -1,0 +1,14 @@
+{
+  "target": "127.0.0.1:9999/udp",
+  "case": "getinfo",
+  "results": [
+    {
+      "name": "getinfo",
+      "request_bytes": 512,
+      "response_bytes": 512,
+      "response_prefix_hex": "0c161f0044495246000000000000000000000000000000000000000000000000",
+      "error": null,
+      "elapsed_ms": 20.12
+    }
+  ]
+}

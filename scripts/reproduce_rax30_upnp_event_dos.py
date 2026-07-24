@@ -25,7 +25,10 @@ def exchange(payload: bytes, port: int = PORT, timeout: float = 3.0) -> bytes:
         client.sendall(payload)
         client.shutdown(socket.SHUT_WR)
         while True:
-            chunk = client.recv(65536)
+            try:
+                chunk = client.recv(65536)
+            except socket.timeout:
+                break
             if not chunk:
                 break
             response.extend(chunk)

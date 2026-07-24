@@ -1,0 +1,6 @@
+{"binary":"cfg_client","function":"FUN_0003a5cc","address":"0003a5cc","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_client","function":"FUN_0003a5cc","address":"0003a5cc","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_client","function":"FUN_00049078","address":"00049078","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_client","function":"FUN_0006f6e4","address":"0006f6e4","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_client","function":"FUN_0006f6e4","address":"0006f6e4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_client","function":"FUN_0006f6e4","address":"0006f6e4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

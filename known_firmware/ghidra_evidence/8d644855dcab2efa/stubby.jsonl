@@ -1,0 +1,3 @@
+{"binary":"stubby","function":"_ftext","address":"00408540","route":"/var/run/stubby.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"stubby","function":"_ftext","address":"00408540","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"stubby","function":"FUN_00412fb0","address":"00412fb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"igmpproxy","function":"_ftext","address":"00400d70","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"igmpproxy","function":"_ftext","address":"00400d70","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"igmpproxy","function":"FUN_00402538","address":"00402538","route":"/0x%02x","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"igmpproxy","function":"FUN_004037dc","address":"004037dc","route":"/%d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

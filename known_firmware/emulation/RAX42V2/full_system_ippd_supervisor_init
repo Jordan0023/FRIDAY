@@ -1,0 +1,83 @@
+#!/bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export PATH
+LD_PRELOAD=/lib/rax42v2_emulation_shim.so
+export LD_PRELOAD
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+mkdir -p /dev/pts /run /tmp /var/run /var/log /var/tmp
+mount -t devpts devpts /dev/pts
+mount -t tmpfs tmpfs /tmp
+
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/virtio/virtio_mmio.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/net/core/failover.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/net/net_failover.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/net/virtio_net.ko
+
+ip link set eth0 down
+ip link set eth0 name br0
+ifconfig br0 10.0.2.15 netmask 255.255.255.0 up
+ifconfig lo 127.0.0.1 up
+route add default gw 10.0.2.2
+
+cat > /var/printers.ini <<'EOF'
+[printers/test]
+make=FridayLab
+device=/tmp/friday-printer-output
+EOF
+touch /tmp/friday-printer-output
+
+echo "FRIDAY_RAX42V2_SUPERVISOR_BOOT=1"
+/bin/smd -v 2 >/dev/console 2>&1 &
+SMD_PID=$!
+attempt=0
+while test "$attempt" -lt 30; do
+    test -S /var/smd_messaging_server_addr && break
+    sleep 1
+    attempt=$((attempt + 1))
+done
+echo "SMD_PID=$SMD_PID"
+echo "SMD_SOCKET=$(test -S /var/smd_messaging_server_addr && echo ready || echo missing)"
+
+/bin/cms_start_ippd
+echo "CMS_START_RESULT=$?"
+attempt=0
+while test "$attempt" -lt 30; do
+    pidof ippd >/dev/null 2>&1 && break
+    sleep 1
+    attempt=$((attempt + 1))
+done
+
+IPPD_PID="$(pidof ippd | awk '{print $1}')"
+echo "IPPD_PID=$IPPD_PID"
+echo "IPPD_ALIVE=$(test -n "$IPPD_PID" && kill -0 "$IPPD_PID" 2>/dev/null && echo yes || echo no)"
+echo "IPPD_LISTENING=$(grep -q ':0277 ' /proc/net/tcp /proc/net/tcp6 2>/dev/null && echo yes || echo no)"
+echo "TCP_TABLE_BEGIN"
+cat /proc/net/tcp
+cat /proc/net/tcp6
+echo "TCP_TABLE_END"
+echo "FRIDAY_RAX42V2_IPPD_READY=1"
+
+if test -n "$IPPD_PID"; then
+    sleep 2
+    (
+        printf 'POST /printers/test HTTP/1.1\r\nHost: 127.0.0.1\r\nX-Friday: '
+        dd if=/dev/zero bs=256 count=1 2>/dev/null | tr '\000' 'B'
+        printf '\r\nContent-Length: 0\r\n\r\n'
+    ) | nc -w 2 127.0.0.1 631 >/dev/null 2>&1
+    echo "CRASH_PROBE_SENT=1"
+    sleep 8
+    AFTER_PID="$(pidof ippd | awk '{print $1}')"
+    echo "IPPD_AFTER_CRASH_PID=$AFTER_PID"
+    echo "IPPD_RELAUNCHED=$(test -n "$AFTER_PID" && test "$AFTER_PID" != "$IPPD_PID" && echo yes || echo no)"
+    echo "IPPD_AFTER_CRASH_LISTENING=$(grep -q ':0277 ' /proc/net/tcp /proc/net/tcp6 2>/dev/null && echo yes || echo no)"
+fi
+
+while true; do
+    CURRENT_PID="$(pidof ippd | awk '{print $1}')"
+    echo "IPPD_HEALTH_PID=$CURRENT_PID"
+    sleep 2
+done

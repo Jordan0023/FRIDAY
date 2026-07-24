@@ -1,0 +1,6 @@
+{"binary":"netstat-nat","function":"_ftext","address":"00400ce0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"netstat-nat","function":"_ftext","address":"00400ce0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"netstat-nat","function":"_ftext","address":"00400ce0","route":"/proc/net/nf_conntrack","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"netstat-nat","function":"_ftext","address":"00400ce0","route":"/proc/net/nf_conntrack","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"netstat-nat","function":"_ftext","address":"00400ce0","route":"/proc/net/ip_conntrack","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"netstat-nat","function":"_ftext","address":"00400ce0","route":"/proc/net/ip_conntrack","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

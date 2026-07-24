@@ -1,0 +1,12 @@
+{"binary":"avahi-daemon","function":"FUN_00404210","address":"00404210","route":"/etc/resolv.conf","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_00404210","address":"00404210","route":"/etc/resolv.conf:","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_00404ffc","address":"00404ffc","route":"/tmp/avahi/avahi-daemon.conf","sink":"file_write","sources":"read","auth_markers":"cookie","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_00404ffc","address":"00404ffc","route":"/etc/machine-id","sink":"file_write","sources":"read","auth_markers":"cookie","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_00404ffc","address":"00404ffc","route":"/var/lib/dbus/machine-id","sink":"file_write","sources":"read","auth_markers":"cookie","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_00405c40","address":"00405c40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_00407008","address":"00407008","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_00408a5c","address":"00408a5c","route":"/tmp/avahi/hosts","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_00408a5c","address":"00408a5c","route":"/tmp/avahi/hosts","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_00408a5c","address":"00408a5c","route":"/hosts","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_00408a5c","address":"00408a5c","route":"/hosts","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_004093f8","address":"004093f8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

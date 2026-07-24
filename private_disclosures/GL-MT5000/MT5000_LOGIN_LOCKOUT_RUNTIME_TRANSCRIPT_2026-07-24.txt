@@ -1,0 +1,46 @@
+GL.iNet GL-MT5000 Brume 3 firmware 4.8.6
+Isolated AArch64 QEMU service emulation
+Date: 2026-07-24
+
+Baseline root challenge:
+{
+    "code": 0,
+    "data": {
+        "hash-method": "sha256",
+        "salt": "fridaylab",
+        "alg": 6,
+        "nonce": "u24Sd4empQdPOdIpeMDR1tISV1hqxUt6"
+    }
+}
+
+Ten unauthenticated challenges using friday_nonexistent_user:
+attempts 1 through 10 each returned:
+{
+    "code": -32000
+}
+
+Root challenge immediately after attempt 10:
+{
+    "code": -32003,
+    "data": {
+        "wait": 599
+    }
+}
+
+Login method during the same lockout:
+{
+    "code": -32003,
+    "data": {
+        "wait": 587
+    }
+}
+
+Process state during lockout:
+- native AArch64 ubusd remained running
+- native AArch64 gl-ngx-session remained running
+
+Conclusion:
+Ten pre-authentication failures activate one process-global 600-second
+authentication lockout. Both challenge and login are denied for all callers.
+This is an administrative-plane denial of service, not a demonstrated routing
+or whole-device denial of service.

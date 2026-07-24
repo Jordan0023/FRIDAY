@@ -1,0 +1,282 @@
+[
+  {
+    "service": "DeviceConfig",
+    "action": "GetSecurityQuestions",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "000",
+    "response_bytes": 550
+  },
+  {
+    "service": "DeviceInfo",
+    "action": "GetSecurityQuestions",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "LANConfigSecurity",
+    "action": "GetSecurityQuestions",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "WLANConfiguration",
+    "action": "GetSecurityQuestions",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "AdvancedQoS",
+    "action": "GetSecurityQuestions",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "DeviceConfig",
+    "action": "ResetAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "000",
+    "response_bytes": 450
+  },
+  {
+    "service": "DeviceInfo",
+    "action": "ResetAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "LANConfigSecurity",
+    "action": "ResetAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "WLANConfiguration",
+    "action": "ResetAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "AdvancedQoS",
+    "action": "ResetAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "DeviceConfig",
+    "action": "RecoverAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "DeviceInfo",
+    "action": "RecoverAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "LANConfigSecurity",
+    "action": "RecoverAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "WLANConfiguration",
+    "action": "RecoverAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "AdvancedQoS",
+    "action": "RecoverAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "DeviceConfig",
+    "action": "SetFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "DeviceInfo",
+    "action": "SetFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "LANConfigSecurity",
+    "action": "SetFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "WLANConfiguration",
+    "action": "SetFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "AdvancedQoS",
+    "action": "SetFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "DeviceConfig",
+    "action": "SetConfiguration",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 446
+  },
+  {
+    "service": "DeviceInfo",
+    "action": "SetConfiguration",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "LANConfigSecurity",
+    "action": "SetConfiguration",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "WLANConfiguration",
+    "action": "SetConfiguration",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "AdvancedQoS",
+    "action": "SetConfiguration",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "DeviceConfig",
+    "action": "SetNTP",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 426
+  },
+  {
+    "service": "DeviceInfo",
+    "action": "SetNTP",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "LANConfigSecurity",
+    "action": "SetNTP",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "WLANConfiguration",
+    "action": "SetNTP",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "AdvancedQoS",
+    "action": "SetNTP",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "DeviceConfig",
+    "action": "CheckAndDownloadNewFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 468
+  },
+  {
+    "service": "DeviceInfo",
+    "action": "CheckAndDownloadNewFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "LANConfigSecurity",
+    "action": "CheckAndDownloadNewFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "WLANConfiguration",
+    "action": "CheckAndDownloadNewFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "AdvancedQoS",
+    "action": "CheckAndDownloadNewFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "DeviceConfig",
+    "action": "SetWLANWPAPSKByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "DeviceInfo",
+    "action": "SetWLANWPAPSKByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "LANConfigSecurity",
+    "action": "SetWLANWPAPSKByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "service": "WLANConfiguration",
+    "action": "SetWLANWPAPSKByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 469
+  },
+  {
+    "service": "AdvancedQoS",
+    "action": "SetWLANWPAPSKByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  }
+]

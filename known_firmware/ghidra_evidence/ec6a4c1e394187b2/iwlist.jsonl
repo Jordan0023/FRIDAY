@@ -1,0 +1,4 @@
+{"binary":"iwlist","function":"FUN_00402b18","address":"00402b18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"Token","correlation":"function-local-co-location"}
+{"binary":"iwlist","function":"FUN_00402b18","address":"00402b18","route":"/any/hidden","sink":"memory_operation","sources":"","auth_markers":"Token","correlation":"function-local-co-location"}
+{"binary":"iwlist","function":"FUN_00402b18","address":"00402b18","route":"/any","sink":"memory_operation","sources":"","auth_markers":"Token","correlation":"function-local-co-location"}
+{"binary":"iwlist","function":"FUN_00402b18","address":"00402b18","route":"/WPA2","sink":"memory_operation","sources":"","auth_markers":"Token","correlation":"function-local-co-location"}

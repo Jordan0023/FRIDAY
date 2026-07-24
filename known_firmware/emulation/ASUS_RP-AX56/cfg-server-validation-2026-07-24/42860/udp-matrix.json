@@ -1,0 +1,90 @@
+{
+  "target": "127.0.0.1:7788",
+  "case": "udp-matrix",
+  "results": [
+    {
+      "name": "size-0",
+      "request_bytes": 0,
+      "error": null,
+      "elapsed_ms": 0.1
+    },
+    {
+      "name": "size-1",
+      "request_bytes": 1,
+      "error": null,
+      "elapsed_ms": 0.08
+    },
+    {
+      "name": "size-4",
+      "request_bytes": 4,
+      "error": null,
+      "elapsed_ms": 0.08
+    },
+    {
+      "name": "size-7",
+      "request_bytes": 7,
+      "error": null,
+      "elapsed_ms": 0.1
+    },
+    {
+      "name": "size-8",
+      "request_bytes": 8,
+      "error": null,
+      "elapsed_ms": 0.09
+    },
+    {
+      "name": "size-9",
+      "request_bytes": 9,
+      "error": null,
+      "elapsed_ms": 0.09
+    },
+    {
+      "name": "size-11",
+      "request_bytes": 11,
+      "error": null,
+      "elapsed_ms": 0.07
+    },
+    {
+      "name": "size-12",
+      "request_bytes": 12,
+      "error": null,
+      "elapsed_ms": 0.09
+    },
+    {
+      "name": "size-13",
+      "request_bytes": 13,
+      "error": null,
+      "elapsed_ms": 0.09
+    },
+    {
+      "name": "size-31",
+      "request_bytes": 31,
+      "error": null,
+      "elapsed_ms": 0.08
+    },
+    {
+      "name": "size-32",
+      "request_bytes": 32,
+      "error": null,
+      "elapsed_ms": 0.08
+    },
+    {
+      "name": "size-33",
+      "request_bytes": 33,
+      "error": null,
+      "elapsed_ms": 0.06
+    },
+    {
+      "name": "size-255",
+      "request_bytes": 255,
+      "error": null,
+      "elapsed_ms": 0.06
+    },
+    {
+      "name": "size-2047",
+      "request_bytes": 2047,
+      "error": null,
+      "elapsed_ms": 0.05
+    }
+  ]
+}

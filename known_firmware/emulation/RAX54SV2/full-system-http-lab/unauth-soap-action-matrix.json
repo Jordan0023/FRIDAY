@@ -1,0 +1,1250 @@
+[
+  {
+    "action": "AddAttachDeviceGroup",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "AddPortMapping",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "AddQoSRule",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 434
+  },
+  {
+    "action": "AddQoSRuleByMAC",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 444
+  },
+  {
+    "action": "AddStaticRoute",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 442
+  },
+  {
+    "action": "CheckAndDownloadNewFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 468
+  },
+  {
+    "action": "CheckAndDownloadNewFirmwareAll",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 474
+  },
+  {
+    "action": "CheckAppNewFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 452
+  },
+  {
+    "action": "CheckDurationSecond",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "CheckNewFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 446
+  },
+  {
+    "action": "CheckWeeklyNewFirmwareAll",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 464
+  },
+  {
+    "action": "Check_Performance_Boost",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Delete5GTurnWirelessOffPeriodAll",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Delete5GTurnWirelessOffPeriodByIndex",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "DeleteAttachDeviceGroup",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "DeleteBlockDeviceAll",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 454
+  },
+  {
+    "action": "DeleteBlockDeviceByMAC",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 458
+  },
+  {
+    "action": "DeleteLightingLEDOnAllPeriod",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "DeleteLightingLEDOnPeriodByIndex",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "DeleteMACAddress",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "DeletePortMapping",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "DeleteQoSRule",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 440
+  },
+  {
+    "action": "DeleteTurnWirelessOffPeriodAll",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "DeleteTurnWirelessOffPeriodByIndex",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Get5GBandChannelInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Get5GChannelInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Get5GGuestAccessEnabled",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Get5GGuestAccessNetworkInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Get5GInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Get5GSSID",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Get5GWEPSecurityKeys",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Get5GWPASecurityKeys",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Get5GWirelessMode",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetAPInfoByRadiosResult",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetAPInfoByRadiosStart",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetAXModeEnabledStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetAllMACAddresses",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetAttachDevice",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetAutoFwUpgradeEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetAvailableChannel",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetBandwidthControlEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 476
+  },
+  {
+    "action": "GetBandwidthControlOptions",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetBlockDeviceEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 466
+  },
+  {
+    "action": "GetBlockDeviceStateByDefault",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 470
+  },
+  {
+    "action": "GetBlockSiteInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 446
+  },
+  {
+    "action": "GetChannelInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetCircleEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetConfigInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 440
+  },
+  {
+    "action": "GetConfigurationTimestamp",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetConnectionTypeInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetDNSLookUpStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetDNSMasqDeviceID",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetDeviceInfoByJson",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetDeviceListAll",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 446
+  },
+  {
+    "action": "GetDevicePriorityByMAC",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetEthernetLinkStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetExtendedFWVersionXML",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetExtenderMode",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetGuestAccessEnabled",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetGuestAccessNetworkInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 428
+  },
+  {
+    "action": "GetInternetPortInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetNTP",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetOOKLASpeedTestResult",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetOOKLASpeedTestResultByMAC",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetPortMappingInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetQoSEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 450
+  },
+  {
+    "action": "GetRaEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetRegion",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetRemoteManagementEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetRouterWLANInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetRouterWLANVerifyResult",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetRouterWLANWPAInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetSHARENAME",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetSSID",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetSSIDBroadcast",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetSecurityQuestions",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "000",
+    "response_bytes": 550
+  },
+  {
+    "action": "GetStaticRouteTbl",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 448
+  },
+  {
+    "action": "GetSupportFeatureList",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetSupportFeatureListXML",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetSupportMode",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetSysUpTime",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetSystemInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetSystemLogs",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetTimeZoneInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 444
+  },
+  {
+    "action": "GetTrafficMeterEnabled",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 458
+  },
+  {
+    "action": "GetTrafficMeterOptions",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 458
+  },
+  {
+    "action": "GetTrafficMeterStatistics",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 464
+  },
+  {
+    "action": "GetWEPSecurityKeys",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetWPASecurityKeys",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetWPSMode",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetWPSPINInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetWPSStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetWirelessMode",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetWirelessRegion",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "GetWirelessRegionList",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "RebootRequired",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5G1Channel",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5G1Enable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5G1GuestAccessEnabled",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5G1GuestAccessEnabled2",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5G1GuestAccessNetwork",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5G1SSID",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5G1WLANNoSecurity",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5G1WLANWPAPSKByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GBackhaulPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GChannel",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GEnable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GGuestAccessEnabled",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GGuestAccessEnabled2",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GGuestAccessNetwork",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GPreambleMode",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GSSID",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GSSIDBroadcast",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GTurnWirelessOffBySchedule",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GTurnWirelessOffPeriod",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GWLANNoSecurity",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GWLANWEPByKeys",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GWLANWEPByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GWLANWPAPSKByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GWMMEnable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set5GbackhaulPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set60GChannel",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set60GEnable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set60GSSID",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set60GWLANNoSecurity",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "Set60GWLANWPAPSKByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetAXModeEnabled",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetAdvancedWirelessSettings",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetAutoFwUpgradeEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetBandwidthControlEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 476
+  },
+  {
+    "action": "SetBandwidthControlOptions",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetBlockDeviceByMAC",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 452
+  },
+  {
+    "action": "SetBlockDeviceEnable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 454
+  },
+  {
+    "action": "SetBlockDeviceStateByDefault",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 470
+  },
+  {
+    "action": "SetBlockDevicebyGroup",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 456
+  },
+  {
+    "action": "SetBlockSiteEnable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 450
+  },
+  {
+    "action": "SetBlockSiteName",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 446
+  },
+  {
+    "action": "SetChannel",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetConfigDHCPEnabled",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetConfigLAN",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetConfigLANIP",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetConfigLANSubnet",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetConfigPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetConfiguration",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 446
+  },
+  {
+    "action": "SetConfigurationTimestamp",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetConnection2Type",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetConnectionType",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetDLNAStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 440
+  },
+  {
+    "action": "SetDNSMasqDeviceID",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetDSLConfig",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetDeviceInfoByMAC",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetDeviceInfoByMAC_deviceModel",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetDeviceNameIconByMAC",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetDevicePriorityByMAC",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetEnable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 432
+  },
+  {
+    "action": "SetExtenderMode",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetGUILanguage",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 442
+  },
+  {
+    "action": "SetGuestAccessEnabled",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetGuestAccessEnabled2",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetGuestAccessNetwork",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetIPInterfaceInfo",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetInterfaceOrder",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetLightingLEDOnPeriodByIndex",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetLightingLEDSettings",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetLightingLEDsOnBySchedule",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetMACAddress",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetMaxMTUSize",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetNTP",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 426
+  },
+  {
+    "action": "SetNetgearDeviceName",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetOOKLASpeedTestStart",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetOOKLASpeedTestStartByMAC",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetPreambleMode",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetQoSEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 450
+  },
+  {
+    "action": "SetRaEnableStatus",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetRemoteManagementEnable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetRouterWLANNoSecurity",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetRouterWLANWPAPSKByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetSSID",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetSSIDBroadcast",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetSmartConnectEnable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetSmartWizardDetection",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetSmartZoneEnable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetSmartZoneRoamLevel",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetTimeZone",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 436
+  },
+  {
+    "action": "SetTimeZoneByIndex",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 450
+  },
+  {
+    "action": "SetTrafficMeterOptions",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 458
+  },
+  {
+    "action": "SetTurnWirelessOffBySchedule",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetTurnWirelessOffPeriod",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetUserOptionsTC",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetWANRelease",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetWANRenew",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetWLANNoSecurity",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetWLANWEPByKeys",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetWLANWEPByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetWLANWPAPSKByPassphrase",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetWMMEnable",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetWPSMode",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetWirelessBroadbandConfig",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "SetWirelessRegion",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "StartCmdTime",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "UpdateAdminPassword",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 452
+  },
+  {
+    "action": "UpdateAttachedDevice",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "UpdateAttachedDeviceName",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "404",
+    "response_bytes": 312
+  },
+  {
+    "action": "UpdateNewFirmware",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 448
+  },
+  {
+    "action": "UpdateQoSPriority",
+    "http_status": "HTTP/1.1 200 OK",
+    "response_code": "401",
+    "response_bytes": 448
+  }
+]
