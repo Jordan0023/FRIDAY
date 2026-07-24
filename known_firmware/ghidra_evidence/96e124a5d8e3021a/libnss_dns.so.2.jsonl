@@ -1,0 +1,1 @@
+{"binary":"libnss_dns.so.2","function":"getanswer_r.constprop.0","address":"00101590","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,6 @@
+{"binary":"dm-crypt.ko","function":"FUN_00010374","address":"00010374","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dm-crypt.ko","function":"FUN_00011644","address":"00011644","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dm-crypt.ko","function":"FUN_00011d44","address":"00011d44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dm-crypt.ko","function":"FUN_00011d44","address":"00011d44","route":"/include/linux/bvec.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dm-crypt.ko","function":"crypt_ctr","address":"000134a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dm-crypt.ko","function":"crypt_ctr","address":"000134a4","route":"/%s","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

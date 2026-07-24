@@ -1,0 +1,8 @@
+{"binary":"libhyficommon.so","function":"cmdInputFromFile","address":"00017298","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyficommon.so","function":"cmdInputPacket","address":"00017610","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyficommon.so","function":"interfaceVlanConfig","address":"0001aaf0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyficommon.so","function":"interfaceGetStatsByName","address":"0001bb34","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyficommon.so","function":"interfaceGetStatsByName","address":"0001bb34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyficommon.so","function":"interfaceGetDefaultGateway","address":"0001c8b8","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyficommon.so","function":"interfaceGetSignalStrengthByName","address":"0001ca74","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyficommon.so","function":"interfaceGetVapTR181StatsByName","address":"0001cd04","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}

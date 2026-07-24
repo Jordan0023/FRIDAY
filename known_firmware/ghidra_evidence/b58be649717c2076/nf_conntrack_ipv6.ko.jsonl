@@ -1,0 +1,1 @@
+{"binary":"nf_conntrack_ipv6.ko","function":"nf_ct_frag6_gather","address":"00011288","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

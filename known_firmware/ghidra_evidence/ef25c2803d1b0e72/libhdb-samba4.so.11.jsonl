@@ -1,0 +1,6 @@
+{"binary":"libhdb-samba4.so.11.0.2","function":"parse_key_set","address":"00013dac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhdb-samba4.so.11.0.2","function":"encode_HDB_extension","address":"00018edc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhdb-samba4.so.11.0.2","function":"decode_HDB_extension","address":"00019460","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhdb-samba4.so.11.0.2","function":"read_master_krb4","address":"0001c500","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhdb-samba4.so.11.0.2","function":"read_master_encryptionkey","address":"0001c690","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhdb-samba4.so.11.0.2","function":"hdb_read_master_key","address":"0001c998","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

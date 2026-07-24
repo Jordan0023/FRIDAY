@@ -1,0 +1,1 @@
+{"binary":"ppp_generic.ko","function":"ppp_ioctl","address":"00012f68","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

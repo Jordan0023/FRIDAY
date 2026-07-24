@@ -1,0 +1,5 @@
+{"binary":"ath10k_pci.ko","function":"ath10k_pci_diag_write_mem","address":"00010514","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath10k_pci.ko","function":"FUN_00010720","address":"00010720","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath10k_pci.ko","function":"ath10k_pci_hif_exchange_bmi_msg","address":"00011fb4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath10k_pci.ko","function":"ath10k_pci_hif_exchange_bmi_msg","address":"00011fb4","route":"/linux/dma-mapping.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath10k_pci.ko","function":"ath10k_pci_hif_exchange_bmi_msg","address":"00011fb4","route":"/linux-ipq40xx_generic/ath10k-ct-regular/ath10k-ct-2021-09-22-e6a7d5b5/ath10k-5.10/pci.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

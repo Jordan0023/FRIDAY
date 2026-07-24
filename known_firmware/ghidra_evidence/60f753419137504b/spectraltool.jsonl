@@ -1,0 +1,6 @@
+{"binary":"spectraltool","function":"strcpy","address":"000086ec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"spectraltool","function":"memcpy","address":"0000871c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"spectraltool","function":"fopen","address":"000087ac","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"spectraltool","function":"FUN_00008830","address":"00008830","route":"/*","sink":"unsafe_copy","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"spectraltool","function":"FUN_00008830","address":"00008830","route":"/*","sink":"file_write","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"spectraltool","function":"FUN_00008830","address":"00008830","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}

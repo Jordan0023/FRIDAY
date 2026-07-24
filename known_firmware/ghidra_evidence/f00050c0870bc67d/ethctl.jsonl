@@ -1,0 +1,1 @@
+{"binary":"ethctl","function":"et_cmd_phy_crossbar_op","address":"00010cfc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

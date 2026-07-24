@@ -1,0 +1,5 @@
+{"binary":"libexpat.so","function":"addBinding.part.14","address":"00105350","route":"/www.w3.org/XML/1998/namespace","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so","function":"addBinding.part.14","address":"00105350","route":"/www.w3.org/2000/xmlns","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so","function":"startParsing","address":"00105fc0","route":"/dev/urandom","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so","function":"startParsing","address":"00105fc0","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so","function":"startParsing","address":"00105fc0","route":"/www.w3.org/XML/1998/namespace","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

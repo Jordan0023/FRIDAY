@@ -1,0 +1,14 @@
+{"binary":"fdisk","function":"strcpy","address":"00009924","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"memmove","address":"00009954","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"memcpy","address":"000099b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"sscanf","address":"00009b58","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"FUN_00009cf0","address":"00009cf0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"FUN_00010be0","address":"00010be0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"FUN_00011588","address":"00011588","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"FUN_0001360c","address":"0001360c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"FUN_000172a4","address":"000172a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"FUN_000172a4","address":"000172a4","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"FUN_000172a4","address":"000172a4","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"FUN_000172a4","address":"000172a4","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"FUN_000172a4","address":"000172a4","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fdisk","function":"FUN_000172a4","address":"000172a4","route":"/'","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

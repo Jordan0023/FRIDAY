@@ -1,0 +1,2 @@
+{"binary":"ripd","function":"FUN_0001bcf4","address":"0001bcf4","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ripd","function":"rip_peer_display","address":"00023818","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"libgmp.so.10.4.1","function":"__gmpq_set_str","address":"0002e8f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgmp.so.10.4.1","function":"__gmp_asprintf_memory","address":"00056384","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgmp.so.10.4.1","function":"__gmp_doprnt","address":"00056504","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgmp.so.10.4.1","function":"FUN_00057a20","address":"00057a20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgmp.so.10.4.1","function":"__gmp_doscan","address":"00057efc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

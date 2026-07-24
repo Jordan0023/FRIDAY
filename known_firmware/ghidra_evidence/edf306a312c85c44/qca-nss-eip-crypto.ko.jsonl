@@ -1,0 +1,8 @@
+{"binary":"qca-nss-eip-crypto.ko","function":"FUN_00100db0","address":"00100db0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"FUN_00101288","address":"00101288","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"FUN_00101fa4","address":"00101fa4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"FUN_001020c0","address":"001020c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_ahash_final","address":"00102cb8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_ahash_done","address":"00102ce8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_ahash_setkey","address":"00102e38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_ahash_tfm_init","address":"00102fac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

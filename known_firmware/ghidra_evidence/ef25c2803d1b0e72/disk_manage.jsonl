@@ -1,0 +1,12 @@
+{"binary":"disk_manage","function":"log_init","address":"00014e7c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"disk_obj_sort_by_size","address":"0001601c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"disk_sets_sort_by_size","address":"00016828","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"dev_mount_set_get_mount","address":"00017298","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"disk_uid_get_db_info_do","address":"000185ec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"disk_part_umount","address":"00018a68","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"disk_part_modify_mount_path","address":"0001936c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"disk_sub_dev_name_get_root","address":"0001c454","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"disk_sub_dev_name_get_root","address":"0001c454","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"disk_get_sector_number","address":"0001c5a0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"disk_get_sector_size","address":"0001c758","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"disk_manage","function":"mount_path_get_disk_name","address":"0001d7e0","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

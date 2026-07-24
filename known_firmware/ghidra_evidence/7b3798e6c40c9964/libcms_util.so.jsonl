@@ -1,0 +1,4 @@
+{"binary":"libcms_util.so","function":"FUN_0001c13c","address":"0001c13c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_util.so","function":"oal_spawnProcess","address":"0002463c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_util.so","function":"oal_spawnProcess","address":"0002463c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_util.so","function":"oal_getLanAddr6","address":"000252fc","route":"/64","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

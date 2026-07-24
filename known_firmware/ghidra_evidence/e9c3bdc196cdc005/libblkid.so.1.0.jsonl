@@ -1,0 +1,17 @@
+{"binary":"libblkid.so.1.0","function":"FUN_000127a0","address":"000127a0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"FUN_00012a88","address":"00012a88","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"FUN_00012ecc","address":"00012ecc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"FUN_00012ecc","address":"00012ecc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"blkid__scan_dir","address":"0001361c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"FUN_00013dc4","address":"00013dc4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"FUN_00013f60","address":"00013f60","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"FUN_00014634","address":"00014634","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"FUN_0001492c","address":"0001492c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"FUN_00014cb4","address":"00014cb4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"FUN_00015034","address":"00015034","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"FUN_00015990","address":"00015990","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"blkid_verify","address":"00015d60","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"blkid_read_cache","address":"000161bc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"blkid_flush_cache","address":"00016718","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"blkid_flush_cache","address":"00016718","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"blkid_flush_cache","address":"00016718","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

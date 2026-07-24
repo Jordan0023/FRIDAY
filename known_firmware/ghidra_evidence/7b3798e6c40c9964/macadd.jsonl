@@ -1,0 +1,2 @@
+{"binary":"macadd","function":"main","address":"0000850c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macadd","function":"main","address":"0000850c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

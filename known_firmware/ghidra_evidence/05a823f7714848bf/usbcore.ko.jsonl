@@ -1,0 +1,9 @@
+{"binary":"usbcore.ko","function":"FUN_0001762c","address":"0001762c","route":"/usb/core/hcd.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"usb_hcd_poll_rh_status","address":"00017fa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"usb_hcd_submit_urb","address":"000190ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"usb_cache_string","address":"0001d32c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"usb_get_device_descriptor","address":"0001d410","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"usb_store_new_id","address":"0001f2d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"usb_get_configuration","address":"00020438","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"usb_get_configuration","address":"00020438","route":"/%s:","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"usb_get_configuration","address":"00020438","route":"/%s","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

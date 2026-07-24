@@ -1,0 +1,2 @@
+{"binary":"ovpn-dco-v2.ko","function":"ovpn_bind_from_sockaddr","address":"00100318","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ovpn-dco-v2.ko","function":"FUN_001009d0","address":"001009d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

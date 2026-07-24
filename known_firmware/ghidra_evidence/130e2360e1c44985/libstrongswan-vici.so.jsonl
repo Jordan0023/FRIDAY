@@ -1,0 +1,2 @@
+{"binary":"libstrongswan-vici.so","function":"FUN_0001d9ac","address":"0001d9ac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan-vici.so","function":"FUN_0002f0bc","address":"0002f0bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

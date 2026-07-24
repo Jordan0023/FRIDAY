@@ -1,0 +1,15 @@
+{"binary":"libethswctl.so","function":"bcm_stat_get_emac_by_name","address":"0001abb8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_arl_dump_us","address":"0001b488","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_arl_dump_us","address":"0001b488","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_reg_write_X","address":"0001b924","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_reg_read_X","address":"0001bba8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_pseudo_mdio_write","address":"0001be24","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_pseudo_mdio_read","address":"0001c02c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_ifname_get","address":"0001df1c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_port_obj_name_get","address":"0001e5ac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_enet_driver_getWANOnlyEthPortIfNameList","address":"00020aa4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_enet_driver_getWanPreferredPortIfNameList","address":"00020b18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_enet_driver_getLanWanPortIfNameList","address":"00020b8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_enet_driver_getLANOnlyEthPortIfNameList","address":"00020c00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"bcm_enet_driver_getLANEthPortIfNameList","address":"00020c74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethswctl.so","function":"getIntfStats","address":"00022da8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

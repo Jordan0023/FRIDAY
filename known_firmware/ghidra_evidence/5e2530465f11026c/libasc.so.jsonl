@@ -1,0 +1,2 @@
+{"binary":"libasc.so","function":"curl_download_file","address":"00011588","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libasc.so","function":"curl_download_file","address":"00011588","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,11 @@
+{"binary":"libusi.so","function":"getFileContent","address":"00012fd8","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusi.so","function":"String","address":"00013310","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusi.so","function":"readFromSystem","address":"00013394","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusi.so","function":"strReplace","address":"000136a0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusi.so","function":"strReplace","address":"000136a0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusi.so","function":"configPush","address":"00013870","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusi.so","function":"getConfig","address":"00013a1c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusi.so","function":"performLogRotation","address":"00013bb0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusi.so","function":"zipFile","address":"00013db4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusi.so","function":"printLogUsi","address":"00013f90","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusi.so","function":"printLogUsi","address":"00013f90","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

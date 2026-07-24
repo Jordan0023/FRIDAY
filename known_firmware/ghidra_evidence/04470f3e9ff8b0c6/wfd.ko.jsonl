@@ -1,0 +1,7 @@
+{"binary":"wfd.ko","function":"wfd_flctl_file_write_proc","address":"00102150","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wfd.ko","function":"FUN_001022ec","address":"001022ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wfd.ko","function":"wfd_rx_fastpath_write_proc","address":"001022f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wfd.ko","function":"wfd_flctl_file_read_proc","address":"00102420","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wfd.ko","function":"wfd_stats_file_read_proc","address":"00102970","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wfd.ko","function":"wfd_bind","address":"00102ff0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wfd.ko","function":"wfd_bind","address":"00102ff0","route":"/../bcmdrivers/opensource/include/bcm963xx/xrdp_wfd_inline.h","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

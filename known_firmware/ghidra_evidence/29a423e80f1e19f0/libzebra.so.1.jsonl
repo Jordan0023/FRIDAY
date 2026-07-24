@@ -1,0 +1,14 @@
+{"binary":"libzebra.so.1","function":"pid_output","address":"00020344","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"vty_serv_sock","address":"00021f20","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"vty_read_config","address":"000222cc","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"vty_read_config","address":"000222cc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"FUN_00026e60","address":"00026e60","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"install_element","address":"0002a018","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"prefix2str","address":"0002cbd4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"stream_copy","address":"00038af8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"stream_dupcat","address":"00038d24","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"stream_get","address":"00039890","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"stream_put","address":"0003a730","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"stream_put_prefix","address":"0003b850","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"stream_write","address":"0003c0dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libzebra.so.1","function":"stream_discard","address":"0003c508","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

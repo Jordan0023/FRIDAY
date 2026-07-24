@@ -1,0 +1,1 @@
+{"binary":"rdpa.ko","function":"bdmf_pbuf_alloc","address":"001726b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

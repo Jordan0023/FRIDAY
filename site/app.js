@@ -209,9 +209,13 @@ function applyFilters() {
 
 function renderRows() {
   elements.firmwareRows.innerHTML = "";
-  elements.visibleCount.textContent = `${state.filtered.length} shown`;
+  const renderLimit = 300;
+  const visibleRecords = state.filtered.slice(0, renderLimit);
+  elements.visibleCount.textContent = state.filtered.length > renderLimit
+    ? `${visibleRecords.length} of ${state.filtered.length} shown — use search or filters to narrow results`
+    : `${state.filtered.length} shown`;
 
-  state.filtered.forEach((record) => {
+  visibleRecords.forEach((record) => {
     const tr = document.createElement("tr");
     tr.className = record.sha256 === state.selectedSha ? "is-selected" : "";
     tr.tabIndex = 0;

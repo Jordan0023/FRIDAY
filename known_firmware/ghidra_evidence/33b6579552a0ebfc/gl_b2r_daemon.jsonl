@@ -1,0 +1,3 @@
+{"binary":"gl_b2r_daemon","function":"FUN_00402d60","address":"00402d60","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_b2r_daemon","function":"init_ubus_ev","address":"00404d60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_b2r_daemon","function":"hex_format_check","address":"00405494","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

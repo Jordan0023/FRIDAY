@@ -1,0 +1,14 @@
+{"binary":"ubiattach","function":"FUN_00401628","address":"00401628","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_00401628","address":"00401628","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_0040188c","address":"0040188c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_00401ac8","address":"00401ac8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_00401bd4","address":"00401bd4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_00401c6c","address":"00401c6c","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_00401c6c","address":"00401c6c","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_00401c6c","address":"00401c6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_004020a8","address":"004020a8","route":"/misc/ubi_ctrl","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_004020a8","address":"004020a8","route":"/ubi","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_0040250c","address":"0040250c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_00402754","address":"00402754","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_004027e0","address":"004027e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiattach","function":"FUN_004027e0","address":"004027e0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

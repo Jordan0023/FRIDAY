@@ -1,0 +1,3 @@
+{"binary":"iperf3","function":"FUN_0001ecb8","address":"0001ecb8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iperf3","function":"FUN_0001ecb8","address":"0001ecb8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iperf3","function":"FUN_0001ecb8","address":"0001ecb8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

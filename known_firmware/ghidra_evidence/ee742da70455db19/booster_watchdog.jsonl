@@ -1,0 +1,2 @@
+{"binary":"booster_watchdog","function":"FUN_00008f5c","address":"00008f5c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"booster_watchdog","function":"FUN_00008f5c","address":"00008f5c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

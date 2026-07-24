@@ -1,0 +1,12 @@
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_00102468","address":"00102468","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_00102974","address":"00102974","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_00102978","address":"00102978","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_00102e84","address":"00102e84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_00102e88","address":"00102e88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_0010347c","address":"0010347c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_00103480","address":"00103480","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_00103af8","address":"00103af8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_0010444c","address":"0010444c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_00104450","address":"00104450","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_00104aa0","address":"00104aa0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipport.ko","function":"FUN_00105388","address":"00105388","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

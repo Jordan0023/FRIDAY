@@ -1,0 +1,3 @@
+{"binary":"sipcalc","function":"FUN_0040111c","address":"0040111c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sipcalc","function":"FUN_004024ac","address":"004024ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sipcalc","function":"FUN_00403038","address":"00403038","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

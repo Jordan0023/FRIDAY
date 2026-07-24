@@ -1,0 +1,1 @@
+{"binary":"ntfsresize","function":"FUN_00407230","address":"00407230","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

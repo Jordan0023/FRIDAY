@@ -1,0 +1,1 @@
+{"binary":"nf_conntrack_proto_gre.ko","function":"nf_ct_gre_keymap_add","address":"00010284","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

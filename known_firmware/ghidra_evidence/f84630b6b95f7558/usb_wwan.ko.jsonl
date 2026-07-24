@@ -1,0 +1,1 @@
+{"binary":"usb_wwan.ko","function":"usb_wwan_write","address":"000105dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

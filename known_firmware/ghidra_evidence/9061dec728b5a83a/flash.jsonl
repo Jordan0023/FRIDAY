@@ -1,0 +1,4 @@
+{"binary":"flash","function":"FUN_00400d0c","address":"00400d0c","route":"/proc/mtd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"flash","function":"FUN_00400d0c","address":"00400d0c","route":"/proc/mtd","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"flash","function":"FUN_00400d0c","address":"00400d0c","route":"/proc/mtd","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"flash","function":"FUN_00400f6c","address":"00400f6c","route":"/dev/mtd%d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

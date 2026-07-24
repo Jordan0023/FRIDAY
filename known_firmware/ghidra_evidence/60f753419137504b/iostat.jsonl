@@ -1,0 +1,12 @@
+{"binary":"iostat","function":"strcpy","address":"00008eb8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"memcpy","address":"00008f60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"sscanf","address":"0000908c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"fopen","address":"000090bc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"sprintf","address":"00009110","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"FUN_000091dc","address":"000091dc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"FUN_0000b65c","address":"0000b65c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"FUN_0000b65c","address":"0000b65c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"FUN_0000b65c","address":"0000b65c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"FUN_0000be24","address":"0000be24","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"FUN_0000be24","address":"0000be24","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iostat","function":"FUN_0000bf60","address":"0000bf60","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

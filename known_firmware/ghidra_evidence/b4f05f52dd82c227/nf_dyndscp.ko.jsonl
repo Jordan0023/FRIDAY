@@ -1,0 +1,1 @@
+{"binary":"nf_dyndscp.ko","function":"nf_dyndscp_proc_write","address":"00010b7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

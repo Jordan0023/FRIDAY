@@ -1,0 +1,2 @@
+{"binary":"libogg.so.0.6.0","function":"oggpackB_writecopy","address":"00013104","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libogg.so.0.6.0","function":"oggpack_writecopy","address":"00013210","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

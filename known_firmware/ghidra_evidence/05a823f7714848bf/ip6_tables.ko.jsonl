@@ -1,0 +1,3 @@
+{"binary":"ip6_tables.ko","function":"ip6t_register_table","address":"00011404","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip6_tables.ko","function":"FUN_00011e5c","address":"00011e5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip6_tables.ko","function":"FUN_00011e5c","address":"00011e5c","route":"/linux/thread_info.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

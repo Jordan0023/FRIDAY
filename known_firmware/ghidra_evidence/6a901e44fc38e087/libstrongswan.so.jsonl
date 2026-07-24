@@ -1,0 +1,5 @@
+{"binary":"libstrongswan.so.0.0.0","function":"asn1_is_printablestring","address":"00021f14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_00056f74","address":"00056f74","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"settings_parser_parse","address":"0006b02c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"closefrom","address":"0006ff48","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_0007b534","address":"0007b534","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}

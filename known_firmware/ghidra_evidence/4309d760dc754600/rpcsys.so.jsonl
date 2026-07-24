@@ -1,0 +1,5 @@
+{"binary":"rpcsys.so","function":"FUN_00010f40","address":"00010f40","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rpcsys.so","function":"FUN_00010f40","address":"00010f40","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rpcsys.so","function":"FUN_0001124c","address":"0001124c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rpcsys.so","function":"FUN_0001124c","address":"0001124c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rpcsys.so","function":"FUN_0001124c","address":"0001124c","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

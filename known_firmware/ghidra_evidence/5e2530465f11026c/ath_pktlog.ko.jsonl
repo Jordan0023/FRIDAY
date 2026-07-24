@@ -1,0 +1,1 @@
+{"binary":"ath_pktlog.ko","function":"ath_sysctl_pktlog_filter_mac","address":"00010f90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

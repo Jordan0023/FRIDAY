@@ -1,0 +1,2 @@
+{"binary":"sit.ko","function":"FUN_00010d9c","address":"00010d9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sit.ko","function":"FUN_00011728","address":"00011728","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

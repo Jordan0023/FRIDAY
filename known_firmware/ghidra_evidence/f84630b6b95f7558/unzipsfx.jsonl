@@ -1,0 +1,6 @@
+{"binary":"unzipsfx","function":"FUN_00403214","address":"00403214","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00403214","address":"00403214","route":"/'))","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00403214","address":"00403214","route":"/');","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00403214","address":"00403214","route":"/permissions/UID/GID","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00403214","address":"00403214","route":"/perms/etc.","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00403214","address":"00403214","route":"/attribs","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

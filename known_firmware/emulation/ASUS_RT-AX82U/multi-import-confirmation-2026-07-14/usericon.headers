@@ -1,0 +1,11 @@
+HTTP/1.0 200 OK
+Server: httpd/3.0
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+Date: Tue, 14 Jul 2026 18:12:20 GMT
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: 0
+Content-Type: application/octet-stream
+Connection: close
+

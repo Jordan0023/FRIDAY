@@ -1,0 +1,1 @@
+{"binary":"libcommon-auth-samba4.so","function":"wbcAuthUserInfo_to_netr_SamInfo6","address":"000124f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

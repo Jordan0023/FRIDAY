@@ -1,0 +1,13 @@
+{"binary":"pktflow.ko","function":"FUN_0010081c","address":"0010081c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"fc_blog_copy","address":"00100820","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"fc_stack_mcast","address":"00110e90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"fc_learn","address":"00113de0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"fc_receive","address":"00118200","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"fc_receive","address":"00118200","route":"/'","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"fc_receive","address":"00118200","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"fc_transmit","address":"00120f30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"fc_transmit","address":"00120f30","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"FUN_0012867c","address":"0012867c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"FUN_0012867c","address":"0012867c","route":"/usr/bin/chrt","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"flwStatsInit","address":"00128680","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktflow.ko","function":"flwStatsInit","address":"00128680","route":"/usr/bin/chrt","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

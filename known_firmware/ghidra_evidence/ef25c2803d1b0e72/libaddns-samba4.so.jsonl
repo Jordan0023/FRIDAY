@@ -1,0 +1,6 @@
+{"binary":"libaddns-samba4.so","function":"ads_dns_lookup_ns_done","address":"00013810","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libaddns-samba4.so","function":"ads_dns_lookup_a_done","address":"00013a94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libaddns-samba4.so","function":"ads_dns_lookup_aaaa_done","address":"00013d8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libaddns-samba4.so","function":"ads_dns_lookup_srv_done","address":"000140c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libaddns-samba4.so","function":"dns_open_connection","address":"00015ca0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libaddns-samba4.so","function":"dns_rr_srv_fill_done","address":"00017b18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

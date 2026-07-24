@@ -1,0 +1,2 @@
+{"binary":"libjson_script.so","function":"FUN_000112c4","address":"000112c4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson_script.so","function":"FUN_000112c4","address":"000112c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

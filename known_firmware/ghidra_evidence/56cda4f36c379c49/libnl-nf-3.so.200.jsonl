@@ -1,0 +1,4 @@
+{"binary":"libnl-nf-3.so.200.20.0","function":"nfnl_log_msg_set_hwaddr","address":"0001d730","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-nf-3.so.200.20.0","function":"nfnl_log_msg_set_payload","address":"0001d82c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-nf-3.so.200.20.0","function":"nfnl_queue_msg_set_hwaddr","address":"00021c68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-nf-3.so.200.20.0","function":"nfnl_queue_msg_set_payload","address":"00021dcc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

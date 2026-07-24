@@ -1,0 +1,1 @@
+{"binary":"libutil-tdb-samba4.so","function":"tdb_data_talloc_copy","address":"00010e8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

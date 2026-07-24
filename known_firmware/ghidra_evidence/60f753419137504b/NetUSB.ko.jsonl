@@ -1,0 +1,3 @@
+{"binary":"NetUSB.ko","function":"SoftwareBus_processNormalEPMsgOut","address":"0001daa4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"NetUSB.ko","function":"tcpConnector","address":"0001e600","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"NetUSB.ko","function":"reportNewDevice","address":"0001ee00","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

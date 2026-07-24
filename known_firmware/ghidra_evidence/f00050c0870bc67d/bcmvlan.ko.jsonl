@@ -1,0 +1,6 @@
+{"binary":"bcmvlan.ko","function":"FUN_00105d20","address":"00105d20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmvlan.ko","function":"FUN_00107688","address":"00107688","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmvlan.ko","function":"bcmVlan_blogVlanFlows","address":"00107b30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmvlan.ko","function":"bcmVlan_blogVlanFlows","address":"00107b30","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmvlan.ko","function":"bcmVlan_insertTagRule","address":"0010a330","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmvlan.ko","function":"bcmVlan_processFrame","address":"0010cd18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

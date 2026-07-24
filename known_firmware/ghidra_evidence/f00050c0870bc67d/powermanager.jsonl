@@ -1,0 +1,2 @@
+{"binary":"powermanager","function":"FUN_000110ac","address":"000110ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"powermanager","function":"FUN_0001135c","address":"0001135c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

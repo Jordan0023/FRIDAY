@@ -1,0 +1,1961 @@
+{
+  "archive_test_cases": [
+    {
+      "expected": "extractor rejects or confines member",
+      "members": [
+        {
+          "name": "../../tmp/friday-proof/dotdot",
+          "type": "file"
+        }
+      ],
+      "name": "dotdot"
+    },
+    {
+      "expected": "extractor rejects or strips absolute path",
+      "members": [
+        {
+          "name": "/tmp/friday-proof/absolute",
+          "type": "file"
+        }
+      ],
+      "name": "absolute"
+    },
+    {
+      "expected": "no write through symlink outside extraction root",
+      "members": [
+        {
+          "name": "pivot",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        },
+        {
+          "name": "pivot/marker",
+          "type": "file"
+        }
+      ],
+      "name": "symlink_pivot"
+    },
+    {
+      "expected": "hardlink target remains confined",
+      "members": [
+        {
+          "name": "marker",
+          "target": "../../tmp/friday-proof/hardlink",
+          "type": "hardlink"
+        }
+      ],
+      "name": "hardlink"
+    },
+    {
+      "expected": "duplicate type replacement is rejected",
+      "members": [
+        {
+          "name": "same",
+          "type": "file"
+        },
+        {
+          "name": "same",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        }
+      ],
+      "name": "duplicate"
+    },
+    {
+      "expected": "bounded rejection or confined extraction",
+      "members": [
+        {
+          "name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "type": "file"
+        }
+      ],
+      "name": "long_name"
+    },
+    {
+      "expected": "no implicit recursive extraction",
+      "members": [
+        {
+          "name": "nested.tar",
+          "type": "archive"
+        }
+      ],
+      "name": "nested_archive"
+    }
+  ],
+  "auth_test_matrix": [
+    {
+      "expected_boundary": "must not enter protected handler",
+      "headers": {},
+      "name": "no_credentials"
+    },
+    {
+      "expected_boundary": "must match unauthenticated behavior",
+      "headers": {
+        "Authorization": "Bearer FRIDAY_INVALID",
+        "Cookie": "session=FRIDAY_INVALID"
+      },
+      "name": "invalid_session"
+    },
+    {
+      "expected_boundary": "must not cross administrator boundary",
+      "headers": {
+        "Cookie": "session=FRIDAY_LOW_PRIV"
+      },
+      "name": "low_privilege"
+    }
+  ],
+  "candidates": [],
+  "config_writers": [
+    "446CE3: forfirewall",
+    "446CE3: leafp2p_firewall"
+  ],
+  "confirmation_policy": {
+    "L3": "route-specific attacker parameter reaches the sink",
+    "L4": "authentication/validation boundary and trigger are proven",
+    "L5": "reproducible security effect with fault/sink attribution",
+    "authenticated_admin_disposition": "confirmed vulnerability, but not a confirmed zero-day",
+    "confirmed_label_requires": "L5",
+    "confirmed_zero_day_requires": [
+      "L5 reproducible security effect with fault/sink attribution",
+      "novel reproducible pre-authentication exploitation path with no remote administrator session required",
+      "LAN or WAN network reachability without credentials",
+      "impact is remote code execution or a reliable input-specific denial of service",
+      "denial of service reproduces from attacker input and is not generic resource exhaustion",
+      "documented, dated public-prior-art search",
+      "no matching public disclosure or publicly available fix at the recorded discovery time"
+    ],
+    "forbidden_shortcut": "route string and dangerous symbol merely co-located in a binary",
+    "impactful_hunt_scope": "unauthenticated LAN/WAN RCE or reliable input-specific denial of service",
+    "private_duplicate_caveat": "public novelty does not exclude an unknown private or embargoed duplicate",
+    "vendor_contact_required": false
+  },
+  "correlated_flows": [
+    {
+      "confidence": "L3-correlated",
+      "routes": [
+        "class/net",
+        "nvram/caldata.nvram",
+        "sbin/calibration.sh"
+      ],
+      "score": 39,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "_RAX78-V1.0.20.174.zip.extracted/43F75D",
+      "sources": [
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "_RAX78-V1.0.20.174.zip.extracted/3E7226",
+      "sources": [
+        "nvram_get"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "_RAX78-V1.0.20.174.zip.extracted/457685",
+      "sources": [
+        "nvram_get"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "unsafe_memory"
+      ],
+      "source_file": "_RAX78-V1.0.20.174.zip.extracted/46894B",
+      "sources": [
+        "getenv"
+      ]
+    }
+  ],
+  "dynamic_sink_spec": [
+    {
+      "capture": [
+        "pc",
+        "argv",
+        "route",
+        "auth_state"
+      ],
+      "symbols": [
+        "system",
+        "popen",
+        "execve"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "destination",
+        "source",
+        "length",
+        "before",
+        "after"
+      ],
+      "symbols": [
+        "memcpy",
+        "strcpy",
+        "sprintf"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "path",
+        "flags",
+        "sandbox_escape"
+      ],
+      "symbols": [
+        "open",
+        "fopen",
+        "rename",
+        "symlink"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "key",
+        "size",
+        "return_value"
+      ],
+      "symbols": [
+        "shmget",
+        "shmat",
+        "nvram_set",
+        "uci_set"
+      ]
+    }
+  ],
+  "fuzz_seeds": [
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "1/2",
+      "template": "POST /1/2 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "SSH/etc",
+      "template": "POST /SSH/etc HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "menur60"
+      ],
+      "protocol": "http",
+      "route": "about/security",
+      "template": "POST /about/security HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\nmenur60=FRIDAY_0"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "advisor/direct",
+      "template": "POST /advisor/direct HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "bin/curl",
+      "template": "POST /bin/curl HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "class/net",
+      "template": "POST /class/net HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "curlhere.html",
+      "template": "POST /curlhere.html HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "device/entry",
+      "template": "POST /device/entry HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "device/hook",
+      "template": "POST /device/hook HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "docs/ssl-ciphers.html",
+      "template": "POST /docs/ssl-ciphers.html HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "example.com/docs/manpage.html",
+      "template": "POST /example.com/docs/manpage.html HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "menur60"
+      ],
+      "protocol": "http",
+      "route": "files/GDC/RAX78/RAX78-V1.0.20.174.zip",
+      "template": "POST /files/GDC/RAX78/RAX78-V1.0.20.174.zip HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\nmenur60=FRIDAY_0"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "genie-remote/claimDevice",
+      "template": "POST /genie-remote/claimDevice HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lib/e2fsprogs",
+      "template": "POST /lib/e2fsprogs HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.build/gpl/share/locale",
+      "template": "POST /lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.build/gpl/share/locale HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.build/public/lib",
+      "template": "POST /lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.build/public/lib HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/group",
+      "template": "POST /lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/group HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/nl_protos",
+      "template": "POST /lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/nl_protos HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_dsfield",
+      "template": "POST /lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_dsfield HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_protos",
+      "template": "POST /lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_protos HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_realms",
+      "template": "POST /lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_realms HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_scopes",
+      "template": "POST /lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_scopes HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_tables",
+      "template": "POST /lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_tables HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "m/D",
+      "template": "POST /m/D HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/dev",
+      "template": "POST /net/dev HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/dev_mcast",
+      "template": "POST /net/dev_mcast HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/igmp",
+      "template": "POST /net/igmp HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/igmp6",
+      "template": "POST /net/igmp6 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/psched",
+      "template": "POST /net/psched HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/tun",
+      "template": "POST /net/tun HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "ns/net",
+      "template": "POST /ns/net HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "nvram/caldata.nvram",
+      "template": "POST /nvram/caldata.nvram HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "ofdm/11n/11ac",
+      "template": "POST /ofdm/11n/11ac HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "peernetwork/services/LeafNetsWebServiceV2",
+      "template": "POST /peernetwork/services/LeafNetsWebServiceV2 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pki/nssdb",
+      "template": "POST /pki/nssdb HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "presence/presence",
+      "template": "POST /presence/presence HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "rcagent/scripts",
+      "template": "POST /rcagent/scripts HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "registration/register",
+      "template": "POST /registration/register HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "registration/status",
+      "template": "POST /registration/status HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "run/netns",
+      "template": "POST /run/netns HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "rx/scan",
+      "template": "POST /rx/scan HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "sbin/calibration.sh",
+      "template": "POST /sbin/calibration.sh HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "self/ns/net",
+      "template": "POST /self/ns/net HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "sw-apps/dynamic-qos",
+      "template": "POST /sw-apps/dynamic-qos HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "sw-apps/dynamic-qos/trend",
+      "template": "POST /sw-apps/dynamic-qos/trend HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "usr/arm-buildroot-linux-gnueabi/sysroot/lib/ip/link_",
+      "template": "POST /usr/arm-buildroot-linux-gnueabi/sysroot/lib/ip/link_ HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "xagent/certs/ca-bundle-mega.crt",
+      "template": "POST /xagent/certs/ca-bundle-mega.crt HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "multipart/form-data",
+      "mutation_points": [
+        "filename",
+        "part_name",
+        "file_bytes"
+      ],
+      "protocol": "multipart",
+      "route": "xagent/certs/ca-bundle-mega.crt",
+      "template": "--FRIDAY\r\nContent-Disposition: form-data; name=\"file\"; filename=\"seed.bin\"\r\n\r\nFRIDAY_FILE\r\n--FRIDAY--"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "xagent/genie_handler",
+      "template": "POST /xagent/genie_handler HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    }
+  ],
+  "ghidra_evidence": [
+    {
+      "address": "00010610",
+      "auth_markers": "",
+      "binary": "457685",
+      "correlation": "function-local-co-location",
+      "function": "FUN_00010610",
+      "route": "/*",
+      "sink": "memory_operation",
+      "sources": ""
+    },
+    {
+      "address": "00010d10",
+      "auth_markers": "",
+      "binary": "457685",
+      "correlation": "function-local-co-location",
+      "function": "FUN_00010d10",
+      "route": "/*",
+      "sink": "unsafe_copy",
+      "sources": ""
+    }
+  ],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "Only routes with a plausible low-privilege boundary and route-local sink evidence are promoted. Global firmware sink counts never raise route evidence.",
+    "Authentication labels inferred from strings are hypotheses until dispatcher control flow or a live request confirms them.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rejected_candidates": [
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write, unsafe_copy"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "registration/register",
+      "score": 17,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "SSH/etc",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/398567"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L1",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [
+        "menur60"
+      ],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "about/security",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/RAX78-V1.0.20.174_Release_Notes.HTML"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "advisor/direct",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: system"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "bin/curl",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/37DEBC"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "curlhere.html",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/390411"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "device/entry",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "device/hook",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "docs/ssl-ciphers.html",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/398567"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "example.com/docs/manpage.html",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/390411"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L1",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [
+        "menur60"
+      ],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "files/GDC/RAX78/RAX78-V1.0.20.174.zip",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/RAX78-V1.0.20.174_Release_Notes.HTML"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: unsafe_copy"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.build/public/lib",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/38456E"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "m/D",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/490634.xz"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/igmp",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "peernetwork/services/LeafNetsWebServiceV2",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "presence/presence",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "rcagent/scripts",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "registration/status",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "run/netns",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: system"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "sw-apps/dynamic-qos/trend",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/37DEBC"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "usr/arm-buildroot-linux-gnueabi/sysroot/lib/ip/link_",
+      "score": 7,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [
+        "share"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "check daemon config injection and service restart behavior"
+      ],
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.build/gpl/share/locale",
+      "score": 5,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/3DB1CB"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [
+        "remote"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "genie-remote/claimDevice",
+      "score": 4,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "lib/e2fsprogs",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/3DB1CB"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/nl_protos",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_dsfield",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_protos",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_realms",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_scopes",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/rt_tables",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/dev_mcast",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/igmp6",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/psched",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "nvram/caldata.nvram",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/43F75D"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "sbin/calibration.sh",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/43F75D"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "sw-apps/dynamic-qos",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/37DEBC"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "xagent/certs/ca-bundle-mega.crt",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "xagent/genie_handler",
+      "score": 2,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "1/2",
+      "score": -5,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/42BD94"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "class/net",
+      "score": -5,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "net/dev",
+      "score": -5,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "ns/net",
+      "score": -5,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "self/ns/net",
+      "score": -5,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "lucas/dni_project/RAX70-25-0923/targets/947622GW/fs.install/etc/iproute2/group",
+      "score": -10,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/tun",
+      "score": -10,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/47F319"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "rx/scan",
+      "score": -10,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/42BD94"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "ofdm/11n/11ac",
+      "score": -15,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/434C32"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pki/nssdb",
+      "score": -15,
+      "source": "string:_RAX78-V1.0.20.174.zip.extracted/390411"
+    }
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/09cd2acd7b5de824",
+  "runtime_launch_plan": {
+    "interfaces": [
+      {
+        "address": "192.168.250.1/24",
+        "name": "br0"
+      },
+      {
+        "address": "192.168.250.2/32",
+        "name": "probe"
+      }
+    ],
+    "isolation": [
+      "no external network",
+      "no host ports by default",
+      "disposable writable rootfs",
+      "synthetic LAN client"
+    ],
+    "listener_candidates": [],
+    "requirements": [],
+    "startup_candidates": [],
+    "vendor": "generic"
+  },
+  "runtime_profile": {
+    "architectures": [
+      "arm"
+    ],
+    "executable_count": 8,
+    "rootfs_candidates": [],
+    "state_backends": [],
+    "vendor": "generic",
+    "web_stack": []
+  },
+  "service_surface": [
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, unsafe_copy"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, unsafe_copy"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, unsafe_copy"
+      ],
+      "exposure": "lan",
+      "protocol": "udp",
+      "risk": "high",
+      "service": "upnp",
+      "source": "_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, unsafe_copy"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "_RAX78-V1.0.20.174.zip.extracted/446CE3"
+    }
+  ],
+  "sink_summary": {
+    "exec": 0,
+    "file_write": 31,
+    "popen": 0,
+    "system": 1,
+    "unsafe_copy": 19
+  },
+  "validation_recipes": [
+    {
+      "marker": "FRIDAY_CMD_MARKER",
+      "payloads": [
+        ";printf FRIDAY_CMD_MARKER",
+        "$(printf FRIDAY_CMD_MARKER)"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker appears in captured argv/stdout",
+      "vulnerability_class": "command_injection"
+    },
+    {
+      "marker": "FRIDAY_PATH_MARKER",
+      "payloads": [
+        "../../tmp/friday-proof/marker",
+        "..%2f..%2ftmp%2ffriday-proof%2fmarker"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker created inside modeled /tmp only",
+      "vulnerability_class": "path_traversal"
+    },
+    {
+      "marker": "FRIDAY_ARCHIVE_MARKER",
+      "payloads": [
+        "ordered symlink then child file",
+        "hardlink to modeled target"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "write escapes extraction root but remains inside sandbox",
+      "vulnerability_class": "archive_escape"
+    },
+    {
+      "marker": "FRIDAY_CRASH_MARKER",
+      "payloads": [
+        "cyclic bounded input lengths 64..4096"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "reproducible crash with instruction/register capture",
+      "vulnerability_class": "memory_corruption"
+    },
+    {
+      "marker": "FRIDAY_AUTH_MARKER",
+      "payloads": [
+        "missing cookie",
+        "duplicate cookie",
+        "method override"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "protected handler returns distinct success state",
+      "vulnerability_class": "auth_bypass"
+    }
+  ]
+}

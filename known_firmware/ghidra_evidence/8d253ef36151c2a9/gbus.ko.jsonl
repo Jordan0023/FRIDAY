@@ -1,0 +1,2 @@
+{"binary":"gbus.ko","function":"FUN_00101a1c","address":"00101a1c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gbus.ko","function":"gbus_register","address":"00101a20","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"libssl.so.1.1","function":"FUN_00025e44","address":"00025e44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.1","function":"FUN_000276bc","address":"000276bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.1","function":"FUN_0004d9b8","address":"0004d9b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

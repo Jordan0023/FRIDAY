@@ -1,0 +1,1 @@
+{"binary":"cdrom.ko","function":"mmc_ioctl_dvd_read_struct","address":"00101130","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

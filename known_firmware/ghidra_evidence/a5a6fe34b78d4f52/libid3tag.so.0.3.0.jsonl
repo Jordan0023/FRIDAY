@@ -1,0 +1,4 @@
+{"binary":"libid3tag.so.0.3.0","function":"id3_field_setbinarydata","address":"00016a54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libid3tag.so.0.3.0","function":"id3_tag_parse","address":"00019308","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libid3tag.so.0.3.0","function":"id3_tag_render","address":"00019a40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libid3tag.so.0.3.0","function":"id3_file_open","address":"0001a6ec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

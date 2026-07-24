@@ -1,0 +1,7 @@
+{"binary":"qca-net-standby.ko","function":"netstandby_enter_completion_event","address":"00100018","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-net-standby.ko","function":"netstandby_exit_completion_event","address":"00100168","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-net-standby.ko","function":"netstandby_trigger_completion_event","address":"001002ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-net-standby.ko","function":"netstandby_send_completion_response","address":"00100424","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-net-standby.ko","function":"netstandby_nss_telemetry_to_rm","address":"00100728","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-net-standby.ko","function":"netstandby_init_msg_send","address":"00100938","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-net-standby.ko","function":"netstandby_nss_sampling_work_cb","address":"00102030","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

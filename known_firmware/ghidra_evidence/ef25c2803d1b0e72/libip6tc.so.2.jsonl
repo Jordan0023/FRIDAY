@@ -1,0 +1,8 @@
+{"binary":"libip6tc.so.2.0.0","function":"ip6tc_init","address":"00011fe8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip6tc.so.2.0.0","function":"ip6tc_init","address":"00011fe8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip6tc.so.2.0.0","function":"ip6tc_insert_entry","address":"00012c9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip6tc.so.2.0.0","function":"ip6tc_append_entry","address":"00012e14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip6tc.so.2.0.0","function":"FUN_000132ec","address":"000132ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip6tc.so.2.0.0","function":"ip6tc_commit","address":"000138f8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip6tc.so.2.0.0","function":"ip6tc_commit","address":"000138f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip6tc.so.2.0.0","function":"ip6tc_replace_entry","address":"00013ee8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"inetcat","function":"FUN_00402354","address":"00402354","route":"/matching","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"inetcat","function":"FUN_0040d3b8","address":"0040d3b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"inetcat","function":"FUN_0040f024","address":"0040f024","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

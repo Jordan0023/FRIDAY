@@ -1,0 +1,7 @@
+{"binary":"exfatck","function":"FUN_000136b8","address":"000136b8","route":"/%zu","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfatck","function":"FUN_000313d4","address":"000313d4","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfatck","function":"FUN_000313d4","address":"000313d4","route":"/%lld)","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfatck","function":"FUN_0003211c","address":"0003211c","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfatck","function":"FUN_0003e68c","address":"0003e68c","route":"/O","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfatck","function":"FUN_00056aa8","address":"00056aa8","route":"/%zu","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfatck","function":"FUN_00065d78","address":"00065d78","route":"/%zu","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,6 @@
+{"binary":"quec_upload","function":"main","address":"00010f2c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"quec_upload","function":"main","address":"00010f2c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"quec_upload","function":"main","address":"00010f2c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"quec_upload","function":"pOpenPort","address":"000113c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"quec_upload","function":"pSendCommand","address":"000114c8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"quec_upload","function":"pSendCommand","address":"000114c8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

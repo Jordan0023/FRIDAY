@@ -1,0 +1,2 @@
+{"binary":"scan.so","function":"FUN_00010fec","address":"00010fec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"scan.so","function":"FUN_00010fec","address":"00010fec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"pktlogconf","function":"FUN_00011ac8","address":"00011ac8","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktlogconf","function":"FUN_00011ac8","address":"00011ac8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"sdparm","function":"FUN_00010cb0","address":"00010cb0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sdparm","function":"FUN_00010cb0","address":"00010cb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

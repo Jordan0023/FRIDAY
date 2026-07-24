@@ -1,0 +1,10 @@
+{"binary":"libpcap.so.1.9.1","function":"FUN_0002002c","address":"0002002c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.9.1","function":"pcap_setdirection","address":"00023504","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.9.1","function":"FUN_00025c10","address":"00025c10","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.9.1","function":"FUN_00026740","address":"00026740","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.9.1","function":"FUN_00026740","address":"00026740","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.9.1","function":"FUN_00026740","address":"00026740","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.9.1","function":"FUN_00026ba0","address":"00026ba0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.9.1","function":"FUN_00026ba0","address":"00026ba0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.9.1","function":"FUN_000285c4","address":"000285c4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.9.1","function":"FUN_00029848","address":"00029848","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

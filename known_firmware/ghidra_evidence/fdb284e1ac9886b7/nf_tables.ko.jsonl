@@ -1,0 +1,6 @@
+{"binary":"nf_tables.ko","function":"FUN_00101730","address":"00101730","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_0010bb7c","address":"0010bb7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_0010bb80","address":"0010bb80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"nft_set_elem_init","address":"0010cf44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"nft_payload_eval","address":"00111c94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_00114e50","address":"00114e50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

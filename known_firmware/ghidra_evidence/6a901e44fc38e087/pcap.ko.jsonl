@@ -1,0 +1,1 @@
+{"binary":"pcap.ko","function":"pcap_write_str","address":"00010364","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

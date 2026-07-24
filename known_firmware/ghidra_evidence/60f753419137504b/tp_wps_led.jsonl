@@ -1,0 +1,6 @@
+{"binary":"tp_wps_led","function":"popen","address":"00008598","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tp_wps_led","function":"system","address":"000085d4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tp_wps_led","function":"fopen","address":"00008640","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tp_wps_led","function":"FUN_0000867c","address":"0000867c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tp_wps_led","function":"FUN_0000867c","address":"0000867c","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tp_wps_led","function":"FUN_0000867c","address":"0000867c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

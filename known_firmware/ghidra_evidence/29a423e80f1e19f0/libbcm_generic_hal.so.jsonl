@@ -1,0 +1,2 @@
+{"binary":"libbcm_generic_hal.so","function":"bcm_generic_databaseOp","address":"00011f28","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_generic_hal.so","function":"bcm_generic_databaseOp","address":"00011f28","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

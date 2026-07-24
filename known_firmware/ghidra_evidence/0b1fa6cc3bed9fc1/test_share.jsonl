@@ -1,0 +1,1 @@
+{"binary":"test_share","function":"FUN_004010e4","address":"004010e4","route":"/tmp/usb.log","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"libarcher.so","function":"archer_cmd_send","address":"00010e80","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

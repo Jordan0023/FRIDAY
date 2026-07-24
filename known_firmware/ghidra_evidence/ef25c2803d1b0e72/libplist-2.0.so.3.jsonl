@@ -1,0 +1,7 @@
+{"binary":"libplist-2.0.so.3.3.0","function":"FUN_000129d0","address":"000129d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libplist-2.0.so.3.3.0","function":"FUN_00012ab0","address":"00012ab0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libplist-2.0.so.3.3.0","function":"FUN_000130c0","address":"000130c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libplist-2.0.so.3.3.0","function":"FUN_0001326c","address":"0001326c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libplist-2.0.so.3.3.0","function":"FUN_00015784","address":"00015784","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libplist-2.0.so.3.3.0","function":"FUN_00016414","address":"00016414","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libplist-2.0.so.3.3.0","function":"plist_new_data","address":"00017288","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"mt7615-common.ko","function":"FUN_000144b0","address":"000144b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7615-common.ko","function":"__mt7615_mac_wtbl_set_key","address":"0001b4a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7615-common.ko","function":"mt7615_coredump_work","address":"0001c740","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

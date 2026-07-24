@@ -1,0 +1,6 @@
+{"binary":"sgmac.ko","function":"sfax8_gmac_debug_read","address":"0001055c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sgmac.ko","function":"gmac_delay_auto_calibration","address":"00014b30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sgmac.ko","function":"gmac_delay_auto_calibration","address":"00014b30","route":"/include/linux/dma-mapping.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sgmac.ko","function":"sfax8_gmac_debug_write","address":"00015258","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sgmac.ko","function":"sfax8_gmac_debug_write","address":"00015258","route":"/sys/kernel/debug/gmac_debug","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sgmac.ko","function":"sfax8_gmac_debug_write","address":"00015258","route":"/set","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

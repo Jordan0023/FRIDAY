@@ -1,0 +1,6 @@
+{"binary":"wireguard.ko","function":"FUN_0010045c","address":"0010045c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wireguard.ko","function":"FUN_00100460","address":"00100460","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wireguard.ko","function":"wg_socket_send_buffer_as_reply_to_skb","address":"00106690","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wireguard.ko","function":"FUN_00108898","address":"00108898","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wireguard.ko","function":"FUN_0010907c","address":"0010907c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wireguard.ko","function":"FUN_00109080","address":"00109080","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

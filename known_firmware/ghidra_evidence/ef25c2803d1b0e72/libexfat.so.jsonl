@@ -1,0 +1,3 @@
+{"binary":"libexfat.so","function":"exfat_rename","address":"000157e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexfat.so","function":"FUN_00015ba0","address":"00015ba0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexfat.so","function":"exfat_set_label","address":"00015f90","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

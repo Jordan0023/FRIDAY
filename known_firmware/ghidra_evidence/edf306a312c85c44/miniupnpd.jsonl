@@ -1,0 +1,10 @@
+{"binary":"miniupnpd","function":"FUN_001067c0","address":"001067c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"miniupnpd","function":"FUN_001067c0","address":"001067c0","route":"/etc/miniupnpd.conf","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"miniupnpd","function":"FUN_001067c0","address":"001067c0","route":"/proc/uptime","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"miniupnpd","function":"FUN_001067c0","address":"001067c0","route":"/%s","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"miniupnpd","function":"FUN_001067c0","address":"001067c0","route":"/PCP","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"miniupnpd","function":"FUN_001067c0","address":"001067c0","route":"/PCP/PMP","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"miniupnpd","function":"FUN_001067c0","address":"001067c0","route":"/PCP.","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"miniupnpd","function":"FUN_001067c0","address":"001067c0","route":"/mask","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"miniupnpd","function":"FUN_001067c0","address":"001067c0","route":"/24","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"miniupnpd","function":"FUN_001067c0","address":"001067c0","route":"/0","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

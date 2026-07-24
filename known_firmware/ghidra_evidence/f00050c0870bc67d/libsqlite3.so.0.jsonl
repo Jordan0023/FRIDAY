@@ -1,0 +1,6 @@
+{"binary":"libsqlite3.so.0.8.6","function":"sqlite3_test_control","address":"0002c468","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00055fec","address":"00055fec","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00055fec","address":"00055fec","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00055fec","address":"00055fec","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00078544","address":"00078544","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_0007c270","address":"0007c270","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

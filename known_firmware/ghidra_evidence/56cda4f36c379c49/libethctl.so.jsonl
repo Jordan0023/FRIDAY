@@ -1,0 +1,9 @@
+{"binary":"libethctl.so","function":"bcm_macsec_vport_egress_stat_get","address":"00012058","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"bcm_macsec_vport_ingress_stat_get","address":"00012164","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"bcm_macsec_sa_ingress_stat_get","address":"000125b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"getRandomNumber","address":"000126bc","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"getRandomNumber","address":"000126bc","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"bcm_macsec_sa_add","address":"0001298c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"bcm_macsec_sa_chain","address":"00012abc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"ethernet_cable_diagnostics","address":"00012bec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"sha256_update","address":"00013044","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,13 @@
+{"binary":"libgse-samba4.so","function":"create_local_private_krb5_conf_for_domain","address":"0001ad58","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"ads_cldap_netlogon_5","address":"0001cf28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"parse_packet","address":"00020dc8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"nbt_getdc_send","address":"00022974","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"FUN_00024b8c","address":"00024b8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"node_status_query_send","address":"00025ef0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"name_resolve_bcast_send","address":"00027834","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"internal_resolve_name","address":"00028614","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"resolve_name","address":"00029408","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"FUN_00029698","address":"00029698","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"resolve_name_list","address":"0002a118","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"find_master_ip","address":"0002a3bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgse-samba4.so","function":"get_pdc_ip","address":"0002a5c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

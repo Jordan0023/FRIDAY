@@ -1,0 +1,12 @@
+{"binary":"libfcctl.so","function":"fcCtlStatus","address":"00010830","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlEnable","address":"00010840","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlDisable","address":"00010850","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlFlush","address":"00010860","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlResetStats","address":"00010870","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlConfig","address":"00010880","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlCreateFlwStatsQuery","address":"00010944","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlGetFlwStatsQuery","address":"00010954","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlDeleteFlwStatsQuery","address":"00010964","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlClearFlwStatsQuery","address":"00010974","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlGetQueryEntryNumber","address":"00010984","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlDumpFlwStats","address":"00010994","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

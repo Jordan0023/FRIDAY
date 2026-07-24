@@ -1,0 +1,1 @@
+{"binary":"libawsiot_ipc.so","function":"cm_rcvIpcHandler","address":"00010d60","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

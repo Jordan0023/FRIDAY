@@ -1,0 +1,4 @@
+{"binary":"libuuid.so.1.2","function":"FUN_00010fac","address":"00010fac","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuuid.so.1.2","function":"uuid__generate_time","address":"000113a8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuuid.so.1.2","function":"uuid_unparse_upper","address":"00011da0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuuid.so.1.2","function":"uuid_unparse","address":"00011db0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

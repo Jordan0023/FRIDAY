@@ -1,0 +1,6 @@
+{"binary":"libpthread.so.0","function":"pthread_create","address":"00016790","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpthread.so.0","function":"pthread_getattr_np","address":"00018160","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpthread.so.0","function":"sem_open","address":"000201a4","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpthread.so.0","function":"sem_open","address":"000201a4","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpthread.so.0","function":"sem_unlink","address":"00020730","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpthread.so.0","function":"raise","address":"00022f08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

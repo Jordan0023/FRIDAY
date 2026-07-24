@@ -1,0 +1,15 @@
+{"binary":"libdillib.so","function":"reset_signature_devicedetail","address":"000121a0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"get_device_info_handler","address":"00012a4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"create_mapping_table","address":"000144ac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"dil_remove_macaddress_entry_handler","address":"00015620","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"check_update_mapping_table","address":"00015a2c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"dil_update_table_field_handler","address":"00016670","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"dil_update_table_field_handler","address":"00016670","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"dil_update_table_field","address":"000176cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"update_device_signature_handler","address":"000177e4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"update_device_signature","address":"00017ff4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"update_device_detail","address":"00018178","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"update_connected_device_info","address":"00018278","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"update_devicedisplaytype_handler","address":"00018c50","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"update_device_displaytype","address":"00018fec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdillib.so","function":"get_device_info_mac_handler","address":"000199b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

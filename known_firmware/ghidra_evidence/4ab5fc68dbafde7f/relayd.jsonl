@@ -1,0 +1,4 @@
+{"binary":"relayd","function":"main","address":"00400ff0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"relayd","function":"main","address":"00400ff0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"relayd","function":"relayd_refresh_host","address":"00401bbc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"relayd","function":"FUN_004025a4","address":"004025a4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

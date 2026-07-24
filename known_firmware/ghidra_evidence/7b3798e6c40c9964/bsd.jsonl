@@ -1,0 +1,4 @@
+{"binary":"bsd","function":"FUN_000097b0","address":"000097b0","route":"/*","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bsd","function":"FUN_000097b0","address":"000097b0","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bsd","function":"FUN_000097b0","address":"000097b0","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bsd","function":"FUN_000097b0","address":"000097b0","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

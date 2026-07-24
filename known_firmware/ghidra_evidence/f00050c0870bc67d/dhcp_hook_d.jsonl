@@ -1,0 +1,2 @@
+{"binary":"dhcp_hook_d","function":"FUN_00010cac","address":"00010cac","route":"/*","sink":"system","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp_hook_d","function":"FUN_00011558","address":"00011558","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

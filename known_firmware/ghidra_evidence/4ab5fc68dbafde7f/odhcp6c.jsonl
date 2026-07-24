@@ -1,0 +1,14 @@
+{"binary":"odhcp6c","function":"FUN_00401cc0","address":"00401cc0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_00402414","address":"00402414","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_00402414","address":"00402414","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_0040267c","address":"0040267c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_00402e68","address":"00402e68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_0040366c","address":"0040366c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_004039dc","address":"004039dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_0040428c","address":"0040428c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_00404d84","address":"00404d84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_00405064","address":"00405064","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_00405968","address":"00405968","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_00405c88","address":"00405c88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_00405c88","address":"00405c88","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcp6c","function":"FUN_00405f2c","address":"00405f2c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

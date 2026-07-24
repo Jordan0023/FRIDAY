@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-07-22T21:30:46+00:00",
-  "manifest_updated": "2026-07-22T00:46:48+00:00",
+  "generated_at": "2026-07-23T19:02:26+00:00",
+  "manifest_updated": "2026-07-23T19:02:07+00:00",
   "summary": {
-    "products": 826,
-    "firmware": 1937,
-    "findings": 4380,
+    "products": 825,
+    "firmware": 1939,
+    "findings": 4397,
     "extracted": 78,
-    "total_size_mb": 78226.7
+    "total_size_mb": 78425.2
   },
   "finding_counts": {
-    "Command execution helpers": 1090,
-    "HTTP CGI/admin attack surface": 1445,
-    "Hard-coded credentials or secrets": 374,
+    "Command execution helpers": 1097,
+    "HTTP CGI/admin attack surface": 1442,
+    "Hard-coded credentials or secrets": 376,
     "Outdated crypto/library markers": 28,
-    "Potential memory-unsafe C functions": 842,
+    "Potential memory-unsafe C functions": 846,
     "Private keys or certificates bundled in firmware": 51,
-    "Remote shell services present": 550
+    "Remote shell services present": 557
   },
   "severity_counts": {
-    "High": 1118,
-    "Medium": 523,
+    "High": 1125,
+    "Medium": 518,
     "No findings": 296
   },
   "firmware": [
@@ -3961,12 +3961,12 @@
         {
           "title": "Command execution helpers",
           "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
-          "evidence": "System, popen, system"
+          "evidence": "System, system"
         },
         {
           "title": "Potential memory-unsafe C functions",
           "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
-          "evidence": "gets, sprintf, strcat, strcpy"
+          "evidence": "gets, sprintf, strcpy"
         }
       ],
       "extraction_notes": [
@@ -4089,7 +4089,7 @@
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/a6a411159b23bb30 exited 0: WARNING: Extractor.execute failed to run external extractor 'ubireader_extract_files -o 'ubifs-root' '%e'': [Errno 2] No such file or directory: 'ubireader_extract_files', 'ubireader_extract_files -o 'ubifs-root' '%e'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/a6a411159b23bb30 exited 0"
       ]
     },
     {
@@ -30030,6 +30030,54 @@
     },
     {
       "vendor": "GL.iNet",
+      "product": "GL.iNet GL-MT5000 Brume 3",
+      "title": "GL.iNet GL-MT5000 Brume 3 firmware 4.9.0",
+      "filename": "mt5000-4.9.0_release1-1053-0708-1783477013.bin",
+      "version": "4.9.0",
+      "release_date": "2026-07-23 09:36:52",
+      "uploaded_at": "2026-07-23 09:36:52",
+      "uploaded_at_source": "Netgear upload",
+      "first_seen": "2026-07-23T18:20:33+00:00",
+      "last_seen": "2026-07-23T18:20:33+00:00",
+      "size": 70579020,
+      "size_mb": 67.3,
+      "sha256": "e69e440c2715122793e2a4229d1acab3fbcfd193532e9167cd2f4d57bfbfe2d9",
+      "url": "https://fw.gl-inet.com/firmware/mt5000/release/mt5000-4.9.0_release1-1053-0708-1783477013.bin",
+      "path": "firmware/GL.iNet_GL-MT5000_Brume_3/mt5000-4.9.0_release1-1053-0708-1783477013.bin",
+      "report_path": "reports/GL.iNet_GL-MT5000_Brume_3/mt5000-4.9.0_release1-1053-0708-1783477013.bin.md",
+      "severity": {
+        "label": "High",
+        "rank": 3,
+        "reason": "Hard-coded credentials or secrets"
+      },
+      "findings": [
+        {
+          "title": "Hard-coded credentials or secrets",
+          "description": "Hard-coded secrets should be reviewed for default credentials, service tokens, or recoverable admin passwords.",
+          "evidence": "password"
+        },
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BOA, Boa"
+        },
+        {
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "System, eval, popen, system"
+        },
+        {
+          "title": "Potential memory-unsafe C functions",
+          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
+          "evidence": "sprintf, strcat, strcpy"
+        }
+      ],
+      "extraction_notes": [
+        "binwalk -eM --directory known_firmware/extracted/e69e440c27151227 exited 0: WARNING: Symlink points outside of the extraction directory: /home/jordan/FRIDAY/known_firmware/extracted/e69e440c27151227/_mt5000-4.9.0_release1-1053-0708-1783477013.bin.extracted/sysupgrade-glinet_gl-mt5000/_root.extracted/squashfs-root/usr/bin/ssh -> /usr/sbin/dropbear; changing link target to /dev/null for security purposes."
+      ]
+    },
+    {
+      "vendor": "GL.iNet",
       "product": "GL.iNet GL-MT6000 Flint 2",
       "title": "GL.iNet GL-MT6000 Flint 2 firmware 4.8.2",
       "filename": "mt6000-4.8.2-0901-1756730628.bin",
@@ -33465,7 +33513,7 @@
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/9671b723708e5dc0 exited 0: WARNING: Extractor.execute failed to run external extractor 'ubireader_extract_files -o 'ubifs-root' '%e'': [Errno 2] No such file or directory: 'ubireader_extract_files', 'ubireader_extract_files -o 'ubifs-root' '%e'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/9671b723708e5dc0 exited 0"
       ]
     },
     {
@@ -34020,112 +34068,6 @@
       ],
       "extraction_notes": [
         "binwalk -eM --directory known_firmware/extracted/ba6f76f32686e86c stopped: extraction exceeded 768 MB"
-      ]
-    },
-    {
-      "vendor": "Netgear",
-      "product": "JWNR2010V3",
-      "title": "Download",
-      "filename": "JWNR2000v3_JWNR2010v3_JWNR2000Tv3_V1.0.0.16.zip",
-      "version": "0.0.16",
-      "release_date": "Not listed",
-      "uploaded_at": "2024-12-27T19:00:25+00:00",
-      "uploaded_at_source": "Netgear upload",
-      "first_seen": "2026-06-26T17:43:59+00:00",
-      "last_seen": "2026-06-26T17:43:59+00:00",
-      "size": 3618007,
-      "size_mb": 3.5,
-      "sha256": "41ec67b825e30550c97178c311f881810b55b1dccd984b7a79882c0da9c9c681",
-      "url": "https://www.downloads.netgear.com/files/GDC/JWNR2010V3/JWNR2000v3_JWNR2010v3_JWNR2000Tv3_V1.0.0.16.zip",
-      "path": "firmware/JWNR2010V3/JWNR2000v3_JWNR2010v3_JWNR2000Tv3_V1.0.0.16.zip",
-      "report_path": "reports/JWNR2010V3/JWNR2000v3_JWNR2010v3_JWNR2000Tv3_V1.0.0.16.zip.md",
-      "severity": {
-        "label": "High",
-        "rank": 3,
-        "reason": "Hard-coded credentials or secrets"
-      },
-      "findings": [
-        {
-          "title": "Hard-coded credentials or secrets",
-          "description": "Hard-coded secrets should be reviewed for default credentials, service tokens, or recoverable admin passwords.",
-          "evidence": "Password, password"
-        },
-        {
-          "title": "Remote shell services present",
-          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
-          "evidence": "inetd, telnetd"
-        },
-        {
-          "title": "HTTP CGI/admin attack surface",
-          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "cgi-bin"
-        },
-        {
-          "title": "Command execution helpers",
-          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
-          "evidence": "SYSTEM, System, popen, system"
-        },
-        {
-          "title": "Potential memory-unsafe C functions",
-          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
-          "evidence": "sprintf, strcat, strcpy"
-        }
-      ],
-      "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/41ec67b825e30550 exited 0: WARNING: Symlink points outside of the extraction directory: /workspaces/FRIDAY/known_firmware/extracted/41ec67b825e30550/_JWNR2000v3_JWNR2010v3_JWNR2000Tv3_V1.0.0.16.zip.extracted/_jwnr2000v3_jwnr2010_jwnr2000tv3-v1.0.0.16.img.extracted/squashfs-root/etc/ppp/chap-secrets -> /var/ppp/chap-secrets; changing link target to /dev/null for security purposes."
-      ]
-    },
-    {
-      "vendor": "Netgear",
-      "product": "JWNR2010V3",
-      "title": "Download",
-      "filename": "JWNR2000v3_JWNR2010v3_JWNR2000Tv3_V1.0.0.18.zip",
-      "version": "0.0.18",
-      "release_date": "Not listed",
-      "uploaded_at": "2024-12-27T19:00:25+00:00",
-      "uploaded_at_source": "Netgear upload",
-      "first_seen": "2026-06-26T17:43:56+00:00",
-      "last_seen": "2026-06-26T17:43:56+00:00",
-      "size": 3620230,
-      "size_mb": 3.5,
-      "sha256": "0c5f2b0b319c28cd70792ace5103065a22c68a5cafb220faec2cd3e7cebcf657",
-      "url": "https://www.downloads.netgear.com/files/GDC/JWNR2010V3/JWNR2000v3_JWNR2010v3_JWNR2000Tv3_V1.0.0.18.zip",
-      "path": "firmware/JWNR2010V3/JWNR2000v3_JWNR2010v3_JWNR2000Tv3_V1.0.0.18.zip",
-      "report_path": "reports/JWNR2010V3/JWNR2000v3_JWNR2010v3_JWNR2000Tv3_V1.0.0.18.zip.md",
-      "severity": {
-        "label": "High",
-        "rank": 3,
-        "reason": "Hard-coded credentials or secrets"
-      },
-      "findings": [
-        {
-          "title": "Hard-coded credentials or secrets",
-          "description": "Hard-coded secrets should be reviewed for default credentials, service tokens, or recoverable admin passwords.",
-          "evidence": "Password, password"
-        },
-        {
-          "title": "Remote shell services present",
-          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
-          "evidence": "dropbear, inetd, telnetd"
-        },
-        {
-          "title": "HTTP CGI/admin attack surface",
-          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "cgi-bin, mini_httpd"
-        },
-        {
-          "title": "Command execution helpers",
-          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
-          "evidence": "SYSTEM, System, eval, popen, system"
-        },
-        {
-          "title": "Potential memory-unsafe C functions",
-          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
-          "evidence": "sprintf, strcat, strcpy"
-        }
-      ],
-      "extraction_notes": [
-        "Using existing extraction directory: known_firmware/extracted/0c5f2b0b319c28cd"
       ]
     },
     {
@@ -61002,19 +60944,29 @@
       "path": "firmware/RAX30/RAX30-V1.0.14.108.zip",
       "report_path": "reports/RAX30/RAX30-V1.0.14.108.zip.md",
       "severity": {
-        "label": "Medium",
-        "rank": 2,
-        "reason": "HTTP CGI/admin attack surface"
+        "label": "High",
+        "rank": 3,
+        "reason": "Command execution helpers"
       },
       "findings": [
         {
           "title": "HTTP CGI/admin attack surface",
           "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "BOA, bOA, boA, boa"
+          "evidence": "boA"
+        },
+        {
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "System, popen, system"
+        },
+        {
+          "title": "Potential memory-unsafe C functions",
+          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
+          "evidence": "gets, sprintf, strcat, strcpy"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/6e7f95ab08e7b702 exited 0: WARNING: Extractor.execute failed to run external extractor 'lzop -f -d '%e'': [Errno 2] No such file or directory: 'lzop', 'lzop -f -d '%e'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/6e7f95ab08e7b702 stopped: extraction exceeded 768 MB"
       ]
     },
     {
@@ -61492,19 +61444,29 @@
       "path": "firmware/RAX36/RAX36-V1.0.7.54.zip",
       "report_path": "reports/RAX36/RAX36-V1.0.7.54.zip.md",
       "severity": {
-        "label": "Medium",
-        "rank": 2,
-        "reason": "HTTP CGI/admin attack surface"
+        "label": "High",
+        "rank": 3,
+        "reason": "Command execution helpers"
       },
       "findings": [
         {
-          "title": "HTTP CGI/admin attack surface",
-          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "bOa"
+          "title": "Remote shell services present",
+          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
+          "evidence": "telnetd"
+        },
+        {
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "System, system"
+        },
+        {
+          "title": "Potential memory-unsafe C functions",
+          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
+          "evidence": "gets, sprintf, strcat, strcpy"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/7dfad4f35401482f exited 0: WARNING: Extractor.execute failed to run external extractor 'yaffshiv --auto --brute-force -f '%e' -d 'yaffs-root'': [Errno 2] No such file or directory: 'yaffshiv', 'yaffshiv --auto --brute-force -f '%e' -d 'yaffs-root'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/7dfad4f35401482f stopped: extraction exceeded 768 MB"
       ]
     },
     {
@@ -61718,23 +61680,23 @@
       },
       "findings": [
         {
-          "title": "HTTP CGI/admin attack surface",
-          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "bOa"
+          "title": "Remote shell services present",
+          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
+          "evidence": "telnetd"
         },
         {
           "title": "Command execution helpers",
           "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
-          "evidence": "popen, system"
+          "evidence": "System, system"
         },
         {
           "title": "Potential memory-unsafe C functions",
           "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
-          "evidence": "sprintf, strcpy"
+          "evidence": "gets, sprintf, strcat, strcpy"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/502a73b7a1f58628 exited 0: WARNING: Extractor.execute failed to run external extractor 'yaffshiv --auto --brute-force -f '%e' -d 'yaffs-root'': [Errno 2] No such file or directory: 'yaffshiv', 'yaffshiv --auto --brute-force -f '%e' -d 'yaffs-root'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/502a73b7a1f58628 stopped: extraction exceeded 768 MB"
       ]
     },
     {
@@ -61844,22 +61806,22 @@
       "severity": {
         "label": "Medium",
         "rank": 2,
-        "reason": "HTTP CGI/admin attack surface"
+        "reason": "Remote shell services present"
       },
       "findings": [
         {
-          "title": "HTTP CGI/admin attack surface",
-          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "BOa, BoA, Boa, bOa"
+          "title": "Remote shell services present",
+          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
+          "evidence": "telnetd"
         },
         {
-          "title": "Potential memory-unsafe C functions",
-          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
-          "evidence": "strcpy"
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BOA, boA"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/c52efe4a322909d7 exited 0: WARNING: Extractor.execute failed to run external extractor 'tsk_recover -i raw -f ext -a -v '%e' 'ext-root'': [Errno 2] No such file or directory: 'tsk_recover', 'tsk_recover -i raw -f ext -a -v '%e' 'ext-root'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/c52efe4a322909d7 stopped: extraction exceeded 768 MB"
       ]
     },
     {
@@ -61967,19 +61929,34 @@
       "path": "firmware/RAX42V2/RAX42v2-V1.1.6.38.zip",
       "report_path": "reports/RAX42V2/RAX42v2-V1.1.6.38.zip.md",
       "severity": {
-        "label": "Medium",
-        "rank": 2,
-        "reason": "HTTP CGI/admin attack surface"
+        "label": "High",
+        "rank": 3,
+        "reason": "Hard-coded credentials or secrets"
       },
       "findings": [
         {
-          "title": "HTTP CGI/admin attack surface",
-          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "BOa, BoA, Boa, bOa"
+          "title": "Hard-coded credentials or secrets",
+          "description": "Hard-coded secrets should be reviewed for default credentials, service tokens, or recoverable admin passwords.",
+          "evidence": "password"
+        },
+        {
+          "title": "Remote shell services present",
+          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
+          "evidence": "telnetd"
+        },
+        {
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "System, system"
+        },
+        {
+          "title": "Potential memory-unsafe C functions",
+          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
+          "evidence": "sprintf, strcpy"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/e6f2fe38e6ad0fa0 exited 0: WARNING: Extractor.execute failed to run external extractor 'tsk_recover -i raw -f ext -a -v '%e' 'ext-root'': [Errno 2] No such file or directory: 'tsk_recover', 'tsk_recover -i raw -f ext -a -v '%e' 'ext-root'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/e6f2fe38e6ad0fa0 stopped: extraction exceeded 768 MB"
       ]
     },
     {
@@ -62114,19 +62091,34 @@
       "path": "firmware/RAX49S/RAX49-V1.1.6.38.zip",
       "report_path": "reports/RAX49S/RAX49-V1.1.6.38.zip.md",
       "severity": {
-        "label": "Medium",
-        "rank": 2,
-        "reason": "HTTP CGI/admin attack surface"
+        "label": "High",
+        "rank": 3,
+        "reason": "Hard-coded credentials or secrets"
       },
       "findings": [
         {
-          "title": "HTTP CGI/admin attack surface",
-          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "BOa, BoA, Boa, bOa"
+          "title": "Hard-coded credentials or secrets",
+          "description": "Hard-coded secrets should be reviewed for default credentials, service tokens, or recoverable admin passwords.",
+          "evidence": "password"
+        },
+        {
+          "title": "Remote shell services present",
+          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
+          "evidence": "telnetd"
+        },
+        {
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "System, system"
+        },
+        {
+          "title": "Potential memory-unsafe C functions",
+          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
+          "evidence": "sprintf, strcpy"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/fe7d6c417177572b exited 0: WARNING: Extractor.execute failed to run external extractor 'tsk_recover -i raw -f ext -a -v '%e' 'ext-root'': [Errno 2] No such file or directory: 'tsk_recover', 'tsk_recover -i raw -f ext -a -v '%e' 'ext-root'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/fe7d6c417177572b stopped: extraction exceeded 768 MB"
       ]
     },
     {
@@ -62282,19 +62274,34 @@
       "path": "firmware/RAX54S/RAX54S-V1.0.17.144.zip",
       "report_path": "reports/RAX54S/RAX54S-V1.0.17.144.zip.md",
       "severity": {
-        "label": "Medium",
-        "rank": 2,
-        "reason": "HTTP CGI/admin attack surface"
+        "label": "High",
+        "rank": 3,
+        "reason": "Hard-coded credentials or secrets"
       },
       "findings": [
         {
-          "title": "HTTP CGI/admin attack surface",
-          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "BOa, BoA, Boa, bOa, boa"
+          "title": "Hard-coded credentials or secrets",
+          "description": "Hard-coded secrets should be reviewed for default credentials, service tokens, or recoverable admin passwords.",
+          "evidence": "password"
+        },
+        {
+          "title": "Remote shell services present",
+          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
+          "evidence": "telnetd"
+        },
+        {
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "System, system"
+        },
+        {
+          "title": "Potential memory-unsafe C functions",
+          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
+          "evidence": "sprintf, strcat, strcpy"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/12d0be80c7dfee7f exited 0: WARNING: Extractor.execute failed to run external extractor 'tsk_recover -i raw -f ext -a -v '%e' 'ext-root'': [Errno 2] No such file or directory: 'tsk_recover', 'tsk_recover -i raw -f ext -a -v '%e' 'ext-root'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/12d0be80c7dfee7f stopped: extraction exceeded 768 MB"
       ]
     },
     {
@@ -62464,21 +62471,31 @@
         {
           "title": "Hard-coded credentials or secrets",
           "description": "Hard-coded secrets should be reviewed for default credentials, service tokens, or recoverable admin passwords.",
-          "evidence": "Password"
+          "evidence": "password"
+        },
+        {
+          "title": "Remote shell services present",
+          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
+          "evidence": "telnetd"
         },
         {
           "title": "HTTP CGI/admin attack surface",
           "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
-          "evidence": "BOa, BoA, Boa, bOa"
+          "evidence": "BOA"
         },
         {
           "title": "Command execution helpers",
           "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
-          "evidence": "eval"
+          "evidence": "System, system"
+        },
+        {
+          "title": "Potential memory-unsafe C functions",
+          "description": "Unsafe C library calls can indicate buffer overflow risk; confirm whether inputs are bounded before use.",
+          "evidence": "sprintf, strcpy"
         }
       ],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/c9b1ed79f8f766b5 exited 0: WARNING: Extractor.execute failed to run external extractor 'tsk_recover -i raw -f ext -a -v '%e' 'ext-root'': [Errno 2] No such file or directory: 'tsk_recover', 'tsk_recover -i raw -f ext -a -v '%e' 'ext-root'' might not be installed correctly"
+        "binwalk -eM --directory known_firmware/extracted/c9b1ed79f8f766b5 stopped: extraction exceeded 768 MB"
       ]
     },
     {
@@ -69024,7 +69041,7 @@
       "uploaded_at": "2025-11-13",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:33:32+00:00",
-      "last_seen": "2026-07-22T00:31:46+00:00",
+      "last_seen": "2026-07-23T18:18:11+00:00",
       "size": 50602579,
       "size_mb": 48.3,
       "sha256": "0795cae638225029f1525f2d969a84c0ed6fc1591d594e2cac9aa26680f0c271",
@@ -69222,7 +69239,7 @@
       "uploaded_at": "2026-05-26",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:33:47+00:00",
-      "last_seen": "2026-07-22T00:31:30+00:00",
+      "last_seen": "2026-07-23T18:18:00+00:00",
       "size": 49980302,
       "size_mb": 47.7,
       "sha256": "667ddb11a57bed203dc2950d48831af8362dc706d36a4976c35e3c851a568196",
@@ -70497,7 +70514,7 @@
       },
       "findings": [],
       "extraction_notes": [
-        "binwalk -eM --directory known_firmware/extracted/ef2885965a529ea7 exited 0"
+        "Using existing extraction directory: known_firmware/extracted/ef2885965a529ea7"
       ]
     },
     {
@@ -71614,6 +71631,44 @@
     {
       "vendor": "TP-Link",
       "product": "TP-Link Deco BE25",
+      "title": "Deco BE25(US)_V1.6_1.1.8 Build 20260425",
+      "filename": "Deco-fw-ver1-1-8-_20260425-rel18027_.zip",
+      "version": "V1.6_1.1.8 Build 20260425",
+      "release_date": "2026-07-14",
+      "uploaded_at": "2026-07-14",
+      "uploaded_at_source": "TP-Link published date",
+      "first_seen": "2026-07-23T00:38:03+00:00",
+      "last_seen": "2026-07-23T00:38:03+00:00",
+      "size": 44657990,
+      "size_mb": 42.6,
+      "sha256": "b9a716762523bd7ea400a9019d58a95c4d909c13b0a07502b892fc94113062a1",
+      "url": "https://static.tp-link.com/upload/firmware/2026/202607/20260722/Deco-fw-ver1-1-8-[20260425-rel18027].zip",
+      "path": "firmware/TP-Link_Deco_BE25/Deco-fw-ver1-1-8-_20260425-rel18027_.zip",
+      "report_path": "reports/TP-Link_Deco_BE25/Deco-fw-ver1-1-8-_20260425-rel18027_.zip.md",
+      "severity": {
+        "label": "High",
+        "rank": 3,
+        "reason": "Command execution helpers"
+      },
+      "findings": [
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "BOa, bOA, boA, boa"
+        },
+        {
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "System"
+        }
+      ],
+      "extraction_notes": [
+        "binwalk -eM --directory known_firmware/extracted/b9a716762523bd7e exited 0: WARNING: Extractor.execute failed to run external extractor 'ubireader_extract_files -o 'ubifs-root' '%e'': [Errno 2] No such file or directory: 'ubireader_extract_files', 'ubireader_extract_files -o 'ubifs-root' '%e'' might not be installed correctly"
+      ]
+    },
+    {
+      "vendor": "TP-Link",
+      "product": "TP-Link Deco BE25",
       "title": "Deco BE25(US)_V1.6_1.1.0 Build 20250718",
       "filename": "Deco_BE25_V1_1.1.0_250718.zip",
       "version": "V1.6_1.1.0 Build 20250718",
@@ -72265,6 +72320,49 @@
     {
       "vendor": "TP-Link",
       "product": "TP-Link Deco BE67",
+      "title": "Deco BE67(US)_V1.60_1.3.3 Build 260703",
+      "filename": "Deco_BE67_V1.6_1.3.3_260703.zip",
+      "version": "V1.60_1.3.3 Build 260703",
+      "release_date": "2026-07-23",
+      "uploaded_at": "2026-07-23",
+      "uploaded_at_source": "TP-Link published date",
+      "first_seen": "2026-07-23T18:18:26+00:00",
+      "last_seen": "2026-07-23T18:18:26+00:00",
+      "size": 50092326,
+      "size_mb": 47.8,
+      "sha256": "dec7dfe068a6910bb5942ad201be8e7a952687b9e8b3dba64f1225379804ea12",
+      "url": "https://static.tp-link.com/upload/firmware/2026/202607/20260723/Deco BE67_V1.6_1.3.3_260703.zip",
+      "path": "firmware/TP-Link_Deco_BE67/Deco_BE67_V1.6_1.3.3_260703.zip",
+      "report_path": "reports/TP-Link_Deco_BE67/Deco_BE67_V1.6_1.3.3_260703.zip.md",
+      "severity": {
+        "label": "High",
+        "rank": 3,
+        "reason": "Command execution helpers"
+      },
+      "findings": [
+        {
+          "title": "Remote shell services present",
+          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
+          "evidence": "SsHd"
+        },
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "bOA, boa"
+        },
+        {
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "System"
+        }
+      ],
+      "extraction_notes": [
+        "binwalk -eM --directory known_firmware/extracted/dec7dfe068a6910b exited 0: WARNING: Extractor.execute failed to run external extractor 'unstuff '%e'': [Errno 2] No such file or directory: 'unstuff', 'unstuff '%e'' might not be installed correctly"
+      ]
+    },
+    {
+      "vendor": "TP-Link",
+      "product": "TP-Link Deco BE67",
       "title": "Deco BE67(US)_V1.6_1.1.2 Build 20251028",
       "filename": "Deco_BE67_V1_1.1.2_251028.zip",
       "version": "V1.6_1.1.2 Build 20251028",
@@ -72417,6 +72515,49 @@
       ],
       "extraction_notes": [
         "binwalk -eM --directory known_firmware/extracted/388183fd8716d6b0 exited 0"
+      ]
+    },
+    {
+      "vendor": "TP-Link",
+      "product": "TP-Link Deco BE68",
+      "title": "Deco BE68(US)_V1.6_1.3.3 Build 260703",
+      "filename": "Deco_BE68_V1_1.3.3_260703.zip",
+      "version": "V1.6_1.3.3 Build 260703",
+      "release_date": "2026-07-23",
+      "uploaded_at": "2026-07-23",
+      "uploaded_at_source": "TP-Link published date",
+      "first_seen": "2026-07-23T18:18:44+00:00",
+      "last_seen": "2026-07-23T18:18:44+00:00",
+      "size": 50092310,
+      "size_mb": 47.8,
+      "sha256": "3ea472f663b3932aff83df8e9a8aef5acc54e3189697cde6b0f9da3295b592ac",
+      "url": "https://static.tp-link.com/upload/firmware/2026/202607/20260723/Deco BE68_V1_1.3.3_260703.zip",
+      "path": "firmware/TP-Link_Deco_BE68/Deco_BE68_V1_1.3.3_260703.zip",
+      "report_path": "reports/TP-Link_Deco_BE68/Deco_BE68_V1_1.3.3_260703.zip.md",
+      "severity": {
+        "label": "High",
+        "rank": 3,
+        "reason": "Command execution helpers"
+      },
+      "findings": [
+        {
+          "title": "Remote shell services present",
+          "description": "Remote shell daemons increase attack surface and should be verified as disabled by default and authenticated safely.",
+          "evidence": "SsHd"
+        },
+        {
+          "title": "HTTP CGI/admin attack surface",
+          "description": "Web admin components should be reviewed for authentication bypass, command injection, and unsafe parameter parsing.",
+          "evidence": "bOA, boa"
+        },
+        {
+          "title": "Command execution helpers",
+          "description": "Command execution paths are common command-injection sinks when reachable from web or network inputs.",
+          "evidence": "System"
+        }
+      ],
+      "extraction_notes": [
+        "binwalk -eM --directory known_firmware/extracted/3ea472f663b3932a exited 0: WARNING: Extractor.execute failed to run external extractor 'unstuff '%e'': [Errno 2] No such file or directory: 'unstuff', 'unstuff '%e'' might not be installed correctly"
       ]
     },
     {
@@ -72857,7 +72998,7 @@
       "uploaded_at": "2026-04-29",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:39:51+00:00",
-      "last_seen": "2026-07-22T00:32:20+00:00",
+      "last_seen": "2026-07-23T18:19:30+00:00",
       "size": 27214481,
       "size_mb": 26.0,
       "sha256": "f6fc359df51a963d25ead981f0d658285a9ec7e96cc5e195876ee2e5d93b3be1",
@@ -73579,7 +73720,7 @@
       "uploaded_at": "2026-01-26",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-06-29T02:40:41+00:00",
-      "last_seen": "2026-07-22T00:32:33+00:00",
+      "last_seen": "2026-07-23T18:19:43+00:00",
       "size": 30463723,
       "size_mb": 29.1,
       "sha256": "02bdc17e5b0a7f9cd320d690a1faf87a894ebb61b5f372d1ab47f5a1090b7988",
@@ -73845,7 +73986,7 @@
       "uploaded_at": "2026-06-26",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-07-22T00:32:23+00:00",
-      "last_seen": "2026-07-22T00:32:38+00:00",
+      "last_seen": "2026-07-23T18:19:47+00:00",
       "size": 29197770,
       "size_mb": 27.8,
       "sha256": "8abd9965b54c260535e7cd5a32541b2bc957710a650eafd79f9c3ee032840eac",
@@ -75154,7 +75295,7 @@
       "uploaded_at": "2026-07-03",
       "uploaded_at_source": "TP-Link published date",
       "first_seen": "2026-07-08T01:00:09+00:00",
-      "last_seen": "2026-07-22T00:33:22+00:00",
+      "last_seen": "2026-07-23T18:20:27+00:00",
       "size": 31761378,
       "size_mb": 30.3,
       "sha256": "3d2117ced12c1dcce73ded237f7f8f5556f29cf3968faba7f520a888a55f5e08",

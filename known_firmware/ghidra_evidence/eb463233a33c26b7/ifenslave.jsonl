@@ -1,0 +1,2 @@
+{"binary":"ifenslave","function":"FUN_00010864","address":"00010864","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ifenslave","function":"FUN_00011c9c","address":"00011c9c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

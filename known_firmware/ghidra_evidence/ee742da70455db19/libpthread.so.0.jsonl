@@ -1,0 +1,1 @@
+{"binary":"libpthread.so.0","function":"__pthread_manager","address":"00015a8c","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"arc_firewall6","function":"FUN_00008b2c","address":"00008b2c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

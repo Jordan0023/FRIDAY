@@ -1,0 +1,2 @@
+{"binary":"libmnl.so.0.2.0","function":"mnl_nlmsg_batch_reset","address":"00012060","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmnl.so.0.2.0","function":"mnl_attr_put","address":"00012478","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

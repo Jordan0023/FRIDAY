@@ -1,0 +1,2 @@
+{"binary":"radartool","function":"FUN_00011c98","address":"00011c98","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"radartool","function":"FUN_00011e10","address":"00011e10","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,14 @@
+{"binary":"nf_tables.ko","function":"_167","address":"00117eb0","route":"/net/netfilter/nf_tables.h:196","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_167","address":"00117eb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_0011871c","address":"0011871c","route":"/netfilter/nft_cmp.c:162","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_0011871c","address":"0011871c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_0011871c","address":"0011871c","route":"/netfilter/nft_cmp.c:163","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_00118720","address":"00118720","route":"/netfilter/nft_cmp.c:162","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_00118720","address":"00118720","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_00118720","address":"00118720","route":"/netfilter/nft_cmp.c:163","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_196","address":"0011ad84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_196","address":"0011ad84","route":"/netfilter/nft_payload.c:59","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_170","address":"0011baa0","route":"/net/netfilter/nf_tables.h:196","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_170","address":"0011baa0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_00125b70","address":"00125b70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_00126c40","address":"00126c40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

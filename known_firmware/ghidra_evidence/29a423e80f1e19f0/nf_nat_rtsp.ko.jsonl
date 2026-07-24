@@ -1,0 +1,2 @@
+{"binary":"nf_nat_rtsp.ko","function":"nat_rtsp_modify_addr","address":"000102e0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_rtsp.ko","function":"modify_ports","address":"000103d8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

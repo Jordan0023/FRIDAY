@@ -1,0 +1,2 @@
+{"binary":"psd_and_special_udp_dos.ko","function":"__sc_psd_and_special_udp_detect_hook","address":"00010d6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"psd_and_special_udp_dos.ko","function":"__sc_psd_and_special_udp_detect_hook","address":"00010d6c","route":"/Chargen","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

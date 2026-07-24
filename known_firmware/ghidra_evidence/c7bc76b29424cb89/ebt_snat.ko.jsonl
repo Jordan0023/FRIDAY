@@ -1,0 +1,1 @@
+{"binary":"ebt_snat.ko","function":"ebt_target_snat","address":"000100c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

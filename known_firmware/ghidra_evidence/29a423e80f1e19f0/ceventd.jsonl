@@ -1,0 +1,12 @@
+{"binary":"ceventd","function":"FUN_000110ac","address":"000110ac","route":"/var/run/ceventd.pid","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_000110ac","address":"000110ac","route":"/var/run/ceventd.pid","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_000110ac","address":"000110ac","route":"/create","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_000110ac","address":"000110ac","route":"/create","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_000110ac","address":"000110ac","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_000110ac","address":"000110ac","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_00013a5c","address":"00013a5c","route":"/*","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_00013a5c","address":"00013a5c","route":"/%d","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_00013a5c","address":"00013a5c","route":"/0x%08x","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_00013a5c","address":"00013a5c","route":"/0x%04X/%-8s","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_00013a5c","address":"00013a5c","route":"/0x%04X/%-8s,","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ceventd","function":"FUN_00013a5c","address":"00013a5c","route":"/%s","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}

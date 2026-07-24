@@ -1,0 +1,6 @@
+{"binary":"libsmbclient.so.0.7.0","function":"smbc_readdir_internal.constprop.1","address":"0001abb4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsmbclient.so.0.7.0","function":"SMBC_getdents_ctx","address":"0001ca5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsmbclient.so.0.7.0","function":"add_ace","address":"00023b14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsmbclient.so.0.7.0","function":"cacl_set.isra.2","address":"000263ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsmbclient.so.0.7.0","function":"cacl_set.isra.2","address":"000263ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsmbclient.so.0.7.0","function":"SMBC_listxattr_ctx","address":"00028118","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

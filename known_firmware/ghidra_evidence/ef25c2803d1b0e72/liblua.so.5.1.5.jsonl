@@ -1,0 +1,5 @@
+{"binary":"liblua.so.5.1.5","function":"luaS_newlstr","address":"0001ea74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua.so.5.1.5","function":"FUN_00020e3c","address":"00020e3c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua.so.5.1.5","function":"FUN_0002240c","address":"0002240c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua.so.5.1.5","function":"luaL_addvalue","address":"000235f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua.so.5.1.5","function":"luaL_loadfile","address":"000238ec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

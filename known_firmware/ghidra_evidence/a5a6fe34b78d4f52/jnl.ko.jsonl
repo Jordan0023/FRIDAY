@@ -1,0 +1,1 @@
+{"binary":"jnl.ko","function":"jnl_get_write_access","address":"00012db4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

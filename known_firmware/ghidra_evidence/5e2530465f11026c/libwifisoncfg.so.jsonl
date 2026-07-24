@@ -1,0 +1,7 @@
+{"binary":"libwifisoncfg.so","function":"FUN_000140a8","address":"000140a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwifisoncfg.so","function":"setParamMaccmd_cfg80211","address":"0001648c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwifisoncfg.so","function":"setMapVapBeacon_cfg80211","address":"000165bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwifisoncfg.so","function":"setParamVapInd_cfg80211","address":"000183f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwifisoncfg.so","function":"getACSReport_cfg80211","address":"00018c10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwifisoncfg.so","function":"getCountryCode_cfg80211","address":"00019178","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwifisoncfg.so","function":"getChanListAFC_cfg80211","address":"00019fb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

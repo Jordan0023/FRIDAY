@@ -1,0 +1,2 @@
+{"binary":"wportalctrl","function":"memcpy","address":"00008614","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wportalctrl","function":"system","address":"0000862c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

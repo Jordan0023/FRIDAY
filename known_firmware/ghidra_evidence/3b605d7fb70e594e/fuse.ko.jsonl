@@ -1,0 +1,5 @@
+{"binary":"fuse.ko","function":"fuse_simple_request","address":"00014018","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fuse.ko","function":"FUN_00020690","address":"00020690","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fuse.ko","function":"FUN_00020a84","address":"00020a84","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fuse.ko","function":"FUN_00020b40","address":"00020b40","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fuse.ko","function":"fuse_ctl_add_conn","address":"00020ca4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

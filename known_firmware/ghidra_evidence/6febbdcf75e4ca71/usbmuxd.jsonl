@@ -1,0 +1,3 @@
+{"binary":"usbmuxd","function":"FUN_00403c34","address":"00403c34","route":"/*","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbmuxd","function":"FUN_00403c34","address":"00403c34","route":"/*","sink":"unsafe_copy","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbmuxd","function":"FUN_004061ec","address":"004061ec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

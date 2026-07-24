@@ -1,0 +1,2 @@
+{"binary":"libpopt.so.0.0.0","function":"poptGetNextOpt","address":"00012080","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptGetNextOpt","address":"00012080","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

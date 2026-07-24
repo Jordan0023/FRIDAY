@@ -1,0 +1,2 @@
+{"binary":"xt_recent.ko","function":"FUN_00011130","address":"00011130","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xt_recent.ko","function":"recent_mt_check_v0","address":"00011520","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

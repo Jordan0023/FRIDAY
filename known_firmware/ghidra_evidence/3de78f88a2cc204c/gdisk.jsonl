@@ -1,0 +1,15 @@
+{"binary":"gdisk","function":"FUN_00403ddc","address":"00403ddc","route":"/sys/block","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_00403ddc","address":"00403ddc","route":"/device/model","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_00404380","address":"00404380","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_004044b0","address":"004044b0","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_0040a2ec","address":"0040a2ec","route":"/transformation","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_0040a2ec","address":"0040a2ec","route":"/logical","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_0040a2ec","address":"0040a2ec","route":"/boot","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_0040d1b4","address":"0040d1b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_0040e230","address":"0040e230","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_0040ee20","address":"0040ee20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_0040efb0","address":"0040efb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_004111f4","address":"004111f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_004116d0","address":"004116d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_00412214","address":"00412214","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gdisk","function":"FUN_00412364","address":"00412364","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

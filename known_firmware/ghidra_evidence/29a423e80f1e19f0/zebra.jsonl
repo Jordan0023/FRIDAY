@@ -1,0 +1,3 @@
+{"binary":"zebra","function":"FUN_00025038","address":"00025038","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"zebra","function":"FUN_00034ee0","address":"00034ee0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"zebra","function":"FUN_000362e0","address":"000362e0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

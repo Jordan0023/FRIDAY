@@ -1,0 +1,14 @@
+{"binary":"dhd.ko","function":"concate_extfdimg_name","address":"001308f8","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"bcmwifi_monitor","address":"001496e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_cfg80211_external_auth","address":"00156dd8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_add_keyext","address":"00158fc0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_cfg80211_add_key","address":"001595d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_cfg80211_suspend","address":"0015c250","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_notify_connect_status_bss.isra.67","address":"0016c4d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_cfg80211_set_mgmt_vndr_ies","address":"00170b78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_cfg80211_mgmt_tx","address":"00171590","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_cfg80211_change_beacon","address":"00179230","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_cfg80211_start_ap","address":"00179f08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_cfg80211_join_ibss","address":"0017dbd0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_cfg80211_connect","address":"0017fe60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wl_cfgvendor_priv_string_handler","address":"00188948","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

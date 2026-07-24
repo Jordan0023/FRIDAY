@@ -1,0 +1,7 @@
+{"binary":"avahi-daemon","function":"FUN_0000b560","address":"0000b560","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_0000d3c0","address":"0000d3c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_0000d858","address":"0000d858","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_0000d858","address":"0000d858","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_0000eb04","address":"0000eb04","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_0000ef2c","address":"0000ef2c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"FUN_000108c0","address":"000108c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"liblzo2.so.2","function":"lzo1_decompress","address":"00012280","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2","function":"lzo1x_decompress_dict_safe","address":"0001fd68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2","function":"lzo1y_decompress_dict_safe","address":"00023774","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

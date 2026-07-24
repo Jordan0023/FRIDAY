@@ -1,0 +1,7 @@
+{"binary":"libexpat.so","function":"FUN_000137a4","address":"000137a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so","function":"FUN_00014dfc","address":"00014dfc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so","function":"FUN_000153e8","address":"000153e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so","function":"FUN_00015e90","address":"00015e90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so","function":"XML_GetBuffer","address":"0001c320","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so","function":"XML_GetBuffer","address":"0001c320","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so","function":"XML_Parse","address":"0001c4dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

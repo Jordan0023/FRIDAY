@@ -1,0 +1,12 @@
+{"binary":"libwpa_client.so","function":"os_daemonize","address":"00013198","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"os_get_random","address":"000132b8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"os_rel2abs_path","address":"000133b0","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"os_rel2abs_path","address":"000133b0","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"os_rel2abs_path","address":"000133b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"os_readfile","address":"0001360c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"os_memdup","address":"00013954","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"os_exec","address":"000139c0","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"merge_byte_arrays","address":"00014cd8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"dup_binstr","address":"00014db8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"ssid_parse","address":"00015bb8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwpa_client.so","function":"wpa_debug_open_file","address":"00016734","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

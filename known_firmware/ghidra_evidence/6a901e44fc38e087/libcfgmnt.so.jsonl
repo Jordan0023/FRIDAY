@@ -1,0 +1,4 @@
+{"binary":"libcfgmnt.so","function":"fix_mlo_dwb_for_bhfh","address":"0001dc08","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"fix_mlo_dwb_for_bhfh","address":"0001dc08","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"sync_apm_mbh_to_wlunit","address":"00029970","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"_sync_apgx_to_wlunit","address":"00029990","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

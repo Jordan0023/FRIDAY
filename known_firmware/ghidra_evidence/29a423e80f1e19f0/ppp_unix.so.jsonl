@@ -1,0 +1,4 @@
+{"binary":"ppp_unix.so","function":"FUN_00011568","address":"00011568","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ppp_unix.so","function":"FUN_00011568","address":"00011568","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ppp_unix.so","function":"FUN_00011568","address":"00011568","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ppp_unix.so","function":"FUN_00011568","address":"00011568","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"sync-pppd.so","function":"pty_get","address":"00010e18","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sync-pppd.so","function":"FUN_00011738","address":"00011738","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sync-pppd.so","function":"FUN_00011738","address":"00011738","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

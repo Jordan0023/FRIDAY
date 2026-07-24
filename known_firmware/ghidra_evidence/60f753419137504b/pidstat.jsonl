@@ -1,0 +1,12 @@
+{"binary":"pidstat","function":"strcpy","address":"00008f68","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"memcpy","address":"0000901c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"sscanf","address":"0000913c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"fopen","address":"00009184","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"sprintf","address":"000091f0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"FUN_0000ca34","address":"0000ca34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"FUN_0000ccf0","address":"0000ccf0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"FUN_0000ccf0","address":"0000ccf0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"FUN_0000ccf0","address":"0000ccf0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"FUN_0000d4b8","address":"0000d4b8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"FUN_0000d4b8","address":"0000d4b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pidstat","function":"FUN_0000d5f4","address":"0000d5f4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

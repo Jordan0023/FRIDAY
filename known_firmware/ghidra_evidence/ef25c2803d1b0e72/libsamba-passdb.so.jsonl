@@ -1,0 +1,6 @@
+{"binary":"libsamba-passdb.so.0.28.0","function":"pdb_set_hours","address":"0001c440","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-passdb.so.0.28.0","function":"pdb_update_history","address":"0001c548","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-passdb.so.0.28.0","function":"pdb_update_history","address":"0001c548","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-passdb.so.0.28.0","function":"sids_to_unixids","address":"00024244","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-passdb.so.0.28.0","function":"del_aliasmem","address":"000335e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-passdb.so.0.28.0","function":"mod_smbfilepwd_entry","address":"0003504c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

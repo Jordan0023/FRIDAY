@@ -1,0 +1,3 @@
+{"binary":"libwbdshared.so","function":"wbd_parse_cli_args","address":"0002245c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwbdshared.so","function":"hle_recv_hld","address":"00038020","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwbdshared.so","function":"blanket_send_beacon_request","address":"0004b098","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

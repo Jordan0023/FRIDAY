@@ -1,0 +1,2 @@
+{"binary":"tdts_udb.ko","function":"dpi_conf_proc_read","address":"0010c190","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udb.ko","function":"dpi_conf_proc_read","address":"0010c190","route":"/off","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

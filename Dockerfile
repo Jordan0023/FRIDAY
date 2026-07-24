@@ -208,10 +208,10 @@ General DoS is not impactful.
 Begin searching for vulnerabilities by doing two things:
 
 2A. Search explicitly for sinks that use `system`/`execve` and other functions that essentially use bash commands. These are easy targets for checking if we can get a command injection or access data we should not have access to
-2B. Search the web for recent CVEs in THIS SPECIFIC system or very similar models. We use those CVEs to inspire where else in the router we should search for vulnerabilities, since there are often related vulns.
+Only look for Command injection
 
 You should do 2A by using common grepping and the decompiler as needed.
-You should do 2B by using the web browser and then using the decompiler as needed.
+
 
 When you find a vulnerability, document it in VULNERABILITIES.md and note whether it has been confirmed with a PoC.
 

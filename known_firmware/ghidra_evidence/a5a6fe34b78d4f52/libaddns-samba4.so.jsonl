@@ -1,0 +1,1 @@
+{"binary":"libaddns-samba4.so","function":"dns_open_connection","address":"000164ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

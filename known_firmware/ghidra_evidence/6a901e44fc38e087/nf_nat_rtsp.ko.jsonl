@@ -1,0 +1,4 @@
+{"binary":"nf_nat_rtsp.ko","function":"nat_rtsp_modify_addr","address":"0001031c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_rtsp.ko","function":"modify_ports","address":"00010420","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_rtsp.ko","function":"nat_rtsp_modify_port","address":"0001089c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_rtsp.ko","function":"nat_rtsp_channel","address":"000109a4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

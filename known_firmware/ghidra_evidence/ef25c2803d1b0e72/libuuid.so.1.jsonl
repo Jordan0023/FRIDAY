@@ -1,0 +1,3 @@
+{"binary":"libuuid.so.1.3.0","function":"__uuid_generate_time","address":"000114f4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuuid.so.1.3.0","function":"FUN_0001314c","address":"0001314c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuuid.so.1.3.0","function":"FUN_000147c0","address":"000147c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"loop.ko","function":"FUN_00100d84","address":"00100d84","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"loop.ko","function":"FUN_00100d88","address":"00100d88","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

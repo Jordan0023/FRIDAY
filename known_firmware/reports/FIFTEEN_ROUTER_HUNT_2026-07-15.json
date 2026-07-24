@@ -1,0 +1,799 @@
+{
+  "scope": "offline firmware and isolated emulation only",
+  "confirmation_rule": "A lead is not a zero-day without repeatable reachability, impact, and a distinct unpublished root cause.",
+  "targets": [
+    {
+      "product": "ASUS ZenWiFi BD4",
+      "version": "3.0.0.6.102_58362",
+      "sha256": "ecb07c94a5e8d3751ac5966573d13483b96a42a17168517684270b96429f4f7c",
+      "firmware": "firmware/ASUS_ZenWiFi_BD4/FW_ZenWiFi_BD4_300610258362.zip",
+      "rootfs": "known_firmware/extracted/ecb07c94a5e8d375/_FW_ZenWiFi_BD4_300610258362.zip.extracted/_ZenWiFi_BD4_3.0.0.6_102_58362-g76373bf_546-g646ab_Q7PA.trx.extracted/squashfs-root",
+      "status": "triaged",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 200,
+      "top_services": [
+        {
+          "service": "cloud",
+          "source": "rom/rtconfig",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "sbin/rc",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lib/libshared.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lib/libwebapi.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/sbin/httpd",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        }
+      ]
+    },
+    {
+      "product": "ASUS ZenWiFi BD5",
+      "version": "3.0.0.6.102_58362",
+      "sha256": "2017328dfc5bccce0422f9e22176490a101dd6d18625368215a8a50771edb2d3",
+      "firmware": "firmware/ASUS_ZenWiFi_BD5/FW_ZenWiFi_BD5_300610258362.zip",
+      "rootfs": "known_firmware/extracted/2017328dfc5bccce/_FW_ZenWiFi_BD5_300610258362.zip.extracted/_ZenWiFi_BD5_3.0.0.6_102_58362-g76373bf_546-g646ab_Q7PA.trx.extracted/squashfs-root",
+      "status": "triaged",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 200,
+      "top_services": [
+        {
+          "service": "cloud",
+          "source": "rom/rtconfig",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "sbin/rc",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lib/libshared.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lib/libwebapi.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/sbin/httpd",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        }
+      ]
+    },
+    {
+      "product": "ASUS ZenWiFi BE5000",
+      "version": "3.0.0.6.102_58362",
+      "sha256": "1f49ec85a429d63622e6a21bebd2149e946310da5cef2e15a2be2181c4061292",
+      "firmware": "firmware/ASUS_ZenWiFi_BE5000/FW_ZenWiFi_BE5000_300610258362.zip",
+      "rootfs": "known_firmware/extracted/1f49ec85a429d636/_FW_ZenWiFi_BE5000_300610258362.zip.extracted/_ZenWiFi_BE5000_3.0.0.6_102_58362-g76373bf_546-g646ab_Q7PA.trx.extracted/squashfs-root",
+      "status": "triaged",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 200,
+      "top_services": [
+        {
+          "service": "cloud",
+          "source": "rom/rtconfig",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "sbin/rc",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lib/libshared.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lib/libwebapi.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/sbin/httpd",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        }
+      ]
+    },
+    {
+      "product": "ASUS 4G-BE58",
+      "version": "3.0.0.6.102_58741",
+      "sha256": "5e2530465f11026c0739d7d88a3e7f8fb3a1b42d83a31ca3b9d450209c255906",
+      "firmware": "firmware/ASUS_4G-BE58/FW_4G-BE58_300610258741.zip",
+      "rootfs": "known_firmware/extracted/5e2530465f11026c/_FW_4G-BE58_300610258741.zip.extracted/_4G-BE58_3.0.0.6_102_58741-g3273bd4_614-g7c9f6_Q7PB.trx.extracted/squashfs-root",
+      "status": "triaged",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 200,
+      "top_services": [
+        {
+          "service": "cloud",
+          "source": "sbin/rc",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lib/libshared.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lib/libwebapi.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/sbin/httpd",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "www/APP_Installation.asp",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        }
+      ]
+    },
+    {
+      "product": "ASUS RT-BE96U",
+      "version": "3.0.0.6.102_39262",
+      "sha256": "1983ce9123ea5823006585233ad3f7c6966c4037d8202cc762656674537a4212",
+      "firmware": "firmware/ASUS_RT-BE96U/FW_RT-BE96U_300610239262.zip",
+      "rootfs": "known_firmware/extracted/1983ce9123ea5823/_FW_RT-BE96U_300610239262.zip.extracted/_RT-BE96U_3.0.0.6_102_39262-geaba2cf_1525-g8972c_BB0B_nand_squashfs.pkgtb.extracted/squashfs-root",
+      "status": "triaged",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 200,
+      "top_services": [
+        {
+          "service": "cloud",
+          "source": "lib/libnvram.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "lib/libwlcsm.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "sbin/rc",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lighttpd/control",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lighttpd/css/CloudUtil.jar",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        }
+      ]
+    },
+    {
+      "product": "ASUS ROG Rapture GT-BE98 Pro",
+      "version": "3.0.0.6.102_39262",
+      "sha256": "e9c3bdc196cdc00528be40fd92de066793dfada1b181ba01b142a5319a011eaf",
+      "firmware": "firmware/ASUS_ROG_Rapture_GT-BE98_Pro/FW_GT-BE98_Pro_300610239262.zip",
+      "rootfs": "known_firmware/extracted/e9c3bdc196cdc005/_FW_GT-BE98_Pro_300610239262.zip.extracted/_GT-BE98_Pro_3.0.0.6_102_39262-geaba2cf_1525-g8972c_BB0B_nand_squashfs.pkgtb.extracted/squashfs-root",
+      "status": "triaged",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 200,
+      "top_services": [
+        {
+          "service": "cloud",
+          "source": "lib/libnvram.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "lib/libwlcsm.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "sbin/rc",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lighttpd/control",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "usr/lighttpd/css/CloudUtil.jar",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        }
+      ]
+    },
+    {
+      "product": "ASUS ZenWiFi BQ16 Pro",
+      "version": "3.0.0.6.102_39256",
+      "sha256": "ed0ce0716d166f1030e10b1ca1b36bf8dd2f5049d4c6484facb85218bbefc771",
+      "firmware": "firmware/ASUS_ZenWiFi_BQ16_Pro/FW_ZenWiFi_BQ16_Pro_300610239256.zip",
+      "rootfs": "known_firmware/extracted/ed0ce0716d166f10/_FW_ZenWiFi_BQ16_Pro_300610239256.zip.extracted/_ZenWiFi_BQ16_Pro_3.0.0.6_102_39256-g4282d34_1529-gfdee1_BB0B_nand_squashfs.pkgtb.extracted/squashfs-root",
+      "status": "triaged",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 200,
+      "top_services": [
+        {
+          "service": "cloud",
+          "source": "lib/libnvram.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "lib/libwlcsm.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "rom/rtconfig",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "sbin/rc",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "sbin/write_webdav_conf",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write"
+          ]
+        }
+      ]
+    },
+    {
+      "product": "TP-Link Archer AX73",
+      "version": "V2.6_1.3.1 Build 20260430",
+      "sha256": "bd8fcd7600e20b0c898edf1abf347716e7601b0dfb2cf8500ba99e1b2790b40b",
+      "firmware": "firmware/TP-Link_Archer_AX73/Archer_AX73_V2_260430.zip",
+      "rootfs": null,
+      "status": "no-usable-rootfs",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 0,
+      "top_services": []
+    },
+    {
+      "product": "TP-Link Archer BE550",
+      "version": "V2.6_1.3.1 Build 20260403",
+      "sha256": "a6106666c612851736f9574d0e8c810f78c1e1834ca9b4601d02814426c6bf6a",
+      "firmware": "firmware/TP-Link_Archer_BE550/Archer_BE550v2_260403.zip",
+      "rootfs": null,
+      "status": "no-usable-rootfs",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 0,
+      "top_services": []
+    },
+    {
+      "product": "TP-Link Archer BE800",
+      "version": "V1.6_1.4.1 Build 20260401",
+      "sha256": "ef2885965a529ea719d44a55392ae8dd4811408e48165850343f74644824e7b5",
+      "firmware": "firmware/TP-Link_Archer_BE800/Archer_BE800v1_260401.zip",
+      "rootfs": null,
+      "status": "no-usable-rootfs",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 0,
+      "top_services": []
+    },
+    {
+      "product": "TP-Link Deco BE85",
+      "version": "V2.6_1.2.1 Build 20250731",
+      "sha256": "36d4c17759c8be8d64e344d7b02161d3353b786b91157271f1475a030d5cd371",
+      "firmware": "firmware/TP-Link_Deco_BE85/Deco_BE85_V2_1.2.1_250731.zip",
+      "rootfs": null,
+      "status": "no-usable-rootfs",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 0,
+      "top_services": []
+    },
+    {
+      "product": "R7000",
+      "version": "1.0.12.216",
+      "sha256": "b405d2c73809986ed32b412af0ba28daa195bca9f80f582c8c3b35e5d2545772",
+      "firmware": "firmware/R7000/R7000-V1.0.12.216.zip",
+      "rootfs": "known_firmware/extracted/b405d2c73809986e/manual-rootfs",
+      "status": "triaged",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 145,
+      "top_services": [
+        {
+          "service": "cloud",
+          "source": "lib/libbdbroker.so",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "lib/modules/2.6.36.4brcmarm+/kernel/lib/acos_nat.ko",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "opt/bit/bitdefender.tar",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "opt/xagent/genie_handler",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "opt/xagent/xagent",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, unsafe_copy"
+          ]
+        }
+      ]
+    },
+    {
+      "product": "XR1000",
+      "version": "1.0.2.86",
+      "sha256": "7b082abc417e88981de960fa39af738996e5ca1cb2b3d83ad438b6ee6cdd21ec",
+      "firmware": "firmware/XR1000/XR1000-V1.0.2.86.zip",
+      "rootfs": null,
+      "status": "no-usable-rootfs",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 0,
+      "top_services": []
+    },
+    {
+      "product": "GL.iNet GL-BE9300 Flint 3",
+      "version": "4.9.0",
+      "sha256": "edf306a312c85c449a22d5badd791cc2bb5e530b2ad47ce2b710562554b9dfb8",
+      "firmware": "firmware/GL.iNet_GL-BE9300_Flint_3/be9300-4.9.0_release5-1022-0515-1778843436.bin",
+      "rootfs": "known_firmware/extracted/edf306a312c85c44/manual-rootfs",
+      "status": "triaged",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 143,
+      "top_services": [
+        {
+          "service": "cloud",
+          "source": "etc/init.d/gl-alarm",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: system"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "etc/init.d/gl-cloud",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: system"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "etc/init.d/gl_s2s",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: system"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "lib/functions/gl_util.sh",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: system"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "lib/functions/set_2b_function.sh",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: system"
+          ]
+        }
+      ]
+    },
+    {
+      "product": "GL.iNet GL-MT6000 Flint 2",
+      "version": "4.9.0",
+      "sha256": "6e8e6610f944996bb0c119fe95b5610c7091f14c3234739f68d3a5e73c0c60ce",
+      "firmware": "firmware/GL.iNet_GL-MT6000_Flint_2/mt6000-4.9.0_release1-1015-0605-1780626850.bin",
+      "rootfs": "known_firmware/extracted/6e8e6610f944996b/manual-rootfs",
+      "status": "triaged",
+      "candidate_count": 0,
+      "impactful_unauthenticated_leads": 0,
+      "top_candidates": [],
+      "high_risk_service_leads": 151,
+      "top_services": [
+        {
+          "service": "cloud",
+          "source": "etc/app-metadata.json",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: file_write, system, unsafe_copy"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "etc/apps.conf",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "etc/dnsproxy/provider/cloudflare",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "etc/hotplug.d/iface/99-gl-cloud",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present"
+          ]
+        },
+        {
+          "service": "cloud",
+          "source": "etc/hotplug.d/kmwan/time_sync",
+          "protocol": "tcp",
+          "exposure": "outbound",
+          "auth_class": "device",
+          "risk": "high",
+          "evidence": [
+            "service marker present",
+            "local sinks: system"
+          ]
+        }
+      ]
+    }
+  ]
+}

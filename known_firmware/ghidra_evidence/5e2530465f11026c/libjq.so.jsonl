@@ -1,0 +1,9 @@
+{"binary":"libjq.so.1.0.4","function":"FUN_00028880","address":"00028880","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjq.so.1.0.4","function":"jq_testsuite","address":"00035950","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjq.so.1.0.4","function":"FUN_00040b48","address":"00040b48","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjq.so.1.0.4","function":"FUN_0004ab14","address":"0004ab14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjq.so.1.0.4","function":"FUN_0004c9e4","address":"0004c9e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjq.so.1.0.4","function":"jv_load_file","address":"0004e518","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjq.so.1.0.4","function":"FUN_0005856c","address":"0005856c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjq.so.1.0.4","function":"FUN_000595b4","address":"000595b4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjq.so.1.0.4","function":"FUN_00072000","address":"00072000","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

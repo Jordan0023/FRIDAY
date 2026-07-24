@@ -1,0 +1,3 @@
+{"binary":"fat.ko","function":"FUN_00103ba0","address":"00103ba0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fat.ko","function":"fat_add_entries","address":"00103e64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fat.ko","function":"fat_fill_super","address":"0010a6d4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

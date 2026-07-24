@@ -1,0 +1,17 @@
+{"binary":"openssl","function":"FUN_00027a60","address":"00027a60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_0002a6d8","address":"0002a6d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_000369bc","address":"000369bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_00037fc4","address":"00037fc4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_00038f48","address":"00038f48","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_0003ee00","address":"0003ee00","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_0003ee00","address":"0003ee00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_000456e0","address":"000456e0","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_000456e0","address":"000456e0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_0004ad8c","address":"0004ad8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_00054bdc","address":"00054bdc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_00065da4","address":"00065da4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_00067f24","address":"00067f24","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_0006c584","address":"0006c584","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_0006cca8","address":"0006cca8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_0006f348","address":"0006f348","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openssl","function":"FUN_000717ac","address":"000717ac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

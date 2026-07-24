@@ -1,0 +1,3 @@
+{"binary":"kmodloader","function":"FUN_00401a14","address":"00401a14","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_00402114","address":"00402114","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_00402218","address":"00402218","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

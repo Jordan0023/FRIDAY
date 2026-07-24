@@ -1,0 +1,3 @@
+{"binary":"tdpServer","function":"FUN_000136dc","address":"000136dc","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdpServer","function":"FUN_00022108","address":"00022108","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdpServer","function":"FUN_00022108","address":"00022108","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

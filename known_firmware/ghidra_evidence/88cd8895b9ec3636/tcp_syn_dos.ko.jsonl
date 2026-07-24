@@ -1,0 +1,1 @@
+{"binary":"tcp_syn_dos.ko","function":"__sc_tcp_check_hook","address":"0001058c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

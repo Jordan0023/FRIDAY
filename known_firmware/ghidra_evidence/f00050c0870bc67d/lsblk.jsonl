@@ -1,0 +1,1 @@
+{"binary":"lsblk","function":"FUN_00012840","address":"00012840","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}

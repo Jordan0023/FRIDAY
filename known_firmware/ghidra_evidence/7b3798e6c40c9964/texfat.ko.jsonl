@@ -1,0 +1,14 @@
+{"binary":"texfat.ko","function":"_37","address":"000153fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"_154","address":"0001910c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"_149","address":"0001b608","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"_93","address":"0001e590","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"FUN_00022edc","address":"00022edc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"FUN_000234f4","address":"000234f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"FUN_00023e2c","address":"00023e2c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"_97","address":"00026f40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"_153","address":"0002b09c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"_102","address":"0002bd08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"_155","address":"0002cc34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"FUN_00032c08","address":"00032c08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"FUN_00035650","address":"00035650","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"_79","address":"00037194","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

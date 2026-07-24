@@ -1,0 +1,3 @@
+{"binary":"libisc-9.18.16.so","function":"FUN_00141e44","address":"00141e44","route":"/proc/net/if_inet6:iter-","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libisc-9.18.16.so","function":"FUN_00141e44","address":"00141e44","route":"/proc/net/if_inet6:sscanf()","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libisc-9.18.16.so","function":"FUN_00141e44","address":"00141e44","route":"/proc/net/if_inet6:strlen(%s)","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

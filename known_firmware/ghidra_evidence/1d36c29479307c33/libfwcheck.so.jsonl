@@ -1,0 +1,3 @@
+{"binary":"libfwcheck.so","function":"writefunc","address":"0001236c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfwcheck.so","function":"curl_post","address":"0001267c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfwcheck.so","function":"curl_post","address":"0001267c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,6 @@
+{"binary":"dbus-launch","function":"FUN_00010da0","address":"00010da0","route":"/*","sink":"unsafe_copy","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00010da0","address":"00010da0","route":"/*","sink":"unsafe_copy","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00010da0","address":"00010da0","route":"/*","sink":"unsafe_copy","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00010da0","address":"00010da0","route":"/*","sink":"exec","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00010da0","address":"00010da0","route":"/*","sink":"file_write","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00010da0","address":"00010da0","route":"/*","sink":"memory_operation","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}

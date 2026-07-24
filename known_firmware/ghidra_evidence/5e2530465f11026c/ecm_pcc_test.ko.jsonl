@@ -1,0 +1,2 @@
+{"binary":"ecm_pcc_test.ko","function":"ecm_pcc_test_rule_write","address":"00010c8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm_pcc_test.ko","function":"ecm_pcc_test_rule_write","address":"00010c8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

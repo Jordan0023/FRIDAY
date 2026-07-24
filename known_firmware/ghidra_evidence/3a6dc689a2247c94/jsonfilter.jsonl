@@ -1,0 +1,2 @@
+{"binary":"jsonfilter","function":"FUN_000110b4","address":"000110b4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jsonfilter","function":"FUN_00011c50","address":"00011c50","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

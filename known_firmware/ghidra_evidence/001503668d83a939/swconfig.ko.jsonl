@@ -1,0 +1,2 @@
+{"binary":"swconfig.ko","function":"FUN_0010199c","address":"0010199c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"swconfig.ko","function":"register_switch","address":"001019a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

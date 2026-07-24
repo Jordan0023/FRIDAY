@@ -1,0 +1,2 @@
+{"binary":"nat46.ko","function":"nat46_sort_rule_array","address":"0001144c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nat46.ko","function":"FUN_00013c10","address":"00013c10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

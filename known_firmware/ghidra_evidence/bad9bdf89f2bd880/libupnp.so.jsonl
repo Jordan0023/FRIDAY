@@ -1,0 +1,13 @@
+{"binary":"libupnp.so","function":"ssdp_response","address":"000130e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"ssdp_notify","address":"000132c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"subscribe","address":"00015350","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"send_query_response","address":"00017134","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"upnp_device_renew_rootxml","address":"000177f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"upnp_device_renew_rootxml","address":"000177f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"upnp_device_attach","address":"00017994","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"upnp_device_attach","address":"00017994","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"upnp_tlv_convert","address":"0001850c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"upnp_tlv_set_bin","address":"000187cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"upnp_tlv_set","address":"00018868","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"upnp_host_addr","address":"00018cd0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libupnp.so","function":"upnp_get_url_randomstring","address":"00018e54","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

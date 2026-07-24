@@ -1,0 +1,1567 @@
+{
+  "archive_test_cases": [
+    {
+      "expected": "extractor rejects or confines member",
+      "members": [
+        {
+          "name": "../../tmp/friday-proof/dotdot",
+          "type": "file"
+        }
+      ],
+      "name": "dotdot"
+    },
+    {
+      "expected": "extractor rejects or strips absolute path",
+      "members": [
+        {
+          "name": "/tmp/friday-proof/absolute",
+          "type": "file"
+        }
+      ],
+      "name": "absolute"
+    },
+    {
+      "expected": "no write through symlink outside extraction root",
+      "members": [
+        {
+          "name": "pivot",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        },
+        {
+          "name": "pivot/marker",
+          "type": "file"
+        }
+      ],
+      "name": "symlink_pivot"
+    },
+    {
+      "expected": "hardlink target remains confined",
+      "members": [
+        {
+          "name": "marker",
+          "target": "../../tmp/friday-proof/hardlink",
+          "type": "hardlink"
+        }
+      ],
+      "name": "hardlink"
+    },
+    {
+      "expected": "duplicate type replacement is rejected",
+      "members": [
+        {
+          "name": "same",
+          "type": "file"
+        },
+        {
+          "name": "same",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        }
+      ],
+      "name": "duplicate"
+    },
+    {
+      "expected": "bounded rejection or confined extraction",
+      "members": [
+        {
+          "name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "type": "file"
+        }
+      ],
+      "name": "long_name"
+    },
+    {
+      "expected": "no implicit recursive extraction",
+      "members": [
+        {
+          "name": "nested.tar",
+          "type": "archive"
+        }
+      ],
+      "name": "nested_archive"
+    }
+  ],
+  "auth_test_matrix": [
+    {
+      "expected_boundary": "must not enter protected handler",
+      "headers": {},
+      "name": "no_credentials"
+    },
+    {
+      "expected_boundary": "must match unauthenticated behavior",
+      "headers": {
+        "Authorization": "Bearer FRIDAY_INVALID",
+        "Cookie": "session=FRIDAY_INVALID"
+      },
+      "name": "invalid_session"
+    },
+    {
+      "expected_boundary": "must not cross administrator boundary",
+      "headers": {
+        "Cookie": "session=FRIDAY_LOW_PRIV"
+      },
+      "name": "low_privilege"
+    }
+  ],
+  "candidates": [],
+  "config_writers": [],
+  "confirmation_policy": {
+    "L3": "route-specific attacker parameter reaches the sink",
+    "L4": "authentication/validation boundary and trigger are proven",
+    "L5": "reproducible security effect with fault/sink attribution",
+    "authenticated_admin_disposition": "confirmed vulnerability, but not a confirmed zero-day",
+    "confirmed_label_requires": "L5",
+    "confirmed_zero_day_requires": [
+      "L5 reproducible security effect with fault/sink attribution",
+      "novel reproducible pre-authentication exploitation path with no remote administrator session required",
+      "LAN or WAN network reachability without credentials",
+      "impact is remote code execution or a reliable input-specific denial of service",
+      "denial of service reproduces from attacker input and is not generic resource exhaustion",
+      "documented, dated public-prior-art search",
+      "no matching public disclosure or publicly available fix at the recorded discovery time"
+    ],
+    "forbidden_shortcut": "route string and dangerous symbol merely co-located in a binary",
+    "impactful_hunt_scope": "unauthenticated LAN/WAN RCE or reliable input-specific denial of service",
+    "private_duplicate_caveat": "public novelty does not exclude an unknown private or embargoed duplicate",
+    "vendor_contact_required": false
+  },
+  "correlated_flows": [
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "_BE17000-V1.0.5.22.zip.extracted/6DF0E8",
+      "sources": [
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "_BE17000-V1.0.5.22.zip.extracted/6F0C98",
+      "sources": [
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "file_write"
+      ],
+      "source_file": "_BE17000-V1.0.5.22.zip.extracted/755FD1",
+      "sources": [
+        "nvram_get"
+      ]
+    }
+  ],
+  "dynamic_sink_spec": [
+    {
+      "capture": [
+        "pc",
+        "argv",
+        "route",
+        "auth_state"
+      ],
+      "symbols": [
+        "system",
+        "popen",
+        "execve"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "destination",
+        "source",
+        "length",
+        "before",
+        "after"
+      ],
+      "symbols": [
+        "memcpy",
+        "strcpy",
+        "sprintf"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "path",
+        "flags",
+        "sandbox_escape"
+      ],
+      "symbols": [
+        "open",
+        "fopen",
+        "rename",
+        "symlink"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "key",
+        "size",
+        "return_value"
+      ],
+      "symbols": [
+        "shmget",
+        "shmat",
+        "nvram_set",
+        "uci_set"
+      ]
+    }
+  ],
+  "fuzz_seeds": [
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Jan/1970",
+      "template": "POST /Jan/1970 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "PakLicense/Download",
+      "template": "POST /PakLicense/Download HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense"
+      ],
+      "protocol": "http",
+      "route": "TR/REC-html40",
+      "template": "POST /TR/REC-html40 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\nBalloon=FRIDAY_0&Bibliography=FRIDAY_1&Block=FRIDAY_2&Body=FRIDAY_3&Book=FRIDAY_4&Closing=FRIDAY_5&Colorful=FRIDAY_6&Dark=FRIDAY_7&Date=FRIDAY_8&Default=FRIDAY_9&Document=FRIDAY_10&E-mail=FRIDAY_11&Emphasis=FRIDAY_12&FollowedHyperlink=FRIDAY_13&Generator=FRIDAY_14&Grid=FRIDAY_15&HTML=FRIDAY_16&Hashtag=FRIDAY_17&Hyperlink=FRIDAY_18&Intense=FRIDAY_19"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Token/Key",
+      "template": "POST /Token/Key HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "api/account/login",
+      "template": "POST /api/account/login HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "api/provision/ccf",
+      "template": "POST /api/provision/ccf HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "api/provision/commit",
+      "template": "POST /api/provision/commit HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "api/provision/result",
+      "template": "POST /api/provision/result HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "bin/perl",
+      "template": "POST /bin/perl HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "curlhere.html",
+      "template": "POST /curlhere.html HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "dir/file",
+      "template": "POST /dir/file HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "dm/name",
+      "template": "POST /dm/name HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "docs/ssl-ciphers.html",
+      "template": "POST /docs/ssl-ciphers.html HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "etc/passwd",
+      "template": "POST /etc/passwd HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "evms/volumes",
+      "template": "POST /evms/volumes HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "example.com/docs/manpage.html",
+      "template": "POST /example.com/docs/manpage.html HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense"
+      ],
+      "protocol": "http",
+      "route": "files/GDC/BE17000/BE17000-V1.0.5.22.zip",
+      "template": "POST /files/GDC/BE17000/BE17000-V1.0.5.22.zip HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\nBalloon=FRIDAY_0&Bibliography=FRIDAY_1&Block=FRIDAY_2&Body=FRIDAY_3&Book=FRIDAY_4&Closing=FRIDAY_5&Colorful=FRIDAY_6&Dark=FRIDAY_7&Date=FRIDAY_8&Default=FRIDAY_9&Document=FRIDAY_10&E-mail=FRIDAY_11&Emphasis=FRIDAY_12&FollowedHyperlink=FRIDAY_13&Generator=FRIDAY_14&Grid=FRIDAY_15&HTML=FRIDAY_16&Hashtag=FRIDAY_17&Hyperlink=FRIDAY_18&Intense=FRIDAY_19"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "init.d/default_reason.sh",
+      "template": "POST /init.d/default_reason.sh HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lib/support/quotaio_tree.c",
+      "template": "POST /lib/support/quotaio_tree.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "lvm/VGs",
+      "template": "POST /lvm/VGs HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense"
+      ],
+      "protocol": "http",
+      "route": "office/2004/12/omml",
+      "template": "POST /office/2004/12/omml HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\nBalloon=FRIDAY_0&Bibliography=FRIDAY_1&Block=FRIDAY_2&Body=FRIDAY_3&Book=FRIDAY_4&Closing=FRIDAY_5&Colorful=FRIDAY_6&Dark=FRIDAY_7&Date=FRIDAY_8&Default=FRIDAY_9&Document=FRIDAY_10&E-mail=FRIDAY_11&Emphasis=FRIDAY_12&FollowedHyperlink=FRIDAY_13&Generator=FRIDAY_14&Grid=FRIDAY_15&HTML=FRIDAY_16&Hashtag=FRIDAY_17&Hyperlink=FRIDAY_18&Intense=FRIDAY_19"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "path/to/socket.sock",
+      "template": "POST /path/to/socket.sock HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pki/nssdb",
+      "template": "POST /pki/nssdb HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "provision/ccfProvisioningBlob",
+      "template": "POST /provision/ccfProvisioningBlob HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "provision/commit",
+      "template": "POST /provision/commit HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "provision/uploadlogProvisioningBlob",
+      "template": "POST /provision/uploadlogProvisioningBlob HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "multipart/form-data",
+      "mutation_points": [
+        "filename",
+        "part_name",
+        "file_bytes"
+      ],
+      "protocol": "multipart",
+      "route": "provision/uploadlogProvisioningBlob",
+      "template": "--FRIDAY\r\nContent-Disposition: form-data; name=\"file\"; filename=\"seed.bin\"\r\n\r\nFRIDAY_FILE\r\n--FRIDAY--"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "replace/remove",
+      "template": "POST /replace/remove HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "tmp/boot-preset",
+      "template": "POST /tmp/boot-preset HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "tmp/module_name",
+      "template": "POST /tmp/module_name HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    }
+  ],
+  "ghidra_evidence": [],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "Only routes with a plausible low-privilege boundary and route-local sink evidence are promoted. Global firmware sink counts never raise route evidence.",
+    "Authentication labels inferred from strings are hypotheses until dispatcher control flow or a live request confirms them.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rejected_candidates": [
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "curlhere.html",
+      "score": 7,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/744629"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "example.com/docs/manpage.html",
+      "score": 7,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/744629"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L1",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense",
+        "Light",
+        "List",
+        "Medium",
+        "Mention",
+        "Message",
+        "No",
+        "Normal",
+        "Note",
+        "Originator",
+        "Outline",
+        "Placeholder",
+        "Plain",
+        "ProgId",
+        "Quote",
+        "Revision",
+        "Salutation",
+        "Signature",
+        "Smart",
+        "Strong",
+        "Subtitle",
+        "Subtle",
+        "TOC",
+        "Table",
+        "Title",
+        "Unresolved",
+        "annotation",
+        "caption",
+        "endnote",
+        "envelope",
+        "footer",
+        "footnote",
+        "header",
+        "heading",
+        "index",
+        "line",
+        "macro",
+        "page",
+        "table",
+        "toa",
+        "toc"
+      ],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "files/GDC/BE17000/BE17000-V1.0.5.22.zip",
+      "score": 7,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/BE17000-V1.0.5.22_Release_Notes.html"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "lib/support/quotaio_tree.c",
+      "score": 7,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/7B1930"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "path/to/socket.sock",
+      "score": 7,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/74BFA7"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "tmp/boot-preset",
+      "score": 7,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/7BD38F"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "tmp/module_name",
+      "score": 7,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/7BD38F"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Jan/1970",
+      "score": 2,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L1",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense",
+        "Light",
+        "List",
+        "Medium",
+        "Mention",
+        "Message",
+        "No",
+        "Normal",
+        "Note",
+        "Originator",
+        "Outline",
+        "Placeholder",
+        "Plain",
+        "ProgId",
+        "Quote",
+        "Revision",
+        "Salutation",
+        "Signature",
+        "Smart",
+        "Strong",
+        "Subtitle",
+        "Subtle",
+        "TOC",
+        "Table",
+        "Title",
+        "Unresolved",
+        "annotation",
+        "caption",
+        "endnote",
+        "envelope",
+        "footer",
+        "footnote",
+        "header",
+        "heading",
+        "index",
+        "line",
+        "macro",
+        "page",
+        "table",
+        "toa",
+        "toc"
+      ],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "TR/REC-html40",
+      "score": 2,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/BE17000-V1.0.5.22_Release_Notes.html"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "bin/perl",
+      "score": 2,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/7D0D78"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "dm/name",
+      "score": 2,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/777EE2"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "evms/volumes",
+      "score": 2,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/777EE2"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "init.d/default_reason.sh",
+      "score": 2,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/7BD38F"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "lvm/VGs",
+      "score": 2,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/777EE2"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L1",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense",
+        "Light",
+        "List",
+        "Medium",
+        "Mention",
+        "Message",
+        "No",
+        "Normal",
+        "Note",
+        "Originator",
+        "Outline",
+        "Placeholder",
+        "Plain",
+        "ProgId",
+        "Quote",
+        "Revision",
+        "Salutation",
+        "Signature",
+        "Smart",
+        "Strong",
+        "Subtitle",
+        "Subtle",
+        "TOC",
+        "Table",
+        "Title",
+        "Unresolved",
+        "annotation",
+        "caption",
+        "endnote",
+        "envelope",
+        "footer",
+        "footnote",
+        "header",
+        "heading",
+        "index",
+        "line",
+        "macro",
+        "page",
+        "table",
+        "toa",
+        "toc"
+      ],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "office/2004/12/omml",
+      "score": 2,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/BE17000-V1.0.5.22_Release_Notes.html"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "security-sensitive state change",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "replace/remove",
+      "score": 2,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/74BFA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: file_write, unsafe_copy"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "dir/file",
+      "score": 0,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/744629"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "PakLicense/Download",
+      "score": -10,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Token/Key",
+      "score": -10,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "docs/ssl-ciphers.html",
+      "score": -10,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/74BFA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [
+        "upload"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "provision/uploadlogProvisioningBlob",
+      "score": -11,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "api/account/login",
+      "score": -15,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "api/provision/ccf",
+      "score": -15,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "api/provision/commit",
+      "score": -15,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "api/provision/result",
+      "score": -15,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "etc/passwd",
+      "score": -15,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/74BFA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pki/nssdb",
+      "score": -15,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/744629"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "provision/ccfProvisioningBlob",
+      "score": -15,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "provision/commit",
+      "score": -15,
+      "source": "string:_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    }
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/33f035c601029f00",
+  "runtime_launch_plan": {
+    "interfaces": [
+      {
+        "address": "192.168.250.1/24",
+        "name": "br0"
+      },
+      {
+        "address": "192.168.250.2/32",
+        "name": "probe"
+      }
+    ],
+    "isolation": [
+      "no external network",
+      "no host ports by default",
+      "disposable writable rootfs",
+      "synthetic LAN client"
+    ],
+    "listener_candidates": [],
+    "requirements": [],
+    "startup_candidates": [],
+    "vendor": "generic"
+  },
+  "runtime_profile": {
+    "architectures": [
+      "arm"
+    ],
+    "executable_count": 8,
+    "rootfs_candidates": [],
+    "state_backends": [],
+    "vendor": "generic",
+    "web_stack": []
+  },
+  "service_surface": [
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, unsafe_copy"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "_BE17000-V1.0.5.22.zip.extracted/744629"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, unsafe_copy"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "_BE17000-V1.0.5.22.zip.extracted/7BD38F"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "_BE17000-V1.0.5.22.zip.extracted/BE17000-V1.0.5.22_Release_Notes.html"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan",
+      "protocol": "udp",
+      "risk": "high",
+      "service": "ssdp",
+      "source": "_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan",
+      "protocol": "udp",
+      "risk": "high",
+      "service": "upnp",
+      "source": "_BE17000-V1.0.5.22.zip.extracted/6ECEA7"
+    }
+  ],
+  "sink_summary": {
+    "exec": 0,
+    "file_write": 32,
+    "popen": 0,
+    "system": 0,
+    "unsafe_copy": 11
+  },
+  "validation_recipes": [
+    {
+      "marker": "FRIDAY_CMD_MARKER",
+      "payloads": [
+        ";printf FRIDAY_CMD_MARKER",
+        "$(printf FRIDAY_CMD_MARKER)"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker appears in captured argv/stdout",
+      "vulnerability_class": "command_injection"
+    },
+    {
+      "marker": "FRIDAY_PATH_MARKER",
+      "payloads": [
+        "../../tmp/friday-proof/marker",
+        "..%2f..%2ftmp%2ffriday-proof%2fmarker"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker created inside modeled /tmp only",
+      "vulnerability_class": "path_traversal"
+    },
+    {
+      "marker": "FRIDAY_ARCHIVE_MARKER",
+      "payloads": [
+        "ordered symlink then child file",
+        "hardlink to modeled target"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "write escapes extraction root but remains inside sandbox",
+      "vulnerability_class": "archive_escape"
+    },
+    {
+      "marker": "FRIDAY_CRASH_MARKER",
+      "payloads": [
+        "cyclic bounded input lengths 64..4096"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "reproducible crash with instruction/register capture",
+      "vulnerability_class": "memory_corruption"
+    },
+    {
+      "marker": "FRIDAY_AUTH_MARKER",
+      "payloads": [
+        "missing cookie",
+        "duplicate cookie",
+        "method override"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "protected handler returns distinct success state",
+      "vulnerability_class": "auth_bypass"
+    }
+  ]
+}

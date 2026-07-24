@@ -1,0 +1,12 @@
+{"binary":"jq","function":"FUN_0001cc20","address":"0001cc20","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_00027e18","address":"00027e18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_00031de4","address":"00031de4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_00033cb4","address":"00033cb4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_000357e8","address":"000357e8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_0003f83c","address":"0003f83c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_00040884","address":"00040884","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_00055058","address":"00055058","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_0006f938","address":"0006f938","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_00081b6c","address":"00081b6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_0008c3ac","address":"0008c3ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jq","function":"FUN_000b65f0","address":"000b65f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

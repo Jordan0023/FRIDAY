@@ -1,0 +1,3 @@
+{"binary":"librt-2.26.so","function":"shm_open","address":"00013f24","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"librt-2.26.so","function":"shm_open","address":"00013f24","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"librt-2.26.so","function":"shm_unlink","address":"00014084","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

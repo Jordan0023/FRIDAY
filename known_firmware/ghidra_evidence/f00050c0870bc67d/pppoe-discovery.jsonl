@@ -1,0 +1,2 @@
+{"binary":"pppoe-discovery","function":"FUN_00010ad4","address":"00010ad4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pppoe-discovery","function":"FUN_00011a60","address":"00011a60","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,6 @@
+{"binary":"libnfnetlink.so.0","function":"nfnl_talk","address":"00011dfc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnfnetlink.so.0","function":"nfnl_addattr_l","address":"00012304","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnfnetlink.so.0","function":"nfnl_nfa_addattr_l","address":"00012404","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnfnetlink.so.0","function":"nfnl_callback_register","address":"00012e08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnfnetlink.so.0","function":"nlif_index2name","address":"00013930","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnfnetlink.so.0","function":"nlif_index2name","address":"00013930","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"nf_nat_sip.ko","function":"FUN_00010b7c","address":"00010b7c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_sip.ko","function":"FUN_00010f48","address":"00010f48","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_sip.ko","function":"FUN_00010f48","address":"00010f48","route":"/2.0","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_sip.ko","function":"FUN_00010f48","address":"00010f48","route":"/to","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_sip.ko","function":"FUN_000117cc","address":"000117cc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

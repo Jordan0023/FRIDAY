@@ -1,0 +1,2 @@
+{"binary":"rtnl.so","function":"FUN_00012e84","address":"00012e84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rtnl.so","function":"FUN_000134b8","address":"000134b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

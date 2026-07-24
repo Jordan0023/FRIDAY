@@ -1,0 +1,3 @@
+{"binary":"ubusd","function":"FUN_00400fc0","address":"00400fc0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubusd","function":"FUN_00401fd4","address":"00401fd4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubusd","function":"FUN_00401fd4","address":"00401fd4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

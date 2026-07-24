@@ -1,0 +1,1 @@
+{"binary":"libdsdb-module-samba4.so","function":"dsdb_get_expected_new_values","address":"000182ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

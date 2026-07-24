@@ -1,0 +1,2 @@
+{"binary":"libkdc-samba4.so.2.0.0","function":"prepare_enc_data","address":"00016ba4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libkdc-samba4.so.2.0.0","function":"load_mappings","address":"0001cf2c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"luarsa_keys_gen","function":"system","address":"00008448","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"luarsa_keys_gen","function":"sprintf","address":"0000846c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

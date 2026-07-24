@@ -1,0 +1,2 @@
+{"binary":"libvorbis.so.0.4.9","function":"FUN_0001447c","address":"0001447c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvorbis.so.0.4.9","function":"_vp_couple_quantize_normalize","address":"000185d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

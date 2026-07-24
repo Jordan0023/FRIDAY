@@ -1,0 +1,2 @@
+{"binary":"libevent_core-2.0.so.5.1.9","function":"FUN_0001dea8","address":"0001dea8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent_core-2.0.so.5.1.9","function":"evutil_parse_sockaddr_port","address":"0002a0ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

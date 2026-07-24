@@ -1,0 +1,5 @@
+{"binary":"dhcp6c","function":"FUN_00011bec","address":"00011bec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6c","function":"FUN_00011bec","address":"00011bec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6c","function":"FUN_00012e10","address":"00012e10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6c","function":"FUN_0001c304","address":"0001c304","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6c","function":"FUN_0001c304","address":"0001c304","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

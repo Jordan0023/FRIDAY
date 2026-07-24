@@ -1,0 +1,6 @@
+{"binary":"libgensec-samba4.so","function":"tstream_gensec_writev_wrapped_next","address":"0001ce38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgensec-samba4.so","function":"tstream_gensec_writev_send","address":"0001d070","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgensec-samba4.so","function":"tstream_gensec_readv_wrapped_next","address":"0001d35c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgensec-samba4.so","function":"tstream_gensec_readv_send","address":"0001d528","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgensec-samba4.so","function":"ntlmssp_wrap","address":"000294e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgensec-samba4.so","function":"netsec_do_seal.isra.1","address":"0002b1d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

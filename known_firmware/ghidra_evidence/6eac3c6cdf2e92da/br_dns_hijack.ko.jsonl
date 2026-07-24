@@ -1,0 +1,9 @@
+{"binary":"br_dns_hijack.ko","function":"dnsRedirect_isNeedRedirect","address":"000104d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_dns_hijack.ko","function":"FUN_000112bc","address":"000112bc","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_dns_hijack.ko","function":"LPC_hijack","address":"0001143c","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_dns_hijack.ko","function":"LPC_hijack","address":"0001143c","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_dns_hijack.ko","function":"LPC_hijack","address":"0001143c","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_dns_hijack.ko","function":"LPC_hijack","address":"0001143c","route":"/%s","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_dns_hijack.ko","function":"LPC_hijack","address":"0001143c","route":"/%s","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_dns_hijack.ko","function":"LPC_hijack","address":"0001143c","route":"/%s","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_dns_hijack.ko","function":"FUN_000125e8","address":"000125e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"smsd","function":"FUN_00418234","address":"00418234","route":"/smsd_%s_1.XXXXXX","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"smsd","function":"FUN_00418234","address":"00418234","route":"/smsd_%s_2.XXXXXX","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

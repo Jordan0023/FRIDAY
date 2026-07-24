@@ -1,0 +1,2 @@
+{"binary":"charon","function":"FUN_00011590","address":"00011590","route":"/var/run/charon.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"charon","function":"FUN_00011590","address":"00011590","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"ax88179_178a.ko","function":"ax88179_get_eeprom","address":"001017e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,9 @@
+{"binary":"libcommon.so","function":"tpSystemEx","address":"00011c60","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcommon.so","function":"tp_systemEx","address":"000122f0","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcommon.so","function":"_eval","address":"000123b4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcommon.so","function":"tp_systemEnv","address":"000125ac","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcommon.so","function":"execFormatCmd2","address":"0001278c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcommon.so","function":"execFormatCmd2","address":"0001278c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcommon.so","function":"copyFile","address":"0001297c","route":"/')","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcommon.so","function":"copyFile","address":"0001297c","route":"/';","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcommon.so","function":"findSystemProcByPidFile","address":"00012b58","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

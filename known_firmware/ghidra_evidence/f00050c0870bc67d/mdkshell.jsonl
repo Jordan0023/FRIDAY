@@ -1,0 +1,3 @@
+{"binary":"mdkshell","function":"main","address":"000107a0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mdkshell","function":"mdksh_open_listener","address":"00010b50","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mdkshell","function":"mdksh_connect_to_socket","address":"00010c38","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,50 @@
+#!/bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export PATH
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+mkdir -p /dev/pts /run /tmp /var/run /var/log /var/tmp
+mount -t devpts devpts /dev/pts
+mount -t tmpfs tmpfs /tmp
+test -w /proc/sys/kernel/print-fatal-signals &&
+    echo 1 > /proc/sys/kernel/print-fatal-signals
+test -w /proc/sys/debug/exception-trace &&
+    echo 1 > /proc/sys/debug/exception-trace
+
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/virtio/virtio_mmio.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/net/core/failover.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/net/net_failover.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/net/virtio_net.ko
+
+ip link set eth0 down
+ip link set eth0 name br0
+ifconfig br0 10.0.2.15 netmask 255.255.255.0 up
+ifconfig lo 127.0.0.1 up
+route add default gw 10.0.2.2
+
+touch /tmp/friday-printer-output
+echo "FRIDAY_RAX30_IPPD_BOOT=1"
+LD_PRELOAD=/lib/rax30_emulation_shim.so \
+    /bin/ippd /etc/ippd-printers.conf >/dev/console 2>&1 &
+sleep 3
+
+IPPD_PID="$(pidof ippd | awk '{print $1}')"
+echo "IPPD_PID=$IPPD_PID"
+echo "IPPD_ALIVE=$(test -n "$IPPD_PID" && kill -0 "$IPPD_PID" 2>/dev/null && echo yes || echo no)"
+echo "IPPD_TCP_BEGIN"
+cat /proc/net/tcp
+echo "IPPD_TCP_END"
+echo "FRIDAY_RAX30_IPPD_READY=1"
+
+while true; do
+    CURRENT_PID="$(pidof ippd | awk '{print $1}')"
+    if test -z "$CURRENT_PID"; then
+        echo "IPPD_EXITED=1"
+    else
+        echo "IPPD_HEALTH_PID=$CURRENT_PID $(grep '^VmRSS:' /proc/"$CURRENT_PID"/status 2>/dev/null)"
+    fi
+    sleep 5
+done

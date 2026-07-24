@@ -1,0 +1,2 @@
+{"binary":"btmgmt","function":"FUN_00032800","address":"00032800","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"btmgmt","function":"FUN_00032800","address":"00032800","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,9 @@
+{"binary":"libe2p.so.2.3","function":"e2p_edit_feature2","address":"0001189c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"fgetflags","address":"00011b2c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"fsetflags","address":"00011c1c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"fgetversion","address":"00011d08","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"fsetversion","address":"00011db0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"list_super2","address":"00012148","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"list_super2","address":"00012148","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"list_super2","address":"00012148","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"e2p_edit_mntopts","address":"0001358c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

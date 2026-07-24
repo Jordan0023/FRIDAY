@@ -1,0 +1,1 @@
+{"binary":"libavahi-client.so.3.2.9","function":"avahi_xdg_config_open","address":"00018324","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

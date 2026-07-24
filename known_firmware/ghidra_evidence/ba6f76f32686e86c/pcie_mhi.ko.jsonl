@@ -1,0 +1,5 @@
+{"binary":"pcie_mhi.ko","function":"FUN_0010f0f4","address":"0010f0f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pcie_mhi.ko","function":"mhi_fw_load_worker","address":"0010f0f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pcie_mhi.ko","function":"FUN_001150d0","address":"001150d0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pcie_mhi.ko","function":"FUN_00115678","address":"00115678","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pcie_mhi.ko","function":"FUN_00115990","address":"00115990","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

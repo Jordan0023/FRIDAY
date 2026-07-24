@@ -1,0 +1,4 @@
+{"binary":"libslp.so.1.0.1","function":"KnownDADiscoverFromDHCP","address":"000162e4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libslp.so.1.0.1","function":"SLPParseSrvUrl","address":"00019c5c","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libslp.so.1.0.1","function":"SLPParseSrvUrl","address":"00019c5c","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libslp.so.1.0.1","function":"DHCPGetOptionInfo","address":"00019ec0","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}

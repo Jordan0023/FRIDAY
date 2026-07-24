@@ -1,0 +1,4 @@
+{"binary":"gl-sdk4-tertf.ko","function":"FUN_0001072c","address":"0001072c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-tertf.ko","function":"FUN_00010e84","address":"00010e84","route":"/sbin:/bin:/usr/sbin:/usr/bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-tertf.ko","function":"FUN_00010e84","address":"00010e84","route":"/linux-ramips_mt7621/gl-sdk4-tertf-git-2023.130.12053-524d7a3/term.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-tertf.ko","function":"FUN_0001117c","address":"0001117c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

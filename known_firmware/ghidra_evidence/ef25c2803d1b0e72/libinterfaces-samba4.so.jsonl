@@ -1,0 +1,1 @@
+{"binary":"libinterfaces-samba4.so","function":"get_interfaces","address":"00010cdc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

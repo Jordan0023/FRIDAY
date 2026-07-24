@@ -1,0 +1,12 @@
+{"binary":"libiwinfo.so.20230701","function":"iwinfo_hardware","address":"00012d9c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"iwinfo_hardware","address":"00012d9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"iwinfo_hardware_id_from_mtd","address":"00012fd8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"iwinfo_hardware_id_from_mtd","address":"00012fd8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"FUN_00013e50","address":"00013e50","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"FUN_0001549c","address":"0001549c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"FUN_00016528","address":"00016528","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"FUN_00016f60","address":"00016f60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"FUN_000174c4","address":"000174c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"FUN_00017890","address":"00017890","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"FUN_0001838c","address":"0001838c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiwinfo.so.20230701","function":"FUN_00018604","address":"00018604","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

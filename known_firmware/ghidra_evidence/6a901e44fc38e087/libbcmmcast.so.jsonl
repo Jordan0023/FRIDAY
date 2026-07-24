@@ -1,0 +1,3 @@
+{"binary":"libbcmmcast.so","function":"bcm_mcast_api_update_mld_snoop","address":"00012044","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcmmcast.so","function":"bcm_mcast_api_update_igmp_host_client","address":"00012208","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcmmcast.so","function":"bcm_mcast_api_update_mld_host_client","address":"00012300","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

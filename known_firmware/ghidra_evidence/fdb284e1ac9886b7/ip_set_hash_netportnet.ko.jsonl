@@ -1,0 +1,11 @@
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_00101900","address":"00101900","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_00101900","address":"00101900","route":"/%u","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_00101c84","address":"00101c84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_00101c84","address":"00101c84","route":"/%u","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_00103f9c","address":"00103f9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_00103fa0","address":"00103fa0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_001045a4","address":"001045a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_00104c20","address":"00104c20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_001056b4","address":"001056b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_00105e90","address":"00105e90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netportnet.ko","function":"FUN_00106984","address":"00106984","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"oops_mmc.ko","function":"oops_mmc_probe","address":"00100240","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

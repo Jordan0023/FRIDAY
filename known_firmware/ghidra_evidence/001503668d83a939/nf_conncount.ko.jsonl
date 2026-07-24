@@ -1,0 +1,2 @@
+{"binary":"nf_conncount.ko","function":"FUN_00100ccc","address":"00100ccc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_conncount.ko","function":"nf_conncount_count","address":"00100cd0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

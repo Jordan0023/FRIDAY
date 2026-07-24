@@ -1,0 +1,8 @@
+{"binary":"nf_nat_pt.ko","function":"nat_pt_read_proc","address":"00010200","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_pt.ko","function":"nat_pt_read_proc","address":"00010200","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_pt.ko","function":"nat_pt_write_proc","address":"000108d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_pt.ko","function":"nat_pt_write_proc","address":"000108d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_pt.ko","function":"nat_pt_write_proc","address":"000108d0","route":"/linux/thread_info.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_pt.ko","function":"nat_pt_write_proc","address":"000108d0","route":"/linux/thread_info.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_pt.ko","function":"nat_pt_write_proc","address":"000108d0","route":"/proc/net/nf_nat_pt","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_pt.ko","function":"nat_pt_write_proc","address":"000108d0","route":"/proc/net/nf_nat_pt","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

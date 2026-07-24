@@ -1,0 +1,7 @@
+{"binary":"sit.ko","function":"FUN_00100778","address":"00100778","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sit.ko","function":"FUN_00101164","address":"00101164","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sit.ko","function":"FUN_0010274c","address":"0010274c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sit.ko","function":"FUN_0010297c","address":"0010297c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sit.ko","function":"FUN_00102f9c","address":"00102f9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sit.ko","function":"FUN_00102f9c","address":"00102f9c","route":"/linux/uaccess.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sit.ko","function":"FUN_00102f9c","address":"00102f9c","route":"/ipv6/sit.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

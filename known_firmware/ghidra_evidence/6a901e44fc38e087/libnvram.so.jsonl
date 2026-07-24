@@ -1,0 +1,14 @@
+{"binary":"libnvram.so","function":"common_nvram_kernel_getall","address":"00012c94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"brcm_get_lock","address":"00013500","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"_wlcsm_init","address":"00013b58","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_mngr_get","address":"00013fec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_mngr_resume_restart","address":"00014164","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_mngr_halt_restart","address":"000141f4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_mngr_restart_all","address":"00014284","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_mngr_restart","address":"00014338","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_mngr_dm_register_event","address":"00014440","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_mngr_dm_get","address":"000144e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_register_process","address":"00014958","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_mngr_dm_set_dbglevel","address":"00014ae0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_nvram_xfr","address":"0001518c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"wlcsm_nvram_xfr","address":"0001518c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

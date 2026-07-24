@@ -1,0 +1,12 @@
+{"binary":"liblbcmnlibs.so","function":"wlanifBSteerEventsMsgRx","address":"000203c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"wlanifBSteerControlCmnSendVAP.isra.5","address":"000229d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"wlanifBSteerControlCmnAreVAPsReadyTimeoutHandler","address":"0002697c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"steerexecImplCmnAllowAssoc","address":"00031b10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"steerexecImplCmnHandleSteerComplete","address":"00033f88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"steerexecImplCmnHandleSteerComplete","address":"00033f88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"steerexecImplCmnBlacklistIterateCB","address":"00034fd4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"steerexecImplCmnSteer","address":"00035590","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"stadbReadNoSteerStaList","address":"0003d00c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"soneventserviceEventstart","address":"00053958","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"soneventserviceEventRegister","address":"00053be8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblbcmnlibs.so","function":"soneventserviceSendSteerReport","address":"000541dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

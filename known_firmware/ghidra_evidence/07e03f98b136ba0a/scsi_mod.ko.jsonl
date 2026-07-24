@@ -1,0 +1,7 @@
+{"binary":"scsi_mod.ko","function":"scsi_eh_prep_cmnd","address":"00012570","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"scsi_mod.ko","function":"scsi_mode_select","address":"0001515c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"scsi_mod.ko","function":"scsi_io_completion","address":"000174c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"scsi_mod.ko","function":"FUN_000194ec","address":"000194ec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"scsi_mod.ko","function":"store_scan","address":"0001af68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"scsi_mod.ko","function":"scsi_proc_host_add","address":"0001c7dc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"scsi_mod.ko","function":"scsi_proc_host_rm","address":"0001c87c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

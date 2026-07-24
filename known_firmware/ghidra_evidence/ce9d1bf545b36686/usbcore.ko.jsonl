@@ -1,0 +1,11 @@
+{"binary":"usbcore.ko","function":"FUN_0010aacc","address":"0010aacc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"_460","address":"0010ba44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"_465","address":"0010c760","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"_365","address":"0010fcec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"FUN_0011347c","address":"0011347c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"_571","address":"00113480","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"_432","address":"00114b00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"_432","address":"00114b00","route":"/%s:","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"_432","address":"00114b00","route":"/%s","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"FUN_0011f620","address":"0011f620","route":"/%3d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbcore.ko","function":"FUN_0011f620","address":"0011f620","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,10 @@
+{"binary":"hotplug2","function":"FUN_00401b30","address":"00401b30","route":"/*","sink":"memory_operation","sources":"recv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_00401b30","address":"00401b30","route":"/etc/hotplug2.rules","sink":"memory_operation","sources":"recv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_00401b30","address":"00401b30","route":"/mmap","sink":"memory_operation","sources":"recv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_00401b30","address":"00401b30","route":"/sbin/udevtrigger","sink":"memory_operation","sources":"recv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_00402b80","address":"00402b80","route":"/sys/kernel/uevent_seqnum","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_00402b80","address":"00402b80","route":"/sys/kernel/uevent_seqnum","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_004035bc","address":"004035bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_004035bc","address":"004035bc","route":"/*","sink":"system","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_004035bc","address":"004035bc","route":"/*","sink":"file_write","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_00403c64","address":"00403c64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

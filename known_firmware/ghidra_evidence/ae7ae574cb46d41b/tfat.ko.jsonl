@@ -1,0 +1,11 @@
+{"binary":"tfat.ko","function":"exfat_cluster_chain_realloc","address":"001064c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"exfat_map_cluster_chain","address":"00106638","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"exfat_ioctl","address":"001109a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"fat_journal_chain_checksum","address":"0011a0f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"fat_journal_replay_rename_transaction.isra.2","address":"0011a770","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"exfat_get_full_path.constprop.3","address":"0011c008","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"exfat_journal_start_rename","address":"0011d6d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"fat_lookup","address":"001225e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"fat_rename","address":"00123f08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"FUN_0012a2c4","address":"0012a2c4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"parse_options","address":"0012a2c8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

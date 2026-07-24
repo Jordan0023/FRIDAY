@@ -1,0 +1,4 @@
+{"binary":"libneon.so.27.3.2","function":"ne_uri_resolve","address":"0001cac0","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libneon.so.27.3.2","function":"ne_strdup","address":"0001da58","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libneon.so.27.3.2","function":"ne_strndup","address":"0001daa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libneon.so.27.3.2","function":"ne_md5_finish_ctx","address":"0001ea20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

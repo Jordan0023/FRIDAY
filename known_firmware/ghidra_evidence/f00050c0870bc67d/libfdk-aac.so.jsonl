@@ -1,0 +1,8 @@
+{"binary":"libfdk-aac.so.0.0.2","function":"aacEncEncode","address":"00027364","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so.0.0.2","function":"FUN_00029470","address":"00029470","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so.0.0.2","function":"FUN_0003c960","address":"0003c960","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so.0.0.2","function":"FUN_0003e938","address":"0003e938","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so.0.0.2","function":"FUN_00043984","address":"00043984","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so.0.0.2","function":"FUN_0004932c","address":"0004932c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so.0.0.2","function":"FUN_0004e344","address":"0004e344","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so.0.0.2","function":"FUN_000543d8","address":"000543d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

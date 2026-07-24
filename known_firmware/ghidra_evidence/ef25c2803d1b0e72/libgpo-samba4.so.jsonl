@@ -1,0 +1,1 @@
+{"binary":"libgpo-samba4.so","function":"gpo_copy_file","address":"000145d8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"iproxy","function":"FUN_00402104","address":"00402104","route":"/matching","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iproxy","function":"FUN_0040e278","address":"0040e278","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iproxy","function":"FUN_0040fee4","address":"0040fee4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

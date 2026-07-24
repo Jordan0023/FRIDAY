@@ -1,0 +1,2 @@
+{"binary":"mod_dirlisting.so","function":"http_list_directory","address":"000116f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mod_dirlisting.so","function":"http_list_directory","address":"000116f4","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

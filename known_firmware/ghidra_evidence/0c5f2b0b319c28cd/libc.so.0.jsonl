@@ -1,0 +1,4 @@
+{"binary":"libuClibc-0.9.30.so","function":"fopen","address":"00035de0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuClibc-0.9.30.so","function":"vsprintf","address":"00036ce0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuClibc-0.9.30.so","function":"memmove","address":"00040ab0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuClibc-0.9.30.so","function":"execv","address":"00064c30","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

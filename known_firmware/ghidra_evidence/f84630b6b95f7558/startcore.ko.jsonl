@@ -1,0 +1,1 @@
+{"binary":"startcore.ko","function":"load_task","address":"00010188","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

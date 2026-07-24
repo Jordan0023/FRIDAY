@@ -1,0 +1,2 @@
+{"binary":"libauth4-samba4.so","function":"auth_check_password_send","address":"000193e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauth4-samba4.so","function":"encrypt_user_info","address":"0001a1fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

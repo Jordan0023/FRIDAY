@@ -1,0 +1,2 @@
+{"binary":"flash_erase","function":"FUN_00011c04","address":"00011c04","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"flash_erase","function":"FUN_000148e4","address":"000148e4","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

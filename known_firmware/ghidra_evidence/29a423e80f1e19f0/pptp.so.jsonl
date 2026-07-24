@@ -1,0 +1,7 @@
+{"binary":"pptp.so.0.0.0","function":"callmgr_main","address":"00013398","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so.0.0.0","function":"pptp_write_some","address":"00014520","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so.0.0.0","function":"pptp_make_packet","address":"000147f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so.0.0.0","function":"pptp_make_packet","address":"000147f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so.0.0.0","function":"pptp_send_ctrl_packet","address":"00014b5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so.0.0.0","function":"vector_remove","address":"00016ea4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pptp.so.0.0.0","function":"vector_insert","address":"00017010","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

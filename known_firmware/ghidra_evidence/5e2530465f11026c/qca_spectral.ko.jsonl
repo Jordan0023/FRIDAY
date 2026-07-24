@@ -1,0 +1,1 @@
+{"binary":"qca_spectral.ko","function":"target_if_pdev_spectral_init","address":"0001a0d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

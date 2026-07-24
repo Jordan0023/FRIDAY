@@ -1,0 +1,2 @@
+{"binary":"ppp_mppe.ko","function":"mppe_comp_init","address":"00010b5c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ppp_mppe.ko","function":"mppe_decomp_init","address":"00010ba8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

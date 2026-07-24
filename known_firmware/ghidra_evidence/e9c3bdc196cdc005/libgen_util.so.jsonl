@@ -1,0 +1,1 @@
+{"binary":"libgen_util.so","function":"genUtl_binaryBufToHexString","address":"00010d9c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

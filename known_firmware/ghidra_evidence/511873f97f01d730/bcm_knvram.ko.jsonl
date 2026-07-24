@@ -1,0 +1,7 @@
+{"binary":"bcm_knvram.ko","function":"wlcsm_nl_rcv_skb","address":"00100040","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_knvram.ko","function":"FUN_001005ec","address":"001005ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_knvram.ko","function":"asusnls_u2c","address":"001005f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_knvram.ko","function":"asusnls_c2u","address":"00100770","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_knvram.ko","function":"nvram_xfr","address":"00100900","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_knvram.ko","function":"_wlcsm_nvram_tuple_insert","address":"00100b20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_knvram.ko","function":"wlcsm_nvram_getall_pos","address":"00101570","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

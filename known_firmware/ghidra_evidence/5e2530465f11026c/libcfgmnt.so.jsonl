@@ -1,0 +1,14 @@
+{"binary":"libcfgmnt.so","function":"get_chanspec_info","address":"0001bfb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"cap_get_final_paramname","address":"0001d06c","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"fix_mlo_dwb_for_bhfh","address":"0001d83c","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"fix_mlo_dwb_for_bhfh","address":"0001d83c","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"check_skip_param","address":"0001e2a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"check_apg_vif_type","address":"000200b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"get_apg_vif_type","address":"000202d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"get_apg_vif_status","address":"000204d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"get_unused_ifname_by_dut_sunit","address":"00023958","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"get_wgn_vlan_rl","address":"00025b1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"check_unused_ifname_match_subunit","address":"000260ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"get_unused_subunit_by_band","address":"00026270","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"sync_apm_mbh_to_wlunit","address":"0002905c","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"_sync_apgx_to_wlunit","address":"0002907c","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

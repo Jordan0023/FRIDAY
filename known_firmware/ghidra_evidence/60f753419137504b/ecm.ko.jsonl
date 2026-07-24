@@ -1,0 +1,16 @@
+{"binary":"ecm.ko","function":"FUN_0002425c","address":"0002425c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_iface_add_ipsec_tunnel","address":"0002badc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_iface_add_tunipip6","address":"0002bd78","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_iface_add_sit","address":"0002c04c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_iface_add_loopback","address":"0002c328","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_iface_add_unknown","address":"0002c5c4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_iface_add_pppoe","address":"0002c860","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_iface_add_vlan","address":"0002cb10","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_iface_add_bridge","address":"0002cde8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_iface_add_lag","address":"0002d0b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_iface_add_ethernet","address":"0002d378","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_char_device_read","address":"0002de74","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_char_device_read","address":"0002de74","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_connection_from_iface_name_get","address":"0002f578","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_db_connection_to_iface_name_get","address":"0002f5d0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_interface_mac_addr_get","address":"000329c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

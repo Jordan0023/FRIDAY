@@ -1,0 +1,13 @@
+{"binary":"lld2c","function":"FUN_000113b8","address":"000113b8","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_000119d0","address":"000119d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_0001279c","address":"0001279c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_00012bec","address":"00012bec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_00013398","address":"00013398","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_00013398","address":"00013398","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_00013398","address":"00013398","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_00014488","address":"00014488","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_00014488","address":"00014488","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_00014488","address":"00014488","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_00014488","address":"00014488","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_00014488","address":"00014488","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lld2c","function":"FUN_00014488","address":"00014488","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

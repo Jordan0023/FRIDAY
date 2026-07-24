@@ -1,0 +1,6 @@
+{"binary":"xhci-hcd.ko","function":"xhci_hub_control","address":"0010fff0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xhci-hcd.ko","function":"xhci_hub_control","address":"0010fff0","route":"/U1/U2.","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xhci-hcd.ko","function":"xhci_portsc_show","address":"00112050","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xhci-hcd.ko","function":"xhci_endpoint_context_show","address":"001125c0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xhci-hcd.ko","function":"xhci_slot_context_show","address":"00112850","route":"/%d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xhci-hcd.ko","function":"xhci_ring_trb_show","address":"00112e90","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

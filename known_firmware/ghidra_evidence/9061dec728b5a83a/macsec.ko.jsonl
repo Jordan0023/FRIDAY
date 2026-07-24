@@ -1,0 +1,6 @@
+{"binary":"macsec.ko","function":"FUN_00100b30","address":"00100b30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec.ko","function":"FUN_00100d64","address":"00100d64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec.ko","function":"FUN_00100d68","address":"00100d68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec.ko","function":"FUN_0010326c","address":"0010326c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec.ko","function":"FUN_00103270","address":"00103270","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec.ko","function":"FUN_00103718","address":"00103718","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

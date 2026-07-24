@@ -1,0 +1,1 @@
+{"binary":"libcfgmnt.so","function":"file_read_string","address":"00010d64","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

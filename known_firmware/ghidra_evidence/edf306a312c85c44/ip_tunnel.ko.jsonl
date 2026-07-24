@@ -1,0 +1,4 @@
+{"binary":"ip_tunnel.ko","function":"FUN_00101ae0","address":"00101ae0","route":"/ipv4/ip_tunnel.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_tunnel.ko","function":"FUN_00101ae0","address":"00101ae0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_tunnel.ko","function":"ip_tunnel_init_net","address":"0010232c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_tunnel.ko","function":"ip_tunnel_init","address":"0010274c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

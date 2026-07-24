@@ -1,0 +1,2 @@
+{"binary":"nf_dyndscp.ko","function":"FUN_00100b8c","address":"00100b8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_dyndscp.ko","function":"nf_dyndscp_proc_write","address":"00100b90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

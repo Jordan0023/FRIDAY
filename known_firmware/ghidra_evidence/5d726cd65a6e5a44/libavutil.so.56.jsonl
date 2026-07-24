@@ -1,0 +1,7 @@
+{"binary":"libavutil.so.56","function":"FUN_0002e698","address":"0002e698","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"av_image_copy_to_buffer","address":"0002f548","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"av_image_fill_black","address":"0002f754","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"FUN_00031448","address":"00031448","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"av_fast_malloc","address":"0003326c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"av_fast_mallocz","address":"00033274","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"FUN_00040650","address":"00040650","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

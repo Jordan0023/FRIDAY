@@ -1,0 +1,4 @@
+{"binary":"arp_tables.ko","function":"FUN_001003dc","address":"001003dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"arp_tables.ko","function":"FUN_001003dc","address":"001003dc","route":"/linux/uaccess.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"arp_tables.ko","function":"arpt_register_table","address":"00101528","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"arp_tables.ko","function":"FUN_00101658","address":"00101658","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

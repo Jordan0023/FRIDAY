@@ -1,0 +1,14 @@
+{"binary":"bcmspu.ko","function":"ahash_export","address":"00011068","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"ahash_import","address":"00011134","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"handle_ahash_req","address":"000112b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"aead_authenc_setkey","address":"00011bd8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"handle_ablkcipher_req","address":"00012110","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"ablkcipher_setkey","address":"00013ba0","route":"/../bcmdrivers/opensource/char/spudd/bcm96766/cipher.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"ablkcipher_setkey","address":"00013ba0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"handle_aead_req","address":"0001458c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"aead_esn_enqueue","address":"00015570","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_rx_callback","address":"000159b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_ds_dev_xmit_args","address":"00017c44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_fc_crypt_done_ds","address":"000181cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_fc_crypt_done_ds","address":"000181cc","route":"/linux/skbuff.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_us_dev_xmit_args","address":"00018bc8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"libmsrpc3-samba4.so","function":"rpc_api_pipe_got_pdu","address":"00017324","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmsrpc3-samba4.so","function":"rpc_pipe_open_tcp_port","address":"00019c54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmsrpc3-samba4.so","function":"dcerpc_check_auth","address":"0001cf64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

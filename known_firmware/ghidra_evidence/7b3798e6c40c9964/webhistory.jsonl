@@ -1,0 +1,2 @@
+{"binary":"webhistory","function":"FUN_00008d3c","address":"00008d3c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webhistory","function":"FUN_00008d3c","address":"00008d3c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

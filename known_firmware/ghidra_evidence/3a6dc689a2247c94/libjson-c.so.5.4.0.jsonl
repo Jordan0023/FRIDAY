@@ -1,0 +1,6 @@
+{"binary":"libjson-c.so.5.4.0","function":"json_object_double_to_json_string","address":"00013e5c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.5.4.0","function":"json_object_new_string","address":"000155d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.5.4.0","function":"json_object_new_string_len","address":"000155f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.5.4.0","function":"json_object_set_string","address":"00015654","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.5.4.0","function":"json_object_set_string_len","address":"0001567c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.5.4.0","function":"printbuf_memappend","address":"0001a180","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

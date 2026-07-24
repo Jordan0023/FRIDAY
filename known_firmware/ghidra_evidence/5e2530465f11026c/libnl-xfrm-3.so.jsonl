@@ -1,0 +1,13 @@
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"FUN_00016664","address":"00016664","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"xfrmnl_ae_parse","address":"00016bac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"xfrmnl_ae_build_get_request","address":"00017128","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"FUN_0001a554","address":"0001a554","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"xfrmnl_sa_parse","address":"0001b1b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"xfrmnl_sa_parse","address":"0001b1b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"xfrmnl_sa_build_get_request","address":"0001c450","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"FUN_0001c7c0","address":"0001c7c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"FUN_0001d5a8","address":"0001d5a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"FUN_000212bc","address":"000212bc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"xfrmnl_sp_parse","address":"00021c9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"FUN_000228f4","address":"000228f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-xfrm-3.so.200.26.0","function":"FUN_00023360","address":"00023360","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

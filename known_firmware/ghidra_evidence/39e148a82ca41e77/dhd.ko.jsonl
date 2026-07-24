@@ -1,0 +1,1 @@
+{"binary":"dhd.ko","function":"dhd_bus_download_firmware","address":"00120f88","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

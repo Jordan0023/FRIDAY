@@ -1,0 +1,11 @@
+{"binary":"ntfs.ko","function":"ntfs_readpage","address":"00010584","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_read_compressed_block","address":"00012268","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_lookup_inode_by_name","address":"000140f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_init_locked_inode","address":"000153e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"FUN_00015d20","address":"00015d20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_read_inode_mount","address":"0001740c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"map_extent_mft_record","address":"000180a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_runlists_merge","address":"00018a7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_runlists_merge","address":"00018a7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_mapping_pairs_decompress","address":"00019cdc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_fill_super","address":"0001b31c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

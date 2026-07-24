@@ -1,0 +1,4 @@
+{"binary":"udevtrigger","function":"FUN_00011814","address":"00011814","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"udevtrigger","function":"FUN_00011cdc","address":"00011cdc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"udevtrigger","function":"FUN_00011e14","address":"00011e14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"udevtrigger","function":"FUN_00014074","address":"00014074","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

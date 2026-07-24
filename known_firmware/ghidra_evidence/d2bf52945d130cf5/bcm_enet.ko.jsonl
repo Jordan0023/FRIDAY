@@ -1,0 +1,8 @@
+{"binary":"bcm_enet.ko","function":"enet_set_mac_addr","address":"00011a68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_enet.ko","function":"enet_create_netdevice","address":"00013324","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_enet.ko","function":"config_set","address":"00019518","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_enet.ko","function":"_devname_concat","address":"0001c434","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_enet.ko","function":"get_inter_phy_types","address":"0001c964","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_enet.ko","function":"enet_ioctl_compat_ethctl","address":"0001d814","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_enet.ko","function":"enet_ioctl_compat_ethctl","address":"0001d814","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_enet.ko","function":"enet_ioctl_compat_ethswctl","address":"0001e934","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

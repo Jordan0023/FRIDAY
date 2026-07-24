@@ -1,0 +1,6 @@
+{"binary":"libdbwrap-samba4.so","function":"tdb_data_buf","address":"00012988","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbwrap-samba4.so","function":"dbwrap_parse_record_send","address":"000133c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbwrap-samba4.so","function":"dbwrap_marshall_fn","address":"00013e7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbwrap-samba4.so","function":"db_rbt_storev","address":"00014e8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbwrap-samba4.so","function":"db_rbt_fetch_locked","address":"00015600","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbwrap-samba4.so","function":"db_tdb_fetchlock_parse","address":"00015a08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

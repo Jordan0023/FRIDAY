@@ -1,0 +1,2 @@
+{"binary":"utrace","function":"FUN_000118d0","address":"000118d0","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"utrace","function":"FUN_000118d0","address":"000118d0","route":"/*","sink":"exec","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

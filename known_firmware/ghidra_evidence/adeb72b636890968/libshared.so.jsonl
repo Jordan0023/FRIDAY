@@ -1,0 +1,16 @@
+{"binary":"libshared.so","function":"_eval","address":"000315e0","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"ping_target_with_size","address":"00033a74","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"ParseIPv4OrIPv6","address":"000425d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"notify_rc","address":"00046cf8","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"notify_rc_after_wait","address":"00046d04","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"notify_rc_after_period_wait","address":"00046d10","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"FUN_0004b80c","address":"0004b80c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"FUN_0004bab8","address":"0004bab8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"get_mtlan_by_vid","address":"0004ff90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"get_rm_mtlan_by_vid","address":"0004ff98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"notify_ahs","address":"00051d54","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"notify_ahs_after_wait","address":"00051d60","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"notify_ahs_after_period_wait","address":"00051d6c","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"apg_get_status","address":"0005a170","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"apg_get_status","address":"0005a170","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"aae_sendIpcMsgAndWaitResp","address":"00086918","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

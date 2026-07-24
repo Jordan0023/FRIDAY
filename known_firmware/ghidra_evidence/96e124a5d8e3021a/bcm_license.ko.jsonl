@@ -1,0 +1,7 @@
+{"binary":"bcm_license.ko","function":"oui_parse.isra.0","address":"00100660","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_license.ko","function":"parse_license_legacy","address":"00100890","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_license.ko","function":"parse_license_legacy","address":"00100890","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_license.ko","function":"parse_license","address":"00100c30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_license.ko","function":"parse_license","address":"00100c30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_license.ko","function":"license_file_parse","address":"001015e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_license.ko","function":"chip_init","address":"00101ba0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

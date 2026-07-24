@@ -1,0 +1,1 @@
+{"binary":"qca-nss-drv.ko","function":"nss_capwap_tx_msg","address":"0001e930","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"libceshared.so","function":"ce_send_event_to_port","address":"000108e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libceshared.so","function":"ce_send_cevent","address":"00010b08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

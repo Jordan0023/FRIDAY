@@ -1,0 +1,2 @@
+{"binary":"tun.ko","function":"FUN_00105a34","address":"00105a34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tun.ko","function":"FUN_00105a38","address":"00105a38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

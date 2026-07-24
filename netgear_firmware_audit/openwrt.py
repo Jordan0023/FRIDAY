@@ -206,6 +206,8 @@ def download_openwrt_router_firmware(
     downloaded = 0
     known_products = set(manifest.products)
     for model in models:
+        if manifest.is_eol(model.product.name):
+            continue
         if resume and model.product.name in known_products:
             continue
         products_seen += 1
@@ -213,6 +215,7 @@ def download_openwrt_router_firmware(
         manifest.add_product(model.product.name, model.product.url)
         manifest.save()
         links = discovery.discover_firmware(model)
+        links = [link for link in links if manifest.accepts_link(link)]
         if limit_firmware is not None:
             links = links[:limit_firmware]
         image_by_name = {str(image.get("name") or ""): image for image in model.images}

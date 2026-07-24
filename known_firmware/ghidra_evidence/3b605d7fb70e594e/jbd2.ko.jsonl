@@ -1,0 +1,4 @@
+{"binary":"jbd2.ko","function":"FUN_00011b78","address":"00011b78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd2.ko","function":"FUN_00015b80","address":"00015b80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd2.ko","function":"FUN_00015b80","address":"00015b80","route":"/linux/jbd2.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd2.ko","function":"jbd2_journal_write_metadata_buffer","address":"0001b6ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

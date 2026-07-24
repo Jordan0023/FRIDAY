@@ -1,0 +1,12 @@
+{"binary":"curl","function":"memmove","address":"000098c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"memcpy","address":"00009a24","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"strcpy","address":"00009ad8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"strcat","address":"00009b14","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"sscanf","address":"00009ce8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"FUN_0000b26c","address":"0000b26c","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"FUN_0000c0fc","address":"0000c0fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"FUN_0000c0fc","address":"0000c0fc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"FUN_0000c0fc","address":"0000c0fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"FUN_0000c0fc","address":"0000c0fc","route":"/':","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"FUN_0000c0fc","address":"0000c0fc","route":"/':","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"curl","function":"FUN_0000c0fc","address":"0000c0fc","route":"/':","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

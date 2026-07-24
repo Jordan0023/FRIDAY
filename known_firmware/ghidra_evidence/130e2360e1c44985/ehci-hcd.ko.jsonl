@@ -1,0 +1,1 @@
+{"binary":"ehci-hcd.ko","function":"companion_store","address":"00011428","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

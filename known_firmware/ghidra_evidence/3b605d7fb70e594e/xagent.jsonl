@@ -1,0 +1,12 @@
+{"binary":"xagent","function":"FUN_00404534","address":"00404534","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_00404c64","address":"00404c64","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_00404c64","address":"00404c64","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_00408780","address":"00408780","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_00408780","address":"00408780","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_0040aeb4","address":"0040aeb4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_0040aeb4","address":"0040aeb4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_0040d154","address":"0040d154","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_0040d928","address":"0040d928","route":"/or","sink":"memory_operation","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_0040d928","address":"0040d928","route":"/*","sink":"memory_operation","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_0040e32c","address":"0040e32c","route":"/etc/resolv.conf","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent","function":"FUN_00410890","address":"00410890","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

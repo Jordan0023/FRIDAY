@@ -1,0 +1,2 @@
+{"binary":"libndr.so.1.0.1","function":"ndr_pull_bytes","address":"00018cc8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libndr.so.1.0.1","function":"ndr_push_bytes","address":"00019d28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

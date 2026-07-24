@@ -1,0 +1,4 @@
+{"binary":"ip6_gre.ko","function":"FUN_00011ac8","address":"00011ac8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip6_gre.ko","function":"FUN_00012648","address":"00012648","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip6_gre.ko","function":"ip6erspan_tunnel_xmit","address":"00012e68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip6_gre.ko","function":"gre_rcv","address":"00013b84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

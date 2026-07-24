@@ -1,0 +1,1 @@
+{"binary":"esp4.ko","function":"esp_init_authenc","address":"00100670","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

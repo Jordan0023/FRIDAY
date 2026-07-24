@@ -1,0 +1,7 @@
+{"binary":"libopencore-amrnb.so.0.0.3","function":"FUN_00012158","address":"00012158","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libopencore-amrnb.so.0.0.3","function":"FUN_000139d0","address":"000139d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libopencore-amrnb.so.0.0.3","function":"FUN_00013d14","address":"00013d14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libopencore-amrnb.so.0.0.3","function":"FUN_0001431c","address":"0001431c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libopencore-amrnb.so.0.0.3","function":"FUN_00016020","address":"00016020","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libopencore-amrnb.so.0.0.3","function":"FUN_0001cf44","address":"0001cf44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libopencore-amrnb.so.0.0.3","function":"FUN_0001e0c0","address":"0001e0c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

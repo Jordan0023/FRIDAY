@@ -53,14 +53,22 @@ def record_year(record: FirmwareRecord) -> int | None:
     return None
 
 
-def select_targets(root: Path, count: int, min_year: int, max_year: int) -> list[FirmwareRecord]:
+def select_targets(
+    root: Path,
+    count: int,
+    min_year: int,
+    max_year: int,
+    excluded_products: set[str] | None = None,
+) -> list[FirmwareRecord]:
     manifest = Manifest(root).load()
     eol = load_eol_products()
+    excluded_products = excluded_products or set()
     latest: dict[str, FirmwareRecord] = {}
     for record in manifest.records.values():
         year = record_year(record)
         if (
             record.product in eol
+            or record.product in excluded_products
             or year is None
             or not min_year <= year <= max_year
             or not (root / record.path).is_file()
@@ -287,9 +295,24 @@ def campaign(args: argparse.Namespace) -> int:
             )
         reject_eol_targets(targets)
     else:
-        targets = select_targets(args.root, args.count, args.min_year, args.max_year)
+        excluded_products: set[str] = set()
+        for excluded_campaign in args.exclude_campaign:
+            excluded_selection = excluded_campaign / "selection.json"
+            if not excluded_selection.is_file():
+                raise SystemExit(f"Missing excluded selection: {excluded_selection}")
+            excluded_products.update(
+                str(item["product"])
+                for item in json.loads(excluded_selection.read_text())
+            )
+        targets = select_targets(
+            args.root, args.count, args.min_year, args.max_year, excluded_products
+        )
         reject_eol_targets(targets)
         selection_path.write_text(json.dumps([record.to_json() for record in targets], indent=2) + "\n")
+    if args.selection_only:
+        print(f"Campaign: {campaign_dir}")
+        print(f"Selected {len(targets)} distinct non-excluded products")
+        return 0
     jobs = []
     results = []
     for index, record in enumerate(targets, 1):
@@ -348,6 +371,14 @@ def main() -> int:
     run.add_argument("--max-ghidra-files", type=int, default=5, help="Maximum ELF files per router; 0 analyzes all eligible ELF files")
     run.add_argument("--max-extract-mb", type=int, default=768)
     run.add_argument("--output", type=Path)
+    run.add_argument(
+        "--exclude-campaign",
+        type=Path,
+        action="append",
+        default=[],
+        help="Exclude products listed in another campaign's selection.json",
+    )
+    run.add_argument("--selection-only", action="store_true")
     work = sub.add_parser("worker")
     work.add_argument("--root", type=Path, required=True)
     work.add_argument("--record", type=Path, required=True)

@@ -1,0 +1,2 @@
+{"binary":"libFLAC.so.8.2.0","function":"FLAC__metadata_object_cuesheet_insert_track","address":"00026558","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libFLAC.so.8.2.0","function":"FUN_00026fdc","address":"00026fdc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

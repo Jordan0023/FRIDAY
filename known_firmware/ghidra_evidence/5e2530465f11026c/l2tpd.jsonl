@@ -1,0 +1,12 @@
+{"binary":"l2tpd","function":"main","address":"00012d80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"main","address":"00012d80","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"main","address":"00012d80","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"l2tp_dgram_send_to_wire","address":"00013d0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"l2tp_dgram_add_avp","address":"00013f38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"l2tp_dgram_take_from_wire","address":"00014844","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"l2tp_parse_config_file","address":"000164e8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"l2tp_peer_find","address":"00016c04","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"FUN_00018df0","address":"00018df0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"FUN_00019328","address":"00019328","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"FUN_00019328","address":"00019328","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tpd","function":"FUN_00019328","address":"00019328","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"libbcm_boardctl.so","function":"devCtl_scratchPadSet","address":"0001173c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

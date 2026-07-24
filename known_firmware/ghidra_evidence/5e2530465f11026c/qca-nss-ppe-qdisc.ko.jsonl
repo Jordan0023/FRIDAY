@@ -1,0 +1,2 @@
+{"binary":"qca-nss-ppe-qdisc.ko","function":"ppe_red_change","address":"00016690","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-qdisc.ko","function":"FUN_00018540","address":"00018540","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

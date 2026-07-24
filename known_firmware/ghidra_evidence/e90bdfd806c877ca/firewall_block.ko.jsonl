@@ -1,0 +1,1 @@
+{"binary":"firewall_block.ko","function":"__sc_add_block_pattern_hook","address":"00011168","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

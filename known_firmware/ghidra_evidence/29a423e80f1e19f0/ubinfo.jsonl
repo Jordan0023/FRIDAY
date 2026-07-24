@@ -1,0 +1,3 @@
+{"binary":"ubinfo","function":"FUN_000123d8","address":"000123d8","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubinfo","function":"FUN_000128dc","address":"000128dc","route":"/misc/ubi_ctrl","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubinfo","function":"FUN_000128dc","address":"000128dc","route":"/ubi","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

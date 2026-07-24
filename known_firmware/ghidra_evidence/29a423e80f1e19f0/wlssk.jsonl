@@ -1,0 +1,3 @@
+{"binary":"wlssk","function":"FUN_000124fc","address":"000124fc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlssk","function":"FUN_000124fc","address":"000124fc","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlssk","function":"FUN_0001326c","address":"0001326c","route":"/*","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

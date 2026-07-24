@@ -1,0 +1,3 @@
+{"binary":"l2tp_core.ko","function":"l2tp_tunnel_create","address":"00100b00","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tp_core.ko","function":"l2tp_session_create","address":"001020c8","route":"/%u","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"l2tp_core.ko","function":"l2tp_session_create","address":"001020c8","route":"/%u","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

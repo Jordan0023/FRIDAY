@@ -1,0 +1,5 @@
+{"binary":"libe2p.so.2.3","function":"fsetproject","address":"00011a1c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"fgetproject","address":"00011aec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"e2p_uuid_to_str","address":"00011d80","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"iterate_on_dir","address":"00012470","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libe2p.so.2.3","function":"list_super2","address":"00013140","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}

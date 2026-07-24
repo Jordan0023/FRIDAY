@@ -1,0 +1,4 @@
+{"binary":"hcitool","function":"FUN_00014814","address":"00014814","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hcitool","function":"FUN_00014814","address":"00014814","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hcitool","function":"FUN_00015a10","address":"00015a10","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hcitool","function":"FUN_00015a10","address":"00015a10","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

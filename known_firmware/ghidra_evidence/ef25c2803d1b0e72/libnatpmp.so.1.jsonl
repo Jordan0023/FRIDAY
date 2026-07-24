@@ -1,0 +1,2 @@
+{"binary":"libnatpmp.so.20150609","function":"getdefaultgateway","address":"00011058","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnatpmp.so.20150609","function":"getdefaultgateway","address":"00011058","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

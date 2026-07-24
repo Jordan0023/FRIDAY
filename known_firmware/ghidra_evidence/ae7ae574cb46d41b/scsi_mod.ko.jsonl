@@ -1,0 +1,3 @@
+{"binary":"scsi_mod.ko","function":"scsi_eh_prep_cmnd","address":"00102de8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"scsi_mod.ko","function":"scsi_io_completion","address":"00108f78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"scsi_mod.ko","function":"__scsi_scan_target","address":"0010b090","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

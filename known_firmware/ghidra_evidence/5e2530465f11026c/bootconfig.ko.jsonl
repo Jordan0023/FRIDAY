@@ -1,0 +1,3 @@
+{"binary":"bootconfig.ko","function":"read_bootconfig_emmc","address":"000108b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bootconfig.ko","function":"write_to_flash","address":"00010e1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bootconfig.ko","function":"init_module","address":"00010fec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

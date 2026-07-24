@@ -1,0 +1,3 @@
+{"binary":"ntgr_trafficmeter","function":"FUN_00017870","address":"00017870","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntgr_trafficmeter","function":"FUN_0001950c","address":"0001950c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntgr_trafficmeter","function":"FUN_0001b294","address":"0001b294","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,8 @@
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_aead_setkey_noauth","address":"00010fc8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_aead_setkey","address":"0001148c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_skcipher_dec_done","address":"000121b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_skcipher_setkey","address":"000122e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_ahash_done","address":"00012da4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_ahash_setkey","address":"00012ea0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_ahash_tfm_init","address":"00013008","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip-crypto.ko","function":"eip_crypto_ahash_final","address":"000133d4","route":"/repo/asuswrt/release/src-qca-ipq53xx/ipq53xx/qca-nss-eip/source/clients/crypto/eip_crypto_ahash.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

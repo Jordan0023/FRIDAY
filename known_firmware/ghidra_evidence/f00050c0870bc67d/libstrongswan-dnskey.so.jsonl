@@ -1,0 +1,1 @@
+{"binary":"libstrongswan-dnskey.so","function":"dnskey_encoder_encode","address":"00010b74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

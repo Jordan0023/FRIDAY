@@ -1,0 +1,13 @@
+{"binary":"nf_tables.ko","function":"FUN_00028c74","address":"00028c74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_00028c74","address":"00028c74","route":"/netfilter/nf_tables_api.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_67","address":"0002cd2c","route":"/net/netfilter/nf_tables.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_67","address":"0002cd2c","route":"/net/netfilter/nf_tables.h:196","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_0002de10","address":"0002de10","route":"/netfilter/nft_cmp.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_0002de10","address":"0002de10","route":"/netfilter/nft_cmp.c:162","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_0002de10","address":"0002de10","route":"/netfilter/nft_cmp.c:163","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_96","address":"00030418","route":"/netfilter/nft_payload.c:59","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_96","address":"00030418","route":"/netfilter/nft_payload.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_70","address":"00031388","route":"/net/netfilter/nf_tables.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"_70","address":"00031388","route":"/net/netfilter/nf_tables.h:196","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_0003e424","address":"0003e424","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_tables.ko","function":"FUN_0003e424","address":"0003e424","route":"/netfilter/nft_set_pipapo.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"dig","function":"FUN_00407c0c","address":"00407c0c","route":"/../lib/isc/include/isc/buffer.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dig","function":"FUN_0040950c","address":"0040950c","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"cookie,COOKIE","correlation":"function-local-co-location"}
+{"binary":"dig","function":"FUN_0040950c","address":"0040950c","route":"/.digrc","sink":"file_write","sources":"getenv","auth_markers":"cookie,COOKIE","correlation":"function-local-co-location"}
+{"binary":"dig","function":"FUN_0040950c","address":"0040950c","route":"/dns-query","sink":"file_write","sources":"getenv","auth_markers":"cookie,COOKIE","correlation":"function-local-co-location"}

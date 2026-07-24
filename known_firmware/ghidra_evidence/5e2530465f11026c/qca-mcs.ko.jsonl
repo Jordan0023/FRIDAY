@@ -1,0 +1,4 @@
+{"binary":"qca-mcs.ko","function":"mc_netlink_receive","address":"000101b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-mcs.ko","function":"mc_source_list_update","address":"00012424","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-mcs.ko","function":"FUN_00014be0","address":"00014be0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-mcs.ko","function":"mc_ipv6_mld2_report","address":"0001876c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

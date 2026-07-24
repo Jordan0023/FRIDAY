@@ -1,0 +1,2 @@
+{"binary":"ntfslabel","function":"FUN_00011a38","address":"00011a38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfslabel","function":"FUN_00011c38","address":"00011c38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"luci.so","function":"FUN_00011a68","address":"00011a68","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"luci.so","function":"FUN_00011f28","address":"00011f28","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"luci.so","function":"FUN_00014564","address":"00014564","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"luci.so","function":"FUN_00014564","address":"00014564","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"luci.so","function":"FUN_00014c7c","address":"00014c7c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

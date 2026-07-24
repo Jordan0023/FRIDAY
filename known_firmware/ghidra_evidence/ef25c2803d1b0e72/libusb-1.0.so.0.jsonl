@@ -1,0 +1,11 @@
+{"binary":"libusb-1.0.so.0.3.0","function":"FUN_00014a20","address":"00014a20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.3.0","function":"libusb_get_bos_descriptor","address":"0001539c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.3.0","function":"libusb_control_transfer","address":"00017a10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.3.0","function":"FUN_00018548","address":"00018548","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.3.0","function":"FUN_000185bc","address":"000185bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.3.0","function":"FUN_00018da8","address":"00018da8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.3.0","function":"FUN_00018ff8","address":"00018ff8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.3.0","function":"FUN_00019330","address":"00019330","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.3.0","function":"FUN_0001953c","address":"0001953c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.3.0","function":"FUN_0001a290","address":"0001a290","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.3.0","function":"FUN_0001a76c","address":"0001a76c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

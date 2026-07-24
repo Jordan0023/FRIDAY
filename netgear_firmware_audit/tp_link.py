@@ -216,6 +216,8 @@ def download_tplink_router_firmware(
     downloaded = 0
     known_products = set(manifest.products)
     for model in models:
+        if manifest.is_eol(model.product.name):
+            continue
         if resume and model.product.name in known_products:
             continue
         products_seen += 1
@@ -228,6 +230,7 @@ def download_tplink_router_firmware(
             _record_tplink_unavailable(root, "products", model.product.name, model.product.url, str(exc), model.menu_name)
             print(f"Could not check {model.product.name}: {exc}")
             continue
+        links = [link for link in links if manifest.accepts_link(link)]
         if limit_firmware is not None:
             links = links[:limit_firmware]
         if not links:

@@ -1,0 +1,13 @@
+{"binary":"usb-storage.ko","function":"usb_stor_access_xfer_buf","address":"00010a80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"usb_stor_ufi_command","address":"00010d54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"usb_stor_ATAPI_command","address":"00010e08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"usb_stor_qic157_command","address":"00010e54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"usb_stor_invoke_transport","address":"000118d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"FUN_0001612c","address":"0001612c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"sddr09_transport","address":"00016554","route":"/%02X%02X","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"sddr09_transport","address":"00016554","route":"/%02X%02X","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"sddr55_transport","address":"00017c7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"datafab_transport","address":"00019e00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"jumpshot_transport","address":"0001ab4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"FUN_0001ce50","address":"0001ce50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"rio_karma_transport","address":"0001d0c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

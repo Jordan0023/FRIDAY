@@ -1,0 +1,2 @@
+{"binary":"getdns_query","function":"FUN_000137a4","address":"000137a4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"getdns_query","function":"FUN_000137a4","address":"000137a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

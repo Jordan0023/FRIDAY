@@ -1,0 +1,2 @@
+{"binary":"docfdisk","function":"FUN_00010648","address":"00010648","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"docfdisk","function":"FUN_00010648","address":"00010648","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

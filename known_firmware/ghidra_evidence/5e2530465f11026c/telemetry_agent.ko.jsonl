@@ -1,0 +1,3 @@
+{"binary":"telemetry_agent.ko","function":"telemetry_emesh_stats_work_periodic","address":"0001020c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"telemetry_agent.ko","function":"telemetry_agent_stats_work_periodic","address":"00010564","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"telemetry_agent.ko","function":"telemetry_agent_stats_work_init","address":"00010aec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

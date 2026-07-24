@@ -1,0 +1,12 @@
+{"binary":"ntfssecaudit","function":"FUN_000151ec","address":"000151ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_00015430","address":"00015430","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_00015a34","address":"00015a34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_000162d4","address":"000162d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_00017d4c","address":"00017d4c","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_00017d4c","address":"00017d4c","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_00017d4c","address":"00017d4c","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_00017d4c","address":"00017d4c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_00017d4c","address":"00017d4c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_00017d4c","address":"00017d4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_00018308","address":"00018308","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfssecaudit","function":"FUN_00018308","address":"00018308","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

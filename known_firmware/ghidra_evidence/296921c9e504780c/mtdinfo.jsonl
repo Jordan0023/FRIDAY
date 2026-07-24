@@ -1,0 +1,2 @@
+{"binary":"mtdinfo","function":"FUN_00013874","address":"00013874","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"FUN_00015a44","address":"00015a44","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

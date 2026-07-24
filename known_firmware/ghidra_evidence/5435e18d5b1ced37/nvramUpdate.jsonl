@@ -1,0 +1,2 @@
+{"binary":"nvramUpdate","function":"FUN_00011664","address":"00011664","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvramUpdate","function":"FUN_00011664","address":"00011664","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

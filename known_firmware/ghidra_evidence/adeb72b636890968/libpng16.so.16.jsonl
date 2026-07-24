@@ -1,0 +1,10 @@
+{"binary":"libpng16.so.16.37.0","function":"FUN_0001a6f0","address":"0001a6f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpng16.so.16.37.0","function":"FUN_0001aab4","address":"0001aab4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpng16.so.16.37.0","function":"FUN_0001b37c","address":"0001b37c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpng16.so.16.37.0","function":"png_read_row","address":"0001d9f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpng16.so.16.37.0","function":"FUN_0002600c","address":"0002600c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpng16.so.16.37.0","function":"FUN_00028068","address":"00028068","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpng16.so.16.37.0","function":"png_set_sCAL_s","address":"00029a08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpng16.so.16.37.0","function":"png_set_PLTE","address":"00029d10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpng16.so.16.37.0","function":"FUN_0002b680","address":"0002b680","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpng16.so.16.37.0","function":"png_write_row","address":"0002c348","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

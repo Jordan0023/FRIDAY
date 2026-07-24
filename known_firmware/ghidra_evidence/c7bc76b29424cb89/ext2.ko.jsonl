@@ -1,0 +1,5 @@
+{"binary":"ext2.ko","function":"ext2_make_empty","address":"00011ea0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext2.ko","function":"ext2_add_link","address":"00012480","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext2.ko","function":"FUN_00019e84","address":"00019e84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext2.ko","function":"ext2_xattr_set","address":"0001a6f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext2.ko","function":"ext2_xattr_set","address":"0001a6f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

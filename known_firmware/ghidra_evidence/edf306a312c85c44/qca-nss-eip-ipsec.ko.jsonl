@@ -1,0 +1,1 @@
+{"binary":"qca-nss-eip-ipsec.ko","function":"eip_ipsec_sa_add","address":"001020c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

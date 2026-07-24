@@ -1,0 +1,2 @@
+{"binary":"port_forward.ko","function":"FUN_001002d0","address":"001002d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"port_forward.ko","function":"FUN_001002d0","address":"001002d0","route":"/linux/uaccess.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,8 @@
+{"binary":"kmodloader","function":"FUN_004013f0","address":"004013f0","route":"/etc/modules.d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_004013f0","address":"004013f0","route":"/etc/modules.d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_004013f0","address":"004013f0","route":"/etc/modules.d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_004013f0","address":"004013f0","route":"/etc/modules.d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_004013f0","address":"004013f0","route":"/etc/modules.d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_00402654","address":"00402654","route":"/proc/modules","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_00402a94","address":"00402a94","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_00402a94","address":"00402a94","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

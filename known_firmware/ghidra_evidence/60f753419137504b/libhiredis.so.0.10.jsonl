@@ -1,0 +1,6 @@
+{"binary":"libhiredis.so.0.10","function":"FUN_000123cc","address":"000123cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhiredis.so.0.10","function":"redisvFormatCommand","address":"00012e0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhiredis.so.0.10","function":"redisvFormatCommand","address":"00012e0c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhiredis.so.0.10","function":"redisFormatCommandArgv","address":"00013364","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhiredis.so.0.10","function":"redisFormatCommandArgv","address":"00013364","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhiredis.so.0.10","function":"__redisSetError","address":"000134f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

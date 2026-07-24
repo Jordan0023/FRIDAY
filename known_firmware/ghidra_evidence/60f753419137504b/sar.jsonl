@@ -1,0 +1,13 @@
+{"binary":"sar","function":"strcpy","address":"0000902c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"memcpy","address":"000090d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"sscanf","address":"0000923c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"execv","address":"00009248","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"fopen","address":"00009278","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"sprintf","address":"000092e4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"open","address":"0000938c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"FUN_000093d4","address":"000093d4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"FUN_000093d4","address":"000093d4","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"FUN_00009f44","address":"00009f44","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"FUN_0000a1b8","address":"0000a1b8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"FUN_0000ac50","address":"0000ac50","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sar","function":"FUN_0000c988","address":"0000c988","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

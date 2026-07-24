@@ -1,0 +1,2 @@
+{"binary":"libdcerpc-binding.so.0","function":"dcerpc_ncacn_pull_pkt_auth","address":"000256fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdcerpc-binding.so.0","function":"dcerpc_ncacn_push_pkt_auth","address":"0002595c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

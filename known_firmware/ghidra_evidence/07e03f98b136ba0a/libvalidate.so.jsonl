@@ -1,0 +1,4 @@
+{"binary":"libvalidate.so","function":"FUN_000118b8","address":"000118b8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvalidate.so","function":"FUN_00011984","address":"00011984","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvalidate.so","function":"FUN_00011a60","address":"00011a60","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvalidate.so","function":"FUN_00011d08","address":"00011d08","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"libnss_files.so.2","function":"FUN_00012edc","address":"00012edc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnss_files.so.2","function":"_nss_files_gethostbyname4_r","address":"00013ad4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

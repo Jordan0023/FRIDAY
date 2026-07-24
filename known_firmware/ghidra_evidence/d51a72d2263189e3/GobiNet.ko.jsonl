@@ -1,0 +1,3 @@
+{"binary":"GobiNet.ko","function":"GobiUSBNetProbe","address":"0001336c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"GobiNet.ko","function":"RemoveProcessFile","address":"00017808","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"GobiNet.ko","function":"RegisterQMIDevice","address":"000215d0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -131,7 +131,12 @@ class FirmwareAuditor:
         elf_files = sorted(
             (p for p in files if _is_elf(p)),
             key=lambda p: (0 if any(x in p.name.lower() for x in ("http", "cgi", "web", "rpc", "ubus", "upnp")) else 1, str(p)),
-        )[: self.max_ghidra_files]
+        )
+        # A non-positive limit means "all eligible ELF files".  This is used by
+        # exhaustive campaigns; bounded vendor refresh jobs retain their normal
+        # positive limits.
+        if self.max_ghidra_files > 0:
+            elf_files = elf_files[: self.max_ghidra_files]
         if not elf_files:
             return ["No ELF binaries found for Ghidra import."], []
         project_dir = self.root / "ghidra_projects"

@@ -1,0 +1,3 @@
+{"binary":"libmessages-dgm-samba4.so","function":"pthreadpool_add_job","address":"00013848","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmessages-dgm-samba4.so","function":"FUN_0001512c","address":"0001512c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmessages-dgm-samba4.so","function":"messaging_dgm_send","address":"000166f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

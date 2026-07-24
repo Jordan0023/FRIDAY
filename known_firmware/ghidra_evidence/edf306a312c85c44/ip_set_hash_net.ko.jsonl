@@ -1,0 +1,10 @@
+{"binary":"ip_set_hash_net.ko","function":"FUN_00102314","address":"00102314","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_net.ko","function":"FUN_00102314","address":"00102314","route":"/%u","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_net.ko","function":"FUN_001027a8","address":"001027a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_net.ko","function":"FUN_00102d18","address":"00102d18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_net.ko","function":"FUN_00103678","address":"00103678","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_net.ko","function":"FUN_00103e1c","address":"00103e1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_net.ko","function":"FUN_00103e1c","address":"00103e1c","route":"/%u","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_net.ko","function":"FUN_001042b0","address":"001042b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_net.ko","function":"FUN_001047b0","address":"001047b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_net.ko","function":"FUN_001050a0","address":"001050a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

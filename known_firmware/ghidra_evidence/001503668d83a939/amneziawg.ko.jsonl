@@ -1,0 +1,6 @@
+{"binary":"amneziawg.ko","function":"FUN_0010065c","address":"0010065c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"FUN_00100660","address":"00100660","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"wg_socket_send_buffer_as_reply_to_skb","address":"00106dc0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"FUN_00108fc8","address":"00108fc8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"FUN_001097ac","address":"001097ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"FUN_001097b0","address":"001097b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

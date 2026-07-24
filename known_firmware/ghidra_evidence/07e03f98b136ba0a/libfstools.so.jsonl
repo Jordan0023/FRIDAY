@@ -1,0 +1,16 @@
+{"binary":"libfstools.so","function":"snapshot_write_file","address":"00011d2c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"snapshot_read_file","address":"00011f70","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"mount_extroot","address":"000125bc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"mount_extroot","address":"000125bc","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"mount_extroot","address":"000125bc","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"fs_state_get","address":"00012ee4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"fs_state_set","address":"00012f98","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"fs_state_set","address":"00012f98","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"jffs2_switch","address":"00013058","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"FUN_0001398c","address":"0001398c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"FUN_0001398c","address":"0001398c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"FUN_0001398c","address":"0001398c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"FUN_0001451c","address":"0001451c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"fopivot","address":"00014848","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"FUN_00014b1c","address":"00014b1c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfstools.so","function":"FUN_00014c14","address":"00014c14","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

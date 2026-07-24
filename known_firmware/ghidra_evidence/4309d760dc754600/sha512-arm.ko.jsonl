@@ -1,0 +1,4 @@
+{"binary":"sha512-arm.ko","function":"FUN_00012378","address":"00012378","route":"/crypto/sha512_base.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sha512-arm.ko","function":"FUN_00012378","address":"00012378","route":"/crypto/sha512_base.h:91","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sha512-arm.ko","function":"FUN_00012788","address":"00012788","route":"/crypto/sha512_base.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sha512-arm.ko","function":"FUN_00012788","address":"00012788","route":"/crypto/sha512_base.h:91","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

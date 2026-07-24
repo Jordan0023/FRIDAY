@@ -1,0 +1,9 @@
+{"binary":"libavcodec.so.54.23.100","function":"av_packet_merge_side_data","address":"0002b154","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"av_packet_split_side_data","address":"0002b364","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"FUN_0005534c","address":"0005534c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"FUN_0006723c","address":"0006723c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"FUN_0006a528","address":"0006a528","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"FUN_000a54bc","address":"000a54bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"avcodec_default_release_buffer","address":"000c63f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"avcodec_default_reget_buffer","address":"000c73d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"avcodec_encode_video2","address":"000c7d3c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"avahi-dnsconfd","function":"memmove","address":"00008d78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-dnsconfd","function":"sscanf","address":"00008eec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

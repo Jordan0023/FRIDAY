@@ -1,0 +1,12 @@
+{"binary":"hnd.ko","function":"FUN_001045bc","address":"001045bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"varbuf_append","address":"001045c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"srom_parsecis","address":"00104750","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"FUN_0010a33c","address":"0010a33c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"srom_read","address":"0010a340","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"bcm_format_flags","address":"0010eac0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"FUN_0011010c","address":"0011010c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"bcm_get_ifname_unit","address":"00110110","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"bcm_unpack_xtlv_buf_to_mem","address":"00115f90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"dld_write","address":"001166d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"osl_adjust_mac","address":"0011ce60","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hnd.ko","function":"mlo_ipc_init","address":"0011de90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

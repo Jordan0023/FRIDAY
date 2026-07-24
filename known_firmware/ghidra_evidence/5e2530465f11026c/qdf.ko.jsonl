@@ -1,0 +1,3 @@
+{"binary":"qdf.ko","function":"__qdf_wake_lock_create","address":"00011440","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qdf.ko","function":"qdf_mem_copy","address":"00012cd0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qdf.ko","function":"qdf_mem_move","address":"00012df4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

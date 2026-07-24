@@ -1,0 +1,1 @@
+{"binary":"qmi_wwan.ko","function":"qmi_wwan_rx_fixup","address":"00101080","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

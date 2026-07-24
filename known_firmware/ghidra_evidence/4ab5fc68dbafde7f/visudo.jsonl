@@ -1,0 +1,2 @@
+{"binary":"visudo","function":"FUN_00405bec","address":"00405bec","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"visudo","function":"FUN_00405cd4","address":"00405cd4","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

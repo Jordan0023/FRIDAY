@@ -1,0 +1,4 @@
+{"binary":"switch_led","function":"strcpy","address":"000084bc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"switch_led","function":"system","address":"000084ec","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"switch_led","function":"fopen","address":"00008510","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"switch_led","function":"sprintf","address":"00008528","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

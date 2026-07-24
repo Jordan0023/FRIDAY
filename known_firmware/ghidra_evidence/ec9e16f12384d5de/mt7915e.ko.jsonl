@@ -1,0 +1,5 @@
+{"binary":"mt7915e.ko","function":"_23","address":"00104820","route":"/mt7981_eeprom_mt7976_dbdc.bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7915e.ko","function":"_23","address":"00104820","route":"/mt7915_eeprom.bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7915e.ko","function":"_23","address":"00104820","route":"/mt7915_eeprom_dbdc.bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7915e.ko","function":"_23","address":"00104820","route":"/mt7916_eeprom.bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7915e.ko","function":"_92","address":"0010cb24","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

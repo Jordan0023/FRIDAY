@@ -1,0 +1,1 @@
+{"binary":"fat.ko","function":"fat_add_entries","address":"00012c74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

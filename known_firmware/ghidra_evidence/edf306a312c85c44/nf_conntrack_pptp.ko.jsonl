@@ -1,0 +1,2 @@
+{"binary":"nf_conntrack_pptp.ko","function":"FUN_001002c4","address":"001002c4","route":"/exp","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_conntrack_pptp.ko","function":"FUN_001002c4","address":"001002c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

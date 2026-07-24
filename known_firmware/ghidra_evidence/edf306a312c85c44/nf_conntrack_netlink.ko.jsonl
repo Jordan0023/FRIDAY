@@ -1,0 +1,1 @@
+{"binary":"nf_conntrack_netlink.ko","function":"FUN_00102438","address":"00102438","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

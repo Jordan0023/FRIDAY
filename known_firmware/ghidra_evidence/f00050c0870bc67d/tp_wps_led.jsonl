@@ -1,0 +1,3 @@
+{"binary":"tp_wps_led","function":"FUN_000106dc","address":"000106dc","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tp_wps_led","function":"FUN_000106dc","address":"000106dc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tp_wps_led","function":"FUN_000106dc","address":"000106dc","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

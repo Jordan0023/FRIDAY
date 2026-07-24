@@ -1,0 +1,13 @@
+{"binary":"libnvram.so","function":"nvram_get","address":"0001106c","route":"/*","sink":"unsafe_copy","sources":"nvram_get,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_get_salt","address":"000111d8","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_xfr","address":"00011414","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_set","address":"00011530","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_set","address":"00011530","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_set","address":"00011530","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_unset","address":"00011534","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_file2nvram","address":"0001178c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_file2nvram","address":"0001178c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_file2nvram","address":"0001178c","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_nvram2file","address":"000119b0","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_nvram2file","address":"000119b0","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnvram.so","function":"nvram_nvram2file","address":"000119b0","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

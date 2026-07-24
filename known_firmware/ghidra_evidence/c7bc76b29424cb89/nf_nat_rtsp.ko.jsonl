@@ -1,0 +1,4 @@
+{"binary":"nf_nat_rtsp.ko","function":"help","address":"0001011c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_rtsp.ko","function":"help","address":"0001011c","route":"/ipv4/netfilter/nf_nat_rtsp.c","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_rtsp.ko","function":"help","address":"0001011c","route":"/%hu","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_rtsp.ko","function":"help","address":"0001011c","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

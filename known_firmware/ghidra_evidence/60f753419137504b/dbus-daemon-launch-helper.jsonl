@@ -1,0 +1,7 @@
+{"binary":"dbus-daemon-launch-helper","function":"vsprintf","address":"0000a194","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon-launch-helper","function":"memmove","address":"0000a350","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon-launch-helper","function":"open","address":"0000a3ec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon-launch-helper","function":"rename","address":"0000a440","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon-launch-helper","function":"execv","address":"0000a6e0","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon-launch-helper","function":"fopen","address":"0000a74c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon-launch-helper","function":"memcpy","address":"0000a794","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

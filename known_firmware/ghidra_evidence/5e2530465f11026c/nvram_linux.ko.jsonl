@@ -1,0 +1,10 @@
+{"binary":"nvram_linux.ko","function":"nvram_proc_show","address":"00010220","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram_linux.ko","function":"_nvram_read","address":"00010de8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram_linux.ko","function":"_nvram_read","address":"00010de8","route":"/%zd","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram_linux.ko","function":"_nvram_read","address":"00010de8","route":"/%zx","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram_linux.ko","function":"_nvram_read","address":"00010de8","route":"/0x%zx","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram_linux.ko","function":"_nvram_commit","address":"000115a8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram_linux.ko","function":"nvram_commit","address":"00011848","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram_linux.ko","function":"nvram_commit","address":"00011848","route":"/%zx","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram_linux.ko","function":"dev_nvram_write","address":"00012450","route":"/include/linux/thread_info.h","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram_linux.ko","function":"dev_nvram_write","address":"00012450","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

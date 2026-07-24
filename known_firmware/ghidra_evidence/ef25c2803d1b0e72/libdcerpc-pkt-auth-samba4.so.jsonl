@@ -1,0 +1,2 @@
+{"binary":"libdcerpc-pkt-auth-samba4.so","function":"dcerpc_ncacn_pull_pkt_auth","address":"00010a54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdcerpc-pkt-auth-samba4.so","function":"dcerpc_ncacn_push_pkt_auth","address":"00010cac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

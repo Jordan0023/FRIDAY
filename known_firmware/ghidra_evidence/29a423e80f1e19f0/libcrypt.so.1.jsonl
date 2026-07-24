@@ -1,0 +1,1 @@
+{"binary":"libcrypt.so.1","function":"FUN_000155a4","address":"000155a4","route":"/proc/sys/crypto/fips_enabled","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

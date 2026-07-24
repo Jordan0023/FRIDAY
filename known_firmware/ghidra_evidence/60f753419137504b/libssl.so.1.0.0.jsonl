@@ -1,0 +1,7 @@
+{"binary":"libssl.so.1.0.0","function":"ssl2_peek","address":"00020828","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.0.0","function":"ssl3_get_client_key_exchange","address":"000223f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.0.0","function":"ssl3_get_client_key_exchange","address":"000223f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.0.0","function":"ssl3_read_bytes","address":"0002b140","route":"/*","sink":"memory_operation","sources":"","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.0.0","function":"dtls1_read_bytes","address":"000379f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.0.0","function":"FUN_00039928","address":"00039928","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.0.0","function":"ssl_get_prev_session","address":"0003f408","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

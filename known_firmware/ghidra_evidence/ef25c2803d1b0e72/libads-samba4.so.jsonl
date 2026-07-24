@@ -1,0 +1,2 @@
+{"binary":"libads-samba4.so","function":"get_dc_name","address":"00013048","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libads-samba4.so","function":"discover_dc_netbios","address":"0001625c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

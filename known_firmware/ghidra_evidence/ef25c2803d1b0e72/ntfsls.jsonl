@@ -1,0 +1,4 @@
+{"binary":"ntfsls","function":"FUN_000117b0","address":"000117b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsls","function":"FUN_000117b0","address":"000117b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsls","function":"FUN_000117b0","address":"000117b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsls","function":"FUN_00011fa8","address":"00011fa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

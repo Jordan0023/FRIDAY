@@ -1,0 +1,1 @@
+{"binary":"xt_TCPMSS.ko","function":"tcpmss_mangle_packet","address":"00010404","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

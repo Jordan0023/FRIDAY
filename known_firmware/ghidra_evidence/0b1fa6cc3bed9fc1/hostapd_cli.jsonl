@@ -1,0 +1,9 @@
+{"binary":"hostapd_cli","function":"FUN_00407a54","address":"00407a54","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"FUN_00407a54","address":"00407a54","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"FUN_00407a54","address":"00407a54","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"FUN_00407a54","address":"00407a54","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"FUN_00407ba8","address":"00407ba8","route":"/dev/urandom","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"FUN_00407ba8","address":"00407ba8","route":"/dev/urandom.","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"FUN_00407c48","address":"00407c48","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"FUN_00407c48","address":"00407c48","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"FUN_004081a4","address":"004081a4","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

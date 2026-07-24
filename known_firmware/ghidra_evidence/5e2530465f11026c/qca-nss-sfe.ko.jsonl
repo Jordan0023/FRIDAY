@@ -1,0 +1,5 @@
+{"binary":"qca-nss-sfe.ko","function":"sfe_set_ppe_rfs_feature","address":"00010290","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-sfe.ko","function":"sfe_set_fast_tc_filter","address":"000103a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-sfe.ko","function":"sfe_set_l2_feature","address":"0001048c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-sfe.ko","function":"sfe_set_tso_clear_fixed_id","address":"00010870","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-sfe.ko","function":"sfe_set_pppoe_br_accel_mode","address":"00010ad0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

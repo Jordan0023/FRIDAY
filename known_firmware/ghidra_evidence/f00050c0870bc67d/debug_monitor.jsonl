@@ -1,0 +1,16 @@
+{"binary":"debug_monitor","function":"get_sys_free_mem","address":"000113c0","route":"/proc/meminfo","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"get_sys_free_mem","address":"000113c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"do_command","address":"00011708","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"capture_logs","address":"000117cc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"capture_logs","address":"000117cc","route":"/%s%s","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"capture_logs","address":"000117cc","route":"/tmp/crash_logs","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"capture_logs","address":"000117cc","route":"/%s","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"capture_logs","address":"000117cc","route":"/tmp/mem_dump","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"capture_logs","address":"000117cc","route":"/tmp/dump_*.txt","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"capture_logs","address":"000117cc","route":"/tmp/failed_if.txt","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"capture_logs","address":"000117cc","route":"/Assert","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"dm_read_pid_info_file.constprop.5","address":"00012470","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"dm_handle_process","address":"00012534","route":"/proc/%s","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"dm_handle_process","address":"00012534","route":"/%s","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"dm_handle_process","address":"00012534","route":"/tmp/dm","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"dm_handle_process","address":"00012534","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

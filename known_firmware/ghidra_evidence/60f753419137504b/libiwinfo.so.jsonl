@@ -1,0 +1,1 @@
+{"binary":"libiwinfo.so","function":"wext_get_scanlist","address":"00014550","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

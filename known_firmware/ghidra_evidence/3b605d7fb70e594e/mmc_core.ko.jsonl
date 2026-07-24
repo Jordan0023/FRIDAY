@@ -1,0 +1,2 @@
+{"binary":"mmc_core.ko","function":"FUN_00015cc4","address":"00015cc4","route":"/mmc/core/mmc.c","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mmc_core.ko","function":"FUN_00020a78","address":"00020a78","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

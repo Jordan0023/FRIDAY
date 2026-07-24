@@ -1,0 +1,1 @@
+{"binary":"cdc-acm.ko","function":"acm_probe","address":"00100970","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

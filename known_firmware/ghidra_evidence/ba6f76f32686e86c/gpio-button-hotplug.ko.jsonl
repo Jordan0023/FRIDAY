@@ -1,0 +1,4 @@
+{"binary":"gpio-button-hotplug.ko","function":"FUN_00100c04","address":"00100c04","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gpio-button-hotplug.ko","function":"FUN_00100c04","address":"00100c04","route":"/sbin:/bin:/usr/sbin:/usr/bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gpio-button-hotplug.ko","function":"FUN_00100c08","address":"00100c08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gpio-button-hotplug.ko","function":"FUN_00100c08","address":"00100c08","route":"/sbin:/bin:/usr/sbin:/usr/bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

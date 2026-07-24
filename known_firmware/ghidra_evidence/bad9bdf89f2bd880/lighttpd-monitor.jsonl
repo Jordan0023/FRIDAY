@@ -1,0 +1,5 @@
+{"binary":"lighttpd-monitor","function":"FUN_00010e20","address":"00010e20","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_000119e8","address":"000119e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_00011a38","address":"00011a38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_00011aa8","address":"00011aa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_00011dbc","address":"00011dbc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

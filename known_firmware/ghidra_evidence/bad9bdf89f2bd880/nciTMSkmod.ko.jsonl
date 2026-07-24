@@ -1,0 +1,2 @@
+{"binary":"nciTMSkmod.ko","function":"_exlinuxeth1AGCTRL","address":"001235c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"_exlinuxeth3AHCTRL","address":"001266c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"usbnet.ko","function":"usbnet_probe","address":"00011b34","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbnet.ko","function":"usbnet_probe","address":"00011b34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

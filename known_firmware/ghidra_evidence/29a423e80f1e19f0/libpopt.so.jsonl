@@ -1,0 +1,16 @@
+{"binary":"libpopt.so.0.0.0","function":"poptSetExecPath","address":"00012b10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptGetContext","address":"00012ba8","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptSaveBits","address":"000132b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptSaveString","address":"00013418","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptGetNextOpt","address":"000138f4","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptGetNextOpt","address":"000138f4","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptGetNextOpt","address":"000138f4","route":"/';","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptGetNextOpt","address":"000138f4","route":"/';","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptAddItem","address":"00014ad0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"FUN_000156ac","address":"000156ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptReadConfigFiles","address":"000160d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"FUN_00016ac8","address":"00016ac8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"FUN_00016ac8","address":"00016ac8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"FUN_00016ac8","address":"00016ac8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"poptSetOtherOptionHelp","address":"00018094","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpopt.so.0.0.0","function":"FUN_0001870c","address":"0001870c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

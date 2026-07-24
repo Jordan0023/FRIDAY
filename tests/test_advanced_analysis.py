@@ -71,6 +71,63 @@ class AdvancedAnalysisTests(unittest.TestCase):
             self.assertEqual(candidate.evidence_level, "L3")
             self.assertEqual(candidate.impact_class, "possible command execution")
 
+    def test_discovers_rest_style_route(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ("www", "bin", "etc", "lib", "usr"):
+                (root / name).mkdir()
+            (root / "www" / "diagnostics.js").write_text(
+                'endpoint: "/api/v1/unauth/diagnostic"; '
+                '<input name="host"> no_auth QUERY_STRING system('
+            )
+            triage = analyze_zero_day_surface(root, "Test Router")
+            route = next(
+                item for item in triage.candidates + triage.rejected_candidates
+                if item.route == "api/v1/unauth/diagnostic"
+            )
+            self.assertEqual(route.auth_class, "none")
+            self.assertTrue(any("system" in evidence for evidence in route.evidence))
+
+    def test_unknown_auth_rce_lead_is_not_promoted(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ("www", "bin", "etc", "lib", "usr"):
+                (root / name).mkdir()
+            (root / "www" / "ping.cgi").write_text(
+                '<form action="ping.cgi"><input name="host"></form>\nQUERY_STRING system('
+            )
+            triage = analyze_zero_day_surface(root, "Test Router")
+            self.assertFalse(any(item.route == "ping.cgi" for item in triage.candidates))
+            rejected = next(item for item in triage.rejected_candidates if item.route == "ping.cgi")
+            self.assertIn("authentication boundary is unknown", rejected.disposition)
+
+    def test_generic_public_page_text_does_not_prove_no_auth(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ("www", "bin", "etc", "lib", "usr"):
+                (root / name).mkdir()
+            (root / "www" / "wireless.cgi").write_text(
+                '<form action="wireless.cgi"><input name="ssid"></form>\n'
+                "public wireless network QUERY_STRING system("
+            )
+            triage = analyze_zero_day_surface(root, "Test Router")
+            self.assertFalse(any(item.route == "wireless.cgi" for item in triage.candidates))
+            rejected = next(item for item in triage.rejected_candidates if item.route == "wireless.cgi")
+            self.assertEqual(rejected.auth_class, "unknown")
+
+    def test_pre_auth_file_write_is_not_impactful_enough(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ("www", "bin", "etc", "lib", "usr"):
+                (root / name).mkdir()
+            (root / "www" / "unauth_save.cgi").write_text(
+                '<form action="unauth_save.cgi"><input name="path"></form>\nno_auth QUERY_STRING fopen('
+            )
+            triage = analyze_zero_day_surface(root, "Test Router")
+            self.assertFalse(any(item.route == "unauth_save.cgi" for item in triage.candidates))
+            rejected = next(item for item in triage.rejected_candidates if item.route == "unauth_save.cgi")
+            self.assertIn("impact gate", rejected.disposition)
+
     def test_ghidra_function_local_evidence_enriches_matching_route_only(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -129,6 +186,10 @@ shmat(-1,0,0) = -1 errno=22 (Invalid argument)
         self.assertIn("documented, dated public-prior-art search", policy["confirmed_zero_day_requires"])
         self.assertIn(
             "novel reproducible pre-authentication exploitation path with no remote administrator session required",
+            policy["confirmed_zero_day_requires"],
+        )
+        self.assertIn(
+            "impact is remote code execution or a reliable input-specific denial of service",
             policy["confirmed_zero_day_requires"],
         )
         self.assertEqual(

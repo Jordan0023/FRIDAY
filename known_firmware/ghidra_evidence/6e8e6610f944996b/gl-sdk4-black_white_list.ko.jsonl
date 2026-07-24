@@ -1,0 +1,7 @@
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_001008a0","address":"001008a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00100e34","address":"00100e34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00100e38","address":"00100e38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_001013c8","address":"001013c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_001013c8","address":"001013c8","route":"/proc/black_white_list/control","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_001013c8","address":"001013c8","route":"/white","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00101b28","address":"00101b28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

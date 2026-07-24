@@ -1,0 +1,1 @@
+{"binary":"fuse.ko","function":"fuse_simple_request","address":"001039c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

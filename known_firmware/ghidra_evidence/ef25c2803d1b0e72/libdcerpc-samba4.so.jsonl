@@ -1,0 +1,1 @@
+{"binary":"libdcerpc-samba4.so","function":"dcerpc_wbint_UnixIDs2Sids","address":"0001642c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

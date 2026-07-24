@@ -1,0 +1,1 @@
+{"binary":"xt_sctp.ko","function":"sctp_mt","address":"00010200","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -7,7 +7,10 @@ Date: 2026-07-23
 An apparent previously undisclosed vulnerability in NETGEAR EX2800 firmware
 V1.0.1.84 allows an unauthenticated client that can reach the management
 service while the extender is in its factory-unconfigured state to execute
-arbitrary operating-system commands as root.
+arbitrary operating-system commands as root. The chain was subsequently
+reproduced end to end in the distinct official NETGEAR EX6110 V1.0.1.84
+firmware image, whose relevant components are byte-identical. Physical EX6110
+validation has not yet been performed.
 
 The complete chain was reproduced over HTTP in network-isolated firmware
 emulation:
@@ -63,6 +66,74 @@ matching disclosure and supports classification as an apparent zero-day.
   on 2026-07-23
 - Physical-device validation: not performed
 - Persistent unauthenticated DoS: not confirmed
+
+## Affected products
+
+- NETGEAR EX2800 V1.0.1.84: end-to-end RCE confirmed in network-isolated
+  firmware emulation; physical-device validation not performed.
+- NETGEAR EX6110 V1.0.1.84: end-to-end RCE confirmed using its distinct
+  official firmware in network-isolated emulation; physical-product validation
+  not performed.
+
+NETGEAR distributes a distinct EX6110 package and identifies EX2800, EX3110,
+EX5000, and EX6110 as sharing firmware version V1.0.1.84. Comparison of the
+official EX6110 and EX2800 firmware found that all components required by the
+confirmed chain are byte-identical:
+
+| Component | SHA-256 in both firmware images |
+|---|---|
+| `usr/www/cgi-bin/webproc` | `761ffdf18762f7e8b2a343aa51f9887e2041180f36babf0f9fcd4b13df50ec12` |
+| `usr/www/cgi-bin/webupg` | `2f2b6eec48e73450a433a3b755e0b06448038e34415bc3184a5b7773cedc882d` |
+| `usr/sbin/mini_httpd` | `a031c86cbc1852aed869795b7616545979f5ce8946bf1cac8e4b80b9d07c4051` |
+| `usr/bin/logic` | `b55fafb0105680f1b8b00d3dede5db2c56d8eb7cfed54623e3aa9c845e52488e` |
+| `etc/config.xml` | `6fabf5e239adec7029d288f4ec90e6b9213fbadd6a1b7af698e91b3a8153ae0d` |
+
+The HTTP and network startup scripts are also byte-identical. Consequently,
+the EX6110 firmware contains the same complete prerequisite and execution
+chain:
+
+`unconfigured state -> webproc creates /var/upgUnauth -> webupg consumes the marker -> name=shell and key=twmode -> attacker-controlled cmd reaches popen`
+
+The vulnerable code and complete prerequisite chain were initially confirmed
+in EX6110 firmware by binary identity. They were then reproduced end to end
+using the distinct official EX6110 image in a network-isolated container. This
+is direct EX6110 firmware confirmation, but it is not represented as a
+physical-device reproduction. The appropriate concise classification is:
+**EX6110 V1.0.1.84 is emulation-confirmed affected; physical-product
+validation remains pending.**
+
+EX3110 and EX5000 are not added to the confirmed affected-product list solely
+because NETGEAR's release groups them under the same version. Each requires
+the same component-level comparison or device validation before its scope is
+stated equivalently.
+
+## Network exposure: primarily LAN/local management
+
+This is primarily a LAN-side or local-management vulnerability, not a
+default Internet/WAN vulnerability. The EX6110 is an extender/bridge and does
+not have a conventional routed WAN security boundary. Potentially reachable
+locations include:
+
+- the factory setup Wi-Fi network;
+- clients connected through the extender;
+- its Ethernet interface; and
+- devices on the upstream home LAN that can reach the extender's management
+  address.
+
+The firmware starts `mini_httpd` without an interface-specific `-h`
+restriction, so the service is intended to listen on available local
+addresses. No firmware startup rule was found limiting it to a dedicated
+management interface. The upstream side of an extender may still belong to
+the LAN bridge and must not automatically be treated as a protected WAN
+interface.
+
+The management service is not normally reachable directly from the public
+Internet. Internet-side exploitation would require an additional exposure
+condition such as port forwarding, an upstream router exposing or proxying the
+service, a VPN or guest network with management-LAN access, a compromised
+internal device, or unintended IPv6 reachability. During factory-unconfigured
+operation, the most realistic attacker is within Wi-Fi range or otherwise
+connected to the local setup network.
 
 ## Public-record and novelty assessment
 

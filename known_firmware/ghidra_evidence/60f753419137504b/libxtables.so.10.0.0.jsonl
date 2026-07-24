@@ -1,0 +1,11 @@
+{"binary":"libxtables.so.10.0.0","function":"xtables_insmod","address":"00012998","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"FUN_00012c40","address":"00012c40","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"xtables_parse_port","address":"000130a0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"xtables_parse_port","address":"000130a0","route":"/'","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"xtables_parse_interface","address":"00013128","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"xtables_parse_interface","address":"00013128","route":"/'","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"xtables_find_match","address":"0001376c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"xtables_ipparse_multiple","address":"00014488","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"xtables_ip6parse_multiple","address":"00014c58","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"get_kernel_version","address":"00015578","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"FUN_00015db4","address":"00015db4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

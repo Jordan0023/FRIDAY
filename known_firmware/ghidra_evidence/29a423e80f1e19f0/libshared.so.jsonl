@@ -1,0 +1,9 @@
+{"binary":"libshared.so","function":"FUN_00019048","address":"00019048","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"FUN_00019c2c","address":"00019c2c","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"FUN_00019f18","address":"00019f18","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"_eval","address":"0001b9c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"get_wsec","address":"000202ac","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"get_wsec","address":"000202ac","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"wl_wlif_apply_creds","address":"00022818","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"wl_wlif_apply_creds","address":"00022818","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshared.so","function":"FUN_0002aca4","address":"0002aca4","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

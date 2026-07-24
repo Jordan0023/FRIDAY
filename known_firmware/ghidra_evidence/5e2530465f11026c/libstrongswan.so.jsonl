@@ -1,0 +1,12 @@
+{"binary":"libstrongswan.so.0.0.0","function":"asn1_to_time","address":"00020644","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"asn1_is_printablestring","address":"0002167c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_00022c84","address":"00022c84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_000504b4","address":"000504b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_000583c0","address":"000583c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"settings_parser_parse","address":"0006c5e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"closefrom","address":"000716bc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"chunk_map","address":"000724f0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_00079328","address":"00079328","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_0007ac68","address":"0007ac68","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_0007c8b8","address":"0007c8b8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"process_start","address":"0007d84c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

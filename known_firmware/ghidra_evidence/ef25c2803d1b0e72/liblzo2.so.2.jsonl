@@ -1,0 +1,5 @@
+{"binary":"liblzo2.so.2.0.0","function":"lzo1x_999_compress_internal","address":"0001eef0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2.0.0","function":"lzo1x_decompress_dict_safe","address":"00020004","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2.0.0","function":"lzo1y_999_compress_internal","address":"00021b34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2.0.0","function":"lzo1y_decompress_dict_safe","address":"00022c48","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2.0.0","function":"lzo1z_999_compress_internal","address":"000242b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

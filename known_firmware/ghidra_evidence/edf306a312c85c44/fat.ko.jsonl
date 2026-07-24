@@ -1,0 +1,6 @@
+{"binary":"fat.ko","function":"FUN_00103b68","address":"00103b68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fat.ko","function":"FUN_00103b68","address":"00103b68","route":"/linux/buffer_head.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fat.ko","function":"fat_add_entries","address":"00103e7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fat.ko","function":"FUN_00106434","address":"00106434","route":"/linux/buffer_head.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fat.ko","function":"fat_alloc_clusters","address":"00106c7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fat.ko","function":"fat_fill_super","address":"00109d54","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

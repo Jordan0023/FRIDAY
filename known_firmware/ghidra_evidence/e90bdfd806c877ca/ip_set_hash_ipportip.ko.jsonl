@@ -1,0 +1,4 @@
+{"binary":"ip_set_hash_ipportip.ko","function":"FUN_0001281c","address":"0001281c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipportip.ko","function":"FUN_00012d1c","address":"00012d1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipportip.ko","function":"FUN_00013638","address":"00013638","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_ipportip.ko","function":"FUN_00014b38","address":"00014b38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"ah4.ko","function":"ah_output","address":"00100400","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ah4.ko","function":"FUN_0010080c","address":"0010080c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ah4.ko","function":"ah_input","address":"00100810","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ah4.ko","function":"ah_input_done","address":"00100ce0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

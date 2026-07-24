@@ -1,0 +1,1 @@
+{"binary":"libevent_core-2.1.so.7.0.1","function":"evutil_parse_sockaddr_port","address":"0002fe00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

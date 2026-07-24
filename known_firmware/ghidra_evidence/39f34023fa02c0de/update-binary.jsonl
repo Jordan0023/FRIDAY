@@ -1,0 +1,2 @@
+{"binary":"update-binary","function":"FUN_0020919c","address":"0020919c","route":"/bio/bss_file.c","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update-binary","function":"FUN_0020974c","address":"0020974c","route":"/bio/bss_file.c","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

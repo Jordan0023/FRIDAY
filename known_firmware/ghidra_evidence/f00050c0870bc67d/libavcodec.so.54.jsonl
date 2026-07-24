@@ -1,0 +1,11 @@
+{"binary":"libavcodec.so.54.23.100","function":"av_packet_merge_side_data","address":"0002a4b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"av_packet_split_side_data","address":"0002a6c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"FUN_000561c4","address":"000561c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"FUN_00061234","address":"00061234","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"FUN_0006400c","address":"0006400c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"FUN_00097308","address":"00097308","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"FUN_000afc0c","address":"000afc0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"FUN_000b29d0","address":"000b29d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"avcodec_default_release_buffer","address":"000b6574","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"avcodec_default_reget_buffer","address":"000b74e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavcodec.so.54.23.100","function":"avcodec_encode_video2","address":"000b7e10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

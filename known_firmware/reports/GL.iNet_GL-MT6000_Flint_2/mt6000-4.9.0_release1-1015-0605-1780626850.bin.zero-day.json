@@ -1,0 +1,4201 @@
+{
+  "archive_test_cases": [
+    {
+      "expected": "extractor rejects or confines member",
+      "members": [
+        {
+          "name": "../../tmp/friday-proof/dotdot",
+          "type": "file"
+        }
+      ],
+      "name": "dotdot"
+    },
+    {
+      "expected": "extractor rejects or strips absolute path",
+      "members": [
+        {
+          "name": "/tmp/friday-proof/absolute",
+          "type": "file"
+        }
+      ],
+      "name": "absolute"
+    },
+    {
+      "expected": "no write through symlink outside extraction root",
+      "members": [
+        {
+          "name": "pivot",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        },
+        {
+          "name": "pivot/marker",
+          "type": "file"
+        }
+      ],
+      "name": "symlink_pivot"
+    },
+    {
+      "expected": "hardlink target remains confined",
+      "members": [
+        {
+          "name": "marker",
+          "target": "../../tmp/friday-proof/hardlink",
+          "type": "hardlink"
+        }
+      ],
+      "name": "hardlink"
+    },
+    {
+      "expected": "duplicate type replacement is rejected",
+      "members": [
+        {
+          "name": "same",
+          "type": "file"
+        },
+        {
+          "name": "same",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        }
+      ],
+      "name": "duplicate"
+    },
+    {
+      "expected": "bounded rejection or confined extraction",
+      "members": [
+        {
+          "name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "type": "file"
+        }
+      ],
+      "name": "long_name"
+    },
+    {
+      "expected": "no implicit recursive extraction",
+      "members": [
+        {
+          "name": "nested.tar",
+          "type": "archive"
+        }
+      ],
+      "name": "nested_archive"
+    }
+  ],
+  "auth_test_matrix": [
+    {
+      "expected_boundary": "must not enter protected handler",
+      "headers": {},
+      "name": "no_credentials"
+    },
+    {
+      "expected_boundary": "must match unauthenticated behavior",
+      "headers": {
+        "Authorization": "Bearer FRIDAY_INVALID",
+        "Cookie": "session=FRIDAY_INVALID"
+      },
+      "name": "invalid_session"
+    },
+    {
+      "expected_boundary": "must not cross administrator boundary",
+      "headers": {
+        "Cookie": "session=FRIDAY_LOW_PRIV"
+      },
+      "name": "low_privilege"
+    }
+  ],
+  "candidates": [],
+  "config_writers": [
+    "01-user: # Scriptp set with up/down/route-up/route-pre-down/ipchange in the openvpn config are also executed with the command=user_xxxx",
+    "01-user: /etc/openvpn.user \\",
+    "01-user: [ -e \"/etc/openvpn.user\" ] && {",
+    "20-firewall: /etc/init.d/firewall enabled || exit 0",
+    "20-firewall: logger -t firewall \"Reloading firewall due to $ACTION of $INTERFACE ($DEVICE)\"",
+    "82_merge_mtk_sdk: local enable=$(uci -q get firewall.@defaults[0].flow_offloading_hw)",
+    "82_merge_mtk_sdk: uci commit firewall",
+    "82_merge_mtk_sdk: uci delete firewall.@defaults[0].flow_offloading",
+    "82_merge_mtk_sdk: uci delete firewall.@defaults[0].flow_offloading_hw",
+    "82_merge_mtk_sdk: uci set firewall.@defaults[0].flow_offloading='1'",
+    "82_merge_mtk_sdk: uci set firewall.@defaults[0].flow_offloading_hw='1'",
+    "97-tor: /etc/init.d/firewall reload",
+    "97-tor: uci set firewall.tor_allow_http.src_dip=\"$new_ip\"",
+    "97-tor: uci set firewall.tor_allow_http.src_ip=\"$new_ip/$mask\"",
+    "97-tor: uci set firewall.tor_allow_ssh.src_dip=\"$new_ip\"",
+    "97-tor: uci set firewall.tor_allow_ssh.src_ip=\"$new_ip/$mask\"",
+    "99_torrc_init: uci -q set firewall.dns_int.family='any'",
+    "99_torrc_init: uci -q set firewall.tcp_int.family='any'",
+    "99_torrc_init: uci -q set firewall.tor_dns.family='any'",
+    "99_torrc_init: uci commit firewall",
+    "adguardhome: /etc/init.d/firewall reload",
+    "ap_isolate_config.lua: c:commit(\"firewall\")",
+    "ap_isolate_config.lua: c:delete(\"firewall\", \"guest_forward\")",
+    "ap_isolate_config.lua: c:delete(\"firewall\", \"iot_forward\")",
+    "ap_isolate_config.lua: c:set(\"firewall\", \"guest_forward\", \"dest\", \"guest\")",
+    "ap_isolate_config.lua: c:set(\"firewall\", \"guest_forward\", \"src\", \"guest\")",
+    "ap_isolate_config.lua: c:set(\"firewall\", \"guest_forward\",\"forwarding\")",
+    "ap_isolate_config.lua: c:set(\"firewall\", \"iot_forward\", \"dest\", \"iot\")",
+    "ap_isolate_config.lua: c:set(\"firewall\", \"iot_forward\", \"src\", \"iot\")",
+    "ap_isolate_config.lua: c:set(\"firewall\", \"iot_forward\",\"forwarding\")",
+    "app-metadata.json: Fi access worldwide.\",\"home_page_url\":\"https://wifi.com\",\"icon\":\"https://fw.gl-inet.com/releases/common/dpi_lib/icon/12212.png\",\"id\":12212,\"label\":\"Wifi Master\"",
+    "app-metadata.json: com, is a French multinational telecommunications corporation that provides mobile, fixed-line voice, data services, internet services, and digital television.\"",
+    "app-metadata.json: communications) is the primary provider of postal, telecommunications, and internet services in New Caledonia.\",\"home_page_url\":\"https://www.opt.nc\",\"icon\":\"htt",
+    "app-metadata.json: ens (RIPE) is one of the five regional Internet registries that allocate and administer IP addresses.\",\"home_page_url\":\"https://www.ripe.net\",\"icon\":\"https://fw",
+    "app-metadata.json: generation firewalls, Unified Threat Management, and centralized infrastructure management.\",\"home_page_url\":\"https://labrisnetworks.com\",\"icon\":\"https://fw.gl-",
+    "app-metadata.json: otron is a Canadian integrated telecommunications company active in cable television, interactive multimedia development, and video on demand.\",\"home_page_url\":",
+    "app-metadata.json: ries, was a French group of dedicated movies/series TV channels.  It was acquired by Canal+ in 2024.\",\"home_page_url\":\"https://ocs.fr\",\"icon\":\"https://fw.gl-ine",
+    "app-metadata.json: s ecommerce fraud protection platform provides three services for companies: revenue protection, abuse prevention, and payment compliance.\",\"home_page_url\":\"htt",
+    "app-metadata.json: s enterprise communication and collaboration platform, offering instant messaging, video conferencing, and workflow automation.\",\"home_page_url\":\"https://www.di",
+    "app-metadata.json: to tell compelling stories about elections, politics, sports, science, economics and lifestyle.\",\"home_page_url\":\"https://fivethirtyeight.com\",\"icon\":\"https://f",
+    "apps.conf: app:10534:netify.firewalla",
+    "base-files: /etc/crontabs/",
+    "cable: /etc/crontabs/root",
+    "cable: /etc/firewall.ethernet_ttl",
+    "cable: /etc/init.d/firewall reload 2>/dev/null;/etc/init.d/network reload 2>/dev/null",
+    "cable: firewall",
+    "clients: /etc/init.d/firewall",
+    "cron: [ -z \"$(ls /etc/crontabs/)\" ] && return 1",
+    "cron: for crontab in /etc/crontabs/*; do",
+    "cron: ln -s /etc/crontabs /var/spool/cron/ 2>/dev/null"
+  ],
+  "confirmation_policy": {
+    "L3": "route-specific attacker parameter reaches the sink",
+    "L4": "authentication/validation boundary and trigger are proven",
+    "L5": "reproducible security effect with fault/sink attribution",
+    "authenticated_admin_disposition": "confirmed vulnerability, but not a confirmed zero-day",
+    "confirmed_label_requires": "L5",
+    "confirmed_zero_day_requires": [
+      "L5 reproducible security effect with fault/sink attribution",
+      "novel reproducible pre-authentication exploitation path with no remote administrator session required",
+      "LAN or WAN network reachability without credentials",
+      "impact is remote code execution or a reliable input-specific denial of service",
+      "denial of service reproduces from attacker input and is not generic resource exhaustion",
+      "documented, dated public-prior-art search",
+      "no matching public disclosure or publicly available fix at the recorded discovery time"
+    ],
+    "forbidden_shortcut": "route string and dangerous symbol merely co-located in a binary",
+    "impactful_hunt_scope": "unauthenticated LAN/WAN RCE or reliable input-specific denial of service",
+    "private_duplicate_caveat": "public novelty does not exclude an unknown private or embargoed duplicate",
+    "vendor_contact_required": false
+  },
+  "correlated_flows": [
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 47,
+      "sinks": [
+        "auth",
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "usr/sbin/uhttpd",
+      "sources": [
+        "CONTENT_LENGTH",
+        "HTTP_COOKIE",
+        "QUERY_STRING",
+        "UBUS",
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 46,
+      "sinks": [
+        "auth",
+        "command_execution",
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "sbin/procd",
+      "sources": [
+        "getenv",
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 41,
+      "sinks": [
+        "auth",
+        "command_execution",
+        "unsafe_memory"
+      ],
+      "source_file": "etc/init.d/dnsmasq",
+      "sources": [
+        "ubus",
+        "uci_get"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 41,
+      "sinks": [
+        "auth",
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "sbin/rpcd",
+      "sources": [
+        "getenv",
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 41,
+      "sinks": [
+        "auth",
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "usr/libexec/cgi-io",
+      "sources": [
+        "CONTENT_LENGTH",
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 38,
+      "sinks": [
+        "auth",
+        "command_execution",
+        "file_write"
+      ],
+      "source_file": "lib/functions/gl_util.sh",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 38,
+      "sinks": [
+        "command_execution",
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "sbin/init",
+      "sources": [
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 38,
+      "sinks": [
+        "auth",
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "sbin/logread",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 38,
+      "sinks": [
+        "auth",
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "sbin/netifd",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 38,
+      "sinks": [
+        "auth",
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/ovpn-client.so",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 38,
+      "sinks": [
+        "auth",
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/wg-client.so",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 36,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "sbin/fw3",
+      "sources": [
+        "getenv",
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 36,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "usr/bin/cgi-fcgi",
+      "sources": [
+        "CONTENT_LENGTH",
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 36,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/modem.so",
+      "sources": [
+        "UBus",
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 34,
+      "sinks": [
+        "unsafe_memory"
+      ],
+      "source_file": "usr/bin/fcgiwrap",
+      "sources": [
+        "CONTENT_LENGTH",
+        "QUERY_STRING",
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "file_write"
+      ],
+      "source_file": "etc/config/uhttpd",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "command_execution"
+      ],
+      "source_file": "etc/hotplug.d/iface/99-vpn-client",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/gl_dns",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/init_new_provider.sh",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/openvpn",
+      "sources": [
+        "uci_get"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/uhttpd",
+      "sources": [
+        "uci_get"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "lib/libubox.so.20210516",
+      "sources": [
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "command_execution"
+      ],
+      "source_file": "lib/netifd/proto/directip.sh",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "command_execution"
+      ],
+      "source_file": "lib/netifd/proto/ncm.sh",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "command_execution"
+      ],
+      "source_file": "lib/netifd/proto/qcm.sh",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "command_execution"
+      ],
+      "source_file": "lib/netifd/proto/qmi.sh",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "sbin/block",
+      "sources": [
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "sbin/kmodloader",
+      "sources": [
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "sbin/logd",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "command_execution",
+        "file_write"
+      ],
+      "source_file": "sbin/sysupgrade",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "sbin/ubusd",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/dpi",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/flow_statistics",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/lan",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/mptun",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/netmode",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/system",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/ui",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/vpn-client",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "auth",
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/wifi",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 31,
+      "sinks": [
+        "file_write"
+      ],
+      "source_file": "lib/functions/procd.sh",
+      "sources": [
+        "ubus",
+        "uci_get"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 31,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/uhttpd_ubus.so",
+      "sources": [
+        "Ubus",
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L3-correlated",
+      "routes": [
+        "wan"
+      ],
+      "score": 30,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/gl_s2s",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L3-correlated",
+      "routes": [
+        "wan"
+      ],
+      "score": 30,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "lib/functions/mptun.sh",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/firewall.dns_order",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/forward",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/hotplug.d/carrier/03-ipv6-route",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "etc/hotplug.d/carrier/gl-cable",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/hotplug.d/ieee80211/99_fix-repeater-phy",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/hotplug.d/iface/02-update-modem-interface-status",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/hotplug.d/iface/99-mpflow",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "etc/hotplug.d/iface/gl-cable",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/hotplug.d/kmwan/17-dual-sim",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/hotplug.d/kmwan/kmwan_status_change",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/hotplug.d/kmwan/time_sync",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/cron",
+      "sources": [
+        "uci_get"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/fullconenat",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/gl_cellular_manager",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/gl_clients",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/gl_timer",
+      "sources": [
+        "uci_get"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/mpflow",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/mptun",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/init.d/network",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/passwd",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/rc.button/switch",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "etc/uci-defaults/00_uhttpd_ubus",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "file_write"
+      ],
+      "source_file": "lib/config/uci.sh",
+      "sources": [
+        "uci_get"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "file_write"
+      ],
+      "source_file": "lib/functions/modem.sh",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "unsafe_memory"
+      ],
+      "source_file": "lib/libubus.so.20210630",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "lib/netifd/dhcp.script",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "lib/netifd/dhcpv6.script",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "lib/netifd/ppp6-up",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "lib/netifd/wireless/mtk.sh",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "lib/network/config.sh",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "sbin/devstatus",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "sbin/ifstatus",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "sbin/ifup",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "sbin/reload_config",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "file_write"
+      ],
+      "source_file": "sbin/upgraded",
+      "sources": [
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "sbin/wifi",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "unsafe_memory"
+      ],
+      "source_file": "usr/lib/libfcgi.so.0.0.0",
+      "sources": [
+        "getenv"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/opkg/info/uhttpd-mod-ubus.control",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/adguardhome",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/cable",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/cloud",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/firewall",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/libcmcollect.so",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/local-access",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/repeater",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/rtty",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "file_write"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/s2s.so",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/sqm",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/timer",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "command_execution"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/tor",
+      "sources": [
+        "ubus"
+      ]
+    },
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "auth"
+      ],
+      "source_file": "usr/lib/oui-httpd/rpc/wg_client",
+      "sources": [
+        "ubus"
+      ]
+    }
+  ],
+  "dynamic_sink_spec": [
+    {
+      "capture": [
+        "pc",
+        "argv",
+        "route",
+        "auth_state"
+      ],
+      "symbols": [
+        "system",
+        "popen",
+        "execve"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "destination",
+        "source",
+        "length",
+        "before",
+        "after"
+      ],
+      "symbols": [
+        "memcpy",
+        "strcpy",
+        "sprintf"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "path",
+        "flags",
+        "sandbox_escape"
+      ],
+      "symbols": [
+        "open",
+        "fopen",
+        "rename",
+        "symlink"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "key",
+        "size",
+        "return_value"
+      ],
+      "symbols": [
+        "shmget",
+        "shmat",
+        "nvram_set",
+        "uci_set"
+      ]
+    }
+  ],
+  "fuzz_seeds": [
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "cgi-backup",
+      "template": "POST /cgi-backup HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "cgi-download",
+      "template": "POST /cgi-download HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "cgi-exec",
+      "template": "POST /cgi-exec HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "cgi-upload",
+      "template": "POST /cgi-upload HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "multipart/form-data",
+      "mutation_points": [
+        "filename",
+        "part_name",
+        "file_bytes"
+      ],
+      "protocol": "multipart",
+      "route": "cgi-upload",
+      "template": "--FRIDAY\r\nContent-Disposition: form-data; name=\"file\"; filename=\"seed.bin\"\r\n\r\nFRIDAY_FILE\r\n--FRIDAY--"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "glc",
+      "template": "POST /glc HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "wan",
+      "template": "POST /wan HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    }
+  ],
+  "ghidra_evidence": [],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "Only routes with a plausible low-privilege boundary and route-local sink evidence are promoted. Global firmware sink counts never raise route evidence.",
+    "Authentication labels inferred from strings are hypotheses until dispatcher control flow or a live request confirms them.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rejected_candidates": [
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [
+        "wan"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "wan",
+      "score": 10,
+      "source": "string:etc/init.d/gl_s2s"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "security-sensitive state change",
+      "matched_keywords": [
+        "upload"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "cgi-upload",
+      "score": 6,
+      "source": "file:www/cgi-bin/cgi-upload"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "cgi-backup",
+      "score": 2,
+      "source": "file:www/cgi-bin/cgi-backup"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "cgi-download",
+      "score": 2,
+      "source": "file:www/cgi-bin/cgi-download"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "cgi-exec",
+      "score": 2,
+      "source": "file:www/cgi-bin/cgi-exec"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "glc",
+      "score": 2,
+      "source": "file:www/cgi-bin/glc"
+    }
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/6e8e6610f944996b/_mt6000-4.9.0_release1-1015-0605-1780626850.bin.extracted/sysupgrade-glinet_gl-mt6000/_root.extracted/squashfs-root",
+  "runtime_launch_plan": {
+    "interfaces": [
+      {
+        "address": "192.168.250.1/24",
+        "name": "br0"
+      },
+      {
+        "address": "192.168.250.2/32",
+        "name": "probe"
+      }
+    ],
+    "isolation": [
+      "no external network",
+      "no host ports by default",
+      "disposable writable rootfs",
+      "synthetic LAN client"
+    ],
+    "listener_candidates": [
+      "etc/config/uhttpd",
+      "etc/init.d/dnsmasq",
+      "etc/init.d/nginx",
+      "etc/init.d/uhttpd",
+      "lib/upgrade/keep.d/uhttpd",
+      "usr/sbin/dnsmasq",
+      "usr/sbin/nginx",
+      "usr/sbin/uhttpd"
+    ],
+    "requirements": [
+      {
+        "evidence": "firmware utility present",
+        "kind": "state_backend",
+        "name": "ubus",
+        "value": "bin/ubus"
+      },
+      {
+        "evidence": "firmware utility present",
+        "kind": "state_backend",
+        "name": "uci",
+        "value": "sbin/uci"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/console",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/dm-0",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/mhi_DIAG",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/mhi_DUN",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/mhi_QMI0",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/mmcblk",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/mtd",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/mtdblock",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/null",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/parental_control",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/pf",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/smd9",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/ttyS0",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/ttyUSB3",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "firmware path reference",
+        "kind": "device",
+        "name": "/dev/urandom",
+        "value": "stub-or-bind"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/01",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/04",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/1080",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/1194",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/120",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/127",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/1553",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/16",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/1780",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/1883",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/20",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/208",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/21",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/25",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/2525",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/255",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/256",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/289",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/29",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/3053",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/31",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/3128",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/415",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/443",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/505",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/51820",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/53",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/58080",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/6566",
+        "value": "isolated"
+      },
+      {
+        "evidence": "port/listen marker",
+        "kind": "listener",
+        "name": "tcp/80",
+        "value": "isolated"
+      }
+    ],
+    "startup_candidates": [
+      "etc/init.d/adguardhome",
+      "etc/init.d/avahi-daemon",
+      "etc/init.d/bark",
+      "etc/init.d/boot",
+      "etc/init.d/carrier-monitor",
+      "etc/init.d/chronyd",
+      "etc/init.d/cron",
+      "etc/init.d/dbus",
+      "etc/init.d/disk_manage",
+      "etc/init.d/dnscrypt-proxy",
+      "etc/init.d/dnscrypt-proxy-vpn",
+      "etc/init.d/dnsmasq",
+      "etc/init.d/dnsproxy",
+      "etc/init.d/dnsproxy-vpn",
+      "etc/init.d/done",
+      "etc/init.d/dropbear",
+      "etc/init.d/edgerouter",
+      "etc/init.d/fcgiwrap",
+      "etc/init.d/firewall",
+      "etc/init.d/fix-hostapd",
+      "etc/init.d/fix-mtk-eth",
+      "etc/init.d/fix-qsdk-eth",
+      "etc/init.d/fix-qsdk-phy",
+      "etc/init.d/fix-qsdk-wifi",
+      "etc/init.d/fstab",
+      "etc/init.d/fullconenat",
+      "etc/init.d/fwdd",
+      "etc/init.d/gl-alarm",
+      "etc/init.d/gl-black_white_list",
+      "etc/init.d/gl-cloud",
+      "etc/init.d/gl-ngx-session",
+      "etc/init.d/gl-portal",
+      "etc/init.d/gl-tertf",
+      "etc/init.d/gl-txpower-init",
+      "etc/init.d/gl_cellular_manager",
+      "etc/init.d/gl_check_crash",
+      "etc/init.d/gl_clients",
+      "etc/init.d/gl_crash_log",
+      "etc/init.d/gl_ddns",
+      "etc/init.d/gl_dns",
+      "etc/init.d/gl_dpi",
+      "etc/init.d/gl_dpi_flow_statistics",
+      "etc/init.d/gl_eqos",
+      "etc/init.d/gl_init",
+      "etc/init.d/gl_ipv6",
+      "etc/init.d/gl_led",
+      "etc/init.d/gl_logread",
+      "etc/init.d/gl_nas_diskmanager",
+      "etc/init.d/gl_nas_sys",
+      "etc/init.d/gl_nas_sys_dl"
+    ],
+    "vendor": "openwrt"
+  },
+  "runtime_profile": {
+    "architectures": [
+      "aarch64",
+      "script"
+    ],
+    "executable_count": 1147,
+    "rootfs_candidates": [
+      "/home/jordan/FRIDAY/known_firmware/extracted/6e8e6610f944996b/_mt6000-4.9.0_release1-1015-0605-1780626850.bin.extracted/sysupgrade-glinet_gl-mt6000/_root.extracted/squashfs-root"
+    ],
+    "state_backends": [
+      "dbus",
+      "ubus",
+      "uci"
+    ],
+    "vendor": "openwrt",
+    "web_stack": [
+      "nginx",
+      "uhttpd"
+    ]
+  },
+  "service_surface": [
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, system, unsafe_copy"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "etc/app-metadata.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "etc/apps.conf"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "etc/dnsproxy/provider/cloudflare"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "etc/hotplug.d/iface/99-gl-cloud"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "etc/hotplug.d/kmwan/time_sync"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "etc/init.d/gl-alarm"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "etc/init.d/gl-cloud"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "etc/init.d/gl_s2s"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "lib/functions/gl_util.sh"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "usr/lib/oui-httpd/rpc/cloud"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "usr/lib/oui-httpd/rpc/dns"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "usr/lib/oui-httpd/rpc/mptun"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "usr/lib/oui-httpd/rpc/netmode"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "usr/lib/oui-httpd/rpc/rtty"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "usr/lib/oui-httpd/rpc/s2s.so"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "usr/lib/oui-httpd/rpc/system"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "usr/lib/oui-httpd/rpc/upgrade"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "usr/lib/oui-httpd/rpc/wifi"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/fonts/element-icons.732389de.ttf"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/fonts/iconfont.e491c426.ttf"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-advanced.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-advanced.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-advanced.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.es.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.ja.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.zh-cn.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.zh-tw.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-cloud.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-cloud.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-cloud.es.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-cloud.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-cloud.ja.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-cloud.zh-cn.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-cloud.zh-tw.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-flowstatistics.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-flowstatistics.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-flowstatistics.es.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-flowstatistics.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-flowstatistics.ja.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-flowstatistics.zh-cn.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-flowstatistics.zh-tw.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-ipv6.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-ipv6.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-ipv6.es.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-ipv6.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-ipv6.ja.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-ipv6.zh-cn.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-ipv6.zh-tw.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-logview.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-logview.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-logview.es.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-logview.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-logview.ja.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-logview.zh-cn.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-logview.zh-tw.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-parental-control.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-parental-control.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-parental-control.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-parental-control.ja.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-vpndashboard.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-vpndashboard.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-vpndashboard.es.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-vpndashboard.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-vpndashboard.ja.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-vpndashboard.zh-cn.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-vpndashboard.zh-tw.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-welcome.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-welcome.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/i18n/gl-sdk4-ui-welcome.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "outbound",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "cloud",
+      "source": "www/views/gl-sdk4-ui-cloud.common.js.gz"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp",
+      "risk": "high",
+      "service": "dhcpd",
+      "source": "etc/hotplug.d/dhcpv6/01-gl_relay_add_neigh_proxy"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system, unsafe_copy"
+      ],
+      "exposure": "lan",
+      "protocol": "udp",
+      "risk": "high",
+      "service": "dhcpd",
+      "source": "etc/init.d/dnsmasq"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp",
+      "risk": "high",
+      "service": "dhcpd",
+      "source": "etc/init.d/gl_ipv6"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp",
+      "risk": "high",
+      "service": "dhcpd",
+      "source": "etc/init.d/odhcpd"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp",
+      "risk": "high",
+      "service": "dhcpd",
+      "source": "lib/functions/drop-in-function.sh"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp",
+      "risk": "high",
+      "service": "dhcpd",
+      "source": "usr/lib/oui-httpd/rpc/cable"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/dnsmasq.conf"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/dnsmasq.conf.mptun"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/firewall.dns_order"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/group"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/hotplug.d/dhcp/01-gl_vpn_dnsmasq_hosts"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/hotplug.d/kmwan/time_sync"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/hotplug.d/ntp/25-dnsmasqsec"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/hotplug.d/wireguard/ifdown.sh"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/init.d/dnscrypt-proxy"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system, unsafe_copy"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/init.d/dnsmasq"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/init.d/dnsproxy"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/init.d/gl_ipv6"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/init.d/init-dnsmasq-conf"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/passwd"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "etc/shadow"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "lib/functions/drop-in-function.sh"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "lib/functions/gl_util.sh"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "lib/functions/mptun.sh"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "lib/functions/vpn_server_func.sh"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "lib/netifd/ppp6-up"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "lib/netifd/proto/qmi.sh"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "lib/upgrade/keep.d/dnsmasq-full"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "usr/lib/oui-httpd/rpc/adguardhome"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "usr/lib/oui-httpd/rpc/dns"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "usr/lib/oui-httpd/rpc/lan"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "usr/lib/oui-httpd/rpc/netmode"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "usr/lib/oui-httpd/rpc/repeater"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "usr/lib/oui-httpd/rpc/s2s.so"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "usr/lib/oui-httpd/rpc/system"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "usr/lib/oui-httpd/rpc/tailscale"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "usr/lib/oui-httpd/rpc/tethering"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "udp/tcp",
+      "risk": "high",
+      "service": "dnsmasq",
+      "source": "usr/lib/oui-httpd/rpc/ui"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, system, unsafe_copy"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "etc/app-metadata.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "etc/apps.conf"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, system"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "etc/init.d/gl-black_white_list"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "lib/firmware/WIFI_RAM_CODE_MT7986.bin"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "lib/firmware/WIFI_RAM_CODE_MT7986_MT7975.bin"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "lib/firmware/WIFI_RAM_CODE_MT7986_TESTMODE.bin"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "lib/firmware/WIFI_RAM_CODE_MT7986_TESTMODE_MT7975.bin"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "lib/modules/5.4.238/gl-sdk4-black_white_list.ko"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, popen"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "sbin/l1dat"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "sbin/smp.sh"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "usr/lib/oui-httpd/rpc/clients"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "usr/lib/oui-httpd/rpc/lan"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "usr/lib/oui-httpd/rpc/system"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "usr/lib/oui-httpd/rpc/ui"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "usr/lib/oui-httpd/rpc/wifi"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/fonts/iconfont.e491c426.ttf"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.es.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.ja.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.zh-cn.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-astrowarp.zh-tw.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-home.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-home.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-home.es.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-home.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-home.ja.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-home.zh-cn.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-home.zh-tw.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-internet.de.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-internet.en.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-internet.es.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-internet.it.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-internet.ja.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-internet.zh-cn.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/i18n/gl-sdk4-ui-internet.zh-tw.json"
+    },
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present",
+        "local sinks: exec, file_write"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "www/luci-static/resources/view/network/wireless.js.mtk"
+    },
+    {
+      "auth_class": "none",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "udp",
+      "risk": "high",
+      "service": "ssdp",
+      "source": "etc/init.d/minidlna"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "high",
+      "service": "telnetd",
+      "source": "lib/upgrade/stage2"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "ftpd",
+      "source": "etc/init.d/vsftpd"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "ftpd",
+      "source": "etc/vsftpd.conf"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "ftpd",
+      "source": "lib/upgrade/keep.d/vsftpd-tls"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, system, unsafe_copy"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "etc/app-metadata.json"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "etc/apps.conf"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "etc/hotplug.d/block/10-mount"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "etc/init.d/gl_nas_sys"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, system"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "etc/init.d/samba4"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "lib/upgrade/keep.d/samba4-server"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "usr/lib/oui-httpd/rpc/nas-web.so"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "usr/lib/samba/ldb/paged_searches.so"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "www/i18n/gl-sdk4-ui-nasview.de.json"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "www/i18n/gl-sdk4-ui-nasview.en.json"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "www/i18n/gl-sdk4-ui-nasview.es.json"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "www/i18n/gl-sdk4-ui-nasview.it.json"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "www/i18n/gl-sdk4-ui-nasview.ja.json"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "www/i18n/gl-sdk4-ui-nasview.zh-cn.json"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "samba",
+      "source": "www/i18n/gl-sdk4-ui-nasview.zh-tw.json"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "smbd",
+      "source": "etc/init.d/gl_nas_sys"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, system"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "smbd",
+      "source": "etc/init.d/samba4"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "smbd",
+      "source": "usr/lib/oui-httpd/rpc/system"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write, system"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "etc/init.d/dropbear"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "lib/preinit/99_10_failsafe_dropbear"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "lib/upgrade/keep.d/base-files"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "lib/upgrade/keep.d/dropbear"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present",
+        "local sinks: system"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "lib/upgrade/stage2"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "usr/lib/oui-httpd/rpc/firewall"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "usr/lib/oui-httpd/rpc/local-access"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "usr/lib/oui-httpd/rpc/system"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present",
+        "local sinks: popen"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "usr/lib/oui-httpd/rpc/tor"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "usr/lib/oui-httpd/rpc/ui"
+    },
+    {
+      "auth_class": "required",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "low",
+      "service": "dropbear",
+      "source": "usr/lib/oui-httpd/rpc/upgrade"
+    }
+  ],
+  "sink_summary": {
+    "exec": 16,
+    "file_write": 215,
+    "popen": 5,
+    "system": 260,
+    "unsafe_copy": 66
+  },
+  "validation_recipes": [
+    {
+      "marker": "FRIDAY_CMD_MARKER",
+      "payloads": [
+        ";printf FRIDAY_CMD_MARKER",
+        "$(printf FRIDAY_CMD_MARKER)"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker appears in captured argv/stdout",
+      "vulnerability_class": "command_injection"
+    },
+    {
+      "marker": "FRIDAY_PATH_MARKER",
+      "payloads": [
+        "../../tmp/friday-proof/marker",
+        "..%2f..%2ftmp%2ffriday-proof%2fmarker"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker created inside modeled /tmp only",
+      "vulnerability_class": "path_traversal"
+    },
+    {
+      "marker": "FRIDAY_ARCHIVE_MARKER",
+      "payloads": [
+        "ordered symlink then child file",
+        "hardlink to modeled target"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "write escapes extraction root but remains inside sandbox",
+      "vulnerability_class": "archive_escape"
+    },
+    {
+      "marker": "FRIDAY_CRASH_MARKER",
+      "payloads": [
+        "cyclic bounded input lengths 64..4096"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "reproducible crash with instruction/register capture",
+      "vulnerability_class": "memory_corruption"
+    },
+    {
+      "marker": "FRIDAY_AUTH_MARKER",
+      "payloads": [
+        "missing cookie",
+        "duplicate cookie",
+        "method override"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "protected handler returns distinct success state",
+      "vulnerability_class": "auth_bypass"
+    }
+  ]
+}

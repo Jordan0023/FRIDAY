@@ -1,0 +1,10 @@
+{"binary":"ntfs.ko","function":"ntfs_readpage","address":"0001036c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_read_compressed_block","address":"000125e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_lookup_inode_by_name","address":"00014184","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"FUN_00016064","address":"00016064","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_read_inode_mount","address":"00017994","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"map_extent_mft_record","address":"00018834","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_runlists_merge","address":"00019254","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_runlists_merge","address":"00019254","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_mapping_pairs_decompress","address":"0001a7cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs.ko","function":"ntfs_fill_super","address":"0001c188","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

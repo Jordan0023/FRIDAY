@@ -1,0 +1,2 @@
+{"binary":"cdc-wdm.ko","function":"FUN_001012ec","address":"001012ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cdc-wdm.ko","function":"FUN_001012f0","address":"001012f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

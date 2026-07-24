@@ -1,0 +1,8 @@
+{"binary":"ntfscp","function":"FUN_00011428","address":"00011428","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfscp","function":"FUN_00011428","address":"00011428","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfscp","function":"FUN_00011428","address":"00011428","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfscp","function":"FUN_00011428","address":"00011428","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfscp","function":"FUN_00011428","address":"00011428","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfscp","function":"FUN_00011428","address":"00011428","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfscp","function":"FUN_00012c4c","address":"00012c4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfscp","function":"FUN_00013210","address":"00013210","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

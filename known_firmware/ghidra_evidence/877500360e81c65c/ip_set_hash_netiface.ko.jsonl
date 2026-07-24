@@ -1,0 +1,12 @@
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_0010060c","address":"0010060c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_00100610","address":"00100610","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_00100870","address":"00100870","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_00102ec8","address":"00102ec8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_001033f0","address":"001033f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_00103918","address":"00103918","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_00103f78","address":"00103f78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_00104634","address":"00104634","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_00104638","address":"00104638","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_001051c8","address":"001051c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_00105890","address":"00105890","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_set_hash_netiface.ko","function":"FUN_00106470","address":"00106470","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

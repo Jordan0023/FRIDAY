@@ -1,0 +1,2 @@
+{"binary":"mtd","function":"FUN_00010bdc","address":"00010bdc","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00010bdc","address":"00010bdc","route":"/*","sink":"system","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

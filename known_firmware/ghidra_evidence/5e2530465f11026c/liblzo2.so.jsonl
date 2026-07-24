@@ -1,0 +1,7 @@
+{"binary":"liblzo2.so.2","function":"lzo1b_999_compress_callback","address":"00016d0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2","function":"lzo1c_999_compress_callback","address":"0001b450","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2","function":"lzo1f_999_compress_callback","address":"0001cd2c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2","function":"lzo1x_999_compress_internal","address":"0001f6ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2","function":"lzo1y_999_compress_internal","address":"00022300","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2","function":"lzo1z_999_compress_internal","address":"00024a80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2","function":"lzo2a_999_compress_callback","address":"0002677c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"libsys_util.so","function":"sysUtl_getThreadInfoFromProc","address":"00010b44","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtil_copyToBuffer","address":"00010d40","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

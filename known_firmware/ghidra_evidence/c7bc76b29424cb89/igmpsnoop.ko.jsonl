@@ -1,0 +1,5 @@
+{"binary":"igmpsnoop.ko","function":"FUN_0001082c","address":"0001082c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"igmpsnoop.ko","function":"FUN_0001082c","address":"0001082c","route":"/net/dst.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"igmpsnoop.ko","function":"br_mc_fdb_add","address":"00011188","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"igmpsnoop.ko","function":"br_mc_fdb_fillbuf","address":"0001207c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"igmpsnoop.ko","function":"br_mc_fdb_fillbuf","address":"0001207c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

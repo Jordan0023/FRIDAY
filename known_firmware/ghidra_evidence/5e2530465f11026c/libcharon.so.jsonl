@@ -1,0 +1,4 @@
+{"binary":"libcharon.so.0.0.0","function":"FUN_0002cf84","address":"0002cf84","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcharon.so.0.0.0","function":"FUN_00048a34","address":"00048a34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcharon.so.0.0.0","function":"keymat_get_keylen_integ","address":"00066f98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcharon.so.0.0.0","function":"FUN_00094d8c","address":"00094d8c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"ntpclient","function":"FUN_00011d6c","address":"00011d6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntpclient","function":"FUN_00012028","address":"00012028","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntpclient","function":"FUN_00012028","address":"00012028","route":"/*","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

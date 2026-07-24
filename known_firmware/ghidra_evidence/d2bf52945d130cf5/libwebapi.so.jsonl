@@ -1,0 +1,2 @@
+{"binary":"libwebapi.so","function":"start_config_sync_cgi","address":"00017ac8","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"set_wireguard_client","address":"0001a168","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,9 @@
+{"binary":"crypto-hw-eip93.ko","function":"_40","address":"00015b2c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-hw-eip93.ko","function":"_40","address":"00015b2c","route":"/linux/dma-mapping.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-hw-eip93.ko","function":"_40","address":"00015b2c","route":"/crypto/mtk-eip93/eip93-common.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-hw-eip93.ko","function":"_40","address":"00015b2c","route":"/crypto/mtk-eip93/eip93-common.c:574","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-hw-eip93.ko","function":"_30","address":"00016634","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-hw-eip93.ko","function":"FUN_000171e4","address":"000171e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-hw-eip93.ko","function":"FUN_000171e4","address":"000171e4","route":"/crypto/mtk-eip93/eip93-aead.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-hw-eip93.ko","function":"FUN_000171e4","address":"000171e4","route":"/crypto/mtk-eip93/eip93-aead.c:188","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-hw-eip93.ko","function":"FUN_000171e4","address":"000171e4","route":"/linux/dma-mapping.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

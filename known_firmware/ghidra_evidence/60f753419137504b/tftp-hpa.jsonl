@@ -1,0 +1,5 @@
+{"binary":"tftp-hpa","function":"strcpy","address":"00008e0c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tftp-hpa","function":"memcpy","address":"00008e54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tftp-hpa","function":"sscanf","address":"00008fb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tftp-hpa","function":"FUN_000090dc","address":"000090dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tftp-hpa","function":"FUN_0000a580","address":"0000a580","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"libnetfilter_queue.so.1.5.0","function":"pktb_alloc","address":"00013af0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetfilter_queue.so.1.5.0","function":"pktb_mangle","address":"00013c58","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetfilter_queue.so.1.5.0","function":"pktb_mangle","address":"00013c58","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

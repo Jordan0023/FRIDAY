@@ -1,0 +1,6 @@
+{"binary":"cfg_server","function":"FUN_00013580","address":"00013580","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_server","function":"FUN_0001ebc8","address":"0001ebc8","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_server","function":"FUN_0001ebc8","address":"0001ebc8","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_server","function":"FUN_0001ebc8","address":"0001ebc8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_server","function":"FUN_00039ed4","address":"00039ed4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_server","function":"FUN_00064878","address":"00064878","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

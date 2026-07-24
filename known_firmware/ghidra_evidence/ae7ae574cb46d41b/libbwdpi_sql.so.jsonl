@@ -1,0 +1,10 @@
+{"binary":"libbwdpi_sql.so","function":"AiProtectionMonitor_result","address":"000112d8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_maclist_db","address":"0001146c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_appStat","address":"00011954","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_appStat","address":"00011954","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"sqlite_Stat_hook","address":"00012324","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_HistoryStat","address":"00012d28","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_HistoryStat","address":"00012d28","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_info","address":"00013934","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_ips","address":"000142cc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_nonips","address":"000149ec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

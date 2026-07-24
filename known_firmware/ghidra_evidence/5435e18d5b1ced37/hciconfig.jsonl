@@ -1,0 +1,2 @@
+{"binary":"hciconfig","function":"FUN_000117bc","address":"000117bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hciconfig","function":"FUN_000124b0","address":"000124b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

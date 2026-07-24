@@ -1,0 +1,11 @@
+{"binary":"archer.ko","function":"archer_ucast_l2_activate","address":"00015c70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"archer.ko","function":"sysport_classifier_flow_create","address":"000175b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"archer.ko","function":"sysport_classifier_packet_dump","address":"000191cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"archer.ko","function":"sysport_classifier_packet_dump","address":"000191cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"archer.ko","function":"archer_socket_task_handler","address":"0001ba88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"archer.ko","function":"archer_socket_task_handler","address":"0001ba88","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"archer.ko","function":"archer_wlan_socket_miss_write","address":"00020838","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"archer.ko","function":"archer_dhd_rx_complete_task_handler","address":"0002428c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"archer.ko","function":"archer_dhd_rx_complete_task_handler","address":"0002428c","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"archer.ko","function":"archer_dma_task_rx_handler","address":"00028fd4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"archer.ko","function":"archer_dma_task_rx_handler","address":"00028fd4","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

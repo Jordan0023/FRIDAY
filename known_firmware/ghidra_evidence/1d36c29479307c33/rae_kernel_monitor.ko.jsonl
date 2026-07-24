@@ -1,0 +1,3 @@
+{"binary":"rae_kernel_monitor.ko","function":"pega_on_event","address":"000101c0","route":"/%02d/%02d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rae_kernel_monitor.ko","function":"pega_on_event","address":"000101c0","route":"/data/ra_kernelReboot","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rae_kernel_monitor.ko","function":"pega_on_event","address":"000101c0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

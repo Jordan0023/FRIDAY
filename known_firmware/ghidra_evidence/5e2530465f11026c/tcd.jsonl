@@ -1,0 +1,13 @@
+{"binary":"tcd","function":"FUN_00011358","address":"00011358","route":"/*","sink":"system","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_0001183c","address":"0001183c","route":"/proc/%u/maps","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_0001183c","address":"0001183c","route":"/proc/%u/maps","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_0001183c","address":"0001183c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_0001183c","address":"0001183c","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_00011ac8","address":"00011ac8","route":"/proc/%u/status","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_00011ac8","address":"00011ac8","route":"/proc/%u/status","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_00011ac8","address":"00011ac8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_00011ac8","address":"00011ac8","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_00011e90","address":"00011e90","route":"/proc/%d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_00011e90","address":"00011e90","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_00012070","address":"00012070","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcd","function":"FUN_00012070","address":"00012070","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

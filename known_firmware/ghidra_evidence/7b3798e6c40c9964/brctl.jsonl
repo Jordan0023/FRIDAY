@@ -1,0 +1,4 @@
+{"binary":"brctl","function":"FUN_00009efc","address":"00009efc","route":"/%s","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"brctl","function":"FUN_0000ac70","address":"0000ac70","route":"/sys/class/net/%s/%s","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"brctl","function":"FUN_0000af30","address":"0000af30","route":"/sys/class/net/%s/brport/%s","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"brctl","function":"FUN_0000b18c","address":"0000b18c","route":"/sys/class/net/%s/brforward","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,6 @@
+{"binary":"libbcm_util.so","function":"bcmNet_getRouteInfoToServer","address":"00013500","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_util.so","function":"bcmNet_getRouteInfoToServer","address":"00013500","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_util.so","function":"bcmNet_getDefaultLanIpInfo","address":"00014038","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_util.so","function":"bcmUtl_getBaseMacAddress","address":"00014794","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_util.so","function":"bcmUtl_getBootloaderVersion","address":"00014ad4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_util.so","function":"bcmUtl_startRebootWatchdog","address":"00014cd4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

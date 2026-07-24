@@ -1,0 +1,1 @@
+{"binary":"qca-nss-macsec.ko","function":"nss_macsec_secy_tx_class_lut_get","address":"00013db8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

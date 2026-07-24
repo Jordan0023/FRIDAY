@@ -1,0 +1,9 @@
+{"binary":"wpa_cli","function":"FUN_004118c4","address":"004118c4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_004118c4","address":"004118c4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_004118c4","address":"004118c4","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_004118c4","address":"004118c4","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_00411a18","address":"00411a18","route":"/dev/urandom","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_00411a18","address":"00411a18","route":"/dev/urandom.","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_00411ab8","address":"00411ab8","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_00411ab8","address":"00411ab8","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_00412014","address":"00412014","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

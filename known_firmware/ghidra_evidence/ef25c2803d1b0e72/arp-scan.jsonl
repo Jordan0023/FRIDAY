@@ -1,0 +1,4 @@
+{"binary":"arp-scan","function":"FUN_00013dec","address":"00013dec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"arp-scan","function":"FUN_00014ff8","address":"00014ff8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"arp-scan","function":"FUN_00015824","address":"00015824","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"arp-scan","function":"FUN_00015d7c","address":"00015d7c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

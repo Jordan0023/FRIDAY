@@ -1,0 +1,3 @@
+{"binary":"pktlogconf","function":"fopen","address":"00008594","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktlogconf","function":"sprintf","address":"000085b8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pktlogconf","function":"FUN_000085e8","address":"000085e8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

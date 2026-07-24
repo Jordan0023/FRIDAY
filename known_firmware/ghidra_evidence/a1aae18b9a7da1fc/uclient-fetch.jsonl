@@ -1,0 +1,12 @@
+{"binary":"uclient-fetch","function":"FUN_00401aa0","address":"00401aa0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00401aa0","address":"00401aa0","route":"/request","sink":"unsafe_copy","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00401aa0","address":"00401aa0","route":"/etc/ssl/certs/*.crt","sink":"unsafe_copy","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00402164","address":"00402164","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00402164","address":"00402164","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00402204","address":"00402204","route":"index.html","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00402204","address":"00402204","route":"/x-www-form-urlencoded","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00402204","address":"00402204","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00402734","address":"00402734","route":"/%lu","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00402734","address":"00402734","route":"/%lu","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00402734","address":"00402734","route":"index.html","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00402734","address":"00402734","route":"index.html","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

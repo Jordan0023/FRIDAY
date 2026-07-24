@@ -1,0 +1,7 @@
+{"binary":"libcms_util.so","function":"bufdump","address":"0001abf4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_util.so","function":"FUN_0001f1c8","address":"0001f1c8","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_util.so","function":"oal_spawnProcess","address":"00028d64","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_util.so","function":"oal_spawnProcess","address":"00028d64","route":"/')","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_util.so","function":"oal_spawnProcess","address":"00028d64","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_util.so","function":"oal_spawnProcess","address":"00028d64","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_util.so","function":"oal_getLanAddr6","address":"00029608","route":"/64","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

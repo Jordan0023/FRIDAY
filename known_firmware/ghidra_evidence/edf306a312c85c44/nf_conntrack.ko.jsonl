@@ -1,0 +1,2 @@
+{"binary":"nf_conntrack.ko","function":"FUN_001016a0","address":"001016a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_conntrack.ko","function":"nf_ct_gre_keymap_add","address":"0010cec0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

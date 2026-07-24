@@ -1,0 +1,5 @@
+{"binary":"jbd2.ko","function":"FUN_00101da4","address":"00101da4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd2.ko","function":"FUN_00101da8","address":"00101da8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd2.ko","function":"FUN_001055b8","address":"001055b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd2.ko","function":"FUN_0010a99c","address":"0010a99c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd2.ko","function":"jbd2_journal_write_metadata_buffer","address":"0010a9a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

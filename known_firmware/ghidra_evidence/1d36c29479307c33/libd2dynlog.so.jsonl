@@ -1,0 +1,2 @@
+{"binary":"libd2dynlog.so","function":"log_printf","address":"00010e68","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libd2dynlog.so","function":"log_printf","address":"00010e68","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

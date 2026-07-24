@@ -1,0 +1,12 @@
+{"binary":"usign","function":"FUN_00401c1c","address":"00401c1c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usign","function":"fprime_mul","address":"00402358","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usign","function":"ed25519_smult","address":"0040303c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usign","function":"ed25519_try_unpack","address":"00403264","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usign","function":"ed25519_pack","address":"004033a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usign","function":"edsign_sign","address":"00403558","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usign","function":"FUN_0040371c","address":"0040371c","route":"/dev/urandom","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usign","function":"FUN_0040371c","address":"0040371c","route":"/dev/urandom","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usign","function":"FUN_0040371c","address":"0040371c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usign","function":"FUN_0040371c","address":"0040371c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usign","function":"FUN_0040395c","address":"0040395c","route":"/*","sink":"file_write","sources":"","auth_markers":"Password","correlation":"function-local-co-location"}
+{"binary":"usign","function":"FUN_0040395c","address":"0040395c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"Password","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"gpio-button-hotplug.ko","function":"FUN_00010128","address":"00010128","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gpio-button-hotplug.ko","function":"FUN_00010128","address":"00010128","route":"/sbin:/bin:/usr/sbin:/usr/bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gpio-button-hotplug.ko","function":"FUN_00010128","address":"00010128","route":"/linux-ramips_mt76x8/gpio-button-hotplug/gpio-button-hotplug.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

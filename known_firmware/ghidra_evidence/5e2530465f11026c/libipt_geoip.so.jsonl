@@ -1,0 +1,1 @@
+{"binary":"libipt_geoip.so","function":"FUN_00010a70","address":"00010a70","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

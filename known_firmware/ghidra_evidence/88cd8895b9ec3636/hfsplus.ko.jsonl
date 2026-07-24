@@ -1,0 +1,12 @@
+{"binary":"hfsplus.ko","function":"hfsplus_parse_options","address":"00011abc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_find_cat","address":"00015f24","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_bnode_read","address":"00018ffc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_bnode_read_key","address":"00019174","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_bnode_write","address":"00019218","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_bnode_copy","address":"000194d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_bnode_move","address":"000197bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"FUN_00023c90","address":"00023c90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"FUN_00023c90","address":"00023c90","route":"/hfsplus_journal/transaction.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_jbd_get_undo_access","address":"000245b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"FUN_00027628","address":"00027628","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"FUN_00027628","address":"00027628","route":"/hfsplus_journal/recovery.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

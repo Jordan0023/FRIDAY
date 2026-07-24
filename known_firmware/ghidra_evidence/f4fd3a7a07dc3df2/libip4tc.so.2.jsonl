@@ -1,0 +1,8 @@
+{"binary":"libip4tc.so.2.0.0","function":"iptc_init","address":"00011edc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip4tc.so.2.0.0","function":"iptc_init","address":"00011edc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip4tc.so.2.0.0","function":"iptc_insert_entry","address":"00012b90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip4tc.so.2.0.0","function":"iptc_append_entry","address":"00012d08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip4tc.so.2.0.0","function":"FUN_00012e1c","address":"00012e1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip4tc.so.2.0.0","function":"iptc_commit","address":"00013798","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip4tc.so.2.0.0","function":"iptc_commit","address":"00013798","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip4tc.so.2.0.0","function":"iptc_replace_entry","address":"00013d88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

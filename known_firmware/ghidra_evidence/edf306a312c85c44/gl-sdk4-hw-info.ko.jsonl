@@ -1,0 +1,5 @@
+{"binary":"gl-sdk4-hw-info.ko","function":"FUN_001000f0","address":"001000f0","route":"/dev/ubi","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-hw-info.ko","function":"FUN_001000f0","address":"001000f0","route":"/dev/mmc","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-hw-info.ko","function":"FUN_001000f0","address":"001000f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-hw-info.ko","function":"make_factory_data","address":"00100380","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-hw-info.ko","function":"FUN_001006fc","address":"001006fc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

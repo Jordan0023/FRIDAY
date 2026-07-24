@@ -1,0 +1,15 @@
+{"binary":"test_disk2","function":"get_usb_port_by_string","address":"00011a38","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"strntrim","address":"00011e34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"read_whole_file","address":"00011f34","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"read_whole_file","address":"00011f34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"get_disk_major_minor","address":"0001222c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"get_disk_size","address":"00012378","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"get_disk_vendor","address":"00012498","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"get_disk_model","address":"000125a0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"read_mount_data","address":"00012cc8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"read_mount_data","address":"00012cc8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"find_partition_label","address":"000134f0","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"find_partition_label","address":"000134f0","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"get_partition_size","address":"000138b0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"create_disk","address":"00013e1c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"read_disk_data","address":"000143a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

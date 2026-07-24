@@ -1,0 +1,11 @@
+{"binary":"gl_wan_detect","function":"FUN_00401194","address":"00401194","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_wan_detect","function":"FUN_004016c0","address":"004016c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_wan_detect","function":"FUN_00401ba0","address":"00401ba0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_wan_detect","function":"FUN_00401f38","address":"00401f38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_wan_detect","function":"FUN_004028b0","address":"004028b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_wan_detect","function":"FUN_004028b0","address":"004028b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_wan_detect","function":"FUN_00402cf0","address":"00402cf0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_wan_detect","function":"FUN_00403024","address":"00403024","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_wan_detect","function":"FUN_004032d0","address":"004032d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_wan_detect","function":"FUN_004037b0","address":"004037b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_wan_detect","function":"FUN_004037b0","address":"004037b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

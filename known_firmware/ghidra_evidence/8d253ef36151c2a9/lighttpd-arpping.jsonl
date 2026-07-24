@@ -1,0 +1,8 @@
+{"binary":"lighttpd-arpping","function":"FUN_00404ab8","address":"00404ab8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-arpping","function":"FUN_004057b4","address":"004057b4","route":"/proc/net/arp","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-arpping","function":"FUN_004057b4","address":"004057b4","route":"/proc/net/arp","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-arpping","function":"FUN_00405d00","address":"00405d00","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-arpping","function":"FUN_0040618c","address":"0040618c","route":"/tmp/lighttpd/lighttpd-arpping.pid","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-arpping","function":"FUN_0040618c","address":"0040618c","route":"/tmp/lighttpd/lighttpd-arpping.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-arpping","function":"FUN_0040618c","address":"0040618c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-arpping","function":"FUN_0040618c","address":"0040618c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

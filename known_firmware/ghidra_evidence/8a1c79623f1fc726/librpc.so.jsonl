@@ -1,0 +1,5 @@
+{"binary":"librpc.so","function":"authunix_create","address":"00014060","route":"/*","sink":"memory_operation","sources":"","auth_markers":"AUTH","correlation":"function-local-co-location"}
+{"binary":"librpc.so","function":"clnt_create","address":"00014430","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"librpc.so","function":"clnt_create","address":"00014430","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"librpc.so","function":"getrpcent","address":"00016f30","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"librpc.so","function":"svcunix_create","address":"0001c258","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

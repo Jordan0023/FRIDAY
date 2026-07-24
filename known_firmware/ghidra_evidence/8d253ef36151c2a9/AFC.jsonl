@@ -1,0 +1,1 @@
+{"binary":"AFC","function":"FUN_0040216c","address":"0040216c","route":"/etc/afc/location.cfg","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

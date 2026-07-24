@@ -1,0 +1,2 @@
+{"binary":"ip_tunnel.ko","function":"FUN_00010b78","address":"00010b78","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_tunnel.ko","function":"ip_tunnel_init","address":"00011614","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

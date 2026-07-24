@@ -1,0 +1,4 @@
+{"binary":"sg.ko","function":"sg_rq_end_io","address":"000109b4","route":"/scsi/sg.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sg.ko","function":"sg_rq_end_io","address":"000109b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sg.ko","function":"sg_add_device","address":"00010d90","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sg.ko","function":"FUN_00012bc0","address":"00012bc0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

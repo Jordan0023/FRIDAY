@@ -1,0 +1,2 @@
+{"binary":"bcm_pcie_hcd.ko","function":"bcmvpcie_hc_probe","address":"00014edc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_pcie_hcd.ko","function":"pcie_hcd_nvram_get_u32","address":"00019048","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"jbd2.ko","function":"FUN_0001227c","address":"0001227c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd2.ko","function":"FUN_00015dc0","address":"00015dc0","route":"/linux/jbd2.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd2.ko","function":"jbd2_journal_write_metadata_buffer","address":"0001c52c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,7 @@
+{"binary":"libusbmuxd-2.0.so.6.0.0","function":"FUN_000122c8","address":"000122c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusbmuxd-2.0.so.6.0.0","function":"FUN_00012570","address":"00012570","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusbmuxd-2.0.so.6.0.0","function":"usbmuxd_events_subscribe","address":"000139a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusbmuxd-2.0.so.6.0.0","function":"usbmuxd_events_unsubscribe","address":"00013c10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusbmuxd-2.0.so.6.0.0","function":"usbmuxd_get_device_list","address":"00013e4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusbmuxd-2.0.so.6.0.0","function":"usbmuxd_get_device_by_udid","address":"0001442c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusbmuxd-2.0.so.6.0.0","function":"usbmuxd_get_device","address":"00014530","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

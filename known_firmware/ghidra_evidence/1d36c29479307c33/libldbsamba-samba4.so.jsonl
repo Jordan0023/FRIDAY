@@ -1,0 +1,3 @@
+{"binary":"libldbsamba-samba4.so","function":"dsdb_schema_pfm_new","address":"0002599c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldbsamba-samba4.so","function":"dsdb_schema_pfm_oid_from_attid","address":"00025fd8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldbsamba-samba4.so","function":"FUN_00027f8c","address":"00027f8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

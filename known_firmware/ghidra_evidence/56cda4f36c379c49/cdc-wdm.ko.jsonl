@@ -1,0 +1,1 @@
+{"binary":"cdc-wdm.ko","function":"wdm_in_callback","address":"00100b40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

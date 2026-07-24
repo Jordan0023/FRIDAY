@@ -1,0 +1,14 @@
+{"binary":"ipq_cnss2.ko","function":"cnss_get_fw_files_for_target","address":"00012080","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"FUN_000129fc","address":"000129fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"fs_ready_store","address":"000145e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_pci_read_switch_link","address":"0001a55c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_pci_load_m3","address":"00020c98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_send_buffer_to_afcmem","address":"00027640","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_bdf_dnld_send_sync","address":"0002ba68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_qdss_data_send_sync","address":"0002cf14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_wlan_cfg_send_sync","address":"0002d8e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_athdiag_read_send_sync","address":"0002dc6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_athdiag_write_send_sync","address":"0002ded4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_genl_send_msg","address":"0003164c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_genl_send_msg","address":"0003164c","route":"/include/net/genetlink.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_plat_ipc_qmi_file_upload_req_handler","address":"00031fe8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

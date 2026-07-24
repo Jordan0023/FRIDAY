@@ -1,0 +1,2 @@
+{"binary":"ebtables.ko","function":"ebt_buf_add","address":"00102700","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ebtables.ko","function":"compat_copy_entries","address":"001027a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

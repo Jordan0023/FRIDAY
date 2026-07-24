@@ -1,0 +1,3 @@
+{"binary":"hfs.ko","function":"hfs_cat_find_brec","address":"0001345c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfs.ko","function":"hfs_mdb_commit","address":"00016568","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfs.ko","function":"hfs_mdb_get","address":"000169c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

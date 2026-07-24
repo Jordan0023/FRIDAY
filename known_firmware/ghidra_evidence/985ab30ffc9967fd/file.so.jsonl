@@ -1,0 +1,7 @@
+{"binary":"file.so","function":"FUN_00011598","address":"00011598","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"file.so","function":"FUN_00011eb8","address":"00011eb8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"file.so","function":"FUN_00012554","address":"00012554","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"file.so","function":"FUN_00012554","address":"00012554","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"file.so","function":"FUN_00012924","address":"00012924","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"file.so","function":"FUN_00012924","address":"00012924","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"file.so","function":"FUN_00012924","address":"00012924","route":"/*","sink":"exec","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

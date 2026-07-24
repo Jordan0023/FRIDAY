@@ -1,0 +1,2 @@
+{"binary":"qca-nss-ppe-l2tp.ko","function":"FUN_001001ac","address":"001001ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-l2tp.ko","function":"FUN_001003c8","address":"001003c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

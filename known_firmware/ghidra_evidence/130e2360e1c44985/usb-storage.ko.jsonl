@@ -1,0 +1,4 @@
+{"binary":"usb-storage.ko","function":"max_sectors_store","address":"000102f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"usb_stor_access_xfer_buf","address":"00010f60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"usb_stor_CB_transport","address":"000117c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb-storage.ko","function":"usb_stor_Bulk_transport","address":"00011dd8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

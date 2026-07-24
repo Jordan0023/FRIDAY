@@ -1,0 +1,12 @@
+{"binary":"mtd","function":"FUN_00402968","address":"00402968","route":"/proc/mtd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00402968","address":"00402968","route":"/proc/mtd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00402968","address":"00402968","route":"/proc/mtd","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00402968","address":"00402968","route":"/dev/mtd%s/%d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00402968","address":"00402968","route":"/dev/mtd%s/%d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00402968","address":"00402968","route":"/dev/mtd%s/%d","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00402968","address":"00402968","route":"/dev/mtd%s%d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00402968","address":"00402968","route":"/dev/mtd%s%d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00402968","address":"00402968","route":"/dev/mtd%s%d","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00402f00","address":"00402f00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00402fc0","address":"00402fc0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtd","function":"FUN_00403140","address":"00403140","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

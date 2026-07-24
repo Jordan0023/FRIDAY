@@ -1,0 +1,9 @@
+{"binary":"dhcp6s","function":"vsprintf","address":"00009458","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6s","function":"execve","address":"000094ac","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6s","function":"memcpy","address":"000094d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6s","function":"sscanf","address":"000096c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6s","function":"fopen","address":"00009704","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6s","function":"open","address":"0000983c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6s","function":"FUN_00009958","address":"00009958","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6s","function":"FUN_00009958","address":"00009958","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcp6s","function":"FUN_0000f030","address":"0000f030","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

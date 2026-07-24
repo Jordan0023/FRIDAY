@@ -1,0 +1,7 @@
+{"binary":"libiw.so.29","function":"iw_enum_devices","address":"001020f4","route":"/proc/net/dev","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiw.so.29","function":"iw_enum_devices","address":"001020f4","route":"/proc/net/dev","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiw.so.29","function":"iw_get_kernel_we_version","address":"001022c8","route":"/proc/net/wireless","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiw.so.29","function":"iw_get_kernel_we_version","address":"001022c8","route":"/proc/net/wireless","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiw.so.29","function":"iw_get_stats","address":"00102ff4","route":"/proc/net/wireless","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiw.so.29","function":"iw_get_stats","address":"00102ff4","route":"/proc/net/wireless","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiw.so.29","function":"iw_sawap_ntop","address":"00103e4c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

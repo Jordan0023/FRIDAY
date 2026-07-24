@@ -1,0 +1,3 @@
+{"binary":"libcom_err.so.2.1","function":"FUN_00010dfc","address":"00010dfc","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcom_err.so.2.1","function":"error_message","address":"0001100c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcom_err.so.2.1","function":"error_message","address":"0001100c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

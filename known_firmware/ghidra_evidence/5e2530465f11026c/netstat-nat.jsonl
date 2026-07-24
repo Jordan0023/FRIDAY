@@ -1,0 +1,1 @@
+{"binary":"netstat-nat","function":"FUN_00010b90","address":"00010b90","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

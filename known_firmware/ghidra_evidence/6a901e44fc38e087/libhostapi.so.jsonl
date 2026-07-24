@@ -1,0 +1,4 @@
+{"binary":"libhostapi.so","function":"sys_cl22_mdio_read","address":"00013c40","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhostapi.so","function":"sys_cl45_mdio_read","address":"00013d70","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhostapi.so","function":"_file_lock2","address":"00016480","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhostapi.so","function":"gsw_api_wrap","address":"00016a38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,13 @@
+{"binary":"dosfsck","function":"strcpy","address":"00008b74","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"memmove","address":"00008b98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"memcpy","address":"00008bbc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"strcat","address":"00008c58","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"sprintf","address":"00008d00","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"FUN_0000a204","address":"0000a204","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"FUN_0000a204","address":"0000a204","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"FUN_0000b798","address":"0000b798","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"FUN_0000b894","address":"0000b894","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"FUN_0000cb78","address":"0000cb78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"FUN_0000e030","address":"0000e030","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"FUN_0000e228","address":"0000e228","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dosfsck","function":"FUN_0000e7b0","address":"0000e7b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

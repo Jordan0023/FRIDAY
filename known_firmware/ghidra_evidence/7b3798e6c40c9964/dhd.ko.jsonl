@@ -1,0 +1,6 @@
+{"binary":"dhd.ko","function":"init_nvramvars_cmn","address":"00010b60","route":"/etc/wlan/bcmcmn_nvramvars.bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"dhd_runner_iovar_set_profile.part.8","address":"00014050","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"dhd_prot_ioctcmplt_process","address":"00033538","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"dhd_bus_download_firmware","address":"0003cd24","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"dhd_l2_filter_pkt_handle","address":"00040ad4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhd.ko","function":"wet_dhcpc_proc","address":"0004825c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

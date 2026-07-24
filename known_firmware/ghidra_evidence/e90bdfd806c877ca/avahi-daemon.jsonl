@@ -1,0 +1,1 @@
+{"binary":"avahi-daemon","function":"FUN_0040ff70","address":"0040ff70","route":"/../avahi-daemon/static-services.c","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

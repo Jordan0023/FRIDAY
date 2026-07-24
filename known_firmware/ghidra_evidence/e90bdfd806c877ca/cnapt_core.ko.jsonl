@@ -1,0 +1,2 @@
+{"binary":"cnapt_core.ko","function":"cnapt_add","address":"00011c4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cnapt_core.ko","function":"cnapt_add","address":"00011c4c","route":"/conflict","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

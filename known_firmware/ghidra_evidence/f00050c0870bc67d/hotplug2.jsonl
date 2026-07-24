@@ -1,0 +1,2 @@
+{"binary":"hotplug2","function":"FUN_000137c8","address":"000137c8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_00014034","address":"00014034","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

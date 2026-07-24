@@ -1,0 +1,2 @@
+{"binary":"libnl-3.so.200.5.2","function":"nl_addr_parse","address":"0001599c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.5.2","function":"nl_object_clone","address":"0001b80c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

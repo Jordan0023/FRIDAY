@@ -1,0 +1,4 @@
+{"binary":"imbd","function":"strcpy","address":"00008a2c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"imbd","function":"sscanf","address":"00008b1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"imbd","function":"fopen","address":"00008b4c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"imbd","function":"sprintf","address":"00008b88","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

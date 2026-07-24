@@ -1,0 +1,4 @@
+{"binary":"dbus-cleanup-sockets","function":"FUN_00400d00","address":"00400d00","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-cleanup-sockets","function":"FUN_00400d00","address":"00400d00","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-cleanup-sockets","function":"FUN_00400d00","address":"00400d00","route":"/tmp","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-cleanup-sockets","function":"FUN_00400d00","address":"00400d00","route":"/tmp","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

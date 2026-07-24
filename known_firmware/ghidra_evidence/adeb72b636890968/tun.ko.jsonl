@@ -1,0 +1,2 @@
+{"binary":"tun.ko","function":"tun_chr_show_fdinfo","address":"00010338","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tun.ko","function":"tun_chr_ioctl","address":"0001492c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

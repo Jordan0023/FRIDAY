@@ -1,0 +1,17 @@
+{"binary":"libwebapi.so","function":"upload_server_ovpn_cert_cgi","address":"00013010","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"upload_server_ovpn_cert_cgi","address":"00013010","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"gen_server_ovpn_file","address":"00013240","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"gen_server_ipsec_file","address":"000133cc","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"upload_server_ipsec_cert_cgi","address":"00013554","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"upload_server_ipsec_cert_cgi","address":"00013554","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"get_wl_nband_list","address":"00013778","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"enable_wireguard_client","address":"00014074","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"remove_client_in_group_list","address":"00014464","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"delete_wireguard_client","address":"000147bc","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"upload_config_sync_cgi","address":"0001552c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"start_config_sync_cgi","address":"00015900","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"set_wireguard_client","address":"000186dc","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"gen_jffs_backup_profile","address":"0001a594","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"upload_jffs_profile","address":"0001a6e4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"upload_jffs_profile","address":"0001a6e4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebapi.so","function":"detect_vul_scan","address":"0001b9a8","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"libcomposite.ko","function":"_11","address":"00012834","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcomposite.ko","function":"_11","address":"00012834","route":"/usb/gadget/composite.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcomposite.ko","function":"_11","address":"00012834","route":"/usb/gadget/composite.c:2206","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcomposite.ko","function":"FUN_000163f0","address":"000163f0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

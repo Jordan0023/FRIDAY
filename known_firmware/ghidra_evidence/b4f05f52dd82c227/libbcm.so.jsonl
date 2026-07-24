@@ -1,0 +1,1 @@
+{"binary":"libbcm.so","function":"bcmgpio_connect","address":"00010920","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

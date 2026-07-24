@@ -1,0 +1,6 @@
+{"binary":"libavahi-common.so.3.5.4","function":"avahi_strdup","address":"00012844","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-common.so.3.5.4","function":"avahi_strndup","address":"000128b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-common.so.3.5.4","function":"avahi_memdup","address":"00012a04","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-common.so.3.5.4","function":"avahi_string_list_add_arbitrary","address":"000130f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-common.so.3.5.4","function":"avahi_string_list_serialize","address":"000133b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-common.so.3.5.4","function":"avahi_string_list_add_pair_arbitrary","address":"000137dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

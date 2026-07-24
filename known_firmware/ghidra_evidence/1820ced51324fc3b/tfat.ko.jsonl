@@ -1,0 +1,14 @@
+{"binary":"tfat.ko","function":"exfat_cluster_chain_realloc","address":"00105f58","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"fat_dir_cache_add_dir","address":"0010cd28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"FUN_0011026c","address":"0011026c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"exfat_ioctl","address":"00110270","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"exfat_get_path_to_volume","address":"001111b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"exfat_fsckd","address":"00112418","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"fat_journal_chain_checksum","address":"001189c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"fat_journal_replay_rename_transaction.isra.2","address":"00119040","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"exfat_get_full_path.constprop.3","address":"0011a8c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"exfat_journal_start_rename","address":"0011bf18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"exfat_lookup","address":"00120c38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"fat_lookup","address":"00121600","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"fat_rename","address":"00123ae8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfat.ko","function":"parse_options","address":"001299b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

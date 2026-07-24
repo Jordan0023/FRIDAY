@@ -3,11 +3,24 @@ from __future__ import annotations
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
+import re
 from typing import Any
 
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+
+MIN_SUPPORTED_FIRMWARE_YEAR = 2021
+
+
+def is_supported_firmware_date(*values: str, min_year: int = MIN_SUPPORTED_FIRMWARE_YEAR) -> bool:
+    """Return true when a release/upload date has a year at or after the cutoff."""
+    for value in values:
+        match = re.search(r"(?<!\d)(20\d{2})(?!\d)", value or "")
+        if match:
+            return int(match.group(1)) >= min_year
+    return False
 
 
 @dataclass(frozen=True)

@@ -1,0 +1,2 @@
+{"binary":"reset_pwd.cgi","function":"FUN_00012f84","address":"00012f84","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"reset_pwd.cgi","function":"FUN_0001414c","address":"0001414c","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}

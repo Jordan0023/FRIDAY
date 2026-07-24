@@ -1,0 +1,3 @@
+{"binary":"ethtool","function":"FUN_004012fc","address":"004012fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethtool","function":"FUN_0040711c","address":"0040711c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethtool","function":"FUN_00407368","address":"00407368","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

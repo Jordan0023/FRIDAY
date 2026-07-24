@@ -1,0 +1,14 @@
+{"binary":"openvpn","function":"execve","address":"0000a8f0","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"sscanf","address":"0000aa10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"memmove","address":"0000ab78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"strcat","address":"0000aba8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"strcpy","address":"0000abfc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"open","address":"0000aca4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"fopen","address":"0000b160","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"sprintf","address":"0000b1cc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"memcpy","address":"0000b1e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"FUN_0000ea20","address":"0000ea20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"FUN_00020fc4","address":"00020fc4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"FUN_00023b00","address":"00023b00","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"FUN_00023c78","address":"00023c78","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvpn","function":"FUN_0003883c","address":"0003883c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,8 @@
+{"binary":"jbd.ko","function":"FUN_00011e40","address":"00011e40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd.ko","function":"FUN_00011e40","address":"00011e40","route":"/jbd/transaction.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd.ko","function":"journal_get_undo_access","address":"0001253c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd.ko","function":"journal_commit_transaction","address":"00013710","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd.ko","function":"journal_commit_transaction","address":"00013710","route":"/jbd/commit.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd.ko","function":"FUN_000155d0","address":"000155d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd.ko","function":"journal_write_metadata_buffer","address":"0001aa58","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"jbd.ko","function":"journal_write_metadata_buffer","address":"0001aa58","route":"/jbd/journal.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

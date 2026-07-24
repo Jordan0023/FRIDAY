@@ -1,0 +1,17 @@
+{"binary":"libmount.so.1.1.0","function":"FUN_00015968","address":"00015968","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_00016210","address":"00016210","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_00017570","address":"00017570","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_00018338","address":"00018338","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_0001a8dc","address":"0001a8dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_0001d990","address":"0001d990","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_0001d990","address":"0001d990","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_0001d990","address":"0001d990","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_0001e268","address":"0001e268","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_0001fa9c","address":"0001fa9c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_000249a8","address":"000249a8","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"mnt_context_do_umount","address":"000278e8","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_00029c00","address":"00029c00","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_00029c00","address":"00029c00","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_00029c00","address":"00029c00","route":"/'","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_00029c00","address":"00029c00","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmount.so.1.1.0","function":"FUN_00029c00","address":"00029c00","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

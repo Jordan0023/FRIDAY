@@ -1,0 +1,16 @@
+{"binary":"libelf-0.180.so","function":"FUN_000138ec","address":"000138ec","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_000138ec","address":"000138ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_00016008","address":"00016008","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_00016410","address":"00016410","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"elf_getarsym","address":"00017208","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_00017f34","address":"00017f34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_000183a8","address":"000183a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_00018440","address":"00018440","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_000188d4","address":"000188d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"elf_getdata_rawchunk","address":"000197cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_0001b56c","address":"0001b56c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_0001b56c","address":"0001b56c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_0001cac8","address":"0001cac8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"FUN_0001cac8","address":"0001cac8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"nlist","address":"0001ecc4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libelf-0.180.so","function":"elf_compress_gnu","address":"00020e20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

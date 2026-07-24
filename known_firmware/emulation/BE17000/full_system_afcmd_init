@@ -1,0 +1,54 @@
+#!/bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export PATH
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+mkdir -p /dev/pts /run /tmp /var/run /var/log /var/tmp /data/afc/afcmd
+mount -t devpts devpts /dev/pts
+mount -t tmpfs tmpfs /tmp
+
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/virtio/virtio_mmio.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/net/core/failover.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/net/net_failover.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/net/virtio_net.ko
+
+ip link set eth0 down
+ip link set eth0 name br0
+ifconfig br0 10.0.2.15 netmask 255.255.255.0 up
+ifconfig lo 127.0.0.1 up
+
+echo "FRIDAY_BE17000_AFC_BOOT=1"
+echo "KERNEL=$(uname -a)"
+
+/usr/sbin/afcmd \
+    -c /etc/afc/afcmd/afcmd.conf \
+    -i 0.0.0.0 \
+    -n br0 \
+    -s EMULATEDSERIAL \
+    -m 02:00:00:00:00:01 \
+    -b 02:00:00:00:00:01 \
+    >/dev/console 2>&1 &
+
+attempt=0
+while test "$attempt" -lt 45; do
+    grep -q ':4C93 ' /proc/net/tcp /proc/net/tcp6 2>/dev/null && break
+    sleep 1
+    attempt=$((attempt + 1))
+done
+
+AFC_PID="$(pidof afcmd | awk '{print $1}')"
+echo "AFC_PID=$AFC_PID"
+echo "AFC_ALIVE=$(test -n "$AFC_PID" && kill -0 "$AFC_PID" 2>/dev/null && echo yes || echo no)"
+echo "AFC_LISTENING=$(grep -q ':4C93 ' /proc/net/tcp /proc/net/tcp6 2>/dev/null && echo yes || echo no)"
+echo "FRIDAY_BE17000_AFC_READY=1"
+
+while true; do
+    CURRENT_PID="$(pidof afcmd | awk '{print $1}')"
+    if test -z "$CURRENT_PID"; then
+        echo "AFC_EXITED=1"
+    fi
+    sleep 2
+done

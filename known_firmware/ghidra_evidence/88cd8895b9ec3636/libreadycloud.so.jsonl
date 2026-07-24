@@ -1,0 +1,3 @@
+{"binary":"libreadycloud.so","function":"rename","address":"00212dec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libreadycloud.so","function":"rename","address":"0023a140","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libreadycloud.so","function":"rename","address":"00386e6c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

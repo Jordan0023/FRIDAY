@@ -1,0 +1,2 @@
+{"binary":"fwtool","function":"FUN_004013b4","address":"004013b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fwtool","function":"FUN_004014f8","address":"004014f8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

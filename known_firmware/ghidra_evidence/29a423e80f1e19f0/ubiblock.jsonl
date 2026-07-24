@@ -1,0 +1,4 @@
+{"binary":"ubiblock","function":"FUN_0001097c","address":"0001097c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiblock","function":"FUN_000114b8","address":"000114b8","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiblock","function":"FUN_000119bc","address":"000119bc","route":"/misc/ubi_ctrl","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiblock","function":"FUN_000119bc","address":"000119bc","route":"/ubi","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

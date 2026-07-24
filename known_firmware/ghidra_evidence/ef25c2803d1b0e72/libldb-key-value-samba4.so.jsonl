@@ -1,0 +1,3 @@
+{"binary":"libldb-key-value-samba4.so","function":"ldb_kv_guid_to_key","address":"00013dd8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb-key-value-samba4.so","function":"ldb_kv_index_add1","address":"00017db4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb-key-value-samba4.so","function":"ldb_kv_cache_load","address":"0001ba1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

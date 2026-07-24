@@ -1,0 +1,12 @@
+{"binary":"libc.so","function":"getpass","address":"00032904","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"getnameinfo","address":"000566d4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"execvpe","address":"0005fd54","route":"/';","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"execvpe","address":"0005fd54","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"__libc_sigaction","address":"0006b800","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"__fwritex","address":"00070ec8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"tempnam","address":"00072d60","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"tmpfile64","address":"00072f78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"FUN_0008e51c","address":"0008e51c","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"FUN_0008e51c","address":"0008e51c","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"FUN_0008e51c","address":"0008e51c","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"FUN_0008e51c","address":"0008e51c","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

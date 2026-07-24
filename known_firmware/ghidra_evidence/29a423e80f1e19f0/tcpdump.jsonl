@@ -1,0 +1,5 @@
+{"binary":"tcpdump","function":"FUN_00012700","address":"00012700","route":"/*","sink":"file_write","sources":"read","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"tcpdump","function":"FUN_00012700","address":"00012700","route":"/*","sink":"file_write","sources":"read","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"tcpdump","function":"FUN_0001f518","address":"0001f518","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcpdump","function":"FUN_00021f74","address":"00021f74","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcpdump","function":"FUN_00021f74","address":"00021f74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

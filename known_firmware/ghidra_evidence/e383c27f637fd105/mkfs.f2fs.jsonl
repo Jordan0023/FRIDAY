@@ -1,0 +1,4 @@
+{"binary":"mkfs.f2fs","function":"FUN_00402708","address":"00402708","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mkfs.f2fs","function":"FUN_00402708","address":"00402708","route":"/page:","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mkfs.f2fs","function":"FUN_00403464","address":"00403464","route":"/WARM/COLD_DATA,","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mkfs.f2fs","function":"FUN_00403464","address":"00403464","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

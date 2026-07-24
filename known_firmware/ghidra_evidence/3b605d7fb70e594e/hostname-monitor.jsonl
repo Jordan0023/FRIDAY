@@ -1,0 +1,9 @@
+{"binary":"hostname-monitor","function":"FUN_00401688","address":"00401688","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostname-monitor","function":"FUN_0040170c","address":"0040170c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostname-monitor","function":"FUN_0040170c","address":"0040170c","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostname-monitor","function":"FUN_00401a74","address":"00401a74","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostname-monitor","function":"FUN_00401cec","address":"00401cec","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostname-monitor","function":"FUN_00403b70","address":"00403b70","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostname-monitor","function":"FUN_0040414c","address":"0040414c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostname-monitor","function":"uci_set_option","address":"004044ac","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostname-monitor","function":"FUN_00404624","address":"00404624","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

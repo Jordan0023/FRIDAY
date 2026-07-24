@@ -1,0 +1,4 @@
+{"binary":"alsamixer","function":"sprintf","address":"0000b078","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsamixer","function":"memcpy","address":"0000b0a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsamixer","function":"FUN_0000b168","address":"0000b168","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsamixer","function":"FUN_0000b414","address":"0000b414","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"bcm_ingqos.ko","function":"FUN_0010072c","address":"0010072c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_ingqos.ko","function":"iq_add_hw_entry","address":"00100730","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_ingqos.ko","function":"iq_delete_hw_entry","address":"00100800","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_ingqos.ko","function":"bcm_iq_add_keymask","address":"00100a90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_ingqos.ko","function":"bcm_iq_add_entry","address":"00101680","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

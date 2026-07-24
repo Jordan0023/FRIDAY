@@ -1,0 +1,5 @@
+{"binary":"libsys_util.so","function":"sysUtl_getThreadInfoFromProc","address":"00011338","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtl_getMemInfo","address":"00011524","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtil_getNumCpuThreads","address":"00011dc0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtil_getCpuInfo","address":"00011f1c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtl_getIfnameByIndex","address":"000128d4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

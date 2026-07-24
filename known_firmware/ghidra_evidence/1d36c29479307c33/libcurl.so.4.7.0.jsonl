@@ -1,0 +1,14 @@
+{"binary":"libcurl.so.4.7.0","function":"FUN_0002324c","address":"0002324c","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"Curl_cookie_add","address":"00023578","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"FUN_000267c8","address":"000267c8","route":"/*","sink":"exec","sources":"getenv","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"FUN_00027678","address":"00027678","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"Curl_dedotdotify","address":"00028c00","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"Curl_dedotdotify","address":"00028c00","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"Curl_dedotdotify","address":"00028c00","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"Curl_dedotdotify","address":"00028c00","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"FUN_0003e7b8","address":"0003e7b8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"curl_url_get","address":"00054f58","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"curl_url_set","address":"00055784","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"curl_url_set","address":"00055784","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"curl_url_set","address":"00055784","route":"/')))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcurl.so.4.7.0","function":"curl_url_set","address":"00055784","route":"/')))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"libd2lib.so","function":"d2_get_completion","address":"000122f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libd2lib.so","function":"d2_info_completion","address":"00012374","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libd2lib.so","function":"d2_set_common_async","address":"000129d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libd2lib.so","function":"d2_server_socket_init","address":"00013ad8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

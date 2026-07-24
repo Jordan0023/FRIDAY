@@ -1,0 +1,2 @@
+{"binary":"gl_health","function":"FUN_0040106c","address":"0040106c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_health","function":"FUN_004010d0","address":"004010d0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

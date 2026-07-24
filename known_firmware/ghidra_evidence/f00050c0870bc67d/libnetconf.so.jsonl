@@ -1,0 +1,6 @@
+{"binary":"libnetconf.so","function":"FUN_00011a14","address":"00011a14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetconf.so","function":"netconf_get_nat","address":"00013ffc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetconf.so","function":"netconf_get_filter","address":"000142c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetconf.so","function":"iptc_init","address":"000157ec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetconf.so","function":"iptc_init","address":"000157ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetconf.so","function":"FUN_00016584","address":"00016584","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

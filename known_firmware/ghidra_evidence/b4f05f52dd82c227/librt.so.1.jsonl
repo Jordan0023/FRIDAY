@@ -1,0 +1,3 @@
+{"binary":"librt.so.1","function":"shm_open","address":"00013d58","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"librt.so.1","function":"shm_open","address":"00013d58","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"librt.so.1","function":"shm_unlink","address":"00013eb8","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

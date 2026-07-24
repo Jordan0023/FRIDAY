@@ -1,0 +1,5 @@
+{"binary":"idevicesyslog","function":"FUN_00012e90","address":"00012e90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicesyslog","function":"FUN_00014504","address":"00014504","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicesyslog","function":"FUN_0001f35c","address":"0001f35c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicesyslog","function":"FUN_00024424","address":"00024424","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicesyslog","function":"FUN_00024b7c","address":"00024b7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

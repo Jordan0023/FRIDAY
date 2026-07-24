@@ -1,0 +1,2 @@
+{"binary":"libeth_1905ops.so","function":"FUN_001101dc","address":"001101dc","route":"/%s","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libeth_1905ops.so","function":"br_read_fdb","address":"001115fc","route":"/sys/class/net/%s/brforward","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

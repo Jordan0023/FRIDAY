@@ -1,0 +1,4 @@
+{"binary":"watchquagga","function":"main","address":"00011490","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"watchquagga","function":"main","address":"00011490","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"watchquagga","function":"FUN_00012768","address":"00012768","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"watchquagga","function":"FUN_000141ac","address":"000141ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

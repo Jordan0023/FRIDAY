@@ -1,0 +1,4 @@
+{"binary":"apstats","function":"FUN_00010f6c","address":"00010f6c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apstats","function":"FUN_00010f6c","address":"00010f6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apstats","function":"FUN_00016000","address":"00016000","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"apstats","function":"FUN_000184f8","address":"000184f8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"pstree","function":"FUN_00011f90","address":"00011f90","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pstree","function":"FUN_00011f90","address":"00011f90","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

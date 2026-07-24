@@ -1,0 +1,10 @@
+{"binary":"libxml2.so.2.9.0","function":"xmlSplitQName","address":"0003a13c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.9.0","function":"xmlParseComment","address":"00041934","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.9.0","function":"FUN_000469bc","address":"000469bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.9.0","function":"xmlBuildRelativeURI","address":"00066974","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.9.0","function":"xmlBuildRelativeURI","address":"00066974","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.9.0","function":"xmlBuildRelativeURI","address":"00066974","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.9.0","function":"FUN_0007d148","address":"0007d148","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.9.0","function":"xmlXPathParseNCName","address":"0008c4d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.9.0","function":"xmlXPathParseName","address":"0008c618","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.9.0","function":"FUN_000e4218","address":"000e4218","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

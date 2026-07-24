@@ -1,0 +1,11 @@
+{"binary":"cfg80211.ko","function":"cfg80211_wext_giwscan","address":"00019ce4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_wext_giwscan","address":"00019ce4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_michael_mic_failure","address":"0002e948","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_mlme_register_mgmt","address":"0002f3e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_ibss_wext_siwessid","address":"00030344","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"FUN_00030840","address":"00030840","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_disconnected","address":"00030d5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_roamed_bss","address":"00030e0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_connect_result","address":"00030f98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_connect","address":"00031bd0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_mgd_wext_siwessid","address":"0003591c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"vpnDnsproxy","function":"FUN_00010d68","address":"00010d68","route":"/')","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}

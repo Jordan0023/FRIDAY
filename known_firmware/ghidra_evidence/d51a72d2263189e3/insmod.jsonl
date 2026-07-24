@@ -1,0 +1,2 @@
+{"binary":"kmodloader","function":"FUN_00401c10","address":"00401c10","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_00401c10","address":"00401c10","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

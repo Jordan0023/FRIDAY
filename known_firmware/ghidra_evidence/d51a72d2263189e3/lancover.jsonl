@@ -1,0 +1,2 @@
+{"binary":"lancover","function":"FUN_00400b70","address":"00400b70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lancover","function":"FUN_00400c40","address":"00400c40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

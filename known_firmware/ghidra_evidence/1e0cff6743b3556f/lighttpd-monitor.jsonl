@@ -1,0 +1,11 @@
+{"binary":"lighttpd-monitor","function":"FUN_00404104","address":"00404104","route":"/tmp/lighttpd/lighttpd-arpping.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_004041e0","address":"004041e0","route":"/tmp/lighttpd/lighttpd-monitor.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_004041e0","address":"004041e0","route":"/tmp/lighttpd/lighttpd-monitor.pid","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_004041e0","address":"004041e0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_004041e0","address":"004041e0","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_004041e0","address":"004041e0","route":"/usr/sbin/lighttpd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_004041e0","address":"004041e0","route":"/usr/sbin/lighttpd","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_004041e0","address":"004041e0","route":"/tmp/lighttpd.conf","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_004041e0","address":"004041e0","route":"/tmp/lighttpd.conf","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_004041e0","address":"004041e0","route":"/usr/sbin/lighttpd-arpping","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_004041e0","address":"004041e0","route":"/usr/sbin/lighttpd-arpping","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

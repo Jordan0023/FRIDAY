@@ -1,0 +1,2 @@
+{"binary":"gpio-button-hotplug.ko","function":"FUN_00100284","address":"00100284","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gpio-button-hotplug.ko","function":"FUN_00100284","address":"00100284","route":"/sbin:/bin:/usr/sbin:/usr/bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

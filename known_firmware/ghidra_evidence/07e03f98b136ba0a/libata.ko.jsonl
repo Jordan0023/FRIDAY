@@ -1,0 +1,1 @@
+{"binary":"libata.ko","function":"ata_dev_configure","address":"00013c20","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

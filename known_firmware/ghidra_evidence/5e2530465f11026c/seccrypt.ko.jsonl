@@ -1,0 +1,2 @@
+{"binary":"seccrypt.ko","function":"sec_skcipher_setkey","address":"00010820","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"seccrypt.ko","function":"tz_fallback_store","address":"000108e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

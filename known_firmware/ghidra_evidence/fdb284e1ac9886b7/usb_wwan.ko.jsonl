@@ -1,0 +1,2 @@
+{"binary":"usb_wwan.ko","function":"FUN_0010054c","address":"0010054c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usb_wwan.ko","function":"usb_wwan_write","address":"00100550","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

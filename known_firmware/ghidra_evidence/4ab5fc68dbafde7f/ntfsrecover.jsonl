@@ -1,0 +1,8 @@
+{"binary":"ntfsrecover","function":"FUN_00404588","address":"00404588","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsrecover","function":"FUN_00405af8","address":"00405af8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsrecover","function":"FUN_00405af8","address":"00405af8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsrecover","function":"FUN_00407c3c","address":"00407c3c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsrecover","function":"FUN_00407c3c","address":"00407c3c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsrecover","function":"FUN_0040a424","address":"0040a424","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsrecover","function":"FUN_0040ad58","address":"0040ad58","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsrecover","function":"FUN_0040c460","address":"0040c460","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

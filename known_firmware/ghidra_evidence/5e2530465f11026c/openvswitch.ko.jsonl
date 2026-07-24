@@ -1,0 +1,10 @@
+{"binary":"openvswitch.ko","function":"ovs_vport_output","address":"00010058","route":"/include/net/dst.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvswitch.ko","function":"FUN_00014548","address":"00014548","route":"/include/net/netlink.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvswitch.ko","function":"FUN_00014548","address":"00014548","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvswitch.ko","function":"FUN_00014a94","address":"00014a94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvswitch.ko","function":"ovs_flow_key_extract","address":"0001805c","route":"/openvswitch/flow.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvswitch.ko","function":"FUN_000187b0","address":"000187b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvswitch.ko","function":"ovs_nla_get_identifier","address":"0001d928","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvswitch.ko","function":"FUN_0001e7f4","address":"0001e7f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvswitch.ko","function":"FUN_0001ebc8","address":"0001ebc8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"openvswitch.ko","function":"ovs_flow_tbl_insert","address":"00020b84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

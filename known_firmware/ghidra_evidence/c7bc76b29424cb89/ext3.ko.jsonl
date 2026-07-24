@@ -1,0 +1,5 @@
+{"binary":"ext3.ko","function":"FUN_0001b158","address":"0001b158","route":"/ext3/namei.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext3.ko","function":"FUN_0001c148","address":"0001c148","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext3.ko","function":"FUN_00023e8c","address":"00023e8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext3.ko","function":"ext3_group_add","address":"00024d94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext3.ko","function":"FUN_000272fc","address":"000272fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

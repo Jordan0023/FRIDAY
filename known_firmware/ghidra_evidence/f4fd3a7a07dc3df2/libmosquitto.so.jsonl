@@ -1,0 +1,13 @@
+{"binary":"libmosquitto.so.1","function":"mosquitto_publish_v5","address":"00014e0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"mosquitto_message_copy","address":"00018158","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"FUN_00019540","address":"00019540","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"mosquitto_will_set_v5","address":"0001a1a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"FUN_0001aab8","address":"0001aab8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"FUN_0001ab6c","address":"0001ab6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"FUN_0001acbc","address":"0001acbc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"mosquitto_property_add_binary","address":"0001c628","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"mosquitto_property_read_binary","address":"0001ce8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"mosquitto_property_read_string","address":"0001cf68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"mosquitto_property_read_string_pair","address":"0001d014","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"mosquitto_property_copy_all","address":"0001d140","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmosquitto.so.1","function":"FUN_0001e710","address":"0001e710","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

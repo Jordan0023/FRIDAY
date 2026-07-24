@@ -1,0 +1,2 @@
+{"binary":"getdb","function":"FUN_00011370","address":"00011370","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"getdb","function":"FUN_00011370","address":"00011370","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

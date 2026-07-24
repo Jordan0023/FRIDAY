@@ -1,0 +1,14 @@
+{"binary":"nanddump","function":"FUN_00010c4c","address":"00010c4c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00011e00","address":"00011e00","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00012068","address":"00012068","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00013390","address":"00013390","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00013390","address":"00013390","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00014478","address":"00014478","route":"/O","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00014ff4","address":"00014ff4","route":"/proc/mtd","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00014ff4","address":"00014ff4","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_000154f8","address":"000154f8","route":"/dev/mtd%d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00015524","address":"00015524","route":"/O","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00015524","address":"00015524","route":"/O","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00015524","address":"00015524","route":"/proc/mtd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00015524","address":"00015524","route":"/proc/mtd","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00015b40","address":"00015b40","route":"/dev/mtd%d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

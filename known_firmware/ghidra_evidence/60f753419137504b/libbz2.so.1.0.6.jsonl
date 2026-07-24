@@ -1,0 +1,3 @@
+{"binary":"libbz2.so.1.0.6","function":"BZ2_bzopen","address":"0001b11c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbz2.so.1.0.6","function":"BZ2_bzopen","address":"0001b11c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbz2.so.1.0.6","function":"BZ2_bzdopen","address":"0001b12c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

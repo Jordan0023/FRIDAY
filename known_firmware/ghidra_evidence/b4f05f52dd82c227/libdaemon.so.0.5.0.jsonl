@@ -1,0 +1,2 @@
+{"binary":"libdaemon.so.0.5.0","function":"daemon_execv","address":"00013558","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdaemon.so.0.5.0","function":"daemon_execv","address":"00013558","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"drbg.ko","function":"FUN_00011310","address":"00011310","route":"/drbg.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"drbg.ko","function":"FUN_00011310","address":"00011310","route":"/drbg.c:2073","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

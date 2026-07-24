@@ -1,0 +1,13 @@
+{"binary":"mpstat","function":"strcpy","address":"00008e8c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"memcpy","address":"00008f28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"sscanf","address":"00009060","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"fopen","address":"00009090","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_00009d6c","address":"00009d6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_0000a8ec","address":"0000a8ec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_0000ac9c","address":"0000ac9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_0000b18c","address":"0000b18c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_0000b18c","address":"0000b18c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_0000b18c","address":"0000b18c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_0000b954","address":"0000b954","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_0000b954","address":"0000b954","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_0000ba90","address":"0000ba90","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

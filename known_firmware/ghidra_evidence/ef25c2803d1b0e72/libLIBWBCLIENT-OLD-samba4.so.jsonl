@@ -1,0 +1,2 @@
+{"binary":"libLIBWBCLIENT-OLD-samba4.so","function":"wbc_sids_to_xids","address":"00010e74","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libLIBWBCLIENT-OLD-samba4.so","function":"wbc_xids_to_sids","address":"000110d8","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

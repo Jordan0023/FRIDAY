@@ -1,0 +1,1 @@
+{"binary":"libdcerpc-server-core.so.0.0.1","function":"dcesrv_read_fragment_done","address":"00015f98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

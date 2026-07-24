@@ -1,0 +1,9 @@
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_001000ec","address":"001000ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00100a54","address":"00100a54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00100a54","address":"00100a54","route":"/linux/uaccess.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00100d58","address":"00100d58","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00100d58","address":"00100d58","route":"/linux/uaccess.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00101474","address":"00101474","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00101474","address":"00101474","route":"/linux/uaccess.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00101474","address":"00101474","route":"/proc/black_white_list/control","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-black_white_list.ko","function":"FUN_00101474","address":"00101474","route":"/white","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

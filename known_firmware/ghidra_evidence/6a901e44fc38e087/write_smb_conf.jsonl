@@ -1,0 +1,2 @@
+{"binary":"write_smb_conf","function":"FUN_0001103c","address":"0001103c","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"write_smb_conf","function":"FUN_0001103c","address":"0001103c","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

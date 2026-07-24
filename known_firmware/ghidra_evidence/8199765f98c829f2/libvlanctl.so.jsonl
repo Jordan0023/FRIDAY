@@ -1,0 +1,2 @@
+{"binary":"libvlanctl.so","function":"vlanCtl_insertTagRule","address":"00013820","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libvlanctl.so","function":"vlanCtl_removeTagRuleByFilter","address":"00013e30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

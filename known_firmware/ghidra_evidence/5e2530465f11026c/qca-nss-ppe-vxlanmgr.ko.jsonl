@@ -1,0 +1,1 @@
+{"binary":"qca-nss-ppe-vxlanmgr.ko","function":"nss_ppe_vxlanmgr_tun_stats_show","address":"00011bd0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

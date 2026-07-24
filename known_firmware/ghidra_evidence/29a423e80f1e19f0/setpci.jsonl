@@ -1,0 +1,5 @@
+{"binary":"setpci","function":"FUN_00010e50","address":"00010e50","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"setpci","function":"FUN_00012c28","address":"00012c28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"setpci","function":"FUN_00013fe4","address":"00013fe4","route":"/O","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"setpci","function":"FUN_0001534c","address":"0001534c","route":"/%02x/%02x.%d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"setpci","function":"FUN_0001534c","address":"0001534c","route":"/%04x:%02x/%02x.%d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

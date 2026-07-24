@@ -1,0 +1,5 @@
+{"binary":"btconfig","function":"FUN_0001132c","address":"0001132c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"btconfig","function":"FUN_00011a8c","address":"00011a8c","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"btconfig","function":"FUN_00012500","address":"00012500","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"btconfig","function":"FUN_00014dd0","address":"00014dd0","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"btconfig","function":"FUN_00014dd0","address":"00014dd0","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

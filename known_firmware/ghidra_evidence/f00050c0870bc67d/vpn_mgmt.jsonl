@@ -1,0 +1,1 @@
+{"binary":"vpn_mgmt","function":"FUN_00010d38","address":"00010d38","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

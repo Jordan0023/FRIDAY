@@ -1,0 +1,2 @@
+{"binary":"qrfs.ko","function":"rfs_rule_proc_write","address":"00012608","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qrfs.ko","function":"rfs_ess_update_ip_rule","address":"000138e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

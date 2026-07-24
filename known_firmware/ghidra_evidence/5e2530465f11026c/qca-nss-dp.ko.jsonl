@@ -1,0 +1,2 @@
+{"binary":"qca-nss-dp.ko","function":"edma_dp_get_ndo_stats","address":"00017a64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-dp.ko","function":"syn_get_strings","address":"0001bd78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"cap.so","function":"cap_readdir","address":"00012838","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

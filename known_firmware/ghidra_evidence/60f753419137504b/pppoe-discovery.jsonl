@@ -1,0 +1,5 @@
+{"binary":"pppoe-discovery","function":"memcpy","address":"000089d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pppoe-discovery","function":"fopen","address":"00008ab8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pppoe-discovery","function":"sprintf","address":"00008ae8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pppoe-discovery","function":"FUN_00008b60","address":"00008b60","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"pppoe-discovery","function":"FUN_00009aa0","address":"00009aa0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"libstrongswan-kernel-netlink.so","function":"FUN_000123ac","address":"000123ac","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan-kernel-netlink.so","function":"FUN_0001db38","address":"0001db38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan-kernel-netlink.so","function":"FUN_0002611c","address":"0002611c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

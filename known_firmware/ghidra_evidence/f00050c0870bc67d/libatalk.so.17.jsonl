@@ -1,0 +1,5 @@
+{"binary":"libatalk.so.17.0.0","function":"ad_dir","address":"000201f8","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.17.0.0","function":"cnid_tdb_open","address":"0002b790","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.17.0.0","function":"cnid_tdb_open","address":"0002b790","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.17.0.0","function":"ipc_server_read","address":"0003e89c","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.17.0.0","function":"FUN_0004179c","address":"0004179c","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

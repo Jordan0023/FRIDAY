@@ -1,0 +1,5 @@
+{"binary":"iw","function":"FUN_00405b00","address":"00405b00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_0040658c","address":"0040658c","route":"/sys/class/ieee80211/%s/index","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_00408434","address":"00408434","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_00409484","address":"00409484","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_0040db00","address":"0040db00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

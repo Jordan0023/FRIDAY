@@ -1,0 +1,5 @@
+{"binary":"qca-nss-ppe-rule.ko","function":"ppe_rfs_stats_show","address":"00010d70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-rule.ko","function":"ppe_policer_stats_show","address":"00011dbc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-rule.ko","function":"ppe_acl_rule_create","address":"00012d90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-rule.ko","function":"ppe_acl_stats_cmn_show","address":"00017cd0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-rule.ko","function":"ppe_mirror_cmn_stats_show","address":"00018da4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

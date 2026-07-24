@@ -1,0 +1,2 @@
+{"binary":"libgdbm.so.4.0.0","function":"gdbm_reorganize","address":"00011f90","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgdbm.so.4.0.0","function":"gdbm_reorganize","address":"00011f90","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

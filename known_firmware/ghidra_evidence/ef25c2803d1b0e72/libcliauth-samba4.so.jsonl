@@ -1,0 +1,9 @@
+{"binary":"libcliauth-samba4.so","function":"sess_encrypt_string","address":"00016d0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcliauth-samba4.so","function":"sess_encrypt_blob","address":"000170a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcliauth-samba4.so","function":"SMBNTLMv2encrypt_hash","address":"00018084","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcliauth-samba4.so","function":"encode_pw_buffer","address":"00018a98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcliauth-samba4.so","function":"encode_rc4_passwd_buffer","address":"00018ce0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcliauth-samba4.so","function":"set_pw_in_buffer","address":"00018ed4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcliauth-samba4.so","function":"encode_wkssvc_join_password_buffer","address":"00018ff4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcliauth-samba4.so","function":"decode_wkssvc_join_password_buffer","address":"000191f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcliauth-samba4.so","function":"msrpc_gen","address":"0001b334","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

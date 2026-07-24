@@ -1,0 +1,5 @@
+{"binary":"libatomic.so.1.2.0","function":"__atomic_load","address":"000116b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatomic.so.1.2.0","function":"__atomic_store","address":"00011818","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatomic.so.1.2.0","function":"__atomic_compare_exchange","address":"000119f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatomic.so.1.2.0","function":"FUN_00011c8c","address":"00011c8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatomic.so.1.2.0","function":"__atomic_exchange","address":"00011d8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

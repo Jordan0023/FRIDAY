@@ -1,0 +1,2 @@
+{"binary":"libbcmcrypto.so","function":"aes_cmac","address":"00012cf4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcmcrypto.so","function":"linux_random","address":"0001e58c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

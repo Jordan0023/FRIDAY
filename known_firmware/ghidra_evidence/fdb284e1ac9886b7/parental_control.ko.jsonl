@@ -1,0 +1,5 @@
+{"binary":"parental_control.ko","function":"FUN_00100680","address":"00100680","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"parental_control.ko","function":"FUN_00103470","address":"00103470","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"parental_control.ko","function":"FUN_00103830","address":"00103830","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"parental_control.ko","function":"FUN_00103db0","address":"00103db0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"parental_control.ko","function":"FUN_001053b0","address":"001053b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

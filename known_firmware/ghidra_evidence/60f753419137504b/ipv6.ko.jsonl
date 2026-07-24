@@ -1,0 +1,3 @@
+{"binary":"ipv6.ko","function":"ip6_fragment","address":"00013d60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipv6.ko","function":"ip6_route_add","address":"00020a78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipv6.ko","function":"ndisc_rcv","address":"0002802c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

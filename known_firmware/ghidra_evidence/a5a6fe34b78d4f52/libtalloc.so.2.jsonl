@@ -1,0 +1,7 @@
+{"binary":"libtalloc.so.2","function":"FUN_00013758","address":"00013758","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtalloc.so.2","function":"talloc_strdup","address":"00013d68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtalloc.so.2","function":"talloc_strndup","address":"00013da8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtalloc.so.2","function":"talloc_strdup_append","address":"00014a54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtalloc.so.2","function":"talloc_strdup_append_buffer","address":"00014aa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtalloc.so.2","function":"talloc_strndup_append","address":"00014b00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtalloc.so.2","function":"talloc_strndup_append_buffer","address":"00014b5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

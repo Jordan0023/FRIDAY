@@ -1,0 +1,4 @@
+{"binary":"redsocks","function":"FUN_00013050","address":"00013050","route":"/*","sink":"memory_operation","sources":"","auth_markers":"token","correlation":"function-local-co-location"}
+{"binary":"redsocks","function":"FUN_00013050","address":"00013050","route":"/*","sink":"memory_operation","sources":"","auth_markers":"token","correlation":"function-local-co-location"}
+{"binary":"redsocks","function":"FUN_0001aea8","address":"0001aea8","route":"/*","sink":"file_write","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"redsocks","function":"FUN_0001aea8","address":"0001aea8","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}

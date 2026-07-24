@@ -1,0 +1,4 @@
+{"binary":"libavutil.so.56","function":"av_aes_init","address":"0001e7d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"FUN_0002ec88","address":"0002ec88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"av_image_copy_to_buffer","address":"0002f9f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavutil.so.56","function":"FUN_00031934","address":"00031934","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

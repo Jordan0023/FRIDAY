@@ -1,0 +1,2 @@
+{"binary":"nftl_format","function":"FUN_000108b8","address":"000108b8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nftl_format","function":"FUN_000108b8","address":"000108b8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

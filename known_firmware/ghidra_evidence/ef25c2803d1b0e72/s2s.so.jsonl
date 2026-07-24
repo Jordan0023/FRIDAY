@@ -1,0 +1,4 @@
+{"binary":"s2s.so","function":"enable_echo_server","address":"000114d0","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"s2s.so","function":"set_config","address":"00011b74","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"s2s.so","function":"get_status","address":"00012790","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"s2s.so","function":"wg_generate_public_key","address":"00015150","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

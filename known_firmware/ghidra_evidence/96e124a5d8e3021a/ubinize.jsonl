@@ -1,0 +1,2 @@
+{"binary":"ubinize","function":"FUN_00010dd0","address":"00010dd0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubinize","function":"FUN_00010dd0","address":"00010dd0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

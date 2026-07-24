@@ -1,0 +1,3 @@
+{"binary":"libexpat.so.1.6.12","function":"FUN_00015688","address":"00015688","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so.1.6.12","function":"FUN_00019bf0","address":"00019bf0","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexpat.so.1.6.12","function":"XML_Parse","address":"0001b4f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

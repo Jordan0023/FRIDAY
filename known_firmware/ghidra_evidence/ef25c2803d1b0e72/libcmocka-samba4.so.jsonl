@@ -1,0 +1,7 @@
+{"binary":"libcmocka-samba4.so","function":"vcm_print_error","address":"000116ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcmocka-samba4.so","function":"expect_set","address":"00013068","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcmocka-samba4.so","function":"expect_memory_setup","address":"00013204","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcmocka-samba4.so","function":"_test_realloc","address":"0001403c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcmocka-samba4.so","function":"_cmocka_run_group_tests","address":"000148e0","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcmocka-samba4.so","function":"_cmocka_run_group_tests","address":"000148e0","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcmocka-samba4.so","function":"_cmocka_run_group_tests","address":"000148e0","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

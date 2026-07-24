@@ -1,0 +1,2 @@
+{"binary":"getfattr","function":"FUN_00011aac","address":"00011aac","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"getfattr","function":"FUN_00011fa4","address":"00011fa4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

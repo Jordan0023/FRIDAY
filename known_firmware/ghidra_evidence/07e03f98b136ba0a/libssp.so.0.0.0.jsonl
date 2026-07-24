@@ -1,0 +1,2 @@
+{"binary":"libssp.so.0.0.0","function":"FUN_00010bcc","address":"00010bcc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssp.so.0.0.0","function":"FUN_00010bcc","address":"00010bcc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

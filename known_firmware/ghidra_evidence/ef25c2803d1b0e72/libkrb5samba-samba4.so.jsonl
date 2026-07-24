@@ -1,0 +1,2 @@
+{"binary":"libkrb5samba-samba4.so","function":"smb_krb5_gen_netbios_krb5_address","address":"0001378c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libkrb5samba-samba4.so","function":"smb_krb5_kt_add_entry","address":"0001498c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,6 @@
+{"binary":"libnetapi.so.0","function":"libnet_join_joindomain_rpc","address":"0001fc4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetapi.so.0","function":"NetGetDCName_r","address":"0002b274","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetapi.so.0","function":"NetGetAnyDCName_r","address":"0002b430","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetapi.so.0","function":"set_user_info_USER_INFO_X.isra.1","address":"0002bad8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetapi.so.0","function":"libnetapi_samr_lookup_user_map_USER_INFO","address":"0002c1bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetapi.so.0","function":"dcerpc_samr_chng_pswd_auth_crap","address":"00057cbc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"libblobmsg_json.so","function":"FUN_00010cb4","address":"00010cb4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblobmsg_json.so","function":"FUN_00010ed4","address":"00010ed4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblobmsg_json.so","function":"FUN_00010ed4","address":"00010ed4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

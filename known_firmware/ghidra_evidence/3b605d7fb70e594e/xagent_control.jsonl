@@ -1,0 +1,12 @@
+{"binary":"xagent_control","function":"FUN_00404374","address":"00404374","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_00404aa4","address":"00404aa4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_00404aa4","address":"00404aa4","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_004085c0","address":"004085c0","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_004085c0","address":"004085c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_0040acf4","address":"0040acf4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_0040acf4","address":"0040acf4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_0040cf94","address":"0040cf94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_0040d768","address":"0040d768","route":"/or","sink":"memory_operation","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_0040d768","address":"0040d768","route":"/*","sink":"memory_operation","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_0040e16c","address":"0040e16c","route":"/etc/resolv.conf","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xagent_control","function":"FUN_004106d0","address":"004106d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

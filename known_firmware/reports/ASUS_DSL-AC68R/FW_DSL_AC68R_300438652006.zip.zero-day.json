@@ -1,19 +1,1997 @@
 {
+  "archive_test_cases": [
+    {
+      "expected": "extractor rejects or confines member",
+      "members": [
+        {
+          "name": "../../tmp/friday-proof/dotdot",
+          "type": "file"
+        }
+      ],
+      "name": "dotdot"
+    },
+    {
+      "expected": "extractor rejects or strips absolute path",
+      "members": [
+        {
+          "name": "/tmp/friday-proof/absolute",
+          "type": "file"
+        }
+      ],
+      "name": "absolute"
+    },
+    {
+      "expected": "no write through symlink outside extraction root",
+      "members": [
+        {
+          "name": "pivot",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        },
+        {
+          "name": "pivot/marker",
+          "type": "file"
+        }
+      ],
+      "name": "symlink_pivot"
+    },
+    {
+      "expected": "hardlink target remains confined",
+      "members": [
+        {
+          "name": "marker",
+          "target": "../../tmp/friday-proof/hardlink",
+          "type": "hardlink"
+        }
+      ],
+      "name": "hardlink"
+    },
+    {
+      "expected": "duplicate type replacement is rejected",
+      "members": [
+        {
+          "name": "same",
+          "type": "file"
+        },
+        {
+          "name": "same",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        }
+      ],
+      "name": "duplicate"
+    },
+    {
+      "expected": "bounded rejection or confined extraction",
+      "members": [
+        {
+          "name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "type": "file"
+        }
+      ],
+      "name": "long_name"
+    },
+    {
+      "expected": "no implicit recursive extraction",
+      "members": [
+        {
+          "name": "nested.tar",
+          "type": "archive"
+        }
+      ],
+      "name": "nested_archive"
+    }
+  ],
+  "auth_test_matrix": [
+    {
+      "expected_boundary": "must not enter protected handler",
+      "headers": {},
+      "name": "no_credentials"
+    },
+    {
+      "expected_boundary": "must match unauthenticated behavior",
+      "headers": {
+        "Authorization": "Bearer FRIDAY_INVALID",
+        "Cookie": "session=FRIDAY_INVALID"
+      },
+      "name": "invalid_session"
+    },
+    {
+      "expected_boundary": "must not cross administrator boundary",
+      "headers": {
+        "Cookie": "session=FRIDAY_LOW_PRIV"
+      },
+      "name": "low_privilege"
+    }
+  ],
   "candidates": [],
   "config_writers": [
     "212304: /var/spool/cron/crontabs"
   ],
+  "confirmation_policy": {
+    "L3": "route-specific attacker parameter reaches the sink",
+    "L4": "authentication/validation boundary and trigger are proven",
+    "L5": "reproducible security effect with fault/sink attribution",
+    "authenticated_admin_disposition": "confirmed vulnerability, but not a confirmed zero-day",
+    "confirmed_label_requires": "L5",
+    "confirmed_zero_day_requires": [
+      "L5 reproducible security effect with fault/sink attribution",
+      "novel reproducible pre-authentication exploitation path with no remote administrator session required",
+      "LAN or WAN network reachability without credentials",
+      "impact is remote code execution or a reliable input-specific denial of service",
+      "denial of service reproduces from attacker input and is not generic resource exhaustion",
+      "documented, dated public-prior-art search",
+      "no matching public disclosure or publicly available fix at the recorded discovery time"
+    ],
+    "forbidden_shortcut": "route string and dangerous symbol merely co-located in a binary",
+    "impactful_hunt_scope": "unauthenticated LAN/WAN RCE or reliable input-specific denial of service",
+    "private_duplicate_caveat": "public novelty does not exclude an unknown private or embargoed duplicate",
+    "vendor_contact_required": false
+  },
+  "correlated_flows": [
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 28,
+      "sinks": [
+        "file_write"
+      ],
+      "source_file": "_FW_DSL_AC68R_300438652006.zip.extracted/3AC246",
+      "sources": [
+        "getenv"
+      ]
+    }
+  ],
+  "dynamic_sink_spec": [
+    {
+      "capture": [
+        "pc",
+        "argv",
+        "route",
+        "auth_state"
+      ],
+      "symbols": [
+        "system",
+        "popen",
+        "execve"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "destination",
+        "source",
+        "length",
+        "before",
+        "after"
+      ],
+      "symbols": [
+        "memcpy",
+        "strcpy",
+        "sprintf"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "path",
+        "flags",
+        "sandbox_escape"
+      ],
+      "symbols": [
+        "open",
+        "fopen",
+        "rename",
+        "symlink"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "key",
+        "size",
+        "return_value"
+      ],
+      "symbols": [
+        "shmget",
+        "shmat",
+        "nvram_set",
+        "uci_set"
+      ]
+    }
+  ],
+  "fuzz_seeds": [
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Bulk/Interrupt",
+      "template": "POST /Bulk/Interrupt HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "M/P/T",
+      "template": "POST /M/P/T HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "avg/max",
+      "template": "POST /avg/max HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/aops.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/aops.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/bitmap.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/bitmap.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/chain.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/chain.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/chain.h",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/chain.h HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/compat.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/compat.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/dir.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/dir.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/fat.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/fat.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/fat.h",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/fat.h HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/file.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/file.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/inode.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/inode.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/lcnalloc.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/lcnalloc.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/malloc.h",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/malloc.h HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/namei.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/namei.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_exfat_linux_kernel.tfat/super.c",
+      "template": "POST /build/tuxera_exfat_linux_kernel.tfat/super.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/aops.c",
+      "template": "POST /build/tuxera_ntfs/aops.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/attr_list.c",
+      "template": "POST /build/tuxera_ntfs/attr_list.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/attrib.c",
+      "template": "POST /build/tuxera_ntfs/attrib.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/bitmap.c",
+      "template": "POST /build/tuxera_ntfs/bitmap.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/collate.c",
+      "template": "POST /build/tuxera_ntfs/collate.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/compat.c",
+      "template": "POST /build/tuxera_ntfs/compat.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/compress.c",
+      "template": "POST /build/tuxera_ntfs/compress.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/dir.c",
+      "template": "POST /build/tuxera_ntfs/dir.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/file.c",
+      "template": "POST /build/tuxera_ntfs/file.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/index.c",
+      "template": "POST /build/tuxera_ntfs/index.c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/index.h",
+      "template": "POST /build/tuxera_ntfs/index.h HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/malloc.h",
+      "template": "POST /build/tuxera_ntfs/malloc.h HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "build/tuxera_ntfs/mft.h",
+      "template": "POST /build/tuxera_ntfs/mft.h HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "linux/dcache.h",
+      "template": "POST /linux/dcache.h HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "linux/highmem.h",
+      "template": "POST /linux/highmem.h HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "linux/usb.h",
+      "template": "POST /linux/usb.h HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "log/messages",
+      "template": "POST /log/messages HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "mem/cpu/time",
+      "template": "POST /mem/cpu/time HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/arp",
+      "template": "POST /net/arp HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/dev",
+      "template": "POST /net/dev HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/if_inet6",
+      "template": "POST /net/if_inet6 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/ipv6_route",
+      "template": "POST /net/ipv6_route HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/raw",
+      "template": "POST /net/raw HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/raw6",
+      "template": "POST /net/raw6 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/route",
+      "template": "POST /net/route HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/tcp",
+      "template": "POST /net/tcp HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/tcp6",
+      "template": "POST /net/tcp6 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/udp",
+      "template": "POST /net/udp HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/udp6",
+      "template": "POST /net/udp6 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/unix",
+      "template": "POST /net/unix HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "run/crond.pid",
+      "template": "POST /run/crond.pid HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "self/exe",
+      "template": "POST /self/exe HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "spool/cron",
+      "template": "POST /spool/cron HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "spool/cron/crontabs",
+      "template": "POST /spool/cron/crontabs HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "sys/kernel/tainted",
+      "template": "POST /sys/kernel/tainted HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    }
+  ],
+  "ghidra_evidence": [],
   "known_coverage": [],
   "notes": [
     "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "Only routes with a plausible low-privilege boundary and route-local sink evidence are promoted. Global firmware sink counts never raise route evidence.",
+    "Authentication labels inferred from strings are hypotheses until dispatcher control flow or a live request confirms them.",
     "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
   ],
+  "rejected_candidates": [
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: exec, file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "net/dev",
+      "score": 17,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/aops.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/bitmap.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/chain.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/chain.h",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/fat.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/fat.h",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/file.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/lcnalloc.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/malloc.h",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/super.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_ntfs/aops.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_ntfs/attr_list.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_ntfs/attrib.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_ntfs/file.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_ntfs/index.c",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_ntfs/index.h",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_ntfs/malloc.h",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "build/tuxera_ntfs/mft.h",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "linux/highmem.h",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/arp",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: system"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "net/raw",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/unix",
+      "score": 7,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: exec, file_write, system"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "M/P/T",
+      "score": 5,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [
+        "usb"
+      ],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "check daemon config injection and service restart behavior"
+      ],
+      "route": "linux/usb.h",
+      "score": 5,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/56CE66"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Bulk/Interrupt",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/56CE66"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "avg/max",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/compat.c",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/dir.c",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/inode.c",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "build/tuxera_exfat_linux_kernel.tfat/namei.c",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/45AB6A"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "build/tuxera_ntfs/bitmap.c",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "build/tuxera_ntfs/collate.c",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "build/tuxera_ntfs/compat.c",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "build/tuxera_ntfs/compress.c",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "build/tuxera_ntfs/dir.c",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "linux/dcache.h",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "log/messages",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/if_inet6",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/ipv6_route",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/raw6",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/route",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/tcp",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/tcp6",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/udp",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/udp6",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "run/crond.pid",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "spool/cron/crontabs",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "sys/kernel/tainted",
+      "score": 2,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: exec, file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "mem/cpu/time",
+      "score": 0,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: exec, file_write, system"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "self/exe",
+      "score": 0,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "spool/cron",
+      "score": -15,
+      "source": "string:_FW_DSL_AC68R_300438652006.zip.extracted/212304"
+    }
+  ],
   "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/294c0a0bd4cc3d4c",
+  "runtime_launch_plan": {
+    "interfaces": [
+      {
+        "address": "192.168.250.1/24",
+        "name": "br0"
+      },
+      {
+        "address": "192.168.250.2/32",
+        "name": "probe"
+      }
+    ],
+    "isolation": [
+      "no external network",
+      "no host ports by default",
+      "disposable writable rootfs",
+      "synthetic LAN client"
+    ],
+    "listener_candidates": [],
+    "requirements": [],
+    "startup_candidates": [],
+    "vendor": "asuswrt"
+  },
+  "runtime_profile": {
+    "architectures": [
+      "arm"
+    ],
+    "executable_count": 10,
+    "rootfs_candidates": [],
+    "state_backends": [],
+    "vendor": "asuswrt",
+    "web_stack": []
+  },
+  "service_surface": [
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "ftpd",
+      "source": "_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    },
+    {
+      "auth_class": "unknown",
+      "evidence": [
+        "service marker present",
+        "local sinks: file_write"
+      ],
+      "exposure": "lan",
+      "protocol": "tcp",
+      "risk": "medium",
+      "service": "smbd",
+      "source": "_FW_DSL_AC68R_300438652006.zip.extracted/48C408"
+    }
+  ],
   "sink_summary": {
-    "exec": 2,
-    "file_write": 2,
+    "exec": 1,
+    "file_write": 49,
     "popen": 0,
-    "system": 4,
+    "system": 1,
     "unsafe_copy": 0
-  }
+  },
+  "validation_recipes": [
+    {
+      "marker": "FRIDAY_CMD_MARKER",
+      "payloads": [
+        ";printf FRIDAY_CMD_MARKER",
+        "$(printf FRIDAY_CMD_MARKER)"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker appears in captured argv/stdout",
+      "vulnerability_class": "command_injection"
+    },
+    {
+      "marker": "FRIDAY_PATH_MARKER",
+      "payloads": [
+        "../../tmp/friday-proof/marker",
+        "..%2f..%2ftmp%2ffriday-proof%2fmarker"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker created inside modeled /tmp only",
+      "vulnerability_class": "path_traversal"
+    },
+    {
+      "marker": "FRIDAY_ARCHIVE_MARKER",
+      "payloads": [
+        "ordered symlink then child file",
+        "hardlink to modeled target"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "write escapes extraction root but remains inside sandbox",
+      "vulnerability_class": "archive_escape"
+    },
+    {
+      "marker": "FRIDAY_CRASH_MARKER",
+      "payloads": [
+        "cyclic bounded input lengths 64..4096"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "reproducible crash with instruction/register capture",
+      "vulnerability_class": "memory_corruption"
+    },
+    {
+      "marker": "FRIDAY_AUTH_MARKER",
+      "payloads": [
+        "missing cookie",
+        "duplicate cookie",
+        "method override"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "protected handler returns distinct success state",
+      "vulnerability_class": "auth_bypass"
+    }
+  ]
 }

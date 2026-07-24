@@ -1,0 +1,8 @@
+{"binary":"fing_dil","function":"FUN_00404c54","address":"00404c54","route":"/home/vvdn/JIRA/release_1.3/seal/dal/core/dalcore/dil/src/fing/src","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fing_dil","function":"FUN_00404c54","address":"00404c54","route":"/fing_dil.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fing_dil","function":"lock_process","address":"00408648","route":"/home/vvdn/JIRA/release_1.3/seal/dal/core/dalcore/dil/src/fing/src","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fing_dil","function":"lock_process","address":"00408648","route":"/home/vvdn/JIRA/release_1.3/seal/dal/core/dalcore/dil/src/fing/src","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fing_dil","function":"lock_process","address":"00408648","route":"/home/vvdn/JIRA/release_1.3/seal/dal/core/dalcore/dil/src/fing/src","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fing_dil","function":"lock_process","address":"00408648","route":"/fing_dil_daemon.c","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fing_dil","function":"lock_process","address":"00408648","route":"/fing_dil_daemon.c","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fing_dil","function":"lock_process","address":"00408648","route":"/fing_dil_daemon.c","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

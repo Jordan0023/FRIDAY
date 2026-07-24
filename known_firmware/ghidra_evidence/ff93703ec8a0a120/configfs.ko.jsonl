@@ -1,0 +1,2 @@
+{"binary":"configfs.ko","function":"_39","address":"000149a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"configfs.ko","function":"_39","address":"000149a0","route":"/configfs/configfs_internal.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

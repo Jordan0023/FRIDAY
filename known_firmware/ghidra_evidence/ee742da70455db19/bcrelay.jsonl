@@ -1,0 +1,3 @@
+{"binary":"bcrelay","function":"FUN_00008cf4","address":"00008cf4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcrelay","function":"FUN_00009220","address":"00009220","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcrelay","function":"FUN_00009e34","address":"00009e34","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,10 @@
+{"binary":"libatalk.so.6.0.0","function":"ad_flush","address":"0001b5e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.6.0.0","function":"FUN_0001e548","address":"0001e548","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.6.0.0","function":"FUN_0001e7ec","address":"0001e7ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.6.0.0","function":"ad_dir","address":"0001eaa8","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.6.0.0","function":"cnid_tdb_add","address":"00028ea8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.6.0.0","function":"cnid_tdb_open","address":"00029794","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.6.0.0","function":"cnid_tdb_open","address":"00029794","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.6.0.0","function":"dsi_opensession","address":"0002a718","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.6.0.0","function":"convert_charset","address":"000378d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libatalk.so.6.0.0","function":"FUN_00043f6c","address":"00043f6c","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

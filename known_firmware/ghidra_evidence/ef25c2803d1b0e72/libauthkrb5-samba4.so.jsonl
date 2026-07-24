@@ -1,0 +1,7 @@
+{"binary":"libauthkrb5-samba4.so","function":"tstream_tls_push_function","address":"00017b20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauthkrb5-samba4.so","function":"tstream_tls_writev_crypt_next","address":"00017d00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauthkrb5-samba4.so","function":"tstream_tls_readv_crypt_next","address":"00018014","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauthkrb5-samba4.so","function":"tstream_tls_writev_send","address":"000182e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauthkrb5-samba4.so","function":"tstream_tls_readv_send","address":"00018464","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauthkrb5-samba4.so","function":"tstream_tls_pull_function","address":"000185e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauthkrb5-samba4.so","function":"smb_krb5_send_and_recv_func_int","address":"0001aa7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

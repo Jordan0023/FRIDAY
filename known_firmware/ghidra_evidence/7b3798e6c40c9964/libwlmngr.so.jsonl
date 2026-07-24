@@ -1,0 +1,3 @@
+{"binary":"libwlmngr.so","function":"bcmSystemEx","address":"00027cb4","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwlmngr.so","function":"wlmngr_write_nvram_default","address":"0002e8fc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwlmngr.so","function":"_eval","address":"00031638","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

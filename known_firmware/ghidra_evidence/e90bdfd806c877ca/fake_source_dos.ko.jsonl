@@ -1,0 +1,2 @@
+{"binary":"fake_source_dos.ko","function":"__sc_fake_source_detect_hook","address":"00010024","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fake_source_dos.ko","function":"__sc_fake_source_detect_hook","address":"00010024","route":"/Chargen","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

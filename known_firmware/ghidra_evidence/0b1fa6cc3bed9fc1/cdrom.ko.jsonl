@@ -1,0 +1,2 @@
+{"binary":"cdrom.ko","function":"FUN_00102b7c","address":"00102b7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cdrom.ko","function":"FUN_00102b80","address":"00102b80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

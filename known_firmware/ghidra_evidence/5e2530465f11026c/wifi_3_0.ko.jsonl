@@ -1,0 +1,6 @@
+{"binary":"wifi_3_0.ko","function":"diag_fw_handler","address":"00010094","route":"/repo/asuswrt/release/src-qca-ipq53xx/ipq53xx/qca-wifi/source/os/linux/../../qca_ol","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifi_3_0.ko","function":"diag_fw_handler","address":"00010094","route":"/wifi3.0/../../offload/misc/diag_event_log.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifi_3_0.ko","function":"dp_print_peer_ast_entries","address":"0004e654","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifi_3_0.ko","function":"FUN_00070324","address":"00070324","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifi_3_0.ko","function":"dp_tx_send","address":"000af55c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wifi_3_0.ko","function":"dp_tx_send","address":"000af55c","route":"/include/linux/dma-mapping.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

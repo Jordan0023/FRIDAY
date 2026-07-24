@@ -1,0 +1,1 @@
+{"binary":"cfg_reportstatus","function":"FUN_00011e38","address":"00011e38","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

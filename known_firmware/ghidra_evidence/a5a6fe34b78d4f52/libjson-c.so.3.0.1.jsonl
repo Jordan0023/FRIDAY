@@ -1,0 +1,1 @@
+{"binary":"libjson-c.so.3.0.1","function":"json_c_get_random_seed","address":"000198e0","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

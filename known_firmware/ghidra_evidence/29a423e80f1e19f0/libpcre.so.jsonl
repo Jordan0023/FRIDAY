@@ -1,0 +1,5 @@
+{"binary":"libpcre.so.1.2.5","function":"FUN_000135fc","address":"000135fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.5","function":"FUN_000135fc","address":"000135fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.5","function":"FUN_0001853c","address":"0001853c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.5","function":"FUN_0001853c","address":"0001853c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.5","function":"FUN_0001ccec","address":"0001ccec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

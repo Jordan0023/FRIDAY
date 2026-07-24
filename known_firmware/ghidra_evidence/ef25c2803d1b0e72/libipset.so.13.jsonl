@@ -1,0 +1,5 @@
+{"binary":"libipset.so.13.1.0","function":"FUN_000195f4","address":"000195f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libipset.so.13.1.0","function":"FUN_000195f4","address":"000195f4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libipset.so.13.1.0","function":"FUN_0001979c","address":"0001979c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libipset.so.13.1.0","function":"FUN_0001979c","address":"0001979c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libipset.so.13.1.0","function":"ipset_parse_argv","address":"0001f56c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

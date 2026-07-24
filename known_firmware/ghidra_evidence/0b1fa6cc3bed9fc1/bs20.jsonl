@@ -1,0 +1,7 @@
+{"binary":"bs20","function":"FUN_0049e8c4","address":"0049e8c4","route":"/etc/logrotate.conf","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bs20","function":"FUN_004c377c","address":"004c377c","route":"/dev/urandom","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bs20","function":"FUN_004c377c","address":"004c377c","route":"/dev/urandom.","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bs20","function":"FUN_004c3848","address":"004c3848","route":"/dev/urandom","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bs20","function":"FUN_004c3848","address":"004c3848","route":"/dev/urandom:","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bs20","function":"FUN_004c8544","address":"004c8544","route":"/topologySrv/topologySrv_lib.c","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bs20","function":"FUN_004c8544","address":"004c8544","route":"/src/utils/list.h","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

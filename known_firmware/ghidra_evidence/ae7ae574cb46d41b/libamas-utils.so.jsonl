@@ -1,0 +1,5 @@
+{"binary":"libamas-utils.so","function":"LLDP_NBR_TLV_GET","address":"00015578","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libamas-utils.so","function":"LLDP_NBR_TLV_GET","address":"00015578","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libamas-utils.so","function":"LLDP_NBR_TLV_GET","address":"00015578","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libamas-utils.so","function":"LLDP_NBR_TLV_GET_BUFFER","address":"00018300","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libamas-utils.so","function":"amas_get_obdinfo","address":"000289d8","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

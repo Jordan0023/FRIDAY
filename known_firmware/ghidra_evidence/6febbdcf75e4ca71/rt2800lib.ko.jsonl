@@ -1,0 +1,1 @@
+{"binary":"rt2800lib.ko","function":"rt2800_probe_hw","address":"000298cc","route":"/drivers/net/wireless/ralink/rt2x00/rt2800lib.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

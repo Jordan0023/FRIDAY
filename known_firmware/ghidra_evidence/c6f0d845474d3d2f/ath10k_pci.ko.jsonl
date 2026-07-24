@@ -1,0 +1,3 @@
+{"binary":"ath10k_pci.ko","function":"ath10k_pci_hif_exchange_bmi_msg","address":"000125e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath10k_pci.ko","function":"ath10k_pci_hif_exchange_bmi_msg","address":"000125e0","route":"/drivers/net/wireless/ath/ath10k/pci.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath10k_pci.ko","function":"ath10k_pci_hif_exchange_bmi_msg","address":"000125e0","route":"/linux/dma-mapping.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

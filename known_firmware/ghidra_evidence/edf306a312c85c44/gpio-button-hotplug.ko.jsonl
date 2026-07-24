@@ -1,0 +1,2 @@
+{"binary":"gpio-button-hotplug.ko","function":"FUN_0010009c","address":"0010009c","route":"/linux-ipq53xx_generic/gpio-button-hotplug/gpio-button-hotplug.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gpio-button-hotplug.ko","function":"FUN_0010092c","address":"0010092c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

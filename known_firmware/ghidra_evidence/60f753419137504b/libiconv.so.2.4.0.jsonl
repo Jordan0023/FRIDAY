@@ -1,0 +1,12 @@
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013704","address":"00013704","route":"/')","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013704","address":"00013704","route":"/')","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013704","address":"00013704","route":"/')","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013704","address":"00013704","route":"/';","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013704","address":"00013704","route":"/';","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013704","address":"00013704","route":"/';","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013cac","address":"00013cac","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013cac","address":"00013cac","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013cac","address":"00013cac","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013cac","address":"00013cac","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013cac","address":"00013cac","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.4.0","function":"FUN_00013cac","address":"00013cac","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,13 @@
+{"binary":"mtdinfo","function":"dev_read_pos_int","address":"00011c10","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"sysfs_is_supported","address":"00011d14","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"mkpath","address":"00011fec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"mkpath","address":"00011fec","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"mkpath","address":"00011fec","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"dev_get_major","address":"0001205c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"mtd_dev_present","address":"0001268c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"mtd_get_dev_info1","address":"00012734","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"proc_parse_next","address":"0001318c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_get_dev_info","address":"000135dc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_get_dev_info","address":"000135dc","route":"/O","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_get_dev_info","address":"000135dc","route":"/proc/mtd","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_get_dev_info1","address":"00013bdc","route":"/dev/mtd%d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

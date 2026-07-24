@@ -1,0 +1,3 @@
+{"binary":"logd","function":"FUN_00402350","address":"00402350","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"logd","function":"FUN_00402350","address":"00402350","route":"/dev/log","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"logd","function":"FUN_00402350","address":"00402350","route":"/proc/kmsg","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

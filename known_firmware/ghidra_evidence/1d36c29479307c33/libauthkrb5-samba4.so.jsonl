@@ -1,0 +1,2 @@
+{"binary":"libauthkrb5-samba4.so","function":"kerberos_create_pac","address":"0001cb64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauthkrb5-samba4.so","function":"FUN_0001d4d0","address":"0001d4d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

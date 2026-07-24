@@ -1,0 +1,1 @@
+{"binary":"libwlc_nt_client.so","function":"WLCNT_TRIGGER","address":"00010518","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

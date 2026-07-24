@@ -1,0 +1,11 @@
+{"binary":"br_hijack.ko","function":"record_dev_name_from_dhcp","address":"0001158c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_hijack.ko","function":"ipv6_dns_contruct_reply","address":"000118e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_hijack.ko","function":"dnsRedirect_getRedirectIndex","address":"00011e50","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_hijack.ko","function":"dnsRedirect_construct_reply","address":"000121c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_hijack.ko","function":"HTTP_hijack.part.0","address":"000131f8","route":"/%s/index.htm","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_hijack.ko","function":"HTTP_hijack.part.0","address":"000131f8","route":"/%s/index.htm","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_hijack.ko","function":"HTTP_hijack.part.0","address":"000131f8","route":"/%s/DEV_access_block.htm","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_hijack.ko","function":"HTTP_hijack.part.0","address":"000131f8","route":"/%s/DEV_access_block.htm","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_hijack.ko","function":"HTTP_hijack.part.0","address":"000131f8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_hijack.ko","function":"HTTP_hijack.part.0","address":"000131f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"br_hijack.ko","function":"brHijackFileRead","address":"00013d30","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

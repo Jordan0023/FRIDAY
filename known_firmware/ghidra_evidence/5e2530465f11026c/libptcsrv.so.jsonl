@@ -1,0 +1,3 @@
+{"binary":"libptcsrv.so","function":"GetDebugValue","address":"00010780","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libptcsrv.so","function":"Debug2Console","address":"00010820","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libptcsrv.so","function":"ptcsrv_cli_create","address":"0001095c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

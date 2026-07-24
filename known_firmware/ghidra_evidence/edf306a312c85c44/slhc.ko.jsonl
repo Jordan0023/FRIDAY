@@ -1,0 +1,3 @@
+{"binary":"slhc.ko","function":"slhc_uncompress","address":"00100268","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"slhc.ko","function":"slhc_uncompress","address":"00100268","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"slhc.ko","function":"slhc_compress","address":"0010064c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

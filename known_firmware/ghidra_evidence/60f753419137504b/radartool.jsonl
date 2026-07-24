@@ -1,0 +1,4 @@
+{"binary":"radartool","function":"strcpy","address":"00008590","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"radartool","function":"fopen","address":"00008620","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"radartool","function":"sprintf","address":"00008650","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"radartool","function":"FUN_00008674","address":"00008674","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"sfax8_netlink.ko","function":"sfax8_genl_debug_read","address":"00010040","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

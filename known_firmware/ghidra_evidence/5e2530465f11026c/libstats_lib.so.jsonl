@@ -1,0 +1,3 @@
+{"binary":"libstats_lib.so","function":"FUN_00012510","address":"00012510","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstats_lib.so","function":"libstats_is_ifname_valid","address":"00013c68","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstats_lib.so","function":"FUN_0001431c","address":"0001431c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

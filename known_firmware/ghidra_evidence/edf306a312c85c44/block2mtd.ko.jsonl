@@ -1,0 +1,3 @@
+{"binary":"block2mtd.ko","function":"FUN_001001b4","address":"001001b4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"block2mtd.ko","function":"FUN_001001b4","address":"001001b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"block2mtd.ko","function":"FUN_001007d8","address":"001007d8","route":"/linux/pagemap.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

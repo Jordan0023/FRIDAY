@@ -1,0 +1,3 @@
+{"binary":"arp_tables.ko","function":"arpt_register_table","address":"0001082c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"arp_tables.ko","function":"FUN_000112e4","address":"000112e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"arp_tables.ko","function":"FUN_000112e4","address":"000112e4","route":"/linux/thread_info.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

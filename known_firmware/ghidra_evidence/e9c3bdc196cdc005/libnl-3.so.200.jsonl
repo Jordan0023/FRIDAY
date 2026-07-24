@@ -1,0 +1,13 @@
+{"binary":"libnl-3.so.200.20.0","function":"_INIT_4","address":"00016370","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nl_addr_build","address":"000168b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nl_addr_set_binary_addr","address":"00017348","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nla_memcpy","address":"000188dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nla_strlcpy","address":"00018980","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nla_put","address":"00018d74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nl_data_alloc","address":"0001e95c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nl_data_append","address":"0001eb10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nl_cb_clone","address":"0001fd88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nlmsg_convert","address":"000210ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nlmsg_append","address":"0002129c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nl_object_clone","address":"00024908","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"__nl_read_num_str_file","address":"00027208","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

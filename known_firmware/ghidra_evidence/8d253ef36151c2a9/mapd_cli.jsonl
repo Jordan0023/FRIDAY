@@ -1,0 +1,4 @@
+{"binary":"mapd_cli","function":"FUN_0040b49c","address":"0040b49c","route":"/dev/urandom","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mapd_cli","function":"FUN_0040b49c","address":"0040b49c","route":"/dev/urandom.","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mapd_cli","function":"FUN_0040b568","address":"0040b568","route":"/dev/urandom","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mapd_cli","function":"FUN_0040b568","address":"0040b568","route":"/dev/urandom:","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

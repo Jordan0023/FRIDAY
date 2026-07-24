@@ -1,0 +1,4 @@
+{"binary":"dns_mark.ko","function":"parse_dns_query","address":"00010550","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dns_mark.ko","function":"FUN_0001067c","address":"0001067c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dns_mark.ko","function":"dns_mark_write_ifnames","address":"00011e74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dns_mark.ko","function":"dns_mark_write_domains","address":"000120e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

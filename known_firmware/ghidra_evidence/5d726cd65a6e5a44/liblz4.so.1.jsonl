@@ -1,0 +1,2 @@
+{"binary":"liblz4.so.1.8.3","function":"FUN_00012258","address":"00012258","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblz4.so.1.8.3","function":"FUN_00017680","address":"00017680","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

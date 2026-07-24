@@ -1,0 +1,4 @@
+{"binary":"libblkid.so.1.0","function":"FUN_0001548c","address":"0001548c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"blkid_flush_cache","address":"00016134","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"blkid_flush_cache","address":"00016134","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.0","function":"blkid_flush_cache","address":"00016134","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

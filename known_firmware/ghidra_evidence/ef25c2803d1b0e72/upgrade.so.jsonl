@@ -1,0 +1,12 @@
+{"binary":"upgrade.so","function":"get_firmware_version","address":"00011130","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"get_firmware_version_lower_support","address":"00011364","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"get_firmware_config","address":"00011598","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"set_firmware_config","address":"0001180c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"check_firmware_local","address":"00011a68","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"check_firmware_local","address":"00011a68","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"check_firmware_local","address":"00011a68","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"check_firmware_local","address":"00011a68","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"upgrade_local","address":"000124b0","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"upgrade_local","address":"000124b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"get_online_upgrade_status","address":"00012ac8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"upgrade.so","function":"get_online_upgrade_status","address":"00012ac8","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

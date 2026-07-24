@@ -1,0 +1,6 @@
+{"binary":"libssh2.so.1.0.1","function":"FUN_0001c4c4","address":"0001c4c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssh2.so.1.0.1","function":"libssh2_sftp_read","address":"00026d1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssh2.so.1.0.1","function":"FUN_0002c5ac","address":"0002c5ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssh2.so.1.0.1","function":"FUN_0002c674","address":"0002c674","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssh2.so.1.0.1","function":"FUN_0002c674","address":"0002c674","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssh2.so.1.0.1","function":"libssh2_knownhost_readline","address":"0002de04","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,13 @@
+{"binary":"thfsplus.ko","function":"hfsplus_find_cat","address":"001047b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"hfsplus_unlink","address":"00105760","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"hfsplus_link","address":"00105a50","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"hfsplus_lookup","address":"00105c70","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"hfsplus_readdir","address":"00105f80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"hfsplus_create_attr","address":"0010c0c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"__hfsplus_setxattr","address":"0010c750","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"FUN_0010d0dc","address":"0010d0dc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"hfsplus_setxattr","address":"0010d0e0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"FUN_0010d18c","address":"0010d18c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"__hfsplus_getxattr","address":"0010d190","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"FUN_0010d45c","address":"0010d45c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thfsplus.ko","function":"hfsplus_getxattr","address":"0010d460","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

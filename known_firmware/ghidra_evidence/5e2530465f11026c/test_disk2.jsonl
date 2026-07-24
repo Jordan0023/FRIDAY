@@ -1,0 +1,11 @@
+{"binary":"test_disk2","function":"read_disk_data","address":"00012a94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"create_disk","address":"00012e00","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"get_disk_major_minor","address":"000138f4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"get_disk_size","address":"00013ae0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"get_disk_vendor","address":"00013c5c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"get_disk_model","address":"00013dc8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"find_partition_label","address":"0001436c","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"find_partition_label","address":"0001436c","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"get_partition_size","address":"000151a4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"read_mount_data","address":"00015334","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"test_disk2","function":"read_mount_data","address":"00015334","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

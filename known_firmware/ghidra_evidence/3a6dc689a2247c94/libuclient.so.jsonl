@@ -1,0 +1,9 @@
+{"binary":"libuclient.so","function":"FUN_00011874","address":"00011874","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00011874","address":"00011874","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00011874","address":"00011874","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00011874","address":"00011874","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00011874","address":"00011874","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00011874","address":"00011874","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_000121c0","address":"000121c0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_000121c0","address":"000121c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_0001285c","address":"0001285c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

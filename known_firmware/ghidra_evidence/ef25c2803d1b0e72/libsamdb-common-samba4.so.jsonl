@@ -1,0 +1,4 @@
+{"binary":"libsamdb-common-samba4.so","function":"samdb_result_hash","address":"00018e14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamdb-common-samba4.so","function":"samdb_result_logon_hours","address":"0001911c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamdb-common-samba4.so","function":"dsdb_get_extended_dn_uint64","address":"0001c89c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamdb-common-samba4.so","function":"dsdb_get_extended_dn_uint32","address":"0001c9dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

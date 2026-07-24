@@ -1,0 +1,5 @@
+{"binary":"atp","function":"FUN_00400eb0","address":"00400eb0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"atp","function":"FUN_00401c0c","address":"00401c0c","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"atp","function":"FUN_00401e20","address":"00401e20","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"atp","function":"FUN_00401ee8","address":"00401ee8","route":"/sys/class/net/%s/operstate","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"atp","function":"FUN_00401ee8","address":"00401ee8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

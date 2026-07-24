@@ -1,0 +1,1 @@
+{"binary":"jffs2reset","function":"FUN_000106c0","address":"000106c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,8 @@
+{"binary":"iw","function":"FUN_00011d94","address":"00011d94","route":"/sys/class/ieee80211/%s/index","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_00014450","address":"00014450","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_00014450","address":"00014450","route":"/AP","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_00014450","address":"00014450","route":"/40","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_00014450","address":"00014450","route":"/GO","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_00014450","address":"00014450","route":"/device","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_000169c8","address":"000169c8","route":"/%s","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iw","function":"FUN_000169c8","address":"000169c8","route":"/var/run/netns","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

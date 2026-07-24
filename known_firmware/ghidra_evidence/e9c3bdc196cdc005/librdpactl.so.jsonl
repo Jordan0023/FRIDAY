@@ -1,0 +1,2 @@
+{"binary":"librdpactl.so","function":"rdpactl_has_rdpa_port_type_gpon","address":"00011ed4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"librdpactl.so","function":"rdpactl_has_rdpa_port_type_epon","address":"00011ee4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

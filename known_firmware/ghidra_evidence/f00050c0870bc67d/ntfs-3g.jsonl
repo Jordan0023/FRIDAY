@@ -1,0 +1,13 @@
+{"binary":"ntfs-3g","function":"FUN_00012bec","address":"00012bec","route":"/')","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00012bec","address":"00012bec","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00012bec","address":"00012bec","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00012bec","address":"00012bec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00018b2c","address":"00018b2c","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_0001c904","address":"0001c904","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_0001f75c","address":"0001f75c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_0001f904","address":"0001f904","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00021b90","address":"00021b90","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00021db8","address":"00021db8","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00021fb4","address":"00021fb4","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00021fb4","address":"00021fb4","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00021fb4","address":"00021fb4","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

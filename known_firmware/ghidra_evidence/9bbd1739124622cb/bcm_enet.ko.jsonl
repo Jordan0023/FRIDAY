@@ -1,0 +1,1 @@
+{"binary":"bcm_enet.ko","function":"enet_ioctl_compat_ethswctl","address":"00115f58","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

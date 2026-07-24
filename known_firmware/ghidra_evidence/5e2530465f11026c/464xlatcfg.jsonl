@@ -1,0 +1,4 @@
+{"binary":"464xlatcfg","function":"FUN_00010ca4","address":"00010ca4","route":"/var/run/%s.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"464xlatcfg","function":"FUN_00010ca4","address":"00010ca4","route":"/proc/net/nat46/control","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"464xlatcfg","function":"FUN_00010ca4","address":"00010ca4","route":"/32","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"464xlatcfg","function":"FUN_00010ca4","address":"00010ca4","route":"/128","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"liblldpctl.so.4.8.0","function":"FUN_00015f04","address":"00015f04","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblldpctl.so.4.8.0","function":"FUN_000195dc","address":"000195dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblldpctl.so.4.8.0","function":"FUN_00019f00","address":"00019f00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblldpctl.so.4.8.0","function":"FUN_0001b244","address":"0001b244","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblldpctl.so.4.8.0","function":"FUN_0001b434","address":"0001b434","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

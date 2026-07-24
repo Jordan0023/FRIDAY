@@ -1,0 +1,5 @@
+{"binary":"hyfi-bridging.ko","function":"hyfi_bridge_get_dst","address":"00010b68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hyfi-bridging.ko","function":"mc_netlink_receive","address":"00018910","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hyfi-bridging.ko","function":"mc_source_list_update","address":"0001ab04","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hyfi-bridging.ko","function":"FUN_0001c7cc","address":"0001c7cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hyfi-bridging.ko","function":"mc_ipv6_mld2_report","address":"000208fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"libstrongswan-kernel-netlink.so","function":"netlink_add_attribute","address":"0001c28c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

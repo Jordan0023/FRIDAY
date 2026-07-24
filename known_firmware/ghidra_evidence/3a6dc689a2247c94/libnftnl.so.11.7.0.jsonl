@@ -1,0 +1,10 @@
+{"binary":"libnftnl.so.11.7.0","function":"FUN_00017b94","address":"00017b94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnftnl.so.11.7.0","function":"nftnl_batch_update","address":"000192ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnftnl.so.11.7.0","function":"nftnl_rule_nlmsg_parse","address":"0001cc98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnftnl.so.11.7.0","function":"nftnl_set_elems_nlmsg_parse","address":"0001f770","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnftnl.so.11.7.0","function":"nftnl_udata_buf_put","address":"00025a98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnftnl.so.11.7.0","function":"nftnl_udata_put","address":"00025b78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnftnl.so.11.7.0","function":"FUN_000272ec","address":"000272ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnftnl.so.11.7.0","function":"FUN_0002782c","address":"0002782c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnftnl.so.11.7.0","function":"FUN_0002e6cc","address":"0002e6cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnftnl.so.11.7.0","function":"nftnl_tunnel_opt_set","address":"0002ec94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

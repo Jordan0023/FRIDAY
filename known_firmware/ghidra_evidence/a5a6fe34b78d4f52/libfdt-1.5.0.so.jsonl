@@ -1,0 +1,2 @@
+{"binary":"libfdt-1.5.0.so","function":"fdt_get_path","address":"00012a44","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdt-1.5.0.so","function":"fdt_overlay_apply","address":"00014dc4","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

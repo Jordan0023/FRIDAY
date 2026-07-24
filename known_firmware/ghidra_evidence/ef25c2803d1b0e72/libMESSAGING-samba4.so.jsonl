@@ -1,0 +1,1 @@
+{"binary":"libMESSAGING-samba4.so","function":"imessaging_dgm_recv","address":"0001220c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

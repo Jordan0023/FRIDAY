@@ -1,0 +1,7 @@
+{"binary":"libglbleapi.so","function":"silabs_ble_send_notify","address":"00013a70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libglbleapi.so","function":"silabs_ble_write_char","address":"000147c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libglbleapi.so","function":"silabs_watcher","address":"00014c04","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libglbleapi.so","function":"str2addr","address":"000177a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libglbleapi.so","function":"hal_init","address":"00017aa4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libglbleapi.so","function":"hal_init","address":"00017aa4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libglbleapi.so","function":"uartOpen","address":"00018520","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

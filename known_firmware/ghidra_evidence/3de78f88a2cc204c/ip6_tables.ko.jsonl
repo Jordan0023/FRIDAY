@@ -1,0 +1,4 @@
+{"binary":"ip6_tables.ko","function":"FUN_00101004","address":"00101004","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip6_tables.ko","function":"FUN_00101008","address":"00101008","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip6_tables.ko","function":"FUN_001029e4","address":"001029e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip6_tables.ko","function":"FUN_001029e8","address":"001029e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

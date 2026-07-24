@@ -1,0 +1,3595 @@
+{
+  "archive_test_cases": [
+    {
+      "expected": "extractor rejects or confines member",
+      "members": [
+        {
+          "name": "../../tmp/friday-proof/dotdot",
+          "type": "file"
+        }
+      ],
+      "name": "dotdot"
+    },
+    {
+      "expected": "extractor rejects or strips absolute path",
+      "members": [
+        {
+          "name": "/tmp/friday-proof/absolute",
+          "type": "file"
+        }
+      ],
+      "name": "absolute"
+    },
+    {
+      "expected": "no write through symlink outside extraction root",
+      "members": [
+        {
+          "name": "pivot",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        },
+        {
+          "name": "pivot/marker",
+          "type": "file"
+        }
+      ],
+      "name": "symlink_pivot"
+    },
+    {
+      "expected": "hardlink target remains confined",
+      "members": [
+        {
+          "name": "marker",
+          "target": "../../tmp/friday-proof/hardlink",
+          "type": "hardlink"
+        }
+      ],
+      "name": "hardlink"
+    },
+    {
+      "expected": "duplicate type replacement is rejected",
+      "members": [
+        {
+          "name": "same",
+          "type": "file"
+        },
+        {
+          "name": "same",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        }
+      ],
+      "name": "duplicate"
+    },
+    {
+      "expected": "bounded rejection or confined extraction",
+      "members": [
+        {
+          "name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "type": "file"
+        }
+      ],
+      "name": "long_name"
+    },
+    {
+      "expected": "no implicit recursive extraction",
+      "members": [
+        {
+          "name": "nested.tar",
+          "type": "archive"
+        }
+      ],
+      "name": "nested_archive"
+    }
+  ],
+  "auth_test_matrix": [
+    {
+      "expected_boundary": "must not enter protected handler",
+      "headers": {},
+      "name": "no_credentials"
+    },
+    {
+      "expected_boundary": "must match unauthenticated behavior",
+      "headers": {
+        "Authorization": "Bearer FRIDAY_INVALID",
+        "Cookie": "session=FRIDAY_INVALID"
+      },
+      "name": "invalid_session"
+    },
+    {
+      "expected_boundary": "must not cross administrator boundary",
+      "headers": {
+        "Cookie": "session=FRIDAY_LOW_PRIV"
+      },
+      "name": "low_privilege"
+    }
+  ],
+  "candidates": [],
+  "config_writers": [],
+  "confirmation_policy": {
+    "L3": "route-specific attacker parameter reaches the sink",
+    "L4": "authentication/validation boundary and trigger are proven",
+    "L5": "reproducible security effect with fault/sink attribution",
+    "authenticated_admin_disposition": "confirmed vulnerability, but not a confirmed zero-day",
+    "confirmed_label_requires": "L5",
+    "confirmed_zero_day_requires": [
+      "L5 reproducible security effect with fault/sink attribution",
+      "novel reproducible pre-authentication exploitation path with no remote administrator session required",
+      "LAN or WAN network reachability without credentials",
+      "impact is remote code execution or a reliable input-specific denial of service",
+      "denial of service reproduces from attacker input and is not generic resource exhaustion",
+      "documented, dated public-prior-art search",
+      "no matching public disclosure or publicly available fix at the recorded discovery time"
+    ],
+    "forbidden_shortcut": "route string and dangerous symbol merely co-located in a binary",
+    "impactful_hunt_scope": "unauthenticated LAN/WAN RCE or reliable input-specific denial of service",
+    "private_duplicate_caveat": "public novelty does not exclude an unknown private or embargoed duplicate",
+    "vendor_contact_required": false
+  },
+  "correlated_flows": [],
+  "dynamic_sink_spec": [
+    {
+      "capture": [
+        "pc",
+        "argv",
+        "route",
+        "auth_state"
+      ],
+      "symbols": [
+        "system",
+        "popen",
+        "execve"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "destination",
+        "source",
+        "length",
+        "before",
+        "after"
+      ],
+      "symbols": [
+        "memcpy",
+        "strcpy",
+        "sprintf"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "path",
+        "flags",
+        "sandbox_escape"
+      ],
+      "symbols": [
+        "open",
+        "fopen",
+        "rename",
+        "symlink"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "key",
+        "size",
+        "return_value"
+      ],
+      "symbols": [
+        "shmget",
+        "shmat",
+        "nvram_set",
+        "uci_set"
+      ]
+    }
+  ],
+  "fuzz_seeds": [
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "03/30-23",
+      "template": "POST /03/30-23 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "1/Oi",
+      "template": "POST /1/Oi HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "1999/02/22-rdf-syntax-ns",
+      "template": "POST /1999/02/22-rdf-syntax-ns HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "2/01S",
+      "template": "POST /2/01S HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Action/S/URI/URI",
+      "template": "POST /Action/S/URI/URI HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "BM/Normal/CA",
+      "template": "POST /BM/Normal/CA HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "CIDToGIDMap/Identity/DW",
+      "template": "POST /CIDToGIDMap/Identity/DW HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Catalog/Pages",
+      "template": "POST /Catalog/Pages HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "ColorSpace/DeviceRGB/BitsPerComponent",
+      "template": "POST /ColorSpace/DeviceRGB/BitsPerComponent HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Encoding/Identity-H/DescendantFonts",
+      "template": "POST /Encoding/Identity-H/DescendantFonts HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Encoding/Identity-H/Subtype/Type0/ToUnicode",
+      "template": "POST /Encoding/Identity-H/Subtype/Type0/ToUnicode HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Encoding/WinAnsiEncoding/FirstChar",
+      "template": "POST /Encoding/WinAnsiEncoding/FirstChar HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Encoding/WinAnsiEncoding/FontDescriptor",
+      "template": "POST /Encoding/WinAnsiEncoding/FontDescriptor HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "ExtGState/BM/Normal/CA",
+      "template": "POST /ExtGState/BM/Normal/CA HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "ExtGState/BM/Normal/ca",
+      "template": "POST /ExtGState/BM/Normal/ca HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Filter/DCTDecode/Interpolate",
+      "template": "POST /Filter/DCTDecode/Interpolate HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Filter/FlateDecode/Length",
+      "template": "POST /Filter/FlateDecode/Length HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FlateDecode/I",
+      "template": "POST /FlateDecode/I HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FlateDecode/Length",
+      "template": "POST /FlateDecode/Length HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Font/Subtype/TrueType/Name/F1/BaseFont/BCDEEE",
+      "template": "POST /Font/Subtype/TrueType/Name/F1/BaseFont/BCDEEE HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Font/Subtype/TrueType/Name/F2/BaseFont/BCDFEE",
+      "template": "POST /Font/Subtype/TrueType/Name/F2/BaseFont/BCDFEE HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Font/Subtype/TrueType/Name/F4/BaseFont/ArialMT/Encoding/WinAnsiEncoding/FontDescriptor",
+      "template": "POST /Font/Subtype/TrueType/Name/F4/BaseFont/ArialMT/Encoding/WinAnsiEncoding/FontDescriptor HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Font/Subtype/Type0/BaseFont/BCDGEE",
+      "template": "POST /Font/Subtype/Type0/BaseFont/BCDGEE HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Font/Subtype/Type0/BaseFont/SymbolMT/Encoding/Identity-H/DescendantFonts",
+      "template": "POST /Font/Subtype/Type0/BaseFont/SymbolMT/Encoding/Identity-H/DescendantFonts HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FontDescriptor/FontName/ArialMT/Flags",
+      "template": "POST /FontDescriptor/FontName/ArialMT/Flags HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FontDescriptor/FontName/BCDEEE",
+      "template": "POST /FontDescriptor/FontName/BCDEEE HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FontDescriptor/FontName/BCDFEE",
+      "template": "POST /FontDescriptor/FontName/BCDFEE HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FontDescriptor/FontName/BCDGEE",
+      "template": "POST /FontDescriptor/FontName/BCDGEE HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FontDescriptor/FontName/SymbolMT/Flags",
+      "template": "POST /FontDescriptor/FontName/SymbolMT/Flags HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FontName/GZKYBH",
+      "template": "POST /FontName/GZKYBH HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FontName/LJXCTX",
+      "template": "POST /FontName/LJXCTX HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FontName/UZNJPF",
+      "template": "POST /FontName/UZNJPF HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FontName/VIBUDD",
+      "template": "POST /FontName/VIBUDD HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "FontStretch/Normal/FontWeight",
+      "template": "POST /FontStretch/Normal/FontWeight HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Group/S/Transparency/CS/DeviceRGB",
+      "template": "POST /Group/S/Transparency/CS/DeviceRGB HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Link/Rect",
+      "template": "POST /Link/Rect HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "List/ListNumbering/Disc",
+      "template": "POST /List/ListNumbering/Disc HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Metadata/Subtype/XML/Length",
+      "template": "POST /Metadata/Subtype/XML/Length HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Note/Endnote/Note/Textbox/Sect/Header/Sect/Footer/Sect/InlineShape/Sect/Annotation",
+      "template": "POST /Note/Endnote/Note/Textbox/Sect/Header/Sect/Footer/Sect/InlineShape/Sect/Annotation HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "OBJR/Obj",
+      "template": "POST /OBJR/Obj HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "ObjStm/N",
+      "template": "POST /ObjStm/N HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Page/Parent",
+      "template": "POST /Page/Parent HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Pages/Count",
+      "template": "POST /Pages/Count HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Pagination/Subtype/Footer",
+      "template": "POST /Pagination/Subtype/Footer HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Part/Slide/Part/Chart/Sect/Diagram/Figure/Title/H1/CommentAnchor/Span",
+      "template": "POST /Part/Slide/Part/Chart/Sect/Diagram/Figure/Title/H1/CommentAnchor/Span HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/Document/Type/StructElem/K",
+      "template": "POST /S/Document/Type/StructElem/K HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/Figure/Alt",
+      "template": "POST /S/Figure/Alt HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/Figure/Type/StructElem/K",
+      "template": "POST /S/Figure/Type/StructElem/K HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/L/A",
+      "template": "POST /S/L/A HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/LBody/Type/StructElem/K",
+      "template": "POST /S/LBody/Type/StructElem/K HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/LI/Type/StructElem/K",
+      "template": "POST /S/LI/Type/StructElem/K HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/Lbl/Type/StructElem/K",
+      "template": "POST /S/Lbl/Type/StructElem/K HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/Link/Type/StructElem/K",
+      "template": "POST /S/Link/Type/StructElem/K HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/P/Type/StructElem/K",
+      "template": "POST /S/P/Type/StructElem/K HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/Span/Type/StructElem/Pg",
+      "template": "POST /S/Span/Type/StructElem/Pg HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "S/StructParents",
+      "template": "POST /S/StructParents HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "SMask/None/Type/ExtGState/ca",
+      "template": "POST /SMask/None/Type/ExtGState/ca HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Sect/Artifact/Sect/Workbook/Document/Worksheet/Part/Macrosheet/Part/Chartsheet/Part/Dialogsheet",
+      "template": "POST /Sect/Artifact/Sect/Workbook/Document/Worksheet/Part/Macrosheet/Part/Chartsheet/Part/Dialogsheet HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "StructElem/K",
+      "template": "POST /StructElem/K HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "StructTreeRoot/RoleMap",
+      "template": "POST /StructTreeRoot/RoleMap HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Subtype/CIDFontType2/Type/Font/CIDToGIDMap/Identity/DW",
+      "template": "POST /Subtype/CIDFontType2/Type/Font/CIDToGIDMap/Identity/DW HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Subtype/CIDFontType2/Type/Font/W",
+      "template": "POST /Subtype/CIDFontType2/Type/Font/W HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Subtype/TrueType/ToUnicode",
+      "template": "POST /Subtype/TrueType/ToUnicode HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Subtype/XML/Type/Metadata",
+      "template": "POST /Subtype/XML/Type/Metadata HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "SymbolMT/Subtype/CIDFontType2/Type/Font/CIDToGIDMap/Identity/DW",
+      "template": "POST /SymbolMT/Subtype/CIDFontType2/Type/Font/CIDToGIDMap/Identity/DW HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Text/ImageB/ImageC/ImageI",
+      "template": "POST /Text/ImageB/ImageC/ImageI HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Type/Catalog/ViewerPreferences",
+      "template": "POST /Type/Catalog/ViewerPreferences HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Type/Font",
+      "template": "POST /Type/Font HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Type/Font/Widths",
+      "template": "POST /Type/Font/Widths HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Type/FontDescriptor/XHeight",
+      "template": "POST /Type/FontDescriptor/XHeight HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Type/Pages",
+      "template": "POST /Type/Pages HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "Type/StructElem/K",
+      "template": "POST /Type/StructElem/K HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "W/v",
+      "template": "POST /W/v HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "XObject/Subtype/Image/Width",
+      "template": "POST /XObject/Subtype/Image/Width HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "XRef/Size",
+      "template": "POST /XRef/Size HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "dc/elements/1.1",
+      "template": "POST /dc/elements/1.1 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "html/mtname/ms_symbol.htmlhttp",
+      "template": "POST /html/mtname/ms_symbol.htmlhttp HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "html/mtname/ms_welcome.htmlMicrosoft",
+      "template": "POST /html/mtname/ms_welcome.htmlMicrosoft HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "html/type/license.html",
+      "template": "POST /html/type/license.html HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pdf/1.3",
+      "template": "POST /pdf/1.3 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pki/certs/MicRooCerAut2011_2011_03_22.crt0",
+      "template": "POST /pki/certs/MicRooCerAut2011_2011_03_22.crt0 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "multipart/form-data",
+      "mutation_points": [
+        "filename",
+        "part_name",
+        "file_bytes"
+      ],
+      "protocol": "multipart",
+      "route": "pki/certs/MicRooCerAut2011_2011_03_22.crt0",
+      "template": "--FRIDAY\r\nContent-Disposition: form-data; name=\"file\"; filename=\"seed.bin\"\r\n\r\nFRIDAY_FILE\r\n--FRIDAY--"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pki/certs/MicrosoftRootCert.crt0",
+      "template": "POST /pki/certs/MicrosoftRootCert.crt0 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "multipart/form-data",
+      "mutation_points": [
+        "filename",
+        "part_name",
+        "file_bytes"
+      ],
+      "protocol": "multipart",
+      "route": "pki/certs/MicrosoftRootCert.crt0",
+      "template": "--FRIDAY\r\nContent-Disposition: form-data; name=\"file\"; filename=\"seed.bin\"\r\n\r\nFRIDAY_FILE\r\n--FRIDAY--"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pki/certs/MicrosoftTimeStampPCA.crt0",
+      "template": "POST /pki/certs/MicrosoftTimeStampPCA.crt0 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "multipart/form-data",
+      "mutation_points": [
+        "filename",
+        "part_name",
+        "file_bytes"
+      ],
+      "protocol": "multipart",
+      "route": "pki/certs/MicrosoftTimeStampPCA.crt0",
+      "template": "--FRIDAY\r\nContent-Disposition: form-data; name=\"file\"; filename=\"seed.bin\"\r\n\r\nFRIDAY_FILE\r\n--FRIDAY--"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pki/crl/products/MicRooCerAut2011_2011_03_22.crl0",
+      "template": "POST /pki/crl/products/MicRooCerAut2011_2011_03_22.crl0 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pki/crl/products/MicrosoftTimeStampPCA.crl0X",
+      "template": "POST /pki/crl/products/MicrosoftTimeStampPCA.crl0X HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pki/crl/products/microsoftrootcert.crl0T",
+      "template": "POST /pki/crl/products/microsoftrootcert.crl0T HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "multipart/form-data",
+      "mutation_points": [
+        "filename",
+        "part_name",
+        "file_bytes"
+      ],
+      "protocol": "multipart",
+      "route": "pki/crl/products/microsoftrootcert.crl0T",
+      "template": "--FRIDAY\r\nContent-Disposition: form-data; name=\"file\"; filename=\"seed.bin\"\r\n\r\nFRIDAY_FILE\r\n--FRIDAY--"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0",
+      "template": "POST /pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "multipart/form-data",
+      "mutation_points": [
+        "filename",
+        "part_name",
+        "file_bytes"
+      ],
+      "protocol": "multipart",
+      "route": "pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0",
+      "template": "--FRIDAY\r\nContent-Disposition: form-data; name=\"file\"; filename=\"seed.bin\"\r\n\r\nFRIDAY_FILE\r\n--FRIDAY--"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a",
+      "template": "POST /pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "pkiops/docs/primarycps.htm0",
+      "template": "POST /pkiops/docs/primarycps.htm0 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "repository/0",
+      "template": "POST /repository/0 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "repository/0v",
+      "template": "POST /repository/0v HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "repository/1301",
+      "template": "POST /repository/1301 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "repository/1604",
+      "template": "POST /repository/1604 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "repository/gdig2.crt0",
+      "template": "POST /repository/gdig2.crt0 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "repository/sfsroot.crl0P",
+      "template": "POST /repository/sfsroot.crl0P HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "support/faq/2015",
+      "template": "POST /support/faq/2015 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "support/faq/46",
+      "template": "POST /support/faq/46 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "support/faq/87",
+      "template": "POST /support/faq/87 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "typography/abouthttp",
+      "template": "POST /typography/abouthttp HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "wiki/MIT_License",
+      "template": "POST /wiki/MIT_License HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "xap/1.0",
+      "template": "POST /xap/1.0 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "xap/1.0/mm",
+      "template": "POST /xap/1.0/mm HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "xap/1.0/sType/ResourceEvent",
+      "template": "POST /xap/1.0/sType/ResourceEvent HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "xap/1.0/sType/ResourceRef",
+      "template": "POST /xap/1.0/sType/ResourceRef HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    }
+  ],
+  "ghidra_evidence": [],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "Only routes with a plausible low-privilege boundary and route-local sink evidence are promoted. Global firmware sink counts never raise route evidence.",
+    "Authentication labels inferred from strings are hypotheses until dispatcher control flow or a live request confirms them.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rejected_candidates": [
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Catalog/Pages",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "ExtGState/BM/Normal/CA",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "ExtGState/BM/Normal/ca",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Filter/FlateDecode/Length",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Group/S/Transparency/CS/DeviceRGB",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Metadata/Subtype/XML/Length",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "ObjStm/N",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Page/Parent",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Pages/Count",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/StructParents",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Text/ImageB/ImageC/ImageI",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "html/type/license.html",
+      "score": 7,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/50ECE"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "03/30-23",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "1/Oi",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "1999/02/22-rdf-syntax-ns",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "2/01S",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/4D6AF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Action/S/URI/URI",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "BM/Normal/CA",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "CIDToGIDMap/Identity/DW",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "ColorSpace/DeviceRGB/BitsPerComponent",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Encoding/Identity-H/DescendantFonts",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Encoding/Identity-H/Subtype/Type0/ToUnicode",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Encoding/WinAnsiEncoding/FirstChar",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Encoding/WinAnsiEncoding/FontDescriptor",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Filter/DCTDecode/Interpolate",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FlateDecode/I",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FlateDecode/Length",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Font/Subtype/TrueType/Name/F1/BaseFont/BCDEEE",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Font/Subtype/TrueType/Name/F2/BaseFont/BCDFEE",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Font/Subtype/TrueType/Name/F4/BaseFont/ArialMT/Encoding/WinAnsiEncoding/FontDescriptor",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Font/Subtype/Type0/BaseFont/BCDGEE",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Font/Subtype/Type0/BaseFont/SymbolMT/Encoding/Identity-H/DescendantFonts",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FontDescriptor/FontName/ArialMT/Flags",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FontDescriptor/FontName/BCDEEE",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FontDescriptor/FontName/BCDFEE",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FontDescriptor/FontName/BCDGEE",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FontDescriptor/FontName/SymbolMT/Flags",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FontName/GZKYBH",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FontName/LJXCTX",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FontName/UZNJPF",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FontName/VIBUDD",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "FontStretch/Normal/FontWeight",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Link/Rect",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "List/ListNumbering/Disc",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Note/Endnote/Note/Textbox/Sect/Header/Sect/Footer/Sect/InlineShape/Sect/Annotation",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "OBJR/Obj",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Pagination/Subtype/Footer",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/280"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Part/Slide/Part/Chart/Sect/Diagram/Figure/Title/H1/CommentAnchor/Span",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/Document/Type/StructElem/K",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/Figure/Alt",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/Figure/Type/StructElem/K",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/L/A",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/LBody/Type/StructElem/K",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/LI/Type/StructElem/K",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/Lbl/Type/StructElem/K",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/Link/Type/StructElem/K",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/P/Type/StructElem/K",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "S/Span/Type/StructElem/Pg",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "SMask/None/Type/ExtGState/ca",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Sect/Artifact/Sect/Workbook/Document/Worksheet/Part/Macrosheet/Part/Chartsheet/Part/Dialogsheet",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "StructElem/K",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "StructTreeRoot/RoleMap",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Subtype/CIDFontType2/Type/Font/CIDToGIDMap/Identity/DW",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Subtype/CIDFontType2/Type/Font/W",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Subtype/TrueType/ToUnicode",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Subtype/XML/Type/Metadata",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "SymbolMT/Subtype/CIDFontType2/Type/Font/CIDToGIDMap/Identity/DW",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Type/Catalog/ViewerPreferences",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Type/Font",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Type/Font/Widths",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Type/FontDescriptor/XHeight",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Type/Pages",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "Type/StructElem/K",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/462E5"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "W/v",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/50ECE"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "XObject/Subtype/Image/Width",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "XRef/Size",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "dc/elements/1.1",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "html/mtname/ms_symbol.htmlhttp",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/50ECE"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "html/mtname/ms_welcome.htmlMicrosoft",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/50ECE"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pdf/1.3",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pki/certs/MicRooCerAut2011_2011_03_22.crt0",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pki/certs/MicrosoftRootCert.crt0",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pki/certs/MicrosoftTimeStampPCA.crt0",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pki/crl/products/MicRooCerAut2011_2011_03_22.crl0",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pki/crl/products/MicrosoftTimeStampPCA.crl0X",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pki/crl/products/microsoftrootcert.crl0T",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pkiops/certs/MicCodSigPCA2011_2011-07-08.crt0",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pkiops/crl/MicCodSigPCA2011_2011-07-08.crl0a",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "pkiops/docs/primarycps.htm0",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "repository/0",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/4D6AF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "repository/0v",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/4D6AF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "repository/1301",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/4D6AF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "repository/1604",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/4D6AF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "repository/gdig2.crt0",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/4D6AF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "repository/sfsroot.crl0P",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/4D6AF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "support/faq/2015",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "support/faq/46",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "support/faq/87",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/How to upgrade firmware of TP-Link Wi-Fi Router.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "typography/abouthttp",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "wiki/MIT_License",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/_How to upgrade firmware of TP-Link Wi-Fi Router.pdf.extracted/468DF"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "xap/1.0",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "xap/1.0/mm",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "xap/1.0/sType/ResourceEvent",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "xap/1.0/sType/ResourceRef",
+      "score": 2,
+      "source": "string:_Archer_BE600_V1_260113.zip.extracted/GPL License Terms.pdf"
+    }
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/ccc98f823eabca02",
+  "runtime_launch_plan": {
+    "interfaces": [
+      {
+        "address": "192.168.250.1/24",
+        "name": "br0"
+      },
+      {
+        "address": "192.168.250.2/32",
+        "name": "probe"
+      }
+    ],
+    "isolation": [
+      "no external network",
+      "no host ports by default",
+      "disposable writable rootfs",
+      "synthetic LAN client"
+    ],
+    "listener_candidates": [],
+    "requirements": [],
+    "startup_candidates": [],
+    "vendor": "tp-link"
+  },
+  "runtime_profile": {
+    "architectures": [],
+    "executable_count": 0,
+    "rootfs_candidates": [],
+    "state_backends": [],
+    "vendor": "tp-link",
+    "web_stack": []
+  },
+  "service_surface": [],
+  "sink_summary": {
+    "exec": 0,
+    "file_write": 0,
+    "popen": 0,
+    "system": 0,
+    "unsafe_copy": 0
+  },
+  "validation_recipes": [
+    {
+      "marker": "FRIDAY_CMD_MARKER",
+      "payloads": [
+        ";printf FRIDAY_CMD_MARKER",
+        "$(printf FRIDAY_CMD_MARKER)"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker appears in captured argv/stdout",
+      "vulnerability_class": "command_injection"
+    },
+    {
+      "marker": "FRIDAY_PATH_MARKER",
+      "payloads": [
+        "../../tmp/friday-proof/marker",
+        "..%2f..%2ftmp%2ffriday-proof%2fmarker"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker created inside modeled /tmp only",
+      "vulnerability_class": "path_traversal"
+    },
+    {
+      "marker": "FRIDAY_ARCHIVE_MARKER",
+      "payloads": [
+        "ordered symlink then child file",
+        "hardlink to modeled target"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "write escapes extraction root but remains inside sandbox",
+      "vulnerability_class": "archive_escape"
+    },
+    {
+      "marker": "FRIDAY_CRASH_MARKER",
+      "payloads": [
+        "cyclic bounded input lengths 64..4096"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "reproducible crash with instruction/register capture",
+      "vulnerability_class": "memory_corruption"
+    },
+    {
+      "marker": "FRIDAY_AUTH_MARKER",
+      "payloads": [
+        "missing cookie",
+        "duplicate cookie",
+        "method override"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "protected handler returns distinct success state",
+      "vulnerability_class": "auth_bypass"
+    }
+  ]
+}

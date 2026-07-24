@@ -1,0 +1,3 @@
+{"binary":"libnpa-tstream-samba4.so","function":"tstream_npa_writev_send","address":"0001260c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnpa-tstream-samba4.so","function":"tstream_npa_readv_send","address":"000129d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnpa-tstream-samba4.so","function":"tstream_npa_readv_send","address":"000129d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

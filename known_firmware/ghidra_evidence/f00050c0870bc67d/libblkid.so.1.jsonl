@@ -1,0 +1,7 @@
+{"binary":"libblkid.so.1.1.0","function":"FUN_00018ec4","address":"00018ec4","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.1.0","function":"FUN_00018ec4","address":"00018ec4","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.1.0","function":"FUN_0001b5ac","address":"0001b5ac","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.1.0","function":"FUN_0001b5ac","address":"0001b5ac","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.1.0","function":"FUN_0001b5ac","address":"0001b5ac","route":"/'","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.1.0","function":"FUN_0001b5ac","address":"0001b5ac","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid.so.1.1.0","function":"FUN_0001b5ac","address":"0001b5ac","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

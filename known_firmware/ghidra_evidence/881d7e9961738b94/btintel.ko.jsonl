@@ -1,0 +1,3 @@
+{"binary":"btintel.ko","function":"FUN_001006bc","address":"001006bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"btintel.ko","function":"btintel_secure_send","address":"001006c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"btintel.ko","function":"regmap_ibt_read","address":"001009e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

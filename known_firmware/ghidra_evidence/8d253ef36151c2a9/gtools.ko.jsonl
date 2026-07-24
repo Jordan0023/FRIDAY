@@ -1,0 +1,9 @@
+{"binary":"gtools.ko","function":"FUN_00101a6c","address":"00101a6c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gtools.ko","function":"FUN_00101a6c","address":"00101a6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gtools.ko","function":"FUN_00101a70","address":"00101a70","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gtools.ko","function":"FUN_00101a70","address":"00101a70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gtools.ko","function":"json_setStringFormat","address":"001041b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gtools.ko","function":"gstring_new","address":"00105d90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gtools.ko","function":"procx_init","address":"001078c0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gtools.ko","function":"FUN_0010b7dc","address":"0010b7dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gtools.ko","function":"mstep_new","address":"0010b7e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

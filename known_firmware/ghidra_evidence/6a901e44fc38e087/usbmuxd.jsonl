@@ -1,0 +1,6 @@
+{"binary":"usbmuxd","function":"FUN_000188b8","address":"000188b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbmuxd","function":"FUN_00021f48","address":"00021f48","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbmuxd","function":"FUN_00023bd8","address":"00023bd8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbmuxd","function":"FUN_00025170","address":"00025170","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbmuxd","function":"FUN_000288f0","address":"000288f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbmuxd","function":"FUN_0002de44","address":"0002de44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

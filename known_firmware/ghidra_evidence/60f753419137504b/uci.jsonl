@@ -1,0 +1,6 @@
+{"binary":"uci","function":"sscanf","address":"00008c60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uci","function":"fopen","address":"00008c9c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uci","function":"sprintf","address":"00008cfc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uci","function":"uci_set","address":"00008d50","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uci","function":"FUN_0000953c","address":"0000953c","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uci","function":"FUN_0000953c","address":"0000953c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

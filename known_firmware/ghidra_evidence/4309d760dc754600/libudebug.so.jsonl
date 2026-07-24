@@ -1,0 +1,3 @@
+{"binary":"libudebug.so","function":"udebug_ubus_apply_config","address":"00010e18","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libudebug.so","function":"FUN_00011208","address":"00011208","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libudebug.so","function":"pcap_packet_append","address":"000114bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

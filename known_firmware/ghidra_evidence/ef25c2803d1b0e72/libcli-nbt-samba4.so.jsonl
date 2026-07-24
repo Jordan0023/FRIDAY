@@ -1,0 +1,1 @@
+{"binary":"libcli-nbt-samba4.so","function":"resolve_lmhosts_file_as_sockaddr","address":"000125a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

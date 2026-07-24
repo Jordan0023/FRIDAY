@@ -1,0 +1,4 @@
+{"binary":"libnfnetlink.so.0.2.0","function":"nfnl_talk","address":"00011d10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnfnetlink.so.0.2.0","function":"nfnl_addattr_l","address":"00012174","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnfnetlink.so.0.2.0","function":"nfnl_nfa_addattr_l","address":"0001228c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnfnetlink.so.0.2.0","function":"nlif_index2name","address":"0001383c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

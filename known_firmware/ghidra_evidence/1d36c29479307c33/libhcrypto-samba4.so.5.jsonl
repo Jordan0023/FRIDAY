@@ -1,0 +1,16 @@
+{"binary":"libhcrypto-samba4.so.5","function":"hc_i2d_DHparams","address":"0002008c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_DES_cbc_encrypt","address":"000210ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_DES_pcbc_encrypt","address":"00021304","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_DES_ede3_cbc_encrypt","address":"00021604","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_DES_cbc_cksum","address":"00021b0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_i2d_RSAPrivateKey","address":"00024634","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_i2d_RSAPublicKey","address":"0002485c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_SHA1_Update","address":"00027824","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_SHA256_Update","address":"00028600","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_SHA512_Update","address":"00028ae0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_EVP_CipherInit_ex","address":"00029d7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_EVP_CipherUpdate","address":"00029f28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_EVP_BytesToKey","address":"0002a2ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_PKCS5_PBKDF2_HMAC_SHA1","address":"0002abfc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"hc_PKCS12_key_gen","address":"0002adcc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhcrypto-samba4.so.5","function":"FUN_0002bd64","address":"0002bd64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

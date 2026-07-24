@@ -1,0 +1,5 @@
+{"binary":"libss.so.2.0","function":"ss_help","address":"00012370","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libss.so.2.0","function":"ss_help","address":"00012370","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libss.so.2.0","function":"ss_help","address":"00012370","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libss.so.2.0","function":"ss_help","address":"00012370","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libss.so.2.0","function":"ss_listen","address":"00012894","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

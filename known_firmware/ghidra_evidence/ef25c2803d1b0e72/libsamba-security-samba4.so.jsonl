@@ -1,0 +1,2 @@
+{"binary":"libsamba-security-samba4.so","function":"dom_sid_parse_length","address":"0001b78c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-security-samba4.so","function":"se_create_child_secdesc","address":"00021720","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

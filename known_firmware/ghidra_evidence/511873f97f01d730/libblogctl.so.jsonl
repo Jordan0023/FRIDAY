@@ -1,0 +1,1 @@
+{"binary":"libblogctl.so","function":"blogctl_config","address":"00010690","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

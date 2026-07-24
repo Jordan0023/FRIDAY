@@ -1,0 +1,4 @@
+{"binary":"libtiff.so.5.2.0","function":"_TIFFRewriteField","address":"00024328","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtiff.so.5.2.0","function":"TIFFSetClientInfo","address":"00024f54","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtiff.so.5.2.0","function":"TIFFClientOpen","address":"00038cbc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtiff.so.5.2.0","function":"FUN_0003dde0","address":"0003dde0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

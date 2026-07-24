@@ -1,0 +1,4 @@
+{"binary":"ubiupdatevol","function":"FUN_00010a40","address":"00010a40","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiupdatevol","function":"FUN_00011cb8","address":"00011cb8","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiupdatevol","function":"FUN_000121bc","address":"000121bc","route":"/misc/ubi_ctrl","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiupdatevol","function":"FUN_000121bc","address":"000121bc","route":"/ubi","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

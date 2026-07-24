@@ -1,0 +1,1 @@
+{"binary":"libheimbase-samba4.so.1.0.0","function":"heim_string_create","address":"00011770","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

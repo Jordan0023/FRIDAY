@@ -1,0 +1,2 @@
+{"binary":"act_pedit.ko","function":"FUN_000108ac","address":"000108ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"act_pedit.ko","function":"FUN_000108ac","address":"000108ac","route":"/include/net/netlink.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"hfs.ko","function":"FUN_001036e4","address":"001036e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfs.ko","function":"hfs_cat_find_brec","address":"001036e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfs.ko","function":"hfs_mdb_commit","address":"00106960","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfs.ko","function":"FUN_00106dcc","address":"00106dcc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfs.ko","function":"hfs_mdb_get","address":"00106dd0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"slhc.ko","function":"slhc_compress","address":"00010030","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

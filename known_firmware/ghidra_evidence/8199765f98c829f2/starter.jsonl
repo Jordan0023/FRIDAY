@@ -1,0 +1,17 @@
+{"binary":"starter","function":"FUN_000124c4","address":"000124c4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"/etc/ipsec.conf","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"/etc/ipsec.conf","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"//docs.strongswan.org/docs/5.9/plugins/pluginLoad.html","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"//docs.strongswan.org/docs/5.9/plugins/pluginLoad.html","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"/dev/random","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"/dev/random","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"/dev/urandom","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"/dev/urandom","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00012810","address":"00012810","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_000171c0","address":"000171c0","route":"/usr/bin/gdb","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_000171c0","address":"000171c0","route":"/var/run/charon.ctl","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_000171c0","address":"000171c0","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_0001aa90","address":"0001aa90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

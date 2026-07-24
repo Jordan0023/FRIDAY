@@ -1,0 +1,6 @@
+{"binary":"libcms_core.so","function":"mdm_adjustWlanAdapter","address":"00038bd8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"rut_doSystemAction","address":"000598bc","route":"/'))","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"rut_doSystemAction","address":"000598bc","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"rutCert_retrieveSubject","address":"0006ff8c","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"rutCert_retrieveSubject","address":"0006ff8c","route":"/';","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"rutMulti_confPriQueue","address":"00089758","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

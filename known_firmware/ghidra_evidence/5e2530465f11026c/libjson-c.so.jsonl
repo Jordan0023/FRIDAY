@@ -1,0 +1,5 @@
+{"binary":"libjson-c.so.2.0.2","function":"FUN_0001282c","address":"0001282c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.2.0.2","function":"json_tokener_parse_ex","address":"000139e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.2.0.2","function":"json_object_from_file","address":"00015518","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.2.0.2","function":"json_parse_int64","address":"00015784","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.2.0.2","function":"json_c_get_random_seed","address":"000164ac","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

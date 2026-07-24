@@ -1,0 +1,13 @@
+{"binary":"plugins.so","function":"update_repository","address":"00011644","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"get_repository_status","address":"0001182c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"get_repository_status","address":"0001182c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"get_config","address":"000125a4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"get_config","address":"000125a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"set_config","address":"00012884","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"set_config","address":"00012884","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"get_package_info","address":"00013614","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"get_package_info","address":"00013614","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"install_package","address":"00013950","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"install_package","address":"00013950","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"remove_package","address":"00013dbc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"plugins.so","function":"remove_package","address":"00013dbc","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

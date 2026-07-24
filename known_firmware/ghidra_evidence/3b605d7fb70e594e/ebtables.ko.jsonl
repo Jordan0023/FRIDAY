@@ -1,0 +1,2 @@
+{"binary":"ebtables.ko","function":"FUN_000106e8","address":"000106e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ebtables.ko","function":"ebt_register_table","address":"000115dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,10 @@
+{"binary":"hw_nat.ko","function":"FoeDumpPkt","address":"000102f0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hw_nat.ko","function":"FoeDumpPkt","address":"000102f0","route":"/w","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hw_nat.ko","function":"FoeDumpPkt","address":"000102f0","route":"/DS-Lite","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hw_nat.ko","function":"FoeDumpPkt","address":"000102f0","route":"/UDP","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hw_nat.ko","function":"FoeDumpPkt","address":"000102f0","route":"/dport","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hw_nat.ko","function":"FoeDumpPkt","address":"000102f0","route":"/6RD","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hw_nat.ko","function":"FoeDumpPkt","address":"000102f0","route":"/syn/rst","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hw_nat.ko","function":"PpeParseLayerInfo","address":"00010fcc","route":"/')","sink":"memory_operation","sources":"","auth_markers":"Session","correlation":"function-local-co-location"}
+{"binary":"hw_nat.ko","function":"PpeFillInL3Info","address":"00011a30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hw_nat.ko","function":"Ip2Str","address":"00013a68","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,14 @@
+{"binary":"libqmi_cci.so","function":"FUN_000133b0","address":"000133b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"qmi_cci_xport_recv","address":"00015138","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"qmi_client_init","address":"000164a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"qmi_client_send_raw_msg_async","address":"00016b28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"qmi_client_send_raw_msg_sync","address":"000175d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"qmi_client_get_service_instance","address":"000185cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"FUN_0001ba68","address":"0001ba68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"FUN_0001c014","address":"0001c014","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"FUN_0001c690","address":"0001c690","route":"/*","sink":"file_write","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"FUN_0001c690","address":"0001c690","route":"/*","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"FUN_0001e6d0","address":"0001e6d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"FUN_0001f190","address":"0001f190","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"FUN_0001ff98","address":"0001ff98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_cci.so","function":"FUN_00021828","address":"00021828","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

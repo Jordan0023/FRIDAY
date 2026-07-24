@@ -1,0 +1,2 @@
+{"binary":"eapd","function":"FUN_00009f6c","address":"00009f6c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"eapd","function":"FUN_0000d7d8","address":"0000d7d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

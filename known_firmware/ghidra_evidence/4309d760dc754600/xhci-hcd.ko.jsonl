@@ -1,0 +1,5 @@
+{"binary":"xhci-hcd.ko","function":"_216","address":"0001f868","route":"/U1/U2","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xhci-hcd.ko","function":"_187","address":"000218bc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xhci-hcd.ko","function":"_232","address":"00021af8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xhci-hcd.ko","function":"_270","address":"00021f94","route":"/%d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xhci-hcd.ko","function":"_270","address":"00021f94","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

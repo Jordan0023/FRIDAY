@@ -1,0 +1,16 @@
+{"binary":"mpstat","function":"FUN_00014b08","address":"00014b08","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_00014e84","address":"00014e84","route":"/proc/interrupts","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_00014e84","address":"00014e84","route":"/proc/softirqs","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_00014e84","address":"00014e84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_000155e4","address":"000155e4","route":"/proc/stat","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_000155e4","address":"000155e4","route":"/proc/stat","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_000155e4","address":"000155e4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_000155e4","address":"000155e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_000157dc","address":"000157dc","route":"/proc/stat","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_00015930","address":"00015930","route":"/proc/meminfo","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_00015e98","address":"00015e98","route":"/proc/uptime","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_00015e98","address":"00015e98","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_00016430","address":"00016430","route":"/proc/stat","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_00016430","address":"00016430","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_00016570","address":"00016570","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mpstat","function":"FUN_0001665c","address":"0001665c","route":"/proc/diskstats","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

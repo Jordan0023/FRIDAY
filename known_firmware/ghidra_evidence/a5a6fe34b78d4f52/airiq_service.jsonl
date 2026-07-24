@@ -1,0 +1,3 @@
+{"binary":"airiq_service","function":"FUN_000139fc","address":"000139fc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"airiq_service","function":"FUN_00022eec","address":"00022eec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"airiq_service","function":"FUN_00022eec","address":"00022eec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

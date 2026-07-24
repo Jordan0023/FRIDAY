@@ -1,0 +1,4 @@
+{"binary":"libxtables.so.10.0.0","function":"xtables_insmod","address":"00012a0c","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"FUN_00012c9c","address":"00012c9c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"xtables_parse_interface","address":"00013178","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.10.0.0","function":"xtables_find_match","address":"000137fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

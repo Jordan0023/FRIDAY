@@ -1,0 +1,3 @@
+{"binary":"libdcerpc.so.0","function":"finddcs_cldap_recv","address":"0001cae4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdcerpc.so.0","function":"dcerpc_mgmt_inq_princ_name","address":"0001ef20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdcerpc.so.0","function":"FUN_00021d78","address":"00021d78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

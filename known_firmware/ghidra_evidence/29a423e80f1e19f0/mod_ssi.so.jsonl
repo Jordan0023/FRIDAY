@@ -1,0 +1,6 @@
+{"binary":"mod_ssi.so","function":"FUN_000124a8","address":"000124a8","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"mod_ssi.so","function":"FUN_000124a8","address":"000124a8","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"mod_ssi.so","function":"FUN_000124a8","address":"000124a8","route":"/')","sink":"memory_operation","sources":"read","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"mod_ssi.so","function":"FUN_000124a8","address":"000124a8","route":"/')","sink":"memory_operation","sources":"read","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"mod_ssi.so","function":"FUN_000124a8","address":"000124a8","route":"/');","sink":"memory_operation","sources":"read","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"mod_ssi.so","function":"FUN_000124a8","address":"000124a8","route":"/');","sink":"memory_operation","sources":"read","auth_markers":"passwd","correlation":"function-local-co-location"}

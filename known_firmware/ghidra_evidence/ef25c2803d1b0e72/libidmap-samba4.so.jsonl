@@ -1,0 +1,1 @@
+{"binary":"libidmap-samba4.so","function":"lp_scan_idmap_found_domain","address":"00011214","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

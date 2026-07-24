@@ -1,0 +1,3 @@
+{"binary":"bdmf_shell","function":"main","address":"00010c3c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf_shell","function":"main","address":"00010c3c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf_shell","function":"main","address":"00010c3c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

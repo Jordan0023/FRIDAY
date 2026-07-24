@@ -1,0 +1,13 @@
+{"binary":"webdav_client","function":"FUN_00012ea4","address":"00012ea4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_00013084","address":"00013084","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_00014558","address":"00014558","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_000154ec","address":"000154ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_00015958","address":"00015958","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_0001618c","address":"0001618c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"SyncLocal","address":"00018354","route":"/*","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_00018cb8","address":"00018cb8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_0001bc60","address":"0001bc60","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_0001f528","address":"0001f528","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_00021d84","address":"00021d84","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_00023ebc","address":"00023ebc","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"webdav_client","function":"FUN_00024614","address":"00024614","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

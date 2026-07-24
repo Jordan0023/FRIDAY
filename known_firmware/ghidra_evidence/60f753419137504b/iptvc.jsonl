@@ -1,0 +1,2 @@
+{"binary":"iptvc","function":"sscanf","address":"000086bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iptvc","function":"FUN_00008728","address":"00008728","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,10 @@
+{"binary":"libbridgeutil.so","function":"FUN_00010bcc","address":"00010bcc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbridgeutil.so","function":"br_util_get_bridge_ifindex_from_lower_ifname","address":"00010ca4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbridgeutil.so","function":"br_util_get_port_number","address":"00010e28","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbridgeutil.so","function":"br_util_get_port_name","address":"00010ef8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbridgeutil.so","function":"br_util_get_bridges","address":"000110b0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbridgeutil.so","function":"br_util_get_bridge_wan_interfaces","address":"00011264","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbridgeutil.so","function":"br_util_get_bridge_wan_interfaces","address":"00011264","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbridgeutil.so","function":"br_util_get_bridge_port_interfaces","address":"00011490","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbridgeutil.so","function":"br_util_read_fdb","address":"00011624","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbridgeutil.so","function":"br_util_set_aging","address":"00011b6c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,6 @@
+{"binary":"libwl_server_socket.so","function":"remote_server_exec","address":"00013ae4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwl_server_socket.so","function":"remote_shell_execute","address":"0001583c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwl_server_socket.so","function":"remote_shell_execute","address":"0001583c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwl_server_socket.so","function":"remote_shell_execute","address":"0001583c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwl_server_socket.so","function":"remote_shell_execute","address":"0001583c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwl_server_socket.so","function":"remote_shell_execute","address":"0001583c","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}

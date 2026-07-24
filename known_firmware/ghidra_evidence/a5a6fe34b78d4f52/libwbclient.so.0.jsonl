@@ -1,0 +1,9 @@
+{"binary":"libwbclient.so.0","function":"wbcCtxUidToSid","address":"00013b20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwbclient.so.0","function":"wbcCtxGidToSid","address":"00013c18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwbclient.so.0","function":"FUN_000144c0","address":"000144c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwbclient.so.0","function":"wbcCtxAuthenticateUserEx","address":"00014928","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwbclient.so.0","function":"wbcCtxLogoffUserEx","address":"00015208","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwbclient.so.0","function":"wbcCtxChangeUserPasswordEx","address":"00015378","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwbclient.so.0","function":"wbcCtxLogonUser","address":"000157d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwbclient.so.0","function":"wbcCtxCredentialCache","address":"00015c40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwbclient.so.0","function":"wbcSidToString","address":"00017230","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

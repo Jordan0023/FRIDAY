@@ -1,0 +1,1 @@
+{"binary":"ldbsamba_extensions.so","function":"extensions_hook","address":"00011ab4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

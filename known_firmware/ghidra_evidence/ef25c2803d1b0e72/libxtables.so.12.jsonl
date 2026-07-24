@@ -1,0 +1,15 @@
+{"binary":"libxtables.so.12.4.0","function":"xtables_merge_options","address":"00012adc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_parse_interface","address":"000133f0","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_find_target","address":"000134d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_find_match","address":"000139f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_ipparse_multiple","address":"00014c34","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_ipparse_any","address":"00014fac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_ip6mask_to_numeric","address":"000152f0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_ip6mask_to_numeric","address":"000152f0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_ip6parse_multiple","address":"0001569c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_ip6parse_any","address":"00015a60","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"get_kernel_version","address":"000167ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"FUN_00016b14","address":"00016b14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"FUN_00016e78","address":"00016e78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_options_xfrm","address":"00017c7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so.12.4.0","function":"xtables_lmap_init","address":"000185a0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

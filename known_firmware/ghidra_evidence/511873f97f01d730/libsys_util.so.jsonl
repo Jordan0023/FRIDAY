@@ -1,0 +1,10 @@
+{"binary":"libsys_util.so","function":"sysUtl_getThreadInfoFromProc","address":"000113f8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtl_getMemInfo","address":"000115e4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtil_copyToBuffer","address":"00011884","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtil_readFileToDynamicBuf","address":"00011a48","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtil_readProcToBuffer","address":"00011cc4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtil_writeBufferToFile","address":"00011d74","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtil_appendBufferToFile","address":"00011e9c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtil_getNumCpuThreads","address":"000120e4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtil_getCpuInfo","address":"00012240","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsys_util.so","function":"sysUtl_getIfnameByIndex","address":"00012c48","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

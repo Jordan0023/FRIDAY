@@ -1,0 +1,8 @@
+{"binary":"liblua5.3.so.0.0.0","function":"FUN_0001d728","address":"0001d728","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua5.3.so.0.0.0","function":"luaO_chunkid","address":"0001de64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua5.3.so.0.0.0","function":"luaS_newlstr","address":"00021534","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua5.3.so.0.0.0","function":"FUN_0002345c","address":"0002345c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua5.3.so.0.0.0","function":"FUN_00025f5c","address":"00025f5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua5.3.so.0.0.0","function":"luaL_prepbuffsize","address":"00026d10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua5.3.so.0.0.0","function":"luaL_loadfilex","address":"00027158","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblua5.3.so.0.0.0","function":"FUN_0003175c","address":"0003175c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

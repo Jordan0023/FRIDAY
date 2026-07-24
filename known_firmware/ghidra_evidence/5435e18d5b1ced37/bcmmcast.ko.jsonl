@@ -1,0 +1,1 @@
+{"binary":"bcmmcast.ko","function":"bcm_mcastrouter_store","address":"0010ddf0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

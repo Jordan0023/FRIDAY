@@ -1,0 +1,2 @@
+{"binary":"libqca_wifison_ext.so","function":"wifison_data_send","address":"000109b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqca_wifison_ext.so","function":"wifison_event_get","address":"0001125c","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}

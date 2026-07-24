@@ -1,0 +1,4 @@
+{"binary":"libwlctl.so","function":"FUN_00034050","address":"00034050","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwlctl.so","function":"wl_scan_prep","address":"00035f48","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwlctl.so","function":"wl_scan_prep","address":"00035f48","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwlctl.so","function":"rwl_shell_cmd_proc","address":"0004d270","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"libjson-c.so.5.1.0","function":"json_tokener_parse_ex","address":"00016400","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjson-c.so.5.1.0","function":"json_c_get_random_seed","address":"0001a518","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

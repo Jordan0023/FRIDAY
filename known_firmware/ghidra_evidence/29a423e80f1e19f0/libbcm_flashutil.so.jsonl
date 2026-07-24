@@ -1,0 +1,7 @@
+{"binary":"libbcm_flashutil.so","function":"fdt_get_path","address":"00016864","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_flashutil.so","function":"fdt_overlay_apply","address":"00018be4","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_flashutil.so","function":"join_path","address":"0001a798","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_flashutil.so","function":"utilfdt_read_err","address":"0001aa64","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_flashutil.so","function":"FUN_00026c88","address":"00026c88","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_flashutil.so","function":"FUN_00026c88","address":"00026c88","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_flashutil.so","function":"FUN_00026c88","address":"00026c88","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

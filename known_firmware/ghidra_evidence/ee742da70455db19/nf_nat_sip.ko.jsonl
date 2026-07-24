@@ -1,0 +1,1 @@
+{"binary":"nf_nat_sip.ko","function":"ip_nat_sip","address":"00010a78","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"openvpn-plugin-auth-pam.so","function":"openvpn_plugin_open_v3","address":"000111a8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

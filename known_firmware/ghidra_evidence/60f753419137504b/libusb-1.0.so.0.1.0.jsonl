@@ -1,0 +1,2 @@
+{"binary":"libusb-1.0.so.0.1.0","function":"FUN_00018400","address":"00018400","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libusb-1.0.so.0.1.0","function":"FUN_00018400","address":"00018400","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

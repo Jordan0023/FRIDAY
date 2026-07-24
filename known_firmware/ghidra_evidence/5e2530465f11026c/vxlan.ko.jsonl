@@ -1,0 +1,3 @@
+{"binary":"vxlan.ko","function":"FUN_00012df8","address":"00012df8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"vxlan.ko","function":"FUN_000156bc","address":"000156bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"vxlan.ko","function":"vxlan_xmit","address":"00016f78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

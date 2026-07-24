@@ -1,0 +1,4 @@
+{"binary":"libsamba-sockets-samba4.so","function":"tstream_bsd_readv_send","address":"00018168","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-sockets-samba4.so","function":"tstream_bsd_writev_send","address":"00019388","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-sockets-samba4.so","function":"_tsocket_address_bsd_from_sockaddr","address":"000196d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-sockets-samba4.so","function":"tsocket_address_bsd_sockaddr","address":"00019898","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

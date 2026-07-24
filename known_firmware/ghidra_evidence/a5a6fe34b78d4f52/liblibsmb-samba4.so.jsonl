@@ -1,0 +1,17 @@
+{"binary":"liblibsmb-samba4.so","function":"FUN_000240d8","address":"000240d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"FUN_0002c4a0","address":"0002c4a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"FUN_0002c6c8","address":"0002c6c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"cli_rename_send","address":"0002e534","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"parse_streams_blob","address":"00039dd4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"FUN_0003b730","address":"0003b730","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"cli_message_send","address":"0003be04","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"cli_smbwrite","address":"0003de28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"cli_list_recv","address":"00041ce4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"parse_user_quota_record","address":"00043b28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"parse_fs_quota_buffer","address":"00043e5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"cli_get_user_quota","address":"00044168","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"fill_quota_buffer","address":"00044ca4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"symlink_reparse_buffer_marshall","address":"00049498","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"cli_smb2_create_fnum_send","address":"0004dff0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"cli_smb2_set_ea_fnum","address":"00053238","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblibsmb-samba4.so","function":"cli_smb2_get_user_quota","address":"0005372c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

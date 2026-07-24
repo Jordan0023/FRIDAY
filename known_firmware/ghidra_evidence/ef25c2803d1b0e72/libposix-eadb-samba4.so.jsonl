@@ -1,0 +1,2 @@
+{"binary":"libposix-eadb-samba4.so","function":"get_ea_tdb_key","address":"000109a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libposix-eadb-samba4.so","function":"push_xattr_blob_tdb_raw","address":"00010c18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"libgensec-samba4.so","function":"FUN_00017c00","address":"00017c00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libgensec-samba4.so","function":"ntlmssp_wrap","address":"00025a30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

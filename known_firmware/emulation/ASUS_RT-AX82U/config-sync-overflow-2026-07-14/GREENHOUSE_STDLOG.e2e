@@ -1,0 +1,12 @@
+[qemu] doing qemu_execven on filename /usr/sbin/httpd
+[GreenHouseQEMU] IP: 0.0.0.0
+[GreenHouseQEMU] PORT: 80
+[qemu] Successful Bind 0
+[22;31mlan_netmask=Unknown
+[22;00m[22;31mntp_ready=Unknown
+[22;00m[22;31mlan_netmask=Unknown
+[22;00m[22;31mhttp_autologout=Unknown
+[22;00mjson_object_from_file: error opening file /tmp/blacklist_config.json: No such file or directory
+[GreenHouseQEMU] SIGSEGV CAUGHT!
+[GreenHouseQEMU] SIG 11
+Segmentation fault (core dumped)

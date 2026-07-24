@@ -1,0 +1,6 @@
+{"binary":"hostapd_cli","function":"memmove","address":"00008f60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"memcpy","address":"00008f90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"execv","address":"00009104","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"fopen","address":"00009140","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"FUN_0000b9ac","address":"0000b9ac","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hostapd_cli","function":"FUN_0000d304","address":"0000d304","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

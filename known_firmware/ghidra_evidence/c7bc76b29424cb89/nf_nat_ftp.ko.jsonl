@@ -1,0 +1,2 @@
+{"binary":"nf_nat_ftp.ko","function":"mangle_eprt_packet","address":"0001024c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_ftp.ko","function":"mangle_rfc959_packet","address":"00010304","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

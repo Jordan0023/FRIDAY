@@ -1,0 +1,1 @@
+{"binary":"conntrack","function":"FUN_00014c00","address":"00014c00","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

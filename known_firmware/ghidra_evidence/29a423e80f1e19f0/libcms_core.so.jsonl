@@ -1,0 +1,7 @@
+{"binary":"libcms_core.so","function":"local_getParamAttributes","address":"00030964","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"cmsPhl_getParameterValuesFlags","address":"000317fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"cmsPhl_getParameterValuesFlags","address":"000317fc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"FUN_00040804","address":"00040804","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"rut_doSystemAction","address":"0004cad8","route":"/'))","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"rut_doSystemAction","address":"0004cad8","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcms_core.so","function":"rutIpt_doFirewallChainRule_dev2","address":"000922a0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

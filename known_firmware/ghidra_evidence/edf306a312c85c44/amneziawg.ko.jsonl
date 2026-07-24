@@ -1,0 +1,14 @@
+{"binary":"amneziawg.ko","function":"FUN_00100358","address":"00100358","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"wg_socket_send_buffer_as_reply_to_skb","address":"00107018","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"wg_socket_set_peer_endpoint","address":"0010715c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"FUN_0010990c","address":"0010990c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"FUN_0010a430","address":"0010a430","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"jp_spec_setup","address":"0010b948","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"FUN_0010bd18","address":"0010bd18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"wireguard_hotplug","address":"0010bed0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"zinc_blake2s_update","address":"0010fba8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"zinc_blake2s_init_key","address":"0011236c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"zinc_blake2s_final","address":"00112494","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"blake2s_hmac","address":"00113864","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"FUN_00113a2c","address":"00113a2c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"amneziawg.ko","function":"FUN_00116110","address":"00116110","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

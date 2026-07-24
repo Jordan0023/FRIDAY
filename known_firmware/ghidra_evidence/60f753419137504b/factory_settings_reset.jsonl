@@ -1,0 +1,4 @@
+{"binary":"factory_settings_reset","function":"strcpy","address":"0000865c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"factory_settings_reset","function":"system","address":"000086a4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"factory_settings_reset","function":"fopen","address":"0000871c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"factory_settings_reset","function":"sprintf","address":"00008758","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

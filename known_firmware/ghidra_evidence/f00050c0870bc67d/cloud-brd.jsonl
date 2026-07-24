@@ -1,0 +1,4 @@
+{"binary":"cloud-brd","function":"FUN_00011c18","address":"00011c18","route":"/tmp/cloud-brd","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cloud-brd","function":"FUN_000126b8","address":"000126b8","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cloud-brd","function":"FUN_0001305c","address":"0001305c","route":"/tmp/cloud.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cloud-brd","function":"FUN_0001305c","address":"0001305c","route":"/tmp/cloud.pid","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

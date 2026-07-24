@@ -1,0 +1,12 @@
+{"binary":"libbwdpi_sql.so","function":"FUN_00011760","address":"00011760","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"AiProtectionMonitor_result","address":"00011bf0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_maclist_db","address":"00011d9c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_appStat","address":"00012270","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_appStat","address":"00012270","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"sqlite_Stat_hook","address":"00012c44","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_HistoryStat","address":"000136bc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_HistoryStat","address":"000136bc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_info","address":"00014300","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_ips","address":"00014b4c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_nonips","address":"00015234","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_cgi_mon_del_db","address":"00015d50","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

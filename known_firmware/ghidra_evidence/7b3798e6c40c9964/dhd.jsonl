@@ -1,0 +1,2 @@
+{"binary":"dhdctl","function":"FUN_0000a59c","address":"0000a59c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhdctl","function":"FUN_00013248","address":"00013248","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

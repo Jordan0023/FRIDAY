@@ -1,0 +1,4 @@
+{"binary":"qca-nss-dp.ko","function":"FUN_001059ac","address":"001059ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-dp.ko","function":"FUN_001092ac","address":"001092ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-dp.ko","function":"FUN_0010de1c","address":"0010de1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-dp.ko","function":"edma_cfg_rx_loopback_rings","address":"001112f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

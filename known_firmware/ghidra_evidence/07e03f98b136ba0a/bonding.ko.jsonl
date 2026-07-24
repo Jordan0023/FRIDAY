@@ -1,0 +1,13 @@
+{"binary":"bonding.ko","function":"bond_set_mac_address","address":"000112c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_enslave","address":"00013c28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_do_ioctl","address":"00014f18","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"FUN_00016bc0","address":"00016bc0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"FUN_00019fec","address":"00019fec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_alb_handle_active_change","address":"0001b2a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_alb_set_mac_address","address":"0001b458","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bonding_store_bonds","address":"0001b6ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bonding_store_l2da_table","address":"0001bd80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bonding_store_l2da_default_slave","address":"0001c548","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_option_slaves_set","address":"0001de54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_option_active_slave_set","address":"0001e280","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_opt_parse","address":"0001edb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

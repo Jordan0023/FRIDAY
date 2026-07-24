@@ -1,0 +1,4 @@
+{"binary":"qca-nss-eip.ko","function":"eip_tr_ahash_key2digest","address":"00013f90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_aead_gcm_init","address":"000144d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_ipsec_dec_cmn_init","address":"000159cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_ipsec_enc_cmn_init","address":"00016490","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"liblzo2.so.2.0.0","function":"lzo1x_999_compress_internal","address":"0001f3d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2.0.0","function":"lzo1y_999_compress_internal","address":"0002205c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblzo2.so.2.0.0","function":"lzo1z_999_compress_internal","address":"00024810","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

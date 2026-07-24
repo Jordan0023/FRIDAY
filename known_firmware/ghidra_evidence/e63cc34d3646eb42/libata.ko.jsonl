@@ -1,0 +1,2 @@
+{"binary":"libata.ko","function":"FUN_000197a8","address":"000197a8","route":"/ata/libata-scsi.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libata.ko","function":"FUN_000197a8","address":"000197a8","route":"/ata/libata-scsi.c:2976","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

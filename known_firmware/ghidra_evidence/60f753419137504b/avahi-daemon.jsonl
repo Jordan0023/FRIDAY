@@ -1,0 +1,5 @@
+{"binary":"avahi-daemon","function":"sscanf","address":"0000b878","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"memmove","address":"0000b9c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"open","address":"0000bb18","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"fopen","address":"0000c16c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-daemon","function":"memcpy","address":"0000c208","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

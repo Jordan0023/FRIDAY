@@ -1,0 +1,9 @@
+{"binary":"libldbsamba-samba4.so","function":"dsdb_syntax_INT64_validate_ldb","address":"0001e91c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldbsamba-samba4.so","function":"dsdb_syntax_NTTIME_UTC_validate_ldb","address":"0001ed7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldbsamba-samba4.so","function":"dsdb_syntax_INT32_validate_ldb","address":"0001f9a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldbsamba-samba4.so","function":"dsdb_syntax_PRESENTATION_ADDRESS_ldb_to_drsuapi","address":"0001fc00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldbsamba-samba4.so","function":"dsdb_schema_pfm_oid_from_attid","address":"000243dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldbsamba-samba4.so","function":"ldif_read_range64","address":"000252dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldbsamba-samba4.so","function":"ldif_read_objectSid","address":"00025e24","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldbsamba-samba4.so","function":"dsdb_match_for_expunge","address":"000276f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldbsamba-samba4.so","function":"dsdb_match_for_dns_to_tombstone_time","address":"00027fe4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

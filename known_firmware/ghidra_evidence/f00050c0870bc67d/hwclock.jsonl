@@ -1,0 +1,5 @@
+{"binary":"hwclock","function":"FUN_00010ff8","address":"00010ff8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hwclock","function":"FUN_00010ff8","address":"00010ff8","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hwclock","function":"FUN_00010ff8","address":"00010ff8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hwclock","function":"FUN_0001222c","address":"0001222c","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hwclock","function":"FUN_0001222c","address":"0001222c","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

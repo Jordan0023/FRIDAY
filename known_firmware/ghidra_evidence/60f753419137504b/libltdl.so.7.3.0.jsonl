@@ -1,0 +1,15 @@
+{"binary":"libltdl.so.7.3.0","function":"FUN_00012424","address":"00012424","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_00012424","address":"00012424","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_00012424","address":"00012424","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_00012690","address":"00012690","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_00012a18","address":"00012a18","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_00012a18","address":"00012a18","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_00012c20","address":"00012c20","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_00012c20","address":"00012c20","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_00012c20","address":"00012c20","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_00012c20","address":"00012c20","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_000137b0","address":"000137b0","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"FUN_000137b0","address":"000137b0","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"lt__argz_append","address":"00015370","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"lt__argz_insert","address":"000155c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libltdl.so.7.3.0","function":"lt__argz_insert","address":"000155c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

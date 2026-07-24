@@ -1,0 +1,7 @@
+{"binary":"fuse.ko","function":"fuse_do_ioctl","address":"00018a88","route":"/fuse/file.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fuse.ko","function":"fuse_writepages_fill","address":"0001c0cc","route":"/fuse/file.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fuse.ko","function":"fuse_conn_waiting_read","address":"0001e8b4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fuse.ko","function":"fuse_conn_max_background_read","address":"0001ec98","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fuse.ko","function":"fuse_conn_congestion_threshold_read","address":"0001ed1c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fuse.ko","function":"fuse_ctl_add_conn","address":"0001ee14","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fuse.ko","function":"FUN_0001f76c","address":"0001f76c","route":"/fuse/readdir.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

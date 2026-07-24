@@ -1,0 +1,14 @@
+{"binary":"app_ble","function":"FUN_0001261c","address":"0001261c","route":"/fw_core_dump.log","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_000189bc","address":"000189bc","route":"/etc/rc.d/S49bluetooth","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_000189bc","address":"000189bc","route":"/etc/rc.d/S49bluetooth","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_0001b4fc","address":"0001b4fc","route":"/bt_ble_client_devices.xml","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_0001b4fc","address":"0001b4fc","route":"/creating","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_0001b954","address":"0001b954","route":"/bt_ble_client_devices.xml","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_0001b954","address":"0001b954","route":"/%d","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_0001ffd8","address":"0001ffd8","route":"/fw_core_dump.log","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_0002161c","address":"0002161c","route":"/%d","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_000217b8","address":"000217b8","route":"/%d","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_00021984","address":"00021984","route":"/%d","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_00021b50","address":"00021b50","route":"/creating","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_00021e7c","address":"00021e7c","route":"/creating","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"app_ble","function":"FUN_000227bc","address":"000227bc","route":"/creating","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

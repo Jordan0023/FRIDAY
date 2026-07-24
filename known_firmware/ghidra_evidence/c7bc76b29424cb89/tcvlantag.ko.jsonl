@@ -1,0 +1,3 @@
+{"binary":"tcvlantag.ko","function":"FUN_000110bc","address":"000110bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcvlantag.ko","function":"FUN_000115b0","address":"000115b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tcvlantag.ko","function":"FUN_00011740","address":"00011740","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,6 @@
+{"binary":"libairiq.so.2.6","function":"BsaCfgAddIntParam","address":"0003de10","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq.so.2.6","function":"BsaCfgAddIntParam","address":"0003de10","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq.so.2.6","function":"BsaCfgAddStringParam","address":"0003de7c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq.so.2.6","function":"BsaCfgAddStringParam","address":"0003de7c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq.so.2.6","function":"BsaCfgAddBooleanParam","address":"0003deac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq.so.2.6","function":"BsaCfgAddBooleanParam","address":"0003deac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

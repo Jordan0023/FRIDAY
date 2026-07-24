@@ -1,0 +1,12 @@
+{"binary":"unzipsfx","function":"FUN_00404458","address":"00404458","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00405668","address":"00405668","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00405668","address":"00405668","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00408558","address":"00408558","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00408558","address":"00408558","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00408644","address":"00408644","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00408644","address":"00408644","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00408e2c","address":"00408e2c","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00408e2c","address":"00408e2c","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_004092c4","address":"004092c4","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_004092c4","address":"004092c4","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_004092c4","address":"004092c4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

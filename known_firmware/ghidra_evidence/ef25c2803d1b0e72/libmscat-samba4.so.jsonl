@@ -1,0 +1,1 @@
+{"binary":"libmscat-samba4.so","function":"ctl_get_member_attributes","address":"00011d98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"nvram","function":"FUN_004012a0","address":"004012a0","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram","function":"FUN_004012a0","address":"004012a0","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram","function":"FUN_004012a0","address":"004012a0","route":"/*","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram","function":"FUN_004022b4","address":"004022b4","route":"/dev/urandom","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nvram","function":"FUN_004022b8","address":"004022b8","route":"/dev/urandom","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"rtl8366ub-mdio.ko","function":"FUN_00100d30","address":"00100d30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rtl8366ub-mdio.ko","function":"FUN_0010176c","address":"0010176c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rtl8366ub-mdio.ko","function":"rtl8366ub_wan_status_update","address":"00101770","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

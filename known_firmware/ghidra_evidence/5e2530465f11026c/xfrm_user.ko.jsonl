@@ -1,0 +1,3 @@
+{"binary":"xfrm_user.ko","function":"FUN_000130b8","address":"000130b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xfrm_user.ko","function":"xfrm_add_sa","address":"0001447c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xfrm_user.ko","function":"xfrm_add_sa","address":"0001447c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

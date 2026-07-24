@@ -1,0 +1,9 @@
+{"binary":"libshn_pctrl.so","function":"pctrl","address":"000465c4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_pctrl.so","function":"pctrl","address":"000465c4","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_pctrl.so","function":"pctrl","address":"000465c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_pctrl.so","function":"RAND_poll","address":"0006adf0","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_pctrl.so","function":"EVP_MD_CTX_copy_ex","address":"0006b418","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_pctrl.so","function":"EVP_CIPHER_CTX_copy","address":"0006c380","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_pctrl.so","function":"X509_NAME_oneline","address":"00082cd8","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_pctrl.so","function":"EC_GROUP_copy","address":"000b67e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_pctrl.so","function":"ec_wNAF_mul","address":"000b7c2c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,10 @@
+{"binary":"crypto-eip-inline.ko","function":"mtk_crypto_basic_cipher","address":"001010e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"Token","correlation":"function-local-co-location"}
+{"binary":"crypto-eip-inline.ko","function":"crypto_ahash_token_req","address":"00101c50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"Token,token","correlation":"function-local-co-location"}
+{"binary":"crypto-eip-inline.ko","function":"crypto_ahash_aes_cbc","address":"00102058","route":"/*","sink":"memory_operation","sources":"","auth_markers":"Token,token","correlation":"function-local-co-location"}
+{"binary":"crypto-eip-inline.ko","function":"crypto_first_ahash_req","address":"00102720","route":"/*","sink":"memory_operation","sources":"","auth_markers":"Token,token","correlation":"function-local-co-location"}
+{"binary":"crypto-eip-inline.ko","function":"crypto_basic_hash","address":"00102e10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"Token,token","correlation":"function-local-co-location"}
+{"binary":"crypto-eip-inline.ko","function":"FUN_00105e18","address":"00105e18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-eip-inline.ko","function":"FUN_00106e84","address":"00106e84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-eip-inline.ko","function":"FUN_00106e88","address":"00106e88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-eip-inline.ko","function":"FUN_00107fa8","address":"00107fa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto-eip-inline.ko","function":"FUN_00109710","address":"00109710","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"libpthread-0.9.32.so","function":"FUN_0001dae8","address":"0001dae8","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpthread-0.9.32.so","function":"sem_open","address":"0001e95c","route":"/';","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpthread-0.9.32.so","function":"pthread_getattr_np","address":"0001ee78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpthread-0.9.32.so","function":"pthread_getattr_np","address":"0001ee78","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpthread-0.9.32.so","function":"pthread_getattr_np","address":"0001ee78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

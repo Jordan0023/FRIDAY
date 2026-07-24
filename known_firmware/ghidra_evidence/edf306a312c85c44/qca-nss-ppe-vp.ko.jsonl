@@ -1,0 +1,3 @@
+{"binary":"qca-nss-ppe-vp.ko","function":"FUN_00100874","address":"00100874","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-vp.ko","function":"FUN_00101d10","address":"00101d10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-vp.ko","function":"FUN_00101f10","address":"00101f10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

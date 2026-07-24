@@ -1,0 +1,3 @@
+{"binary":"libqca_tools.so","function":"is_new_channel_display_format","address":"000111fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqca_tools.so","function":"is_new_channel_display_format","address":"000111fc","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqca_tools.so","function":"get_config_mode_type","address":"000112c4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,17 @@
+{"binary":"bcmxtmcfg.ko","function":"Initialize","address":"00011058","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"GetTrafficDescrTable","address":"00011d44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"SetTrafficDescrTable","address":"00011da0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"GetConnAddrs","address":"000123cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"SendOamCell","address":"00012908","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"SetInterfaceLinkInfo","address":"0001311c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"SetLinkInfo","address":"000145a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"GetCfg","address":"00014bdc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"GetAddr","address":"00014dc4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"SetAddr","address":"00014de4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"GetCfg","address":"00014dfc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"CreateNetworkDevice","address":"00014ea0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"SetLinkInfo","address":"000169f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"CheckTransmitQueues","address":"00017010","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"SetCfg","address":"00017330","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"SendCell","address":"00017d50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmxtmcfg.ko","function":"SendAsmCell","address":"00019364","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

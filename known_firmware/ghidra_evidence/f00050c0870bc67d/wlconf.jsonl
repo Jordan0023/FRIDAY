@@ -1,0 +1,9 @@
+{"binary":"wlconf","function":"wlconf_security_options","address":"00011ab0","route":"/*","sink":"memory_operation","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlconf","function":"wlconf_security_options","address":"00011ab0","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlconf","function":"wlconf_security_options","address":"00011ab0","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlconf","function":"wlconf_security_options","address":"00011ab0","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlconf","function":"wlconf_down","address":"0001bd08","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlconf","function":"wlconf_start","address":"0001c324","route":"/dev/console","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlconf","function":"wlconf_start","address":"0001c324","route":"/dev/console","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlconf","function":"wlconf_start","address":"0001c324","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlconf","function":"wlconf_start","address":"0001c324","route":"/*","sink":"configuration_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

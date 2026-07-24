@@ -1,0 +1,3 @@
+{"binary":"libbcmmcast.so","function":"bcm_mcast_api_update_igmp_snoop","address":"000122e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcmmcast.so","function":"bcm_mcast_api_update_mld_snoop","address":"000124e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcmmcast.so","function":"bcm_mcast_api_ifname_to_idx","address":"00012f54","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

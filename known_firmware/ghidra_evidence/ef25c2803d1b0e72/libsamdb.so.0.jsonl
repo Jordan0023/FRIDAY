@@ -1,0 +1,4 @@
+{"binary":"libsamdb.so.0.0.1","function":"dsdb_replicated_objects_convert","address":"00018cd0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamdb.so.0.0.1","function":"authsam_make_user_info_dc","address":"0001b6dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamdb.so.0.0.1","function":"auth_generate_session_info","address":"0001d218","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamdb.so.0.0.1","function":"drsuapi_encrypt_attribute","address":"0001ded4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"br_netfilter.ko","function":"br_nf_dev_queue_xmit","address":"00010948","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

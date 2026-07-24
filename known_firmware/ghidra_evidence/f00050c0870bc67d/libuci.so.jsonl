@@ -1,0 +1,17 @@
+{"binary":"libuci.so","function":"FUN_00011860","address":"00011860","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"uci_delete","address":"00012eac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"uci_set","address":"00013478","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"FUN_00013ff4","address":"00013ff4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"FUN_00014068","address":"00014068","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"FUN_00014068","address":"00014068","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"uci_import","address":"000147d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"uci_import","address":"000147d0","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"FUN_00014dc4","address":"00014dc4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"FUN_00014fe8","address":"00014fe8","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"FUN_00014fe8","address":"00014fe8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"FUN_00015508","address":"00015508","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"FUN_0001577c","address":"0001577c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"FUN_00015aa0","address":"00015aa0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"FUN_00015aa0","address":"00015aa0","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"uci_save","address":"00016150","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuci.so","function":"uci_revert","address":"00016514","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

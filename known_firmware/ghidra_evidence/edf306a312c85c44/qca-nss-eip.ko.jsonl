@@ -1,0 +1,9 @@
+{"binary":"qca-nss-eip.ko","function":"FUN_0010351c","address":"0010351c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_skcipher_init","address":"00103520","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_ahash_key2digest","address":"00104308","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_aead_init","address":"00104738","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_aead_gcm_init","address":"00104920","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_ipsec_dec_cmn_init","address":"00105f78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_ipsec_enc_cmn_init","address":"00106a64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_dtls_dec_cmn_init","address":"001082f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-eip.ko","function":"eip_tr_dtls_enc_cmn_init","address":"00108c1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

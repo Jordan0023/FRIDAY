@@ -1,0 +1,9 @@
+{"binary":"dbus-daemon","function":"vsprintf","address":"0000a51c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon","function":"execve","address":"0000a528","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon","function":"memmove","address":"0000a714","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon","function":"open","address":"0000a7c8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon","function":"rename","address":"0000a828","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon","function":"fopen","address":"0000ab7c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon","function":"memcpy","address":"0000abd0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon","function":"FUN_0003c14c","address":"0003c14c","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-daemon","function":"FUN_0003dad0","address":"0003dad0","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

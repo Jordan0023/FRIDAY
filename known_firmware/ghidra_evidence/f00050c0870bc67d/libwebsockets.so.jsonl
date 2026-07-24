@@ -1,0 +1,3 @@
+{"binary":"libwebsockets.so.13","function":"FUN_00024a38","address":"00024a38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebsockets.so.13","function":"FUN_000328b8","address":"000328b8","route":"/'))","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libwebsockets.so.13","function":"FUN_000328b8","address":"000328b8","route":"/'))))","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

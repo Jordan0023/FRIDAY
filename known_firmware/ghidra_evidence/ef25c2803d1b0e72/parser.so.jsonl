@@ -1,0 +1,1 @@
+{"binary":"parser.so","function":"buf_append","address":"00011f64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

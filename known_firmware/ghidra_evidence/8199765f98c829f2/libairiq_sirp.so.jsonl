@@ -1,0 +1,12 @@
+{"binary":"libairiq_sirp.so.2.6","function":"FUN_000155f0","address":"000155f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"BsaConnect","address":"00015b18","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"BsaConnect","address":"00015b18","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"BsaConnectWithKey","address":"00016268","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"BsaConnectWithKey","address":"00016268","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"FUN_000222c0","address":"000222c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"FUN_00025bbc","address":"00025bbc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"FUN_0002e47c","address":"0002e47c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"FUN_00033d9c","address":"00033d9c","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"FUN_0003504c","address":"0003504c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"FUN_0003667c","address":"0003667c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libairiq_sirp.so.2.6","function":"FUN_0003667c","address":"0003667c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"rdpa_mw.ko","function":"dhd_offload_config_get","address":"00102ec0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rdpa_mw.ko","function":"qm_queues_size_get","address":"00102f50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rdpa_mw.ko","function":"rdpa_init_system","address":"00103190","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rdpa_mw.ko","function":"rdpa_init_system","address":"00103190","route":"/../bcmdrivers/opensource/char/rdpa_mw/bcm96813/rdpa_mw_sys_init.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

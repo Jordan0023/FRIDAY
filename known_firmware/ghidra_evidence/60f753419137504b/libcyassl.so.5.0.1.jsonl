@@ -1,0 +1,1 @@
+{"binary":"libcyassl.so.5.0.1","function":"CyaSSL_CTX_SetTmpDH_file","address":"00023984","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

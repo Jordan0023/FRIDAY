@@ -149,6 +149,13 @@ Candidate JSON includes `auth_class`, `exposure`, `impact_class`,
 records why routes were filtered, while `service_surface` highlights LAN/WAN
 parsers such as UPnP, DNS, DHCP, file sharing, cloud, and mesh services.
 
+Promoted impactful candidates are deliberately narrow: they must have static
+evidence of no authentication, LAN or WAN exposure, and either possible command
+execution or memory corruption. Unknown authentication is not treated as
+unauthenticated. Memory corruption is only a DoS/RCE lead until an isolated
+runtime test proves an attacker-correlated, repeatable fault; generic resource
+exhaustion is excluded.
+
 Validation recipes are intentionally limited to localhost/isolated namespaces,
 disable external networking, avoid persistence, and write markers only beneath
 `/tmp/friday-proof`. The Docker image includes AFL++, QEMU user emulation,

@@ -1,0 +1,9 @@
+{"binary":"libyaml-0.so.2.0.9","function":"FUN_000115d4","address":"000115d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libyaml-0.so.2.0.9","function":"yaml_string_join","address":"00011860","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libyaml-0.so.2.0.9","function":"yaml_scalar_event_initialize","address":"00012cb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libyaml-0.so.2.0.9","function":"yaml_document_add_scalar","address":"00013898","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libyaml-0.so.2.0.9","function":"yaml_parser_update_buffer","address":"00014170","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libyaml-0.so.2.0.9","function":"FUN_00016550","address":"00016550","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libyaml-0.so.2.0.9","function":"yaml_parser_fetch_more_tokens","address":"00019c84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libyaml-0.so.2.0.9","function":"yaml_parser_parse","address":"0001dd4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libyaml-0.so.2.0.9","function":"FUN_00024b88","address":"00024b88","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

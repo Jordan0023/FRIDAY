@@ -1,0 +1,7 @@
+{"binary":"libbcm_boardctl.so","function":"getScratchPadFile","address":"00010d4c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_boardctl.so","function":"devCtl_flashReadFile","address":"0001121c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_boardctl.so","function":"devCtl_flashWriteFile","address":"000113fc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_boardctl.so","function":"devCtl_scratchPadList","address":"0001158c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_boardctl.so","function":"devCtl_scratchPadGet","address":"000117bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_boardctl.so","function":"devCtl_scratchPadSet","address":"000119d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbcm_boardctl.so","function":"devCtl_boardDriverIoctl","address":"00012068","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

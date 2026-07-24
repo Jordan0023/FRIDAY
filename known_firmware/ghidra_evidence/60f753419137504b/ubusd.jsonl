@@ -1,0 +1,4 @@
+{"binary":"ubusd","function":"strcpy","address":"00008a1c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubusd","function":"memcpy","address":"00008a4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubusd","function":"open","address":"00008c08","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubusd","function":"FUN_0000932c","address":"0000932c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

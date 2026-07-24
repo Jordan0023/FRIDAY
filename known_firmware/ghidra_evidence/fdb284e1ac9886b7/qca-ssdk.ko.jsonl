@@ -1,0 +1,2 @@
+{"binary":"qca-ssdk.ko","function":"isisc_acl_rule_add","address":"00149778","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-ssdk.ko","function":"cmd_data_check_intf","address":"001771f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

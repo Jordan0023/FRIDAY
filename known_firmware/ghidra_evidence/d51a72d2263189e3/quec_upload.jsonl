@@ -1,0 +1,3 @@
+{"binary":"quec_upload","function":"FUN_00400f80","address":"00400f80","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"quec_upload","function":"FUN_00401044","address":"00401044","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"quec_upload","function":"FUN_00401044","address":"00401044","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

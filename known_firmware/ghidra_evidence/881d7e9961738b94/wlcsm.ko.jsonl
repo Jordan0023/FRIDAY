@@ -1,0 +1,4 @@
+{"binary":"wlcsm.ko","function":"wlcsm_nl_rcv_skb","address":"00100040","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlcsm.ko","function":"wlcsm_nl_rcv_skb","address":"00100040","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlcsm.ko","function":"_wlcsm_nvram_tuple_insert","address":"00100a70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlcsm.ko","function":"wlcsm_nvram_getall_pos","address":"001012b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

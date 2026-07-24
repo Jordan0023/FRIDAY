@@ -1,0 +1,3 @@
+{"binary":"libcomposite.ko","function":"composite_setup","address":"00101ac8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcomposite.ko","function":"composite_setup","address":"00101ac8","route":"/%p)","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcomposite.ko","function":"FUN_00105404","address":"00105404","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

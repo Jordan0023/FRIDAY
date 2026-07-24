@@ -1,0 +1,1 @@
+{"binary":"cdc_ncm.ko","function":"cdc_ncm_fill_tx_frame","address":"00011990","route":"/net/usb/cdc_ncm.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

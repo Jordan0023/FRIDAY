@@ -1,0 +1,1 @@
+{"binary":"rt2x00lib.ko","function":"rt2x00mac_set_key","address":"00012bac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

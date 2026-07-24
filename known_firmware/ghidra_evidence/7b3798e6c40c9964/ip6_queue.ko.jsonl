@@ -1,0 +1,1 @@
+{"binary":"ip6_queue.ko","function":"ipq_enqueue_packet","address":"000100d8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -40,6 +40,8 @@ def download_known_set(
     downloaded = 0
     known_products = set(manifest.products)
     for product in products:
+        if manifest.is_eol(product.name):
+            continue
         if skip_known_products and product.name in known_products:
             continue
         products_seen += 1
@@ -52,6 +54,7 @@ def download_known_set(
         except TimeoutError as exc:
             print(f"Skipping {product.name}: {exc}")
             continue
+        links = [link for link in links if manifest.accepts_link(link)]
         if limit_firmware is not None:
             links = links[:limit_firmware]
         for link in links:
@@ -103,6 +106,8 @@ def check_new_firmware(
     checked = 0
     downloaded = 0
     for product in products:
+        if manifest.is_eol(product.name):
+            continue
         print(f"Checking {product.name}")
         manifest.add_product(product.name, product.url)
         manifest.save()
@@ -112,6 +117,7 @@ def check_new_firmware(
         except TimeoutError as exc:
             print(f"Skipping {product.name}: {exc}")
             continue
+        links = [link for link in links if manifest.accepts_link(link)]
         if limit_firmware is not None:
             links = links[:limit_firmware]
         for link in links:

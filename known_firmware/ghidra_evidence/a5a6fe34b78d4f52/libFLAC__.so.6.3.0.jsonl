@@ -1,0 +1,5 @@
+{"binary":"libFLAC++.so.6.3.0","function":"compose_field","address":"0001ee64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libFLAC++.so.6.3.0","function":"set_field_value","address":"0001ef68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libFLAC++.so.6.3.0","function":"parse_field","address":"0001f174","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libFLAC++.so.6.3.0","function":"set_field","address":"0001f25c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libFLAC++.so.6.3.0","function":"set_media_catalog_number","address":"0001f914","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

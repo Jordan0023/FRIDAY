@@ -1,0 +1,5 @@
+{"binary":"libc.so","function":"execl","address":"0014772c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"execv","address":"00147bcc","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"system","address":"00148c5c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"system","address":"00148c5c","route":"/bin/sh","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libc.so","function":"popen","address":"00156a20","route":"/bin/sh","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}

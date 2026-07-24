@@ -1,0 +1,1 @@
+{"binary":"ath_spectral.ko","function":"spectral_control","address":"00011318","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

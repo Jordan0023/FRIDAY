@@ -1,0 +1,6 @@
+{"binary":"libws.so","function":"dbg_log_downsizing","address":"00013dac","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libws.so","function":"dbg_log_downsizing","address":"00013dac","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libws.so","function":"alloc_time_string","address":"0001b828","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libws.so","function":"alloc_time_string","address":"0001b828","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libws.so","function":"get_md5_string","address":"0001bb30","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libws.so","function":"get_md5_string","address":"0001bb30","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

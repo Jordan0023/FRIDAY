@@ -1,0 +1,9 @@
+{"binary":"ddns.so","function":"FUN_00010f84","address":"00010f84","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ddns.so","function":"ddns_config_set","address":"000110cc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ddns.so","function":"ddns_analysis","address":"00011a7c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ddns.so","function":"get_modem_ifname","address":"00011c44","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ddns.so","function":"get_modem_ifname","address":"00011c44","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ddns.so","function":"get_ipv6_by_ifname_and_interface","address":"00011ee8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ddns.so","function":"get_ipv6_by_ifname_and_interface","address":"00011ee8","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ddns.so","function":"get_ipv6_by_ifname_and_interface","address":"00011ee8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ddns.so","function":"get_status","address":"00012110","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

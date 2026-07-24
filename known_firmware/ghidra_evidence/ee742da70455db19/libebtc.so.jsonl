@@ -1,0 +1,17 @@
+{"binary":"libebtc.so","function":"ebt_deliver_table","address":"00012950","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_deliver_table","address":"00012950","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_deliver_counters","address":"00012fe8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_get_table","address":"00013578","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_get_table","address":"00013578","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_get_table","address":"00013578","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_reinit_extensions","address":"00014628","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebtables_insmod","address":"0001496c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebtables_insmod","address":"0001496c","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_double_chains","address":"00015110","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_new_chain","address":"00015188","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_register_match","address":"00015460","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_register_watcher","address":"00015520","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"ebt_register_target","address":"000155e0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"FUN_000176f8","address":"000176f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"get_global_mutex","address":"00018120","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libebtc.so","function":"do_command","address":"000182cc","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

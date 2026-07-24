@@ -1,0 +1,3 @@
+{"binary":"libjq.so.1.0.4","function":"FUN_00021638","address":"00021638","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjq.so.1.0.4","function":"FUN_0002d3f8","address":"0002d3f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjq.so.1.0.4","function":"FUN_0002fe38","address":"0002fe38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

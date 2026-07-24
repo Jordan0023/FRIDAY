@@ -1,0 +1,7 @@
+{"binary":"bridge-utils-brctl","function":"FUN_00401b68","address":"00401b68","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bridge-utils-brctl","function":"FUN_00401c90","address":"00401c90","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bridge-utils-brctl","function":"FUN_00401e08","address":"00401e08","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bridge-utils-brctl","function":"FUN_00401eac","address":"00401eac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bridge-utils-brctl","function":"FUN_0040210c","address":"0040210c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bridge-utils-brctl","function":"FUN_00402464","address":"00402464","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bridge-utils-brctl","function":"FUN_00402464","address":"00402464","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,7 @@
+{"binary":"libxml2.so.2.7.8","function":"xmlSplitQName","address":"00033d0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.7.8","function":"xmlBuildRelativeURI","address":"0005bd7c","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.7.8","function":"xmlBuildRelativeURI","address":"0005bd7c","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.7.8","function":"xmlBuildRelativeURI","address":"0005bd7c","route":"/'","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.7.8","function":"xmlXPathParseNCName","address":"0007b624","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.7.8","function":"xmlXPathParseName","address":"0007b768","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxml2.so.2.7.8","function":"FUN_000be2e4","address":"000be2e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

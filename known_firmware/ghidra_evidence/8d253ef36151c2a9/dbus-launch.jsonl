@@ -1,0 +1,11 @@
+{"binary":"dbus-launch","function":"FUN_00401ea4","address":"00401ea4","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00401ea4","address":"00401ea4","route":"/dev/null","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00401ea4","address":"00401ea4","route":"/dev/null:","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_0040216c","address":"0040216c","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_0040216c","address":"0040216c","route":"/dev/null:","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_0040216c","address":"0040216c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00402218","address":"00402218","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00402534","address":"00402534","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00402534","address":"00402534","route":"/*","sink":"exec","sources":"getenv","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00402534","address":"00402534","route":"/usr/sbin/dbus-daemon","sink":"unsafe_copy","sources":"getenv","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"dbus-launch","function":"FUN_00402534","address":"00402534","route":"/usr/sbin/dbus-daemon","sink":"exec","sources":"getenv","auth_markers":"session","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"mke2fs","function":"FUN_0040ad14","address":"0040ad14","route":"/sbin","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mke2fs","function":"FUN_0040ad14","address":"0040ad14","route":"/sys/fs/ext4/features/lazy_itable_init","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mke2fs","function":"FUN_0040ad14","address":"0040ad14","route":"/max","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mke2fs","function":"FUN_0040ad14","address":"0040ad14","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"libads-samba4.so","function":"FUN_00013814","address":"00013814","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libads-samba4.so","function":"get_dc_name","address":"00017a10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

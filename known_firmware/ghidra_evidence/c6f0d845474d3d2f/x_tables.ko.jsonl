@@ -1,0 +1,3 @@
+{"binary":"x_tables.ko","function":"xt_proto_init","address":"00010bfc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"x_tables.ko","function":"xt_proto_fini","address":"00010fe8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"x_tables.ko","function":"xt_copy_counters","address":"00012d70","route":"/linux/thread_info.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"mt7993_dbg.ko","function":"FUN_00100138","address":"00100138","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7993_dbg.ko","function":"FUN_001004d0","address":"001004d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"mt7993_dbg.ko","function":"FUN_001004d0","address":"001004d0","route":"/bn/bc/bd/cn","sink":"memory_operation","sources":"","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"mt7993_dbg.ko","function":"FUN_001004d0","address":"001004d0","route":"/%d/%d/%d/%d","sink":"memory_operation","sources":"","auth_markers":"session","correlation":"function-local-co-location"}

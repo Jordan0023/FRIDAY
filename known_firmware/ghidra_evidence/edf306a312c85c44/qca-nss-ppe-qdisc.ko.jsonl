@@ -1,0 +1,6 @@
+{"binary":"qca-nss-ppe-qdisc.ko","function":"FUN_00100204","address":"00100204","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-qdisc.ko","function":"FUN_00101d84","address":"00101d84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-qdisc.ko","function":"FUN_00101d84","address":"00101d84","route":"/net/sch_generic.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-qdisc.ko","function":"FUN_001079f8","address":"001079f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-qdisc.ko","function":"FUN_00108554","address":"00108554","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe-qdisc.ko","function":"FUN_00109304","address":"00109304","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

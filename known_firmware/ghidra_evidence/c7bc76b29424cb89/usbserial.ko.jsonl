@@ -1,0 +1,3 @@
+{"binary":"usbserial.ko","function":"FUN_00012be0","address":"00012be0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbserial.ko","function":"FUN_00012be0","address":"00012be0","route":"/usb/serial/usb-serial.c","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbserial.ko","function":"usb_serial_generic_write","address":"00013ce4","route":"/usb/serial/generic.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

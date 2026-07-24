@@ -1,0 +1,5 @@
+{"binary":"dbus-launch.real","function":"FUN_00010e98","address":"00010e98","route":"/*","sink":"unsafe_copy","sources":"read,getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"FUN_00010e98","address":"00010e98","route":"/*","sink":"unsafe_copy","sources":"read,getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"FUN_00010e98","address":"00010e98","route":"/*","sink":"exec","sources":"read,getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"FUN_00010e98","address":"00010e98","route":"/*","sink":"memory_operation","sources":"read,getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"FUN_00011f74","address":"00011f74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

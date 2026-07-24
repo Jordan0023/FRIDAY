@@ -1,0 +1,2 @@
+{"binary":"ubiupdatevol","function":"FUN_00010b8c","address":"00010b8c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiupdatevol","function":"FUN_00012014","address":"00012014","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"libcrypto.so.1.1","function":"FUN_001becd0","address":"001becd0","route":"/bio/bss_file.c","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.1.1","function":"FUN_001bf0dc","address":"001bf0dc","route":"/bio/bss_file.c","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.1.1","function":"BIO_new_file","address":"001bf0e0","route":"/bio/bss_file.c","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

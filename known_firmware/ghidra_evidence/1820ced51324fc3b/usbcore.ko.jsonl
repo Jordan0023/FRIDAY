@@ -1,0 +1,1 @@
+{"binary":"usbcore.ko","function":"usb_get_configuration","address":"0010d9c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

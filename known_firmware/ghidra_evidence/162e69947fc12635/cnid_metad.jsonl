@@ -1,0 +1,3 @@
+{"binary":"cnid_metad","function":"FUN_00009180","address":"00009180","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cnid_metad","function":"FUN_0000aa18","address":"0000aa18","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cnid_metad","function":"FUN_0000aa18","address":"0000aa18","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

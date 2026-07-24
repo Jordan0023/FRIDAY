@@ -1,0 +1,14 @@
+{"binary":"gl-silabs-dfu","function":"FUN_00401800","address":"00401800","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"FUN_00401800","address":"00401800","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"FUN_00401888","address":"00401888","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"FUN_00401888","address":"00401888","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"bgapi_main","address":"004018dc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"bgapi_main","address":"004018dc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"bgapi_main","address":"004018dc","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"bgapi_main","address":"004018dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"xmodemTransmit","address":"004023a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"xmodem_main","address":"00402aa8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"xmodem_main","address":"00402aa8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"xmodem_main","address":"00402aa8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"uartOpen","address":"00402e78","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-silabs-dfu","function":"uartOpen","address":"00402e78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

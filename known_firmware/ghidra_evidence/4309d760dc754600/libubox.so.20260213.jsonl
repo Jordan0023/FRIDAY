@@ -1,0 +1,16 @@
+{"binary":"libubox.so.20260213","function":"blob_put_raw","address":"00013de8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"blob_put","address":"00013e90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"blob_memdup","address":"0001428c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"FUN_00014384","address":"00014384","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"blobmsg_add_field","address":"00014c54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"FUN_00014f44","address":"00014f44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"usock_inet_timeout","address":"0001630c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"usock","address":"00016884","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"FUN_00016c18","address":"00016c18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"ustream_read","address":"000170b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"md5_hash","address":"00018d18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"md5sum","address":"00018f60","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"kvlist_set","address":"00019114","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"kvlist_set","address":"00019114","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"udebug_entry_append","address":"0001a694","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libubox.so.20260213","function":"udebug_remote_buf_snapshot","address":"0001b11c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

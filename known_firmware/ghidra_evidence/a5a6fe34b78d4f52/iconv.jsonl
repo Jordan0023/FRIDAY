@@ -1,0 +1,2 @@
+{"binary":"iconv","function":"FUN_000128f8","address":"000128f8","route":"/O","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"iconv","function":"FUN_000128f8","address":"000128f8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

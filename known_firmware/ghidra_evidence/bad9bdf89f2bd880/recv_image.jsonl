@@ -1,0 +1,2 @@
+{"binary":"recv_image","function":"FUN_00010828","address":"00010828","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"recv_image","function":"FUN_00010828","address":"00010828","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

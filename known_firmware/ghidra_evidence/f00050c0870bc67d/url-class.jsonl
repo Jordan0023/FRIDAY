@@ -1,0 +1,3 @@
+{"binary":"url-class","function":"FUN_00011778","address":"00011778","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"url-class","function":"FUN_00011778","address":"00011778","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"url-class","function":"FUN_00011778","address":"00011778","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

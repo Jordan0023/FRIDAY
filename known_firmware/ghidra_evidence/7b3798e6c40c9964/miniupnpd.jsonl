@@ -1,0 +1,2 @@
+{"binary":"miniupnpd","function":"FUN_0000bcb4","address":"0000bcb4","route":"/';","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"miniupnpd","function":"FUN_0000d4a8","address":"0000d4a8","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

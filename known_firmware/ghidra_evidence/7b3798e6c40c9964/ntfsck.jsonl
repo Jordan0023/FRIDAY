@@ -1,0 +1,4 @@
+{"binary":"ntfsck","function":"FUN_00012e10","address":"00012e10","route":"/sparse","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsck","function":"FUN_00016da8","address":"00016da8","route":"/$ObjId","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsck","function":"FUN_0001bdbc","address":"0001bdbc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfsck","function":"FUN_0001bdbc","address":"0001bdbc","route":"/1","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

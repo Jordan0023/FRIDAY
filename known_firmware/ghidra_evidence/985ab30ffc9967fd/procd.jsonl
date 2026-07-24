@@ -1,0 +1,12 @@
+{"binary":"procd","function":"FUN_00015498","address":"00015498","route":"/'))","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_00015af4","address":"00015af4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_00017300","address":"00017300","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_00017300","address":"00017300","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_00018260","address":"00018260","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_0001b7a4","address":"0001b7a4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_0001b7a4","address":"0001b7a4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_0001c1b8","address":"0001c1b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_0001c2ac","address":"0001c2ac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_0001c2ac","address":"0001c2ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_0001c534","address":"0001c534","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"procd","function":"FUN_0001c534","address":"0001c534","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

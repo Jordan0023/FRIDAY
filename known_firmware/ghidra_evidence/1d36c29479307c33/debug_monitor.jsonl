@@ -1,0 +1,17 @@
+{"binary":"debug_monitor","function":"FUN_00011258","address":"00011258","route":"/proc/meminfo","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_000113c8","address":"000113c8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_000113c8","address":"000113c8","route":"/%s%s","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_000113c8","address":"000113c8","route":"/tmp/crash_logs","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_000113c8","address":"000113c8","route":"/%s","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_000113c8","address":"000113c8","route":"/tmp/mem_dump","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_000113c8","address":"000113c8","route":"/tmp/dump_*.txt","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_000113c8","address":"000113c8","route":"/tmp/failed_if.txt","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_000113c8","address":"000113c8","route":"/Assert","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_00011bdc","address":"00011bdc","route":"/proc/%s","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_00011bdc","address":"00011bdc","route":"/%s","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_00011bdc","address":"00011bdc","route":"/tmp/dm","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_00011eb8","address":"00011eb8","route":"/assert","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_00011eb8","address":"00011eb8","route":"/tmp/crash_logs","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_00011eb8","address":"00011eb8","route":"/%s%s.tgz","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_00011eb8","address":"00011eb8","route":"/etc/init.d/bcm-wlan-drivers.sh","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"debug_monitor","function":"FUN_00011eb8","address":"00011eb8","route":"/wl","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,8 @@
+{"binary":"texfat.ko","function":"exfat_cluster_chain_realloc","address":"00014778","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"fat_readdir","address":"0001806c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"fat_dir_cache_add_dir","address":"00019e44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"exfat_ioctl","address":"0001cb54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"fat_lookup","address":"00021f5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"exfat_lookup","address":"000229d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"parse_options","address":"00027b28","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"texfat.ko","function":"exfat_fill_super","address":"0002a2e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

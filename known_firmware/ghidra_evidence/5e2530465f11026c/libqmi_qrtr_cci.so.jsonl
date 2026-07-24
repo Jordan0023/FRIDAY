@@ -1,0 +1,14 @@
+{"binary":"libqmi_qrtr_cci.so","function":"FUN_000133c4","address":"000133c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"qmi_cci_xport_recv","address":"0001514c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"qmi_client_init","address":"000164b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"qmi_client_send_raw_msg_async","address":"00016b3c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"qmi_client_send_raw_msg_sync","address":"000175e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"qmi_client_get_service_instance","address":"000185e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"FUN_0001ba80","address":"0001ba80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"FUN_0001c02c","address":"0001c02c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"FUN_0001c6a8","address":"0001c6a8","route":"/*","sink":"file_write","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"FUN_0001c6a8","address":"0001c6a8","route":"/*","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"FUN_0001e6e8","address":"0001e6e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"FUN_0001f1a8","address":"0001f1a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"FUN_0001ffb0","address":"0001ffb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libqmi_qrtr_cci.so","function":"FUN_00021840","address":"00021840","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"nas","function":"FUN_0000a628","address":"0000a628","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nas","function":"FUN_0000a81c","address":"0000a81c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nas","function":"FUN_000108dc","address":"000108dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

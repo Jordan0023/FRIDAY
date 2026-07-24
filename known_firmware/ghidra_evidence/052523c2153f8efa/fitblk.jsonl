@@ -1,0 +1,1 @@
+{"binary":"fitblk","function":"FUN_00400720","address":"00400720","route":"/dev/fitXXX","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

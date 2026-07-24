@@ -1,0 +1,11 @@
+{"binary":"mt_spectrum.ko","function":"spectrum_ops_parameter","address":"00100490","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt_spectrum.ko","function":"spectrum_ops_config","address":"00101248","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt_spectrum.ko","function":"spectrum_ops_config","address":"00101248","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt_spectrum.ko","function":"FUN_001015e4","address":"001015e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt_spectrum.ko","function":"spectrum_enqueue","address":"001015e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt_spectrum.ko","function":"FUN_00106d50","address":"00106d50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt_spectrum.ko","function":"FUN_0010766c","address":"0010766c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt_spectrum.ko","function":"FUN_00107670","address":"00107670","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt_spectrum.ko","function":"spectrum_params_interf_type","address":"00107b58","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt_spectrum.ko","function":"spectrum_params_interf_type","address":"00107b58","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt_spectrum.ko","function":"spectrum_params_interf_type","address":"00107b58","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

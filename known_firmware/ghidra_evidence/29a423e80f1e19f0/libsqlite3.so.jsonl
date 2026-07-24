@@ -1,0 +1,17 @@
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_000289e8","address":"000289e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00050190","address":"00050190","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00052740","address":"00052740","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00052740","address":"00052740","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00052740","address":"00052740","route":"/')))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00052740","address":"00052740","route":"/')))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00052740","address":"00052740","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00052740","address":"00052740","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00056d60","address":"00056d60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_0005feb0","address":"0005feb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00061f80","address":"00061f80","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00061f80","address":"00061f80","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_00061f80","address":"00061f80","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"sqlite3_load_extension","address":"00062544","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_000b4468","address":"000b4468","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"FUN_000bcfdc","address":"000bcfdc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsqlite3.so.0.8.6","function":"sqlite3_test_control","address":"000c5698","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

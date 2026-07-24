@@ -1,0 +1,3 @@
+{"binary":"nanddump","function":"FUN_00010d48","address":"00010d48","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00012490","address":"00012490","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"FUN_00015144","address":"00015144","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

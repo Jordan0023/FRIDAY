@@ -1,0 +1,2 @@
+{"binary":"odhcpd","function":"FUN_001140cc","address":"001140cc","route":"/proc/net/ipv6_route","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"odhcpd","function":"FUN_001140cc","address":"001140cc","route":"/proc/net/ipv6_route):","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

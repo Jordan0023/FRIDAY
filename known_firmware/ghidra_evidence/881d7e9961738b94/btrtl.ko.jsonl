@@ -1,0 +1,4 @@
+{"binary":"btrtl.ko","function":"rtl_download_firmware","address":"001000f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"btrtl.ko","function":"rtl_load_file","address":"00100260","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"btrtl.ko","function":"FUN_0010095c","address":"0010095c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"btrtl.ko","function":"btrtl_download_firmware","address":"00100960","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

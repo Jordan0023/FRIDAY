@@ -1,0 +1,8 @@
+{"binary":"registerReboot","function":"FUN_00010dc4","address":"00010dc4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"registerReboot","function":"FUN_00010fd8","address":"00010fd8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"registerReboot","function":"FUN_0001113c","address":"0001113c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"registerReboot","function":"FUN_000119a0","address":"000119a0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"registerReboot","function":"FUN_00011c4c","address":"00011c4c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"registerReboot","function":"FUN_00012408","address":"00012408","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"registerReboot","function":"FUN_00012e60","address":"00012e60","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"registerReboot","function":"FUN_00012e60","address":"00012e60","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

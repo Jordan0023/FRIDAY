@@ -1,0 +1,4 @@
+{"binary":"libssl.so.1.1","function":"ssl3_read_bytes","address":"000222fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.1","function":"tls1_enc","address":"00023a44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.1","function":"ssl_get_prev_session","address":"000351d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.1","function":"tls_construct_server_key_exchange","address":"0003f944","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

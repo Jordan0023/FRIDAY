@@ -1,0 +1,6 @@
+{"binary":"nft","function":"FUN_00401030","address":"00401030","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft","function":"FUN_00401030","address":"00401030","route":"/main.c","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft","function":"FUN_00401030","address":"00401030","route":"/--define","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft","function":"FUN_00401030","address":"00401030","route":"/--filename","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft","function":"FUN_00401030","address":"00401030","route":"/--interactive","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft","function":"FUN_00401030","address":"00401030","route":"/--file","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

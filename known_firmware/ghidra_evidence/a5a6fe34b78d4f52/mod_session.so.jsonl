@@ -1,0 +1,1 @@
+{"binary":"mod_session.so","function":"get_remote_mac_from_conn","address":"0001130c","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,10 @@
+{"binary":"libevent_extra-2.1.so.7.0.1","function":"FUN_0001690c","address":"0001690c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent_extra-2.1.so.7.0.1","function":"FUN_00016a28","address":"00016a28","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent_extra-2.1.so.7.0.1","function":"FUN_00016ea0","address":"00016ea0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent_extra-2.1.so.7.0.1","function":"FUN_0001713c","address":"0001713c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent_extra-2.1.so.7.0.1","function":"FUN_00017858","address":"00017858","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent_extra-2.1.so.7.0.1","function":"FUN_00018670","address":"00018670","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent_extra-2.1.so.7.0.1","function":"FUN_0001b578","address":"0001b578","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent_extra-2.1.so.7.0.1","function":"FUN_0001d080","address":"0001d080","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent_extra-2.1.so.7.0.1","function":"evrpc_hook_add_meta","address":"00020184","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent_extra-2.1.so.7.0.1","function":"FUN_00020e78","address":"00020e78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

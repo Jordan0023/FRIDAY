@@ -1,0 +1,6 @@
+{"binary":"mt7915e.ko","function":"_23","address":"000146e4","route":"/mt7981_eeprom_mt7976_dbdc.bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7915e.ko","function":"_23","address":"000146e4","route":"/mt7915_eeprom.bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7915e.ko","function":"_23","address":"000146e4","route":"/mt7915_eeprom_dbdc.bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7915e.ko","function":"_23","address":"000146e4","route":"/mt7916_eeprom.bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7915e.ko","function":"_92","address":"0001d6a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mt7915e.ko","function":"FUN_00024800","address":"00024800","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -147,8 +147,11 @@ KNOWN_VULNERABILITIES: tuple[KnownVulnerability, ...] = (
 
 ROUTE_RE = re.compile(
     r"""(?ix)
-    (?:action|href|src)\s*=\s*["']?([^"'\s>]*?(?:cgi|cgi-bin|debug|openvpn|vpn|pppoe|wan|usb|readycloud)[^"'\s>]*)|
-    \b([A-Za-z0-9_.-]+\.cgi)\b
+    (?:action|href|src|url|endpoint)\s*[:=]\s*["']?(
+        (?:/[A-Za-z0-9_.~!$&()*+,;=:@%/-]+(?:\?[A-Za-z0-9_.~!$&()*+,;=:@%/?-]*)?)|
+        [A-Za-z0-9_./-]+(?:\.cgi|\.asp|\.html?|\.lua|cgi-bin/[A-Za-z0-9_./-]+)
+    )|
+    \b((?:/[A-Za-z0-9_.-]+){2,12}|[A-Za-z0-9_.-]+\.(?:cgi|asp|html?|lua))\b
     """
 )
 PARAM_RE = re.compile(r"""(?ix)\b(?:name|id)\s*=\s*["']?([A-Za-z0-9_.:-]{2,80})""")
@@ -206,7 +209,8 @@ RISK_PARAMS = {
     "share_name",
 }
 AUTH_MARKERS = re.compile(r"\b(?:auth|authorize|login|logout|password|passwd|session|token|csrf|cookie)\b", re.I)
-PUBLIC_MARKERS = re.compile(r"\b(?:no[_ -]?auth|unauth|public|pre[_ -]?auth|auth[_ -]?skip|whitelist|setup|wizard|onboard)\b", re.I)
+PUBLIC_MARKERS = re.compile(r"\b(?:no[_ -]?auth|unauth|pre[_ -]?auth|auth[_ -]?skip)\b", re.I)
+SETUP_ROUTE_MARKERS = re.compile(r"\b(?:setup|wizard|onboard)\b", re.I)
 ADMIN_MARKERS = re.compile(r"\b(?:admin|administrator|management|apply|upgrade|upload|backup|restore)\b", re.I)
 MUTATING_MARKERS = re.compile(r"\b(?:apply|set|add|delete|remove|upload|upgrade|restore|reboot|restart|enable|disable)\b", re.I)
 SERVICE_NAMES = {
@@ -592,6 +596,7 @@ def _score_routes(
         level = "L3" if local_sinks and risky_params else ("L2" if local_sinks else ("L1" if params else "L0"))
         mutating = bool(MUTATING_MARKERS.search(route_lower))
         impact_class = _potential_impact(local_sinks, risky_params, mutating)
+        impactful = _is_impactful_unauthenticated_candidate(auth_class, exposure, impact_class)
         if auth_class in {"admin", "required"}:
             disposition = "deprioritized: authenticated administrator or privileged session required"
         elif not local_sinks:
@@ -599,9 +604,11 @@ def _score_routes(
         elif not risky_params and not mutating:
             disposition = "deprioritized: sink exists but no attacker-controlled parameter is identified"
         elif auth_class == "unknown":
-            disposition = "candidate: prove authentication boundary before deeper exploitation work"
+            disposition = "deprioritized: authentication boundary is unknown; cannot qualify as unauthenticated"
+        elif not impactful:
+            disposition = "deprioritized: does not meet unauthenticated LAN/WAN RCE or specific-DoS impact gate"
         else:
-            disposition = "candidate: plausible low-privilege path with route-local sink evidence"
+            disposition = "candidate: possible unauthenticated LAN/WAN RCE or specific denial of service"
         checks = [
             "confirm dispatcher authentication control flow",
             "trace each risky parameter into command/file/memory sinks",
@@ -624,7 +631,7 @@ def _score_routes(
             evidence=evidence,
             recommended_checks=checks,
         )
-        if disposition.startswith("candidate:") and score >= 20:
+        if impactful and disposition.startswith("candidate:") and score >= 20:
             candidates.append(item)
         else:
             rejected.append(item)
@@ -671,10 +678,11 @@ def _classify_auth(route: str, source_text: str) -> tuple[str, list[str]]:
     route_lower = route.lower()
     evidence: list[str] = []
     if PUBLIC_MARKERS.search(text):
-        evidence.append("public/pre-authentication marker co-located with route")
-        if any(token in route_lower for token in ("setup", "wizard", "onboard")):
-            return "setup-only", evidence
+        evidence.append("explicit no-auth/pre-authentication marker co-located with route")
         return "none", evidence
+    if SETUP_ROUTE_MARKERS.search(route_lower):
+        evidence.append("setup/wizard route name; availability outside setup state is unproven")
+        return "setup-only", evidence
     if ADMIN_MARKERS.search(route_lower) and AUTH_MARKERS.search(source_text):
         evidence.append("administrative route and authentication markers are co-located")
         return "admin", evidence
@@ -691,6 +699,11 @@ def _classify_route_exposure(route: str, source_text: str) -> str:
         return "wan/lan"
     if any(marker in text for marker in ("lan", "localhost", "127.0.0.1")):
         return "lan"
+    # A recovered HTTP/CGI route is normally served by the router's LAN web
+    # management listener unless contrary binding evidence is found.  This is
+    # potential exposure only; L4/L5 still require a live reachability proof.
+    if route.lower().endswith((".cgi", ".asp", ".htm", ".html")) or "cgi-bin" in route.lower():
+        return "lan"
     return "unknown"
 
 
@@ -704,6 +717,20 @@ def _potential_impact(local_sinks: list[str], risky_params: list[str], mutating:
     if mutating:
         return "security-sensitive state change"
     return "unproven"
+
+
+def _is_impactful_unauthenticated_candidate(auth_class: str, exposure: str, impact_class: str) -> bool:
+    """Apply the narrow hunting gate requested for high-impact zero-days.
+
+    Static memory corruption is retained only as a *specific DoS/RCE lead*;
+    confirmation still requires a reproducible attacker-correlated fault and a
+    healthy control run. Generic resource exhaustion is intentionally excluded.
+    """
+    return (
+        auth_class == "none"
+        and exposure in {"lan", "wan/lan"}
+        and impact_class in {"possible command execution", "possible memory corruption"}
+    )
 
 
 def _discover_services(rootfs: Path, strings_by_file: dict[str, list[str]]) -> list[ServiceSurface]:

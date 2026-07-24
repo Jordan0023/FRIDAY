@@ -1,0 +1,1 @@
+{"binary":"ip6_tables.ko","function":"FUN_000103ec","address":"000103ec","route":"/DROP","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

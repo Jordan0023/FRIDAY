@@ -1,0 +1,2 @@
+{"binary":"xfrm_user.ko","function":"FUN_00103ec0","address":"00103ec0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xfrm_user.ko","function":"FUN_00103ec0","address":"00103ec0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

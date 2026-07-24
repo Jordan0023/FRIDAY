@@ -1,0 +1,8 @@
+{"binary":"nft_ct.ko","function":"FUN_001017c4","address":"001017c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft_ct.ko","function":"FUN_001017c4","address":"001017c4","route":"/netfilter/nft_ct.c:183","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft_ct.ko","function":"FUN_001017c4","address":"001017c4","route":"/netfilter/nft_ct.c:186","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft_ct.ko","function":"FUN_001017c4","address":"001017c4","route":"/netfilter/nft_ct.c:207","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft_ct.ko","function":"FUN_001017c4","address":"001017c4","route":"/netfilter/nft_ct.c:212","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft_ct.ko","function":"FUN_001017c4","address":"001017c4","route":"/netfilter/nft_ct.c:120","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft_ct.ko","function":"FUN_001017c4","address":"001017c4","route":"/netfilter/nft_ct.c:134","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft_ct.ko","function":"FUN_001017c4","address":"001017c4","route":"/netfilter/nft_ct.c:150","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

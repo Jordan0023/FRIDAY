@@ -1,0 +1,9 @@
+{"binary":"libjansson.so.4.14.0","function":"FUN_00013130","address":"00013130","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjansson.so.4.14.0","function":"FUN_000131a4","address":"000131a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjansson.so.4.14.0","function":"FUN_00013cb0","address":"00013cb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjansson.so.4.14.0","function":"gethex","address":"00013f5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjansson.so.4.14.0","function":"strtod__unused","address":"00014744","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjansson.so.4.14.0","function":"dtoa_r","address":"00016480","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjansson.so.4.14.0","function":"jsonp_strndup","address":"00018228","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjansson.so.4.14.0","function":"strbuffer_append_bytes","address":"00018544","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjansson.so.4.14.0","function":"hashtable_set","address":"0001a81c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

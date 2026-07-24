@@ -1,0 +1,12 @@
+{"binary":"php-fpm","function":"FUN_00031e50","address":"00031e50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","function":"FUN_000337a4","address":"000337a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","function":"php_pcre2_compile","address":"0007aa4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","function":"php_pcre2_compile","address":"0007aa4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","function":"FUN_000801f8","address":"000801f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","function":"FUN_000801f8","address":"000801f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","function":"php_pcre2_substitute","address":"000c9e6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","function":"FUN_000d25a4","address":"000d25a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","function":"pcre_get_compiled_regex_cache_ex","address":"000d2ef4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","function":"php_pcre_match_impl","address":"000d4790","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","function":"php_pcre_replace_impl","address":"000d5658","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"php-fpm","fun

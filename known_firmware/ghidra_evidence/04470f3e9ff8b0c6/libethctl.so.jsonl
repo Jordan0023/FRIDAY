@@ -1,0 +1,9 @@
+{"binary":"libethctl.so","function":"FUN_00010f14","address":"00010f14","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"bcm_macsec_vport_egress_stat_get","address":"00011fdc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"bcm_macsec_vport_ingress_stat_get","address":"000120e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"bcm_macsec_sa_ingress_stat_get","address":"00012520","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"getRandomNumber","address":"00012628","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"getRandomNumber","address":"00012628","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"bcm_macsec_sa_add","address":"000128d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"bcm_macsec_sa_chain","address":"000129fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libethctl.so","function":"sha256_update","address":"00012e68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

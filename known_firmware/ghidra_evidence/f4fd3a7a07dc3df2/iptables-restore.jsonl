@@ -1,0 +1,14 @@
+{"binary":"xtables-legacy-multi","function":"FUN_000132c4","address":"000132c4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_00013374","address":"00013374","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_0001379c","address":"0001379c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_0001379c","address":"0001379c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_0001379c","address":"0001379c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_00015e08","address":"00015e08","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_00015eb8","address":"00015eb8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_000162e4","address":"000162e4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_000162e4","address":"000162e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_000162e4","address":"000162e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_0001887c","address":"0001887c","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_000196f8","address":"000196f8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_0001a254","address":"0001a254","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-legacy-multi","function":"FUN_0001a56c","address":"0001a56c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

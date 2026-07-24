@@ -1,0 +1,8 @@
+{"binary":"bcmspu.ko","function":"ablkcipher_setkey","address":"00012714","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"ahash_hmac_init","address":"00012f8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"handle_aead_req","address":"0001309c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"aead_enqueue","address":"00014160","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_rx_callback","address":"00014664","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"do_decrypt","address":"00014fc0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_xmit_ds","address":"00015590","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_xmit_us","address":"00016160","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"sw_gso.ko","function":"sw_gso_file_write","address":"00010670","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sw_gso.ko","function":"init_module","address":"00011800","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sw_gso.ko","function":"init_module","address":"00011800","route":"/operate","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sw_gso.ko","function":"init_module","address":"00011800","route":"/sw_gso","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sw_gso.ko","function":"init_module","address":"00011800","route":"/../bcmdrivers/broadcom/char/sw_gso/bcm96766/sw_gso_bin.c","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

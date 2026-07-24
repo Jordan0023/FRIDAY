@@ -1,0 +1,2 @@
+{"binary":"bpm","function":"main","address":"00010608","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bpm","function":"bpmctl_ioctl","address":"00010e14","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

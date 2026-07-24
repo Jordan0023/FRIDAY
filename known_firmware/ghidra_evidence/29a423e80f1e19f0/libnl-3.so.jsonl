@@ -1,0 +1,2 @@
+{"binary":"libnl-3.so.200.20.0","function":"_INIT_4","address":"000161ac","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-3.so.200.20.0","function":"nl_object_clone","address":"0001f760","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

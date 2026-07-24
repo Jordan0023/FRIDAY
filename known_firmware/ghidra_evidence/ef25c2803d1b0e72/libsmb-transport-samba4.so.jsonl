@@ -1,0 +1,2 @@
+{"binary":"libsmb-transport-samba4.so","function":"async_connect_send","address":"00011e50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsmb-transport-samba4.so","function":"accept_recv","address":"00012750","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"libjansson.so","function":"FUN_00011d18","address":"00011d18","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libjansson.so","function":"FUN_00014d08","address":"00014d08","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

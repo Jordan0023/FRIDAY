@@ -1,0 +1,1 @@
+{"binary":"libdbwrap-samba4.so","function":"dbwrap_parse_record_send","address":"00013504","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

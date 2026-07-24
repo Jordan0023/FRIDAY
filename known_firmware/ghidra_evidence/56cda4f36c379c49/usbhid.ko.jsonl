@@ -1,0 +1,6 @@
+{"binary":"usbhid.ko","function":"hid_submit_out","address":"00100050","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbhid.ko","function":"hid_submit_out","address":"00100050","route":"/hid/usbhid/hid-core.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbhid.ko","function":"FUN_0010028c","address":"0010028c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbhid.ko","function":"FUN_0010028c","address":"0010028c","route":"/hid/usbhid/hid-core.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbhid.ko","function":"hid_submit_ctrl","address":"00100290","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbhid.ko","function":"hid_submit_ctrl","address":"00100290","route":"/hid/usbhid/hid-core.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

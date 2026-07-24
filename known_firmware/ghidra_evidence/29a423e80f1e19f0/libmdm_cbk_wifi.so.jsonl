@@ -1,0 +1,1 @@
+{"binary":"libmdm_cbk_wifi.so","function":"mdm_initWifiAccessPoint_dev2","address":"000145a8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

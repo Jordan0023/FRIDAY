@@ -1,0 +1,4 @@
+{"binary":"libev.so.4.0.0","function":"FUN_00016660","address":"00016660","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libev.so.4.0.0","function":"ev_signal_start","address":"00017390","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libev.so.4.0.0","function":"ev_embed_start","address":"00017fa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libev.so.4.0.0","function":"ev_once","address":"00018368","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

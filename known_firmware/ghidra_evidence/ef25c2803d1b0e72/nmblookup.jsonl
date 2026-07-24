@@ -1,0 +1,15 @@
+{"binary":"nmblookup","function":"main","address":"00014c50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"resolve_lmhosts_file_as_sockaddr","address":"00015db0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"parse_alloc_res_rec","address":"00018bf0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"put_name","address":"00018d9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"put_res_rec","address":"00018ff8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"copy_packet","address":"00019744","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"parse_packet","address":"00019af4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"build_packet","address":"0001a1e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"prep_getdc_request","address":"0001b670","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"name_query_validator","address":"0001cfa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"resolve_ads","address":"0001d674","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"node_status_query_send","address":"0001e888","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"internal_resolve_name","address":"00020be8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"get_dc_list","address":"00021be4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nmblookup","function":"find_master_ip","address":"000228c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

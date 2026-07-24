@@ -1,0 +1,7 @@
+{"binary":"libroken-samba4.so.19.0.1","function":"getarg","address":"00013db4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroken-samba4.so.19.0.1","function":"rk_strsep_copy","address":"00015484","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroken-samba4.so.19.0.1","function":"rk_strpoolprintf","address":"000155a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroken-samba4.so.19.0.1","function":"rk_pipe_execv","address":"000158bc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroken-samba4.so.19.0.1","function":"rk_pipe_execv","address":"000158bc","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroken-samba4.so.19.0.1","function":"rk_simple_execve_timed","address":"00015bcc","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroken-samba4.so.19.0.1","function":"parse_record","address":"000167e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

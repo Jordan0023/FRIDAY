@@ -1,0 +1,4 @@
+{"binary":"conntrack","function":"memcpy","address":"00008f94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"conntrack","function":"fopen","address":"000090fc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"conntrack","function":"FUN_000092d8","address":"000092d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"conntrack","function":"FUN_000092d8","address":"000092d8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

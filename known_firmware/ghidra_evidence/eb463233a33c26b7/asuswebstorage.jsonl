@@ -1,0 +1,7 @@
+{"binary":"asuswebstorage","function":"FUN_00012e54","address":"00012e54","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"asuswebstorage","function":"FUN_00017a20","address":"00017a20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"asuswebstorage","function":"FUN_0001f43c","address":"0001f43c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"asuswebstorage","function":"FUN_000223e8","address":"000223e8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"asuswebstorage","function":"FUN_0002527c","address":"0002527c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"asuswebstorage","function":"FUN_00025808","address":"00025808","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"asuswebstorage","function":"FUN_00029a18","address":"00029a18","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

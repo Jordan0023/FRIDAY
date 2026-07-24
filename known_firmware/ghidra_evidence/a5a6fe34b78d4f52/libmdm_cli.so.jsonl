@@ -1,0 +1,1 @@
+{"binary":"libmdm_cli.so","function":"processMdmCmd","address":"0001440c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

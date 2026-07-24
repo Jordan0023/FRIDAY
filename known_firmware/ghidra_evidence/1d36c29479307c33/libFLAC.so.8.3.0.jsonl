@@ -1,0 +1,5 @@
+{"binary":"libFLAC.so.8.3.0","function":"FLAC__metadata_simple_iterator_set_block","address":"0003b7c4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libFLAC.so.8.3.0","function":"FLAC__metadata_simple_iterator_insert_block_after","address":"0003b9fc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libFLAC.so.8.3.0","function":"FLAC__metadata_simple_iterator_delete_block","address":"0003bbf0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libFLAC.so.8.3.0","function":"FLAC__metadata_object_cuesheet_insert_track","address":"000426e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libFLAC.so.8.3.0","function":"FUN_0004d28c","address":"0004d28c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

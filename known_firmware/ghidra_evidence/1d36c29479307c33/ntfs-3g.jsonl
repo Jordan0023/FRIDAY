@@ -1,0 +1,15 @@
+{"binary":"ntfs-3g","function":"FUN_00013148","address":"00013148","route":"/dev/null","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00013148","address":"00013148","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00013148","address":"00013148","route":"/sbin/modprobe","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00013148","address":"00013148","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00013148","address":"00013148","route":"/dev/fuse","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00013148","address":"00013148","route":"/fuse.ko","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00013148","address":"00013148","route":"/fuse.o","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00013148","address":"00013148","route":"/dev/misc/fuse.","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00013148","address":"00013148","route":"/hiberfil.sys","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00013148","address":"00013148","route":"/tuxera.com/community/ntfs-3g-faq","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_0001a3dc","address":"0001a3dc","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_0001eb30","address":"0001eb30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00021ee4","address":"00021ee4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00024b80","address":"00024b80","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00024b80","address":"00024b80","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

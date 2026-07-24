@@ -1,0 +1,8 @@
+{"binary":"libavahi-core.so.7.1.0","function":"avahi_server_config_copy","address":"0001ef08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-core.so.7.1.0","function":"avahi_dns_packet_append_bytes","address":"00035e68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-core.so.7.1.0","function":"avahi_dns_packet_append_string","address":"00035f94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-core.so.7.1.0","function":"avahi_dns_packet_consume_bytes","address":"00036c9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-core.so.7.1.0","function":"avahi_dns_packet_consume_string","address":"00036dec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-core.so.7.1.0","function":"avahi_record_to_string","address":"00038ec0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-core.so.7.1.0","function":"avahi_get_host_name","address":"00040c04","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libavahi-core.so.7.1.0","function":"FUN_00041334","address":"00041334","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

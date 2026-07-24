@@ -1,0 +1,1 @@
+{"binary":"smbcquotas","function":"main","address":"00011910","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"libstorage.so","function":"uciSet","address":"00013344","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstorage.so","function":"wireless_get_ifname_by_vapidx","address":"0001712c","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstorage.so","function":"FUN_00017d34","address":"00017d34","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstorage.so","function":"FUN_00018188","address":"00018188","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

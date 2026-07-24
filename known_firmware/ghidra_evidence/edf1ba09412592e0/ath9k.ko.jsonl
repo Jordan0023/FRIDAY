@@ -1,0 +1,6 @@
+{"binary":"ath9k.ko","function":"ath_rx_tasklet","address":"00017684","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath9k.ko","function":"ath_rx_tasklet","address":"00017684","route":"/drivers/net/wireless/ath/ath9k/recv.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath9k.ko","function":"ath_rx_tasklet","address":"00017684","route":"/linux/dma-mapping.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath9k.ko","function":"FUN_00019740","address":"00019740","route":"/drivers/net/wireless/ath/ath9k/xmit.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath9k.ko","function":"FUN_0001a694","address":"0001a694","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath9k.ko","function":"FUN_0001b960","address":"0001b960","route":"/drivers/net/wireless/ath/ath9k/xmit.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

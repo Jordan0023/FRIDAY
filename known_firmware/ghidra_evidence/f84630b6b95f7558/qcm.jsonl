@@ -1,0 +1,4 @@
+{"binary":"qcm","function":"FUN_0040c238","address":"0040c238","route":"/hup/inval","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qcm","function":"ql_enable_qmi_wwan_rawip_mode","address":"0041b48c","route":"/dev/cdc-wdm","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qcm","function":"FUN_0041c658","address":"0041c658","route":"/quec_code/quec_CM/udhcpc.c","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qcm","function":"FUN_0041c658","address":"0041c658","route":"/sys/class/net/%s/qmi/raw_ip","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

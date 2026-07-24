@@ -1,0 +1,8 @@
+{"binary":"exfat.ko","function":"FUN_0010073c","address":"0010073c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfat.ko","function":"FUN_001078f4","address":"001078f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfat.ko","function":"FUN_00107d8c","address":"00107d8c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfat.ko","function":"FUN_001081b0","address":"001081b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfat.ko","function":"FUN_0010a7c4","address":"0010a7c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfat.ko","function":"bdev_write","address":"0010b160","route":"/linux/buffer_head.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfat.ko","function":"bdev_write","address":"0010b160","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfat.ko","function":"nls_uniname_to_cstring","address":"0010c718","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

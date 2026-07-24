@@ -1,0 +1,2 @@
+{"binary":"mhi_fuse_blower_mod.ko","function":"mhi_fuse_blow","address":"00010220","route":"/fuse_blower.bin","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mhi_fuse_blower_mod.ko","function":"mhi_fuse_blow","address":"00010220","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

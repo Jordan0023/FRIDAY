@@ -1,0 +1,5 @@
+{"binary":"libamas-utils.so","function":"LLDP_NBR_TLV_GET","address":"00016074","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libamas-utils.so","function":"LLDP_NBR_TLV_GET","address":"00016074","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libamas-utils.so","function":"LLDP_NBR_TLV_GET","address":"00016074","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libamas-utils.so","function":"LLDP_NBR_TLV_GET_BUFFER","address":"00018d30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libamas-utils.so","function":"amas_get_sessionkey","address":"00026548","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

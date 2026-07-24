@@ -1,0 +1,2 @@
+{"binary":"bluetoothctl","function":"FUN_00028230","address":"00028230","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bluetoothctl","function":"FUN_00028230","address":"00028230","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

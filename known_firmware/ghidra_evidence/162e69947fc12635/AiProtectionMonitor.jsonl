@@ -1,0 +1,4 @@
+{"binary":"bwdpi_sqlite","function":"FUN_0000999c","address":"0000999c","route":"/*","sink":"system","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bwdpi_sqlite","function":"FUN_0000b358","address":"0000b358","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bwdpi_sqlite","function":"FUN_0000c604","address":"0000c604","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bwdpi_sqlite","function":"FUN_0000f994","address":"0000f994","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

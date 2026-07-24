@@ -1,0 +1,6 @@
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_001476b4","address":"001476b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"auth,token","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_001476b4","address":"001476b4","route":"/pss","sink":"memory_operation","sources":"","auth_markers":"auth,token","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_0014e868","address":"0014e868","route":"/dev/net/tun","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"FUN_0014e868","address":"0014e868","route":"/dev/net/tun:","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"closefrom","address":"001652d0","route":"/proc/self/fd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libstrongswan.so.0.0.0","function":"chunk_hash_seed","address":"00167c08","route":"/dev/urandom","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

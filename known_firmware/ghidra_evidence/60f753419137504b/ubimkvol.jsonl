@@ -1,0 +1,4 @@
+{"binary":"ubimkvol","function":"memcpy","address":"00008a18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubimkvol","function":"sscanf","address":"00008aa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubimkvol","function":"sprintf","address":"00008afc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubimkvol","function":"FUN_000099c4","address":"000099c4","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

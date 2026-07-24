@@ -1,0 +1,4 @@
+{"binary":"libata.ko","function":"ata_dev_reread_id","address":"00014b4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libata.ko","function":"ata_scsiop_inq_89","address":"0001c98c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libata.ko","function":"ata_scsi_port_error_handler","address":"000240b0","route":"/ata/libata-eh.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libata.ko","function":"ata_sff_data_xfer32","address":"00025e14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

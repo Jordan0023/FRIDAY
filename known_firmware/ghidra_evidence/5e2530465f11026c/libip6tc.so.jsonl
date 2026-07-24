@@ -1,0 +1,4 @@
+{"binary":"libip6tc.so","function":"ip6tc_init","address":"00011ab0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip6tc.so","function":"ip6tc_init","address":"00011ab0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip6tc.so","function":"FUN_00012d38","address":"00012d38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip6tc.so","function":"ip6tc_strerror","address":"000139b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

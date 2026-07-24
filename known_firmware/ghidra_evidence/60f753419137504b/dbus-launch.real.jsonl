@@ -1,0 +1,11 @@
+{"binary":"dbus-launch.real","function":"strcpy","address":"000089d8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"memcpy","address":"00008a2c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"execl","address":"00008a38","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"strcat","address":"00008aec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"sprintf","address":"00008b7c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"open","address":"00008bac","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"FUN_00008c78","address":"00008c78","route":"/*","sink":"unsafe_copy","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"FUN_00008c78","address":"00008c78","route":"/*","sink":"exec","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"FUN_00008c78","address":"00008c78","route":"/*","sink":"file_write","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"FUN_00008c78","address":"00008c78","route":"/*","sink":"unsafe_copy","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dbus-launch.real","function":"FUN_00008c78","address":"00008c78","route":"/*","sink":"unsafe_copy","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}

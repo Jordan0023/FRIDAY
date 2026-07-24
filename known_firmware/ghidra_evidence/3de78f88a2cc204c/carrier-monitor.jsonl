@@ -1,0 +1,1 @@
+{"binary":"carrier-monitor","function":"FUN_004009ac","address":"004009ac","route":"/sbin/hotplug-call","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

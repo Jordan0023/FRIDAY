@@ -1,0 +1,2 @@
+{"binary":"et.ko","function":"adm_config_vlan","address":"00014918","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"et.ko","function":"fa_napt_add","address":"00019594","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

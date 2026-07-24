@@ -1,0 +1,3 @@
+{"binary":"dns_mark.ko","function":"FUN_001005f4","address":"001005f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dns_mark.ko","function":"dns_mark_write_ifnames","address":"00102010","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dns_mark.ko","function":"dns_mark_write_domains","address":"00102324","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

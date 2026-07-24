@@ -1,0 +1,1 @@
+{"binary":"mmc_core.ko","function":"FUN_00015a20","address":"00015a20","route":"/mmc/core/mmc.c","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

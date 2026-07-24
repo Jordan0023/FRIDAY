@@ -1,0 +1,1 @@
+{"binary":"urngd","function":"FUN_00010f98","address":"00010f98","route":"/proc/sys/crypto/fips_enabled","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

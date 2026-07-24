@@ -1,0 +1,1 @@
+{"binary":"qca-nss-gmac.ko","function":"nss_gmac_linux_get_stats64","address":"00012aac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

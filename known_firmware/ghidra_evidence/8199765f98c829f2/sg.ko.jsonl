@@ -1,0 +1,2 @@
+{"binary":"sg.ko","function":"sg_add_device","address":"00100c40","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sg.ko","function":"sg_common_write.constprop.0","address":"00102020","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

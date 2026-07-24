@@ -1,0 +1,3 @@
+{"binary":"nf_nat_sip.ko","function":"FUN_00010878","address":"00010878","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_sip.ko","function":"nf_nat_sip","address":"00010b88","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_sip.ko","function":"nf_nat_sip_expect","address":"00011328","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

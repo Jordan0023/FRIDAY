@@ -1,0 +1,1 @@
+{"binary":"usbnet.ko","function":"usbnet_probe","address":"000127fc","route":"/linux/usb.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

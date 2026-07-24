@@ -1,0 +1,17 @@
+{"binary":"sudo","function":"FUN_0040540c","address":"0040540c","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_0040540c","address":"0040540c","route":"/'))","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_0040540c","address":"0040540c","route":"/';","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_0040af84","address":"0040af84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_0040af84","address":"0040af84","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_0040c550","address":"0040c550","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_0040c874","address":"0040c874","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_0040fbec","address":"0040fbec","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_00410b60","address":"00410b60","route":"/')))","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_00410b60","address":"00410b60","route":"/')))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_00410b60","address":"00410b60","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_00410b60","address":"00410b60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_00411a1c","address":"00411a1c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_00411a1c","address":"00411a1c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_00412040","address":"00412040","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_00412040","address":"00412040","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sudo","function":"FUN_00412290","address":"00412290","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

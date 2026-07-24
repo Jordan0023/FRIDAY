@@ -1,0 +1,2 @@
+{"binary":"ath3k.ko","function":"ath3k_load_fwfile.isra.0","address":"001001b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ath3k.ko","function":"ath3k_probe","address":"001005e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

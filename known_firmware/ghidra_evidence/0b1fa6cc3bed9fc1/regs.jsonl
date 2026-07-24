@@ -1,0 +1,2 @@
+{"binary":"regs","function":"FUN_00400e10","address":"00400e10","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"regs","function":"FUN_00400e10","address":"00400e10","route":"/dev/mem","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,17 @@
+{"binary":"idevicebackup","function":"FUN_0040534c","address":"0040534c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_0040534c","address":"0040534c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_0040534c","address":"0040534c","route":"/com.apple.itunes.lock_sync","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_0040534c","address":"0040534c","route":"/com.apple.itunes.lock_sync","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_0040534c","address":"0040534c","route":"/%s):","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_0040534c","address":"0040534c","route":"/%s):","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_0040534c","address":"0040534c","route":"/%d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_0040534c","address":"0040534c","route":"/%d","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_0040534c","address":"0040534c","route":"/tmp/RestoreFile.plist","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_0040534c","address":"0040534c","route":"/tmp/RestoreFile.plist","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_00407cd8","address":"00407cd8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_00407cd8","address":"00407cd8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_00407cd8","address":"00407cd8","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_00407cd8","address":"00407cd8","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_00407f9c","address":"00407f9c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_0042165c","address":"0042165c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicebackup","function":"FUN_004232c8","address":"004232c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

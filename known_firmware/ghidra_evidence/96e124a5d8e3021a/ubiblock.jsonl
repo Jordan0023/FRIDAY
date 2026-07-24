@@ -1,0 +1,2 @@
+{"binary":"ubiblock","function":"FUN_00010a78","address":"00010a78","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ubiblock","function":"FUN_000116d4","address":"000116d4","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

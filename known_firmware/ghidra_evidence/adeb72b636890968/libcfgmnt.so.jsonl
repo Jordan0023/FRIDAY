@@ -1,0 +1,2 @@
+{"binary":"libcfgmnt.so","function":"cap_get_final_paramname","address":"00013dd0","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"cap_get_final_paramname","address":"00013dd0","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

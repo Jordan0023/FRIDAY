@@ -1,0 +1,1 @@
+{"binary":"ip_set.ko","function":"ip_set_create","address":"00011d08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

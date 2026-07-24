@@ -1,0 +1,4 @@
+{"binary":"libcap.so.2.43","function":"cap_launch","address":"000126b8","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcap.so.2.43","function":"cap_to_text","address":"000136f8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcap.so.2.43","function":"cap_iab_to_text","address":"00013cb4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcap.so.2.43","function":"cap_iab_to_text","address":"00013cb4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

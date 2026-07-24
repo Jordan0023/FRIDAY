@@ -1,0 +1,1 @@
+{"binary":"qca-nss-ppe-vp.ko","function":"ppe_vp_stats_show","address":"0001136c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

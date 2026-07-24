@@ -1,0 +1,14 @@
+{
+  "program": "upnpd",
+  "security_schema": 4,
+  "functions_discovered": 279,
+  "functions_attempted": 279,
+  "functions_succeeded": 279,
+  "functions_failed": 0,
+  "functions_timed_out": 0,
+  "retry_attempts": 0,
+  "coverage_status": "complete",
+  "candidate_functions": 6,
+  "evidence_records": 6,
+  "evidence_path": "/home/jordan/FRIDAY/known_firmware/reports/RAX54S/decompile/upnpd-evidence.jsonl"
+}

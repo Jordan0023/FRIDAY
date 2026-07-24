@@ -1,0 +1,5 @@
+{"binary":"cfg_client","function":"FUN_0000fe9c","address":"0000fe9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_client","function":"FUN_0001941c","address":"0001941c","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_client","function":"FUN_0001941c","address":"0001941c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_client","function":"FUN_0001941c","address":"0001941c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg_c

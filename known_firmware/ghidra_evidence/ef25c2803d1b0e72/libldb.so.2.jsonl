@@ -1,0 +1,15 @@
+{"binary":"libldb.so.2.3.2","function":"ldb_msg_find_duplicate_val","address":"0001ffb8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_msg_find_common_values","address":"00020180","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_val_dup","address":"000204b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_msg_find_attr_as_int","address":"00020980","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_msg_find_attr_as_uint","address":"00020a94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_msg_find_attr_as_int64","address":"00020bcc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_msg_find_attr_as_uint64","address":"00020ce8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_msg_normalize","address":"00021260","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_msg_normalize","address":"00021260","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_val_to_time","address":"00021b00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_dn_set_component","address":"00024e28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_dn_update_components","address":"000256d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_match_bitmask","address":"000259a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_pack_data","address":"00026990","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2.3.2","function":"ldb_parse_control_from_string","address":"0002997c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"wlc_monitor","function":"FUN_0001143c","address":"0001143c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wlc_monitor","function":"FUN_0001143c","address":"0001143c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

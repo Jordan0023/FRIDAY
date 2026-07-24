@@ -1,0 +1,3 @@
+{"binary":"log.ko","function":"agLogWriteLog","address":"00010560","route":"/*","sink":"memory_operation","sources":"","auth_markers":"login","correlation":"function-local-co-location"}
+{"binary":"log.ko","function":"send_BLOCK_page","address":"00011adc","route":"/usr/sbin/log_cli","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"log.ko","function":"get_block_site_log_data","address":"00011e24","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

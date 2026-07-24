@@ -1,0 +1,6 @@
+{"binary":"libprovision.so","function":"ftm_mfg_provision_id","address":"00010b58","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libprovision.so","function":"ftm_mfg_provision_store_ssp","address":"00010c54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libprovision.so","function":"ftm_mfg_provision_store_ssp","address":"00010c54","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libprovision.so","function":"ftm_mfg_provision_store_ssp","address":"00010c54","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libprovision.so","function":"ftm_mfg_provision_store_pairing_cfg","address":"00011050","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libprovision.so","function":"ftm_mfg_provision_store_pairing_cfg","address":"00011050","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

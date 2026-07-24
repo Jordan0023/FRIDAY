@@ -1,0 +1,1 @@
+{"binary":"mod_deflate.so","function":"mod_deflate_handle_response_start","address":"00011c00","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

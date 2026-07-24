@@ -1,0 +1,4 @@
+{"binary":"thermald","function":"system","address":"00008ce8","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thermald","function":"sscanf","address":"00008dd8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thermald","function":"fopen","address":"00008dfc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"thermald","function":"open","address":"00008ebc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

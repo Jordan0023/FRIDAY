@@ -1,0 +1,9 @@
+{"binary":"libfcctl.so","function":"fcCtlStatus","address":"00010960","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlFlush","address":"00010990","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlConfig","address":"000109b0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlCreateFlwStatsQuery","address":"00010a8c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlGetFlwStatsQuery","address":"00010a9c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlDeleteFlwStatsQuery","address":"00010aac","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlClearFlwStatsQuery","address":"00010abc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlGetQueryEntryNumber","address":"00010acc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcctl.so","function":"fcCtlDumpFlwStats","address":"00010adc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

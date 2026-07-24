@@ -1,0 +1,15 @@
+{"binary":"libz.so.1.3.1","function":"FUN_000127d0","address":"000127d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"FUN_00012894","address":"00012894","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"FUN_000134d8","address":"000134d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"deflateGetDictionary","address":"00013ce0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"deflate","address":"0001415c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"deflateCopy","address":"00015628","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"FUN_00015b60","address":"00015b60","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"FUN_000162cc","address":"000162cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"FUN_00016714","address":"00016714","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"gzgets","address":"00016b94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"FUN_0001717c","address":"0001717c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"FUN_00018d70","address":"00018d70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"inflateGetDictionary","address":"0001aaa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"inflateCopy","address":"0001ad94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libz.so.1.3.1","function":"FUN_0001c7c4","address":"0001c7c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"kmodloader","function":"FUN_000123dc","address":"000123dc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmodloader","function":"FUN_000123dc","address":"000123dc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

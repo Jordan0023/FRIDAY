@@ -1,0 +1,4 @@
+{"binary":"nf_nat.ko","function":"mangle_contents","address":"00011cb4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat.ko","function":"mangle_contents","address":"00011cb4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat.ko","function":"mangle_contents","address":"00011cb4","route":"/linux/skbuff.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat.ko","function":"mangle_contents","address":"00011cb4","route":"/linux/skbuff.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

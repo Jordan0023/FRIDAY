@@ -1,0 +1,9 @@
+{"binary":"ext4.ko","function":"FUN_00025198","address":"00025198","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext4.ko","function":"FUN_0002555c","address":"0002555c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext4.ko","function":"FUN_00030eb0","address":"00030eb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext4.ko","function":"ext4_group_add","address":"00031304","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext4.ko","function":"ext4_ext_try_to_merge","address":"000358e4","route":"/ext4/extents.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext4.ko","function":"ext4_ext_insert_extent","address":"00035be0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext4.ko","function":"ext4_ext_migrate","address":"0003b5e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext4.ko","function":"FUN_0003e688","address":"0003e688","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ext4.ko","function":"FUN_0004ab50","address":"0004ab50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

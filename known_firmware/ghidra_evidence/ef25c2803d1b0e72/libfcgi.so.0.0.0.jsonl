@@ -1,0 +1,11 @@
+{"binary":"libfcgi.so.0.0.0","function":"FUN_00012694","address":"00012694","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"FCGX_GetStr","address":"00012964","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"FCGX_PutStr","address":"00012d6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"FCGX_VFPrintF","address":"000130a4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"FUN_00013ae0","address":"00013ae0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"FUN_00013ae0","address":"00013ae0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"FUN_00015120","address":"00015120","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"OS_CreateLocalIpcFd","address":"0001546c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"OS_FcgiConnect","address":"000157a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"OS_SpawnChild","address":"00015a18","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"OS_Accept","address":"0001638c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

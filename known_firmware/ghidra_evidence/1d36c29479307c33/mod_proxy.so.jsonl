@@ -1,0 +1,1 @@
+{"binary":"mod_proxy.so","function":"mod_proxy_check_extension","address":"000123b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

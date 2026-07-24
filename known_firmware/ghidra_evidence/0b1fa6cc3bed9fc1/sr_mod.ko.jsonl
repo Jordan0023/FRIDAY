@@ -1,0 +1,4 @@
+{"binary":"sr_mod.ko","function":"FUN_00100cf8","address":"00100cf8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sr_mod.ko","function":"FUN_00100cf8","address":"00100cf8","route":"/rw","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sr_mod.ko","function":"FUN_00100cf8","address":"00100cf8","route":"/form2","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sr_mod.ko","function":"FUN_00100cf8","address":"00100cf8","route":"/%dx","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"blockingc","function":"FUN_0001079c","address":"0001079c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"blockingc","function":"FUN_0001079c","address":"0001079c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

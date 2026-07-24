@@ -1,0 +1,8 @@
+{"binary":"libcrypto.so.1.0.0","function":"EC_GROUP_copy","address":"00082494","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.1.0.0","function":"BIO_get_accept_socket","address":"000aae78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.1.0.0","function":"BIO_get_accept_socket","address":"000aae78","route":"/'));","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.1.0.0","function":"RAND_poll","address":"000afabc","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.1.0.0","function":"EVP_MD_CTX_copy_ex","address":"000b1d04","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.1.0.0","function":"X509_NAME_oneline","address":"000dbd68","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.1.0.0","function":"TS_RESP_verify_response","address":"0010d318","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.1.0.0","function":"TS_RESP_verify_response","address":"0010d318","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

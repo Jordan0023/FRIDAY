@@ -1,0 +1,2 @@
+{"binary":"libexif.so.12","function":"mnote_olympus_entry_get_value","address":"00022818","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libexif.so.12","function":"mnote_olympus_entry_get_value","address":"00022818","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

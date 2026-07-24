@@ -1,0 +1,2 @@
+{"binary":"cdc_ncm.ko","function":"FUN_00101b6c","address":"00101b6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cdc_ncm.ko","function":"cdc_ncm_fill_tx_frame","address":"00101b70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"rndis_host.ko","function":"FUN_00010814","address":"00010814","route":"/linux/usb.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

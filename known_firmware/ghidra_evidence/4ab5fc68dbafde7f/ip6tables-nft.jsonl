@@ -1,0 +1,13 @@
+{"binary":"xtables-nft-multi","function":"FUN_00404904","address":"00404904","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_004050e8","address":"004050e8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_00405860","address":"00405860","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_00406310","address":"00406310","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_00407c9c","address":"00407c9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_00409e1c","address":"00409e1c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_00409e1c","address":"00409e1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_0040a994","address":"0040a994","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_0040bf90","address":"0040bf90","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_0040e3b8","address":"0040e3b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_004108c4","address":"004108c4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_00412cb0","address":"00412cb0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xtables-nft-multi","function":"FUN_004131ac","address":"004131ac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

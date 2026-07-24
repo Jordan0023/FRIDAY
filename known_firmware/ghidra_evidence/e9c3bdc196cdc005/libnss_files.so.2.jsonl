@@ -1,0 +1,6 @@
+{"binary":"libnss_files.so.2","function":"gethostbyname3_multi","address":"001036a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnss_files.so.2","function":"gethostbyname3_multi","address":"001036a0","route":"/files-hosts.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnss_files.so.2","function":"_nss_files_gethostbyname4_r","address":"00104170","route":"/etc/hosts","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnss_files.so.2","function":"_nss_files_gethostbyname4_r","address":"00104170","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnss_files.so.2","function":"_nss_files_gethostbyname4_r","address":"00104170","route":"/files-hosts.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnss_files.so.2","function":"_nss_files_setnetgrent","address":"001061c0","route":"/etc/netgroup","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

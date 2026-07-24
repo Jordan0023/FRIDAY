@@ -1,0 +1,2 @@
+{"binary":"libnat.so","function":"agApi_natRuleAddForUpnp","address":"000137e4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnat.so","function":"ARNONAT_GenerateListenPortRules","address":"00017ff8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

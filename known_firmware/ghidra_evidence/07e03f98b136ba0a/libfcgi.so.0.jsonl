@@ -1,0 +1,8 @@
+{"binary":"libfcgi.so.0.0.0","function":"FCGX_VFPrintF","address":"000130fc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"FUN_00013b80","address":"00013b80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"FUN_00013b80","address":"00013b80","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"OS_CreateLocalIpcFd","address":"0001545c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"OS_FcgiConnect","address":"00015738","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"OS_FcgiConnect","address":"00015738","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"OS_SpawnChild","address":"0001590c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfcgi.so.0.0.0","function":"OS_Accept","address":"00016210","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

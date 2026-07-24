@@ -1,0 +1,2 @@
+{"binary":"cgi-fcgi","function":"FUN_0001118c","address":"0001118c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-fcgi","function":"FUN_0001118c","address":"0001118c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"dhcpdiscover","function":"FUN_00400df8","address":"00400df8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dhcpdiscover","function":"FUN_004031f0","address":"004031f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

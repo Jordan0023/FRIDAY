@@ -1,0 +1,7 @@
+{"binary":"tfstats","function":"execve","address":"0000898c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfstats","function":"memcpy","address":"000089a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfstats","function":"system","address":"000089d4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfstats","function":"sscanf","address":"00008a64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfstats","function":"fopen","address":"00008a88","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfstats","function":"sprintf","address":"00008ab8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tfstats","function":"FUN_00009528","address":"00009528","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

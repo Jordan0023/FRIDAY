@@ -1,0 +1,11 @@
+{"binary":"libbwdpi_sql.so","function":"FUN_000111e0","address":"000111e0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_maclist_db","address":"000116d4","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_appStat","address":"00011c3c","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_appStat","address":"00011c3c","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"sqlite_Stat_hook","address":"00012600","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_HistoryStat","address":"00013018","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_HistoryStat","address":"00013018","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_info","address":"00013c5c","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_ips","address":"0001448c","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_monitor_nonips","address":"00014b9c","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbwdpi_sql.so","function":"bwdpi_cgi_mon_del_db","address":"000156c4","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

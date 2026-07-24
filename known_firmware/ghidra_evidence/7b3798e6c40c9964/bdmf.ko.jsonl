@@ -1,0 +1,11 @@
+{"binary":"bdmf.ko","function":"bdmf_session_open","address":"00010f84","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf.ko","function":"_bdmfmon_populate_parms","address":"00011ca4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf.ko","function":"_bdmfmon_populate_parms","address":"00011ca4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf.ko","function":"bdmfmon_dir_add","address":"00013058","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf.ko","function":"bdmfmon_cmd_add","address":"00013198","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf.ko","function":"bdmf_queue_receive","address":"00014e50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf.ko","function":"bdmf_queue_send","address":"00014f08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf.ko","function":"bdmf_pbuf_alloc","address":"00015e54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf.ko","function":"_bdmf_attr_val_index_to_s_aggregate","address":"00017928","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf.ko","function":"_bdmf_set_aggr","address":"00019414","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bdmf.ko","function":"_bdmf_mon_format_aggr_val","address":"00022f38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

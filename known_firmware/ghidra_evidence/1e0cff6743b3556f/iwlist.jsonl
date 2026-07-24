@@ -1,0 +1,3 @@
+{"binary":"iwlist","function":"FUN_00401db8","address":"00401db8","route":"/any/hidden","sink":"memory_operation","sources":"","auth_markers":"Token","correlation":"function-local-co-location"}
+{"binary":"iwlist","function":"FUN_00401db8","address":"00401db8","route":"/WPA2","sink":"memory_operation","sources":"","auth_markers":"Token","correlation":"function-local-co-location"}
+{"binary":"iwlist","function":"FUN_00401db8","address":"00401db8","route":"/any","sink":"memory_operation","sources":"","auth_markers":"Token","correlation":"function-local-co-location"}

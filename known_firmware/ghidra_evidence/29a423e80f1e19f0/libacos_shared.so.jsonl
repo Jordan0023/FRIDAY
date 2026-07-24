@@ -1,0 +1,12 @@
+{"binary":"libacos_shared.so","function":"shared_util_system","address":"0001c18c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"get_acl_table","address":"0001c694","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"get_acl_table","address":"0001c694","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"get_sta_dev","address":"0001ce70","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"get_sta_dev","address":"0001ce70","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"get_sta_dev","address":"0001ce70","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"file2str","address":"0001ebac","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"_eval_daemon","address":"0001ebdc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"file_to_str","address":"0001f02c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"soap_getDeviceName","address":"00022174","route":"/*","sink":"unsafe_copy","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"abLanIpWorkaround","address":"0003308c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libacos_shared.so","function":"abLanIpWorkaround","address":"0003308c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

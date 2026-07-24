@@ -1,0 +1,1 @@
+{"binary":"libcli-ldap-common-samba4.so","function":"blob2string_talloc","address":"00011b08","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

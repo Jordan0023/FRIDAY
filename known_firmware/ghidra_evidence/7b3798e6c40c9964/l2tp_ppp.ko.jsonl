@@ -1,0 +1,1 @@
+{"binary":"l2tp_ppp.ko","function":"pppol2tp_getname","address":"00010cfc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

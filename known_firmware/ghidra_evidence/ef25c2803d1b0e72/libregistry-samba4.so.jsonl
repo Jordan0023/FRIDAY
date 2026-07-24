@@ -1,0 +1,5 @@
+{"binary":"libregistry-samba4.so","function":"reg_preg_diff_save","address":"000165c0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libregistry-samba4.so","function":"hbin_store","address":"0001b22c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libregistry-samba4.so","function":"hbin_store_resize","address":"0001b8d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libregistry-samba4.so","function":"regf_set_value","address":"0001c550","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libregistry-samba4.so","function":"reg_open_hive","address":"0001ee7c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

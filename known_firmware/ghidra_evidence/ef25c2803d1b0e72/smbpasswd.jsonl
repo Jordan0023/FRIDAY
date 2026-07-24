@@ -1,0 +1,1 @@
+{"binary":"smbpasswd","function":"dcerpc_samr_chng_pswd_auth_crap","address":"00014520","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

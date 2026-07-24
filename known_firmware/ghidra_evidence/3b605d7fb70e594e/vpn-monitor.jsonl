@@ -1,0 +1,5 @@
+{"binary":"vpn-monitor","function":"FUN_004014f0","address":"004014f0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"vpn-monitor","function":"FUN_004014f0","address":"004014f0","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"vpn-monitor","function":"FUN_0040317c","address":"0040317c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"vpn-monitor","function":"uci_set_option","address":"004034dc","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"vpn-monitor","function":"FUN_00403654","address":"00403654","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

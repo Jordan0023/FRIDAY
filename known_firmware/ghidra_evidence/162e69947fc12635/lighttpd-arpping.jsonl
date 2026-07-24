@@ -1,0 +1,3 @@
+{"binary":"lighttpd-arpping","function":"FUN_0000d750","address":"0000d750","route":"/proc/net/arp","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-arpping","function":"FUN_0000e24c","address":"0000e24c","route":"/tmp/lighttpd/lighttpd-arpping.pid","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-arpping","function":"FUN_0000e24c","address":"0000e24c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

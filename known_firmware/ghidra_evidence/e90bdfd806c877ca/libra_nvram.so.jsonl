@@ -1,0 +1,1 @@
+{"binary":"libra_nvram-0.9.28.so","function":"nvram_set","address":"0001190c","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

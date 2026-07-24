@@ -1,0 +1,3 @@
+{"binary":"ntfs-3g","function":"FUN_00405898","address":"00405898","route":"/proc/filesystems","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00405898","address":"00405898","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ntfs-3g","function":"FUN_00409cf4","address":"00409cf4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

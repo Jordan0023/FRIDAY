@@ -1,0 +1,3 @@
+{"binary":"libsystem_util.so","function":"share_system_util_semaphore_lock","address":"000104b0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsystem_util.so","function":"share_system_util_semaphore_unlock","address":"00010668","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsystem_util.so","function":"share_system_util_semaphore_lock_with_timeout","address":"0001080c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

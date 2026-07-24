@@ -1,0 +1,4 @@
+{"binary":"libpcap.so.1.1.1","function":"FUN_00015788","address":"00015788","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.1.1","function":"FUN_000222d8","address":"000222d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.1.1","function":"__pcap_atodn","address":"000241a4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcap.so.1.1.1","function":"pcap_parse","address":"000289d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

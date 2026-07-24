@@ -1,0 +1,5 @@
+{"binary":"xpi.ko","function":"FUN_00100aa4","address":"00100aa4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xpi.ko","function":"FUN_00100aa8","address":"00100aa8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xpi.ko","function":"xr_load","address":"00104168","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xpi.ko","function":"FUN_001057e8","address":"001057e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xpi.ko","function":"FUN_001057e8","address":"001057e8","route":"/%d:","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

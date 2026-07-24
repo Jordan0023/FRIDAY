@@ -1,0 +1,3 @@
+{"binary":"fruit.so","function":"fruit_pwrite","address":"0001b098","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fruit.so","function":"fruit_pread","address":"0001bed4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fruit.so","function":"ad_pack","address":"0001fa84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

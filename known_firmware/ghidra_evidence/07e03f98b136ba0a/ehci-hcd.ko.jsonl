@@ -1,0 +1,2 @@
+{"binary":"ehci-hcd.ko","function":"ehci_setup","address":"00015c9c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ehci-hcd.ko","function":"ehci_setup","address":"00015c9c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

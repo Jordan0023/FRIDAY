@@ -1,0 +1,1 @@
+{"binary":"libvorbisenc.so.2.0.12","function":"vorbis_encode_setup_init","address":"00017854","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

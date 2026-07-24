@@ -1,0 +1,12 @@
+{"binary":"mtdinfo","function":"mkpath","address":"00014ccc","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"mkpath","address":"00014ccc","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"mtd_get_info","address":"00016774","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"mtd_write_img","address":"00018a58","route":"/O","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"proc_parse_start","address":"000196f4","route":"/proc/mtd","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_libmtd_open","address":"00019bbc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_libmtd_open","address":"00019bbc","route":"/proc/mtd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_get_dev_info","address":"00019d60","route":"/O","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_get_dev_info","address":"00019d60","route":"/O","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_get_dev_info","address":"00019d60","route":"/proc/mtd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_get_dev_info","address":"00019d60","route":"/proc/mtd","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mtdinfo","function":"legacy_get_dev_info1","address":"0001a59c","route":"/dev/mtd%d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

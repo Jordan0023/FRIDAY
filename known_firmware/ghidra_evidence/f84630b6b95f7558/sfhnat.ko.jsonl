@@ -1,0 +1,6 @@
+{"binary":"sfhnat.ko","function":"FUN_00010350","address":"00010350","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sfhnat.ko","function":"sf_hnat_debug_read","address":"00017ea4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sfhnat.ko","function":"sf_hnat_debug_write","address":"00017fb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sfhnat.ko","function":"sf_hnat_debug_write","address":"00017fb0","route":"/sys/kernel/debug/gmac_debug","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sfhnat.ko","function":"sf_hnat_debug_write","address":"00017fb0","route":"/sys/kernel/debug/hnat_debug","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sfhnat.ko","function":"sf_hnat_debug_write","address":"00017fb0","route":"/arp","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

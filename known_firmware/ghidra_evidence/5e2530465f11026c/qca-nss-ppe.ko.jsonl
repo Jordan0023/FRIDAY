@@ -1,0 +1,6 @@
+{"binary":"qca-nss-ppe.ko","function":"ppe_drv_stats_acl_show","address":"00022cf8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe.ko","function":"ppe_drv_stats_policer_show","address":"00022df4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe.ko","function":"ppe_drv_conn_stats_sawf_sc_show","address":"00022ef0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe.ko","function":"ppe_drv_conn_stats_show","address":"00023198","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe.ko","function":"ppe_drv_tun_configure","address":"00032cd4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-ppe.ko","function":"ppe_drv_tun_encap_configure","address":"000371cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

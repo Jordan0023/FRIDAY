@@ -1,0 +1,1 @@
+{"binary":"mmc_block.ko","function":"FUN_00010e68","address":"00010e68","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

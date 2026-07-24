@@ -1,0 +1,3 @@
+{"binary":"libntfs-3g.so.86.0.0","function":"ntfs_attr_pread","address":"0001a694","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.86.0.0","function":"ntfs_attr_pwrite","address":"0001ec44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.86.0.0","function":"ntfs_build_mapping","address":"00040c30","route":"/')","sink":"memory_operation","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"urngd","function":"main","address":"00400e90","route":"/dev/random","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"urngd","function":"FUN_00401364","address":"00401364","route":"/proc/sys/crypto/fips_enabled","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

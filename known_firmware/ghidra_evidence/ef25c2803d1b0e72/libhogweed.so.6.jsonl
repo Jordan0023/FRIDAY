@@ -1,0 +1,6 @@
+{"binary":"libhogweed.so.6.0","function":"nettle_sexp_transport_iterator_first","address":"00017e14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhogweed.so.6.0","function":"_nettle_pkcs1_signature_prefix","address":"00018d1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhogweed.so.6.0","function":"nettle_pkcs1_encrypt","address":"00018de4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhogweed.so.6.0","function":"nettle_pss_mgf1","address":"00019bf8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhogweed.so.6.0","function":"nettle_pgp_put_rsa_sha1_signature","address":"0001d89c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhogweed.so.6.0","function":"nettle_rsa_keypair_to_openpgp","address":"0001de7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

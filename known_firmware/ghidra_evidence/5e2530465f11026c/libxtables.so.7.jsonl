@@ -1,0 +1,13 @@
+{"binary":"libxtables.so","function":"xtables_insmod","address":"000129f0","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_insmod","address":"000129f0","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"FUN_00012d08","address":"00012d08","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_parse_interface","address":"000132ec","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_find_match","address":"00013958","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_ipparse_multiple","address":"000145d0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_ipparse_any","address":"0001488c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_ip6parse_multiple","address":"00014e98","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_ip6parse_any","address":"000151b8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"get_kernel_version","address":"00015580","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"FUN_00015c00","address":"00015c00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"FUN_00016634","address":"00016634","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libxtables.so","function":"xtables_lmap_init","address":"0001736c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

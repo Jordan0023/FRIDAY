@@ -1,0 +1,5 @@
+{"binary":"libdb-4.8.so","function":"__db_retcopy","address":"0007a254","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_31_offdup","address":"0007c970","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"FUN_000931ec","address":"000931ec","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_mkpath","address":"000983b4","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_mkpath","address":"000983b4","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

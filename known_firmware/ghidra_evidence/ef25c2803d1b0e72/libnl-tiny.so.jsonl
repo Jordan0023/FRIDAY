@@ -1,0 +1,2 @@
+{"binary":"libnl-tiny.so","function":"nl_object_clone","address":"00014700","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-tiny.so","function":"unl_nl80211_phy_lookup","address":"00015378","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

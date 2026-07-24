@@ -1,0 +1,2 @@
+{"binary":"x_tables.ko","function":"xt_proto_init","address":"00010d58","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"x_tables.ko","function":"xt_proto_fini","address":"000110f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,7 @@
+{"binary":"libresolv.so.2","function":"FUN_00012d70","address":"00012d70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libresolv.so.2","function":"FUN_00012d70","address":"00012d70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libresolv.so.2","function":"FUN_00014c08","address":"00014c08","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libresolv.so.2","function":"__fp_nquery","address":"00016318","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libresolv.so.2","function":"FUN_0001bd9c","address":"0001bd9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libresolv.so.2","function":"ns_sprintrrf","address":"0001c194","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libresolv.so.2","function":"ns_sprintrrf","address":"0001c194","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

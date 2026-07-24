@@ -1,0 +1,5 @@
+{"binary":"adsldd.ko","function":"G992p3OvhMsgRcvProcessCmd","address":"000355c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"adsldd.ko","function":"DiagWriteStatus","address":"00040c50","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"adsldd.ko","function":"BcmAdslCoreDebugReadMem","address":"000414c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"adsldd.ko","function":"BcmAdslCoreDiagWriteLog","address":"00041670","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"adsldd.ko","function":"BcmAdslCoreDiagWriteLog","address":"00041670","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

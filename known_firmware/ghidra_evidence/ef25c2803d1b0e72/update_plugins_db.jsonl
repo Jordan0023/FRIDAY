@@ -1,0 +1,15 @@
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/update/install/remove","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/update/install/remove","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/update/install/remove","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/tmp/plugins.db","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/tmp/plugins.db","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/tmp/plugins.db","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/dev/null","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/dev/null","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/etc/backup/installed_packages.txt","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/etc/backup/installed_packages.txt","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/etc/backup/installed_packages.txt","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"update_plugins_db","function":"main","address":"00010c64","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

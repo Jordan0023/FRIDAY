@@ -1,0 +1,3 @@
+{"binary":"ip6_tunnel.ko","function":"FUN_00011bcc","address":"00011bcc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip6_tunnel.ko","function":"FUN_00011bcc","address":"00011bcc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip6_tunnel.ko","function":"ip6_tnl_init_net","address":"000122d0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

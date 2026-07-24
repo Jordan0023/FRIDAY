@@ -1,0 +1,2 @@
+{"binary":"wdtctl","function":"FUN_000108a0","address":"000108a0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wdtctl","function":"FUN_00010ff0","address":"00010ff0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

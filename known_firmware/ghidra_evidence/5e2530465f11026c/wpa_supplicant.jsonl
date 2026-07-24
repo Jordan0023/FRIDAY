@@ -1,0 +1,4 @@
+{"binary":"wpa_supplicant","function":"FUN_00047cd8","address":"00047cd8","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_supplicant","function":"FUN_00047cd8","address":"00047cd8","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_supplicant","function":"FUN_00048334","address":"00048334","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_supplicant","function":"FUN_0005dae8","address":"0005dae8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

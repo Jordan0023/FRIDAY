@@ -1,0 +1,2 @@
+{"binary":"cmdlist.ko","function":"cmdlist_ucast_create_bin","address":"00101440","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cmdlist.ko","function":"cmdlist_ucast_create_bin","address":"00101440","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"cdrom.ko","function":"cdrom_sysctl_info","address":"00010a78","route":"/12/17","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cdrom.ko","function":"mmc_ioctl","address":"0001236c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cdrom.ko","function":"mmc_ioctl","address":"0001236c","route":"/CDROMRESUME","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cdrom.ko","function":"mmc_ioctl","address":"0001236c","route":"/CDROMSTOP","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

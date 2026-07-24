@@ -1,0 +1,2 @@
+{"binary":"kmwan.ko","function":"FUN_00013f94","address":"00013f94","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"kmwan.ko","function":"cJSON_Print","address":"000144c4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

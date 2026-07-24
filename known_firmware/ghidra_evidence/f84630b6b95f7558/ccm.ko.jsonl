@@ -1,0 +1,2 @@
+{"binary":"ccm.ko","function":"FUN_00010924","address":"00010924","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ccm.ko","function":"FUN_00010fec","address":"00010fec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

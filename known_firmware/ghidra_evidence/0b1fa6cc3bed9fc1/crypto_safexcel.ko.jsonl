@@ -1,0 +1,8 @@
+{"binary":"crypto_safexcel.ko","function":"FUN_00105dd0","address":"00105dd0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto_safexcel.ko","function":"FUN_00106980","address":"00106980","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto_safexcel.ko","function":"FUN_001078a8","address":"001078a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto_safexcel.ko","function":"FUN_001089d8","address":"001089d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto_safexcel.ko","function":"FUN_00109ffc","address":"00109ffc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto_safexcel.ko","function":"FUN_0010a000","address":"0010a000","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto_safexcel.ko","function":"FUN_0010a5e8","address":"0010a5e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"crypto_safexcel.ko","function":"FUN_0010b408","address":"0010b408","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

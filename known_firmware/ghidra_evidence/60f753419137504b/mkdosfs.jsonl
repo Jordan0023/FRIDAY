@@ -1,0 +1,6 @@
+{"binary":"mkdosfs","function":"strcpy","address":"00008b74","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mkdosfs","function":"memcpy","address":"00008bbc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mkdosfs","function":"sprintf","address":"00008d3c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mkdosfs","function":"FUN_00008e10","address":"00008e10","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mkdosfs","function":"FUN_00008e10","address":"00008e10","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mkdosfs","function":"FUN_00008e10","address":"00008e10","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

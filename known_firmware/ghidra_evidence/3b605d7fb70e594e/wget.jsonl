@@ -1,0 +1,2 @@
+{"binary":"uclient-fetch","function":"FUN_00401678","address":"00401678","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uclient-fetch","function":"FUN_00401678","address":"00401678","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"libmbedcrypto.so.2.16.1","function":"mbedtls_cipher_update","address":"0002058c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

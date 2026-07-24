@@ -1,0 +1,2 @@
+{"binary":"libbsa.so","function":"GKI_create_pool","address":"0001d864","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libbsa.so","function":"UIPC_Init","address":"0001e6dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

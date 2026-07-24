@@ -1,0 +1,1 @@
+{"binary":"libdisk.so","function":"print_disk","address":"0001c428","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,1 @@
+{"binary":"libmnl.so.0.2.0","function":"mnl_attr_get_u64","address":"000135cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"xhci-hcd.ko","function":"xhci_hub_control","address":"0001dc40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xhci-hcd.ko","function":"xhci_hub_control","address":"0001dc40","route":"/U1/U2.","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

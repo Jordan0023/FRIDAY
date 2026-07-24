@@ -1,0 +1,2 @@
+{"binary":"libmagic.so.1","function":"FUN_00014574","address":"00014574","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmagic.so.1","function":"cdf_read_short_sector","address":"0001fb28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

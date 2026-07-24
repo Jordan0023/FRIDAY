@@ -1,0 +1,2 @@
+{"binary":"blkid","function":"strcpy","address":"00009650","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"blkid","function":"memcpy","address":"00009728","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

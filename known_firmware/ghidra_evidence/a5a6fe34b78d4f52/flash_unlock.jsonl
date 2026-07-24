@@ -1,0 +1,2 @@
+{"binary":"flash_unlock","function":"FUN_00010548","address":"00010548","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"flash_unlock","function":"FUN_00010548","address":"00010548","route":"/unlock/islocked","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

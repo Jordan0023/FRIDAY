@@ -1,0 +1,2 @@
+{"binary":"inet_diag.ko","function":"FUN_00100d90","address":"00100d90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"inet_diag.ko","function":"FUN_00101bb8","address":"00101bb8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

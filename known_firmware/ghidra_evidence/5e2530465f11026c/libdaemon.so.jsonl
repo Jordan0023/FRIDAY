@@ -1,0 +1,5 @@
+{"binary":"libdaemon.so.0.5.0","function":"daemon_pid_file_is_running","address":"00013f6c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdaemon.so.0.5.0","function":"daemon_pid_file_create","address":"00014520","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdaemon.so.0.5.0","function":"daemon_execv","address":"000147f0","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdaemon.so.0.5.0","function":"daemon_execv","address":"000147f0","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdaemon.so.0.5.0","function":"daemon_execv","address":"000147f0","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

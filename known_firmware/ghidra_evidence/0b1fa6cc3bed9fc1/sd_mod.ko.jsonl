@@ -1,0 +1,2 @@
+{"binary":"sd_mod.ko","function":"FUN_00104894","address":"00104894","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sd_mod.ko","function":"FUN_00104898","address":"00104898","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"ip_tables.ko","function":"ipt_register_table","address":"00011500","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_tables.ko","function":"FUN_00011f98","address":"00011f98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_tables.ko","function":"FUN_00011f98","address":"00011f98","route":"/linux/thread_info.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

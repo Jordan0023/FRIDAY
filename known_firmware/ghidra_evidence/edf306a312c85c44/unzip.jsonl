@@ -1,0 +1,12 @@
+{"binary":"unzip","function":"FUN_0010935c","address":"0010935c","route":"/*","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010935c","address":"0010935c","route":"/';","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010935c","address":"0010935c","route":"/'))","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010935c","address":"0010935c","route":"/');","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010935c","address":"0010935c","route":"/permissions/UID/GID","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010935c","address":"0010935c","route":"/perms/etc.","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010935c","address":"0010935c","route":"/attribs","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010935c","address":"0010935c","route":"/n","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010ccbc","address":"0010ccbc","route":"/*","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010ccbc","address":"0010ccbc","route":"/perms/etc.","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010ccbc","address":"0010ccbc","route":"/attribs","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}
+{"binary":"unzip","function":"FUN_0010ccbc","address":"0010ccbc","route":"/n","sink":"file_write","sources":"","auth_markers":"password","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"nf_nat.ko","function":"FUN_000139b0","address":"000139b0","route":"/linux/skbuff.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat.ko","function":"FUN_000139b0","address":"000139b0","route":"/linux/skbuff.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

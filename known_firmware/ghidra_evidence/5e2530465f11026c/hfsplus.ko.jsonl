@@ -1,0 +1,10 @@
+{"binary":"hfsplus.ko","function":"hfsplus_find_cat","address":"00013e4c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_unlink","address":"00014d74","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_link","address":"00014f58","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_lookup","address":"00015148","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_readdir","address":"000153ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_create_attr","address":"0001add4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"__hfsplus_setxattr","address":"0001b368","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_setxattr","address":"0001bcb0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"__hfsplus_getxattr","address":"0001bd38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"hfsplus.ko","function":"hfsplus_getxattr","address":"0001bfb4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

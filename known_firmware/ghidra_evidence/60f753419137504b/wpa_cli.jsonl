@@ -1,0 +1,6 @@
+{"binary":"wpa_cli","function":"memmove","address":"00008ff8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"memcpy","address":"00009040","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"execv","address":"000091cc","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"fopen","address":"00009208","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_0000ff68","address":"0000ff68","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_000105e0","address":"000105e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

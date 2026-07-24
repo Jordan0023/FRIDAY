@@ -1,0 +1,2 @@
+{"binary":"ip_tables.ko","function":"FUN_00011508","address":"00011508","route":"/linux/thread_info.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ip_tables.ko","function":"FUN_00011508","address":"00011508","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

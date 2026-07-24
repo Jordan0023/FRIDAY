@@ -1,0 +1,2 @@
+{"binary":"fing_dil","function":"read_encoded_data","address":"00013c84","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fing_dil","function":"write_decoded_data","address":"00013d4c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

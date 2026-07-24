@@ -1,0 +1,11 @@
+{"binary":"bcmspu.ko","function":"aead_authenc_setkey","address":"00100e10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"ablkcipher_setkey","address":"00102160","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"handle_ahash_req","address":"001024c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"handle_ablkcipher_req","address":"00103270","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"handle_aead_req","address":"00103da0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_rx_callback","address":"00105150","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu2_create_request","address":"00106640","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu2_cipher_req_init","address":"00106a90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"FUN_00106e3c","address":"00106e3c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_xmit_ds","address":"00106e40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_xmit_us","address":"001078a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

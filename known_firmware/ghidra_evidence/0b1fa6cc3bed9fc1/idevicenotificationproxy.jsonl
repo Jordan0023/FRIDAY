@@ -1,0 +1,6 @@
+{"binary":"idevicenotificationproxy","function":"FUN_0040c5b0","address":"0040c5b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicenotificationproxy","function":"FUN_0040c5b0","address":"0040c5b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicenotificationproxy","function":"FUN_0040c5b0","address":"0040c5b0","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicenotificationproxy","function":"FUN_0040c5b0","address":"0040c5b0","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicenotificationproxy","function":"FUN_0041abd8","address":"0041abd8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"idevicenotificationproxy","function":"FUN_0041c844","address":"0041c844","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

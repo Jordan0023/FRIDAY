@@ -1,0 +1,6 @@
+{"binary":"cgi-io","function":"FUN_001017b0","address":"001017b0","route":"/-","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_001017b0","address":"001017b0","route":"/octet-stream","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_001017b0","address":"001017b0","route":"/dev/null","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_001017b0","address":"001017b0","route":"/bin:/usr/bin:/sbin:/usr/sbin","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_001017b0","address":"001017b0","route":"/sbin/sysupgrade","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_001017b0","address":"001017b0","route":"/x-targz","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

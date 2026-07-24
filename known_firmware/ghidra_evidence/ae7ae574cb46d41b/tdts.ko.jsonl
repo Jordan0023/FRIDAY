@@ -1,0 +1,1 @@
+{"binary":"tdts.ko","function":"tdts_core_rule_input_signature_tables","address":"0011ec18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

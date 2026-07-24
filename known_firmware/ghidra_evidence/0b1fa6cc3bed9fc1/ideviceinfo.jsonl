@@ -1,0 +1,7 @@
+{"binary":"ideviceinfo","function":"FUN_0040494c","address":"0040494c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ideviceinfo","function":"FUN_0040494c","address":"0040494c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ideviceinfo","function":"FUN_0040494c","address":"0040494c","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ideviceinfo","function":"FUN_0040494c","address":"0040494c","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ideviceinfo","function":"FUN_00404c10","address":"00404c10","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ideviceinfo","function":"FUN_0041a0bc","address":"0041a0bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ideviceinfo","function":"FUN_0041bd28","address":"0041bd28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

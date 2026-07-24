@@ -1,0 +1,3 @@
+{"binary":"usbhid.ko","function":"hid_submit_out","address":"00010208","route":"/hid/usbhid/hid-core.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbhid.ko","function":"hid_submit_ctrl","address":"000104d4","route":"/linux/usb.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbhid.ko","function":"hid_submit_ctrl","address":"000104d4","route":"/hid/usbhid/hid-core.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"ums-sddr09.ko","function":"FUN_0001025c","address":"0001025c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ums-sddr09.ko","function":"sddr09_transport","address":"000108fc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ums-sddr09.ko","function":"sddr09_transport","address":"000108fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

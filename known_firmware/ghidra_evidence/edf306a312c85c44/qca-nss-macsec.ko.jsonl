@@ -1,0 +1,6 @@
+{"binary":"qca-nss-macsec.ko","function":"qca_macsec_rx_prc_lut_set","address":"0010194c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-macsec.ko","function":"qca_macsec_rx_prc_lut_get","address":"00101ac4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-macsec.ko","function":"qca_macsec_tx_class_lut_set","address":"001033dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-macsec.ko","function":"qca_macsec_tx_class_lut_get","address":"00103594","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-macsec.ko","function":"nss_macsec_secy_rx_sak_get","address":"00106e80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qca-nss-macsec.ko","function":"nss_macsec_secy_tx_sak_get","address":"00108a64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

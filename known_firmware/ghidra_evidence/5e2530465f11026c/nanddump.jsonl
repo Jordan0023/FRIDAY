@@ -1,0 +1,13 @@
+{"binary":"nanddump","function":"main","address":"00011b7c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"mkpath","address":"00012930","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"mkpath","address":"00012930","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"mtd_get_info","address":"000143d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"mtd_write_img","address":"000166bc","route":"/O","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"proc_parse_start","address":"00017358","route":"/proc/mtd","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"legacy_libmtd_open","address":"00017820","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"legacy_libmtd_open","address":"00017820","route":"/proc/mtd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"legacy_get_dev_info","address":"000179c4","route":"/O","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"legacy_get_dev_info","address":"000179c4","route":"/O","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"legacy_get_dev_info","address":"000179c4","route":"/proc/mtd","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"legacy_get_dev_info","address":"000179c4","route":"/proc/mtd","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nanddump","function":"legacy_get_dev_info1","address":"00018200","route":"/dev/mtd%d","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

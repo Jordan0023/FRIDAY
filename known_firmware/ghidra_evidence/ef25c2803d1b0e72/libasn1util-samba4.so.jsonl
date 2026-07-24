@@ -1,0 +1,2 @@
+{"binary":"libasn1util-samba4.so","function":"asn1_write","address":"0001194c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libasn1util-samba4.so","function":"asn1_peek","address":"00012554","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

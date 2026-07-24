@@ -1,0 +1,2 @@
+{"binary":"gl-sdk4-tertf.ko","function":"FUN_0010182c","address":"0010182c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl-sdk4-tertf.ko","function":"FUN_0010182c","address":"0010182c","route":"/linux/uaccess.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

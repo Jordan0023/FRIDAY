@@ -1,0 +1,2 @@
+{"binary":"usbmuxd","function":"FUN_00403cb0","address":"00403cb0","route":"/*","sink":"memory_operation","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbmuxd","function":"FUN_00403cb0","address":"00403cb0","route":"/*","sink":"unsafe_copy","sources":"recv","auth_markers":"","correlation":"function-local-co-location"}

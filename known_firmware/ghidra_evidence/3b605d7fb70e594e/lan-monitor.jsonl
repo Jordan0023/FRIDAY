@@ -1,0 +1,9 @@
+{"binary":"lan-monitor","function":"FUN_00401694","address":"00401694","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lan-monitor","function":"FUN_0040176c","address":"0040176c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lan-monitor","function":"FUN_0040176c","address":"0040176c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lan-monitor","function":"FUN_00401a54","address":"00401a54","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lan-monitor","function":"FUN_00401a54","address":"00401a54","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lan-monitor","function":"FUN_00401f34","address":"00401f34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lan-monitor","function":"FUN_004036b0","address":"004036b0","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lan-monitor","function":"uci_set_option","address":"00403fec","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lan-monitor","function":"FUN_00404164","address":"00404164","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

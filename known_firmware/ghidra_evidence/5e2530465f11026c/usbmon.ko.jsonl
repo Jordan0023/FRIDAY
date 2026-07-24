@@ -1,0 +1,2 @@
+{"binary":"usbmon.ko","function":"mon_text_complete","address":"00010d34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"usbmon.ko","function":"mon_text_submit","address":"00010d40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

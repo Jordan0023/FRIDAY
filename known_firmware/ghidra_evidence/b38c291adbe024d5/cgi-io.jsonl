@@ -1,0 +1,12 @@
+{"binary":"cgi-io","function":"FUN_004022d8","address":"004022d8","route":"/*","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_004022d8","address":"004022d8","route":"/bin/busybox","sink":"exec","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_004027e8","address":"004027e8","route":"/form-data;","sink":"unsafe_copy","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_004027e8","address":"004027e8","route":"/*","sink":"unsafe_copy","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_0040296c","address":"0040296c","route":"/proc/self/fd/%d","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_0040296c","address":"0040296c","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_0040296c","address":"0040296c","route":"/O","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_00402cb0","address":"00402cb0","route":"/tmp","sink":"file_write","sources":"","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_00402d64","address":"00402d64","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_00402d64","address":"00402d64","route":"/-","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_00402d64","address":"00402d64","route":"/octet-stream","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cgi-io","function":"FUN_00403714","address":"00403714","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

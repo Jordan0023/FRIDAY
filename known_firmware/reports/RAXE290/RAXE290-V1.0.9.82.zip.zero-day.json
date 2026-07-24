@@ -1,0 +1,1784 @@
+{
+  "archive_test_cases": [
+    {
+      "expected": "extractor rejects or confines member",
+      "members": [
+        {
+          "name": "../../tmp/friday-proof/dotdot",
+          "type": "file"
+        }
+      ],
+      "name": "dotdot"
+    },
+    {
+      "expected": "extractor rejects or strips absolute path",
+      "members": [
+        {
+          "name": "/tmp/friday-proof/absolute",
+          "type": "file"
+        }
+      ],
+      "name": "absolute"
+    },
+    {
+      "expected": "no write through symlink outside extraction root",
+      "members": [
+        {
+          "name": "pivot",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        },
+        {
+          "name": "pivot/marker",
+          "type": "file"
+        }
+      ],
+      "name": "symlink_pivot"
+    },
+    {
+      "expected": "hardlink target remains confined",
+      "members": [
+        {
+          "name": "marker",
+          "target": "../../tmp/friday-proof/hardlink",
+          "type": "hardlink"
+        }
+      ],
+      "name": "hardlink"
+    },
+    {
+      "expected": "duplicate type replacement is rejected",
+      "members": [
+        {
+          "name": "same",
+          "type": "file"
+        },
+        {
+          "name": "same",
+          "target": "../../tmp/friday-proof",
+          "type": "symlink"
+        }
+      ],
+      "name": "duplicate"
+    },
+    {
+      "expected": "bounded rejection or confined extraction",
+      "members": [
+        {
+          "name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "type": "file"
+        }
+      ],
+      "name": "long_name"
+    },
+    {
+      "expected": "no implicit recursive extraction",
+      "members": [
+        {
+          "name": "nested.tar",
+          "type": "archive"
+        }
+      ],
+      "name": "nested_archive"
+    }
+  ],
+  "auth_test_matrix": [
+    {
+      "expected_boundary": "must not enter protected handler",
+      "headers": {},
+      "name": "no_credentials"
+    },
+    {
+      "expected_boundary": "must match unauthenticated behavior",
+      "headers": {
+        "Authorization": "Bearer FRIDAY_INVALID",
+        "Cookie": "session=FRIDAY_INVALID"
+      },
+      "name": "invalid_session"
+    },
+    {
+      "expected_boundary": "must not cross administrator boundary",
+      "headers": {
+        "Cookie": "session=FRIDAY_LOW_PRIV"
+      },
+      "name": "low_privilege"
+    }
+  ],
+  "candidates": [],
+  "config_writers": [],
+  "confirmation_policy": {
+    "L3": "route-specific attacker parameter reaches the sink",
+    "L4": "authentication/validation boundary and trigger are proven",
+    "L5": "reproducible security effect with fault/sink attribution",
+    "authenticated_admin_disposition": "confirmed vulnerability, but not a confirmed zero-day",
+    "confirmed_label_requires": "L5",
+    "confirmed_zero_day_requires": [
+      "L5 reproducible security effect with fault/sink attribution",
+      "novel reproducible pre-authentication exploitation path with no remote administrator session required",
+      "LAN or WAN network reachability without credentials",
+      "impact is remote code execution or a reliable input-specific denial of service",
+      "denial of service reproduces from attacker input and is not generic resource exhaustion",
+      "documented, dated public-prior-art search",
+      "no matching public disclosure or publicly available fix at the recorded discovery time"
+    ],
+    "forbidden_shortcut": "route string and dangerous symbol merely co-located in a binary",
+    "impactful_hunt_scope": "unauthenticated LAN/WAN RCE or reliable input-specific denial of service",
+    "private_duplicate_caveat": "public novelty does not exclude an unknown private or embargoed duplicate",
+    "vendor_contact_required": false
+  },
+  "correlated_flows": [
+    {
+      "confidence": "L2-co-located",
+      "routes": [],
+      "score": 33,
+      "sinks": [
+        "file_write",
+        "unsafe_memory"
+      ],
+      "source_file": "_RAXE290-V1.0.9.82.zip.extracted/7505A9",
+      "sources": [
+        "nvram_get"
+      ]
+    }
+  ],
+  "dynamic_sink_spec": [
+    {
+      "capture": [
+        "pc",
+        "argv",
+        "route",
+        "auth_state"
+      ],
+      "symbols": [
+        "system",
+        "popen",
+        "execve"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "destination",
+        "source",
+        "length",
+        "before",
+        "after"
+      ],
+      "symbols": [
+        "memcpy",
+        "strcpy",
+        "sprintf"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "path",
+        "flags",
+        "sandbox_escape"
+      ],
+      "symbols": [
+        "open",
+        "fopen",
+        "rename",
+        "symlink"
+      ]
+    },
+    {
+      "capture": [
+        "pc",
+        "key",
+        "size",
+        "return_value"
+      ],
+      "symbols": [
+        "shmget",
+        "shmat",
+        "nvram_set",
+        "uci_set"
+      ]
+    }
+  ],
+  "fuzz_seeds": [
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "-33/-30dBm",
+      "template": "POST /-33/-30dBm HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "1/2",
+      "template": "POST /1/2 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "125/119",
+      "template": "POST /125/119 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "16/18",
+      "template": "POST /16/18 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "40/80MHz",
+      "template": "POST /40/80MHz HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense"
+      ],
+      "protocol": "http",
+      "route": "TR/REC-html40",
+      "template": "POST /TR/REC-html40 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\nBalloon=FRIDAY_0&Bibliography=FRIDAY_1&Block=FRIDAY_2&Body=FRIDAY_3&Book=FRIDAY_4&Closing=FRIDAY_5&Colorful=FRIDAY_6&Dark=FRIDAY_7&Date=FRIDAY_8&Default=FRIDAY_9&Document=FRIDAY_10&E-mail=FRIDAY_11&Emphasis=FRIDAY_12&FollowedHyperlink=FRIDAY_13&Generator=FRIDAY_14&Grid=FRIDAY_15&HTML=FRIDAY_16&Hashtag=FRIDAY_17&Hyperlink=FRIDAY_18&Intense=FRIDAY_19"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense"
+      ],
+      "protocol": "http",
+      "route": "about/security",
+      "template": "POST /about/security HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\nBalloon=FRIDAY_0&Bibliography=FRIDAY_1&Block=FRIDAY_2&Body=FRIDAY_3&Book=FRIDAY_4&Closing=FRIDAY_5&Colorful=FRIDAY_6&Dark=FRIDAY_7&Date=FRIDAY_8&Default=FRIDAY_9&Document=FRIDAY_10&E-mail=FRIDAY_11&Emphasis=FRIDAY_12&FollowedHyperlink=FRIDAY_13&Generator=FRIDAY_14&Grid=FRIDAY_15&HTML=FRIDAY_16&Hashtag=FRIDAY_17&Hyperlink=FRIDAY_18&Intense=FRIDAY_19"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "bl_L/bl",
+      "template": "POST /bl_L/bl HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "bl_S/bl",
+      "template": "POST /bl_S/bl HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "bus/i2c",
+      "template": "POST /bus/i2c HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "cr1/cr2",
+      "template": "POST /cr1/cr2 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "cr1/cr2/all",
+      "template": "POST /cr1/cr2/all HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "cr1/cr2/pll/pll0/pll1",
+      "template": "POST /cr1/cr2/pll/pll0/pll1 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "cr1/cr2/pll/pll0/pll1/all",
+      "template": "POST /cr1/cr2/pll/pll0/pll1/all HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "device/name",
+      "template": "POST /device/name HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense"
+      ],
+      "protocol": "http",
+      "route": "files/GDC/RAXE290/RAXE290-V1.0.9.82.zip",
+      "template": "POST /files/GDC/RAXE290/RAXE290-V1.0.9.82.zip HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\nBalloon=FRIDAY_0&Bibliography=FRIDAY_1&Block=FRIDAY_2&Body=FRIDAY_3&Book=FRIDAY_4&Closing=FRIDAY_5&Colorful=FRIDAY_6&Dark=FRIDAY_7&Date=FRIDAY_8&Default=FRIDAY_9&Document=FRIDAY_10&E-mail=FRIDAY_11&Emphasis=FRIDAY_12&FollowedHyperlink=FRIDAY_13&Generator=FRIDAY_14&Grid=FRIDAY_15&HTML=FRIDAY_16&Hashtag=FRIDAY_17&Hyperlink=FRIDAY_18&Intense=FRIDAY_19"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/dev_mcast",
+      "template": "POST /net/dev_mcast HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/igmp",
+      "template": "POST /net/igmp HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/igmp6",
+      "template": "POST /net/igmp6 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "net/tun",
+      "template": "POST /net/tun HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "ns/net",
+      "template": "POST /ns/net HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "ofdm/11n/11ac",
+      "template": "POST /ofdm/11n/11ac HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense"
+      ],
+      "protocol": "http",
+      "route": "office/2004/12/omml",
+      "template": "POST /office/2004/12/omml HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\nBalloon=FRIDAY_0&Bibliography=FRIDAY_1&Block=FRIDAY_2&Body=FRIDAY_3&Book=FRIDAY_4&Closing=FRIDAY_5&Colorful=FRIDAY_6&Dark=FRIDAY_7&Date=FRIDAY_8&Default=FRIDAY_9&Document=FRIDAY_10&E-mail=FRIDAY_11&Emphasis=FRIDAY_12&FollowedHyperlink=FRIDAY_13&Generator=FRIDAY_14&Grid=FRIDAY_15&HTML=FRIDAY_16&Hashtag=FRIDAY_17&Hyperlink=FRIDAY_18&Intense=FRIDAY_19"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "radio/ctl1",
+      "template": "POST /radio/ctl1 HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "run/netns",
+      "template": "POST /run/netns HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "rx/scan",
+      "template": "POST /rx/scan HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "self/ns/net",
+      "template": "POST /self/ns/net HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "sys/net/ipv4/route/flush",
+      "template": "POST /sys/net/ipv4/route/flush HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    },
+    {
+      "content_type": "application/x-www-form-urlencoded",
+      "mutation_points": [
+        "path",
+        "headers",
+        "body"
+      ],
+      "protocol": "http",
+      "route": "usr/arm-buildroot-linux-gnueabi/sysroot/lib/ip/link_",
+      "template": "POST /usr/arm-buildroot-linux-gnueabi/sysroot/lib/ip/link_ HTTP/1.1\r\nHost: router.local\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: {length}\r\n\r\n"
+    }
+  ],
+  "ghidra_evidence": [
+    {
+      "address": "000116bc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000116bc",
+      "route": "/dev/i2c/%d",
+      "sink": "file_write",
+      "sources": ""
+    },
+    {
+      "address": "000116bc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000116bc",
+      "route": "/dev/i2c/%d",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000116bc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000116bc",
+      "route": "/dev/i2c-%d",
+      "sink": "file_write",
+      "sources": ""
+    },
+    {
+      "address": "000116bc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000116bc",
+      "route": "/dev/i2c-%d",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/proc/bus/i2c",
+      "sink": "file_write",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/proc/bus/i2c",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/proc/bus/i2c",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/proc/mounts",
+      "sink": "file_write",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/proc/mounts",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/proc/mounts",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/name",
+      "sink": "file_write",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/name",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/name",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/device/name",
+      "sink": "file_write",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/device/name",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/device/name",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/device",
+      "sink": "file_write",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/device",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/device",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/device/%s/name",
+      "sink": "file_write",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/device/%s/name",
+      "sink": "unsafe_copy",
+      "sources": ""
+    },
+    {
+      "address": "000117fc",
+      "auth_markers": "",
+      "binary": "7BCE01",
+      "correlation": "function-local-co-location",
+      "function": "FUN_000117fc",
+      "route": "/%s/device/%s/name",
+      "sink": "unsafe_copy",
+      "sources": ""
+    }
+  ],
+  "known_coverage": [],
+  "notes": [
+    "Evidence levels: L0 route/string present, L1 parameters identified, L2 dangerous sink present in firmware, L3 route/parameter-to-sink flow should be proven with decompiler, L4 filter bypass plausible, L5 live PoC confirmed.",
+    "Only routes with a plausible low-privilege boundary and route-local sink evidence are promoted. Global firmware sink counts never raise route evidence.",
+    "Authentication labels inferred from strings are hypotheses until dispatcher control flow or a live request confirms them.",
+    "This triage increases zero-day coverage but does not replace route-specific reverse engineering or live emulation."
+  ],
+  "rejected_candidates": [
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "bl_L/bl",
+      "score": 12,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/796F23"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "bl_S/bl",
+      "score": 12,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/796F23"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write, unsafe_copy"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "bus/i2c",
+      "score": 12,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7BCE01"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "ns/net",
+      "score": 12,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7E446F"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "self/ns/net",
+      "score": 12,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7E446F"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "-33/-30dBm",
+      "score": 7,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/79F34B"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "125/119",
+      "score": 7,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/79F34B"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "40/80MHz",
+      "score": 7,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/79F34B"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L1",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense",
+        "Light",
+        "List",
+        "Medium",
+        "Mention",
+        "Message",
+        "No",
+        "Normal",
+        "Note",
+        "Originator",
+        "Outline",
+        "Placeholder",
+        "Plain",
+        "ProgId",
+        "Quote",
+        "Revision",
+        "Salutation",
+        "Signature",
+        "Smart",
+        "Strong",
+        "Subtitle",
+        "Subtle",
+        "TOC",
+        "Table",
+        "Title",
+        "Unresolved",
+        "annotation",
+        "caption",
+        "endnote",
+        "envelope",
+        "footer",
+        "footnote",
+        "header",
+        "heading",
+        "index",
+        "line",
+        "macro",
+        "page",
+        "table",
+        "toa",
+        "toc"
+      ],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "about/security",
+      "score": 7,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/RAXE290-V1.0.9.82_Release_Notes.htm"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "deprioritized: sink exists but no attacker-controlled parameter is identified",
+      "evidence": [
+        "no authentication decision recovered",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "device/name",
+      "score": 7,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7BCE01"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L1",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense",
+        "Light",
+        "List",
+        "Medium",
+        "Mention",
+        "Message",
+        "No",
+        "Normal",
+        "Note",
+        "Originator",
+        "Outline",
+        "Placeholder",
+        "Plain",
+        "ProgId",
+        "Quote",
+        "Revision",
+        "Salutation",
+        "Signature",
+        "Smart",
+        "Strong",
+        "Subtitle",
+        "Subtle",
+        "TOC",
+        "Table",
+        "Title",
+        "Unresolved",
+        "annotation",
+        "caption",
+        "endnote",
+        "envelope",
+        "footer",
+        "footnote",
+        "header",
+        "heading",
+        "index",
+        "line",
+        "macro",
+        "page",
+        "table",
+        "toa",
+        "toc"
+      ],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "files/GDC/RAXE290/RAXE290-V1.0.9.82.zip",
+      "score": 7,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/RAXE290-V1.0.9.82_Release_Notes.htm"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "run/netns",
+      "score": 7,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7E446F"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "usr/arm-buildroot-linux-gnueabi/sysroot/lib/ip/link_",
+      "score": 7,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7E446F"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "16/18",
+      "score": 2,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/796F23"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L1",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense",
+        "Light",
+        "List",
+        "Medium",
+        "Mention",
+        "Message",
+        "No",
+        "Normal",
+        "Note",
+        "Originator",
+        "Outline",
+        "Placeholder",
+        "Plain",
+        "ProgId",
+        "Quote",
+        "Revision",
+        "Salutation",
+        "Signature",
+        "Smart",
+        "Strong",
+        "Subtitle",
+        "Subtle",
+        "TOC",
+        "Table",
+        "Title",
+        "Unresolved",
+        "annotation",
+        "caption",
+        "endnote",
+        "envelope",
+        "footer",
+        "footnote",
+        "header",
+        "heading",
+        "index",
+        "line",
+        "macro",
+        "page",
+        "table",
+        "toa",
+        "toc"
+      ],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "TR/REC-html40",
+      "score": 2,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/RAXE290-V1.0.9.82_Release_Notes.htm"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "cr1/cr2",
+      "score": 2,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/79F34B"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "cr1/cr2/pll/pll0/pll1",
+      "score": 2,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/79F34B"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/dev_mcast",
+      "score": 2,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7E446F"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/igmp",
+      "score": 2,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7E446F"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "net/igmp6",
+      "score": 2,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7E446F"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L1",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [
+        "Balloon",
+        "Bibliography",
+        "Block",
+        "Body",
+        "Book",
+        "Closing",
+        "Colorful",
+        "Dark",
+        "Date",
+        "Default",
+        "Document",
+        "E-mail",
+        "Emphasis",
+        "FollowedHyperlink",
+        "Generator",
+        "Grid",
+        "HTML",
+        "Hashtag",
+        "Hyperlink",
+        "Intense",
+        "Light",
+        "List",
+        "Medium",
+        "Mention",
+        "Message",
+        "No",
+        "Normal",
+        "Note",
+        "Originator",
+        "Outline",
+        "Placeholder",
+        "Plain",
+        "ProgId",
+        "Quote",
+        "Revision",
+        "Salutation",
+        "Signature",
+        "Smart",
+        "Strong",
+        "Subtitle",
+        "Subtle",
+        "TOC",
+        "Table",
+        "Title",
+        "Unresolved",
+        "annotation",
+        "caption",
+        "endnote",
+        "envelope",
+        "footer",
+        "footnote",
+        "header",
+        "heading",
+        "index",
+        "line",
+        "macro",
+        "page",
+        "table",
+        "toa",
+        "toc"
+      ],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "office/2004/12/omml",
+      "score": 2,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/RAXE290-V1.0.9.82_Release_Notes.htm"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "radio/ctl1",
+      "score": 2,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/79F34B"
+    },
+    {
+      "auth_class": "unknown",
+      "disposition": "rejected: route is not correlated with a dangerous sink",
+      "evidence": [
+        "no authentication decision recovered",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "sys/net/ipv4/route/flush",
+      "score": 2,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7E446F"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "1/2",
+      "score": -5,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/796F23"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "cr1/cr2/all",
+      "score": -10,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/79F34B"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "cr1/cr2/pll/pll0/pll1/all",
+      "score": -10,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/79F34B"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "route-local sinks: file_write"
+      ],
+      "evidence_level": "L2",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks",
+        "prove or reject parameter-to-system/popen/exec flow"
+      ],
+      "route": "net/tun",
+      "score": -10,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/7E446F"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "lan",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "rx/scan",
+      "score": -10,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/796F23"
+    },
+    {
+      "auth_class": "required",
+      "disposition": "deprioritized: authenticated administrator or privileged session required",
+      "evidence": [
+        "authentication/session marker is co-located; enforcement is unproven",
+        "no route-local dangerous sink found"
+      ],
+      "evidence_level": "L0",
+      "exposure": "unknown",
+      "impact_class": "unproven",
+      "matched_keywords": [],
+      "parameters": [],
+      "recommended_checks": [
+        "confirm dispatcher authentication control flow",
+        "trace each risky parameter into command/file/memory sinks"
+      ],
+      "route": "ofdm/11n/11ac",
+      "score": -15,
+      "source": "string:_RAXE290-V1.0.9.82.zip.extracted/79F34B"
+    }
+  ],
+  "rootfs": "/home/jordan/FRIDAY/known_firmware/extracted/3de38411e3c0353b",
+  "runtime_launch_plan": {
+    "interfaces": [
+      {
+        "address": "192.168.250.1/24",
+        "name": "br0"
+      },
+      {
+        "address": "192.168.250.2/32",
+        "name": "probe"
+      }
+    ],
+    "isolation": [
+      "no external network",
+      "no host ports by default",
+      "disposable writable rootfs",
+      "synthetic LAN client"
+    ],
+    "listener_candidates": [],
+    "requirements": [],
+    "startup_candidates": [],
+    "vendor": "generic"
+  },
+  "runtime_profile": {
+    "architectures": [
+      "arm"
+    ],
+    "executable_count": 7,
+    "rootfs_candidates": [],
+    "state_backends": [],
+    "vendor": "generic",
+    "web_stack": []
+  },
+  "service_surface": [
+    {
+      "auth_class": "device",
+      "evidence": [
+        "service marker present"
+      ],
+      "exposure": "lan/wireless",
+      "protocol": "unknown",
+      "risk": "high",
+      "service": "mesh",
+      "source": "_RAXE290-V1.0.9.82.zip.extracted/RAXE290-V1.0.9.82_Release_Notes.htm"
+    }
+  ],
+  "sink_summary": {
+    "exec": 0,
+    "file_write": 31,
+    "popen": 0,
+    "system": 0,
+    "unsafe_copy": 13
+  },
+  "validation_recipes": [
+    {
+      "marker": "FRIDAY_CMD_MARKER",
+      "payloads": [
+        ";printf FRIDAY_CMD_MARKER",
+        "$(printf FRIDAY_CMD_MARKER)"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker appears in captured argv/stdout",
+      "vulnerability_class": "command_injection"
+    },
+    {
+      "marker": "FRIDAY_PATH_MARKER",
+      "payloads": [
+        "../../tmp/friday-proof/marker",
+        "..%2f..%2ftmp%2ffriday-proof%2fmarker"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "marker created inside modeled /tmp only",
+      "vulnerability_class": "path_traversal"
+    },
+    {
+      "marker": "FRIDAY_ARCHIVE_MARKER",
+      "payloads": [
+        "ordered symlink then child file",
+        "hardlink to modeled target"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "write escapes extraction root but remains inside sandbox",
+      "vulnerability_class": "archive_escape"
+    },
+    {
+      "marker": "FRIDAY_CRASH_MARKER",
+      "payloads": [
+        "cyclic bounded input lengths 64..4096"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "reproducible crash with instruction/register capture",
+      "vulnerability_class": "memory_corruption"
+    },
+    {
+      "marker": "FRIDAY_AUTH_MARKER",
+      "payloads": [
+        "missing cookie",
+        "duplicate cookie",
+        "method override"
+      ],
+      "restrictions": [
+        "localhost or isolated namespace only",
+        "no persistence",
+        "no external network",
+        "write only below /tmp/friday-proof"
+      ],
+      "success_signal": "protected handler returns distinct success state",
+      "vulnerability_class": "auth_bypass"
+    }
+  ]
+}

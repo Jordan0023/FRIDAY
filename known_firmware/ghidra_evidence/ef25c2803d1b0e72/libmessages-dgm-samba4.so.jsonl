@@ -1,0 +1,6 @@
+{"binary":"libmessages-dgm-samba4.so","function":"messaging_dgm_recv","address":"00012c10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmessages-dgm-samba4.so","function":"messaging_dgm_init","address":"00013a08","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmessages-dgm-samba4.so","function":"messaging_dgm_send","address":"00014258","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmessages-dgm-samba4.so","function":"messaging_dgm_get_unique","address":"00014838","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmessages-dgm-samba4.so","function":"messaging_dgm_cleanup","address":"00014940","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmessages-dgm-samba4.so","function":"pthreadpool_add_job","address":"000164a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

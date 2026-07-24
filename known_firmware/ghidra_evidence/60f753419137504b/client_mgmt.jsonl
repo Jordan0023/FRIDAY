@@ -1,0 +1,5 @@
+{"binary":"client_mgmt","function":"strcpy","address":"0000906c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"client_mgmt","function":"memcpy","address":"000090d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"client_mgmt","function":"sscanf","address":"00009240","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"client_mgmt","function":"fopen","address":"0000927c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"client_mgmt","function":"sprintf","address":"000092dc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

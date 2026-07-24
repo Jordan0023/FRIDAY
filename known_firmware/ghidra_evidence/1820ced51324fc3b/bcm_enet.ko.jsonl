@@ -1,0 +1,3 @@
+{"binary":"bcm_enet.ko","function":"bcm63xx_enet_ioctl","address":"001041d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_enet.ko","function":"bcm63xx_enet_probe","address":"0011dc10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcm_enet.ko","function":"bcm63xx_enet_probe","address":"0011dc10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

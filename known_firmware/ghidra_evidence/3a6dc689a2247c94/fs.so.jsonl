@@ -1,0 +1,2 @@
+{"binary":"fs.so","function":"FUN_00012de8","address":"00012de8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fs.so","function":"FUN_00013060","address":"00013060","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"xt_pctl.ko","function":"FUN_001004b0","address":"001004b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"xt_pctl.ko","function":"init_module","address":"0010a000","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

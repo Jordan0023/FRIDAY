@@ -1,0 +1,8 @@
+{"binary":"libdb-4.8.so","function":"__bam_merge_44_recover","address":"0002f264","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_retcopy","address":"00072ec4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"FUN_00073e00","address":"00073e00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_31_offdup","address":"00075658","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"FUN_0008c15c","address":"0008c15c","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_mkpath","address":"00091480","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_mkpath","address":"00091480","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__memp_fget","address":"00092e88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -259,13 +259,13 @@
       "url": "https://www.tp-link.com/us/support/download/sr20/"
     },
     "TP-Link TC-7610|https://www.tp-link.com/us/support/download/tc-7610/": {
-      "category": "Cable Modems",
+      "category": "Cable Modems & Routers",
       "product": "TP-Link TC-7610",
       "reason": "No firmware links listed",
       "url": "https://www.tp-link.com/us/support/download/tc-7610/"
     },
     "TP-Link TC-7620|https://www.tp-link.com/us/support/download/tc-7620/": {
-      "category": "Cable Modems",
+      "category": "Cable Modems & Routers",
       "product": "TP-Link TC-7620",
       "reason": "No firmware links listed",
       "url": "https://www.tp-link.com/us/support/download/tc-7620/"
@@ -283,7 +283,7 @@
       "url": "https://www.tp-link.com/us/support/download/tc7650/"
     },
     "TP-Link TD-8616|https://www.tp-link.com/us/support/download/td-8616/": {
-      "category": "DSL Modems",
+      "category": "DSL Modem Routers",
       "product": "TP-Link TD-8616",
       "reason": "No firmware links listed",
       "url": "https://www.tp-link.com/us/support/download/td-8616/"
@@ -349,7 +349,7 @@
       "url": "https://www.tp-link.com/us/support/download/td-w8980/"
     },
     "TP-Link TL-ER5120|https://www.tp-link.com/us/support/download/tl-er5120/": {
-      "category": "Load Balance Gateways",
+      "category": "Load Balance Routers",
       "product": "TP-Link TL-ER5120",
       "reason": "No firmware links listed",
       "url": "https://www.tp-link.com/us/support/download/tl-er5120/"
@@ -397,7 +397,7 @@
       "url": "https://www.tp-link.com/us/support/download/tl-r460/"
     },
     "TP-Link TL-R470T+|https://www.tp-link.com/us/support/download/tl-r470t+/": {
-      "category": "Load Balance Gateways",
+      "category": "Load Balance Routers",
       "product": "TP-Link TL-R470T+",
       "reason": "No firmware links listed",
       "url": "https://www.tp-link.com/us/support/download/tl-r470t+/"

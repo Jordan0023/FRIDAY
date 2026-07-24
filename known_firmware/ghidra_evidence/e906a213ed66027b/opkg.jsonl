@@ -1,0 +1,17 @@
+{"binary":"opkg","function":"opkg_install_pkg","address":"00407ac4","route":"/'))","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"opkg_install_pkg","address":"00407ac4","route":"/'))","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"opkg_install_pkg","address":"00407ac4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"opkg_install_pkg","address":"00407ac4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"pkg_get_installed_files","address":"0040b010","route":"/')","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"FUN_0040d600","address":"0040d600","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"pkg_parse_line","address":"0040d724","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"pkg_parse_line","address":"0040d724","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"pkg_parse_line","address":"0040d724","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"pkg_parse_line","address":"0040d724","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"pkg_parse_line","address":"0040d724","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"pkg_parse_line","address":"0040d724","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"deb_extract","address":"00413870","route":"/'))","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"deb_extract","address":"00413870","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"deb_extract","address":"00413870","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"xfopen","address":"00413fcc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"opkg","function":"concat_path_file","address":"00414070","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

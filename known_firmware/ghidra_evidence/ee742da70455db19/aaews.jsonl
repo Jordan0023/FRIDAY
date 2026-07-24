@@ -1,0 +1,4 @@
+{"binary":"aaews","function":"debug_set_log_cfg","address":"0000de24","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aaews","function":"debug_set_log_cfg","address":"0000de24","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aaews","function":"debug_set_log_cfg","address":"0000de24","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aaews","function":"debug_set_log_cfg","address":"0000de24","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

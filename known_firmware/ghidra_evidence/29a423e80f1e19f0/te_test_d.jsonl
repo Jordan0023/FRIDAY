@@ -1,0 +1,7 @@
+{"binary":"te_test_d","function":"main","address":"00010924","route":"/bin/sh","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"te_test_d","function":"main","address":"00010924","route":"/dev","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"te_test_d","function":"main","address":"00010924","route":"/dev/pts/0","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"te_test_d","function":"main","address":"00010924","route":"/dev/console","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"te_test_d","function":"FUN_00010c38","address":"00010c38","route":"/tmp/udhcpd.conf","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"te_test_d","function":"FUN_00010c38","address":"00010c38","route":"/tmp/udhcpd.pid","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"te_test_d","function":"FUN_00010c38","address":"00010c38","route":"/tmp/udhcpd.leases","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

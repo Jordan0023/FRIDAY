@@ -1,0 +1,12 @@
+{"binary":"libpcre.so.1.2.12","function":"FUN_000125ac","address":"000125ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"FUN_00014934","address":"00014934","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"FUN_00014934","address":"00014934","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"pcre_compile2","address":"00019a84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"pcre_compile2","address":"00019a84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"FUN_0001ac84","address":"0001ac84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"FUN_0001ac84","address":"0001ac84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"FUN_000221ac","address":"000221ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"pcre_exec","address":"00030e40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"pcre_copy_substring","address":"00032318","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"pcre_get_substring_list","address":"000323f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcre.so.1.2.12","function":"pcre_get_substring","address":"00032524","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

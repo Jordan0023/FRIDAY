@@ -1,0 +1,9 @@
+{"binary":"macsec_shell","function":"strcpy","address":"0000a990","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec_shell","function":"memmove","address":"0000aa44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec_shell","function":"memcpy","address":"0000aad4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec_shell","function":"system","address":"0000ab10","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec_shell","function":"strcat","address":"0000ac90","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec_shell","function":"sscanf","address":"0000adbc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec_shell","function":"fopen","address":"0000adec","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec_shell","function":"sprintf","address":"0000aedc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"macsec_shell","function":"FUN_0000e900","address":"0000e900","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

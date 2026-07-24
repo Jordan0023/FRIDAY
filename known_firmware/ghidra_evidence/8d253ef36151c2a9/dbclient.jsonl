@@ -1,0 +1,44 @@
+{"binary":"dropbearmulti","function":"FUN_00403bc4","address":"00403bc4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00403cb4","address":"00403cb4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00404f18","address":"00404f18","route":"/dev/tty","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00405940","address":"00405940","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00405f64","address":"00405f64","route":"/n)","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00405f64","address":"00405f64","route":"/dev/tty","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00405f64","address":"00405f64","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00406158","address":"00406158","route":"/.ssh","sink":"file_write","sources":"getenv","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00406158","address":"00406158","route":"/.ssh/known_hosts","sink":"file_write","sources":"getenv","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00406158","address":"00406158","route":"/.ssh:","sink":"file_write","sources":"getenv","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00406158","address":"00406158","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00407644","address":"00407644","route":"/*","sink":"file_write","sources":"","auth_markers":"No auth","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00407644","address":"00407644","route":"/dev/null","sink":"file_write","sources":"","auth_markers":"No auth","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00407644","address":"00407644","route":"/dev/null:","sink":"file_write","sources":"","auth_markers":"No auth","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00409370","address":"00409370","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00409370","address":"00409370","route":"/common-channel.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_00409e10","address":"00409e10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040abbc","address":"0040abbc","route":"/common-session.c","sink":"memory_operation","sources":"read","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040abbc","address":"0040abbc","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"session","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040b500","address":"0040b500","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c624","address":"0040c624","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c800","address":"0040c800","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c8e0","address":"0040c8e0","route":"/dev/urandom","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c8e0","address":"0040c8e0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c8e0","address":"0040c8e0","route":"/proc/interrupts","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c8e0","address":"0040c8e0","route":"/proc/loadavg","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c8e0","address":"0040c8e0","route":"/proc/sys/kernel/random/entropy_avail","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c8e0","address":"0040c8e0","route":"/proc/net/netstat","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c8e0","address":"0040c8e0","route":"/proc/net/dev","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c8e0","address":"0040c8e0","route":"/proc/net/tcp","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c8e0","address":"0040c8e0","route":"/proc/net/rt_cache","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040c8e0","address":"0040c8e0","route":"/proc/vmstat","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040cff4","address":"0040cff4","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040d6e4","address":"0040d6e4","route":"/*","sink":"file_write","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0040da6c","address":"0040da6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_004166c8","address":"004166c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_004198fc","address":"004198fc","route":"/dev/tty","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0041aa90","address":"0041aa90","route":"/*","sink":"file_write","sources":"","auth_markers":"auth,LOGIN","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0041aa90","address":"0041aa90","route":"/svr-authpubkey.c","sink":"file_write","sources":"","auth_markers":"auth,LOGIN","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0041b558","address":"0041b558","route":"/FIDO","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0041bf8c","address":"0041bf8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0041d044","address":"0041d044","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0041d044","address":"0041d044","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"dropbearmulti","function":"FUN_0041d044","address":"0041d044","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

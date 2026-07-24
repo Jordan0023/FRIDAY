@@ -1,0 +1,3 @@
+{"binary":"bcmspu.ko","function":"ablkcipher_setkey","address":"00103508","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"ahash_hmac_init","address":"00103790","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"handle_aead_req","address":"00103930","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

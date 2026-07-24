@@ -1,0 +1,7 @@
+{"binary":"libcodb.so","function":"FUN_00012d6c","address":"00012d6c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcodb.so","function":"cosql_remove_data_keep_one_per_group_by_columns","address":"000184f0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcodb.so","function":"FUN_000199e0","address":"000199e0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcodb.so","function":"codb_test","address":"0001b344","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcodb.so","function":"alloc_codb_time_string","address":"0001cb58","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcodb.so","function":"alloc_codb_time_string","address":"0001cb58","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcodb.so","function":"codb_dprintf_impl","address":"0001cd08","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

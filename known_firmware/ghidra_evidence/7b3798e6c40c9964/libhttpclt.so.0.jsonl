@@ -1,0 +1,5 @@
+{"binary":"libhttpclt.so.0.1","function":"connect_web_server","address":"00014a88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhttpclt.so.0.1","function":"ht_client_send","address":"000157ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhttpclt.so.0.1","function":"ht_client_send","address":"000157ac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhttpclt.so.0.1","function":"ht_client_send","address":"000157ac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhttpclt.so.0.1","function":"ht_client_send","address":"000157ac","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

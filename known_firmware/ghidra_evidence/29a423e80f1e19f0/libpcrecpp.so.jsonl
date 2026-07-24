@@ -1,0 +1,6 @@
+{"binary":"libpcrecpp.so.0.0.1","function":"parse_double","address":"00014a90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcrecpp.so.0.0.1","function":"_M_construct<char_const*>","address":"00014e70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcrecpp.so.0.0.1","function":"Scanner","address":"00014f54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcrecpp.so.0.0.1","function":"SetSkipExpression","address":"000153b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcrecpp.so.0.0.1","function":"Skip","address":"00015520","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpcrecpp.so.0.0.1","function":"operator<<","address":"00015a3c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

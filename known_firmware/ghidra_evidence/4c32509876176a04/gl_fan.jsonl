@@ -1,0 +1,2 @@
+{"binary":"gl_fan","function":"set_fan_pwm","address":"00401260","route":"/sys/class/thermal/cooling_device0/cur_state","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_fan","function":"set_fan_pwm","address":"00401260","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"busybox","function":"FUN_00015cbc","address":"00015cbc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_000167d8","address":"000167d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

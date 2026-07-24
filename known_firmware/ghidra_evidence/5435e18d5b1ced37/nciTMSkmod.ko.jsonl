@@ -1,0 +1,13 @@
+{"binary":"nciTMSkmod.ko","function":"_emuxNextTxPkt","address":"001026c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"eth1agHWPkt.constprop.0","address":"00108f90","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"ltmReply","address":"0010c940","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"y1731TxMISCPkt","address":"0010fce0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"y1731ALCSendFrame","address":"001121b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"_procEvntPkt","address":"00116630","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"_rxRspStruct","address":"00119340","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"eth3ahMIBdataRead","address":"00119c40","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"eth3ahMIBdataWrite","address":"00119cb0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"nciTicker","address":"0011b050","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"tmsAPIsrc","address":"001215a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"_exlinuxeth1AGCTRL","address":"001245c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nciTMSkmod.ko","function":"_exlinuxeth3AHCTRL","address":"00127770","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

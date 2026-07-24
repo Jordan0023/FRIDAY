@@ -1,0 +1,14 @@
+{"binary":"alsactl","function":"sscanf","address":"0000b238","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"strcat","address":"0000b3e8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"strcpy","address":"0000b430","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"open","address":"0000b4b4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"execv","address":"0000b97c","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"sprintf","address":"0000bab4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"memcpy","address":"0000bad8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"FUN_0000eed8","address":"0000eed8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"FUN_000147b0","address":"000147b0","route":"/*","sink":"file_write","sources":"read,getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"FUN_000147b0","address":"000147b0","route":"/*","sink":"exec","sources":"read,getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"FUN_000147b0","address":"000147b0","route":"/*","sink":"memory_operation","sources":"read,getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"FUN_000147b0","address":"000147b0","route":"/')","sink":"file_write","sources":"read,getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"FUN_000147b0","address":"000147b0","route":"/')","sink":"exec","sources":"read,getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"alsactl","function":"FUN_000147b0","address":"000147b0","route":"/')","sink":"memory_operation","sources":"read,getenv","auth_markers":"","correlation":"function-local-co-location"}

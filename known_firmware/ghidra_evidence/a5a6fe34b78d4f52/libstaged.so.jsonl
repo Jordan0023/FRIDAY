@@ -1,0 +1,1 @@
+{"binary":"libstaged.so","function":"nvc_list_object_to_string","address":"00011aec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Resumable, receipt-driven exhaustive ELF decompilation for the 100-router set."""
+"""Resumable, receipt-driven exhaustive ELF decompilation for the 74-router set."""
 from __future__ import annotations
 
 import argparse
@@ -13,8 +13,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CAMPAIGN = ROOT / "router-agent-results/20260721T143715Z-hundred-router-hunt"
-DEFAULT_OUTPUT = ROOT / "router-agent-results/20260721T143715Z-hundred-router-exhaustive-decompile"
+DEFAULT_CAMPAIGN = ROOT / "router-agent-results/20260722T235859Z-seventy-four-router-hunt"
+DEFAULT_OUTPUT = ROOT / "router-agent-results/20260722T235859Z-seventy-four-router-exhaustive-decompile"
 EOL_PRODUCTS_PATH = ROOT / "site/data/eol-products.json"
 GHIDRA = Path("/home/jordan/Tools/ghidra_12.1.2_PUBLIC/support/analyzeHeadless")
 SECURITY_SCHEMA = 4

@@ -1,0 +1,5 @@
+{"binary":"lighttpd-monitor","function":"FUN_0000c10c","address":"0000c10c","route":"/tmp/lighttpd/lighttpd-monitor.pid","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_0000c10c","address":"0000c10c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_0000c10c","address":"0000c10c","route":"/usr/sbin/lighttpd","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_0000c10c","address":"0000c10c","route":"/tmp/lighttpd.conf","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"lighttpd-monitor","function":"FUN_0000c10c","address":"0000c10c","route":"/usr/sbin/lighttpd-arpping","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

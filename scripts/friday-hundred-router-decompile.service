@@ -1,0 +1,17 @@
+[Unit]
+Description=FRIDAY exhaustive 74-router firmware decompilation
+After=local-fs.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/jordan/FRIDAY
+ExecStart=/usr/bin/python3 /home/jordan/FRIDAY/scripts/decompile_hundred_routers.py --workers 12 --timeout 1800
+Restart=on-failure
+RestartSec=60
+Nice=10
+IOSchedulingClass=idle
+StandardOutput=append:/home/jordan/FRIDAY/router-agent-results/hundred-router-exhaustive-decompile/service.log
+StandardError=append:/home/jordan/FRIDAY/router-agent-results/hundred-router-exhaustive-decompile/service.log
+
+[Install]
+WantedBy=default.target

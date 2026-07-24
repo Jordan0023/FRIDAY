@@ -1,0 +1,12 @@
+{"binary":"libguci.so","function":"guci_get_idx","address":"00010ef8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_get_name","address":"00010fc0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_set_idx","address":"00011150","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_set_name","address":"00011218","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_delete_name","address":"00011498","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_section_count","address":"000116e8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_section_name","address":"00011818","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_find_section","address":"000118c4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_find_list_member","address":"00011a88","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_get_list_index","address":"00011bc0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_get_list_index","address":"00011bc0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libguci.so","function":"guci_get_list_count","address":"00011ce8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

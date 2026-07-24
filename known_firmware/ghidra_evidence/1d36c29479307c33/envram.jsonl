@@ -1,0 +1,2 @@
+{"binary":"envram","function":"FUN_000107b0","address":"000107b0","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"envram","function":"FUN_000107b0","address":"000107b0","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

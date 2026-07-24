@@ -1,0 +1,1 @@
+{"binary":"btusb.ko","function":"btusb_setup_qca_download_fw.isra.0","address":"00101660","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

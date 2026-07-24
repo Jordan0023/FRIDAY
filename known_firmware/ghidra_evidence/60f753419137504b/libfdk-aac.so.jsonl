@@ -1,0 +1,5 @@
+{"binary":"libfdk-aac.so","function":"FUN_00020cd4","address":"00020cd4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so","function":"aacEncEncode","address":"00028d70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so","function":"FUN_00046740","address":"00046740","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so","function":"FUN_0005b284","address":"0005b284","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfdk-aac.so","function":"FUN_0005e0c0","address":"0005e0c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,10 @@
+{"binary":"ipt_fbwifi_redirect.ko","function":"FUN_0001002c","address":"0001002c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipt_fbwifi_redirect.ko","function":"FUN_0001002c","address":"0001002c","route":"/%s%s","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipt_fbwifi_redirect.ko","function":"FUN_0001002c","address":"0001002c","route":"/TITLE","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipt_fbwifi_redirect.ko","function":"FUN_0001002c","address":"0001002c","route":"/HEAD","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipt_fbwifi_redirect.ko","function":"FUN_0001002c","address":"0001002c","route":"/%s:%s%s","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipt_fbwifi_redirect.ko","function":"FUN_0001002c","address":"0001002c","route":"/a","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipt_fbwifi_redirect.ko","function":"FUN_0001002c","address":"0001002c","route":"/BODY","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipt_fbwifi_redirect.ko","function":"FUN_0001002c","address":"0001002c","route":"/HTML","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipt_fbwifi_redirect.ko","function":"FUN_0001002c","address":"0001002c","route":"/1.1","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipt_fbwifi_redirect.ko","function":"FUN_0001002c","address":"0001002c","route":"/html","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

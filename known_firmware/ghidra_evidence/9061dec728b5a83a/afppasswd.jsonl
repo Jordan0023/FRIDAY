@@ -1,0 +1,4 @@
+{"binary":"afppasswd","function":"FUN_00401180","address":"00401180","route":"/usr/etc/afppasswd","sink":"file_write","sources":"","auth_markers":"passwd,password","correlation":"function-local-co-location"}
+{"binary":"afppasswd","function":"FUN_00401180","address":"00401180","route":"/usr/etc/afppasswd","sink":"unsafe_copy","sources":"","auth_markers":"passwd,password","correlation":"function-local-co-location"}
+{"binary":"afppasswd","function":"FUN_00401180","address":"00401180","route":"/usr/etc/afppasswd","sink":"unsafe_copy","sources":"","auth_markers":"passwd,password","correlation":"function-local-co-location"}
+{"binary":"afppasswd","function":"FUN_00401180","address":"00401180","route":"/usr/etc/afppasswd","sink":"file_write","sources":"","auth_markers":"passwd,password","correlation":"function-local-co-location"}

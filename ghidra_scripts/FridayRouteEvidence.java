@@ -17,10 +17,22 @@ import ghidra.program.model.listing.FunctionIterator;
 
 public class FridayRouteEvidence extends GhidraScript {
     private static final Pattern ROUTE = Pattern.compile(
-        "(?i)([A-Za-z0-9_./-]{1,160}(?:\\.cgi|cgi-bin/[A-Za-z0-9_./-]+))"
+        "(?i)("
+            + "(?:/[A-Za-z0-9_.~!$&'()*+,;=:@%-]+){1,12}(?:\\?(?:[A-Za-z0-9_.~!$&'()*+,;=:@%/?-]+)?)?"
+            + "|[A-Za-z0-9_./-]{1,160}(?:\\.cgi|\\.asp|\\.html?|\\.lua|cgi-bin/[A-Za-z0-9_./-]+)"
+            + "|urn:[A-Za-z0-9_.:-]{3,160}"
+            + ")"
     );
     private static final Pattern SINK = Pattern.compile(
-        "(?i)\\b(system|doSystem|popen|execve|execl|execv|strcpy|strcat|sprintf|vsprintf|fopen|rename|symlink)\\s*\\("
+        "(?i)\\b(system|doSystem|popen|execve|execl|execv|strcpy|strcat|sprintf|vsprintf|"
+            + "memcpy|memmove|scanf|sscanf|fopen|open|rename|symlink|nvram_set|uci_set)\\s*\\("
+    );
+    private static final Pattern SOURCE = Pattern.compile(
+        "(?i)\\b(QUERY_STRING|CONTENT_LENGTH|HTTP_COOKIE|getenv|websGetVar|cgiGetValue|"
+            + "nvram_get|uci_get|ubus|recv|recvfrom|read)\\s*\\("
+    );
+    private static final Pattern AUTH = Pattern.compile(
+        "(?i)\\b(auth(?:orize)?|login|session|cookie|token|csrf|password|passwd|no[_ -]?auth|unauth)\\b"
     );
 
     @Override
@@ -46,13 +58,18 @@ public class FridayRouteEvidence extends GhidraScript {
                 String code = result.getDecompiledFunction().getC();
                 Set<String> routes = matches(ROUTE, code);
                 Set<String> sinks = matches(SINK, code);
+                Set<String> sources = matches(SOURCE, code);
+                Set<String> authMarkers = matches(AUTH, code);
                 for (String route : routes) {
                     for (String sink : sinks) {
                         writer.write("{\"binary\":\"" + json(currentProgram.getName()) +
                             "\",\"function\":\"" + json(function.getName()) +
                             "\",\"address\":\"" + json(function.getEntryPoint().toString()) +
                             "\",\"route\":\"" + json(route) +
-                            "\",\"sink\":\"" + json(normalizeSink(sink)) + "\"}\n");
+                            "\",\"sink\":\"" + json(normalizeSink(sink)) +
+                            "\",\"sources\":\"" + json(String.join(",", sources)) +
+                            "\",\"auth_markers\":\"" + json(String.join(",", authMarkers)) +
+                            "\",\"correlation\":\"function-local-co-location\"}\n");
                     }
                 }
             }
@@ -73,7 +90,9 @@ public class FridayRouteEvidence extends GhidraScript {
         if (value.equals("dosystem")) return "system";
         if (value.startsWith("exec")) return "exec";
         if (value.equals("strcpy") || value.equals("strcat") || value.contains("sprintf")) return "unsafe_copy";
-        if (value.equals("fopen") || value.equals("rename") || value.equals("symlink")) return "file_write";
+        if (value.equals("memcpy") || value.equals("memmove") || value.equals("scanf") || value.equals("sscanf")) return "memory_operation";
+        if (value.equals("fopen") || value.equals("open") || value.equals("rename") || value.equals("symlink")) return "file_write";
+        if (value.equals("nvram_set") || value.equals("uci_set")) return "configuration_write";
         return value;
     }
 

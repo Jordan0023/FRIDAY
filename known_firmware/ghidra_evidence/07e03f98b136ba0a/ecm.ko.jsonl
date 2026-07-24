@@ -1,0 +1,3 @@
+{"binary":"ecm.ko","function":"ecm_interface_mac_addr_get_no_route","address":"0002b114","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_interface_mac_addr_get","address":"0002bf34","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm.ko","function":"ecm_interface_wifi_event_thread","address":"0003067c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

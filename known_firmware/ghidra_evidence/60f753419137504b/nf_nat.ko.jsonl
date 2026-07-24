@@ -1,0 +1,2 @@
+{"binary":"nf_nat.ko","function":"FUN_00010e7c","address":"00010e7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat.ko","function":"FUN_00010e7c","address":"00010e7c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

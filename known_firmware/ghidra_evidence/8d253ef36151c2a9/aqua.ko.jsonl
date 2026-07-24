@@ -1,0 +1,16 @@
+{"binary":"aqua.ko","function":"FUN_00100524","address":"00100524","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"dhcp6_parse_options","address":"00100528","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"FUN_0010071c","address":"0010071c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"dhcp4_parse_options","address":"00100720","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"FUN_00100abc","address":"00100abc","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"FUN_00100abc","address":"00100abc","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"subnet_pton","address":"00100ac0","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"subnet_pton","address":"00100ac0","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"FUN_00106b78","address":"00106b78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"token","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"FUN_001072d4","address":"001072d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"FUN_001072d8","address":"001072d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"dn_add","address":"00108160","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"dn_add","address":"00108160","route":"/%u,","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"dn_add","address":"00108160","route":"/%u","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"FUN_0010c424","address":"0010c424","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"aqua.ko","function":"FUN_0010c428","address":"0010c428","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

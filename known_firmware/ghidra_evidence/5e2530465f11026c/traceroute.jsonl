@@ -1,0 +1,12 @@
+{"binary":"traceroute","function":"FUN_00012048","address":"00012048","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_00013ffc","address":"00013ffc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_000141c4","address":"000141c4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_000142ec","address":"000142ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_000178ac","address":"000178ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_0001876c","address":"0001876c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_00018920","address":"00018920","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_00018920","address":"00018920","route":"/'))","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_00018920","address":"00018920","route":"/';","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_00019260","address":"00019260","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_00019260","address":"00019260","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"traceroute","function":"FUN_000193bc","address":"000193bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

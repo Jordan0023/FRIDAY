@@ -1,0 +1,4 @@
+{"binary":"avahi-autoipd","function":"memcpy","address":"000094c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-autoipd","function":"fopen","address":"000096fc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-autoipd","function":"open","address":"00009810","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"avahi-autoipd","function":"FUN_0000a7f4","address":"0000a7f4","route":"/*","sink":"file_write","sources":"recvfrom","auth_markers":"passwd","correlation":"function-local-co-location"}

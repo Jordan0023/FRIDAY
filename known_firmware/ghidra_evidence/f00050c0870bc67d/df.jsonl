@@ -1,0 +1,12 @@
+{"binary":"busybox","function":"FUN_000164a4","address":"000164a4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_00016fb0","address":"00016fb0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_00017a80","address":"00017a80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_00018838","address":"00018838","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_000199d4","address":"000199d4","route":"/*","sink":"exec","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_0001ce40","address":"0001ce40","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_0001dec8","address":"0001dec8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_00022684","address":"00022684","route":"/*","sink":"unsafe_copy","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_000230a8","address":"000230a8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_00024468","address":"00024468","route":"/')","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_00024468","address":"00024468","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"busybox","function":"FUN_000

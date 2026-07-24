@@ -1,0 +1,4 @@
+{"binary":"wil6210.ko","function":"wil_cfg80211_connect","address":"000131ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wil6210.ko","function":"wil_cfg80211_mgmt_tx","address":"00014938","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wil6210.ko","function":"wmi_recv_cmd","address":"00019430","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wil6210.ko","function":"wil_netif_rx_any","address":"0001edf0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

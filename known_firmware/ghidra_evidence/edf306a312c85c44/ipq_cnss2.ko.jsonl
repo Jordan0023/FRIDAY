@@ -1,0 +1,17 @@
+{"binary":"ipq_cnss2.ko","function":"FUN_00100d88","address":"00100d88","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"FUN_00102598","address":"00102598","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"FUN_00104f74","address":"00104f74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"FUN_001080ec","address":"001080ec","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"FUN_00109dc4","address":"00109dc4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_pci_load_m3","address":"001110c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_bdf_dnld_send_sync","address":"0011bef8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_bdf_dnld_send_sync","address":"0011bef8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_bdf_dnld_send_sync","address":"0011bef8","route":"/tmp/ftm.conf","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_bdf_dnld_send_sync","address":"0011bef8","route":"/tmp/ftm.conf","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_qdss_data_send_sync","address":"0011d69c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_wlan_cfg_send_sync","address":"0011e010","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_athdiag_read_send_sync","address":"0011e3c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_athdiag_write_send_sync","address":"0011e668","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_genl_send_msg","address":"0012160c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"FUN_00123560","address":"00123560","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ipq_cnss2.ko","function":"cnss_wlfw_qdss_dnld_send_sync","address":"0012397c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

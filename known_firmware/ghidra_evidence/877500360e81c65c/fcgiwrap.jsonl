@@ -1,0 +1,10 @@
+{"binary":"fcgiwrap","function":"main","address":"004026a4","route":"/*","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fcgiwrap","function":"main","address":"004026a4","route":"/*","sink":"exec","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fcgiwrap","function":"main","address":"004026a4","route":"/nginx.localdomain.pl/wiki/FcgiWrap","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fcgiwrap","function":"main","address":"004026a4","route":"/nginx.localdomain.pl/wiki/FcgiWrap","sink":"exec","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fcgiwrap","function":"main","address":"004026a4","route":"/plain","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fcgiwrap","function":"main","address":"004026a4","route":"/plain","sink":"exec","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fcgiwrap","function":"main","address":"004026a4","route":"/path/to/socket","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fcgiwrap","function":"main","address":"004026a4","route":"/path/to/socket","sink":"exec","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fcgiwrap","function":"main","address":"004026a4","route":"/';","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fcgiwrap","function":"main","address":"004026a4","route":"/';","sink":"exec","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}

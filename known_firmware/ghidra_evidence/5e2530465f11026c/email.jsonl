@@ -1,0 +1,8 @@
+{"binary":"email","function":"FUN_00011d08","address":"00011d08","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"email","function":"FUN_00013858","address":"00013858","route":"/*","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"email","function":"FUN_00016a78","address":"00016a78","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"email","function":"FUN_00016a78","address":"00016a78","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"email","function":"FUN_000176f4","address":"000176f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"email","function":"FUN_00017774","address":"00017774","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"email","function":"FUN_000177fc","address":"000177fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"email","function":"FUN_00017890","address":"00017890","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

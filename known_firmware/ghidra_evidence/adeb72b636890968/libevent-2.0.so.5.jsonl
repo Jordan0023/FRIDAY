@@ -1,0 +1,17 @@
+{"binary":"libevent-2.0.so.5","function":"FUN_0001fb98","address":"0001fb98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"FUN_0001fc64","address":"0001fc64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"FUN_0001fe5c","address":"0001fe5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"evbuffer_copyout","address":"0002132c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"evbuffer_pullup","address":"00021508","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"evutil_new_addrinfo","address":"0002ac54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"evutil_parse_sockaddr_port","address":"0002bd64","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"evhttp_uri_parse_with_flags","address":"0003330c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"FUN_000354fc","address":"000354fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"FUN_00035618","address":"00035618","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"FUN_00035c78","address":"00035c78","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"FUN_00035f0c","address":"00035f0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"FUN_00036384","address":"00036384","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"FUN_000372d4","address":"000372d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"FUN_00039ca0","address":"00039ca0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"FUN_0003b424","address":"0003b424","route":"/*","sink":"memory_operation","sources":"recvfrom","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libevent-2.0.so.5","function":"evrpc_hook_add_meta","address":"0003db5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

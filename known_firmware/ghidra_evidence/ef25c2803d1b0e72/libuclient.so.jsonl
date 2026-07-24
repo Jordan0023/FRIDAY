@@ -1,0 +1,7 @@
+{"binary":"libuclient.so","function":"FUN_00011644","address":"00011644","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00011644","address":"00011644","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00011644","address":"00011644","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00011644","address":"00011644","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00012580","address":"00012580","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00012580","address":"00012580","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libuclient.so","function":"FUN_00012580","address":"00012580","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

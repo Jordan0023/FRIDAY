@@ -1,0 +1,2 @@
+{"binary":"cjson.so","function":"fpconv_strtod","address":"000115d4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cjson.so","function":"FUN_00012e3c","address":"00012e3c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"libcap-ng.so.0.0.0","function":"entry","address":"00011024","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcap-ng.so.0.0.0","function":"FUN_00011454","address":"00011454","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcap-ng.so.0.0.0","function":"capng_get_caps_process","address":"00011a70","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

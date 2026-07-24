@@ -1,0 +1,7 @@
+{"binary":"libshn_utils.so","function":"read_cmd","address":"000129f0","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"read_cmd","address":"000129f0","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"read_cmd","address":"000129f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"daemonize","address":"0001461c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"model_read_cmd","address":"00014a74","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"model_read_cmd","address":"00014a74","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libshn_utils.so","function":"model_read_cmd","address":"00014a74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

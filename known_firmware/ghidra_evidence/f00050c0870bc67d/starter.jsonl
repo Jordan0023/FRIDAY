@@ -1,0 +1,3 @@
+{"binary":"starter","function":"FUN_00011afc","address":"00011afc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00011afc","address":"00011afc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"starter","function":"FUN_00014a78","address":"00014a78","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

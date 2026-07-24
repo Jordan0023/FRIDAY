@@ -1,0 +1,1 @@
+{"binary":"l2tp_netlink.ko","function":"l2tp_nl_cmd_session_create","address":"00010ce8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

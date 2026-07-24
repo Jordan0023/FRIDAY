@@ -1,0 +1,7 @@
+{"binary":"telemetry_agent.ko","function":"telemetry_emesh_stats_work_periodic","address":"00100520","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"telemetry_agent.ko","function":"telemetry_agent_stats_work_periodic_erp","address":"001008b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"telemetry_agent.ko","function":"telemetry_agent_stats_work_periodic_pmlo","address":"00100b60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"telemetry_agent.ko","function":"telemetry_agent_stats_work_periodic_admctrl","address":"001010d0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"telemetry_agent.ko","function":"telemetry_agent_stats_work_periodic_energysvc","address":"00101540","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"telemetry_agent.ko","function":"telemetry_deter_stats_work_periodic","address":"00101960","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"telemetry_agent.ko","function":"FUN_00102040","address":"00102040","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

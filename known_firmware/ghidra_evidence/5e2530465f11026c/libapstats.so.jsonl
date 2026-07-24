@@ -1,0 +1,5 @@
+{"binary":"libapstats.so","function":"apstats_is_cfg80211_mode_enabled","address":"00016458","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libapstats.so","function":"FUN_000164f8","address":"000164f8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libapstats.so","function":"FUN_000164f8","address":"000164f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libapstats.so","function":"FUN_000164f8","address":"000164f8","route":"/4)","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libapstats.so","function":"FUN_000164f8","address":"000164f8","route":"/4)","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

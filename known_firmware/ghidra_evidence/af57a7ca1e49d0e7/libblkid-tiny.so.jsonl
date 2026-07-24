@@ -1,0 +1,3 @@
+{"binary":"libblkid-tiny.so","function":"get_linux_version","address":"00011728","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid-tiny.so","function":"probe_block","address":"00011bdc","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libblkid-tiny.so","function":"probe_block","address":"00011bdc","route":"/*","sink":"unsafe_copy","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

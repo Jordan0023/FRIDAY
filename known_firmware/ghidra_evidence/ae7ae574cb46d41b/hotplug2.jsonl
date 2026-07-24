@@ -1,0 +1,4 @@
+{"binary":"hotplug2","function":"FUN_00012c30","address":"00012c30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_00012c30","address":"00012c30","route":"/*","sink":"system","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_00012c30","address":"00012c30","route":"/*","sink":"file_write","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"hotplug2","function":"FUN_00013288","address":"00013288","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

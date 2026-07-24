@@ -1,0 +1,5 @@
+{"binary":"nas-web.so","function":"proc_get_pid","address":"000121d0","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nas-web.so","function":"gl_nas_sys_start","address":"00013f50","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nas-web.so","function":"disk_manage_start","address":"00014030","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nas-web.so","function":"disk_remove_do","address":"00014d10","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nas-web.so","function":"test_api123","address":"00016000","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

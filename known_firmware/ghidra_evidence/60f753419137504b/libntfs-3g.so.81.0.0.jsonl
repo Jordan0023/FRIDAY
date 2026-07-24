@@ -1,0 +1,12 @@
+{"binary":"libntfs-3g.so.81.0.0","function":"ntfs_attr_pread","address":"0001cb80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"ntfs_attr_pwrite","address":"00021e30","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"ntfs_mft_records_write","address":"00036a18","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"ntfs_build_mapping","address":"0003f3f4","route":"/')","sink":"memory_operation","sources":"","auth_markers":"passwd","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"FUN_00045228","address":"00045228","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"fuse_opt_insert_arg","address":"0004bddc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"FUN_0004bf74","address":"0004bf74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"fuse_mnt_add_mount","address":"0004e278","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"fuse_mnt_umount","address":"0004e468","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"fuse_mnt_resolve_path","address":"0004e62c","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"fuse_mnt_resolve_path","address":"0004e62c","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libntfs-3g.so.81.0.0","function":"fuse_mnt_resolve_path","address":"0004e62c","route":"/'))","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

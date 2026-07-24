@@ -1,0 +1,7 @@
+{"binary":"libnetfilter_conntrack.so.3.7.0","function":"nfct_bitmask_clone","address":"0001600c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetfilter_conntrack.so.3.7.0","function":"__labelmap_new","address":"00016bcc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetfilter_conntrack.so.3.7.0","function":"nfct_payload_parse","address":"00017ff8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetfilter_conntrack.so.3.7.0","function":"__copy_fast","address":"0001d0f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetfilter_conntrack.so.3.7.0","function":"stack_push","address":"0001ed5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetfilter_conntrack.so.3.7.0","function":"stack_pop","address":"0001edd4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnetfilter_conntrack.so.3.7.0","function":"nfexp_clone","address":"0001f0b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

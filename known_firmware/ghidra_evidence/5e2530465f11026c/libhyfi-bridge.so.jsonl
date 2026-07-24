@@ -1,0 +1,5 @@
+{"binary":"libhyfi-bridge.so","function":"bridgeToggleLocalBit","address":"00011a20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyfi-bridge.so","function":"bridgeGetFourAddressIface","address":"000124e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyfi-bridge.so","function":"bridgeSetSnoopingParam","address":"00012724","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyfi-bridge.so","function":"bridgeGetSnoopingParam","address":"000127c8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhyfi-bridge.so","function":"bridgeSetServicePriortizationRuleSet","address":"000128f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

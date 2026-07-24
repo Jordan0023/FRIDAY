@@ -1,0 +1,2 @@
+{"binary":"libpwrctl.so","function":"pwr_api_wldpd_set","address":"00013110","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_wldpd_set","address":"00013110","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

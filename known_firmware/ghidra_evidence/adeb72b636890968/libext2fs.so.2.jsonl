@@ -1,0 +1,7 @@
+{"binary":"libext2fs.so.2.4","function":"FUN_0002bd94","address":"0002bd94","route":"/');","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libext2fs.so.2.4","function":"ext2fs_read_inode_bitmap","address":"00030fc4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libext2fs.so.2.4","function":"ext2fs_read_inode_bitmap","address":"00030fc4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libext2fs.so.2.4","function":"ext2fs_read_block_bitmap","address":"00030fd0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libext2fs.so.2.4","function":"ext2fs_read_block_bitmap","address":"00030fd0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libext2fs.so.2.4","function":"FUN_00031958","address":"00031958","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libext2fs.so.2.4","function":"FUN_00038348","address":"00038348","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

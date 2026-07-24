@@ -1,0 +1,3 @@
+{"binary":"nft_compat.ko","function":"FUN_00100bc0","address":"00100bc0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft_compat.ko","function":"FUN_00100e0c","address":"00100e0c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nft_compat.ko","function":"FUN_00100e10","address":"00100e10","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

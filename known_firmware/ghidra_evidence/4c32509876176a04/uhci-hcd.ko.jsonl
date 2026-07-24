@@ -1,0 +1,2 @@
+{"binary":"uhci-hcd.ko","function":"FUN_0010415c","address":"0010415c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"uhci-hcd.ko","function":"FUN_00104160","address":"00104160","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

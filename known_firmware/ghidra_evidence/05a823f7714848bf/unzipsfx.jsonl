@@ -1,0 +1,12 @@
+{"binary":"unzipsfx","function":"FUN_004044e8","address":"004044e8","route":"/*","sink":"memory_operation","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00405760","address":"00405760","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00405760","address":"00405760","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_004085e8","address":"004085e8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_004085e8","address":"004085e8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_004086d8","address":"004086d8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_004086d8","address":"004086d8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00408ed8","address":"00408ed8","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_00408ed8","address":"00408ed8","route":"/';","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_0040936c","address":"0040936c","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_0040936c","address":"0040936c","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"unzipsfx","function":"FUN_0040936c","address":"0040936c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,8 @@
+{"binary":"digest.so","function":"MD2FileChunk","address":"00011b20","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"digest.so","function":"MD4FileChunk","address":"00011e30","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"digest.so","function":"MD5FileChunk","address":"00012134","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"digest.so","function":"SHA1FileChunk","address":"00012438","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"digest.so","function":"SHA256FileChunk","address":"00012748","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"digest.so","function":"SHA384FileChunk","address":"00012a58","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"digest.so","function":"SHA512FileChunk","address":"00012d68","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"digest.so","function":"SHA1Update","address":"00015964","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

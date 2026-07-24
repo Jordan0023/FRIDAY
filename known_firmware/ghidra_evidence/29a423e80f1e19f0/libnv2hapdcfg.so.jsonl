@@ -1,0 +1,6 @@
+{"binary":"libnv2hapdcfg.so","function":"FUN_000133f8","address":"000133f8","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnv2hapdcfg.so","function":"FUN_0001a9c8","address":"0001a9c8","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnv2hapdcfg.so","function":"stop_hapd_wpasupp_per_radio","address":"0001e968","route":"/';","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnv2hapdcfg.so","function":"stop_hapd_wpasupp_per_radio","address":"0001e968","route":"/';","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnv2hapdcfg.so","function":"hapd_wpasupp_is_ps_running","address":"0001e9a4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnv2hapdcfg.so","function":"hapd_wpasupp_is_ps_running","address":"0001e9a4","route":"/';","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

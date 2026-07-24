@@ -1,0 +1,2 @@
+{"binary":"libdcerpc.so.0.0.1","function":"dcerpc_mgmt_inq_princ_name","address":"0001ed68","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdcerpc.so.0.0.1","function":"dcerpc_bh_ndr_validate_out","address":"00020274","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

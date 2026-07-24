@@ -1,0 +1,5 @@
+{"binary":"libcjson.so.1.7.13","function":"FUN_000123f4","address":"000123f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcjson.so.1.7.13","function":"FUN_000123f4","address":"000123f4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcjson.so.1.7.13","function":"FUN_000123f4","address":"000123f4","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcjson.so.1.7.13","function":"cJSON_Print","address":"0001352c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcjson.so.1.7.13","function":"cJSON_PrintUnformatted","address":"00013534","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

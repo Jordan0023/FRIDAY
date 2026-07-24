@@ -1,0 +1,10 @@
+{"binary":"libiconv.so.2.5.1","function":"locale_charset","address":"00025634","route":"/')","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.5.1","function":"locale_charset","address":"00025634","route":"/')","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.5.1","function":"locale_charset","address":"00025634","route":"/')","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.5.1","function":"locale_charset","address":"00025634","route":"/';","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.5.1","function":"locale_charset","address":"00025634","route":"/';","sink":"file_write","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.5.1","function":"locale_charset","address":"00025634","route":"/';","sink":"unsafe_copy","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.5.1","function":"libiconv_relocate","address":"00025bac","route":"/');","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.5.1","function":"libiconv_relocate","address":"00025bac","route":"/');","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.5.1","function":"libiconv_relocate","address":"00025bac","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libiconv.so.2.5.1","function":"libiconv_relocate","address":"00025bac","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

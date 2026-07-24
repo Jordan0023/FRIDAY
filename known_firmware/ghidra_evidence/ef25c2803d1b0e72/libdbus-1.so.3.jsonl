@@ -1,0 +1,11 @@
+{"binary":"libdbus-1.so.3.26.1","function":"FUN_00025ab0","address":"00025ab0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbus-1.so.3.26.1","function":"FUN_000311fc","address":"000311fc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbus-1.so.3.26.1","function":"FUN_00031944","address":"00031944","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbus-1.so.3.26.1","function":"FUN_000363fc","address":"000363fc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbus-1.so.3.26.1","function":"_dbus_strdup","address":"0003ad84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbus-1.so.3.26.1","function":"FUN_0003adf4","address":"0003adf4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbus-1.so.3.26.1","function":"FUN_0003d2b0","address":"0003d2b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbus-1.so.3.26.1","function":"_dbus_string_copy_to_buffer_with_nul","address":"0003d2ec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbus-1.so.3.26.1","function":"FUN_0003ed28","address":"0003ed28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbus-1.so.3.26.1","function":"FUN_0003efa4","address":"0003efa4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdbus-1.so.3.26.1","function":"FUN_000438b4","address":"000438b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

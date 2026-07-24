@@ -1,0 +1,1 @@
+{"binary":"monitor.ko","function":"monitor_osif_get_vdev_by_name","address":"00116230","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

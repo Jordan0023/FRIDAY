@@ -1,0 +1,2 @@
+{"binary":"chacha-neon.ko","function":"FUN_0010099c","address":"0010099c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"chacha-neon.ko","function":"FUN_001009a0","address":"001009a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

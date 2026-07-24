@@ -1,0 +1,6 @@
+{"binary":"libcfgmnt.so","function":"file_read_string","address":"000131ac","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"is_5g_high_band","address":"00013fe8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"is_5g_high_band","address":"00013fe8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"cap_get_final_paramname","address":"00014284","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"cap_get_final_paramname","address":"00014284","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcfgmnt.so","function":"sync_apgx_to_wlunit","address":"0001d708","route":"/*","sink":"configuration_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

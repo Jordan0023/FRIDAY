@@ -1,0 +1,2 @@
+{"binary":"nf_nat_rtsp.ko","function":"FUN_00100254","address":"00100254","route":"/%hu","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"nf_nat_rtsp.ko","function":"FUN_00100254","address":"00100254","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

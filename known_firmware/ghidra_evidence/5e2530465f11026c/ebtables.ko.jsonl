@@ -1,0 +1,2 @@
+{"binary":"ebtables.ko","function":"FUN_000117cc","address":"000117cc","route":"/include/linux/thread_info.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ebtables.ko","function":"FUN_000117cc","address":"000117cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

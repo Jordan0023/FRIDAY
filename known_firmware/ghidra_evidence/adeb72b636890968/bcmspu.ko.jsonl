@@ -1,0 +1,12 @@
+{"binary":"bcmspu.ko","function":"handle_ahash_req","address":"00010e80","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"aead_authenc_setkey","address":"00011838","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"handle_ablkcipher_req","address":"00011ca8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"ablkcipher_setkey","address":"00013b2c","route":"/../bcmdrivers/opensource/char/spudd/bcm96756/cipher.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"ablkcipher_setkey","address":"00013b2c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"handle_aead_req","address":"00013db4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_rx_callback","address":"00015024","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu2_create_request","address":"000163cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu2_cipher_req_init","address":"0001694c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_xmit_ds","address":"00016c54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_xmit_us","address":"000176b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bcmspu.ko","function":"spu_blog_xmit_us","address":"000176b0","route":"/net/dst.h","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

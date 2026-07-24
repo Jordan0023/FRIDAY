@@ -1,4 +1,4 @@
-# Conditional pre-authentication chain — ASUS RT-AX82U
+pu# Conditional pre-authentication chain — ASUS RT-AX82U
 
 ## Decision
 

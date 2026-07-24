@@ -1,0 +1,6 @@
+{"binary":"libtdb.so.1.4.3","function":"tdb_write","address":"00018608","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtdb.so.1.4.3","function":"tdb_read","address":"000187b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtdb.so.1.4.3","function":"tdb_new_database","address":"00018e04","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtdb.so.1.4.3","function":"tdb_open_ex","address":"000190d0","route":"/*","sink":"file_write","sources":"getenv,read","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtdb.so.1.4.3","function":"transaction_write","address":"0001a18c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libtdb.so.1.4.3","function":"transaction_read","address":"0001a578","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

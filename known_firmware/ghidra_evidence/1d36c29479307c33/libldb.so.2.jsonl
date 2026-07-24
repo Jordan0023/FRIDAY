@@ -1,0 +1,5 @@
+{"binary":"libldb.so.2","function":"ldb_msg_find_attr_as_int","address":"0001ddc8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2","function":"ldb_msg_find_attr_as_uint","address":"0001dec8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2","function":"ldb_msg_find_attr_as_int64","address":"0001dfec","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2","function":"ldb_msg_find_attr_as_uint64","address":"0001e0f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libldb.so.2","function":"ldb_dn_set_extended_component","address":"00022bc4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

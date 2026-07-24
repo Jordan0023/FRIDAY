@@ -1,0 +1,6 @@
+{"binary":"logread","function":"FUN_000110e4","address":"000110e4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"logread","function":"FUN_000110e4","address":"000110e4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"logread","function":"FUN_000118bc","address":"000118bc","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"logread","function":"FUN_000118bc","address":"000118bc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"logread","function":"FUN_000118bc","address":"000118bc","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"logread","function":"FUN_000118bc","address":"000118bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"libcrypto.so.3","function":"entry","address":"000762c0","route":"/*","sink":"memory_operation","sources":"getenv","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.3","function":"FUN_0007b774","address":"0007b774","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libcrypto.so.3","function":"FUN_0007b8e8","address":"0007b8e8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

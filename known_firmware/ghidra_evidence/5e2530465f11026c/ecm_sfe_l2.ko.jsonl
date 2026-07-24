@@ -1,0 +1,4 @@
+{"binary":"ecm_sfe_l2.ko","function":"ecm_sfe_l2_defunct_by_port_write","address":"00010394","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm_sfe_l2.ko","function":"ecm_sfe_l2_defunct_by_5tuple_write","address":"000104dc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm_sfe_l2.ko","function":"ecm_sfe_l2_defunct_by_protocol_write","address":"000109f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ecm_sfe_l2.ko","function":"ecm_sfe_l2_policy_rule_write","address":"00010b28","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,4 @@
+{"binary":"qdf.ko","function":"qdf_mem_copy","address":"001034e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qdf.ko","function":"qdf_mem_move","address":"00103560","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qdf.ko","function":"FUN_00105c74","address":"00105c74","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"qdf.ko","function":"wlan_log_to_user","address":"001150a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

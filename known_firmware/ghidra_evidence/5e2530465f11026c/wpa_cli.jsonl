@@ -1,0 +1,3 @@
+{"binary":"wpa_cli","function":"FUN_00025e90","address":"00025e90","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_00025e90","address":"00025e90","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"wpa_cli","function":"FUN_000264ec","address":"000264ec","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

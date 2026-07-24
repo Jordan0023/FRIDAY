@@ -1,0 +1,2 @@
+{"binary":"ums-alauda.ko","function":"alauda_transport","address":"00010c94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ums-alauda.ko","function":"alauda_transport","address":"00010c94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

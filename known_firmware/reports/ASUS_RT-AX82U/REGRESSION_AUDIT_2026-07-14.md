@@ -215,6 +215,52 @@ did not cross the protected-handler boundary.
 
 Disposition: **no token disclosure or authentication bypass demonstrated**.
 
+### Fresh unauthenticated native-service pass
+
+The advanced source/sink scanner was rerun over the current rootfs. It
+promoted zero candidates. Its HTTP results were predominantly browser-side
+route/sink co-location and authenticated upload handlers, so the follow-up
+prioritized native LAN services with genuinely unauthenticated parsers.
+
+#### `infosvr` UDP discovery service
+
+The exact current `infosvr` binary (SHA-256
+`3b45e12447c2242d15f4b854798b308391fda8c36835717b5b55c5383e58d8af`)
+was started in the isolated guest and bound UDP port 9999. Static control flow
+showed that its dispatcher accepts exactly 512-byte datagrams, requires header
+bytes `12/21`, and dispatches only opcode values 31 through 54. The historical
+unauthenticated command-execution primitive from CVE-2014-9583 is absent from
+the current import and dispatch surface; the binary imports no `system`,
+`popen`, or `exec` function.
+
+A bounded corpus delivered a zero-filled, fixed-size request for every current
+opcode from 31 through 54. The daemon and UDP listener remained alive. The
+synthetic guest lacked the physical discovery interface and logged `sendto`
+network errors, so absence of replies was not treated as disclosure evidence.
+Function-level review then attributed
+the apparent `strcpy` sites in the handler to NVRAM values or bounded discovery
+helpers used to build responses, not directly to packet fields. The one JSON
+request branch first confines the packet body with `strlcpy(..., 500)`, then
+copies parsed attacker fields with limits of 32 and 20 bytes and applies string
+and MAC-address validators.
+
+Disposition: **historical high-risk service remains exposed to the LAN, but no
+distinct current memory-corruption, disclosure, or command-execution effect was
+found**.
+
+#### `miniupnpd` receive-path review
+
+The current `miniupnpd` binary (SHA-256
+`c5c9ad7c33e878fc384f47928e6affc4eed8643d3c38daa560058adc752f6dfe`)
+imports `recv`, `memcpy`, and bounded `strncpy`, but no command-execution API.
+Its primary HTTP receive path reads at most 2048 bytes per operation, grows a
+heap buffer with `realloc` using the accumulated length plus the new read and a
+terminator, copies exactly the received count, and writes the terminator at the
+new aggregate length. The function is protected by a stack canary. No
+source-to-unsafe-fixed-buffer edge was established in this pass.
+
+Disposition: **no new UPnP candidate promoted by the receive-path review**.
+
 ## Scanner result
 
 The authentication-first advanced scan promoted zero candidates. It reported

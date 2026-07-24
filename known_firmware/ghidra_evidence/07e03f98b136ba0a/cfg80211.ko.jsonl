@@ -1,0 +1,13 @@
+{"binary":"cfg80211.ko","function":"ieee80211_data_from_8023","address":"000126ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_wext_giwscan","address":"00018f98","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_wext_giwscan","address":"00018f98","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"nl80211_external_auth","address":"0001f27c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_michael_mic_failure","address":"0002e4e0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_mlme_register_mgmt","address":"0002ee20","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_ibss_wext_siwessid","address":"0002fd14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"FUN_000300e4","address":"000300e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_connect_result","address":"000305f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_disconnected","address":"00030708","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_roamed_bss","address":"000307bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_connect","address":"000315c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cfg80211.ko","function":"cfg80211_mgd_wext_siwessid","address":"00035480","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

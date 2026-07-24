@@ -1,0 +1,7 @@
+{"binary":"libauth-samba4.so","function":"netsamlogon_cache_store","address":"000177b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauth-samba4.so","function":"make_server_info_wbcAuthUserInfo","address":"00023b24","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauth-samba4.so","function":"serverinfo_to_SamInfo2","address":"00025a6c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauth-samba4.so","function":"serverinfo_to_SamInfo3","address":"00025b50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauth-samba4.so","function":"serverinfo_to_SamInfo6","address":"00025c3c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauth-samba4.so","function":"create_info6_from_pac","address":"00025ec0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libauth-samba4.so","function":"passwd_to_SamInfo3","address":"00026518","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,2 @@
+{"binary":"liblz4.so.1.8.3","function":"LZ4_decompress_safe_partial","address":"0001b044","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"liblz4.so.1.8.3","function":"FUN_00023e9c","address":"00023e9c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,13 @@
+{"binary":"libhx509-samba4.so.5.0.0","function":"encode_CertificationRequestInfo","address":"0001b740","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"decode_CertificationRequestInfo","address":"0001bb44","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"hx509_query_unparse_stats","address":"0001fc94","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"hx509_cms_wrap_ContentInfo","address":"00022610","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"hx509_cms_create_signed","address":"000236e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"hx509_crypto_set_key_data","address":"00026538","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"hx509_crypto_encrypt","address":"000268b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"hx509_pem_read","address":"00027ef8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"append_string","address":"0002b794","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"hx509_parse_name","address":"0002c354","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"yy_get_next_buffer","address":"00031afc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"encode_PKCS8PrivateKeyInfo","address":"00032a00","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libhx509-samba4.so.5.0.0","function":"decode_OCSPResponseData","address":"00036ce8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

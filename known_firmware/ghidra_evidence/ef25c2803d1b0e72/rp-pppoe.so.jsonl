@@ -1,0 +1,6 @@
+{"binary":"rp-pppoe.so","function":"pppoe_check_options","address":"0001182c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rp-pppoe.so","function":"FUN_000121d8","address":"000121d8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rp-pppoe.so","function":"sendPADT","address":"00012620","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rp-pppoe.so","function":"sendPADT","address":"00012620","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rp-pppoe.so","function":"FUN_00012994","address":"00012994","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rp-pppoe.so","function":"FUN_00012ca0","address":"00012ca0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

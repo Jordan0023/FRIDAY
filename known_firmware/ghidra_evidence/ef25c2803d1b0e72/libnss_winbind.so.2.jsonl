@@ -1,0 +1,2 @@
+{"binary":"libnss_winbind.so.2","function":"fill_pwent","address":"00010b14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnss_winbind.so.2","function":"fill_grent","address":"00010d38","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

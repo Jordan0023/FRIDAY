@@ -1,0 +1,13 @@
+{"binary":"tdts_udbfw.ko","function":"FUN_0010043c","address":"0010043c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"ford_read_procmem","address":"00100440","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"inet_ntop4","address":"001019e0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"inet_ntop4","address":"001019e0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"inet_ntop6","address":"00101ab0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"inet_ntop6","address":"00101ab0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"FUN_001029ac","address":"001029ac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"FUN_001029ac","address":"001029ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"send_action_pkt.part.0","address":"001029b0","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"send_action_pkt.part.0","address":"001029b0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"dns_reply_report","address":"00103d70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"IpStrToNum","address":"00104250","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"tdts_udbfw.ko","function":"send_dns_response","address":"00104320","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

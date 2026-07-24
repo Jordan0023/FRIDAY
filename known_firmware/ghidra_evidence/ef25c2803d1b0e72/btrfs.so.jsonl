@@ -1,0 +1,1 @@
+{"binary":"btrfs.so","function":"btrfs_fget_compression","address":"00012644","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

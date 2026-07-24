@@ -1,0 +1,8 @@
+{"binary":"libroxml.so.0.0.0","function":"roxml_get_name","address":"0001440c","route":"/'","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroxml.so.0.0.0","function":"roxml_get_name","address":"0001440c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroxml.so.0.0.0","function":"FUN_00015ab8","address":"00015ab8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroxml.so.0.0.0","function":"FUN_0001672c","address":"0001672c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroxml.so.0.0.0","function":"roxml_commit_file","address":"00016854","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroxml.so.0.0.0","function":"FUN_0001b0ac","address":"0001b0ac","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroxml.so.0.0.0","function":"FUN_0001b0ac","address":"0001b0ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libroxml.so.0.0.0","function":"_func_load_default","address":"0001e394","route":"/'))","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

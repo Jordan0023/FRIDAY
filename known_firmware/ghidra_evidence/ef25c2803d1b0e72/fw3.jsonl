@@ -1,0 +1,2 @@
+{"binary":"fw3","function":"FUN_00017914","address":"00017914","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"fw3","function":"FUN_00020cb4","address":"00020cb4","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

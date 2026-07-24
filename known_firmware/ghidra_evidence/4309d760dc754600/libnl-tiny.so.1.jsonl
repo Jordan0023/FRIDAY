@@ -1,0 +1,6 @@
+{"binary":"libnl-tiny.so.1","function":"nla_put","address":"00012310","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-tiny.so.1","function":"nl_cb_clone","address":"000136f4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-tiny.so.1","function":"nlmsg_append","address":"000139b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-tiny.so.1","function":"nlmsg_convert","address":"00013b70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-tiny.so.1","function":"nl_object_clone","address":"00014940","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-tiny.so.1","function":"unl_nl80211_phy_lookup","address":"000155ec","route":"/*","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

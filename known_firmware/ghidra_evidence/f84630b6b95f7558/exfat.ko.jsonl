@@ -1,0 +1,4 @@
+{"binary":"exfat.ko","function":"FUN_0001b190","address":"0001b190","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfat.ko","function":"FUN_0001b774","address":"0001b774","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfat.ko","function":"bdev_write","address":"0001e4b8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"exfat.ko","function":"bdev_write","address":"0001e4b8","route":"/work2/jenkins/workspace/router_sft1200/openwrt-18.06/siflower/openwrt-18.06/build_dir/target-mipsel_mips-interAptiv_musl/linux-siflower_sf19a28-fullmask/exfat-nofuse-2017-06-20-de4c760b/exfat_blkdev.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

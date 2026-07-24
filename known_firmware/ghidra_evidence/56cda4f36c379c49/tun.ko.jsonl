@@ -1,0 +1,1 @@
+{"binary":"tun.ko","function":"__tun_chr_ioctl","address":"00104d50","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

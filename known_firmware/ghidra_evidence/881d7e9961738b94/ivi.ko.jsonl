@@ -1,0 +1,2 @@
+{"binary":"ivi.ko","function":"UpdateTcpStateContext","address":"00103470","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ivi.ko","function":"ipaddr_4to6.isra.0","address":"00104dc0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,3 @@
+{"binary":"cloud-client","function":"strcpy","address":"00008f70","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cloud-client","function":"memcpy","address":"00009030","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"cloud-client","function":"sprintf","address":"000091c8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

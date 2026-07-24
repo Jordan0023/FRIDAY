@@ -1,0 +1,5 @@
+{"binary":"i2cdetect","function":"FUN_0001193c","address":"0001193c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"i2cdetect","function":"FUN_0001193c","address":"0001193c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"i2cdetect","function":"FUN_00011ab8","address":"00011ab8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"i2cdetect","function":"FUN_00011ab8","address":"00011ab8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"i2cdetect","function":"FUN_00011ab8","address":"00011ab8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

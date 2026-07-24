@@ -1,0 +1,3 @@
+{"binary":"libmapd_interface_client.so","function":"os_rel2abs_path","address":"00108310","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmapd_interface_client.so","function":"os_rel2abs_path","address":"00108310","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmapd_interface_client.so","function":"os_exec","address":"00108674","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

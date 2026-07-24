@@ -1,0 +1,8 @@
+{"binary":"libsamba-debug-samba4.so","function":"debug_ringbuf_log","address":"00011b84","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-debug-samba4.so","function":"debug_backends_log","address":"00011c54","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-debug-samba4.so","function":"Debug1","address":"00011e70","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-debug-samba4.so","function":"debug_set_settings","address":"00012774","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-debug-samba4.so","function":"reopen_logs_internal","address":"00013028","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-debug-samba4.so","function":"check_log_size","address":"00013434","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-debug-samba4.so","function":"check_log_size","address":"00013434","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libsamba-debug-samba4.so","function":"debug_parse_levels","address":"000137e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

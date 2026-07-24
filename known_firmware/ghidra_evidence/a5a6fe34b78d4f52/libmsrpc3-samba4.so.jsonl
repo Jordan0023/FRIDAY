@@ -1,0 +1,2 @@
+{"binary":"libmsrpc3-samba4.so","function":"FUN_000213cc","address":"000213cc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libmsrpc3-samba4.so","function":"dcerpc_check_auth","address":"00024f5c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

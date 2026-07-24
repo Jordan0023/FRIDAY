@@ -1,0 +1,1 @@
+{"binary":"bcm_pcie_hcd.ko","function":"pcie_hcd_nvram_get_u32","address":"00107f94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

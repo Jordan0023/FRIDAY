@@ -1,0 +1,6 @@
+{"schema":4,"binary":"upnpd","function":"FUN_00023580","address":"00023580","sinks":["strcpy","strcat"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"upnpd","function":"FUN_0002e790","address":"0002e790","sinks":["system"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"upnpd","function":"FUN_0003ea90","address":"0003ea90","sinks":["popen"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"upnpd","function":"FUN_00052c74","address":"00052c74","sinks":["strcpy","system"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"upnpd","function":"FUN_00053e28","address":"00053e28","sinks":["strcpy"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}
+{"schema":4,"binary":"upnpd","function":"FUN_000599dc","address":"000599dc","sinks":["popen","memcpy","strcpy","system"],"sources":["fgets"],"routes":[],"auth_markers":[],"classification":"potential-function-local-correlation"}

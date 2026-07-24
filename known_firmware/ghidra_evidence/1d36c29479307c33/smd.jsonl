@@ -1,0 +1,2 @@
+{"binary":"smd","function":"FUN_00014ee8","address":"00014ee8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"smd","function":"FUN_00014ee8","address":"00014ee8","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}

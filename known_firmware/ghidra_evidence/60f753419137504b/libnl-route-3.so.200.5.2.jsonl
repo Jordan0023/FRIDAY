@@ -1,0 +1,5 @@
+{"binary":"libnl-route-3.so.200.5.2","function":"rtnl_netem_set_delay_distribution","address":"00032278","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-route-3.so.200.5.2","function":"rtnl_netem_set_delay_distribution","address":"00032278","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-route-3.so.200.5.2","function":"rtnl_qdisc_prio_set_priomap","address":"00032744","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-route-3.so.200.5.2","function":"ematch_parse","address":"0003a77c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libnl-route-3.so.200.5.2","function":"ematch_lex","address":"0003bf94","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

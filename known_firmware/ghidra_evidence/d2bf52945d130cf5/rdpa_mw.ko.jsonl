@@ -1,0 +1,3 @@
+{"binary":"rdpa_mw.ko","function":"qm_queues_size_get","address":"00012a60","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rdpa_mw.ko","function":"rdpa_init_system","address":"00012d1c","route":"/../bcmdrivers/opensource/char/rdpa_mw/bcm96855/rdpa_mw_sys_init.c","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"rdpa_mw.ko","function":"rdpa_init_system","address":"00012d1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

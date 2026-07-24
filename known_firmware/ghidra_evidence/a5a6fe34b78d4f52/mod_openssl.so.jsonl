@@ -1,0 +1,2 @@
+{"binary":"mod_openssl.so","function":"mod_openssl_session_ticket_key_check","address":"00016298","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"mod_openssl.so","function":"ssl_tlsext_status_cb","address":"00016900","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,13 @@
+{"binary":"bonding.ko","function":"FUN_00100360","address":"00100360","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"FUN_00101934","address":"00101934","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_enslave","address":"00104380","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_enslave","address":"00104380","route":"/arp_ip_target","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"FUN_001054c4","address":"001054c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"FUN_0010c190","address":"0010c190","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"FUN_0010c260","address":"0010c260","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"FUN_0010c330","address":"0010c330","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_alb_handle_active_change","address":"0010e0c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"FUN_0010e650","address":"0010e650","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"FUN_00111140","address":"00111140","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"FUN_00111734","address":"00111734","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bonding.ko","function":"bond_opt_parse","address":"00112584","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

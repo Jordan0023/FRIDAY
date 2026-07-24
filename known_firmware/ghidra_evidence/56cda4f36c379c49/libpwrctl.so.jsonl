@@ -1,0 +1,17 @@
+{"binary":"libpwrctl.so","function":"FUN_000117c4","address":"000117c4","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_led_set","address":"00011a28","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_wifi_suspend_get","address":"00011b98","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_wifi_suspend_set","address":"00011ca8","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_disk_suspend_get","address":"00011d8c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_disk_suspend_set","address":"00011e9c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"FUN_00011f80","address":"00011f80","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_xrdp_clock_gate_get","address":"00012a00","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"FUN_00013f5c","address":"00013f5c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_wldpd_set","address":"00014060","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_xrdp_clock_gate_set","address":"00014184","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"FUN_0001424c","address":"0001424c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"FUN_0001424c","address":"0001424c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_pon_cond","address":"0001445c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_pon_set","address":"0001456c","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_pon_get","address":"000146bc","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libpwrctl.so","function":"pwr_api_pon_set_inline","address":"000147ec","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

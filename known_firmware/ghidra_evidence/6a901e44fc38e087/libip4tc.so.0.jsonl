@@ -1,0 +1,3 @@
+{"binary":"libip4tc.so","function":"iptc_init","address":"0001232c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip4tc.so","function":"iptc_init","address":"0001232c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libip4tc.so","function":"FUN_0001329c","address":"0001329c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -1,0 +1,5 @@
+{"binary":"libasuslog.so","function":"asusdebuglog_file_lock","address":"00011150","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libasuslog.so","function":"asusdebuglog","address":"000114ac","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libasuslog.so","function":"asusdebuglog","address":"000114ac","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libasuslog.so","function":"asusdebuglog","address":"000114ac","route":"/*","sink":"unsafe_copy","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libasuslog.so","function":"asusdebuglog","address":"000114ac","route":"/*","sink":"file_write","sources":"nvram_get","auth_markers":"","correlation":"function-local-co-location"}

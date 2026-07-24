@@ -1,0 +1,3 @@
+{"binary":"ideviceinfo","function":"FUN_0001d9c4","address":"0001d9c4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ideviceinfo","function":"FUN_00022a8c","address":"00022a8c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ideviceinfo","function":"FUN_000231e4","address":"000231e4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

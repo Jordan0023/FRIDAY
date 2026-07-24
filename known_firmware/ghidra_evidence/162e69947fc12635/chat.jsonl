@@ -1,0 +1,3 @@
+{"binary":"chat","function":"FUN_0000a25c","address":"0000a25c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"chat","function":"FUN_0000a25c","address":"0000a25c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"chat","function":"FUN_0000a25c","address":"0000a25c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

@@ -175,7 +175,9 @@ def profile_runtime(rootfs: Path, product: str = "") -> RuntimeProfile:
     web = sorted({name for name in ("httpd", "uhttpd", "lighttpd", "nginx", "boa", "mini_httpd") if name in names})
     state = sorted({name for name in ("nvram", "ubus", "uci", "dbus", "xmldbc", "cmclient") if any(name in n for n in names)})
     arch = sorted({_elf_arch(p) for p in executable_files(rootfs, 500) if _elf_arch(p) != "unknown"})
-    roots = [str(p) for p in discover_rootfs_candidates(rootfs.parent)[:10]]
+    # The caller has already selected the extraction boundary. Searching its
+    # parent can accidentally traverse unrelated, short-lived /tmp trees.
+    roots = [str(p) for p in discover_rootfs_candidates(rootfs)[:10]]
     return RuntimeProfile(vendor, web, state, arch, roots, len(executable_files(rootfs)))
 
 
@@ -343,6 +345,9 @@ def confirmation_policy() -> dict[str, object]:
         "confirmed_zero_day_requires": [
             "L5 reproducible security effect with fault/sink attribution",
             "novel reproducible pre-authentication exploitation path with no remote administrator session required",
+            "LAN or WAN network reachability without credentials",
+            "impact is remote code execution or a reliable input-specific denial of service",
+            "denial of service reproduces from attacker input and is not generic resource exhaustion",
             "documented, dated public-prior-art search",
             "no matching public disclosure or publicly available fix at the recorded discovery time",
         ],
@@ -353,6 +358,7 @@ def confirmation_policy() -> dict[str, object]:
         "L4": "authentication/validation boundary and trigger are proven",
         "L5": "reproducible security effect with fault/sink attribution",
         "forbidden_shortcut": "route string and dangerous symbol merely co-located in a binary",
+        "impactful_hunt_scope": "unauthenticated LAN/WAN RCE or reliable input-specific denial of service",
     }
 
 

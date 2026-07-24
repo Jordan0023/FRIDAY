@@ -1,0 +1,12 @@
+{"binary":"bftpd","function":"FUN_00011f14","address":"00011f14","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_00011f14","address":"00011f14","route":"/etc/bftpd.conf","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_00011f14","address":"00011f14","route":"/dev/null","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_00014eec","address":"00014eec","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_000165a4","address":"000165a4","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_000168d8","address":"000168d8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_00017784","address":"00017784","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"passwd,Login","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_00017784","address":"00017784","route":"/%i","sink":"unsafe_copy","sources":"","auth_markers":"passwd,Login","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_00017784","address":"00017784","route":"/etc/passwd","sink":"unsafe_copy","sources":"","auth_markers":"passwd,Login","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_00017784","address":"00017784","route":"/etc/group","sink":"unsafe_copy","sources":"","auth_markers":"passwd,Login","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_00017784","address":"00017784","route":"/')","sink":"unsafe_copy","sources":"","auth_markers":"passwd,Login","correlation":"function-local-co-location"}
+{"binary":"bftpd","function":"FUN_00018950","address":"00018950","route":"/%s.txt","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}

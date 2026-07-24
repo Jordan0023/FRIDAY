@@ -1,0 +1,2 @@
+{"binary":"libfal.so","function":"nss_macsec_secy_tx_sc_create","address":"00018c14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libfal.so","function":"nss_macsec_secy_tx_sc_sci_get","address":"00019e58","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

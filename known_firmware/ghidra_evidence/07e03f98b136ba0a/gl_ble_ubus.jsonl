@@ -1,0 +1,3 @@
+{"binary":"gl_ble_ubus","function":"FUN_00011158","address":"00011158","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_ble_ubus","function":"FUN_00011158","address":"00011158","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"gl_ble_ubus","function":"FUN_00011158","address":"00011158","route":"/*","sink":"system","sources":"","auth_markers":"","correlation":"function-local-co-location"}

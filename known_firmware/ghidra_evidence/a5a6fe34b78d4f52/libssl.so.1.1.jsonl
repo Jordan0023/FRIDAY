@@ -1,0 +1,6 @@
+{"binary":"libssl.so.1.1","function":"FUN_000254c0","address":"000254c0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.1","function":"FUN_00027b14","address":"00027b14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.1","function":"FUN_000294f8","address":"000294f8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.1","function":"FUN_0004c5a0","address":"0004c5a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.1","function":"FUN_00052dc4","address":"00052dc4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libssl.so.1.1","function":"FUN_0005cec0","address":"0005cec0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

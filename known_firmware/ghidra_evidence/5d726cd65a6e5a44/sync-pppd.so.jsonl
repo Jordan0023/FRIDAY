@@ -1,0 +1,2 @@
+{"binary":"sync-pppd.so","function":"FUN_00011584","address":"00011584","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"sync-pppd.so","function":"FUN_00011584","address":"00011584","route":"/*","sink":"exec","sources":"","auth_markers":"","correlation":"function-local-co-location"}

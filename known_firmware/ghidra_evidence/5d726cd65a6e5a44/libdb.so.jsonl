@@ -1,0 +1,11 @@
+{"binary":"libdb-4.8.so","function":"__lock_fix_list","address":"00052368","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__lock_get_list","address":"000527b4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_coff","address":"000762a0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__env_fileid_reset","address":"0007db14","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_apprec","address":"0008a7f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__log_open","address":"0009642c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"FUN_00097d14","address":"00097d14","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__log_put","address":"0009c65c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_mkpath","address":"0009d248","route":"/')","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__db_mkpath","address":"0009d248","route":"/';","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"libdb-4.8.so","function":"__memp_fget","address":"0009ebd4","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

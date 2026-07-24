@@ -1,0 +1,1 @@
+{"binary":"miniupnpd","function":"FUN_0040335c","address":"0040335c","route":"/proc/uptime","sink":"file_write","sources":"read","auth_markers":"","correlation":"function-local-co-location"}

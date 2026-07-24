@@ -1,0 +1,4 @@
+{"binary":"getdns_query","function":"FUN_004023f0","address":"004023f0","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"getdns_query","function":"FUN_004024bc","address":"004024bc","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"getdns_query","function":"FUN_00402c1c","address":"00402c1c","route":"/*","sink":"file_write","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"getdns_query","function":"FUN_00402c1c","address":"00402c1c","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}

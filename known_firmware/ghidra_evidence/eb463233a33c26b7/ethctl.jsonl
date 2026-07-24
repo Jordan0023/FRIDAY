@@ -1,0 +1,12 @@
+{"binary":"ethctl","function":"FUN_00011d64","address":"00011d64","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_00011e48","address":"00011e48","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_000123ac","address":"000123ac","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_000126b0","address":"000126b0","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_00012844","address":"00012844","route":"/*","sink":"popen","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_00013c10","address":"00013c10","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_00013c10","address":"00013c10","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_00015910","address":"00015910","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_0001625c","address":"0001625c","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_000166ac","address":"000166ac","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_00016eb8","address":"00016eb8","route":"/*","sink":"unsafe_copy","sources":"","auth_markers":"","correlation":"function-local-co-location"}
+{"binary":"ethctl","function":"FUN_00016eb8","address":"00016eb8","route":"/*","sink":"memory_operation","sources":"","auth_markers":"","correlation":"function-local-co-location"}
