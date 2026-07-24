@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Verified unauthenticated router RCE and denial-of-service research with explicit confirmation and novelty status.">
+    <title>Confirmed Zero-Day Research · Firmware Audit</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Router Firmware Audit</p>
+        <h1>Confirmed Zero-Day Research</h1>
+      </div>
+      <nav class="topbar-actions" aria-label="Primary navigation">
+        <a class="button" href="index.html">Firmware Dashboard</a>
+        <a class="button button-accent" href="#findings">Verified Findings</a>
+      </nav>
+    </header>
+
+    <main class="research-shell">
+      <section class="research-hero">
+        <div>
+          <p class="section-kicker">Evidence before labels</p>
+          <h2>Unauthenticated RCE and DoS, with the confidence boundary visible.</h2>
+          <p class="hero-copy">
+            This page tracks high-impact findings that have a reproducible security effect.
+            Impact confirmation and zero-day novelty are reported separately; a crash is not
+            called a zero-day merely because it is new to this project.
+          </p>
+        </div>
+        <div class="hero-stats" aria-label="Finding summary">
+          <div class="hero-stat">
+            <span>Apparent zero-day RCE</span>
+            <strong>1 chain</strong>
+            <small>2 firmware products confirmed</small>
+          </div>
+          <div class="hero-stat">
+            <span>Confirmed zero-day DoS</span>
+            <strong>0 final</strong>
+            <small>1 distinct candidate, 2 products</small>
+          </div>
+          <div class="hero-stat">
+            <span>Highest evidence</span>
+            <strong>L5</strong>
+            <small>Reproduced security effect</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="status-legend" aria-label="Status definitions">
+        <div>
+          <span class="status-dot status-confirmed"></span>
+          <strong>Impact confirmed</strong>
+          <p>The genuine firmware component produced a reproducible security effect.</p>
+        </div>
+        <div>
+          <span class="status-dot status-apparent"></span>
+          <strong>Apparent zero-day</strong>
+          <p>No matching public disclosure was found in the dated novelty review.</p>
+        </div>
+        <div>
+          <span class="status-dot status-candidate"></span>
+          <strong>Novelty pending</strong>
+          <p>Impact is confirmed, but vendor or CNA duplicate assessment remains open.</p>
+        </div>
+      </section>
+
+      <section id="findings" class="finding-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Unauthenticated RCE</p>
+            <h2>Root command execution through the setup state</h2>
+          </div>
+          <span class="finding-count">1 chain · 2 products</span>
+        </div>
+
+        <article class="research-card rce-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-rce">Critical · Root RCE</span>
+            <span class="confidence-badge">L5 emulation-confirmed</span>
+            <span class="novelty-badge">Apparent zero-day</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">NETGEAR</p>
+              <h3>EX2800 and EX6110 · Firmware V1.0.1.84</h3>
+              <p class="finding-summary">
+                An unauthenticated client that can reach the local management service while
+                the extender is factory-unconfigured can cross a one-shot authentication
+                boundary and reach an operating-system command sink running as root.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> local management or setup network. Default
+                public-Internet reachability has not been established.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>No valid admin session</dd></div>
+              <div><dt>Privilege</dt><dd>Root</dd></div>
+              <div><dt>Validation</dt><dd>End-to-end firmware emulation</dd></div>
+              <div><dt>Physical hardware</dt><dd>Pending</dd></div>
+              <div><dt>Novelty review</dt><dd>2026-07-23</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/EX2800/EX2800_UNAUTH_RCE_DOS_RESEARCH_2026-07-23.md</code>
+            </div>
+            <p>Trigger details are withheld from this public summary pending coordinated disclosure.</p>
+          </footer>
+        </article>
+      </section>
+
+      <section class="finding-section">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Unauthenticated DoS</p>
+            <h2>Confirmed impact, zero-day disposition still open</h2>
+          </div>
+          <span class="finding-count finding-count-amber">1 candidate · 2 products</span>
+        </div>
+
+        <article class="research-card dos-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-dos">High · Service DoS</span>
+            <span class="confidence-badge">L5 emulation-confirmed</span>
+            <span class="candidate-badge">Zero-day candidate</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">NETGEAR</p>
+              <h3>RAX29 and RAX30 · Firmware V1.0.14.108</h3>
+              <p class="finding-summary">
+                A single unauthenticated LAN request to the genuine UPnP service reliably
+                terminates the daemon with a segmentation fault. Fault attribution identifies
+                a missing optional-port parser branch and a null dereference, distinct from
+                the publicly documented callback-overflow class.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> confirmed on the LAN-side UPnP listener.
+                Stock WAN reachability and whole-router denial of service are not established.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>None</dd></div>
+              <div><dt>Effect</dt><dd>UPnP daemon exits with SIGSEGV</dd></div>
+              <div><dt>Validation</dt><dd>Differential full-system emulation</dd></div>
+              <div><dt>Physical hardware</dt><dd>Pending</dd></div>
+              <div><dt>Novelty review</dt><dd>2026-07-24</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research records</span>
+              <code>private_disclosures/RAX29/RAX29_V1.0.14.108_UPNP_UNAUTH_DOS_2026-07-23.md</code>
+              <code>private_disclosures/RAX30/RAX30_V1.0.14.108_UPNP_UNAUTH_DOS_2026-07-23.md</code>
+            </div>
+            <p>Listed as a candidate—not a final confirmed zero-day—until duplicate assessment is complete.</p>
+          </footer>
+        </article>
+      </section>
+
+      <section class="method-panel">
+        <div>
+          <p class="section-kicker">Publication threshold</p>
+          <h2>What earns a place here</h2>
+        </div>
+        <ol>
+          <li><strong>Reachability:</strong> the attack path is available without valid administrator credentials.</li>
+          <li><strong>Attribution:</strong> the attacker-controlled input is tied to the fault or execution sink.</li>
+          <li><strong>Reproduction:</strong> the security effect repeats with a benign differential control.</li>
+          <li><strong>Novelty:</strong> a dated public-record review finds no matching disclosure or fix.</li>
+          <li><strong>Caveat:</strong> public novelty cannot exclude a private, embargoed, or reserved duplicate.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="research-footer">
+      <p>Last evidence review: 24 July 2026 · Research summaries omit operational exploit instructions.</p>
+      <a href="index.html">Return to firmware dashboard</a>
+    </footer>
+  </body>
+</html>
