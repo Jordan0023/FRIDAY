@@ -266,6 +266,40 @@ recorded.
 - HTTP parser service DoS through 16 KiB URI/header values: tested negative.
 - Confirmed RAX49S unauthenticated RCE or product-level DoS: **no**.
 
+## Telnet production-path closure
+
+The bundled telnet binaries do not establish a factory-default unauthenticated
+shell:
+
+- EID 6 (`telnetd`) is commented out in the shipping
+  `eid_bcm_mgmt.txt`, like the inactive IPP supervisor entity.
+- `/etc/init.d/bcm-wlan-drivers.sh` contains a direct
+  `/usr/sbin/utelnetd -d` launch only inside the `WLAN_BTEST=y`
+  manufacturing-test branch. The production script has `WLAN_BTEST=` and
+  `WLAN_REMOVE_INTERNAL_DEBUG=y`.
+- The ordinary production service manager checks the `telnet_enable` NVRAM
+  setting before invoking `telnetenabled`; the surviving internal page labels
+  the setting as not intended for production images.
+- `telnetenabled` contains the `AMBIT_TELNET_ENABLE+` challenge marker and
+  reads `lan_hwaddr`, `http_username`, and `http_passwd_digest` before it can
+  spawn `utelnetd -d -i br0`. This is an enable mechanism tied to device and
+  administrator material, not an unauthenticated listener present at boot.
+
+This closes the remaining bundled-telnet lead at the firmware-evidence level.
+Physical factory-default port capture would still be the strongest independent
+confirmation of runtime exposure, but no stock activation path in the complete
+shipping filesystem supports promotion to unauthenticated RCE.
+
+## Final result of this target pass
+
+- Confirmed latent memory-corruption/daemon DoS in `/bin/ippd`: **yes**, when
+  the daemon is manually launched.
+- Confirmed factory-default reachability of that daemon: **no**.
+- Confirmed transfer of the RAX30 UPnP DoS: **no**.
+- Confirmed HTTP/SOAP pre-auth RCE or persistent service DoS: **no**.
+- Confirmed factory-default unauthenticated telnet shell: **no**.
+- Defensible RAX49S zero-day claim from current evidence: **none**.
+
 ## Artifacts
 
 - RAX49S wrapper:
