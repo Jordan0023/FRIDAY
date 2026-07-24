@@ -33,8 +33,8 @@
         <div class="hero-stats" aria-label="Finding summary">
           <div class="hero-stat">
             <span>Apparent zero-day RCE</span>
-            <strong>2 chains</strong>
-            <small>4 firmware products confirmed</small>
+            <strong>3 chains</strong>
+            <small>5 firmware products confirmed</small>
           </div>
           <div class="hero-stat">
             <span>Unauthenticated DoS</span>
@@ -73,7 +73,7 @@
             <p class="section-kicker">Unauthenticated RCE</p>
             <h2>Pre-authentication paths to root command execution</h2>
           </div>
-          <span class="finding-count">2 chains · 4 products</span>
+          <span class="finding-count">3 chains · 5 products</span>
         </div>
 
         <article class="research-card rce-card">
@@ -148,6 +148,45 @@
               <code>private_disclosures/RAX9/RAX9_V1.0.3.32_PREAUTH_RCE_DOS_TRIAGE_2026-07-24.md</code>
             </div>
             <p>Operational request details are withheld pending coordinated disclosure and duplicate review.</p>
+          </footer>
+        </article>
+
+        <article class="research-card rce-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-rce">Critical · Root RCE</span>
+            <span class="confidence-badge">Genuine daemon emulation</span>
+            <span class="candidate-badge">Conditional WAN</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">GL.iNet</p>
+              <h3>GL-X3000 Spitz AX · Firmware 4.8.3</h3>
+              <p class="finding-summary">
+                The root eSIM daemon accepts command messages from its outbound plaintext
+                push connection without authenticating the server or authorizing each
+                command. The unmodified firmware daemon executed a harmless marker through
+                <code>/usr/bin/sh -c</code> in an isolated emulator.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> conditional WAN through the router-initiated push
+                channel. Interception, redirection, or control of that channel is required;
+                arbitrary access to GL.iNet's production publisher was not tested or claimed.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Router credentials</dt><dd>Not required after channel control</dd></div>
+              <div><dt>Privilege</dt><dd>Root</dd></div>
+              <div><dt>Validation</dt><dd>Unmodified AArch64 daemon</dd></div>
+              <div><dt>Execution proof</dt><dd>Shell marker and execve trace</dd></div>
+              <div><dt>Novelty review</dt><dd>Preliminary; CNA review pending</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/GL-X3000/X3000_4.8.3_PREAUTH_RCE_TRIAGE_2026-07-24.md</code>
+            </div>
+            <p>Production service details and operational protocol material are withheld pending coordinated disclosure.</p>
           </footer>
         </article>
       </section>
