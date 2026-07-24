@@ -290,7 +290,8 @@ h3 {
 .impact-badge,
 .confidence-badge,
 .novelty-badge,
-.candidate-badge {
+.candidate-badge,
+.reachability-badge {
   padding: 5px 8px;
   border-radius: 5px;
   font-size: 11px;
@@ -303,6 +304,11 @@ h3 {
 .confidence-badge { background: #e8edf2; color: #405161; }
 .novelty-badge { background: #d6f5ef; color: #0b625b; }
 .candidate-badge { background: #fff1d6; color: #8a570d; }
+.reach-lan { background: #dff4e8; color: #176638; }
+.reach-blocked { background: #e8edf2; color: #405161; }
+.reach-conditional { background: #fff1d6; color: #8a570d; }
+.reach-unverified { background: #f2eafd; color: #67409b; }
+.reach-neutral { background: #edf0f2; color: #53616d; }
 
 .card-grid {
   display: grid;
