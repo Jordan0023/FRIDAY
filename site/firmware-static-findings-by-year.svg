@@ -3,17 +3,17 @@
   <desc id="desc">Grouped bar chart comparing firmware releases and static heuristic findings from 2021 through 2026.</desc>
   <rect width="1200" height="760" fill="#09111f"/>
 
-  <text x="90" y="68" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">
+  <text x="90" y="68" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="700">
     Router firmware and static findings by year
   </text>
-  <text x="90" y="106" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600">
+  <text x="90" y="108" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600">
     Total: 1,939 firmware images · 4,397 static findings
   </text>
-  <g font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600">
-    <rect x="90" y="119" width="24" height="24" rx="5" fill="#38bdf8"/>
-    <text x="126" y="140" fill="#dbeafe">Firmware releases</text>
-    <rect x="365" y="119" width="24" height="24" rx="5" fill="#f59e0b"/>
-    <text x="401" y="140" fill="#fef3c7">Static heuristic findings</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="27" font-weight="600">
+    <rect x="90" y="121" width="29" height="29" rx="6" fill="#38bdf8"/>
+    <text x="131" y="146" fill="#dbeafe">Firmware releases</text>
+    <rect x="400" y="121" width="29" height="29" rx="6" fill="#f59e0b"/>
+    <text x="441" y="146" fill="#fef3c7">Static heuristic findings</text>
   </g>
 
   <!-- Plot area: x=90..1130, y=140..640; scale=0.2 px per count, max=2500 -->
@@ -26,7 +26,7 @@
     <line x1="90" y1="155" x2="1130" y2="155"/>
   </g>
 
-  <g fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" text-anchor="end">
+  <g fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" text-anchor="end">
     <text x="78" y="645">0</text>
     <text x="78" y="545">500</text>
     <text x="78" y="445">1,000</text>
@@ -38,40 +38,40 @@
   <!-- 2021: firmware 17, findings 9 -->
   <rect x="142" y="636.6" width="48" height="3.4" rx="3" fill="#38bdf8"/>
   <rect x="198" y="638.2" width="48" height="1.8" rx="3" fill="#f59e0b"/>
-  <text x="166" y="614" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">17</text>
-  <text x="222" y="614" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">9</text>
+  <text x="166" y="608" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">17</text>
+  <text x="222" y="608" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">9</text>
 
   <!-- 2022: firmware 50, findings 50 -->
   <rect x="312" y="630" width="48" height="10" rx="3" fill="#38bdf8"/>
   <rect x="368" y="630" width="48" height="10" rx="3" fill="#f59e0b"/>
-  <text x="336" y="608" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">50</text>
-  <text x="392" y="608" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">50</text>
+  <text x="336" y="602" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">50</text>
+  <text x="392" y="602" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">50</text>
 
   <!-- 2023: firmware 111, findings 178 -->
   <rect x="482" y="617.8" width="48" height="22.2" rx="3" fill="#38bdf8"/>
   <rect x="538" y="604.4" width="48" height="35.6" rx="3" fill="#f59e0b"/>
-  <text x="506" y="596" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">111</text>
-  <text x="562" y="583" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">178</text>
+  <text x="506" y="590" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">111</text>
+  <text x="562" y="577" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">178</text>
 
   <!-- 2024: firmware 225, findings 392 -->
   <rect x="652" y="595" width="48" height="45" rx="3" fill="#38bdf8"/>
   <rect x="708" y="561.6" width="48" height="78.4" rx="3" fill="#f59e0b"/>
-  <text x="676" y="573" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">225</text>
-  <text x="732" y="540" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">392</text>
+  <text x="676" y="567" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">225</text>
+  <text x="732" y="534" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">392</text>
 
   <!-- 2025: firmware 352, findings 782 -->
   <rect x="822" y="569.6" width="48" height="70.4" rx="3" fill="#38bdf8"/>
   <rect x="878" y="483.6" width="48" height="156.4" rx="3" fill="#f59e0b"/>
-  <text x="846" y="548" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">352</text>
-  <text x="902" y="462" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">782</text>
+  <text x="846" y="542" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">352</text>
+  <text x="902" y="456" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">782</text>
 
   <!-- 2026: firmware 890, findings 2313 -->
   <rect x="992" y="462" width="48" height="178" rx="3" fill="#38bdf8"/>
   <rect x="1048" y="177.4" width="48" height="462.6" rx="3" fill="#f59e0b"/>
-  <text x="1016" y="440" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">890</text>
-  <text x="1072" y="171" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">2,313</text>
+  <text x="1016" y="434" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">890</text>
+  <text x="1072" y="211" fill="#451a03" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="800" text-anchor="middle">2,313</text>
 
-  <g fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">
+  <g fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">
     <text x="194" y="674">2021</text>
     <text x="364" y="674">2022</text>
     <text x="534" y="674">2023</text>
