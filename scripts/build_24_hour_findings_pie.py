@@ -46,11 +46,11 @@ def main() -> None:
             ),
         ],
         loc="center left",
-        bbox_to_anchor=(0.035, 0.47),
+        bbox_to_anchor=(0.105, 0.47),
         frameon=False,
-        fontsize=14,
+        fontsize=16,
         ncol=1,
-        labelspacing=1.6,
+        labelspacing=1.45,
         handlelength=2.4,
         handletextpad=0.9,
     )
@@ -63,7 +63,7 @@ def main() -> None:
     )
     fig.text(
         0.5,
-        0.915,
+        0.895,
         "13 distinct high-impact chains • firmware and emulation evidence • 26 Jul 2026",
         ha="center",
         fontsize=13,
