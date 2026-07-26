@@ -1,83 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="700" viewBox="0 0 1160 700" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="760" viewBox="0 0 1220 760" role="img" aria-labelledby="title desc">
   <title id="title">Router firmware and static findings by release year</title>
   <desc id="desc">Grouped bar chart comparing firmware releases and static heuristic findings from 2021 through 2026.</desc>
-  <rect width="1160" height="700" fill="#09111f"/>
+  <rect width="1220" height="760" fill="#09111f"/>
 
-  <text x="90" y="68" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="700">
+  <text x="90" y="70" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="700">
     Router firmware and static findings by year
   </text>
-  <text x="90" y="108" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600">
+  <text x="90" y="116" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600">
     Total: 1,939 firmware images · 4,397 static findings
   </text>
-  <g font-family="Inter, Arial, sans-serif" font-size="27" font-weight="600">
-    <rect x="130" y="121" width="29" height="29" rx="6" fill="#38bdf8"/>
-    <text x="171" y="146" fill="#dbeafe">Firmware releases</text>
-    <rect x="440" y="121" width="29" height="29" rx="6" fill="#f59e0b"/>
-    <text x="481" y="146" fill="#fef3c7">Static heuristic findings</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">
+    <rect x="130" y="135" width="34" height="34" rx="7" fill="#38bdf8"/>
+    <text x="180" y="164" fill="#dbeafe">Firmware releases</text>
+    <rect x="130" y="178" width="34" height="34" rx="7" fill="#f59e0b"/>
+    <text x="180" y="207" fill="#fef3c7">Static heuristic findings</text>
   </g>
 
-  <!-- Plot area: x=90..1130, y=140..640; scale=0.2 px per count, max=2500 -->
+  <!-- Plot area: x=110..1190, y=215..680; scale=0.186 px per count, max=2500 -->
   <g stroke="#26364d" stroke-width="1">
-    <line x1="110" y1="640" x2="1130" y2="640"/>
-    <line x1="110" y1="540" x2="1130" y2="540"/>
-    <line x1="110" y1="440" x2="1130" y2="440"/>
-    <line x1="110" y1="340" x2="1130" y2="340"/>
-    <line x1="110" y1="240" x2="1130" y2="240"/>
-    <line x1="110" y1="155" x2="1130" y2="155"/>
+    <line x1="110" y1="680" x2="1190" y2="680"/>
+    <line x1="110" y1="587" x2="1190" y2="587"/>
+    <line x1="110" y1="494" x2="1190" y2="494"/>
+    <line x1="110" y1="401" x2="1190" y2="401"/>
+    <line x1="110" y1="308" x2="1190" y2="308"/>
+    <line x1="110" y1="215" x2="1190" y2="215"/>
   </g>
 
-  <g fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700" text-anchor="end">
-    <text x="98" y="645">0</text>
-    <text x="98" y="545">500</text>
-    <text x="98" y="445">1,000</text>
-    <text x="98" y="345">1,500</text>
-    <text x="98" y="245">2,000</text>
-    <text x="98" y="160">2,500</text>
+  <g fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" text-anchor="end">
+    <text x="98" y="686">0</text>
+    <text x="98" y="593">500</text>
+    <text x="98" y="500">1,000</text>
+    <text x="98" y="407">1,500</text>
+    <text x="98" y="314">2,000</text>
+    <text x="98" y="221">2,500</text>
   </g>
 
   <!-- 2021: firmware 17, findings 9 -->
-  <rect x="128" y="636.6" width="60" height="3.4" rx="4" fill="#38bdf8"/>
-  <rect x="200" y="638.2" width="60" height="1.8" rx="4" fill="#f59e0b"/>
-  <text x="158" y="600" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">17</text>
-  <text x="230" y="600" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">9</text>
+  <rect x="139" y="676.8" width="68" height="3.2" rx="5" fill="#38bdf8"/>
+  <rect x="221" y="678.3" width="68" height="1.7" rx="5" fill="#f59e0b"/>
+  <text x="173" y="631" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">17</text>
+  <text x="255" y="631" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">9</text>
 
   <!-- 2022: firmware 50, findings 50 -->
-  <rect x="298" y="630" width="60" height="10" rx="4" fill="#38bdf8"/>
-  <rect x="370" y="630" width="60" height="10" rx="4" fill="#f59e0b"/>
-  <text x="328" y="594" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">50</text>
-  <text x="400" y="594" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">50</text>
+  <rect x="319" y="670.7" width="68" height="9.3" rx="5" fill="#38bdf8"/>
+  <rect x="401" y="670.7" width="68" height="9.3" rx="5" fill="#f59e0b"/>
+  <text x="353" y="625" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">50</text>
+  <text x="435" y="625" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">50</text>
 
   <!-- 2023: firmware 111, findings 178 -->
-  <rect x="468" y="617.8" width="60" height="22.2" rx="4" fill="#38bdf8"/>
-  <rect x="540" y="604.4" width="60" height="35.6" rx="4" fill="#f59e0b"/>
-  <text x="498" y="578" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">111</text>
-  <text x="570" y="558" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">178</text>
+  <rect x="499" y="659.4" width="68" height="20.6" rx="5" fill="#38bdf8"/>
+  <rect x="581" y="646.9" width="68" height="33.1" rx="5" fill="#f59e0b"/>
+  <text x="533" y="613" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">111</text>
+  <text x="615" y="592" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">178</text>
 
   <!-- 2024: firmware 225, findings 392 -->
-  <rect x="638" y="595" width="60" height="45" rx="4" fill="#38bdf8"/>
-  <rect x="710" y="561.6" width="60" height="78.4" rx="4" fill="#f59e0b"/>
-  <text x="668" y="555" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">225</text>
-  <text x="740" y="522" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">392</text>
+  <rect x="679" y="638.2" width="68" height="41.8" rx="5" fill="#38bdf8"/>
+  <rect x="761" y="607.1" width="68" height="72.9" rx="5" fill="#f59e0b"/>
+  <text x="713" y="592" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">225</text>
+  <text x="795" y="561" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">392</text>
 
   <!-- 2025: firmware 352, findings 782 -->
-  <rect x="808" y="569.6" width="60" height="70.4" rx="4" fill="#38bdf8"/>
-  <rect x="880" y="483.6" width="60" height="156.4" rx="4" fill="#f59e0b"/>
-  <text x="838" y="530" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">352</text>
-  <text x="910" y="444" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">782</text>
+  <rect x="859" y="614.5" width="68" height="65.5" rx="5" fill="#38bdf8"/>
+  <rect x="941" y="534.5" width="68" height="145.5" rx="5" fill="#f59e0b"/>
+  <text x="893" y="568" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">352</text>
+  <text x="975" y="488" fill="#fde68a" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">782</text>
 
   <!-- 2026: firmware 890, findings 2313 -->
-  <rect x="978" y="462" width="60" height="178" rx="4" fill="#38bdf8"/>
-  <rect x="1050" y="177.4" width="60" height="462.6" rx="4" fill="#f59e0b"/>
-  <text x="1008" y="422" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">890</text>
-  <text x="1080" y="219" fill="#451a03" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">2,313</text>
+  <rect x="1039" y="514.5" width="68" height="165.5" rx="5" fill="#38bdf8"/>
+  <rect x="1121" y="249.8" width="68" height="430.2" rx="5" fill="#f59e0b"/>
+  <text x="1073" y="468" fill="#bae6fd" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">890</text>
+  <text x="1155" y="296" fill="#451a03" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">2,313</text>
 
-  <g fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800" text-anchor="middle">
-    <text x="194" y="674">2021</text>
-    <text x="364" y="674">2022</text>
-    <text x="534" y="674">2023</text>
-    <text x="704" y="674">2024</text>
-    <text x="874" y="674">2025</text>
-    <text x="1044" y="674">2026</text>
+  <g fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">
+    <text x="214" y="733">2021</text>
+    <text x="394" y="733">2022</text>
+    <text x="574" y="733">2023</text>
+    <text x="754" y="733">2024</text>
+    <text x="934" y="733">2025</text>
+    <text x="1114" y="733">2026</text>
   </g>
 
 </svg>
