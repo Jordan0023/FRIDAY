@@ -45,7 +45,7 @@ def main() -> None:
             labels[0],
             f"— {counts[0]} chains",
             0.245,
-            "NETGEAR EX2800 / EX5000 / EX6110\nRAX9 • GL-X3000 Spitz AX",
+            "(NETGEAR EX2800 / EX5000 / EX6110\nRAX9 • GL-X3000 Spitz AX)",
         ),
         (
             colors[1],
@@ -54,7 +54,7 @@ def main() -> None:
             labels[1],
             f"— {counts[1]} candidates",
             0.255,
-            "Includes RAX9 • MS90",
+            "(Includes RAX9 • MS90)",
         ),
     ):
         fig.add_artist(
