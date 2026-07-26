@@ -36,7 +36,7 @@ def main() -> None:
     key_x = 0.105
     heading_size = 20
     detail_size = 16
-    for color, highlight, heading_y, heading, count_text, highlight_width, count_x, details in (
+    for color, highlight, heading_y, heading, count_text, highlight_width, details in (
         (
             colors[0],
             "#f9d9df",
@@ -44,17 +44,15 @@ def main() -> None:
             labels[0],
             f"— {counts[0]} chains",
             0.245,
-            0.365,
             "NETGEAR EX2800 / EX5000 / EX6110\nRAX9 • GL-X3000 Spitz AX",
         ),
         (
             colors[1],
             "#d7eef1",
-            0.40,
+            0.31,
             labels[1],
             f"— {counts[1]} candidates",
             0.255,
-            0.375,
             "Includes RAX9 • MS90",
         ),
     ):
@@ -90,18 +88,18 @@ def main() -> None:
             color="#111111",
         )
         fig.text(
-            count_x,
-            heading_y,
+            key_x,
+            heading_y - 0.058,
             count_text,
             ha="left",
-            va="center",
-            fontsize=heading_size,
+            va="top",
+            fontsize=18,
             fontweight="bold",
             color="#111111",
         )
         fig.text(
             key_x,
-            heading_y - 0.055,
+            heading_y - 0.115,
             details,
             ha="left",
             va="top",
