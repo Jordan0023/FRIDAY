@@ -15,7 +15,7 @@ def main() -> None:
     colors = ["#d1495b", "#087f8c"]
 
     plt.rcParams.update({"font.family": "DejaVu Sans"})
-    fig, ax = plt.subplots(figsize=(12, 8), facecolor="#f7f4ee")
+    fig, ax = plt.subplots(figsize=(14, 7), facecolor="#f7f4ee")
     ax.set_facecolor("#f7f4ee")
 
     wedges, _, percentages = ax.pie(
@@ -32,31 +32,38 @@ def main() -> None:
         percentage.set_fontsize(20)
         percentage.set_fontweight("bold")
 
-    ax.legend(
+    fig.legend(
         wedges,
         [
             (
-                f"{labels[0]} — {counts[0]} chains "
-                "(NETGEAR EX2800 / EX5000 / EX6110, RAX9, GL-X3000 Spitz AX)"
+                f"{labels[0]} — {counts[0]} chains\n"
+                "NETGEAR EX2800 / EX5000 / EX6110\n"
+                "RAX9 • GL-X3000 Spitz AX"
             ),
-            f"{labels[1]} — {counts[1]} candidates (includes RAX9 and MS90)",
+            (
+                f"{labels[1]} — {counts[1]} candidates\n"
+                "Includes RAX9 • MS90"
+            ),
         ],
-        loc="lower center",
-        bbox_to_anchor=(0.5, -0.17),
+        loc="center left",
+        bbox_to_anchor=(0.035, 0.47),
         frameon=False,
         fontsize=14,
         ncol=1,
+        labelspacing=1.6,
+        handlelength=2.4,
+        handletextpad=0.9,
     )
-    ax.set_title(
+    fig.suptitle(
         "24-Hour Router Security Findings",
         fontsize=28,
         fontweight="bold",
         color="#18262d",
-        pad=24,
+        y=0.975,
     )
     fig.text(
         0.5,
-        0.91,
+        0.915,
         "13 distinct high-impact chains • firmware and emulation evidence • 26 Jul 2026",
         ha="center",
         fontsize=13,
@@ -64,14 +71,14 @@ def main() -> None:
     )
     fig.text(
         0.5,
-        0.025,
+        0.018,
         "Impact and reachability vary. Candidates are not vendor-confirmed zero-days.",
         ha="center",
         fontsize=11,
         color="#667784",
     )
     ax.axis("equal")
-    fig.subplots_adjust(top=0.82, bottom=0.25, left=0.08, right=0.92)
+    ax.set_position([0.42, 0.10, 0.55, 0.76])
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUTPUT, dpi=180, bbox_inches="tight", facecolor=fig.get_facecolor())
     plt.close(fig)
