@@ -122,7 +122,7 @@ def main() -> None:
         0.895,
         "13 total high-impact chains — 26 JUL 2026",
         ha="center",
-        fontsize=17,
+        fontsize=22,
         color="#526473",
     )
     fig.text(
