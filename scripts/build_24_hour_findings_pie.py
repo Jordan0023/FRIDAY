@@ -3,7 +3,6 @@
 from pathlib import Path
 
 import matplotlib.pyplot as plt
-from matplotlib.lines import Line2D
 from matplotlib.patches import Rectangle
 
 
@@ -37,9 +36,10 @@ def main() -> None:
     key_x = 0.105
     heading_size = 20
     detail_size = 16
-    for color, heading_y, heading, count_text, underline_width, count_x, details in (
+    for color, highlight, heading_y, heading, count_text, highlight_width, count_x, details in (
         (
             colors[0],
+            "#f9d9df",
             0.59,
             labels[0],
             f"— {counts[0]} chains",
@@ -49,6 +49,7 @@ def main() -> None:
         ),
         (
             colors[1],
+            "#d7eef1",
             0.40,
             labels[1],
             f"— {counts[1]} candidates",
@@ -66,6 +67,16 @@ def main() -> None:
                 facecolor=color,
                 edgecolor="white",
                 linewidth=4,
+            )
+        )
+        fig.add_artist(
+            Rectangle(
+                (key_x - 0.006, heading_y - 0.028),
+                highlight_width + 0.012,
+                0.056,
+                transform=fig.transFigure,
+                facecolor=highlight,
+                edgecolor="none",
             )
         )
         fig.text(
@@ -87,15 +98,6 @@ def main() -> None:
             fontsize=heading_size,
             fontweight="bold",
             color="#111111",
-        )
-        fig.add_artist(
-            Line2D(
-                [key_x, key_x + underline_width],
-                [heading_y - 0.026, heading_y - 0.026],
-                transform=fig.transFigure,
-                color="#111111",
-                linewidth=1.8,
-            )
         )
         fig.text(
             key_x,
