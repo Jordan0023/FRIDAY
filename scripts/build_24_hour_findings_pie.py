@@ -51,7 +51,8 @@ def main() -> None:
         fontsize=16,
         ncol=1,
         labelspacing=1.45,
-        handlelength=2.4,
+        handlelength=3.2,
+        handleheight=1.7,
         handletextpad=0.9,
     )
     fig.suptitle(
