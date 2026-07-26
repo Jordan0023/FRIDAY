@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="820" viewBox="0 0 1220 820" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="820" viewBox="0 0 1240 820" role="img" aria-labelledby="title desc">
   <title id="title">Router firmware and static findings by release year</title>
   <desc id="desc">Grouped bar chart comparing firmware releases and static heuristic findings from 2021 through 2026.</desc>
-  <rect width="1220" height="820" fill="#09111f"/>
+  <rect width="1240" height="820" fill="#09111f"/>
 
   <text x="28" y="74" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700">
     Router firmware and static findings by year
@@ -74,9 +74,9 @@
 
   <!-- 2026: firmware 890, findings 2313 -->
   <rect x="1034" y="574.5" width="78" height="165.5" rx="5" fill="#38bdf8"/>
-  <rect x="1116" y="309.8" width="78" height="430.2" rx="5" fill="#f59e0b"/>
+  <rect x="1109" y="309.8" width="110" height="430.2" rx="6" fill="#f59e0b"/>
   <text x="1073" y="622" fill="#082f49" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" text-anchor="middle">890</text>
-  <text x="1155" y="358" fill="#451a03" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" text-anchor="middle">2,313</text>
+  <text x="1164" y="358" fill="#451a03" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="800" text-anchor="middle">2,313</text>
 
   <g fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" text-anchor="middle">
     <text x="214" y="793">2021</text>
