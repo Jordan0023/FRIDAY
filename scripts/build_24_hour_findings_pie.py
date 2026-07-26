@@ -65,7 +65,7 @@ def main() -> None:
     fig.text(
         0.5,
         0.895,
-        "13 impactful chains — 26 JUL 2026",
+        "13 total high-impact chains — 26 JUL 2026",
         ha="center",
         fontsize=13,
         color="#526473",
