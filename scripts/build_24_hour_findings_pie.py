@@ -32,6 +32,8 @@ def main() -> None:
         percentage.set_color("white")
         percentage.set_fontsize(28)
         percentage.set_fontweight("bold")
+    percentages[0].set_position((0.43, 0.43))
+    percentages[1].set_position((-0.28, -0.27))
 
     swatch_x = 0.145
     key_x = 0.215
