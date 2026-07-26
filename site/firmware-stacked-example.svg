@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800" role="img" aria-labelledby="title desc">
+  <title id="title">Stacked router firmware and static findings example</title>
+  <desc id="desc">Stacked bars by year, with static heuristic findings in orange and firmware releases in blue above them.</desc>
+  <rect width="1400" height="800" fill="#09111f"/>
+
+  <text x="55" y="72" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="800">
+    Stacked firmware and static findings
+  </text>
+  <text x="55" y="120" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">
+    Orange base + blue top · totals shown above each stack
+  </text>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">
+    <rect x="960" y="137" width="32" height="32" rx="6" fill="#38bdf8"/>
+    <text x="1006" y="164" fill="#dbeafe">Firmware releases</text>
+    <rect x="960" y="177" width="32" height="32" rx="6" fill="#f59e0b"/>
+    <text x="1006" y="204" fill="#fef3c7">Static findings</text>
+  </g>
+
+  <g stroke="#26364d" stroke-width="1">
+    <line x1="105" y1="700" x2="1360" y2="700"/>
+    <line x1="105" y1="563" x2="1360" y2="563"/>
+    <line x1="105" y1="426" x2="1360" y2="426"/>
+    <line x1="105" y1="289" x2="1360" y2="289"/>
+    <line x1="105" y1="220" x2="1360" y2="220"/>
+  </g>
+  <g fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="end">
+    <text x="92" y="707">0</text>
+    <text x="92" y="570">1,000</text>
+    <text x="92" y="433">2,000</text>
+    <text x="92" y="296">3,000</text>
+    <text x="92" y="227">3,500</text>
+  </g>
+
+  <!-- 2021: orange 9, blue 17, total 26 -->
+  <rect x="145" y="698.8" width="130" height="1.2" fill="#f59e0b"/>
+  <rect x="145" y="696.4" width="130" height="2.4" rx="5" fill="#38bdf8"/>
+  <text x="210" y="674" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">26</text>
+
+  <!-- 2022: orange 50, blue 50, total 100 -->
+  <rect x="360" y="693.1" width="130" height="6.9" fill="#f59e0b"/>
+  <rect x="360" y="686.3" width="130" height="6.8" rx="5" fill="#38bdf8"/>
+  <text x="425" y="665" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">100</text>
+
+  <!-- 2023: orange 178, blue 111, total 289 -->
+  <rect x="575" y="675.6" width="130" height="24.4" fill="#f59e0b"/>
+  <rect x="575" y="660.4" width="130" height="15.2" rx="5" fill="#38bdf8"/>
+  <text x="640" y="638" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">289</text>
+
+  <!-- 2024: orange 392, blue 225, total 617 -->
+  <rect x="790" y="646.2" width="130" height="53.8" fill="#f59e0b"/>
+  <rect x="790" y="615.4" width="130" height="30.8" rx="5" fill="#38bdf8"/>
+  <text x="855" y="592" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">617</text>
+
+  <!-- 2025: orange 782, blue 352, total 1134 -->
+  <rect x="1005" y="592.8" width="130" height="107.2" fill="#f59e0b"/>
+  <rect x="1005" y="544.5" width="130" height="48.3" rx="5" fill="#38bdf8"/>
+  <text x="1070" y="520" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">1,134</text>
+
+  <!-- 2026: orange 2313, blue 890, total 3203 -->
+  <rect x="1220" y="382.8" width="130" height="317.2" fill="#f59e0b"/>
+  <rect x="1220" y="260.8" width="130" height="122" rx="5" fill="#38bdf8"/>
+  <text x="1285" y="238" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">3,203</text>
+
+  <g fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" text-anchor="middle">
+    <text x="210" y="755">2021</text>
+    <text x="425" y="755">2022</text>
+    <text x="640" y="755">2023</text>
+    <text x="855" y="755">2024</text>
+    <text x="1070" y="755">2025</text>
+    <text x="1285" y="755">2026</text>
+  </g>
+</svg>
