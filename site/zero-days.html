@@ -32,9 +32,9 @@
         </div>
         <div class="hero-stats" aria-label="Finding summary">
           <div class="hero-stat hero-stat-highlight">
-            <span>Zero-day findings · last 24 hours</span>
-            <strong>10</strong>
-            <small>3 RCE chains + 7 DoS candidates; confirmation and novelty vary</small>
+            <span>Current high-impact research set</span>
+            <strong>13</strong>
+            <small>3 RCE chains + 10 DoS candidates; confirmation and novelty vary</small>
           </div>
           <div class="hero-stat">
             <span>Apparent zero-day RCE</span>
@@ -43,8 +43,8 @@
           </div>
           <div class="hero-stat">
             <span>Unauthenticated DoS</span>
-            <strong>7 candidates</strong>
-            <small>8 current-firmware products</small>
+            <strong>10 candidates</strong>
+            <small>12 affected firmware products</small>
           </div>
           <div class="hero-stat">
             <span>Highest evidence</span>
@@ -72,8 +72,8 @@
         </div>
       </section>
       <p class="count-disclaimer">
-        The 24-hour total counts distinct vulnerability chains listed below, including
-        candidates. It is not a claim that all 10 are vendor-confirmed zero-days.
+        The total counts distinct vulnerability chains listed below, including
+        candidates. It is not a claim that all 13 are vendor-confirmed zero-days.
       </p>
 
       <section id="findings" class="finding-section">
@@ -212,7 +212,7 @@
             <p class="section-kicker">Unauthenticated DoS</p>
             <h2>Confirmed impact, zero-day disposition still open</h2>
           </div>
-          <span class="finding-count finding-count-amber">7 candidates · 8 products</span>
+          <span class="finding-count finding-count-amber">10 candidates · 12 products</span>
         </div>
 
         <article class="research-card dos-card">
@@ -496,6 +496,129 @@
             <p>Published with an explicit hardware-pending boundary; no operational request sequence is included.</p>
           </footer>
         </article>
+
+        <article class="research-card dos-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-dos">High · Management DoS</span>
+            <span class="confidence-badge">Repeated full-system emulation</span>
+            <span class="candidate-badge">Apparent zero-day candidate</span>
+            <span class="reachability-badge reach-lan">LAN: confirmed</span>
+            <span class="reachability-badge reach-conditional">WAN: conditional</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">ASUS</p>
+              <h3>ROG Strix GS7 Air and GS7 Bear Brick · Current production firmware</h3>
+              <p class="finding-summary">
+                Unauthenticated requests continue past the management authentication
+                response and reach the genuine net-tool backend. A bounded parallel burst
+                accumulates HTTP workers, backend threads, and diagnostic child processes,
+                causing a repeatable transient management-plane outage.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> reproduced five times on the GS7 Air LAN path
+                and independently on the related GS7 Bear Brick build. WAN impact requires
+                management-service reachability and is not claimed as factory-default.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>None on LAN</dd></div>
+              <div><dt>Effect</dt><dd>Transient management-plane starvation</dd></div>
+              <div><dt>Validation</dt><dd>Repeated full-system emulation</dd></div>
+              <div><dt>Affected builds</dt><dd>GS7 Air _58833; Bear Brick _58406</dd></div>
+              <div><dt>Novelty review</dt><dd>2026-07-25; no public match found</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/ASUS_GS7_Air/GS7_AIR_ZERO_DAY_VERIFICATION_2026-07-25.md</code>
+            </div>
+            <p>Tracked as a publicly undisclosed candidate; physical-device or independent reproduction remains pending.</p>
+          </footer>
+        </article>
+
+        <article class="research-card dos-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-dos">High · Management DoS</span>
+            <span class="confidence-badge">Two full-system reproductions</span>
+            <span class="candidate-badge">Apparent zero-day candidate</span>
+            <span class="reachability-badge reach-lan">LAN: confirmed</span>
+            <span class="reachability-badge reach-unverified">WAN: unverified</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">ASUS</p>
+              <h3>ROG Rapture GT-BE98 Pro Edition 20 · Firmware 3.0.0.6.102_39271</h3>
+              <p class="finding-summary">
+                A no-session request continues into the genuine
+                <code>netool.cgi</code> backend. Parallel diagnostic work serializes behind
+                blocking child-process waits and produces an input-specific, recoverable
+                management outage in isolated full-system testing.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> confirmed against the emulated LAN management
+                service. Physical-device impact and factory-default Internet/WAN exposure
+                have not been established.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>No valid administrator session</dd></div>
+              <div><dt>Effect</dt><dd>Transient management-plane DoS</dd></div>
+              <div><dt>Validation</dt><dd>Genuine HTTPD and net-tool backend</dd></div>
+              <div><dt>Unauthenticated RCE</dt><dd>Not confirmed</dd></div>
+              <div><dt>Novelty review</dt><dd>2026-07-25; no public match found</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/ASUS_GT-BE98_PRO_EDITION_20/GT_BE98_PRO_EDITION_20_3.0.0.6.102_39271_PREAUTH_RCE_DOS_TRIAGE_2026-07-24.md</code>
+            </div>
+            <p>Classified as an apparent candidate, not a vendor-confirmed zero-day; operational request details are omitted.</p>
+          </footer>
+        </article>
+
+        <article class="research-card dos-card">
+          <div class="card-status-row">
+            <span class="impact-badge impact-dos">High · Service DoS</span>
+            <span class="confidence-badge">Genuine daemon emulation</span>
+            <span class="candidate-badge">Conditional zero-day candidate</span>
+            <span class="reachability-badge reach-conditional">LAN: IPP must be active</span>
+            <span class="reachability-badge reach-unverified">WAN: unverified</span>
+          </div>
+          <div class="card-grid">
+            <div class="card-main">
+              <p class="vendor-label">NETGEAR</p>
+              <h3>RAXE300 · Firmware V1.0.9.82</h3>
+              <p class="finding-summary">
+                Two unauthenticated request shapes corrupt heap state in the genuine IPP
+                daemon and terminate TCP/631. Clean full-system runs reproduce the
+                URI-triggered daemon loss and independently confirm the vulnerable component
+                and surrounding firmware environment.
+              </p>
+              <div class="scope-note">
+                <strong>Exposure:</strong> conditional on printer configuration dynamically
+                activating IPP. No unauthenticated route that enables the service was found,
+                and factory-default exposure is not claimed.
+              </div>
+            </div>
+            <dl class="fact-list">
+              <div><dt>Authentication</dt><dd>None when IPP is active</dd></div>
+              <div><dt>Effect</dt><dd>Heap corruption and IPP daemon termination</dd></div>
+              <div><dt>Validation</dt><dd>Genuine firmware full-system emulation</dd></div>
+              <div><dt>Whole-router DoS</dt><dd>Not demonstrated</dd></div>
+              <div><dt>Novelty status</dt><dd>Candidate; duplicate review pending</dd></div>
+            </dl>
+          </div>
+          <footer class="evidence-footer">
+            <div>
+              <span>Research record</span>
+              <code>private_disclosures/RAXE300/RAXE300_V1.0.9.82_IPPD_UNAUTH_DOS_TRIAGE_2026-07-24.md</code>
+            </div>
+            <p>Service-level impact is confirmed in emulation; current-firmware and physical activation checks remain pending.</p>
+          </footer>
+        </article>
       </section>
 
       <section class="method-panel">
@@ -514,7 +637,7 @@
     </main>
 
     <footer class="research-footer">
-      <p>Last evidence review: 24 July 2026 · Research summaries omit operational exploit instructions.</p>
+      <p>Last evidence review: 26 July 2026 · Research summaries omit operational exploit instructions.</p>
       <a href="index.html">Return to firmware dashboard</a>
     </footer>
   </body>

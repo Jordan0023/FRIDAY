@@ -162,6 +162,24 @@ SMD to resolve EID 45 to `/bin/ippd`. That block contains only
 `EIF_MESSAGING_CAPABLE`; it does not contain `EIF_AUTO_RELAUNCH`. This
 conditional experiment is not evidence of the shipping default.
 
+### Exhaustive stock activation reference check
+
+A filesystem-wide follow-up searched the exact extracted image for `ippd`,
+`EID_IPPD`, `printers.ini`, the CMS start message, printer hotplug actions,
+and alternate launchers. The only executable daemon is `/bin/ippd`; the only
+entity definition is the commented EID 45 block; and no init, rc, hotplug, or
+`mdev` action launches it. `/etc/mdev.conf` creates `printer0`, while the USB
+startup scripts load `usblp`, but neither path invokes the daemon. The web
+tree contains generic printer device icons and ReadySHARE storage pages, not
+an alternate IPP launcher.
+
+`BUILD_IPPD=dynamic` and the dormant `rcl_ippCfgObject` callback explain why
+the binary and CMS start logic remain in the image, but they do not overcome
+the missing supervisor entity. No legitimate stock configuration transition
+or overlooked secondary launcher was recovered. Patching the entity metadata
+or adding a launcher would manufacture exposure and cannot support a
+product-level vulnerability claim.
+
 ## LAN-side or WAN-side
 
 When launched directly with a valid printer file, the exact daemon binds
@@ -227,6 +245,27 @@ contains `/soap/server_sa/` and numerous command-bearing administrative
 handlers; stable stock-path emulation and route-specific authentication/sink
 tracing remain required.
 
+### Stock HTTP/SOAP follow-up
+
+The corrected RAX42v2 stock root filesystem was subsequently booted again
+under QEMU with localhost-only forwarding. The genuine `httpd` reached PID
+5053 and the guest exposed TCP/80 and TCP/443. The serial log recorded:
+
+```text
+start_httpd,1466 START HTTPD!!!!!!!!!!!
+httpd: socket bound in 192.168.1.1:9443.
+00000000000000000000000000000000:0050
+00000000:01BB
+```
+
+However, neither the guest's own loopback probes nor the host-forwarded
+controls completed a valid HTTP or TLS response. Consequently, the planned
+SOAP command-marker and malformed-input matrix was not sent. This boot is
+evidence that the stock service starts and binds, but it is not evidence for
+or against an unauthenticated HTTP/SOAP RCE or DoS. The harness correctly
+failed at its stable-control prerequisite rather than treating service
+initialization behavior as a crash.
+
 ## Artifacts
 
 - Builder: `scripts/emulate_rax42v2_ippd_full_system.py`
@@ -247,3 +286,5 @@ tracing remain required.
   `known_firmware/emulation/RAX42V2/full-system-lab/ippd-header-serial.log`
 - First-pass URI evidence:
   `known_firmware/emulation/RAX42V2/full-system-lab/ippd-uri-first-serial.log`
+- Stock HTTP/SOAP boot evidence:
+  `known_firmware/emulation/RAX42V2/full-system-http-lab/serial.log`

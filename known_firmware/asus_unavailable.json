@@ -28,7 +28,7 @@
     },
     "ASUS CMAX6000|https://www.asus.com/supportonly/CMAX6000/HelpDesk_BIOS/": {
       "category": "Cable Modems & Routers",
-      "checked_at": "2026-07-24T00:41:50+00:00",
+      "checked_at": "2026-07-26T00:37:14+00:00",
       "pdid": "14673",
       "product": "ASUS CMAX6000",
       "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
@@ -76,7 +76,7 @@
     },
     "ASUS RT-AX1800|https://www.asus.com/supportonly/RT-AX1800/HelpDesk_BIOS/": {
       "category": "Wireless Routers",
-      "checked_at": "2026-07-24T00:42:23+00:00",
+      "checked_at": "2026-07-26T00:38:01+00:00",
       "pdid": "14688",
       "product": "ASUS RT-AX1800",
       "reason": "ASUS API returned FAIL: \u627e\u4e0d\u5230\u8cc7\u6599\u8868",
@@ -116,7 +116,7 @@
     },
     "ASUS TUF GAMING \u5c0f\u65cb\u98ce|https://www.asus.com/supportonly/TUF%20GAMING%20%E5%B0%8F%E6%97%8B%E9%A3%8E/HelpDesk_BIOS/": {
       "category": "Wireless Routers",
-      "checked_at": "2026-07-24T00:43:19+00:00",
+      "checked_at": "2026-07-26T00:38:55+00:00",
       "pdid": "25928",
       "product": "ASUS TUF GAMING \u5c0f\u65cb\u98ce",
       "reason": "ASUS API returned FAIL: Input string was not in a correct format.",

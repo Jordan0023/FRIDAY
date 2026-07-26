@@ -139,6 +139,39 @@ No other shipping startup definition found during this review launches
 Evidence:
 `known_firmware/emulation/RAX54SV2/full-system-lab/ippd-shipping-supervisor-serial.log`
 
+### Decisive production-path rerun
+
+The activation gate was repeated from a fresh build on 2026-07-24 using:
+
+- the exact RAX54Sv2 root filesystem and `smd`;
+- the unmodified shipping entity metadata;
+- the production `CMS_MSG_START_APP` message (`0x10000809`) addressed to
+  `EID_IPPD` 45;
+- the production-shaped `/var/printers.ini` message body; and
+- restricted QEMU networking with only a loopback host forward.
+
+The result was again negative:
+
+```text
+cmsEid_getEntityInfo: eid 45 (0x2d) not found.
+cmsEid_getEntityInfoAutoCreate: Could not find eid 45, create a blank one
+launchApp: Could not find requested app unknown (eid=45), not launched!
+CMS_START_RESULT=0
+IPPD_ALIVE=no
+IPPD_LISTENING=no
+```
+
+No TCP/631 socket appeared. The guest was stopped after evidence collection.
+
+Fresh evidence:
+`known_firmware/emulation/RAX54SV2/full-system-lab/ippd-decisive-activation-gate-2026-07-24.log`
+
+Evidence SHA-256:
+`73f16082fa498aeb7cdfcd9c570101ccad33c7804f7a32ca81ef71030f2b756d`
+
+This closes the production-equivalent emulation gate. It cannot close the
+physical-device gate: no RAX54Sv2 hardware is connected to this workspace.
+
 ## Classification
 
 - Vulnerable exact RAX54Sv2 daemon code: confirmed.

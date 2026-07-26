@@ -1,0 +1,50 @@
+{
+  "product": "NETGEAR RAXE300",
+  "firmware": "V1.0.9.82",
+  "date": "2026-07-25",
+  "objective": "Determine whether the confirmed unauthenticated ippd crash is reachable after a factory-default boot or can be activated by an unauthenticated network request.",
+  "ippd": {
+    "sha256": "4ccd2b74d91c37d71542fdde6227b3dff50404dbffbffb542463f52774a8f88d",
+    "entity": "EID_IPPD (45)",
+    "entity_flags": ["EIF_MESSAGING_CAPABLE"],
+    "launch_on_boot": false,
+    "auto_relaunch": false,
+    "build_mode": "dynamic"
+  },
+  "activation_trace": {
+    "positive_path": "libcms_core.so:rcl_ippCfgObject writes /var/printers.ini and sends CMS_MSG_START_APP for EID 45; the genuine smd positive-control run resolves EID 45 and launches /bin/ippd with that argument.",
+    "filesystem_search_scope": ["/bin", "/sbin", "/usr/bin", "/usr/sbin", "/lib", "/etc", "web and CGI resources"],
+    "direct_references": {
+      "/var/printers.ini": ["/lib/libcms_core.so"],
+      "rcl_ippCfgObject": ["/lib/libcms_core.so", "/lib/libmdm_cbk_core.so", "/lib/libmdm_cbk_sysmgmt.so"],
+      "ipp_parser_strings": ["/bin/ippd"]
+    },
+    "unauthenticated_network_activation_path_found": false,
+    "factory_default_launch_found": false,
+    "remaining_hardware_question": "A physical USB-printer enumeration test can establish normal feature activation, but would still leave the finding dependent on attached/configured printer state."
+  },
+  "always_on_pivot": {
+    "targets": ["lighttpd/PHP/CGI", "soap_serverd", "UPnP", "dnsmasq"],
+    "supporting_dynamic_evidence": "The byte-identical RAXE290 V1.0.9.82 web components were exercised with malformed HTTP framing, oversized headers and targets, public/setup routes, and malformed DNS inputs. The tested services remained available. SOAP parser reachability was incomplete in emulation.",
+    "independent_unconditional_crash_confirmed": false
+  },
+  "current_firmware_validation": {
+    "official_fixed_version": "V1.0.10.72",
+    "advisory_mapping": "The June 2026 NETGEAR advisory maps RAXE300 V1.0.10.72 to CVE-2026-9211, an unauthenticated router-control issue. The following CVE-2026-3088 DoS entry lists Orbi products, not RAXE300.",
+    "package_retrieval": {
+      "support_discovery_links_found": 0,
+      "tested_official_names": [
+        "RAXE300-V1.0.10.72.zip",
+        "RAXE300-V1.0.10.72_1.zip",
+        "RAXE300-V1.0.10.72_3.zip"
+      ],
+      "result": "HTTP 403 from the official downloads namespace for every tested name; no public package was acquired."
+    },
+    "strongest_fixed_boundary_comparison": "RAX30 V1.0.10.94 is the sibling fixed boundary for the same CVE-2026-9211 advisory and retains the byte-identical vulnerable ippd.",
+    "conclusion": "The public fixed-version boundary does not identify ippd as the patched component. Direct RAXE300 V1.0.10.72 binary comparison remains pending an OTA image from an owned router or public release."
+  },
+  "classification": {
+    "confirmed": "Unauthenticated service-level memory-corruption DoS when dynamic IPP printing is active.",
+    "not_confirmed": ["Factory-default unconditional exposure", "Unauthenticated remote activation of ippd", "Router-wide denial of service", "Remote code execution"]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "analysis_date": "2026-07-24",
+  "candidate": {
+    "component": "/bin/ippd",
+    "impact": "unauthenticated heap corruption and conditional IPP service denial of service",
+    "sha256": "4ccd2b74d91c37d71542fdde6227b3dff50404dbffbffb542463f52774a8f88d"
+  },
+  "firmware_packages": [
+    {
+      "component_sha256": "4ccd2b74d91c37d71542fdde6227b3dff50404dbffbffb542463f52774a8f88d",
+      "package": "RAXE300-V1.0.9.82.zip",
+      "package_sha256": "08e53e0924044be57ce57e75b8c6b74e40e0513bbb3215fc70a47b5b8c1dbea6",
+      "relationship": "target product; dynamically reproduced"
+    },
+    {
+      "component_sha256": "4ccd2b74d91c37d71542fdde6227b3dff50404dbffbffb542463f52774a8f88d",
+      "package": "RAX30-V1.0.10.94_3.zip",
+      "package_sha256": "b7999f4e2791127e4a1abffa0da22fa2ff63337e0d94d1b206afee7698cab046",
+      "relationship": "published CVE-2026-9211 fixed boundary; vulnerable component unchanged"
+    },
+    {
+      "component_sha256": "4ccd2b74d91c37d71542fdde6227b3dff50404dbffbffb542463f52774a8f88d",
+      "package": "RAX30-V1.0.14.108.zip",
+      "package_sha256": "6e7f95ab08e7b70280c3c97944e18d0895903b3cf836b8397fe1a20cd395e658",
+      "relationship": "later sibling release; independently dynamically reproduced"
+    }
+  ],
+  "dynamic_evidence": [
+    {
+      "effect": "257-byte URI reaches request-object strcpy, corrupts heap, and terminates ippd",
+      "path": "known_firmware/emulation/RAX30/full-system-lab/ippd-repro-serial.log",
+      "markers": [
+        "FRIDAY_RAX30_LONG_STRCPY caller=0x00011b68 length=0x00000101",
+        "malloc(): corrupted top size",
+        "IPPD_EXITED=1"
+      ]
+    },
+    {
+      "effect": "256-byte header value reaches header-node strcpy, corrupts heap, and terminates ippd",
+      "path": "known_firmware/emulation/RAX30/full-system-lab/ippd-header-serial.log",
+      "markers": [
+        "FRIDAY_RAX30_LONG_STRCPY caller=0x000124f4 length=0x00000100",
+        "malloc(): corrupted top size",
+        "IPPD_EXITED=1"
+      ]
+    },
+    {
+      "effect": "133-byte URI controls a subsequently dereferenced data pointer",
+      "path": "known_firmware/emulation/RAX30/full-system-lab/ippd-rce-fault-serial.log",
+      "markers": [
+        "PC is at 0x1250c",
+        "LR is at 0x124f4",
+        "r3 : 43434343",
+        "r0 : 43434343"
+      ]
+    },
+    {
+      "effect": "257-byte URI terminates genuine RAXE300 ippd and removes TCP/631 listener",
+      "path": "known_firmware/emulation/RAXE300/ippd-full-system-lab/ippd-serial.log",
+      "markers": [
+        "FRIDAY_RAX30_LONG_STRCPY caller=0x00011b68 length=0x00000101",
+        "malloc(): corrupted top size",
+        "STATE=Z LISTENING=no"
+      ]
+    }
+  ],
+  "published_overlap_assessment": {
+    "cve": "CVE-2026-9211",
+    "public_attack_pattern": "CAPEC-33 HTTP Request Smuggling",
+    "reason_overlap_is_disfavored": [
+      "The public attack pattern is an HTTP request-smuggling issue, not an IPP parser overflow.",
+      "The RAX30 release identified as the CVE-2026-9211 fixed boundary retains the exact vulnerable ippd binary.",
+      "A later RAX30 release retains the same binary and independently reproduces both IPP corruption paths."
+    ],
+    "remaining_limit": "RAXE300 V1.0.10.72 is documented but its package was not publicly retrievable; private or embargoed duplicate status cannot be excluded."
+  },
+  "classification": {
+    "confirmed_unauthenticated_service_dos": true,
+    "confirmed_whole_router_dos": false,
+    "confirmed_rce": false,
+    "confirmed_zero_day": false,
+    "zero_day_candidate": "apparent and strongly distinct from CVE-2026-9211, pending current-image or vendor duplicate validation"
+  }
+}

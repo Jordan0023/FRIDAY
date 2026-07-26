@@ -5,7 +5,7 @@ After=local-fs.target
 [Service]
 Type=simple
 WorkingDirectory=/home/jordan/FRIDAY
-ExecStart=/usr/bin/python3 /home/jordan/FRIDAY/scripts/decompile_hundred_routers.py --workers 16 --timeout 1800
+ExecStart=/usr/bin/python3 /home/jordan/FRIDAY/scripts/decompile_hundred_routers.py --workers 16 --timeout 3600 --retry-partial
 Restart=on-failure
 RestartSec=60
 Nice=10

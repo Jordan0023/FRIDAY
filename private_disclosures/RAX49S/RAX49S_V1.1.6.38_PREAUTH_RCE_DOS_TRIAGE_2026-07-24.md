@@ -300,6 +300,138 @@ shipping filesystem supports promotion to unauthenticated RCE.
 - Confirmed factory-default unauthenticated telnet shell: **no**.
 - Defensible RAX49S zero-day claim from current evidence: **none**.
 
+## Stock IPP activation-path exhaustion
+
+A follow-up specifically attempted to find a way to activate the vulnerable
+daemon without modifying the image or manually executing it.
+
+The post-enumeration USB-printer path was rerun in an isolated ARM full-system
+guest on 2026-07-24. The rebuilt initramfs contained the exact shipping
+`ippd` hash `b34d60198d4196455793319134bad1e5ecc458e6e365e1a7bbb1b68d1f5d2c1e`.
+The guest used unmodified RAX49S entity metadata, a printer-shaped
+`/var/printers.ini`, the exact `/bin/smd`, and the genuine CMS start-message
+format.
+
+Fresh runtime result:
+
+```text
+Got msg type 0x10000809 src=0x14 dst=0x2d
+eid 45 (0x2d) not found.
+Could not find eid 45, create a blank one
+launching unknown to receive msg 0x10000809
+Could not find requested app unknown (eid=45), not launched!
+CMS_START_RESULT=0
+IPPD_PID=
+IPPD_ALIVE=no
+IPPD_LISTENING=no
+```
+
+The empty guest TCP tables independently confirmed that TCP/631 did not appear.
+The complete fresh trace is
+`known_firmware/emulation/RAX49S/full-system-lab/ippd-serial.log`.
+
+The shipping USB-printer path is internally complete only up to the supervisor:
+
+1. the firmware exposes the authenticated ReadySHARE printer information page;
+2. the data model contains `Device.X_BROADCOM_COM_IPPCfg`;
+3. `libcms_core.so:rcl_ippCfgObject` writes `/var/printers.ini`;
+4. the callback sends `CMS_MSG_START_APP` (`0x10000809`) with EID 45 and
+   `/var/printers.ini`; but
+5. `smd` cannot map EID 45 to `/bin/ippd` because the only EID 45 definition is
+   commented out.
+
+The complete recovered filesystem was searched for direct `/bin/ippd`
+execution, `printers.ini`, `EID_IPPD`, USB-printer hotplug, and alternate
+supervisor metadata. No hotplug script or second executable bypasses `smd`.
+`libcms_util.so` loads entity definitions from the fixed
+`/etc/cms_entity_info.d` directory. Its unknown-EID fallback creates a blank
+entity named `unknown`; it does not infer `/bin/ippd` from the EID or message
+body.
+
+The following techniques can make the daemon listen in a laboratory, but each
+already requires root-equivalent control and therefore cannot establish an
+unauthenticated product vulnerability:
+
+- execute `/bin/ippd /var/printers.ini` directly;
+- uncomment or add EID 45 before starting `smd`;
+- bind-mount replacement supervisor metadata; or
+- patch the root filesystem and reboot it.
+
+Therefore the stock USB-printer configuration callback is the closest
+activation route, but there is no complete shipping activation chain in the
+recovered RAX49S firmware. A physical USB-printer test can confirm whether the
+retail device supplies an undocumented runtime entity override absent from the
+firmware image; firmware evidence currently predicts that it will not.
+
+## Expanded authentication-dispatch investigation
+
+The exact RAX49S `httpd` was rebuilt into the isolated full-system guest with
+loopback-only host forwards. A 192-case matrix compared HTTP and HTTPS,
+`GET`/`HEAD`/`POST`/`OPTIONS`, route aliases, configured and explicit
+`blank_state=1` profiles, and a known valid laboratory credential.
+
+### Configured state
+
+- Plain HTTP returned the same 697-byte JavaScript HTTPS-upgrade page for
+  essentially every requested path. The requested CGI was not dispatched.
+- HTTPS returned `401 Unauthorized` for 84 of the credential-free cases.
+- `/currentsetting.htm` was the narrow intentional exception and returned
+  non-secret product/status metadata.
+- Dot segments, duplicate slashes, percent encoding, case changes, query
+  suffixes, and trailing slashes did not turn a protected configured-state
+  route into an executing pre-auth handler.
+- A valid Basic credential changed 79 HTTPS cases from `401` to a real
+  handler/page response. This confirms that the clean pre-auth failures were
+  caused by the authentication gate rather than missing routes.
+- Authentication is client-IP/session stateful: later requests from the same
+  emulated address inherited the valid login. For that reason, all factory
+  pre-auth testing was performed after a fresh guest boot and before any
+  credential was sent.
+
+### Factory blank state
+
+`blank_state=1` intentionally exposed setup and password-recovery content.
+Credential-free `GET` requests reached the setup wizard, recovery pages,
+ReadySHARE printer instructions, and the public status endpoint. Method
+handling remained narrow: corresponding `HEAD`, `POST`, and `OPTIONS` requests
+generally produced `400`, `404`, or an empty close unless the route had an
+explicit POST handler.
+
+The explicit factory POST handlers included:
+
+- `unauth.cgi`;
+- `securityquestions.cgi`;
+- `passwordrecovered.cgi`; and
+- `upgrade_check.cgi`.
+
+Harmless marker-shaped serial-number, recovery-answer, password-reset, and
+upgrade submissions were sent to those handlers. Every case left `httpd`
+healthy. No marker reached the tracing shim's `system`/`popen` sink and no
+request-attributed fatal trace appeared.
+
+### Cross-service and binding result
+
+- Proprietary SOAP mutation requests without a valid session returned SOAP
+  `ResponseCode 401`; HTTP status `200` alone was not authorization.
+- The previously recorded public UPnP matrix produced neither command-sink
+  reachability nor persistent daemon loss.
+- The exact HTTPS listener appeared as `10.0.2.15:9443` in the guest TCP
+  table, matching the configured LAN address rather than a wildcard bind.
+- Plain HTTP served only the HTTPS-upgrade shim in this configuration.
+- A synthetic single-interface guest cannot independently prove retail
+  WAN/guest firewall policy. No firmware evidence from this pass supports
+  WAN promotion.
+
+### Expanded-pass disposition
+
+- Missing authentication on a dangerous configured-state route: **not found**.
+- Factory setup route reaching a command-execution sink: **not found**.
+- Method or route-alias authentication bypass: **not found**.
+- Input-specific HTTP/SOAP service DoS in the bounded matrices: **not found**.
+- Valid-session-only dangerous behavior callable without that session:
+  **not demonstrated**.
+- Confirmed unauthenticated RAX49S RCE or product-level DoS: **no**.
+
 ## Artifacts
 
 - RAX49S wrapper:
@@ -320,3 +452,13 @@ shipping filesystem supports promotion to unauthenticated RCE.
   `known_firmware/emulation/RAX49S/full-system-http-lab/http-security-serial.log`
 - UPnP isolated wrapper:
   `scripts/emulate_rax49s_upnp.py`
+- Expanded dispatcher probe:
+  `scripts/probe_rax49s_dispatcher_matrix.py`
+- Configured-state pre-auth matrix:
+  `known_firmware/emulation/RAX49S/full-system-http-lab/dispatcher-preauth.log`
+- Valid-credential comparison:
+  `known_firmware/emulation/RAX49S/full-system-http-lab/dispatcher-authenticated.log`
+- Factory blank-state matrix:
+  `known_firmware/emulation/RAX49S/full-system-http-lab/dispatcher-factory-blank-preauth.log`
+- Factory mutation matrix:
+  `known_firmware/emulation/RAX49S/full-system-http-lab/factory-setup-mutation.log`

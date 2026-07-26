@@ -1,0 +1,23 @@
+scope=localhost-only QEMU full-system lab
+firmware=ASUS GT-BE98 Pro Edition 20 3.0.0.6.102_39271
+burst=40
+parallel=20
+baseline_ok=true seconds=6.574 bytes=27718
+single_no_session_ok=true seconds=0.627 bytes=574 status_lines=2
+burst_http_ok=13/40
+burst_timeouts=27
+control=1 ok=false seconds=6.006 bytes=0
+control=2 ok=false seconds=6.006 bytes=0
+control=3 ok=false seconds=6.006 bytes=0
+control=4 ok=false seconds=6.006 bytes=0
+control=5 ok=false seconds=6.006 bytes=0
+control=6 ok=false seconds=6.006 bytes=0
+control=7 ok=true seconds=6.432 bytes=27718
+control=8 ok=true seconds=6.300 bytes=27718
+control=9 ok=true seconds=6.612 bytes=27718
+control=10 ok=true seconds=6.682 bytes=27718
+http_accept=54
+http_netool_connect=43
+netool_accept=42
+netool_process_create=165
+netool_execve=124

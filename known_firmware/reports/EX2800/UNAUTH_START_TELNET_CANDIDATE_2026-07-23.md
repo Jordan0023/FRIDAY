@@ -157,6 +157,56 @@ Accordingly, no strictly unauthenticated RCE was reproduced. The demonstrated
 execution chain still requires the shipped `root`/`root` credential and the
 shell-path compatibility condition described above.
 
+## Configured-state control-flow follow-up (2026-07-24)
+
+An additional Ghidra pass confirmed that `mini_httpd` handles the literal
+`start_telnet` route directly in its request-processing function, before the
+ordinary CGI authorization path. The branch does not test `/var/unconfig`,
+does not consult the management session, and does not use request parameters
+to construct its commands. It therefore remains reachable in the configured
+state, but it is a separate fixed-action authorization flaw rather than
+command injection.
+
+The branch opens `/etc/inetd.conf` with mode `w`, replacing the complete
+runtime configuration with:
+
+```text
+telnet stream tcp nowait root /usr/sbin/telnetd telnetd
+```
+
+It then kills and restarts `inetd` and writes `/var/telnetd`. Because
+`/etc/inetd.conf` is a symlink to the tmpfs-backed `/var/inetd.conf`, the
+change persists until reboot. It also removes the image's normally enabled
+TFTP entry for the remainder of that boot. This establishes an
+unauthenticated, configured-state privileged service-reconfiguration impact
+even when a shell cannot be obtained.
+
+The login ambiguity was retested with the original `inetd`, `telnetd`,
+`login`, uClibc, password files, and filesystem, on an isolated Docker
+network with no host-published ports. The shipped password was accepted, but
+the session again ended with:
+
+```text
+login: cannot run /bin/bash: No such file or directory
+```
+
+Static decompilation shows that BusyBox `login_main` calls `getpwnam`, checks
+the shadow password through `correct_password`, reads `pw_shell`, and passes
+that path to `run_shell`, which calls `execv`. No boot script, archive entry,
+or symlink in the firmware creates `/bin/bash`, and Telnet environment
+variables do not override this selected path. Consequently, stock-image root
+command execution remains unconfirmed and currently appears blocked.
+
+Updated classification:
+
+- configured-state unauthenticated privileged action: **confirmed in isolated
+  emulation**;
+- Telnet exposure and static root-password acceptance: **confirmed**;
+- persistent effect: **until reboot**, because the modified configuration is
+  in tmpfs;
+- unauthenticated or default-credential stock-device RCE: **not confirmed**;
+- physical-device behavior and zero-day novelty: **pending**.
+
 The Telnet matrix was subsequently expanded to include separated and joined
 login-option-shaped usernames, preserve-environment and double-dash inputs,
 trailing whitespace, embedded NUL and carriage-return boundaries, 256- and

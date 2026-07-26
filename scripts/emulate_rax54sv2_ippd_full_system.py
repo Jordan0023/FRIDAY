@@ -12,6 +12,7 @@ import emulate_rax42v2_ippd_full_system as lab
 
 ROOT = Path(__file__).resolve().parents[1]
 LAB = ROOT / "known_firmware/emulation/RAX54SV2/full-system-lab"
+HOST_PORT = int(os.environ.get("FRIDAY_RAX54SV2_IPPD_HOST_PORT", "25155"))
 
 lab.SOURCE_ROOT = (
     ROOT / "known_firmware/extracted/c9b1ed79f8f766b5/manual-rootfs"
@@ -42,7 +43,7 @@ def qemu_command() -> list[str]:
         "-monitor", "none",
         "-serial", f"file:{lab.SERIAL}",
         "-netdev",
-        "user,id=lan,restrict=on,hostfwd=tcp:127.0.0.1:25155-:631",
+        f"user,id=lan,restrict=on,hostfwd=tcp:127.0.0.1:{HOST_PORT}-:631",
         "-device", "virtio-net-device,netdev=lan",
         "-no-reboot",
     ]

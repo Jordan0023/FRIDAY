@@ -1,0 +1,106 @@
+{
+  "product": "RAXE300 V1.0.9.82 (byte-identical RAXE290 UPnP full-system runtime)",
+  "root_path": "/dyndev/uuid:d0d7bdee-faa8-428e-9d23-07f2d0cfdab5",
+  "baseline": true,
+  "results": [
+    {
+      "case": "callback_256",
+      "request_bytes": 428,
+      "status": "no response",
+      "service_alive": true
+    },
+    {
+      "case": "callback_4096",
+      "request_bytes": 4268,
+      "status": "no response",
+      "service_alive": true
+    },
+    {
+      "case": "callback_65536",
+      "request_bytes": 65708,
+      "status": "no response",
+      "service_alive": true
+    },
+    {
+      "case": "sid_4096",
+      "request_bytes": 4217,
+      "status": "no response",
+      "service_alive": true
+    },
+    {
+      "case": "soapaction_4096",
+      "request_bytes": 4232,
+      "status": "no response",
+      "service_alive": true
+    },
+    {
+      "case": "content_length_negative",
+      "request_bytes": 107,
+      "status": "no response",
+      "service_alive": true
+    },
+    {
+      "case": "content_length_overflow",
+      "request_bytes": 115,
+      "status": "no response",
+      "service_alive": true
+    },
+    {
+      "case": "request_target_8192",
+      "request_bytes": 8219,
+      "status": "no response",
+      "service_alive": true
+    },
+    {
+      "case": "header_value_65536",
+      "request_bytes": 65623,
+      "status": "no response",
+      "service_alive": true
+    },
+    {
+      "case": "many_headers",
+      "request_bytes": 12277,
+      "status": "no response",
+      "service_alive": true
+    }
+  ],
+  "udp_results": [
+    {
+      "case": "ssdp_st_4096",
+      "request_bytes": 4182,
+      "send_result": "sent=4182",
+      "service_alive": true
+    },
+    {
+      "case": "ssdp_man_4096",
+      "request_bytes": 4182,
+      "send_result": "sent=4182",
+      "service_alive": true
+    },
+    {
+      "case": "ssdp_mx_4096",
+      "request_bytes": 4196,
+      "send_result": "sent=4196",
+      "service_alive": true
+    },
+    {
+      "case": "ssdp_host_4096",
+      "request_bytes": 4177,
+      "send_result": "sent=4177",
+      "service_alive": true
+    },
+    {
+      "case": "ssdp_target_4096",
+      "request_bytes": 4197,
+      "send_result": "sent=4197",
+      "service_alive": true
+    },
+    {
+      "case": "ssdp_datagram_60000",
+      "request_bytes": 59986,
+      "send_result": "sent=59986",
+      "service_alive": true
+    }
+  ],
+  "final_alive": true
+}

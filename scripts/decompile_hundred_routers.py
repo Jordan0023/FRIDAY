@@ -57,7 +57,7 @@ def file_id(path: Path) -> str:
     return digest.hexdigest()
 
 
-def decompile(job: dict, output: Path, timeout: int) -> dict:
+def decompile(job: dict, output: Path, timeout: int, retry_partial: bool = False) -> dict:
     binary = Path(job["binary"])
     receipt = output / "receipts" / job["router_sha"] / f"{job['id']}.json"
     evidence = output / "evidence" / job["router_sha"] / f"{job['id']}.jsonl"
@@ -69,7 +69,7 @@ def decompile(job: dict, output: Path, timeout: int) -> dict:
         try:
             data = json.loads(receipt.read_text())
             status = receipt_status(data, evidence)
-            if status:
+            if status and not (retry_partial and status == "partial"):
                 return {**job, "status": status, "receipt": str(receipt),
                         "evidence": str(evidence), "candidate_functions": data.get("candidate_functions", 0),
                         "functions_failed": data.get("functions_failed", 0)}
@@ -125,6 +125,11 @@ def main() -> int:
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--workers", type=int, default=3)
     parser.add_argument("--timeout", type=int, default=1800)
+    parser.add_argument(
+        "--retry-partial",
+        action="store_true",
+        help="rerun binaries whose reusable receipts still contain failed functions",
+    )
     parser.add_argument("--inventory-only", action="store_true")
     parser.add_argument("--rootfs", type=Path,
                         help="Analyze one already-extracted root filesystem instead of a campaign.")
@@ -172,7 +177,10 @@ def main() -> int:
         print(f"routers={len(routers)} unique_elf_binaries={len(jobs)} elf_instances={sum(len(x['elf_files']) for x in routers)}")
         return 0
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        futures = [pool.submit(decompile, job, args.output, args.timeout) for job in jobs]
+        futures = [
+            pool.submit(decompile, job, args.output, args.timeout, args.retry_partial)
+            for job in jobs
+        ]
         for index, future in enumerate(as_completed(futures), 1):
             result = future.result()
             results.append(result)

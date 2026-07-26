@@ -68,7 +68,12 @@ done
 HTTPD_PID="$(pidof httpd | awk '{print $1}')"
 echo "HTTPD_PID=$HTTPD_PID"
 echo "HTTPD_ALIVE=$(test -n "$HTTPD_PID" && kill -0 "$HTTPD_PID" 2>/dev/null && echo yes || echo no)"
-echo "HTTPD_LISTENING=$(awk 'NR > 1 && $4 == \"0A\" { found=1 } END { exit !found }' /proc/net/tcp /proc/net/tcp6 2>/dev/null && echo yes || echo no)"
+if awk 'NR > 1 && $4 == "0A" { found=1 } END { exit !found }' \
+    /proc/net/tcp /proc/net/tcp6 2>/dev/null; then
+    echo "HTTPD_LISTENING=yes"
+else
+    echo "HTTPD_LISTENING=no"
+fi
 echo "HTTPD_MAPS_BEGIN"
 cat /proc/"$HTTPD_PID"/maps 2>/dev/null
 echo "HTTPD_MAPS_END"

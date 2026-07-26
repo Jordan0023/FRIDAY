@@ -1,0 +1,136 @@
+#!/bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin
+export PATH
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+mkdir -p /dev/pts /run /tmp /var/run /var/log/lighttpd /var/tmp /data /mnt/nvram
+mount -t devpts devpts /dev/pts
+mount -t tmpfs tmpfs /tmp
+
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/virtio/virtio_mmio.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/net/core/failover.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/net/net_failover.ko
+insmod /lib/modules/6.1.0-50-armmp/kernel/drivers/net/virtio_net.ko
+
+# The data disk is intentionally optional: the service remains bootable if the
+# generic kernel lacks virtio-blk support, but reports the reduced fidelity.
+attempt=0
+while test "$attempt" -lt 10 && test ! -b /dev/vda; do
+    sleep 1
+    attempt=$((attempt + 1))
+done
+if test -b /dev/vda && mount -t ext4 /dev/vda /data; then
+    echo "PERSISTENT_DATA=yes"
+else
+    echo "PERSISTENT_DATA=no"
+fi
+mkdir -p /data/dal /tmp/ntgrdata
+ln -sf /data/dal /tmp/dal
+
+ip link set eth0 down
+ip link set eth0 name br0
+ifconfig br0 10.0.2.15 netmask 255.255.255.0 up
+if ip link show eth1 >/dev/null 2>&1; then
+    ip link set eth1 down
+    ip link set eth1 name brwan
+    ifconfig brwan 10.0.3.15 netmask 255.255.255.0 up
+fi
+ifconfig lo 127.0.0.1 up
+
+echo "FRIDAY_RAX36S_WEB_BOOT=1"
+echo "KERNEL=$(uname -a)"
+
+LD_PRELOAD=/lib/rax36_datalib_mtd_shim.so /bin/datalib >/dev/console 2>&1 &
+DATALIB_PID=$!
+attempt=0
+while test "$attempt" -lt 45; do
+    /bin/config get config_state >/dev/null 2>&1 && break
+    sleep 1
+    attempt=$((attempt + 1))
+done
+
+if test ! -e /data/.friday-rax36s-initialized; then
+    /bin/config set config_state=1
+    /bin/config set http_loginname=admin
+    /bin/config set http_passwd=FRIDAY-LAB-NOT-A-REAL-PASSWORD
+    /bin/config set enable_password_recovery=1
+    /bin/config set security_question1=1
+    /bin/config set security_question2=1
+    /bin/config set security_answer1=friday-answer-one
+    /bin/config set security_answer2=friday-answer-two
+    /bin/config set PWD_question1=1
+    /bin/config set PWD_question2=1
+    /bin/config set PWD_answer1=friday-answer-one
+    /bin/config set PWD_answer2=friday-answer-two
+    /bin/config set serial_num=FRIDAYLAB0001
+    /bin/config set lan_ifname=br0
+    /bin/config set lan_ipaddr=10.0.2.15
+    /bin/config set lan_netmask=255.255.255.0
+    /bin/config set wan_ifname=brwan
+    /bin/config set endis_remote=0
+    /bin/config set factory_mode=0
+    /bin/config commit
+    touch /data/.friday-rax36s-initialized
+fi
+
+echo "DATALIB_PID=$DATALIB_PID"
+echo "DATALIB_ALIVE=$(pidof datalib >/dev/null 2>&1 && echo yes || echo no)"
+echo "CONFIG_STATE=$(/bin/config get config_state)"
+echo "RECOVERY_STATE=$(/bin/config get enable_password_recovery)"
+
+cat >/tmp/net-cgi.conf <<'EOF'
+nc_upg_mod ""
+nc_hw_id ""
+nc_mode_1 "54"
+nc_mode_2 "286"
+nc_mode_3 "600"
+nc_an_mode_1 "286"
+nc_an_mode_2 "573"
+nc_an_mode_3 "1200"
+nc_device_name_length "63"
+nc_support_router_protection "1"
+EOF
+
+# Keep the production request path and genuine CGI dispatcher. Only TLS,
+# hardware-only modules, and production logging are omitted from this config.
+cat >/tmp/lighttpd-rax36s-lab.conf <<'EOF'
+server.modules = ( "mod_cgi", "mod_rewrite" )
+server.document-root = "/www"
+server.upload-dirs = ( "/tmp" )
+server.errorlog = "/dev/console"
+server.pid-file = "/var/run/lighttpd.pid"
+server.username = "root"
+server.groupname = "root"
+server.port = 80
+server.bind = "0.0.0.0"
+index-file.names = ( "index.htm", "index.html" )
+cgi.assign = ( "" => "/usr/sbin/net-cgi" )
+cgi.x-sendfile = "enable"
+cgi.x-sendfile-docroot = ( "/www/", "/tmp/" )
+url.rewrite-once = ( "^.*/soap/server_sa/?$" => "/soapapi" )
+EOF
+
+touch /www/soapapi
+LD_PRELOAD=/lib/rax36_web_shim.so \
+    /usr/sbin/lighttpd -D -f /tmp/lighttpd-rax36s-lab.conf >/dev/console 2>&1 &
+LIGHTTPD_PID=$!
+attempt=0
+while test "$attempt" -lt 45; do
+    grep -q ':0050 ' /proc/net/tcp /proc/net/tcp6 2>/dev/null && break
+    sleep 1
+    attempt=$((attempt + 1))
+done
+
+echo "LIGHTTPD_PID=$LIGHTTPD_PID"
+echo "LIGHTTPD_ALIVE=$(kill -0 "$LIGHTTPD_PID" 2>/dev/null && echo yes || echo no)"
+echo "HTTP_LISTENING=$(grep -q ':0050 ' /proc/net/tcp /proc/net/tcp6 2>/dev/null && echo yes || echo no)"
+echo "FRIDAY_RAX36S_WEB_READY=1"
+
+while true; do
+    pidof datalib >/dev/null 2>&1 || echo "DATALIB_EXITED=1"
+    kill -0 "$LIGHTTPD_PID" 2>/dev/null || echo "LIGHTTPD_EXITED=1"
+    sleep 2
+done

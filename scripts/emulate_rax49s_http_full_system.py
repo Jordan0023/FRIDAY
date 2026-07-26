@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
@@ -22,6 +23,11 @@ lab.PIDFILE = LAB / "qemu.pid"
 lab.SECURITY_LOG = LAB / "http-security-probe.log"
 lab.HOST_HTTP_PORT = 25_049
 lab.HOST_HTTPS_PORT = 25_149
+lab.EXTRA_NVRAM = (
+    ("http_username", "admin"),
+    ("http_passwd", "FridayLab123!"),
+    ("blank_state", os.environ.get("FRIDAY_BLANK_STATE", "0")),
+)
 
 
 if __name__ == "__main__":

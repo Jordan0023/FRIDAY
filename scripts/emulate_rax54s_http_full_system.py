@@ -34,6 +34,8 @@ SECURITY_LOG = LAB / "http-security-probe.log"
 GUEST_MEMORY_MB = 1024
 GUEST_HTTP_PORT = 80
 GUEST_HTTPS_PORT = 9443
+TRACE_STRCPY = True
+EXTRA_NVRAM: tuple[tuple[str, str], ...] = ()
 
 
 def run(command: list[str], **kwargs: object) -> subprocess.CompletedProcess[str]:
@@ -72,6 +74,16 @@ def build() -> None:
         os.chmod(entity, entity.stat().st_mode | 0o200)
         entity.write_text(text)
     shutil.copy2(INIT, STAGING / "init")
+    if EXTRA_NVRAM:
+        init_path = STAGING / "init"
+        init_text = init_path.read_text()
+        marker = "/bin/acos_nvram set httpsEnable=1\n"
+        additions = "".join(
+            f"/bin/acos_nvram set {key}={value}\n" for key, value in EXTRA_NVRAM
+        )
+        if marker not in init_text:
+            raise SystemExit("HTTP init NVRAM insertion marker is missing")
+        init_path.write_text(init_text.replace(marker, marker + additions, 1))
     os.chmod(STAGING / "init", 0o755)
     run([
         "openssl", "req", "-x509", "-newkey", "rsa:2048", "-nodes",
@@ -86,10 +98,13 @@ def build() -> None:
     # The production boot generates both files in persistent storage.
     shutil.copy2(STAGING / "etc/rax54s-lab.pem", STAGING / "usr/sbin/httpsd.pem")
     shutil.copy2(STAGING / "etc/rax54s-lab.crt", STAGING / "usr/sbin/ca.pem")
+    shim_flags = ["-DFRIDAY_TRACE_FATAL"]
+    if not TRACE_STRCPY:
+        shim_flags.append("-DFRIDAY_DISABLE_STRCPY")
     run([
         "clang", "--target=arm-linux-gnueabi", "-march=armv7-a", "-fPIC", "-shared",
         "-nostdlib", f"-fuse-ld={linker()}", "-Wl,-soname,rax54s_emulation_shim.so",
-        "-DFRIDAY_TRACE_FATAL",
+        *shim_flags,
         "-o", str(STAGING / "lib/rax54s_emulation_shim.so"), str(SHIM),
     ])
     run([
@@ -465,15 +480,9 @@ def probe() -> None:
         first_text = SERIAL.read_text(errors="replace")
         if "FRIDAY_RAX29_FATAL" in first_text or "HTTPD_EXITED=1" in first_text:
             raise SystemExit("httpd crashed before reaching a stable PID")
-        primary_match = re.search(r"^HTTPD_PID=(\d+)$", first_text, re.MULTILINE)
-        primary_pid = primary_match.group(1) if primary_match else ""
         first_pids = re.findall(r"HTTPD_HEALTH_PID=(\d+)", first_text)
-        if (
-            primary_pid
-            and len(first_pids) >= 2
-            and first_pids[-1] == primary_pid
-            and first_pids[-2] == primary_pid
-        ):
+        if len(first_pids) >= 2 and first_pids[-1] == first_pids[-2]:
+            primary_pid = first_pids[-1]
             break
         time.sleep(1)
     else:
@@ -488,15 +497,16 @@ def probe() -> None:
         or "HTTPD_EXITED=1" in second_text
         or not second_pids
         or not second_response.startswith(b"HTTP/")
-        or second_pids[-1] != primary_pid
     ):
         raise SystemExit("httpd did not remain healthy after TLS control traffic")
 
+    pid_rotated = second_pids[-1] != primary_pid
     def status_line(response: bytes) -> str:
         return response.splitlines()[0].decode(errors="replace") if response else "empty"
 
     print(
         f"tls_ready=true pid={second_pids[-1]} "
+        f"pid_rotated={str(pid_rotated).lower()} "
         f"first={status_line(first_response)!r} "
         f"second={status_line(second_response)!r}"
     )

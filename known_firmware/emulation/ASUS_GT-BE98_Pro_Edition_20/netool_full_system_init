@@ -1,0 +1,74 @@
+#!/bin/sh
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/greenhouse
+export LD_LIBRARY_PATH=/lib:/usr/lib
+export LD_PRELOAD=/lib/libnvram-faker.so
+BB=/greenhouse/busybox
+
+echo "FRIDAY_GTBE98E20_STAGE1=1"
+$BB mount -t proc proc /proc 2>/dev/null
+$BB mount -t sysfs sysfs /sys 2>/dev/null
+$BB mount -t devtmpfs devtmpfs /dev 2>/dev/null
+$BB mkdir -p /dev/pts /run /tmp /var/run /var/log /data /jffs /mnt/defaults
+$BB mkdir -p /gh_nvram /tmp/netool /www/images
+$BB mount -t devpts devpts /dev/pts 2>/dev/null
+
+for MODULE in virtio_net bridge x_tables nf_conntrack nf_nat ip_tables iptable_filter iptable_nat; do
+    modprobe "$MODULE" 2>/dev/null &&
+        echo "FRIDAY_GTBE98E20_MODULE=$MODULE:loaded" ||
+        echo "FRIDAY_GTBE98E20_MODULE=$MODULE:failed"
+done
+
+ip link set lo up
+ip link set eth0 up
+ip link set eth1 up
+ip link add br0 type bridge 2>/dev/null
+ip link set eth1 master br0 2>/dev/null
+ip addr add 10.0.2.15/24 dev eth0 2>/dev/null
+ip addr add 192.0.2.15/24 dev br0 2>/dev/null
+ip link set br0 up
+
+echo "FRIDAY_GTBE98E20_INTERFACES_BEGIN"
+ip -4 addr show
+echo "FRIDAY_GTBE98E20_INTERFACES_END"
+
+ln -sf /sbin/rc /greenhouse/netool
+/greenhouse/strace -f -tt -s 256 -o /tmp/netool.strace \
+    /greenhouse/netool > /tmp/netool.log 2>&1 &
+NETOOL_PID=$!
+sleep 2
+if kill -0 "$NETOOL_PID" 2>/dev/null; then
+    echo "FRIDAY_GTBE98E20_NETOOL_READY=1 pid=$NETOOL_PID"
+else
+    echo "FRIDAY_GTBE98E20_NETOOL_READY=0"
+    $BB tail -n 80 /tmp/netool.log
+fi
+
+cd /www
+/greenhouse/strace -f -tt -s 256 -o /tmp/httpd.strace \
+    /usr/sbin/httpd > /dev/console 2>&1 &
+HTTPD_PID=$!
+sleep 4
+if kill -0 "$HTTPD_PID" 2>/dev/null; then
+    echo "FRIDAY_GTBE98E20_HTTP_READY=1 pid=$HTTPD_PID"
+else
+    echo "FRIDAY_GTBE98E20_HTTP_READY=0"
+    $BB tail -n 120 /tmp/httpd.log
+fi
+
+echo "FRIDAY_GTBE98E20_PROCESS_SNAPSHOT_BEGIN"
+$BB ps w
+$BB netstat -lntux 2>&1
+echo "FRIDAY_GTBE98E20_PROCESS_SNAPSHOT_END"
+echo "FRIDAY_GTBE98E20_READY=1"
+
+while :; do
+    HTTP_STATE=dead
+    NETOOL_STATE=dead
+    kill -0 "$HTTPD_PID" 2>/dev/null && HTTP_STATE=alive
+    kill -0 "$NETOOL_PID" 2>/dev/null && NETOOL_STATE=alive
+    CHILDREN=$($BB ps | $BB awk -v p="$NETOOL_PID" '$2 == p {n++} END {print n+0}')
+    echo "FRIDAY_GTBE98E20_HEALTH httpd=$HTTP_STATE netool=$NETOOL_STATE netool_children=$CHILDREN"
+    $BB sync
+    sleep 2
+done

@@ -18,9 +18,11 @@ lab.INITRAMFS = LAB / "rax41v2-http-rootfs.cpio.gz"
 lab.SERIAL = LAB / "serial.log"
 lab.QEMU_LOG = LAB / "qemu.log"
 lab.PIDFILE = LAB / "qemu.pid"
+lab.SECURITY_LOG = LAB / "http-security-probe.log"
 lab.HOST_HTTP_PORT = 25_141
 lab.HOST_HTTPS_PORT = 25_241
 lab.GUEST_MEMORY_MB = 768
+lab.TRACE_STRCPY = False
 
 
 if __name__ == "__main__":

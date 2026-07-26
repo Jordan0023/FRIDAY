@@ -1,5 +1,43 @@
 # RAX54S V1.0.17.144 Unauthenticated RCE/DoS Investigation
 
+## 2026-07-24 V1.0.17.142 to V1.0.17.144 security differential
+
+The supported fixed baseline `V1.0.17.142` was independently extracted from
+the stock NETGEAR archive (SHA-256
+`7fcf618f27a2c11f0080099a9a4441063dc67b775d57fe879b41c465c65987fd`).
+Its CHK wrapper contains a UBI image at offset 58 with 128 KiB PEBs; the
+`rootfs_ubifs` volume is an XZ-compressed SquashFS filesystem.
+
+The inbound network daemons were compared with the exact `V1.0.17.144`
+versions:
+
+- `V1.0.17.142 httpd`: SHA-256
+  `281cc1d697503bc16f0a083dc0dd25d8a2da957d0d2f4882d3862eddc9e89584`;
+- `V1.0.17.144 httpd`: SHA-256
+  `7e01c8b99992fcaffd6f1d7dde8649d0343234d55f9d11dbdea110e6aa14adf7`;
+- `V1.0.17.142 upnpd`: SHA-256
+  `e312b468b69787f8c7cc95403f60055d2d2db1623de827706e6839e7910102ea`;
+- `V1.0.17.144 upnpd`: SHA-256
+  `84ea21d0313d8b8b63c75f1d8f0cf85447c37815d946005f38c9e243c245d1ef`.
+
+Both versions have identically sized daemons. `radiff2` measured `upnpd`
+similarity as 1.000 with only 20 differing bytes. Its only added and removed
+printable strings are the three firmware/version identifiers. Consequently,
+the RAX30-derived UPnP/GENA attack surface did not gain a new handler in
+`V1.0.17.144`, and the negative exact-daemon tests below apply to the same
+functional implementation shipped in the fixed baseline.
+
+`httpd` similarity is 0.949. The route/security string differential did not
+add a SOAP action, CGI path, authentication exception, shell command, or
+listener. The substantive additions are libcurl APIs and
+`https://netgear.api.oemdns.com/oem/...` strings replacing a hand-written
+outbound NETGEAR DDNS/account HTTP client. This is an outbound client refactor,
+not evidence of a newly exposed unauthenticated request path.
+
+This differential therefore closes the version-regression hypothesis. It does
+not alter the disposition: no reproducible unauthenticated RCE or persistent
+input-specific service DoS is confirmed in `V1.0.17.144`.
+
 ## 2026-07-24 proprietary HTTP/SOAP confirmation
 
 The full-system harness was advanced to a stable request/response state using

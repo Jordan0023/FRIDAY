@@ -1,0 +1,14 @@
+#!/bin/sh
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+export LD_LIBRARY_PATH=/friday:/usr/bin/circlev2/shares/usr/lib:/lib:/usr/lib
+BIN=/usr/bin/circlev2/shares/usr/bin/dhcpsniff
+echo FRIDAY_DHCPSNIFF_CONTROL_BEGIN
+$BIN -d -i eth1
+echo FRIDAY_DHCPSNIFF_CONTROL_STATUS=$?
+echo FRIDAY_DHCPSNIFF_CANDIDATE_BEGIN
+FRIDAY_DHCPSNIFF_CANDIDATE=1 $BIN -d -i eth1
+echo FRIDAY_DHCPSNIFF_CANDIDATE_STATUS=$?
+echo FRIDAY_DHCPSNIFF_DONE=1
+poweroff -f

@@ -168,17 +168,65 @@ def soap_matrix(port: int) -> int:
     return 0
 
 
+def factory_setup_matrix(port: int) -> int:
+    marker = b"FRIDAY_RAX49S_FACTORY_MARKER"
+    cases = (
+        ("unauth-id", "/unauth.cgi?id=" + ("A" * 64), b""),
+        ("serial", "/securityquestions.cgi", b"serialNumber=" + marker + b"&Continue=Continue"),
+        (
+            "answers",
+            "/passwordrecovered.cgi",
+            b"answer1=" + marker + b"&answer2=" + marker + b"&Continue=Continue",
+        ),
+        (
+            "password-reset-shaped",
+            "/passwordrecovered.cgi",
+            b"sysNewPasswd=" + marker + b"&sysConfirmPasswd=" + marker
+            + b"&answer1=x&answer2=y&next=submit",
+        ),
+        (
+            "upgrade-check-shaped",
+            "/upgrade_check.cgi",
+            b"filename=" + marker + b"&buttonHit=Upload&buttonValue=Upload",
+        ),
+    )
+    for name, path, payload in cases:
+        try:
+            response = exchange(
+                port,
+                request(
+                    path,
+                    "POST",
+                    payload,
+                    extra=b"Content-Type: application/x-www-form-urlencoded\r\n",
+                ),
+            )
+            result = status(response)
+            size = len(body(response))
+        except (OSError, ssl.SSLError) as error:
+            result = f"{type(error).__name__}: {error}"
+            size = 0
+        alive = healthy(port)
+        print(f"{name}: response={result!r} body_bytes={size} service_alive={str(alive).lower()}")
+        if not alive:
+            return 2
+    return 0
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=DEFAULT_PORT)
-    parser.add_argument("--mode", choices=("routes", "boundaries", "soap", "all"), default="all")
+    parser.add_argument(
+        "--mode", choices=("routes", "boundaries", "soap", "factory", "all"), default="all"
+    )
     args = parser.parse_args()
-    modes = ("routes", "boundaries", "soap") if args.mode == "all" else (args.mode,)
+    modes = ("routes", "boundaries", "soap", "factory") if args.mode == "all" else (args.mode,)
     for mode in modes:
         result = {
             "routes": route_matrix,
             "boundaries": boundary_matrix,
             "soap": soap_matrix,
+            "factory": factory_setup_matrix,
         }[mode](args.port)
         if result:
             return result

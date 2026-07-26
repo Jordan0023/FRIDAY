@@ -131,9 +131,9 @@ exclude private or embargoed duplicates.
 - Confirmed product vulnerability: no.
 - Strongest lead: latent, exact vulnerable `ippd`, disabled in production.
 - Genuine `upnpd` GENA target: dynamically tested negative as described below.
-- `httpd` password-recovery/unauthenticated target: genuine server currently
-  fails during emulated startup before establishing a listener, so remote
-  attribution is not possible.
+- `httpd` password-recovery/unauthenticated target: genuine server now boots
+  with a stable isolated HTTPS listener after correcting a semantic
+  instrumentation interposer in the lab.
 - Physical-device validation: still required for any product-level claim.
 
 ## Focused dynamic validation (2026-07-24)
@@ -194,10 +194,9 @@ Artifacts:
 
 ### Genuine HTTP server
 
-The exact V1.1.6.38 `/usr/sbin/httpd` and production `smd` were booted with the
-same isolated ARM lab. `httpd` progressed through NVRAM, firewall, and Samba
-initialization but never established a TCP listener. It then faulted without
-any network request:
+The first exact V1.1.6.38 `/usr/sbin/httpd` and production `smd` boot used an
+inherited global `strcpy` tracing interposer. The daemon briefly bound its
+listeners and then faulted without any network request:
 
 ```text
 HTTPD_LISTENING=no
@@ -206,10 +205,69 @@ fault=0x00000000
 HTTPD_EXITED=1
 ```
 
-This is a baseline emulation failure, not a remotely triggered DoS. Because no
-control request can reach the genuine dispatcher, recovery-route RCE/DoS
-testing would not meet the project's attribution standard. The target remains
-unresolved pending additional device-state emulation or physical hardware.
+This was a baseline emulation failure, not a remotely triggered DoS.
+
+The reported PIE address was subsequently rebased and inspected directly.
+Runtime `0x004b40ac` corresponds to file-relative `0x000b40ac`, which is a
+literal-pool word immediately after a small initialization routine's return
+epilogue at `0x000b40a8`, not a request parser instruction. The fault occurs
+after repeated platform semaphore and `/dev/acos_nat_cli` initialization and
+without any request. This further supports an instrumentation/platform-state
+return-path failure rather than remotely triggered HTTP corruption. It cannot
+be counted as a product DoS.
+
+Follow-up isolated boot work resolved the baseline. The inherited `strcpy`
+interposer was disabled for RAX41v2 because it replaced libc semantics
+globally rather than merely observing a specific candidate call site. Fatal
+signal and command-sink tracing remain enabled. The harness's listener check
+was also corrected to avoid shell expansion of AWK's `$4`, and its stability
+criterion now follows the settled HTTP worker instead of a transient startup
+PID.
+
+On a clean rebuilt guest, the genuine daemon remained stable and returned two
+HTTPS controls separated by the stability interval:
+
+```text
+HTTPD_LISTENING=yes
+tls_ready=true pid=123 pid_rotated=false
+first='HTTP/1.0 200 OK' second='HTTP/1.0 200 OK'
+```
+
+The startup issue is therefore resolved. The genuine unauthenticated recovery
+routes can now be tested with request-specific marker/crash probes; successful
+baseline emulation alone does not establish an RCE or DoS.
+
+### Stable HTTP security matrix
+
+The stable genuine daemon was subsequently exercised without an administrator
+session. The SOAP matrix covered login/authentication actions, marker-shaped
+NTP, firmware URL, and Ookla server parameters, and `GetInfo` bodies from zero
+through 16,384 bytes. Raw parser cases covered `SOAPAction` through 65,536
+bytes, 16,384-byte `Host` and `X-Forwarded-For` values, a 16,384-byte path, a
+65,536-byte XML body, and conflicting `Content-Length` headers.
+
+All normal and marker-shaped SOAP requests returned HTTP 200. No marker
+reached the instrumented `system`, `popen`, or `fopen` sinks. Oversized cases
+were either answered or closed without a response; the genuine daemon
+remained responsive after every case. No fatal signal or daemon exit occurred.
+
+The password-recovery routes were tested separately with normal, shell-shaped
+marker, and 8,192-byte fields:
+
+```text
+securityquestions.cgi      HTTP/1.0 401 Unauthorized
+passwordrecovered.cgi      HTTP/1.0 401 Unauthorized
+reset_admin_account.cgi    HTTP/1.0 401 Unauthorized
+```
+
+The result was identical for control, marker, and oversized cases, with the
+service alive after each request and no command-sink or fatal-signal trace.
+In this emulated device state, these routes did not provide an
+authentication bypass, RCE, or request-specific DoS.
+
+Artifacts:
+
+- `scripts/probe_rax41v2_recovery_routes.py`
 
 Artifacts:
 
