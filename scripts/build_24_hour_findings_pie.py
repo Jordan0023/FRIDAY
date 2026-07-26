@@ -30,7 +30,7 @@ def main() -> None:
     )
     for percentage in percentages:
         percentage.set_color("white")
-        percentage.set_fontsize(20)
+        percentage.set_fontsize(28)
         percentage.set_fontweight("bold")
 
     swatch_x = 0.145
