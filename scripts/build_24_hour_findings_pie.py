@@ -41,7 +41,7 @@ def main() -> None:
         (
             colors[0],
             "#f9d9df",
-            0.64,
+            0.70,
             labels[0],
             f"— {counts[0]} chains",
             0.245,
@@ -50,7 +50,7 @@ def main() -> None:
         (
             colors[1],
             "#d7eef1",
-            0.36,
+            0.42,
             labels[1],
             f"— {counts[1]} candidates",
             0.255,
