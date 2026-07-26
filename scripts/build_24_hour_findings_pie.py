@@ -37,7 +37,7 @@ def main() -> None:
 
     swatch_x = 0.145
     key_x = 0.215
-    heading_size = 26
+    heading_size = 30
     detail_size = 19
     for color, highlight, heading_y, heading, count_text, highlight_width, details in (
         (
@@ -46,7 +46,7 @@ def main() -> None:
             0.70,
             labels[0],
             f"— {counts[0]} chains",
-            0.275,
+            0.315,
             "(NETGEAR EX2800 / EX5000 / EX6110\nRAX9 • GL-X3000 Spitz AX)",
         ),
         (
@@ -55,7 +55,7 @@ def main() -> None:
             0.42,
             labels[1],
             f"— {counts[1]} candidates",
-            0.285,
+            0.325,
             "(Includes RAX9 • MS90)",
         ),
     ):
@@ -72,9 +72,9 @@ def main() -> None:
         )
         fig.add_artist(
             Rectangle(
-                (key_x - 0.006, heading_y - 0.028),
+                (key_x - 0.006, heading_y - 0.034),
                 highlight_width + 0.012,
-                0.056,
+                0.068,
                 transform=fig.transFigure,
                 facecolor=highlight,
                 edgecolor="none",
@@ -119,10 +119,10 @@ def main() -> None:
     )
     fig.text(
         0.5,
-        0.875,
+        0.865,
         "13 total high-impact chains — 26 JUL 2026",
         ha="center",
-        fontsize=20,
+        fontsize=26,
         color="#526473",
         va="top",
     )
