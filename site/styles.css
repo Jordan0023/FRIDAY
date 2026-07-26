@@ -249,6 +249,30 @@ h3 {
   line-height: 1.5;
 }
 
+.findings-chart {
+  margin: 24px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f7f4ee;
+  box-shadow: 0 10px 26px rgba(16, 24, 40, 0.08);
+}
+
+.findings-chart img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.findings-chart figcaption {
+  padding: 12px 18px;
+  border-top: 1px solid var(--border);
+  background: #fff;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .finding-section {
   margin-top: 38px;
 }
