@@ -7,7 +7,7 @@
     Stacked firmware and static findings
   </text>
   <text x="55" y="120" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">
-    Orange base + blue top · totals shown above each stack
+    Orange findings + blue firmware · combined total shown in white
   </text>
 
   <g font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">
@@ -35,32 +35,44 @@
   <!-- 2021: orange 9, blue 17, total 26 -->
   <rect x="145" y="698.8" width="130" height="1.2" fill="#f59e0b"/>
   <rect x="145" y="696.4" width="130" height="2.4" rx="5" fill="#38bdf8"/>
-  <text x="210" y="674" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">26</text>
+  <text font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" text-anchor="middle">
+    <tspan x="175" y="674" fill="#f59e0b">9</tspan><tspan x="245" y="674" fill="#38bdf8">17</tspan><tspan x="210" y="640" fill="#f8fafc">26 total</tspan>
+  </text>
 
   <!-- 2022: orange 50, blue 50, total 100 -->
   <rect x="360" y="693.1" width="130" height="6.9" fill="#f59e0b"/>
   <rect x="360" y="686.3" width="130" height="6.8" rx="5" fill="#38bdf8"/>
-  <text x="425" y="665" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">100</text>
+  <text font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" text-anchor="middle">
+    <tspan x="390" y="665" fill="#f59e0b">50</tspan><tspan x="460" y="665" fill="#38bdf8">50</tspan><tspan x="425" y="631" fill="#f8fafc">100 total</tspan>
+  </text>
 
   <!-- 2023: orange 178, blue 111, total 289 -->
   <rect x="575" y="675.6" width="130" height="24.4" fill="#f59e0b"/>
   <rect x="575" y="660.4" width="130" height="15.2" rx="5" fill="#38bdf8"/>
-  <text x="640" y="638" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">289</text>
+  <text font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" text-anchor="middle">
+    <tspan x="595" y="638" fill="#f59e0b">178</tspan><tspan x="685" y="638" fill="#38bdf8">111</tspan><tspan x="640" y="604" fill="#f8fafc">289 total</tspan>
+  </text>
 
   <!-- 2024: orange 392, blue 225, total 617 -->
   <rect x="790" y="646.2" width="130" height="53.8" fill="#f59e0b"/>
   <rect x="790" y="615.4" width="130" height="30.8" rx="5" fill="#38bdf8"/>
-  <text x="855" y="592" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">617</text>
+  <text font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" text-anchor="middle">
+    <tspan x="810" y="592" fill="#f59e0b">392</tspan><tspan x="900" y="592" fill="#38bdf8">225</tspan><tspan x="855" y="558" fill="#f8fafc">617 total</tspan>
+  </text>
 
   <!-- 2025: orange 782, blue 352, total 1134 -->
   <rect x="1005" y="592.8" width="130" height="107.2" fill="#f59e0b"/>
   <rect x="1005" y="544.5" width="130" height="48.3" rx="5" fill="#38bdf8"/>
-  <text x="1070" y="520" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">1,134</text>
+  <text font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" text-anchor="middle">
+    <tspan x="1025" y="520" fill="#f59e0b">782</tspan><tspan x="1115" y="520" fill="#38bdf8">352</tspan><tspan x="1070" y="486" fill="#f8fafc">1,134 total</tspan>
+  </text>
 
   <!-- 2026: orange 2313, blue 890, total 3203 -->
   <rect x="1220" y="382.8" width="130" height="317.2" fill="#f59e0b"/>
   <rect x="1220" y="260.8" width="130" height="122" rx="5" fill="#38bdf8"/>
-  <text x="1285" y="238" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" text-anchor="middle">3,203</text>
+  <text font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" text-anchor="middle">
+    <tspan x="1235" y="238" fill="#f59e0b">2,313</tspan><tspan x="1330" y="238" fill="#38bdf8">890</tspan><tspan x="1285" y="204" fill="#f8fafc">3,203 total</tspan>
+  </text>
 
   <g fill="#e2e8f0" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" text-anchor="middle">
     <text x="210" y="755">2021</text>
