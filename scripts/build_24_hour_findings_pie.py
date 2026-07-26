@@ -37,7 +37,7 @@ def main() -> None:
 
     swatch_x = 0.145
     key_x = 0.215
-    heading_size = 23
+    heading_size = 26
     detail_size = 19
     for color, highlight, heading_y, heading, count_text, highlight_width, details in (
         (
@@ -46,7 +46,7 @@ def main() -> None:
             0.70,
             labels[0],
             f"— {counts[0]} chains",
-            0.245,
+            0.275,
             "(NETGEAR EX2800 / EX5000 / EX6110\nRAX9 • GL-X3000 Spitz AX)",
         ),
         (
@@ -55,7 +55,7 @@ def main() -> None:
             0.42,
             labels[1],
             f"— {counts[1]} candidates",
-            0.255,
+            0.285,
             "(Includes RAX9 • MS90)",
         ),
     ):
@@ -119,11 +119,12 @@ def main() -> None:
     )
     fig.text(
         0.5,
-        0.895,
+        0.875,
         "13 total high-impact chains — 26 JUL 2026",
         ha="center",
-        fontsize=22,
+        fontsize=20,
         color="#526473",
+        va="top",
     )
     fig.text(
         0.5,
