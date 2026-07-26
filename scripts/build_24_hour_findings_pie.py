@@ -35,13 +35,16 @@ def main() -> None:
     ax.legend(
         wedges,
         [
-            f"{labels[0]} — {counts[0]} chains (EX family, RAX9, GL-X3000 Spitz AX)",
+            (
+                f"{labels[0]} — {counts[0]} chains "
+                "(NETGEAR EX2800 / EX5000 / EX6110, RAX9, GL-X3000 Spitz AX)"
+            ),
             f"{labels[1]} — {counts[1]} candidates (includes RAX9 and MS90)",
         ],
         loc="lower center",
-        bbox_to_anchor=(0.5, -0.15),
+        bbox_to_anchor=(0.5, -0.17),
         frameon=False,
-        fontsize=11,
+        fontsize=14,
         ncol=1,
     )
     ax.set_title(
@@ -68,7 +71,7 @@ def main() -> None:
         color="#667784",
     )
     ax.axis("equal")
-    fig.subplots_adjust(top=0.82, bottom=0.22, left=0.08, right=0.92)
+    fig.subplots_adjust(top=0.82, bottom=0.25, left=0.08, right=0.92)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUTPUT, dpi=180, bbox_inches="tight", facecolor=fig.get_facecolor())
     plt.close(fig)
