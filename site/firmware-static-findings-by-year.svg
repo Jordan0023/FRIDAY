@@ -10,10 +10,10 @@
     Total: 1,939 firmware images · 4,397 static findings
   </text>
   <g font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700">
-    <rect x="130" y="142" width="42" height="42" rx="8" fill="#38bdf8"/>
-    <text x="190" y="178" fill="#dbeafe">Firmware releases</text>
-    <rect x="130" y="194" width="42" height="42" rx="8" fill="#f59e0b"/>
-    <text x="190" y="230" fill="#fef3c7">Static heuristic findings</text>
+    <rect x="1080" y="142" width="42" height="42" rx="8" fill="#38bdf8"/>
+    <text x="1140" y="178" fill="#dbeafe">Firmware releases</text>
+    <rect x="1080" y="194" width="42" height="42" rx="8" fill="#f59e0b"/>
+    <text x="1140" y="230" fill="#fef3c7">Static heuristic findings</text>
   </g>
 
   <!-- Plot area: x=110..1635, y=275..740; scale=0.186 px per count, max=2500 -->
