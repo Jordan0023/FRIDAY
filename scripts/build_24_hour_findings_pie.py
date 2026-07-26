@@ -30,15 +30,15 @@ def main() -> None:
     )
     for percentage in percentages:
         percentage.set_color("white")
-        percentage.set_fontsize(28)
+        percentage.set_fontsize(32)
         percentage.set_fontweight("bold")
     percentages[0].set_position((0.43, 0.43))
     percentages[1].set_position((-0.28, -0.27))
 
     swatch_x = 0.145
     key_x = 0.215
-    heading_size = 20
-    detail_size = 16
+    heading_size = 23
+    detail_size = 19
     for color, highlight, heading_y, heading, count_text, highlight_width, details in (
         (
             colors[0],
@@ -96,7 +96,7 @@ def main() -> None:
             count_text,
             ha="left",
             va="top",
-            fontsize=18,
+            fontsize=21,
             fontweight="bold",
             color="#111111",
         )
@@ -112,7 +112,7 @@ def main() -> None:
         )
     fig.suptitle(
         "24-Hour FRIDAY Zero-Day Findings",
-        fontsize=28,
+        fontsize=34,
         fontweight="bold",
         color="#18262d",
         y=0.975,
@@ -122,7 +122,7 @@ def main() -> None:
         0.895,
         "13 total high-impact chains — 26 JUL 2026",
         ha="center",
-        fontsize=13,
+        fontsize=17,
         color="#526473",
     )
     fig.text(
@@ -130,7 +130,7 @@ def main() -> None:
         0.018,
         "Impact and reachability vary. Candidates are not vendor-confirmed zero-days.",
         ha="center",
-        fontsize=11,
+        fontsize=14,
         color="#667784",
     )
     ax.axis("equal")
