@@ -37,17 +37,23 @@ def main() -> None:
     key_x = 0.105
     heading_size = 20
     detail_size = 16
-    for color, heading_y, heading, details in (
+    for color, heading_y, heading, count_text, underline_width, count_x, details in (
         (
             colors[0],
             0.59,
-            f"{labels[0]} — {counts[0]} chains",
+            labels[0],
+            f"— {counts[0]} chains",
+            0.245,
+            0.365,
             "NETGEAR EX2800 / EX5000 / EX6110\nRAX9 • GL-X3000 Spitz AX",
         ),
         (
             colors[1],
             0.40,
-            f"{labels[1]} — {counts[1]} candidates",
+            labels[1],
+            f"— {counts[1]} candidates",
+            0.255,
+            0.375,
             "Includes RAX9 • MS90",
         ),
     ):
@@ -72,9 +78,19 @@ def main() -> None:
             fontweight="bold",
             color="#111111",
         )
+        fig.text(
+            count_x,
+            heading_y,
+            count_text,
+            ha="left",
+            va="center",
+            fontsize=heading_size,
+            fontweight="bold",
+            color="#111111",
+        )
         fig.add_artist(
             Line2D(
-                [key_x, key_x + 0.30],
+                [key_x, key_x + underline_width],
                 [heading_y - 0.026, heading_y - 0.026],
                 transform=fig.transFigure,
                 color="#111111",
@@ -115,7 +131,7 @@ def main() -> None:
         color="#667784",
     )
     ax.axis("equal")
-    ax.set_position([0.42, 0.10, 0.55, 0.76])
+    ax.set_position([0.52, 0.12, 0.45, 0.72])
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(OUTPUT, dpi=180, bbox_inches="tight", facecolor=fig.get_facecolor())
     plt.close(fig)
