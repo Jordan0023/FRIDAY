@@ -33,7 +33,8 @@ def main() -> None:
         percentage.set_fontsize(20)
         percentage.set_fontweight("bold")
 
-    key_x = 0.105
+    swatch_x = 0.145
+    key_x = 0.215
     heading_size = 20
     detail_size = 16
     for color, highlight, heading_y, heading, count_text, highlight_width, details in (
@@ -58,7 +59,7 @@ def main() -> None:
     ):
         fig.add_artist(
             Rectangle(
-                (0.035, heading_y - 0.025),
+                (swatch_x, heading_y - 0.025),
                 0.055,
                 0.05,
                 transform=fig.transFigure,
